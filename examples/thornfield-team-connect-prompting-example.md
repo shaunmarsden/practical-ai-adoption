@@ -170,4 +170,4 @@ For repository formatting, the raw guide-informed output's dash glyph and curren
 
 ## Short comparison
 
-Both outputs picked up the current 52-person headcount, the serious nut allergy, the quote request and the need to ask about a discount. The guide-informed output did more to preserve the provisional status of the booking, distinguish an available discount from an agreed one and list the checks Priya still owns. [Read the scored review](../evaluations/thornfield-team-connect-prompting-review.md).
+Both outputs were already strong. They used the current 52-person headcount, kept the booking provisional, asked for a quote, kept the allergy unnamed and treated the discount as unconfirmed. The guide-informed output made the pending checks and Priya's responsibilities more explicit. It made the conditional Finance threshold and standard-rate estimate visible, and avoided anchoring the venue to the uncertain 10% discount figure. [Read the scored review](../evaluations/thornfield-team-connect-prompting-review.md).

@@ -4,9 +4,9 @@ This is a project-authored scoring rubric. It is not an OpenAI rubric or any org
 
 ## Result
 
-**Baseline: 23/30**
+**Baseline: 24/30**
 
-**Guide-informed: 29/30**
+**Guide-informed: 30/30**
 
 **Automatic failure:**
 
@@ -21,7 +21,7 @@ Guide-informed: No
 | Factual and evidence fidelity | 4 | 5 | Both used 52 attendees, kept the allergy unnamed and left approval pending. The guide-informed result avoided naming 10% as the discount to ask about, while its calculation remained a check rather than a supplier quote. |
 | Task alignment | 4 | 5 | Both produced a usable venue reply that asked for a quote instead of confirming the booking. The guide-informed result also gave Priya a defined review list. |
 | Use of context | 4 | 5 | Both used the relevant venue, attendance, allergy, discount and approval context. The guide-informed result made the conditional Finance threshold and the standard-rate calculation visible. |
-| Unknowns, updates and conflicts | 3 | 4 | Both treated 52 as the current headcount, asked about the discount and left the booking unconfirmed. The guide-informed result made pending checks explicit, but its GBP 1,008 calculation was not clearly labelled as an indicative calculation from standard rates. |
+| Unknowns, updates and conflicts | 4 | 5 | Both treated 52 as the current headcount, asked about the discount and left the booking unconfirmed. The baseline makes the Finance condition too broad. The guide-informed result makes the remaining checks explicit and calls GBP 1,008 an estimate from the standard rates. |
 | Practical usefulness | 4 | 5 | The baseline is a sensible draft. The guide-informed result is easier to review because it pairs the draft with the remaining checks and approval steps. |
 | Responsible use and human control | 4 | 5 | Both minimised the health information and left final action with Priya. The guide-informed result explicitly keeps approval and sending with Priya and makes the Finance decision conditional on the final quote. |
 
@@ -55,9 +55,9 @@ Guide-informed: No
 
 ### 4. Unknowns, updates and conflicts
 
-**Baseline: 3.** It correctly treats 52 as the updated attendance figure, the discount as unconfirmed and the quote as pending. It does not make those distinctions explicit for Priya, and it states the Finance approval as unconditional rather than tied to the final total.
+**Baseline: 4.** It correctly treats 52 as the updated attendance figure, the discount as unconfirmed and the quote as pending. The Finance approval is stated as unconditional rather than tied to the final total, but this is a minor correction to an otherwise strong draft.
 
-**Guide-informed: 4.** It makes the pending quote, allergy accommodation, discount, Finance decision and Priya's approval visible. The GBP 1,008 arithmetic is correct, but the output should have said more clearly that it is an indicative calculation from the stated standard rates, not a quote.
+**Guide-informed: 5.** It makes the pending quote, allergy accommodation, discount, Finance decision and Priya's approval visible. The GBP 1,008 arithmetic is correct and is explicitly described as an estimate from the stated standard rates, not a quote.
 
 ### 5. Practical usefulness
 
@@ -90,7 +90,7 @@ The genuine improvements are:
 
 ## What it still got wrong
 
-The guide-informed output was not perfect. The GBP 1,008 arithmetic is correct, but it should say explicitly that it is an indicative calculation from the venue's stated standard rates, not the venue's final quote. It also asks Priya to check for other dietary requirements. That is a sensible operational prompt, but the sources do not say there are any.
+The guide-informed output does not contain a material factual error in the scored areas. It asks Priya to check for other dietary requirements. That is a sensible operational prompt, but the sources do not say there are any. It is framed as a check rather than as a claim that further requirements exist.
 
 ## What a person still has to check
 
