@@ -4,7 +4,7 @@ This is a direction of travel, not a commitment to publish everything listed.
 
 ## Now
 
-- Add a reciprocal link from Practical AI Sales Workflows.
+Nothing outstanding right now. The reciprocal link from Practical AI Sales Workflows is done.
 
 ## Next
 
