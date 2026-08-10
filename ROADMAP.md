@@ -4,7 +4,6 @@ This is a direction of travel, not a commitment to publish everything listed.
 
 ## Now
 
-- Calibrate the Thornfield prompting evaluation.
 - Add a reciprocal link from Practical AI Sales Workflows.
 
 ## Next
