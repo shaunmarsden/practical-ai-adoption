@@ -1,6 +1,6 @@
 # Thornfield Team Connect: Prompting Review
 
-This is a project-authored scoring rubric. It is not an OpenAI rubric or an AiCore rubric.
+This is a project-authored scoring rubric. It is not an OpenAI rubric or any organisation's rubric.
 
 ## Result
 
