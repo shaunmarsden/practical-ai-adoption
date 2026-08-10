@@ -14,7 +14,7 @@ This repository starts with one practical habit: give AI a better brief, then ch
 
 ## Read the honest review
 
-[Thornfield Team Connect: Prompting Review](evaluations/thornfield-team-connect-prompting-review.md) scored the baseline at **23/30** and the guide-informed result at **29/30**. Neither output automatically failed. This is fictional testing only.
+[Thornfield Team Connect: Prompting Review](evaluations/thornfield-team-connect-prompting-review.md) scored the baseline at **24/30** and the guide-informed result at **30/30**. Neither output automatically failed. This is fictional testing only.
 
 ## Related project
 
