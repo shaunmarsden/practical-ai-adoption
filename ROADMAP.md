@@ -8,14 +8,13 @@ Nothing outstanding right now. The reciprocal link from Practical AI Sales Workf
 
 ## Next
 
-- Log one genuine low-risk use of the prompting guide when an appropriate task naturally arises.
-- Record organic outside feedback if someone tries it.
+- Log one genuine low-risk use of either guide when an appropriate task naturally arises.
+- Record organic outside feedback if someone tries either guide.
 
 ## Later
 
 These are candidate subjects, not committed guides.
 
-- Finding a good first AI use case
 - What should stay human-controlled
 - Before you put work data into AI
 - How to tell whether AI actually helped
