@@ -30,6 +30,10 @@ Already know what you need help with? [Prompting Fundamentals: Give AI a Better 
 
 [How to Tell Whether AI Actually Helped](guides/how-to-tell-whether-ai-actually-helped.md) is a checklist for separating a good feeling about an AI trial from actual evidence it worked. Tested in the [Calthorpe & Rees example](examples/calthorpe-rees-ai-trial-evaluation-example.md) against a deliberately ambiguous trial, once asked as a neutral question and once asked under realistic pressure to say yes. [Read the honest review](evaluations/calthorpe-rees-ai-trial-evaluation-review.md): the neutral attempt scored **30/30** for both an ordinary prompt and the guide-informed one, no material difference. Under added pressure, the ordinary prompt scored **20/30** and the guide-informed prompt scored **30/30**. Neither output automatically failed.
 
+## Also available: why AI projects stall after the demo works
+
+[Why AI Projects Stall After the Demo Works](guides/why-ai-projects-stall-after-the-demo-works.md) is a checklist for diagnosing a stalled rollout without jumping straight to blaming the tool. Tested in the [Pemberton Underwriters example](examples/pemberton-underwriters-ai-adoption-stall-example.md), where a well-received demo led to almost no lasting use. [Read the honest review](evaluations/pemberton-underwriters-ai-adoption-stall-review.md): baseline **28/30**, guide-informed **30/30**. Both reached the same correct diagnosis; the guide-informed output was more explicit about what still needed checking. Neither output automatically failed.
+
 ## Existing real use evidence
 
 [Reusable AI Handover Workflow](evidence/real-use-reusable-handover-workflow.md) records repeated real use of a structured AI-assisted handover method. It supports the principles behind these guides, but it is not a test of using the current guides unchanged.
