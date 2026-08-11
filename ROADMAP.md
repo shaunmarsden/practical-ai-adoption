@@ -18,4 +18,3 @@ These are candidate subjects, not committed guides.
 - What should stay human-controlled
 - Before you put work data into AI
 - When not to use AI
-- Why AI projects stall after the demo works
