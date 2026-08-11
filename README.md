@@ -6,7 +6,9 @@ This repository starts with one practical habit: give AI a better brief, then ch
 
 ## Start here
 
-[Prompting Fundamentals: Give AI a Better Brief](guides/prompting-fundamentals.md) gives you a short prompt starter you can copy, paste into the AI tool you already use and adapt to a real task.
+[You Have Been Given AI at Work. Start Here.](guides/you-have-been-given-ai-at-work.md) is for anyone who has access to an AI tool at work and wants one sensible first move. It includes three simple starters for writing, planning and summarising, then points you to the right next guide.
+
+Already know what you need help with? [Prompting Fundamentals: Give AI a Better Brief](guides/prompting-fundamentals.md) gives you a short prompt starter you can copy, paste into the AI tool you already use and adapt to a real task.
 
 ## See it tested
 
