@@ -22,6 +22,10 @@ Already know what you need help with? [Prompting Fundamentals: Give AI a Better 
 
 [Finding a Good First AI Use Case](guides/finding-a-good-first-ai-use-case.md) helps you pick which task to try AI on first, using a checklist you can copy and adapt. Tested in the [Marlowe & Birch example](examples/marlowe-birch-first-use-case-example.md) against six deliberately mixed tasks, including one that looks like a good AI candidate but is not. [Read the honest review](evaluations/marlowe-birch-first-use-case-review.md): baseline **24/30**, guide-informed **30/30**. Neither output automatically failed.
 
+## Also available: turning a prompt into a useful workflow
+
+[From a Prompt to a Useful Workflow](guides/from-a-prompt-to-a-useful-workflow.md) shows how to turn a one-off prompt into a small repeatable process with clear sources, checks and human handoff. Tested in the [Juniper Vale example](examples/juniper-vale-prompt-to-workflow-example.md) against the same difficult fictional notes. [Read the honest review](evaluations/juniper-vale-prompt-to-workflow-review.md): baseline **17/30**, workflow-informed **29/30**. Neither output automatically failed.
+
 ## Related project
 
 Looking specifically for B2B sales workflows? [Practical AI Sales Workflows](https://github.com/shaunmarsden/practical-ai-sales-workflows) applies the same evidence-first approach to common sales jobs.
