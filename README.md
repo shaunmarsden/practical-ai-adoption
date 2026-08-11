@@ -26,6 +26,10 @@ Already know what you need help with? [Prompting Fundamentals: Give AI a Better 
 
 [From a Prompt to a Useful Workflow](guides/from-a-prompt-to-a-useful-workflow.md) shows how to turn a one-off prompt into a small repeatable process with clear sources, checks and human handoff. Tested in the [Juniper Vale example](examples/juniper-vale-prompt-to-workflow-example.md) against the same difficult fictional notes. [Read the honest review](evaluations/juniper-vale-prompt-to-workflow-review.md): baseline **17/30**, workflow-informed **29/30**. Neither output automatically failed.
 
+## Existing real use evidence
+
+[Reusable AI Handover Workflow](evidence/real-use-reusable-handover-workflow.md) records repeated real use of a structured AI-assisted handover method. It supports the principles behind these guides, but it is not a test of using the current guides unchanged.
+
 ## Related project
 
 Looking specifically for B2B sales workflows? [Practical AI Sales Workflows](https://github.com/shaunmarsden/practical-ai-sales-workflows) applies the same evidence-first approach to common sales jobs.
