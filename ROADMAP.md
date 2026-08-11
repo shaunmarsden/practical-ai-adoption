@@ -8,8 +8,8 @@ Nothing outstanding right now. The reciprocal link from Practical AI Sales Workf
 
 ## Next
 
-- Log one genuine low-risk use of either guide when an appropriate task naturally arises.
-- Record organic outside feedback if someone tries either guide.
+- Log one genuine low-risk use of any guide when an appropriate task naturally arises.
+- Record organic outside feedback if someone tries any guide.
 
 ## Later
 
@@ -17,6 +17,5 @@ These are candidate subjects, not committed guides.
 
 - What should stay human-controlled
 - Before you put work data into AI
-- How to tell whether AI actually helped
 - When not to use AI
 - Why AI projects stall after the demo works

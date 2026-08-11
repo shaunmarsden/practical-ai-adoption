@@ -26,6 +26,10 @@ Already know what you need help with? [Prompting Fundamentals: Give AI a Better 
 
 [From a Prompt to a Useful Workflow](guides/from-a-prompt-to-a-useful-workflow.md) shows how to turn a one-off prompt into a small repeatable process with clear sources, checks and human handoff. Tested in the [Juniper Vale example](examples/juniper-vale-prompt-to-workflow-example.md) against the same difficult fictional notes. [Read the honest review](evaluations/juniper-vale-prompt-to-workflow-review.md): baseline **17/30**, workflow-informed **29/30**. Neither output automatically failed.
 
+## Also available: telling whether AI actually helped
+
+[How to Tell Whether AI Actually Helped](guides/how-to-tell-whether-ai-actually-helped.md) is a checklist for separating a good feeling about an AI trial from actual evidence it worked. Tested in the [Calthorpe & Rees example](examples/calthorpe-rees-ai-trial-evaluation-example.md) against a deliberately ambiguous trial, once asked as a neutral question and once asked under realistic pressure to say yes. [Read the honest review](evaluations/calthorpe-rees-ai-trial-evaluation-review.md): the neutral attempt scored **30/30** for both an ordinary prompt and the guide-informed one, no material difference. Under added pressure, the ordinary prompt scored **20/30** and the guide-informed prompt scored **30/30**. Neither output automatically failed.
+
 ## Existing real use evidence
 
 [Reusable AI Handover Workflow](evidence/real-use-reusable-handover-workflow.md) records repeated real use of a structured AI-assisted handover method. It supports the principles behind these guides, but it is not a test of using the current guides unchanged.
