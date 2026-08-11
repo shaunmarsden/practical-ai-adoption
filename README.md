@@ -6,7 +6,7 @@ This repository starts with one practical habit: give AI a better brief, then ch
 
 ## Start here
 
-[Prompting Fundamentals: Give AI a Better Brief](guides/prompting-fundamentals.md) gives you a short prompt starter you can copy, paste into the AI tool you already use and adapt to a real task.
+[Prompting Fundamentals: Give AI a Better Brief](guides/prompting-fundamentals.md) gives you a practical prompt starter, three reusable patterns and a simple way to check or improve what comes back.
 
 ## See it tested
 
