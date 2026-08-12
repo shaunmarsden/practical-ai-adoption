@@ -34,6 +34,10 @@ Already know what you need help with? [Prompting Fundamentals: Give AI a Better 
 
 [Why AI Projects Stall After the Demo Works](guides/why-ai-projects-stall-after-the-demo-works.md) is a checklist for diagnosing a stalled rollout without jumping straight to blaming the tool. Tested in the [Pemberton Underwriters example](examples/pemberton-underwriters-ai-adoption-stall-example.md), where a well-received demo led to almost no lasting use. [Read the honest review](evaluations/pemberton-underwriters-ai-adoption-stall-review.md): baseline **28/30**, guide-informed **30/30**. Both reached the same correct diagnosis; the guide-informed output was more explicit about what still needed checking. Neither output automatically failed.
 
+## Also available: when not to use AI
+
+[When Not to Use AI](guides/when-not-to-use-ai.md) is a checklist for two specific categories that stay unsuitable for unsupervised AI use regardless of tool quality: unreviewed decisions with real effect on a person, and confident but unverified claims in a consequential domain. Tested in the [Ashworth & Vale example](examples/ashworth-vale-ai-safeguards-example.md) against six proposed AI uses, including ones designed to look safer or riskier than they actually are. [Read the honest review](evaluations/ashworth-vale-ai-safeguards-review.md): baseline **29/30**, guide-informed **30/30**, unchanged across a neutral attempt and a second attempt run under realistic pressure to approve everything. Neither output automatically failed.
+
 ## Existing real use evidence
 
 [Reusable AI Handover Workflow](evidence/real-use-reusable-handover-workflow.md) records repeated real use of a structured AI-assisted handover method. It supports the principles behind these guides, but it is not a test of using the current guides unchanged.
