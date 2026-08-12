@@ -193,13 +193,64 @@ Output:
 - A table with action, owner, date and any open question.
 ```
 
-## 8. Keep the prompt proportionate
+## 8. When a better prompt is not enough
+
+Sometimes the problem is not the wording.
+
+- If the task needs exact arithmetic, use an approved calculator or other tool. Telling AI to be accurate does not make mental maths reliable.
+- If the task needs current information, provide the right source or use an approved connection. Do not expect a prompt to create access to a system.
+- If the task has hard rules, check the result against those rules before using it.
+- If the task could cause a real external consequence, keep a person responsible for the final decision and action.
+
+Ask which kind of problem you have:
+
+- Missing instruction
+- Missing or unclear source
+- Missing capability or tool
+- A decision that belongs with a person
+
+Changing the wording is useful for the first problem. The other three need a different fix.
+
+## 9. Keep a prompt understandable over time
+
+A prompt that works today can become harder to trust when people keep adding patches. Keep the main parts easy to find:
+
+- The job AI is doing
+- The context and source material
+- The rules and constraints
+- The tone and audience
+- The shape of the answer
+
+Remove copied webpage material that does not help with the task, such as navigation, cookie notices or unrelated marketing text. Look for instructions that conflict with one another. If someone adds a defensive instruction after a failure, record what it was meant to prevent. Review it later rather than keeping every old patch forever.
+
+Before changing a prompt, ask:
+
+1. What failed?
+2. Which source, rule or check should have prevented it?
+3. Is this a prompt problem, a source problem, a capability problem or a human decision?
+4. What test will show whether the change helped?
+
+## 10. Test the prompt like a small process
+
+If a prompt matters enough to reuse, test it against the same small set of cases after each meaningful change. You do not need a technical test suite to start. A short table of cases and honest notes is enough.
+
+Include three kinds of case:
+
+- **Control:** a clear, ordinary task the AI should handle well.
+- **Edge case:** a difficult or previously missed situation.
+- **Handoff case:** a situation where AI should stop, ask a question, flag uncertainty or hand the decision to a person.
+
+Compare the outputs against the source and the intended action. Look for regressions as well as improvements. A prompt that fixes one edge case but makes a control case worse is not simply better.
+
+Keep the reason for each change with the test result. This helps you spot when an old fix is no longer needed or is causing the AI to withhold useful information.
+
+## 11. Keep the prompt proportionate
 
 Do not spend 20 minutes engineering a prompt for a two-minute job. Start with the relevant task, source and constraint. Add detail only if the first answer misses something important.
 
 You also do not need a grand role for the AI. "Act as the world's best strategist" rarely gives it the facts it needs. A clear job and relevant information are more useful.
 
-## 9. Use AI responsibly
+## 12. Use AI responsibly
 
 Use AI as part of normal work, not outside it.
 
@@ -213,7 +264,7 @@ Use AI as part of normal work, not outside it.
 
 This is practical guidance, not legal advice. If you are unsure whether information can go into a tool, stop and check the relevant policy or person first.
 
-## 10. Try it on one real task
+## 13. Try it on one real task
 
 Pick a low-risk task you already do. Give the AI a clear job, the relevant sources and the constraints that matter. Then compare the answer with your source before using it.
 
