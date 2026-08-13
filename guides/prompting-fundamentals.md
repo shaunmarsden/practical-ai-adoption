@@ -276,4 +276,4 @@ The Thornfield example tests the core brief and review approach. The reusable pa
 
 **Source-derived foundation:** The four broad habits of clear instructions, useful context, reviewing outputs and responsible use are confirmed by [OpenAI Academy's AI Foundations course](https://academy.openai.com/public/courses/ai-foundations-juzjs?autoEnroll=true).
 
-**Project guidance:** The copy-paste brief, review checks, human-control guidance and fictional test method are Shaun's independent practical interpretation. They are not supplied, reviewed or endorsed by OpenAI.
+**Project guidance:** The copy-paste brief, review checks, human-control guidance and fictional test method are my own independent practical interpretation. They are not supplied, reviewed or endorsed by OpenAI.

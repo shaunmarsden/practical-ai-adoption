@@ -28,4 +28,4 @@ This is a public repository for nontechnical people using AI at work.
 
 - Never reproduce, adapt or reconstruct AiCore curriculum design, including named frameworks, programme structures, exercises, case packs, competency mappings or assessment designs.
 - General concepts may be expressed independently. Do not use the CRISP prompting framework, AiCore AI Fluency Framework, Automation Lens, AiCore suitability framework or any renamed version of them.
-- If the AiCore IP line is unclear, ask Shaun before drafting.
+- If the AiCore IP line is unclear, ask me before drafting.
