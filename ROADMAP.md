@@ -16,4 +16,3 @@ Nothing outstanding right now. The reciprocal link from Practical AI Sales Workf
 These are candidate subjects, not committed guides.
 
 - What should stay human-controlled
-- Before you put work data into AI

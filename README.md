@@ -38,6 +38,10 @@ Already know what you need help with? [Prompting Fundamentals: Give AI a Better 
 
 [When Not to Use AI](guides/when-not-to-use-ai.md) is a checklist for two specific categories that stay unsuitable for unsupervised AI use regardless of tool quality: unreviewed decisions with real effect on a person, and confident but unverified claims in a consequential domain. Tested in the [Ashworth & Vale example](examples/ashworth-vale-ai-safeguards-example.md) against six proposed AI uses, including ones designed to look safer or riskier than they actually are. [Read the honest review](evaluations/ashworth-vale-ai-safeguards-review.md): baseline **29/30**, guide-informed **30/30**, unchanged across a neutral attempt and a second attempt run under realistic pressure to approve everything. Neither output automatically failed.
 
+## Also available: before you put work data into AI
+
+[Before You Put Work Data Into AI](guides/before-you-put-work-data-into-ai.md) is a checklist for whether a specific piece of data is actually safe to submit, checking the tool and the data together rather than either alone. Tested in the [Delacroix Partners example](examples/delacroix-partners-ai-data-safety-example.md) against six planned AI uses, including ones designed to look safer or riskier than they actually are. [Read the honest review](evaluations/delacroix-partners-ai-data-safety-review.md): baseline **30/30**, guide-informed **30/30**, a tied result disclosed plainly rather than framed as a win. Neither output automatically failed.
+
 ## Existing real use evidence
 
 [Reusable AI Handover Workflow](evidence/real-use-reusable-handover-workflow.md) records repeated real use of a structured AI-assisted handover method. It supports the principles behind these guides, but it is not a test of using the current guides unchanged.
