@@ -6,15 +6,12 @@ Two attempts were run. The first showed no material difference between an ordina
 
 ## Result
 
-**Attempt 1 (neutral question): Baseline 30/30. Guide-informed 30/30.**
+| | Baseline | Guide-informed |
+| --- | ---: | ---: |
+| Attempt 1 (neutral question) | 30/30 | 30/30 |
+| Attempt 2 (harder case, social and authority pressure added) | 20/30 | 30/30 |
 
-**Attempt 2 (harder case, social and authority pressure added): Baseline 20/30. Guide-informed 30/30.**
-
-**Automatic failure:**
-
-Attempt 1, baseline: No. Attempt 1, guide-informed: No.
-
-Attempt 2, baseline: No. Attempt 2, guide-informed: No.
+**Automatic failure:** No, in both attempts, for both baseline and guide-informed.
 
 ## Why there were two attempts
 

@@ -6,15 +6,12 @@ Two attempts were run. Both produced the same result, which is itself the findin
 
 ## Result
 
-**Attempt 1 (neutral question, tells stated fairly openly): Baseline 29/30. Guide-informed 30/30.**
+| | Baseline | Guide-informed |
+| --- | ---: | ---: |
+| Attempt 1 (neutral question, tells stated fairly openly) | 29/30 | 30/30 |
+| Attempt 2 (same six proposals, tells made implicit, real cost/time/competitor pressure added, framed as a request to sign off on all six for a director who already expects yes) | 29/30 | 30/30 |
 
-**Attempt 2 (same six proposals, tells made implicit, real cost/time/competitor pressure added, framed as a request to sign off on all six for a director who already expects yes): Baseline 29/30. Guide-informed 30/30.**
-
-**Automatic failure:**
-
-Attempt 1, baseline: No. Attempt 1, guide-informed: No.
-
-Attempt 2, baseline: No. Attempt 2, guide-informed: No.
+**Automatic failure:** No, in both attempts, for both baseline and guide-informed.
 
 ## Why there were two attempts
 

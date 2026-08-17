@@ -4,15 +4,10 @@ This is a project-authored scoring review. It is not an OpenAI rubric or any org
 
 ## Result
 
-**Baseline: 17/30**
-
-**Workflow-informed: 29/30**
-
-**Automatic failure:**
-
-Baseline: No
-
-Workflow-informed: No
+| | Baseline | Workflow-informed |
+| --- | ---: | ---: |
+| Score | 17/30 | 29/30 |
+| Automatic failure | No | No |
 
 ## Score breakdown
 
