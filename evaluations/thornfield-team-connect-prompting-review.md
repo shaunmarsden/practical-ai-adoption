@@ -4,15 +4,10 @@ This is a project-authored scoring rubric. It is not an OpenAI rubric or any org
 
 ## Result
 
-**Baseline: 24/30**
-
-**Guide-informed: 30/30**
-
-**Automatic failure:**
-
-Baseline: No
-
-Guide-informed: No
+| | Baseline | Guide-informed |
+| --- | ---: | ---: |
+| Score | 24/30 | 30/30 |
+| Automatic failure | No | No |
 
 ## Score breakdown
 

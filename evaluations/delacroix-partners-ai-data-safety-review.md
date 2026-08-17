@@ -4,15 +4,10 @@ This is a project-authored scoring rubric. It is not endorsed by the NCSC, AiCor
 
 ## Result
 
-**Baseline: 30/30**
-
-**Guide-informed: 30/30**
-
-**Automatic failure:**
-
-Baseline: No
-
-Guide-informed: No
+| | Baseline | Guide-informed |
+| --- | ---: | ---: |
+| Score | 30/30 | 30/30 |
+| Automatic failure | No | No |
 
 This is a tied result, disclosed honestly rather than framed as a guide win.
 

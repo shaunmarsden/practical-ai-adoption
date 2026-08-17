@@ -4,15 +4,10 @@ This is a project-authored scoring rubric. It is not endorsed by Gartner, BCG, A
 
 ## Result
 
-**Baseline: 28/30**
-
-**Guide-informed: 30/30**
-
-**Automatic failure:**
-
-Baseline: No
-
-Guide-informed: No
+| | Baseline | Guide-informed |
+| --- | ---: | ---: |
+| Score | 28/30 | 30/30 |
+| Automatic failure | No | No |
 
 ## Score breakdown
 
