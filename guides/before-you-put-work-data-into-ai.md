@@ -23,7 +23,8 @@ Whether data is safe to submit to AI depends on two things together, not either 
 
 ## Why this needs its own check
 
-The UK National Cyber Security Centre's own guidance is direct on this: do not include sensitive information in queries to public LLMs, and do not submit queries that would cause a problem if made public. It names confidential business information and personal or health matters as examples, and sets out a concrete organisational path: either a private, contractually-governed AI tool, or a self-hosted model after a proper security assessment, alongside clear rules on what can and cannot be submitted.
+- **Do not include sensitive information in queries to public LLMs.** The UK National Cyber Security Centre's own guidance is direct: do not submit queries that would cause a problem if made public, naming confidential business information and personal or health matters as examples.
+- **There is a concrete organisational path for higher-sensitivity work.** Either a private, contractually-governed AI tool, or a self-hosted model after a proper security assessment, alongside clear rules on what can and cannot be submitted.
 
 Sources are listed at the bottom of this guide.
 
