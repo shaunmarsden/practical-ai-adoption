@@ -29,7 +29,8 @@ A feeling that AI helped is not the same as evidence that it helped. Both can be
 
 ## Why this needs its own check
 
-Research covering nearly 6,000 senior executives across the US, UK, Germany and Australia found that nine in ten reported no measurable impact on productivity or employment from AI over the previous three years, despite most of their firms actively using it. Separate research on CFO-reported outcomes documents a "productivity paradox": the productivity gains people believe AI delivered are consistently larger than the gains actually implied by revenue and employment figures.
+- **Nine in ten executives saw no measurable impact.** A survey of nearly 6,000 senior executives across the US, UK, Germany and Australia found this over the previous three years, despite most of their firms actively using AI.
+- **Believed gains are bigger than measured ones.** Separate research on CFO-reported outcomes documents a "productivity paradox": the productivity gains people believe AI delivered are consistently larger than the gains actually implied by revenue and employment figures.
 
 Neither finding says AI cannot help. They say that a positive impression, on its own, is weak evidence of a real outcome. That gap is exactly where this guide is aimed.
 
