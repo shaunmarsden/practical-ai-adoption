@@ -28,7 +28,8 @@ A demo shows that AI can do something. It does not show that people will keep do
 
 ## Why this needs its own check
 
-Gartner predicts that through 2026, organisations will abandon 60% of AI projects that are not supported by AI-ready data, and separately predicts that 30% of generative AI projects will be abandoned after proof of concept by the end of 2025, driven by poor data quality, inadequate risk controls, escalating costs or unclear business value. BCG's 2025 research across more than 1,250 companies found 60% are not achieving material value from AI at all, and only 5% are achieving value at scale, despite most leaders ranking AI a top priority.
+- **Gartner predicts abandonment on two separate fronts.** Through 2026, organisations will abandon 60% of AI projects that are not supported by AI-ready data; separately, 30% of generative AI projects will be abandoned after proof of concept by the end of 2025, driven by poor data quality, inadequate risk controls, escalating costs or unclear business value.
+- **BCG found most companies are not getting value at all.** Its 2025 research across more than 1,250 companies found 60% are not achieving material value from AI at all, and only 5% are achieving value at scale, despite most leaders ranking AI a top priority.
 
 None of these findings say the underlying models stopped working. They point at the same gap: what happens, or fails to happen, after a promising start.
 

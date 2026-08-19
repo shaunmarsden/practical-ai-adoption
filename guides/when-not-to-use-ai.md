@@ -23,7 +23,8 @@ Most guidance on using AI well assumes the task is a reasonable one to try. This
 
 ## Why this needs its own check
 
-Stanford RegLab found that specialised legal AI tools, marketed as reliable, still hallucinate 17 to 33% of the time. The researchers describe providers' "hallucination-free" claims as overstated. The UK's Information Commissioner's Office requires that decisions with a legal or similarly significant effect on someone have meaningful, active human involvement, not a token check, and notes that many organisations do not realise they are already making this kind of automated decision.
+- **Specialised legal AI tools still hallucinate 17 to 33% of the time.** Stanford RegLab found this despite the tools being marketed as reliable; the researchers describe providers' "hallucination-free" claims as overstated.
+- **Human involvement in high-stakes decisions has to be real, not a token check.** The UK's Information Commissioner's Office requires meaningful, active human involvement in decisions with a legal or similarly significant effect on someone, and notes that many organisations do not realise they are already making this kind of automated decision.
 
 Neither finding is about AI being generally unreliable. Both point at the same two specific patterns: confident but unverified claims in a domain where being wrong matters, and decisions with real effect on people that nobody meaningfully reviews.
 
