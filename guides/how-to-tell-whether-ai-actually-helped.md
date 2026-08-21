@@ -43,6 +43,7 @@ Sources are listed at the bottom of this guide.
 - **A sample that represents the whole job, not just the easy parts.** If only some cases got logged in detail, ask which ones were skipped and why. People tend to have time to log the simple cases and no time to log the hard ones, which quietly tilts the evidence toward a win.
 - **An honest look at what went wrong, not only what went well.** One clear mistake, especially in a sensitive or regulated area, can matter more than a dozen smooth cases. Ask how the mistake was found, and how long it took.
 - **Awareness that being watched changes behaviour.** People tend to work more carefully, and report more positively, while they know a trial is being closely monitored. That effect fades once something becomes routine.
+- **Comfort with a null result.** If a careful check finds no material difference, that is a legitimate outcome, not a failed test. Treating "no difference found" as disappointing, rather than as useful information, is exactly what pushes people toward inflating a weak signal into a confident claim.
 
 ## What to watch for
 
@@ -53,7 +54,7 @@ Sources are listed at the bottom of this guide.
 
 ## Try it on your own use of AI
 
-[Read the Calthorpe & Rees example](../examples/calthorpe-rees-ai-trial-evaluation-example.md) to see this checklist applied to a deliberately ambiguous trial, once asked as a neutral question and once asked under realistic pressure to say yes. [Read the honest review](../evaluations/calthorpe-rees-ai-trial-evaluation-review.md) for what changed between the two attempts and why.
+[Read the Calthorpe & Rees example](../examples/calthorpe-rees-ai-trial-evaluation-example.md) to see this checklist applied to a deliberately ambiguous trial, once asked as a neutral question and once asked under realistic pressure to say yes. [Read the honest review](../evaluations/calthorpe-rees-ai-trial-evaluation-review.md) for what changed between the two attempts and why, including a first attempt that found no material difference at all, reported plainly rather than reframed as a win.
 
 ## Basis for this guide
 
