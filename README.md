@@ -42,6 +42,10 @@ Already know what you need help with? [Prompting Fundamentals: Give AI a Better 
 
 [Before You Put Work Data Into AI](guides/before-you-put-work-data-into-ai.md) is a checklist for whether a specific piece of data is actually safe to submit, checking the tool and the data together rather than either alone. Tested in the [Delacroix Partners example](examples/delacroix-partners-ai-data-safety-example.md) against six planned AI uses, including ones designed to look safer or riskier than they actually are. [Read the honest review](evaluations/delacroix-partners-ai-data-safety-review.md): baseline **30/30**, guide-informed **30/30**, a tied result disclosed plainly rather than framed as a win. Neither output automatically failed.
 
+## Also available: before you let AI tools work together unsupervised
+
+[Before You Let AI Tools Work Together Unsupervised](guides/before-you-let-ai-tools-work-together-unsupervised.md) is a checklist for chained AI steps, where one step's output feeds directly into the next step's action: checking for a hard-to-reverse handoff and a step that depends on resolving genuine ambiguity, not just clean test cases. Tested in the [Grantley Utilities example](examples/grantley-utilities-agentic-oversight-example.md) against six proposed automation chains at a fictional utility company, including ones designed to look safer or riskier than they actually are. [Read the honest review](evaluations/grantley-utilities-agentic-oversight-review.md): baseline **14/30**, guide-informed **29/30**. Neither output automatically failed.
+
 ## Existing real use evidence
 
 [Reusable AI Handover Workflow](evidence/real-use-reusable-handover-workflow.md) records repeated real use of a structured AI-assisted handover method. It supports the principles behind these guides, but it is not a test of using the current guides unchanged.
