@@ -46,6 +46,10 @@ Already know what you need help with? [Prompting Fundamentals: Give AI a Better 
 
 [The Gap Between AI Access and Actual Use](guides/the-gap-between-ai-access-and-actual-use.md) is a checklist for checking a person or team's actual AI use before planning training, a rollout or a set of expectations around it, since a job title, a confident self-report or seniority are not evidence of actual use. Tested in the [Hollis & Speight example](examples/hollis-speight-ai-access-gap-example.md) against a fictional professional services team where titles, confidence and actual use do not line up the way a manager assumes. [Read the honest review](evaluations/hollis-speight-ai-access-gap-review.md): baseline **11/30**, guide-informed **28/30**. Neither output automatically failed.
 
+## Also available: before you let AI tools work together unsupervised
+
+[Before You Let AI Tools Work Together Unsupervised](guides/before-you-let-ai-tools-work-together-unsupervised.md) is a checklist for chained AI steps, where one step's output feeds directly into the next step's action: checking for a hard-to-reverse handoff and a step that depends on resolving genuine ambiguity, not just clean test cases. Tested in the [Grantley Utilities example](examples/grantley-utilities-agentic-oversight-example.md) against six proposed automation chains at a fictional utility company, including ones designed to look safer or riskier than they actually are. [Read the honest review](evaluations/grantley-utilities-agentic-oversight-review.md): baseline **14/30**, guide-informed **29/30**. Neither output automatically failed.
+
 ## Existing real use evidence
 
 [Reusable AI Handover Workflow](evidence/real-use-reusable-handover-workflow.md) records repeated real use of a structured AI-assisted handover method. It supports the principles behind these guides, but it is not a test of using the current guides unchanged.
