@@ -142,4 +142,4 @@ The [Juniper Vale example](../examples/juniper-vale-prompt-to-workflow-example.m
 
 ## Basis for this guide
 
-The workflow brief, source checks, human handoff and fictional test are this project's independent practical guidance. They are not supplied, reviewed or endorsed by OpenAI, AiCore or any other organisation.
+The workflow brief, source checks, human handoff and fictional test are this project's independent practical guidance. They are not supplied, reviewed or endorsed by AiCore or any other organisation.
