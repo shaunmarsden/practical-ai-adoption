@@ -24,7 +24,7 @@ Most guidance on using AI well assumes the task is a reasonable one to try. This
 ## Why this needs its own check
 
 - **Specialised legal AI tools still hallucinate 17 to 33% of the time.** Stanford RegLab found this despite the tools being marketed as reliable; the researchers describe providers' "hallucination-free" claims as overstated.
-- **Human involvement in high-stakes decisions has to be real, not a token check.** The UK's Information Commissioner's Office requires meaningful, active human involvement in decisions with a legal or similarly significant effect on someone, and notes that many organisations do not realise they are already making this kind of automated decision.
+- **Human involvement in high-stakes decisions has to be real, not a token check.** The UK's Information Commissioner's Office is explicit that where a decision has a legal or similarly significant effect on someone, human involvement must be active rather than a token gesture. The law underneath this changed in 2025 and the ICO's guidance is being rewritten to match, but the safeguard did not disappear: the newer regime still expects an organisation to show the safeguards around such a decision, rather than removing the need for them.
 
 Neither finding is about AI being generally unreliable. Both point at the same two specific patterns: confident but unverified claims in a domain where being wrong matters, and decisions with real effect on people that nobody meaningfully reviews.
 
@@ -50,6 +50,9 @@ Sources are listed at the bottom of this guide.
 
 - Stanford RegLab, "Hallucination-Free? Assessing the Reliability of Leading AI Legal Research Tools":
   https://reglab.stanford.edu/publications/hallucination-free-assessing-the-reliability-of-leading-ai-legal-research-tools/
-- UK Information Commissioner's Office guidance on automated decision-making and profiling.
+- UK Information Commissioner's Office, guidance on automated decision-making and profiling:
+  https://ico.org.uk/for-organisations/uk-gdpr-guidance-and-resources/individual-rights/automated-decision-making-and-profiling/
+
+Checked 26 August 2026: the Data (Use and Access) Act 2025 revised the automated decision-making provisions in the UK GDPR, replacing a general prohibition with a permissive, safeguard-led approach. The ICO consulted on replacement guidance between 31 March and 29 May 2026 and final guidance is expected later in 2026. The two patterns this guide describes are not affected, but confirm the current legal position before relying on it for a specific decision about a real person.
 
 This is a project-authored checklist, not a named framework. It is not endorsed by Stanford RegLab, the ICO, AiCore or any other organisation. It does not cover every way AI use can go wrong, only these two specific, evidenced patterns.
