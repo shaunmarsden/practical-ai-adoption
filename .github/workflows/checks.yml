@@ -1,0 +1,26 @@
+name: Repository checks
+
+# Three cheap, deterministic checks: broken relative links, punctuation
+# AGENTS.md rules out, and an evaluation whose stated score disagrees with its
+# own breakdown table. They confirm arithmetic, links and punctuation only.
+# They cannot judge whether a score is the right score.
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  checks:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out the repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Run repository checks
+        run: python3 .github/scripts/repo_checks.py
