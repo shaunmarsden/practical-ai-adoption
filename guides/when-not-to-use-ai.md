@@ -24,7 +24,7 @@ Most guidance on using AI well assumes the task is a reasonable one to try. This
 ## Why this needs its own check
 
 - **Specialised legal AI tools still hallucinate 17 to 33% of the time.** Stanford RegLab found this despite the tools being marketed as reliable; the researchers describe providers' "hallucination-free" claims as overstated.
-- **Human involvement in high-stakes decisions has to be real, not a token check.** The UK's Information Commissioner's Office is explicit that where a decision has a legal or similarly significant effect on someone, human involvement must be active rather than a token gesture. The law underneath this changed in 2025 and the ICO's guidance is being rewritten to match, but the safeguard did not disappear: the newer regime still expects an organisation to show the safeguards around such a decision, rather than removing the need for them.
+- **Human involvement in high-stakes decisions has to be real, not a token check.** The UK's Information Commissioner's Office is explicit that where a decision has a legal or similarly significant effect on someone, human involvement must be active rather than a token gesture. The law underneath this changed in 2025 and the ICO's guidance is being rewritten to match, but the safeguard did not disappear: the newer regime still expects an organisation to show the safeguards around such a decision, rather than removing the need for them. The ICO's own impact assessment for that rewrite records why the clarification is needed: "Organisations can also be unsure about key concepts. For example, what counts as a 'decision', when a decision is 'solely automated', or what 'meaningful human involvement' looks like." If those are open enough questions for the regulator to be rewriting its guidance around them, they are worth checking rather than assuming in your own case.
 
 Neither finding is about AI being generally unreliable. Both point at the same two specific patterns: confident but unverified claims in a domain where being wrong matters, and decisions with real effect on people that nobody meaningfully reviews.
 
@@ -52,6 +52,8 @@ Sources are listed at the bottom of this guide.
   https://reglab.stanford.edu/publications/hallucination-free-assessing-the-reliability-of-leading-ai-legal-research-tools/
 - UK Information Commissioner's Office, guidance on automated decision-making and profiling:
   https://ico.org.uk/for-organisations/uk-gdpr-guidance-and-resources/individual-rights/automated-decision-making-and-profiling/
+- UK Information Commissioner's Office, "Update to automated decision making guidance: Draft Impact Assessment," March 2026, section 3.2.1 on information asymmetry:
+  https://ico.org.uk/media2/bbzdvqqy/adm-impact-assessment.pdf
 
 Checked 26 August 2026: the Data (Use and Access) Act 2025 revised the automated decision-making provisions in the UK GDPR, replacing a general prohibition with a permissive, safeguard-led approach. The ICO consulted on replacement guidance between 31 March and 29 May 2026 and final guidance is expected later in 2026. The two patterns this guide describes are not affected, but confirm the current legal position before relying on it for a specific decision about a real person.
 
