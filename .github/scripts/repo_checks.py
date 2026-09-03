@@ -175,6 +175,29 @@ if GUIDES and EVALUATIONS:
                  "scoring for the guide it tests")
 
 
+# 5. Every guide must appear in the evidence matrix.
+#
+# The matrix claims to be the page to read before trusting any score, which
+# only holds while it lists everything. A guide added later and never added
+# here would look, to a reader checking the evidence, like a guide with no
+# test rather than one nobody updated the matrix for. The sibling repository's
+# equivalent page went stale for four weeks in exactly this way.
+MATRIX = "EVIDENCE-STATUS.md"
+if os.path.exists(MATRIX):
+    matrix = read(MATRIX)
+    for g in sorted(f for f in MD if f.startswith("guides/")):
+        if os.path.basename(g) == "README.md":
+            continue
+        if g not in matrix:
+            fail("guide-not-in-matrix", MATRIX,
+                 f"{g} exists but is not listed in the evidence matrix")
+    # And every scored review should be reachable from it, for the same reason.
+    for ev in sorted(f for f in MD if f.startswith("evaluations/")):
+        if os.path.basename(ev) not in matrix:
+            fail("review-not-in-matrix", MATRIX,
+                 f"{ev} is a scored test the evidence matrix does not list")
+
+
 # Report
 if failures:
     print(f"Repository checks failed ({len(failures)} issue(s)):\n")

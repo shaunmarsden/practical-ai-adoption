@@ -50,6 +50,10 @@ Already know what you need help with? [Prompting Fundamentals: Give AI a Better 
 
 [Before You Let AI Tools Work Together Unsupervised](guides/before-you-let-ai-tools-work-together-unsupervised.md) is a checklist for chained AI steps, where one step's output feeds directly into the next step's action: checking for a hard-to-reverse handoff and a step that depends on resolving genuine ambiguity, not just clean test cases. Tested in the [Grantley Utilities example](examples/grantley-utilities-agentic-oversight-example.md) against six proposed automation chains at a fictional utility company, including ones designed to look safer or riskier than they actually are. [Read the honest review](evaluations/grantley-utilities-agentic-oversight-review.md): baseline **14/30**, guide-informed **29/30**. Neither output automatically failed.
 
+## What is actually proven, and what is not
+
+[Evidence Status](EVIDENCE-STATUS.md) is the one page to read before trusting any score here. Every guide has a worked example and a scored test. No guide has been used on real work and logged, nobody outside this project has scored anything, and nine of the twelve tests ran each prompt only once, which this repository has since measured as weak evidence.
+
 ## Existing real use evidence
 
 [Reusable AI Handover Workflow](evidence/real-use-reusable-handover-workflow.md) records repeated real use of a structured AI-assisted handover method. It supports the principles behind these guides, but it is not a test of using the current guides unchanged.
