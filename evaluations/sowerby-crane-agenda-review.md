@@ -23,6 +23,31 @@ That is worth stating plainly, because it is the same finding as the internal up
 
 The scenario was revised once. The same project, one meeting later, with the uncertainty embedded rather than flagged: a decision the organiser believes was taken and a colleague remembers differently, a partner's offhand remark that reads like approval, a length left as "half day probably, or two hours", and a supplier decision the organiser wants rather than one the group agreed to. Neither prompt was changed. A fresh, isolated run was then taken for both. That is Attempt 2, shown in [the worked example](../examples/sowerby-crane-agenda-example.md).
 
+## Run-to-run variance
+
+Attempt 2 was a single run of each prompt. The [internal update test](netherford-internal-update-review.md) later showed that re-running one identical prompt on identical notes moved its score by a point, which made a single-run six-point gap worth checking rather than trusting. Both Attempt 2 prompts were therefore re-run twice more on the same notes, in fresh isolated contexts, with nothing changed.
+
+| Prompt | Run 1 | Run 2 | Run 3 | Range |
+| --- | ---: | ---: | ---: | --- |
+| Ordinary prompt | 23/30 | 24/30 | 24/30 | 23 to 24 |
+| Guide-informed starter | 29/30 | 30/30 | 29/30 | 29 to 30 |
+
+The gap holds. Every starter run scored at least five points above every ordinary-prompt run, and the two ranges do not overlap or come close to it. On the narrowest possible reading the gap is five points; on the widest, seven.
+
+More useful than the numbers is which failures repeated. Attempt 2 recorded three places where the ordinary prompt closed a question the notes had left open. Across three runs:
+
+| Question the notes left open | Runs where the ordinary prompt closed it |
+| --- | --- |
+| Does "happy for us to get on with it" mean Marguerite approves the spend? | 3 of 3 |
+| Is a supplier decision the agreed purpose, or the organiser's wish? | 3 of 3 |
+| Is the meeting two hours or a half day? | 1 of 3 |
+
+The first two are reproducible failures. The third is not: the two later runs both quoted the note back ("You wrote 'half day probably, or two hours'"), built the agenda for two hours and handed the choice back with a reason, which is what the starter does. Attempt 2's write-up lists all three as failures of the ordinary prompt. Only two of them survive repetition, and this section is the correction.
+
+All three starter runs asked whether Marguerite's remark amounted to spend approval, and all three kept the supplier decision conditional. The strongest single line came from a repeat rather than the run originally recorded: "Happy for us to get on with it is not a spend approval, and it was given without the figures in front of her."
+
+The starter's own weakness also repeated. Its longest run was a repeat, and two of the three ran long enough to need trimming before they could be sent as an agenda, which is why practical usefulness is not a clean five for it.
+
 ## Score breakdown, Attempt 2
 
 | Area | Baseline | Guide-informed | Why it matters |
@@ -30,7 +55,7 @@ The scenario was revised once. The same project, one meeting later, with the unc
 | Factual and evidence fidelity | 3 | 5 | The baseline wrote that Marguerite "confirmed at the last meeting she's happy for us to proceed". The notes say she "said she was happy for us to get on with it". Turning that into a confirmation, and marking her optional on the strength of it, is the kind of upgrade nobody rereads. |
 | Task alignment | 4 | 5 | Both produced a usable agenda. The starter's version also delivers the four things asked for by name, purpose, topics, decisions needed and next steps, plus the pre-meeting flags. |
 | Use of context | 5 | 5 | Both used every item, including Dilan's leave week and the 31 March renewal as the outer limit. |
-| Unknowns, updates and conflicts | 3 | 5 | Both caught the Option A dispute. The baseline then closed three open questions on its own: the length, the objective and Marguerite's status. The guide-informed output left all three open with the trade-offs stated. |
+| Unknowns, updates and conflicts | 3 | 5 | Both caught the Option A dispute. The baseline then closed three open questions on its own: the length, the objective and Marguerite's status. The guide-informed output left all three open with the trade-offs stated. On repeat runs the objective and Marguerite failures held every time and the length one did not, which the variance section above records. |
 | Practical usefulness | 5 | 4 | The baseline is the better agenda as written: timed, tight, sendable. The guide-informed version is long, and its own item timings add up to 65 minutes while it says they assume roughly two hours. It needs trimming before it goes out. |
 | Responsible use and human control | 3 | 5 | Deciding a partner is optional, fixing the meeting's length and declaring the objective are three decisions the notes explicitly left with the organiser. The baseline made all three. |
 
@@ -89,7 +114,8 @@ The baseline is the better document. The starter's version is the better prepara
 ## What this test supports
 
 - On notes that flag their own gaps, this starter added nothing measurable. The ordinary prompt scored the same.
-- On notes where a decision is disputed and an approval is ambiguous, the starter held and the ordinary prompt did not. The ordinary prompt closed three questions the notes had explicitly left open.
+- On notes where a decision is disputed and an approval is ambiguous, the starter held and the ordinary prompt did not. Across three runs of each, the ordinary prompt treated a vague remark as spend approval and stated a wished-for objective as agreed every single time, and the starter questioned both every single time.
+- The six-point gap survives repetition. Three runs of each prompt gave 23, 24 and 24 against 29, 30 and 29, ranges that do not overlap.
 - The instruction that did the work is "flag anything missing that I need to decide before the meeting". It gives an open question a destination, which is exactly what the internal update starter lacks.
 
 ## What this test does not support
@@ -99,14 +125,15 @@ The baseline is the better document. The starter's version is the better prepara
 - It does not show the starter produces a better finished agenda. On Attempt 2 it produced a worse one, and a more useful set of preparation notes.
 - It does not show a real-world business outcome or measured time saving.
 - It does not include an independent external user's result.
-- Both runs used the same model, and the same person designed the scenario, wrote the answer key, ran both prompts and scored both outputs. Six points is larger than the gap a single scorer should dismiss, but it is still one scenario scored once.
+- All runs used the same model, and the same person designed the scenario, wrote the answer key, ran every prompt and scored every output. Repetition rules out run-to-run noise as the explanation for the gap. It does not rule out a scoring bias held consistently by one scorer across all six runs, which is the limitation repetition cannot touch.
+- It is still one scenario. Three runs of one scenario is not three scenarios.
 
 ## Test integrity
 
-Four runs in total, each in a fresh isolated context. Each runner received only its own prompt and the fictional notes for its attempt. None received the other runs, the rubric, the automatic-failure criteria, the answer key, or any indication that this was a test or a comparison. Each attempt's answer key was written before its runs.
+Eight runs in total, each in a fresh isolated context. Each runner received only its own prompt and the fictional notes for its attempt. None received the other runs, the rubric, the automatic-failure criteria, the answer key, or any indication that this was a test or a comparison. Each attempt's answer key was written before its runs.
 
-All four runs used Claude Opus 5. Outputs are reproduced with only dash glyphs and currency symbols normalised to ASCII.
+All eight runs used Claude Opus 5. Outputs are reproduced with only dash glyphs and currency symbols normalised to ASCII. The [worked example](../examples/sowerby-crane-agenda-example.md) shows the first run of each prompt on the harder notes; the two repeat runs of each are scored above but not reproduced in full, since they differ in wording rather than in what they got right or wrong.
 
 ## Next evidence
 
-Use this starter on a real meeting where a previous decision is genuinely disputed, and log whether it asked the question a colleague would have asked. Or test whether the starter still holds when the notes contain no disputed decision at all, which is the ordinary case and the one Attempt 1 suggests it does not improve.
+Use this starter on a real meeting where a previous decision is genuinely disputed, and log whether it asked the question a colleague would have asked. Or test whether the starter still holds when the notes contain no disputed decision at all, which is the ordinary case and the one Attempt 1 suggests it does not improve. What repetition cannot fix is that one person wrote the scenario and scored every run, so the most valuable next evidence is still somebody else scoring these same eight outputs against the same rubric.
