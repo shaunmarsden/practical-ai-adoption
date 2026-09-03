@@ -33,13 +33,14 @@ Turn the notes below into a short internal update for [team].
 
 Keep the tone clear and straightforward.
 Do not invent progress, decisions or deadlines.
-Separate what is confirmed from what still needs checking.
+Sort each point into what is confirmed, what still needs checking, or what the notes disagree about.
+Only call something confirmed if the notes actually settle it. Somebody's impression is not confirmation.
 
 Notes:
 [paste notes]
 ```
 
-Tested, with a result worth knowing before you rely on it. The [Netherford internal update example](../examples/netherford-internal-update-example.md) ran this starter against an ordinary "write this up for the team" prompt, twice. [Read the honest review](../evaluations/netherford-internal-update-review.md): on notes that already flagged their own uncertainty the two scored the same, and on harder notes the ordinary prompt scored slightly higher, because being told to sort everything into confirmed or still-to-check pushed three contested items into the confirmed column. If something is disputed rather than simply unchecked, say so in a third group of its own.
+The third and fourth lines are here because of a test that failed. An earlier version said only "separate what is confirmed from what still needs checking", and on notes containing a disputed date it pushed three contested items into the confirmed column. The [Netherford internal update example](../examples/netherford-internal-update-example.md) shows that run, the ordinary prompt that beat it, and the re-run after the wording was fixed. [Read the honest review](../evaluations/netherford-internal-update-review.md): the fix worked, and an ordinary "write this up for the team" prompt still scored as well on the same notes. Use this starter for the discipline of sorting, not because it is more accurate than asking plainly.
 
 ### Planning: turn rough notes into an agenda
 
@@ -86,7 +87,7 @@ AI can help you prepare work. It cannot take responsibility for it.
 
 Run the task alongside your normal way of working once or twice. Notice whether it saved time after editing, whether it missed anything and whether you trusted the final result. A useful first experiment does not need a spreadsheet or a big rollout. It just needs an honest comparison with the work you would have done anyway.
 
-This page is an orientation guide, not a promise that any starter will work unchanged for every job. All three starters above have now been tested here, each on fictional notes, and they did not all hold up equally: the agenda starter earned its place, the action list starter stopped an ordinary prompt from guessing, and the internal update starter added nothing and on harder notes cost a point. The linked examples show how to test a prompt against source material before relying on it.
+This page is an orientation guide, not a promise that any starter will work unchanged for every job. All three starters above have now been tested here, each on fictional notes, and they did not all hold up equally. The agenda starter earned its place, and the action list starter stopped an ordinary prompt from guessing at owners and dates. The internal update starter failed its first hard test, was rewritten, and even after the fix an ordinary prompt matched it. Testing changed one of these prompts and told us the other two were worth keeping, which is the point: the linked examples show how to test a prompt against source material before relying on it.
 
 ## Where to go next
 
