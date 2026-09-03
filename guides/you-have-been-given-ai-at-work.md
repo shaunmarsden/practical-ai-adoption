@@ -39,6 +39,8 @@ Notes:
 [paste notes]
 ```
 
+Tested, with a result worth knowing before you rely on it. The [Netherford internal update example](../examples/netherford-internal-update-example.md) ran this starter against an ordinary "write this up for the team" prompt, twice. [Read the honest review](../evaluations/netherford-internal-update-review.md): on notes that already flagged their own uncertainty the two scored the same, and on harder notes the ordinary prompt scored slightly higher, because being told to sort everything into confirmed or still-to-check pushed three contested items into the confirmed column. If something is disputed rather than simply unchecked, say so in a third group of its own.
+
 ### Planning: turn rough notes into an agenda
 
 ```text
@@ -51,6 +53,8 @@ Flag anything missing that I need to decide before the meeting.
 Notes:
 [paste notes]
 ```
+
+This is the strongest tested of the three. The [Sowerby and Crane agenda example](../examples/sowerby-crane-agenda-example.md) runs it against an ordinary "turn these notes into an agenda" prompt. [Read the honest review](../evaluations/sowerby-crane-agenda-review.md): on straightforward notes the two scored the same, but where a previous decision was disputed and a partner's offhand remark could be read as approval, the ordinary prompt closed three questions the notes had left open and this starter asked about all three. The last line is what does the work, because it gives an open question somewhere to go.
 
 ### Summarising: make an action list from notes
 
@@ -82,11 +86,11 @@ AI can help you prepare work. It cannot take responsibility for it.
 
 Run the task alongside your normal way of working once or twice. Notice whether it saved time after editing, whether it missed anything and whether you trusted the final result. A useful first experiment does not need a spreadsheet or a big rollout. It just needs an honest comparison with the work you would have done anyway.
 
-This page is an orientation guide, not a promise that any starter will work unchanged for every job. Of the three starters above, only the action list has been tested here, on one fictional scenario. The linked examples show how to test a prompt against source material before relying on it.
+This page is an orientation guide, not a promise that any starter will work unchanged for every job. All three starters above have now been tested here, each on fictional notes, and they did not all hold up equally: the agenda starter earned its place, the action list starter stopped an ordinary prompt from guessing, and the internal update starter added nothing and on harder notes cost a point. The linked examples show how to test a prompt against source material before relying on it.
 
 ## Where to go next
 
 - **Need to choose a task?** Read [Finding a Good First AI Use Case](finding-a-good-first-ai-use-case.md).
 - **Know the task but need a better brief?** Use [Prompting Fundamentals](prompting-fundamentals.md).
 - **Want to see the prompt starter tested?** Read the [Thornfield prompting example](../examples/thornfield-team-connect-prompting-example.md), then [the honest review](../evaluations/thornfield-team-connect-prompting-review.md) that scores it.
-- **Want to see the action list starter tested?** Read the [Ambleforth action list example](../examples/ambleforth-action-list-example.md) and [its review](../evaluations/ambleforth-action-list-review.md).
+- **Want to see the starters tested?** Each has a worked comparison and a scored review: [action list](../evaluations/ambleforth-action-list-review.md), [internal update](../evaluations/netherford-internal-update-review.md), [meeting agenda](../evaluations/sowerby-crane-agenda-review.md).
