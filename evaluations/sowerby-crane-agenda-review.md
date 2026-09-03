@@ -32,7 +32,7 @@ Attempt 2 was a single run of each prompt. The [internal update test](netherford
 | Ordinary prompt | 23/30 | 24/30 | 24/30 | 23 to 24 |
 | Guide-informed starter | 29/30 | 30/30 | 29/30 | 29 to 30 |
 
-The gap holds. Every starter run scored at least five points above every ordinary-prompt run, and the two ranges do not overlap or come close to it. On the narrowest possible reading the gap is five points; on the widest, seven.
+The gap holds. Every starter run scored at least five points above every ordinary-prompt run, and the two ranges do not overlap or come close to it. On the narrowest possible reading the gap is five points; on the widest, seven. This is the widest of the three starters: the [action list](ambleforth-action-list-review.md) narrows to two points at its closest once repeated, and the [internal update](netherford-internal-update-review.md) has no gap at all.
 
 More useful than the numbers is which failures repeated. Attempt 2 recorded three places where the ordinary prompt closed a question the notes had left open. Across three runs:
 
