@@ -4,7 +4,7 @@ This is a project-authored scoring rubric. It is not endorsed by any organisatio
 
 This scores the [Netherford internal update example](../examples/netherford-internal-update-example.md), which tests the internal update starter in [You Have Been Given AI at Work](../guides/you-have-been-given-ai-at-work.md).
 
-Two attempts were run. The first showed no difference between an ordinary prompt and the starter. The scenario was then made harder, and the second attempt showed a difference in the opposite direction to the one expected: the ordinary prompt scored higher. Both are recorded here.
+Three attempts were run. The first showed no difference. The second, on harder notes, showed a difference in the opposite direction to the one expected: the ordinary prompt scored higher, because the starter's two-column sort had nowhere to put a contested item. The starter was then rewritten and the second attempt re-run unchanged. The rewrite fixed the defect and still did not beat an ordinary prompt. All three are recorded here.
 
 ## Result
 
@@ -12,6 +12,7 @@ Two attempts were run. The first showed no difference between an ordinary prompt
 | --- | ---: | ---: |
 | Attempt 1 (notes that label their own uncertainty) | 29/30 | 29/30 |
 | Attempt 2 (harder notes, uncertainty unlabelled, two internal conflicts) | 29/30 | 28/30 |
+| Attempt 3 (same notes and prompts as Attempt 2, starter's sorting instruction rewritten) | 30/30 | 29/30 |
 
 **Automatic failure:** No, in both attempts, for both baseline and guide-informed.
 
@@ -39,6 +40,48 @@ The scenario was revised once. The same project, a fortnight later, with the unc
 - **3:** Useful with careful review
 - **4:** Strong, minor correction needed
 - **5:** Strong enough to support a human decision, subject to normal checking
+
+## Score breakdown, Attempt 3
+
+The starter's third instruction was replaced with two lines: sort each point into confirmed, still needs
+checking, or what the notes disagree about, and only call something confirmed if the notes actually
+settle it, because somebody's impression is not confirmation. Nothing else changed. The notes and the
+ordinary prompt were identical to Attempt 2, and both were run again in fresh isolated contexts.
+
+| Area | Baseline | Guide-informed | Why it matters |
+| --- | ---: | ---: | --- |
+| Factual and evidence fidelity | 5 | 4 | This baseline run left "the 15th" and "the 8th" alone instead of inferring months, which the previous baseline run did not. The revised starter still wrote "15 November" while leaving "the 8th" un-inferred, so it resolves one date and not the other. |
+| Task alignment | 5 | 5 | Both produced a short, readable update. |
+| Use of context | 5 | 5 | Both used all eight items. The starter also derived that eight branches remain untested. |
+| Unknowns, updates and conflicts | 5 | 5 | The rewrite worked. All three previously misfiled items moved to the right group, and the starter additionally split the fact that testing has begun from Ines's impression of how it is going, which no earlier run did. The baseline flagged the date conflict twice, inline and in a closing note. |
+| Practical usefulness | 5 | 5 | The starter's third group puts the decision that has to be made before the 8th in a section of its own. The baseline's two closing flags say the same thing in fewer words. |
+| Responsible use and human control | 5 | 5 | Neither took action. Both left the date decision with a person. |
+
+## What the rewrite fixed, and what it did not
+
+It fixed the defect it was written for, completely. Every item that had been misfiled under "Confirmed"
+moved: Marguerite's impression of search speed and the unsigned kiosk plan into "still to check", and the
+disputed go live date into the new third group, where it reads as the decision it actually is. The starter
+went further than any earlier run by separating "branch testing started Monday", which is a fact, from
+"Ines says feedback is positive", which is not.
+
+It did not make the starter better than asking plainly. The ordinary prompt scored 30 out of 30 on this
+run, against the starter's 29.
+
+## The variance this test accidentally measured
+
+Attempt 3 re-ran the ordinary prompt unchanged, on unchanged notes, purely so the comparison would be
+internally consistent. It scored 30. The same prompt on the same notes had scored 29 the run before.
+
+That one-point movement, with nothing changed at all, is the same size as the gap Attempt 2 reported and
+the same size as the gap Attempt 3 reports. It is the clearest evidence in this repository for a
+limitation every review here already states in words: a single run scored once by one person cannot
+resolve a difference of one point. Attempt 2's finding should be read as "the starter had a specific,
+reproducible defect", which it did, and not as "the ordinary prompt is one point better", which this run
+contradicts.
+
+The six-point gap in the [agenda starter review](sowerby-crane-agenda-review.md) sits well outside this
+range. The one-point gaps here do not.
 
 ## What each run did with the harder notes
 
@@ -83,26 +126,32 @@ Both runs turned "the 15th" and "the 8th" into November and October. That is pro
 ## What this test supports
 
 - On notes that already label their own uncertainty, this starter added nothing. The ordinary prompt scored the same.
-- On harder notes, the starter's confirmed-or-checking split was a liability, not a help. It forced a binary sort on three items that were neither, and the ordinary prompt got all three right by not sorting them.
-- Both prompts, in both attempts, attributed impressions to the people who held them and kept an estimate away from a sourced figure. Neither invented a date, a decision or a piece of progress.
+- The two-column version had a real, specific defect: given only confirmed and still-to-check, it filed a disputed date, an impression and an unsigned plan as confirmed.
+- Adding a third group for what the notes disagree about, plus a line saying an impression is not confirmation, fixed that defect on a re-run of the same notes.
+- The fix did not make the starter more accurate than asking plainly. On these notes an ordinary prompt matched or beat it in all three attempts.
+- Across all three attempts and both prompts, no run invented a date, a decision or a piece of progress. Every impression was attributed to the person who held it.
+- Re-running one identical prompt on identical notes moved its score by a point, which puts a number on how much weight a one-point gap can carry here.
 
 ## What this test does not support
 
-- This is two fictional attempts on one fictional project.
+- This is three fictional attempts on one fictional project.
 - It is a builder-run test, not independent validation.
 - It does not show that the starter is wrong in general. It shows that on these notes the split cost more than it gained, and that a two-column instruction needs a third option for contested items.
 - It does not show a real-world business outcome or measured time saving.
 - It does not include an independent external user's result.
-- Both runs used the same model. A one-point gap is well inside the range a single scorer cannot reliably distinguish, so the honest summary of Attempt 2 is that the two prompts performed about the same, with the starter's failure mode being the more interesting half.
+- All runs used the same model. A one-point gap is inside the range this test has now measured as run-to-run noise, so the honest summary of Attempts 2 and 3 is that the two prompts performed about the same, with the starter's failure mode and its fix being the interesting part.
+- It does not show the rewritten starter is now correct in general. It shows one specific defect is gone on one set of notes.
 
 ## Test integrity
 
-Four runs in total, each in a fresh isolated context. Each runner received only its own prompt and the fictional notes for its attempt. None received the other runs, the rubric, the automatic-failure criteria, the answer key, or any indication that this was a test or a comparison. Each attempt's answer key was written before its runs.
+Six runs in total, each in a fresh isolated context. Each runner received only its own prompt and the fictional notes for its attempt. None received the other runs, the rubric, the automatic-failure criteria, the answer key, or any indication that this was a test or a comparison. Each attempt's answer key was written before its runs.
 
-All four runs used Claude Opus 5. Outputs are reproduced with only dash glyphs and currency symbols normalised to ASCII.
+All six runs used Claude Opus 5. Outputs are reproduced with only dash glyphs and currency symbols normalised to ASCII.
 
-The same person designed both scenarios, wrote both answer keys, ran all four prompts and scored every output. The one-point Attempt 2 gap should be read as "no material difference, with a specific weakness worth reporting", not as a measured result.
+Attempt 3 changed the guide-informed prompt, which the other attempts did not. The notes, the ordinary prompt and the answer key were all held constant, and both prompts were re-run rather than reusing Attempt 2's baseline, so that the comparison is between two runs taken the same way at the same time. Reusing the earlier baseline would have hidden the variance reported above.
+
+The same person designed both scenarios, wrote the answer keys, ran all six prompts and scored every output. The one-point gaps should be read as "no material difference, with a specific weakness worth reporting and then fixed", not as measured results.
 
 ## Next evidence
 
-Rewrite the starter's third line to allow a contested item to be recorded as contested, then re-run Attempt 2 unchanged against it. That is the specific change this test points at, and it is testable.
+Two things this test cannot settle. Whether the rewritten starter holds on notes with a different shape of conflict, and whether an ordinary prompt keeps matching it once notes get long enough that a reader needs the sorting to find anything. Both need a real set of notes rather than another invented one, so the honest next step is to use the revised starter on real low-risk internal notes when one arises and log what it missed.

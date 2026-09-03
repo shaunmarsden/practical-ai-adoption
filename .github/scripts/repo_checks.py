@@ -114,9 +114,12 @@ for f in CONTENT:
 # so a two-attempt evaluation is checked against the right row rather than
 # whichever happens to agree.
 #
-# Known limit: in a multi-attempt evaluation only the attempt with an itemised
-# table gets checked. The earlier attempt states a total with nothing to add
-# up, so nothing here can confirm it.
+# Every breakdown section in a file is checked, not just the first, so a
+# three-attempt evaluation with a table per attempt has each table validated
+# against its own row.
+#
+# Known limit: an attempt that states a total without itemising it cannot be
+# checked, because there is nothing to add up.
 BREAKDOWN_HEADING = re.compile(r"^##\s*Score breakdown(?:,\s*Attempt\s*(\d+))?",
                                re.M | re.I)
 AREA_ROW = re.compile(r"^\|\s*([A-Za-z][^|]*?)\s*\|\s*(\d+)\s*\|\s*(\d+)\s*\|",
@@ -126,29 +129,33 @@ STATED_SCORE = re.compile(
     re.M)
 for f in MD:
     text = read(f)
-    heading = BREAKDOWN_HEADING.search(text)
-    if not heading:
-        continue
-    rows = AREA_ROW.findall(text[heading.end():])
+    headings = list(BREAKDOWN_HEADING.finditer(text))
     stated = STATED_SCORE.findall(text)
-    if not rows or not stated:
+    if not headings or not stated:
         continue
-    wanted_attempt = heading.group(1)
-    for label, attempt, left, left_max, right, right_max in stated:
-        if wanted_attempt and attempt != wanted_attempt:
+    for index, heading in enumerate(headings):
+        # A breakdown section ends where the next one begins, so a table is
+        # never read past its own attempt.
+        end = headings[index + 1].start() if index + 1 < len(headings) else len(text)
+        rows = AREA_ROW.findall(text[heading.end():end])
+        if not rows:
             continue
-        if not wanted_attempt and not label.lower().startswith("score"):
-            continue
-        # Only check a fully itemised table, so a summarised one is skipped
-        # rather than guessed at.
-        if len(rows) * 5 != int(left_max):
-            continue
-        sums = (sum(int(r[1]) for r in rows), sum(int(r[2]) for r in rows))
-        if sums != (int(left), int(right)):
-            line = text[:heading.start()].count("\n") + 1
-            fail("score-total", f"{f}:{line}",
-                 f"the breakdown table sums to {sums[0]} and {sums[1]} "
-                 f"but '{label.strip()}' states {left} and {right}")
+        wanted_attempt = heading.group(1)
+        for label, attempt, left, left_max, right, right_max in stated:
+            if wanted_attempt and attempt != wanted_attempt:
+                continue
+            if not wanted_attempt and not label.lower().startswith("score"):
+                continue
+            # Only check a fully itemised table, so a summarised one is
+            # skipped rather than guessed at.
+            if len(rows) * 5 != int(left_max):
+                continue
+            sums = (sum(int(r[1]) for r in rows), sum(int(r[2]) for r in rows))
+            if sums != (int(left), int(right)):
+                line = text[:heading.start()].count("\n") + 1
+                fail("score-total", f"{f}:{line}",
+                     f"the breakdown table sums to {sums[0]} and {sums[1]} "
+                     f"but '{label.strip()}' states {left} and {right}")
 
 
 # 4. Every scored review must be reachable from a guide.
