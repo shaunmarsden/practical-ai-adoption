@@ -11,6 +11,30 @@ This scores the [Ambleforth action list example](../examples/ambleforth-action-l
 | Score | 22/30 | 29/30 |
 | Automatic failure | No | No |
 
+## Run-to-run variance
+
+The scores above are a single run of each prompt. Both were later re-run twice more on the same notes, in fresh isolated contexts with nothing changed, after the [internal update test](netherford-internal-update-review.md) showed that an identical prompt can move a point on its own.
+
+| Prompt | Run 1 | Run 2 | Run 3 | Range |
+| --- | ---: | ---: | ---: | --- |
+| Ordinary prompt | 22/30 | 24/30 | 27/30 | 22 to 27 |
+| Guide-informed starter | 29/30 | 30/30 | 29/30 | 29 to 30 |
+
+The gap holds, but it is narrower than one run suggested. The ranges still do not overlap, so the starter beat the ordinary prompt in every pairing, but the honest gap is between two and eight points rather than the seven the first run showed.
+
+The interesting number is the spread. The ordinary prompt moved five points across three runs of the same prompt on the same notes. The starter moved one. Which of the two traps the ordinary prompt fell into changed from run to run:
+
+| Trap | Runs where the ordinary prompt failed it |
+| --- | --- |
+| Named an owner for the fire door audit that the notes never name | 3 of 3 |
+| Turned "the end of the month" into a specific month | 2 of 3 |
+
+Its best run caught the month problem outright, writing "sorted by the end of the month, no owner, and end of which month wasn't nailed down", which is exactly what the starter does. That run scored 27. Its worst wrote "End of September" and handed the fire door audit to Rowan outright, and scored 22.
+
+So the practical case for this starter is not that it produces a better answer than asking plainly. Sometimes asking plainly gets you to 27. It is that asking plainly might get you 22 instead, and you have no way of knowing which you got without checking against the notes yourself, which is the work the starter was meant to save.
+
+The one failure that never varied is the invented owner. In all three runs the ordinary prompt gave the fire door audit to somebody, twice to Rowan by name and once as "probably you", where the notes say only that it needs a new owner and would be sorted out offline. All three starter runs said the owner was missing.
+
 ## Score breakdown
 
 | Area | Baseline | Guide-informed | Why it matters |
@@ -69,6 +93,8 @@ That is what the starter's last line asks for, and it is the whole of the differ
 
 The guide-informed output lost something the baseline kept. Its item 6 is "find a new owner for the audit", so the fire door audit itself disappears as a piece of outstanding work. The baseline listed both the reassignment and the audit as separate items. A reader working only from the guide-informed list could reassign the audit and believe the item was closed.
 
+This one repeated in two of the three starter runs. The third framed the item the same way but added a closing note that fixed it: "Item 6 is the only one with a named person attached to it in the notes, but she is the outgoing owner, not the new one, so the live owner is still missing." That is the run that scored 30. So the collapse is a real weakness of the starter's wording rather than a one-off, and it is the difference between its 29s and its 30.
+
 Its closing summary also says "three of the six actions have no owner" and then names the newsletter, service charge check and lift contract. That is correct, but the fire door audit also has no owner, so the count depends on treating "find a new owner" as an action that Rowan owns by default, which the output does not say anywhere else.
 
 ## What a person still has to check
@@ -81,27 +107,29 @@ Its closing summary also says "three of the six actions have no owner" and then 
 
 ## What this test supports
 
-- On these notes, the starter's "say that it is missing, do not guess" instruction changed the result. The ordinary prompt filled three gaps with plausible specifics; the starter did not.
-- The failure mode of an ordinary prompt here was not omission or a wrong summary. It was confident completion of things nobody had said.
-- Both prompts correctly excluded a dropped item, a decision and an already-answered query from the action list.
+- On these notes, the starter's "say that it is missing, do not guess" instruction changed the result. In every pairing across three runs of each, the starter scored higher.
+- The failure mode of an ordinary prompt here was not omission or a wrong summary. It was confident completion of things nobody had said, and inventing an owner for the fire door audit happened in all three runs.
+- The starter's main practical benefit is consistency rather than peak quality. Three runs of it landed in a one-point band; three runs of the ordinary prompt spread across five points, and its best run was only two points behind the starter's worst.
+- Both prompts, in all six runs, correctly excluded a dropped item, a decision and an already-answered query from the action list.
 
 ## What this test does not support
 
-- This is one fictional scenario only.
+- This is one fictional scenario, run three times per prompt. Three runs of one scenario is not three scenarios.
 - It is a builder-run test, not independent validation.
 - It does not show that the starter improves any other kind of task, or the other two starters in the same guide, which remain untested.
 - It does not show a real-world business outcome or measured time saving.
 - It does not include an independent external user's result.
-- Both runs used the same model. A different model, or the same model on another day, may not repeat either result.
+- All runs used the same model. A different model may not repeat either result, and the ordinary prompt's five-point spread shows how little a single run of anything here should be trusted.
+- Repetition rules out run-to-run noise as the explanation for the gap. It does nothing about one person having designed the scenario, written the answer key and scored all six outputs.
 
 ## Test integrity
 
-Both runs were made in fresh, isolated contexts. Each runner received only its own prompt and the fictional notes. Neither received the other run, the rubric, the automatic-failure criteria, the trap list or any indication that this was a test or a comparison. The answer key was written before either run and was not visible to either.
+Six runs in total, each made in a fresh, isolated context. Each runner received only its own prompt and the fictional notes. Neither received the other run, the rubric, the automatic-failure criteria, the trap list or any indication that this was a test or a comparison. The answer key was written before either run and was not visible to either.
 
-Both runs used Claude Opus 5. The outputs are reproduced with only dash glyphs and currency symbols normalised to ASCII.
+All six runs used Claude Opus 5. The outputs are reproduced with only dash glyphs and currency symbols normalised to ASCII. The [worked example](../examples/ambleforth-action-list-example.md) shows the first run of each prompt; the repeat runs are scored above but not reproduced in full.
 
-A contamination risk remains, and it is the same one the other reviews here carry: the same person designed the scenario, wrote the answer key, ran both prompts and scored both outputs. A single scorer cannot tell a real seven-point gap from their own consistency, so treat the gap as directional rather than measured.
+A contamination risk remains, and it is the same one the other reviews here carry: the same person designed the scenario, wrote the answer key, ran every prompt and scored every output. Repetition addresses run-to-run noise and nothing else. A scoring bias held consistently across six runs looks exactly like a real effect, so treat the gap as directional rather than measured.
 
 ## Next evidence
 
-Test the other two starters in the same guide, the internal update and the meeting agenda, which currently have no test of their own. Or use this starter on a real set of low-risk internal notes when one naturally arises, and log what it missed.
+Both other starters in this guide now have their own tests. What is left for this one is a real set of low-risk internal notes, used with the starter when one naturally arises, and an honest log of what it missed. The more valuable evidence, and the one thing none of these repeats can supply, is somebody other than the author scoring these six outputs against the same rubric.

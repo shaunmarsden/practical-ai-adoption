@@ -69,7 +69,7 @@ Notes:
 [paste notes]
 ```
 
-This starter is the one tested here. The [Ambleforth action list example](../examples/ambleforth-action-list-example.md) runs it against a set of deliberately incomplete meeting notes, alongside an ordinary "pull the actions out of these notes" prompt. [Read the honest review](../evaluations/ambleforth-action-list-review.md): the ordinary prompt filled three gaps with specifics nobody had stated, including a month the notes never name. The other two starters above have no test of their own.
+The [Ambleforth action list example](../examples/ambleforth-action-list-example.md) runs this starter against a set of deliberately incomplete meeting notes, alongside an ordinary "pull the actions out of these notes" prompt. [Read the honest review](../evaluations/ambleforth-action-list-review.md): the ordinary prompt filled gaps with specifics nobody had stated, including a month the notes never name and an owner for a job that had none. Run three times each, the ordinary prompt scored between 22 and 27 out of 30 and this starter between 29 and 30. The point is that band, not the average: asking plainly sometimes gets you nearly the same answer, and you cannot tell which time it did without checking the notes yourself.
 
 ## Check before you use it
 
