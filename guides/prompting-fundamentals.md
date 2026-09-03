@@ -268,7 +268,7 @@ This is practical guidance, not legal advice. If you are unsure whether informat
 
 Pick a low-risk task you already do. Give the AI a clear job, the relevant sources and the constraints that matter. Then compare the answer with your source before using it.
 
-The [Thornfield prompting example](../examples/thornfield-team-connect-prompting-example.md) shows why this matters. Both attempts use the same fictional notes. The improved prompt gives better instructions, not better evidence.
+The [Thornfield prompting example](../examples/thornfield-team-connect-prompting-example.md) shows why this matters. Both attempts use the same fictional notes. The improved prompt gives better instructions, not better evidence. [Read the honest review](../evaluations/thornfield-team-connect-prompting-review.md) for the full scoring, which put the ordinary attempt at 24 out of 30 and the guide-informed one at 30, on one fictional scenario scored by the person who ran it.
 
 The Thornfield example tests the core brief and review approach. The reusable patterns above are practical starting points, not separately tested promises that every task will improve.
 

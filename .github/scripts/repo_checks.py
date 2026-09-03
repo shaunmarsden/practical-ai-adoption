@@ -151,6 +151,23 @@ for f in MD:
                  f"but '{label.strip()}' states {left} and {right}")
 
 
+# 4. Every scored review must be reachable from a guide.
+#
+# The whole claim of this repository is that its guides are tested, so a review
+# nothing links to is evidence a reader cannot get to. The Thornfield prompting
+# review sat unlinked while the README quoted its scores on the front page: two
+# guides pointed at the worked example and neither pointed at the scoring.
+GUIDES = [f for f in MD if f.startswith("guides/")]
+EVALUATIONS = [f for f in MD if f.startswith("evaluations/")]
+if GUIDES and EVALUATIONS:
+    guide_text = "".join(read(g) for g in GUIDES)
+    for ev in EVALUATIONS:
+        if os.path.basename(ev) not in guide_text:
+            fail("review-unreachable", ev,
+                 "no guide links this review, so a reader cannot reach the "
+                 "scoring for the guide it tests")
+
+
 # Report
 if failures:
     print(f"Repository checks failed ({len(failures)} issue(s)):\n")

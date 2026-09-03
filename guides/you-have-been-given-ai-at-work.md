@@ -86,4 +86,4 @@ This page is an orientation guide, not a promise that any starter will work unch
 
 - **Need to choose a task?** Read [Finding a Good First AI Use Case](finding-a-good-first-ai-use-case.md).
 - **Know the task but need a better brief?** Use [Prompting Fundamentals](prompting-fundamentals.md).
-- **Want to see the prompt starter tested?** Read the [Thornfield prompting example](../examples/thornfield-team-connect-prompting-example.md).
+- **Want to see the prompt starter tested?** Read the [Thornfield prompting example](../examples/thornfield-team-connect-prompting-example.md), then [the honest review](../evaluations/thornfield-team-connect-prompting-review.md) that scores it.
