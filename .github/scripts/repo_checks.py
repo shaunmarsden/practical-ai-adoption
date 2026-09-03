@@ -191,11 +191,17 @@ if os.path.exists(MATRIX):
         if g not in matrix:
             fail("guide-not-in-matrix", MATRIX,
                  f"{g} exists but is not listed in the evidence matrix")
-    # And every scored review should be reachable from it, for the same reason.
-    for ev in sorted(f for f in MD if f.startswith("evaluations/")):
-        if os.path.basename(ev) not in matrix:
+    # And every scored review and worked example, for the same reason. The
+    # examples matter here because only four of the twelve reviews link their
+    # own example, so the matrix is the route to the other eight. Dropping that
+    # column once already orphaned them.
+    for f in sorted(MD):
+        if f.startswith("evaluations/") and os.path.basename(f) not in matrix:
             fail("review-not-in-matrix", MATRIX,
-                 f"{ev} is a scored test the evidence matrix does not list")
+                 f"{f} is a scored test the evidence matrix does not list")
+        if f.startswith("examples/") and os.path.basename(f) not in matrix:
+            fail("example-not-in-matrix", MATRIX,
+                 f"{f} is a worked example the evidence matrix does not list")
 
 
 # Report
