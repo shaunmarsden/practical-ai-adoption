@@ -80,8 +80,10 @@ resolve a difference of one point. Attempt 2's finding should be read as "the st
 reproducible defect", which it did, and not as "the ordinary prompt is one point better", which this run
 contradicts.
 
-The six-point gap in the [agenda starter review](sowerby-crane-agenda-review.md) sits well outside this
-range. The one-point gaps here do not.
+The six-point gap in the [agenda starter review](sowerby-crane-agenda-review.md) was then checked the
+same way, with three runs of each prompt on the same notes. It gave 23, 24 and 24 for the ordinary prompt
+against 29, 30 and 29 for the starter: ranges that do not overlap, and a gap of at least five points on
+the narrowest reading. That gap survives repetition. The one-point gaps here do not.
 
 ## What each run did with the harder notes
 
