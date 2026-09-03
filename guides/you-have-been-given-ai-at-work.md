@@ -64,6 +64,8 @@ Notes:
 [paste notes]
 ```
 
+This starter is the one tested here. The [Ambleforth action list example](../examples/ambleforth-action-list-example.md) runs it against a set of deliberately incomplete meeting notes, alongside an ordinary "pull the actions out of these notes" prompt. [Read the honest review](../evaluations/ambleforth-action-list-review.md): the ordinary prompt filled three gaps with specifics nobody had stated, including a month the notes never name. The other two starters above have no test of their own.
+
 ## Check before you use it
 
 Before you send, share or act on an AI draft, ask yourself:
@@ -80,10 +82,11 @@ AI can help you prepare work. It cannot take responsibility for it.
 
 Run the task alongside your normal way of working once or twice. Notice whether it saved time after editing, whether it missed anything and whether you trusted the final result. A useful first experiment does not need a spreadsheet or a big rollout. It just needs an honest comparison with the work you would have done anyway.
 
-This page is an orientation guide, not a promise that any starter will work unchanged for every job. The linked examples show how to test a prompt against source material before relying on it.
+This page is an orientation guide, not a promise that any starter will work unchanged for every job. Of the three starters above, only the action list has been tested here, on one fictional scenario. The linked examples show how to test a prompt against source material before relying on it.
 
 ## Where to go next
 
 - **Need to choose a task?** Read [Finding a Good First AI Use Case](finding-a-good-first-ai-use-case.md).
 - **Know the task but need a better brief?** Use [Prompting Fundamentals](prompting-fundamentals.md).
 - **Want to see the prompt starter tested?** Read the [Thornfield prompting example](../examples/thornfield-team-connect-prompting-example.md), then [the honest review](../evaluations/thornfield-team-connect-prompting-review.md) that scores it.
+- **Want to see the action list starter tested?** Read the [Ambleforth action list example](../examples/ambleforth-action-list-example.md) and [its review](../evaluations/ambleforth-action-list-review.md).
