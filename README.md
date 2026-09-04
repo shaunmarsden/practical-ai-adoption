@@ -64,6 +64,10 @@ The one thing here that I did not find in any of the four, having searched each 
 
 I have deliberately not built a comparison table for this repository the way I have for [Practical AI Sales Workflows](https://github.com/shaunmarsden/practical-ai-sales-workflows/blob/main/COMPARISON.md). Only two projects are genuinely doing the same job, and scoring a twenty-one-lesson course against a rubric it never signed up to would look like a comparison and work like a smear.
 
+## What I plan to do next
+
+[Roadmap](ROADMAP.md) lists the two gaps this repository actually has, both named by its own tests rather than guessed at: nobody outside the project has scored anything, and no guide here has a logged real use of its own.
+
 ## Existing real use evidence
 
 [Reusable AI Handover Workflow](evidence/real-use-reusable-handover-workflow.md) records repeated real use of a structured AI-assisted handover method. It supports the principles behind these guides, but it is not a test of using the current guides unchanged.

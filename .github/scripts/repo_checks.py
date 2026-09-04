@@ -204,6 +204,24 @@ if os.path.exists(MATRIX):
                  f"{f} is a worked example the evidence matrix does not list")
 
 
+# 6. Every reader-facing top-level page must be linked from the README.
+#
+# ROADMAP.md sat unlinked from the README while both sibling repositories
+# linked theirs. It had just been rewritten to name this repository's two real
+# gaps, and nothing pointed at it, so the page doing the most honest work here
+# was the one a reader could not reach. AGENTS.md is excluded because it is
+# instructions for a tool rather than a page for a person.
+AGENT_FILES = {"AGENTS.md", "CLAUDE.md", "README.md"}
+if os.path.exists("README.md"):
+    readme = read("README.md")
+    for f in sorted(MD):
+        if "/" in f or f in AGENT_FILES:
+            continue
+        if f not in readme:
+            fail("page-unlinked", "README.md",
+                 f"{f} is a top-level page the README does not link")
+
+
 # Report
 if failures:
     print(f"Repository checks failed ({len(failures)} issue(s)):\n")
