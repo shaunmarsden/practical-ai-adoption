@@ -54,6 +54,16 @@ Already know what you need help with? [Prompting Fundamentals: Give AI a Better 
 
 [Evidence Status](EVIDENCE-STATUS.md) is the one page to read before trusting any score here. Every guide has a worked example and a scored test. No guide has been used on real work and logged, nobody outside this project has scored anything, and nine of the twelve tests ran each prompt only once, which this repository has since measured as weak evidence.
 
+## How this differs from the big AI courses
+
+If you have found [Generative AI for Beginners](https://github.com/microsoft/generative-ai-for-beginners) or the [Prompt Engineering Guide](https://github.com/dair-ai/Prompt-Engineering-Guide), both with tens of thousands of stars and far better resourced than this, you have found something more thorough than anything here. They are also a different product. They teach you to build with AI across a structured course. This is for somebody who was handed a licence on Monday and has an ordinary work task on Tuesday, and who wants one page rather than twenty-one lessons.
+
+Closer in intent are [GitHub's AI adoption playbook](https://github.com/github/ai-adoption-playbook), written for organisations rolling AI out rather than for the person receiving it, and [AI Literacy Superpowers](https://github.com/Habitat-Thinking/ai-literacy-superpowers), which packages a literacy framework as developer tooling. Both are worth reading if either fits you better than this does.
+
+The one thing here that I did not find in any of the four, having searched each of their file trees for a rubric or a scored result, is a scored before-and-after of the advice itself: an ordinary attempt and a guide-informed attempt on the same fictional notes, both scored, with the failures written down. [Evidence Status](EVIDENCE-STATUS.md) shows exactly how far that goes and where it stops, including the two columns that are empty for every guide.
+
+I have deliberately not built a comparison table for this repository the way I have for [Practical AI Sales Workflows](https://github.com/shaunmarsden/practical-ai-sales-workflows/blob/main/COMPARISON.md). Only two projects are genuinely doing the same job, and scoring a twenty-one-lesson course against a rubric it never signed up to would look like a comparison and work like a smear.
+
 ## Existing real use evidence
 
 [Reusable AI Handover Workflow](evidence/real-use-reusable-handover-workflow.md) records repeated real use of a structured AI-assisted handover method. It supports the principles behind these guides, but it is not a test of using the current guides unchanged.
