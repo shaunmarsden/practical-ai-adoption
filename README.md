@@ -70,7 +70,11 @@ I have deliberately not built a comparison table for this repository the way I h
 
 ## Existing real use evidence
 
-[Reusable AI Handover Workflow](evidence/real-use-reusable-handover-workflow.md) records repeated real use of a structured AI-assisted handover method. It supports the principles behind these guides, but it is not a test of using the current guides unchanged.
+Two records, and neither is a test of the current guides unchanged.
+
+[Editing an AI Draft Is Not Checking It](evidence/real-use-ai-assisted-fact-check-failure.md) is a negative finding from one real external-facing task. An AI-assisted report went out with an incorrect figure in it, an ordinary editing pass did not catch it, and a colleague spotted it afterwards. The lesson is that checking a claim against its source is a separate job from improving the wording.
+
+[Reusable AI Handover Workflow](evidence/real-use-reusable-handover-workflow.md) records repeated real use of a structured AI-assisted handover method. It supports the principles behind these guides.
 
 ## Related project
 
