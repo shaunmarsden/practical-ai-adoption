@@ -1,0 +1,384 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sort the Notes Yourself: Practical AI Adoption</title>
+<meta name="description" content="Nine claims from one set of fictional meeting notes. Decide what is confirmed, what needs checking and what the notes disagree about, then see where an AI prompt got it wrong.">
+<style>
+  :root {
+    --bg: #faf9f7;
+    --panel: #ffffff;
+    --border: #e5e1da;
+    --ink: #2a2620;
+    --ink-soft: #6b655a;
+    --accent: #b5541f;
+    --confirmed: #2f6b4f;
+    --confirmed-bg: #e6f0ea;
+    --checking: #a8720b;
+    --checking-bg: #f7edd9;
+    --disagree: #6b5b95;
+    --disagree-bg: #ece8f5;
+    --wrong: #a3341f;
+    --wrong-bg: #f7e2dd;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+    line-height: 1.55;
+  }
+  a { color: var(--accent); }
+  header.top {
+    max-width: 980px;
+    margin: 0 auto;
+    padding: 48px 24px 8px;
+  }
+  header.top .kicker {
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--ink-soft);
+    margin-bottom: 10px;
+  }
+  header.top h1 { font-size: 32px; margin: 0 0 14px; line-height: 1.2; }
+  header.top p { max-width: 660px; color: var(--ink-soft); font-size: 16px; }
+  header.top .backlink { display: inline-block; margin-top: 6px; font-size: 14px; }
+  main.stage {
+    max-width: 980px;
+    margin: 24px auto 0;
+    padding: 0 24px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    align-items: start;
+  }
+  @media (max-width: 820px) {
+    main.stage { grid-template-columns: 1fr; }
+  }
+  .panel {
+    background: var(--panel);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 20px;
+  }
+  .panel h2 {
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: var(--ink-soft);
+    margin: 0 0 14px;
+  }
+  #notes {
+    font-size: 14px;
+    white-space: pre-wrap;
+    font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+    line-height: 1.6;
+  }
+  #notes .meta { color: var(--ink-soft); }
+  .progress { font-size: 14px; color: var(--ink-soft); margin: 0 0 14px; }
+  .claim { font-size: 17px; font-weight: 600; margin: 0 0 4px; }
+  .claim-source { font-size: 13.5px; color: var(--ink-soft); margin: 0 0 18px; }
+  .choices { display: grid; gap: 8px; }
+  .choices button {
+    text-align: left;
+    background: var(--panel);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 12px 14px;
+    font-size: 15px;
+    font-family: inherit;
+    color: var(--ink);
+    cursor: pointer;
+  }
+  .choices button:hover { border-color: var(--accent); }
+  .verdict { margin-top: 16px; font-size: 15px; }
+  .verdict .headline { font-weight: 700; margin-bottom: 6px; }
+  .verdict.right .headline { color: var(--confirmed); }
+  .verdict.wrong .headline { color: var(--wrong); }
+  .verdict .because { color: var(--ink-soft); }
+  .tag {
+    display: inline-block;
+    font-size: 11px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    padding: 2px 8px;
+    border-radius: 999px;
+    margin-right: 8px;
+  }
+  .tag.confirmed { color: var(--confirmed); background: var(--confirmed-bg); }
+  .tag.checking { color: var(--checking); background: var(--checking-bg); }
+  .tag.disagree { color: var(--disagree); background: var(--disagree-bg); }
+  .nextbtn {
+    margin-top: 18px;
+    background: var(--accent);
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 8px;
+    font-size: 15px;
+    font-weight: 600;
+    font-family: inherit;
+    cursor: pointer;
+  }
+  .restart {
+    margin-top: 18px;
+    background: transparent;
+    border: 1px solid var(--border);
+    color: var(--ink-soft);
+    padding: 11px 18px;
+    border-radius: 8px;
+    font-size: 14px;
+    font-family: inherit;
+    cursor: pointer;
+  }
+  .scoreline { font-size: 22px; font-weight: 700; margin: 0 0 12px; }
+  .tally { font-size: 15px; color: var(--ink-soft); }
+  .tally li { margin-bottom: 6px; }
+  footer {
+    max-width: 980px;
+    margin: 36px auto 60px;
+    padding: 24px;
+    border-top: 1px solid var(--border);
+    color: var(--ink-soft);
+    font-size: 14.5px;
+  }
+  footer a { font-weight: 600; }
+  footer ul { padding-left: 20px; }
+  .next-step {
+    max-width: 980px;
+    margin: 28px auto 0;
+    padding: 0 24px;
+    text-align: center;
+  }
+  .try-button {
+    display: inline-block;
+    background: var(--accent);
+    color: white;
+    padding: 13px 22px;
+    border-radius: 8px;
+    font-weight: 700;
+    text-decoration: none;
+  }
+  .next-step p { color: var(--ink-soft); margin: 10px auto 0; max-width: 580px; }
+</style>
+</head>
+<body>
+
+<header class="top">
+  <div class="kicker">Practical AI Adoption</div>
+  <h1>Sort the Notes Yourself</h1>
+  <p>One person's meeting notes are below, written up after a project catch-up. They are fictional. Nine claims come out of those notes, and each one belongs in a different place: something the notes actually settle, something that only sounds settled, or something the notes contradict themselves about. Have a go at sorting them. Then see which three an AI prompt filed in the wrong column, and why that prompt had to be rewritten.</p>
+  <a class="backlink" href="https://github.com/shaunmarsden/practical-ai-adoption">&larr; Back to the repository</a>
+</header>
+
+<main class="stage">
+  <section class="panel">
+    <h2>The notes, exactly as they were taken</h2>
+    <div id="notes"></div>
+  </section>
+  <section class="panel" id="quiz">
+    <p class="progress" id="progress"></p>
+    <div id="body"></div>
+  </section>
+</main>
+
+<div class="next-step">
+  <a class="try-button" href="https://github.com/shaunmarsden/practical-ai-adoption/blob/main/guides/you-have-been-given-ai-at-work.md">Use the Starter on Your Own Notes</a>
+  <p>The rewritten prompt is in the guide, ready to copy. Bring notes you are allowed to put in the tool your organisation has approved.</p>
+</div>
+
+<footer>
+  <p><strong>Nothing on this page is a live AI call.</strong> A static page cannot reach a model without a backend. The sorting you are marked against, and the three mistakes shown at the end, come from a run that was recorded and scored in this repository before this page existed.</p>
+  <p><strong>The honest part of the result.</strong> Rewriting that prompt fixed the defect it was written for: all three misfiled items moved to the right column. It did not make the prompt better than asking plainly. On the same notes, an ordinary "can you write this up as an update for the team please" scored 30 out of 30 against the rewritten starter's 29, and it had scored 29 the run before, on an identical prompt and identical notes. A one point movement with nothing changed is the same size as the difference the test set out to measure. Use the starter for the discipline of sorting, not because it is more accurate than asking plainly.</p>
+  <ul>
+    <li>Read the full worked comparison in the <a href="https://github.com/shaunmarsden/practical-ai-adoption/blob/main/examples/netherford-internal-update-example.md">Netherford internal update example</a>, which shows all three attempts</li>
+    <li>Then the <a href="https://github.com/shaunmarsden/practical-ai-adoption/blob/main/evaluations/netherford-internal-update-review.md">scored review</a>, which explains why there were three attempts and marks each one</li>
+    <li><a href="https://github.com/shaunmarsden/practical-ai-adoption/blob/main/EVIDENCE-STATUS.md">Evidence Status</a> is the page to read before trusting any score here. It names two columns that are empty for every guide: nobody outside this project has scored anything, and no guide has a logged real use</li>
+    <li>The failure this whole idea rests on is written up in <a href="https://github.com/shaunmarsden/practical-ai-adoption/blob/main/evidence/real-use-ai-assisted-fact-check-failure.md">Editing an AI Draft Is Not Checking It</a>, a real task where a wrong figure went out because editing and checking got treated as one job</li>
+  </ul>
+</footer>
+
+<script>
+(function () {
+  var NOTES = [
+    "Catalogue migration, Thursday catch-up",
+    "24 September 2026, Netherford Libraries",
+    "",
+    "- Migration. Records are all across now. The validation fix worked.",
+    "- Testing. Branch testing started Monday. Ines says feedback is",
+    "  positive so far. Three branches have been through it, out of eleven.",
+    "- Training. Four of the six sessions done, 58 people through.",
+    "- Supplier. Cardinal have released 4.2. Marguerite said the search",
+    "  speed is much better.",
+    "- Go live. Plan still shows 1 November. I told the branch managers on",
+    "  Monday to work to the 15th as more realistic. Board papers go out",
+    "  on the 8th.",
+    "- Kiosks. Marguerite is happy with the kiosk plan. Still need to get",
+    "  her the support contract numbers she asked for.",
+    "- Budget. 61,000 pounds spent as at the 5 September finance report.",
+    "  Prisha reckons we are nearer 70 now once the licence renewal lands.",
+    "- Old system. Decommissioning booked in for December. Cannot start",
+    "  until 30 days after go live."
+  ].join("\n");
+
+  var LABELS = {
+    confirmed: "The notes settle it",
+    checking: "Still needs checking",
+    disagree: "The notes disagree"
+  };
+  var CLASSES = { confirmed: "confirmed", checking: "checking", disagree: "disagree" };
+
+  var CLAIMS = [
+    {
+      claim: "All the records are across, and the validation fix worked.",
+      source: "From the migration line.",
+      answer: "confirmed",
+      because: "The notes state both flatly, with nobody hedging and nothing contradicting them. This is what a confirmed item actually looks like."
+    },
+    {
+      claim: "Three of the eleven branches have been through testing.",
+      source: "From the testing line.",
+      answer: "confirmed",
+      because: "A counted fact. Three of eleven is recorded, so the number itself is settled, whatever anyone thinks of how it is going."
+    },
+    {
+      claim: "Branch testing is going well.",
+      source: "Also from the testing line.",
+      answer: "checking",
+      because: "Ines says feedback is positive so far. That is one person's early impression with eight branches still untested, and an impression is not a result. The same note line holds a confirmed fact and an unconfirmed one, which is the split most write-ups miss."
+    },
+    {
+      claim: "Four of the six training sessions are done, with 58 people through.",
+      source: "From the training line.",
+      answer: "confirmed",
+      because: "Two counted figures, stated plainly and uncontested."
+    },
+    {
+      claim: "Search is much faster in the supplier's new 4.2 release.",
+      source: "From the supplier line.",
+      answer: "checking",
+      because: "That 4.2 exists is confirmed. That search is much faster is Marguerite's view, not something measured on this side. This is one of the three an AI prompt filed as confirmed.",
+      trap: true
+    },
+    {
+      claim: "Go live is 1 November.",
+      source: "From the go live line.",
+      answer: "disagree",
+      because: "The plan says 1 November and the branch managers were told to work to the 15th. Both are in the same note. It is not an unchecked fact, it is a decision nobody has made yet, and the board papers go out on the 8th.",
+      trap: true
+    },
+    {
+      claim: "Spend is around 70,000 pounds.",
+      source: "From the budget line.",
+      answer: "checking",
+      because: "The confirmed figure is 61,000 pounds from the 5 September finance report. The 70,000 is Prisha's estimate of where it lands once a renewal arrives, and it is not in a report yet. Keep the estimate away from the sourced number."
+    },
+    {
+      claim: "The kiosk plan is agreed.",
+      source: "From the kiosks line.",
+      answer: "checking",
+      because: "Marguerite is happy with the plan, and the support contract numbers she asked for have not been sent. Somebody being happy with a plan whose own open item is outstanding is not agreement.",
+      trap: true
+    },
+    {
+      claim: "December is a safe slot for decommissioning the old system.",
+      source: "From the old system line, read against the go live line.",
+      answer: "disagree",
+      because: "December is booked, and decommissioning cannot start until 30 days after go live, which is the date the notes contradict themselves about. The booking is only as solid as the date underneath it."
+    }
+  ];
+
+  var progressEl = document.getElementById("progress");
+  var bodyEl = document.getElementById("body");
+  var index = 0;
+  var right = 0;
+  var wrongOnTraps = 0;
+
+  document.getElementById("notes").innerHTML =
+    "<span class=\"meta\"></span>" + escapeHtml(NOTES);
+
+  function escapeHtml(s) {
+    return s.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
+  }
+
+  function tag(key) {
+    return "<span class=\"tag " + CLASSES[key] + "\">" + LABELS[key] + "</span>";
+  }
+
+  function renderQuestion() {
+    var q = CLAIMS[index];
+    progressEl.textContent = "Claim " + (index + 1) + " of " + CLAIMS.length;
+    var html = "";
+    html += "<p class=\"claim\">" + escapeHtml(q.claim) + "</p>";
+    html += "<p class=\"claim-source\">" + escapeHtml(q.source) + "</p>";
+    html += "<div class=\"choices\">";
+    ["confirmed", "checking", "disagree"].forEach(function (key) {
+      html += "<button type=\"button\" data-key=\"" + key + "\">" +
+              LABELS[key] + "</button>";
+    });
+    html += "</div>";
+    bodyEl.innerHTML = html;
+    Array.prototype.forEach.call(bodyEl.querySelectorAll("button[data-key]"), function (b) {
+      b.addEventListener("click", function () { answer(b.getAttribute("data-key")); });
+    });
+  }
+
+  function answer(key) {
+    var q = CLAIMS[index];
+    var correct = key === q.answer;
+    if (correct) { right++; } else if (q.trap) { wrongOnTraps++; }
+    var html = "";
+    html += "<p class=\"claim\">" + escapeHtml(q.claim) + "</p>";
+    html += "<p class=\"claim-source\">" + escapeHtml(q.source) + "</p>";
+    html += "<div class=\"verdict " + (correct ? "right" : "wrong") + "\">";
+    html += "<div class=\"headline\">" +
+            (correct ? "That is where it goes." : "Not quite.") + "</div>";
+    html += "<div>" + tag(q.answer) + "</div>";
+    html += "<p class=\"because\">" + escapeHtml(q.because) + "</p>";
+    html += "</div>";
+    html += "<button class=\"nextbtn\" id=\"next\" type=\"button\">" +
+            (index + 1 < CLAIMS.length ? "Next claim" : "See the result") + "</button>";
+    bodyEl.innerHTML = html;
+    document.getElementById("next").addEventListener("click", function () {
+      index++;
+      if (index < CLAIMS.length) { renderQuestion(); } else { renderResult(); }
+    });
+  }
+
+  function renderResult() {
+    progressEl.textContent = "Result";
+    var traps = CLAIMS.filter(function (c) { return c.trap; }).length;
+    var html = "";
+    html += "<p class=\"scoreline\">" + right + " out of " + CLAIMS.length + "</p>";
+    html += "<div class=\"tally\">";
+    html += "<p>Three of these nine are the ones that matter, because they are the three an AI prompt got wrong on these exact notes. Asked to sort every point into confirmed or still to be checked, it put all three in the confirmed column: Marguerite's impression of search speed, a kiosk plan with an outstanding item of its own, and a go live date that two lines of the same note disagree about.</p>";
+    if (wrongOnTraps === 0) {
+      html += "<p>You placed all three of those correctly.</p>";
+    } else if (wrongOnTraps === traps) {
+      html += "<p>You misplaced all three, which is the mistake the prompt made, " +
+              "and it is an easy one to make at speed.</p>";
+    } else {
+      html += "<p>You misplaced " + (wrongOnTraps === 1 ? "one" : "two") +
+              " of those three, which is the same kind of mistake the prompt made, " +
+              "and it is an easy one to make at speed.</p>";
+    }
+    html += "<p>There was a fourth thing, and it was an omission rather than a misfiling. No earlier run separated the confirmed fact that testing has begun from Ines's impression of how it is going. They sat in one bullet together.</p>";
+    html += "<p>The fix was structural rather than a matter of trying harder. A two column sort has nowhere to put an item that is contested rather than merely unchecked, so the prompt was given a third column and one extra line: only call something confirmed if the notes actually settle it, because somebody's impression is not confirmation.</p>";
+    html += "</div>";
+    html += "<button class=\"restart\" id=\"restart\" type=\"button\">Start again</button>";
+    bodyEl.innerHTML = html;
+    document.getElementById("restart").addEventListener("click", function () {
+      index = 0; right = 0; wrongOnTraps = 0; renderQuestion();
+    });
+  }
+
+  renderQuestion();
+})();
+</script>
+
+</body>
+</html>

@@ -4,6 +4,8 @@ Plain-English, evidence-grounded guides for using AI well at work. No technical 
 
 This repository starts with one practical habit: give AI a better brief, then check what comes back. The examples are fictional. The tests say exactly what they do and do not show.
 
+**Want to try the habit before reading anything?** [Sort the notes yourself](https://shaunmarsden.github.io/practical-ai-adoption/). Nine claims out of one set of fictional meeting notes, and you decide which the notes actually settle, which only sound settled and which the notes contradict themselves about. Three of the nine are the ones an AI prompt got wrong here, which is why that prompt was rewritten. The page says plainly that an ordinary prompt still matched the rewritten one.
+
 ## Start here
 
 [You Have Been Given AI at Work. Start Here.](guides/you-have-been-given-ai-at-work.md) is for anyone who has access to an AI tool at work and wants one sensible first move. It includes three simple starters for writing, planning and summarising, then points you to the right next guide.
