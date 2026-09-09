@@ -20,6 +20,7 @@ Editing and checking are two different jobs. I was doing the first and had not d
 - An editing pass can leave a factual error untouched, because reading for sense is not the same as verifying a figure.
 - Responsibility for external work stays with the person sending it, whatever helped produce the draft.
 - A useful check is specific: take the important numbers and claims, find each one in the source, and confirm it rather than assume it.
+- This is one of two lessons [Which AI Mistakes Actually Get Through](https://github.com/shaunmarsden/practical-ai-sales-workflows/blob/main/guides/which-ai-mistakes-get-through.md) draws from across all three of these repositories, alongside the finding that a general instruction not to invent something is weaker than a mechanism that catches it.
 
 ## What this does not support
 
