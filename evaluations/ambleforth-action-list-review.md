@@ -33,7 +33,7 @@ Its best run caught the month problem outright, writing "sorted by the end of th
 
 So the practical case for this starter is not that it produces a better answer than asking plainly. Sometimes asking plainly gets you to 27. It is that asking plainly might get you 22 instead, and you have no way of knowing which you got without checking against the notes yourself, which is the work the starter was meant to save.
 
-The one failure that never varied is the invented owner. In all three runs the ordinary prompt gave the fire door audit to somebody, twice to Rowan by name and once as "probably you", where the notes say only that it needs a new owner and would be sorted out offline. All three starter runs said the owner was missing.
+The one failure that never varied is the invented owner. In all three runs the ordinary prompt gave the fire door audit to somebody, twice to Rowan by name and once as "probably you", where the notes say only that it needs a new owner and would be sorted out offline. All three starter runs said the owner was missing. That defect is catalogued in [Which AI Mistakes Actually Get Through](https://github.com/shaunmarsden/practical-ai-sales-workflows/blob/main/guides/which-ai-mistakes-get-through.md), a sibling repository page sorting every scored defect across these three projects by whether a careful reader would have caught it. This one is on the hard side: an action list with an owner against every row looks finished, and a missing owner is the one thing an action list is supposed to surface.
 
 ## Score breakdown
 
