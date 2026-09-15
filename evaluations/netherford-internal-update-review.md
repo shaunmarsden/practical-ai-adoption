@@ -16,7 +16,7 @@ Three attempts were run. The first showed no difference. The second, on harder n
 
 **Automatic failure:** No, in both attempts, for both baseline and guide-informed.
 
-## Why there were two attempts
+## Why there were three attempts
 
 The first attempt used notes in which most of the uncertainty was already labelled by the note taker: "Not fixed yet", "It has not started because", "Not signed off", "We have not seen it or tested it", "no new date has been agreed". Asked plainly to write up an update, the ordinary prompt carried every one of those labels through, attributed one person's theory to that person, and kept a sourced budget figure sourced. It scored the same as the starter, 29 out of 30 each. Reporting that as a win for the starter would not have been honest.
 
@@ -99,6 +99,8 @@ the narrowest reading. That gap survives repetition. The one-point gaps here do 
 
 One thing designed as a trap turned out not to be one. The December decommissioning booking looked inconsistent with an unresolved go live date, but 30 days after either candidate date still falls in December, so both runs were right to report it without alarm. That is recorded here rather than quietly dropped, because a test is only worth as much as its answer key.
 
+**The interactive page had this wrong until 15th September 2026.** [Sort the Notes Yourself](https://shaunmarsden.github.io/practical-ai-adoption/) asked visitors to place the same claim and marked "the notes disagree" as the right answer, which is the reading this paragraph retired. Both model runs and this review had it as something to check; only the page carried the earlier version, so anyone who sorted it correctly was told they were wrong. It now reads as something to check, with the arithmetic spelled out: thirty days after either candidate date lands in December, and what is missing is the date in December the booking sits on.
+
 ## Automatic failure review
 
 **Baseline: No.** The month inference is a scoring weakness, not an automatic failure, because it is disclosed in the output itself and put to the reader as a correction request.
@@ -113,9 +115,11 @@ What it changed was shape, and the shape caused the loss. "Separate what is conf
 
 The ordinary prompt had no columns to fill, so it left them as prose and described each accurately.
 
-## What it still got wrong, on both sides
+## What it still got wrong
 
-Both runs turned "the 15th" and "the 8th" into November and October. That is probably right, and it is the reading almost any colleague would make. It is still an inference from a note that does not name the months, and in a document whose whole purpose is separating what is known from what is not, it is worth noticing. Only the baseline noticed.
+**In Attempt 2, both runs** turned "the 15th" and "the 8th" into November and October. That is probably right, and it is the reading almost any colleague would make. It is still an inference from a note that does not name the months, and in a document whose whole purpose is separating what is known from what is not, it is worth noticing. Only the baseline disclosed it.
+
+**Attempt 3 split on this.** Its baseline left both dates alone, and the rewritten starter inferred one of the two, writing "15 November" while leaving "the 8th" as it stood. Nothing in the rewrite was aimed at date inference, so the most likely reading is run-to-run movement of the same kind the section above measures, not an effect of the change.
 
 ## What a person still has to check
 
