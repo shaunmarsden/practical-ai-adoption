@@ -17,6 +17,4 @@ Two gaps, both named by the tests themselves rather than guessed at.
 
 ## Later
 
-These are candidate subjects, not committed guides.
-
-- What should stay human-controlled
+No candidate subjects are waiting. Five were promoted to their own guides. The sixth, what should stay human-controlled, turned out to be covered already: [When Not to Use AI](guides/when-not-to-use-ai.md) covers decisions with real effect on a person and claims that need a qualified checker, and [Before You Let AI Tools Work Together Unsupervised](guides/before-you-let-ai-tools-work-together-unsupervised.md) covers where the human checkpoint sits and what makes it a genuine check. A third guide would repeat both.
