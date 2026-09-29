@@ -1,6 +1,6 @@
 # The Gap Between AI Access and Actual Use
 
-**Start here:** Copy the brief below, describe who you are planning around, and paste it into the AI tool you already use.
+**Start here:** Copy the brief below, describe the people you're planning around, and paste it into the AI tool you already use.
 
 ```text
 I am about to plan training, a rollout, a business case or a set of expectations around a person or team's AI use. Before I do, I want to check my own assumption against what is actually known, rather than what job title, seniority or self-report suggests.
@@ -20,33 +20,39 @@ Tell me:
 Do not treat confidence or seniority as evidence of skill, and do not assume someone who talks about AI fluently is using it, or that someone quiet about it is not.
 ```
 
-Most AI adoption advice assumes you already know where your people stand. This one is about checking that, specifically, before you plan around it.
+Most advice on AI adoption assumes you already know where your people stand. This guide is about checking that before you plan around it.
 
 ## Why this needs its own check
 
-- **Access is not use.** IBM's 2026 CEO study found a wide gap between AI capability and actual behaviour: most employees have access to AI tools, but only around a quarter use them regularly, even though most CEOs surveyed believed their people were already using AI well. The study frames this as a design and change-management gap, not a technology one.
-- **Self-reported confidence is not a reliable measure of actual skill, and gets worse with seniority.** Pluralsight's 2025 AI Skills Report found that most professionals overstate their own AI expertise, and that senior leaders overstate it the most: the great majority of C-suite respondents were the worst offenders in the sample. The same report found most professionals feel confident in their own AI skills while also believing their colleagues' lack of skill is what is actually holding projects back.
+Access isn't use. IBM's 2026 CEO study found a wide gap between what AI can do and what people do with it. Most employees have access to AI tools, but only around a quarter use them regularly, even though most of the CEOs surveyed believed their people already used AI well. The study calls this a gap in design and in managing change, not in technology.
 
-Neither finding is about AI tools being unreliable. Both point at the same practical trap: a title, a confident claim, or a senior role is not evidence that someone is actually using AI, or using it well, and the mismatch is largest exactly where it is easiest to assume otherwise.
+People's confidence in their own skill isn't a reliable measure, and it gets worse with seniority. Pluralsight's 2025 AI Skills Report found that most professionals overstate their AI expertise, and senior leaders overstate it most. The great majority of C-suite respondents were the worst offenders in the sample. The same report found that most professionals feel confident in their own AI skills, and also believe their colleagues' lack of skill is what's holding projects back.
 
-Sources are listed at the bottom of this guide.
+Neither finding says AI tools are unreliable. Both point at the same trap. A title, a confident claim or a senior role isn't evidence that someone uses AI, or uses it well. And the mismatch is biggest exactly where it's easiest to assume otherwise.
+
+The sources are at the bottom of this guide.
 
 ## What actually counts as evidence
 
-- **A shown example beats a claim.** Someone describing a specific task they did with AI, and what came back, is evidence. Someone saying "I use AI all the time" or "I'm across this" is not, on its own.
-- **A job title is a proxy, not a measurement.** A title like "AI lead", "digital transformation manager" or "data analyst" describes a role, not a demonstrated skill. Some people in AI-adjacent roles have not actually used a general AI tool themselves; some people with no AI-sounding title use one daily.
-- **Confidence and skill move independently, and the gap is not symmetric.** Somebody quiet or hesitant about AI is not necessarily behind. Somebody fluent and confident talking about AI is not necessarily using it well, or at all. The Pluralsight finding above shows this mismatch is largest among senior people, exactly the group whose self-report is most likely to be taken at face value.
+A shown example beats a claim. Someone describing a task they did with AI, and what came back, is evidence. Someone saying "I use AI all the time" or "I'm across this" isn't, on its own.
+
+A job title describes a role, not a skill anyone has shown. Some people with titles like "AI lead", "digital transformation manager" or "data analyst" have never used a general AI tool themselves. Some people with no AI-sounding title use one every day.
+
+Confidence and skill don't move together, and the gap isn't the same in both directions. Someone quiet or unsure about AI isn't necessarily behind. Someone who talks about it fluently and confidently isn't necessarily using it well, or at all. The Pluralsight finding shows the mismatch is biggest among senior people, the group whose word is most likely to be taken at face value.
 
 ## What to watch for
 
-- **Treating seniority as a proxy for skill.** A senior person's confident assessment of their own or their team's AI use deserves the same check as anyone else's, not less.
-- **Treating fluent AI talk as fluent AI use.** Someone who can discuss AI capability, ethics or strategy well is not automatically someone who has used a tool on a real piece of their own work.
-- **Skipping the check because asking feels awkward.** Asking someone to show, not describe, their AI use can feel like distrust. It is closer to checking a stated qualification before relying on it, and the alternative is planning training, budget or expectations on a guess.
-- **Assuming the gap only runs one way.** Some people using AI heavily are doing so quietly, without a title or a claim to match, and would be missed by only asking who says they use it.
+Treating seniority as a sign of skill. A senior person's confident view of their own or their team's AI use needs the same check as anyone else's, not less.
+
+Treating fluent talk about AI as fluent use. Someone who can discuss what AI can do, its ethics or strategy isn't automatically someone who has used a tool on their own work.
+
+Skipping the check because asking feels awkward. Asking someone to show their AI use, rather than describe it, can feel like distrust. It's closer to checking a qualification before you rely on it. The alternative is planning training, budget or expectations on a guess.
+
+Assuming the gap only runs one way. Some heavy users work quietly, with no title or claim to match. You'd miss them if you only asked who says they use it.
 
 ## Try it on your own list
 
-[Read the Hollis & Speight example](../examples/hollis-speight-ai-access-gap-example.md) to see this check applied to a fictional professional services team where job titles, confidence and actual use do not line up the way a manager assumes. [Read the honest review](../evaluations/hollis-speight-ai-access-gap-review.md) for the full scoring.
+[Read the Hollis & Speight example](../examples/hollis-speight-ai-access-gap-example.md) to see this check used on a fictional professional services team, where job titles, confidence and actual use don't line up the way a manager assumes. [Read the review](../evaluations/hollis-speight-ai-access-gap-review.md) for the full scoring.
 
 ## Basis for this guide
 
@@ -55,4 +61,4 @@ Sources are listed at the bottom of this guide.
 - Pluralsight, "Pluralsight Research Finds that 79% of Tech Workers Pretend to Know More About AI Than They Actually Do," 2025 AI Skills Report:
   https://www.pluralsight.com/newsroom/press-releases/pluralsight-research-finds-that-79--of-tech-workers-pretend-to-k
 
-This is a project-authored checklist, not a named framework. It is not endorsed by IBM, Pluralsight, AiCore or any other organisation. It does not cover every way an adoption plan can misjudge its starting point, only this specific, evidenced gap between access, confidence and actual use.
+I wrote this checklist myself. It isn't a named framework, and IBM, Pluralsight, AiCore and other organisations haven't endorsed it. It doesn't cover every way an adoption plan can misjudge where people start. It covers only this gap between access, confidence and actual use, which the sources above back up.

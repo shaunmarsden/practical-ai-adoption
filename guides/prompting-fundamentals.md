@@ -1,6 +1,6 @@
 # Prompting Fundamentals: Give AI a Better Brief
 
-**Start here:** Copy the starter below, paste it into the AI tool you already use, and replace the bracketed sections. It works in ChatGPT, Claude, Gemini, Copilot or another general AI tool.
+**Start here:** Copy the starter below into the AI tool you already use and fill in the brackets. It works in ChatGPT, Claude, Gemini, Copilot or any other general AI tool.
 
 ```text
 Task:
@@ -25,15 +25,15 @@ Before you finish:
 - Tell me what I still need to check or approve.
 ```
 
-You do not need a clever prompt. You need to be clear about the work, give the AI the information it needs and check the result before anything real happens.
+You don't need a clever prompt. Be clear about the job, give the AI what it needs to know, and check the result before anything real happens.
 
 ## 1. Give the AI a clear job
 
 Say what you want help with. "Write an email" is a start. "Draft a reply that asks for a quote but does not confirm the booking" is more useful.
 
-Tell it who the output is for and what the output should help someone do. Add any important boundary. For example, you may need a draft, not a final decision. You may need it to preserve uncertainty instead of making a neat guess.
+Say who it's for and what it should help them do. Add any limits that matter. You might want a draft, not a decision. You might want it to keep the uncertainty rather than make a neat guess.
 
-Questions worth answering:
+Questions to answer:
 
 - What is the job?
 - Who is the output for?
@@ -41,11 +41,11 @@ Questions worth answering:
 - What must it not do?
 - What would a useful result look like?
 
-There is no perfect prompt formula. The useful level of detail depends on the job.
+There's no perfect formula. How much detail you need depends on the job.
 
 ## 2. Give it the context it actually needs
 
-AI can only work with the information you give it, the information it can safely look up or what it may already know. For everyday work, start with the relevant source material.
+AI can only work with what you give it, what it can safely look up and what it may already know. For everyday work, start with the source material.
 
 Useful context might include:
 
@@ -56,13 +56,13 @@ Useful context might include:
 - What is already known
 - What remains unknown
 
-More context is not automatically better context. Do not paste unrelated information into a chat just because you have it. It makes the task harder to see and can create an unnecessary privacy risk.
+More context isn't always better. Don't paste in unrelated information just because you have it. It hides the task and can create a privacy risk you didn't need.
 
-If the information is missing, the answer should say so. AI should not quietly fill the gap.
+If information is missing, the answer should say so. AI shouldn't quietly fill the gap.
 
 ## 3. Say what a useful answer looks like
 
-Do not leave the shape of the answer to chance. Tell the AI what you want back.
+Don't leave the shape of the answer to chance. Tell the AI what you want back.
 
 For example:
 
@@ -72,13 +72,13 @@ For example:
 - Three questions to take into a meeting
 - A one-page summary for a busy manager
 
-If the answer will be used by someone else, say who that person is and what they need from it. "Help me decide" and "give my manager a clear update" are different jobs.
+If someone else will use the answer, say who and what they need from it. "Help me decide" and "give my manager a clear update" are different jobs.
 
-You can also set a sensible length. "Keep this to five bullets" is usually more useful than asking for a complete strategy when you only need to make a small next move.
+You can also set a length. If you only need a small next step, "Keep this to five bullets" beats asking for a whole strategy.
 
 ## 4. Tell it what not to do
 
-The best constraints are usually the obvious things you would tell a colleague before they started.
+The best limits are usually the obvious things you'd tell a colleague before they started.
 
 For example:
 
@@ -89,11 +89,11 @@ For example:
 - Keep the booking, plan or decision provisional.
 - Tell me what is missing rather than filling the gap.
 
-Constraints are not there to make a prompt complicated. They protect the important parts of the work.
+Limits aren't there to make a prompt complicated. They protect the parts of the work that matter.
 
 ## 5. Review the answer, not just the writing
 
-A polished answer can still be wrong. Check whether it is supported by the source before you decide it is useful.
+A polished answer can still be wrong. Check it against the source before you decide it's useful.
 
 Ask yourself:
 
@@ -102,15 +102,15 @@ Ask yourself:
 - Has it turned an assumption into a fact?
 - Has it missed newer information?
 - Has it ignored an important constraint?
-- Has it treated a genuine conflict as settled?
-- Is it actually useful for the task?
+- Has it treated a real conflict as settled?
+- Is it useful for the task?
 - What still needs a person to verify or decide?
 
-Asking the same AI to double-check itself can help spot an obvious problem. It is not enough validation on its own. Read the original source where it matters.
+Asking the same AI to check itself can catch an obvious problem. It isn't enough on its own. Where it matters, read the original source.
 
 ## 6. Improve a weak first answer
 
-You do not need to start again with a completely new prompt every time. Tell the AI what needs fixing, using the source as the reference point.
+You don't need to start again with a new prompt. Tell the AI what needs fixing, using the source as the reference.
 
 Try one of these:
 
@@ -130,11 +130,11 @@ Check this draft against the source notes. List anything it invented, missed or 
 Make this shorter for [reader]. Keep the facts and caveats. Remove anything that does not help them decide the next step.
 ```
 
-An answer becoming longer is not always an improvement. Ask for the smallest useful answer.
+A longer answer isn't always a better one. Ask for the smallest useful answer.
 
 ## 7. Three reusable prompt patterns
 
-These are starting points, not magic words. Add the relevant source material and change the brackets to match your job.
+These are starting points. Add your source material and change the brackets to fit your job.
 
 ### Turn notes into an internal update
 
@@ -195,12 +195,12 @@ Output:
 
 ## 8. When a better prompt is not enough
 
-Sometimes the problem is not the wording.
+Sometimes the problem isn't the wording.
 
-- If the task needs exact arithmetic, use an approved calculator or other tool. Telling AI to be accurate does not make mental maths reliable.
-- If the task needs current information, provide the right source or use an approved connection. Do not expect a prompt to create access to a system.
-- If the task has hard rules, check the result against those rules before using it.
-- If the task could cause a real external consequence, keep a person responsible for the final decision and action.
+- If the task needs exact sums, use an approved calculator or other tool. Telling AI to be accurate doesn't make its mental maths reliable.
+- If the task needs current information, give it the right source or use an approved connection. A prompt can't give it access to a system.
+- If the task has hard rules, check the result against them before you use it.
+- If the task could have a real effect outside your team, keep a person responsible for the final decision and action.
 
 Ask which kind of problem you have:
 
@@ -209,11 +209,11 @@ Ask which kind of problem you have:
 - Missing capability or tool
 - A decision that belongs with a person
 
-Changing the wording is useful for the first problem. The other three need a different fix.
+Changing the wording fixes the first. The other three need a different fix.
 
 ## 9. Keep a prompt understandable over time
 
-A prompt that works today can become harder to trust when people keep adding patches. Keep the main parts easy to find:
+A prompt that works today gets harder to trust as people keep patching it. Keep the main parts easy to find:
 
 - The job AI is doing
 - The context and source material
@@ -221,7 +221,7 @@ A prompt that works today can become harder to trust when people keep adding pat
 - The tone and audience
 - The shape of the answer
 
-Remove copied webpage material that does not help with the task, such as navigation, cookie notices or unrelated marketing text. Look for instructions that conflict with one another. If someone adds a defensive instruction after a failure, record what it was meant to prevent. Review it later rather than keeping every old patch forever.
+Remove copied web page text that doesn't help, such as menus, cookie notices or marketing copy. Look for instructions that contradict each other. If someone adds a line after a failure, write down what it was meant to prevent. Review it later rather than keeping every old patch for ever.
 
 Before changing a prompt, ask:
 
@@ -232,48 +232,48 @@ Before changing a prompt, ask:
 
 ## 10. Test the prompt like a small process
 
-If a prompt matters enough to reuse, test it against the same small set of cases after each meaningful change. You do not need a technical test suite to start. A short table of cases and honest notes is enough.
+If a prompt matters enough to reuse, test it on the same small set of cases after each real change. You don't need technical tools. A short table of cases and plain notes is enough.
 
 Include three kinds of case:
 
-- **Control:** a clear, ordinary task the AI should handle well.
-- **Edge case:** a difficult or previously missed situation.
-- **Handoff case:** a situation where AI should stop, ask a question, flag uncertainty or hand the decision to a person.
+- A control case: a clear, ordinary task the AI should handle well.
+- An edge case: a hard situation, or one it has missed before.
+- A handoff case: a situation where the AI should stop, ask a question, flag doubt or hand the decision to a person.
 
-Compare the outputs against the source and the intended action. Look for regressions as well as improvements. A prompt that fixes one edge case but makes a control case worse is not simply better.
+Compare the outputs with the source and with what you meant to happen. Look for things that got worse as well as better. A prompt that fixes one edge case but breaks a control case isn't simply better.
 
-Keep the reason for each change with the test result. This helps you spot when an old fix is no longer needed or is causing the AI to withhold useful information.
+Keep the reason for each change next to the test result. Then you can spot when an old fix is no longer needed, or is making the AI hold back useful information.
 
 ## 11. Keep the prompt proportionate
 
-Do not spend 20 minutes engineering a prompt for a two-minute job. Start with the relevant task, source and constraint. Add detail only if the first answer misses something important.
+Don't spend 20 minutes on a prompt for a two-minute job. Start with the task, the source and the main limit. Add detail only if the first answer misses something important.
 
-You also do not need a grand role for the AI. "Act as the world's best strategist" rarely gives it the facts it needs. A clear job and relevant information are more useful.
+You don't need to give the AI a grand role either. "Act as the world's best strategist" doesn't give it the facts it needs. A clear job and the right information do.
 
 ## 12. Use AI responsibly
 
 Use AI as part of normal work, not outside it.
 
-- Do not paste sensitive work information into an unapproved tool.
-- Use the minimum information genuinely needed for the task.
+- Don't paste sensitive work information into a tool that isn't approved.
+- Use only the information the task needs.
 - Follow your organisation's rules for tools and data.
-- Do not let AI quietly make consequential decisions.
-- Keep suitable human approval points.
-- Treat generated content as a draft, not evidence that something happened.
-- Keep external actions under human control where appropriate.
+- Don't let AI quietly make decisions that matter.
+- Keep a person's approval where it's needed.
+- Treat what it writes as a draft, not proof that something happened.
+- Keep actions outside your team under a person's control where it makes sense.
 
-This is practical guidance, not legal advice. If you are unsure whether information can go into a tool, stop and check the relevant policy or person first.
+This is practical guidance, not legal advice. If you're not sure whether information can go into a tool, stop and check the policy or ask the right person first.
 
 ## 13. Try it on one real task
 
-Pick a low-risk task you already do. Give the AI a clear job, the relevant sources and the constraints that matter. Then compare the answer with your source before using it.
+Pick a low-risk task you already do. Give the AI a clear job, the sources and the limits that matter. Then compare the answer with your source before you use it.
 
-The [Thornfield prompting example](../examples/thornfield-team-connect-prompting-example.md) shows why this matters. Both attempts use the same fictional notes. The improved prompt gives better instructions, not better evidence. [Read the honest review](../evaluations/thornfield-team-connect-prompting-review.md) for the full scoring, which put the ordinary attempt at 24 out of 30 and the guide-informed one at 30, on one fictional scenario scored by the person who ran it.
+The [Thornfield prompting example](../examples/thornfield-team-connect-prompting-example.md) shows why. Both attempts use the same fictional notes. The better prompt gives better instructions, not better evidence. [The review](../evaluations/thornfield-team-connect-prompting-review.md) put the ordinary attempt at 24 out of 30 and the guide-informed one at 30. That's one fictional scenario, and I ran and scored it myself.
 
-The Thornfield example tests the core brief and review approach. The reusable patterns above are practical starting points, not separately tested promises that every task will improve.
+Thornfield tests the main brief and the review checks. I haven't tested the three patterns above separately, so treat them as starting points, not a promise that every task will improve.
 
 ## Basis for this guide
 
-**Source-derived foundation:** The four broad habits of clear instructions, useful context, reviewing outputs and responsible use are confirmed by [OpenAI Academy's AI Foundations course](https://academy.openai.com/public/courses/ai-foundations-juzjs?autoEnroll=true).
+[OpenAI Academy's AI Foundations course](https://academy.openai.com/public/courses/ai-foundations-juzjs?autoEnroll=true) backs the four broad habits here: clear instructions, useful context, checking the output and responsible use.
 
-**Project guidance:** The copy-paste brief, review checks, human-control guidance and fictional test method are my own independent practical interpretation. They are not supplied, reviewed or endorsed by OpenAI.
+The copy-paste brief, the review checks, the advice on keeping people in control and the fictional test method are my own. OpenAI didn't supply, review or endorse them.
