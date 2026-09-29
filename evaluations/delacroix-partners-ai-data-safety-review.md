@@ -21,7 +21,7 @@ The two tied.
 | Spotting the risky item that sounds routine (client org chart) | 5 | 5 | Both rejected "it's just names and titles" as the wrong test, and both saw named individuals going into a public tool as the core problem. |
 | Seeing that approval does not automatically cover this level of sensitivity (unreleased financial figures) | 5 | 5 | Both rejected "leadership said it's safe for anything internal" as enough clearance, and both listed specific things to check instead of giving a blanket answer. |
 | Clearing the fictionalised item even though its topic sounds risky | 5 | 5 | Both cleared the fictionalised scenario without blocking it just for mentioning a client project, and both added the same caveat about how good the redaction is. |
-| Clearing the low-risk items without needless caution | 5 | 5 | Both cleared the internal template, the aggregated survey data and the published case study. Both singled out the aggregated data as the case not to downgrade just because it touches a client engagement. |
+| Clearing the low-risk items without needless caution | 5 | 5 | Both cleared the internal template, the aggregated survey data and the published case study. Only the guide-informed output singled out the aggregated data as the case not to downgrade just because it touches a client engagement. The ordinary output cleared it too, with a note to check that no sub-group breakdown could identify anyone. |
 | Practical, well-scoped fix for each flagged item | 5 | 5 | Both gave the same specific fixes. The guide-informed output added one more concrete idea: draft with placeholder figures, and enter the real numbers only outside the AI tool. It's a real but modest addition, not a different conclusion. |
 
 ### Score meanings

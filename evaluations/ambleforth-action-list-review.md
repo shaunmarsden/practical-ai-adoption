@@ -46,7 +46,7 @@ This defect is listed in [Which AI Mistakes Actually Get Through](https://github
 | Factual and evidence fidelity | 3 | 5 | The baseline stated three specifics the notes don't contain: a month for "the end of the month", an owner for the fire door audit, and a deadline for it. The guide-informed output said each was missing. |
 | Task alignment | 4 | 4 | Both produced a usable action list that kept real actions apart from decisions. The guide-informed output folded the fire door audit into its reassignment, so the audit itself dropped off as outstanding work. The baseline kept it as a separate item. |
 | Use of context | 4 | 5 | Both used all nine items. The guide-informed output also noted that the notes never name the month for the lift contract, and that the only date near the fire door audit is Priya's return, not a deadline. |
-| Unknowns, updates and conflicts | 3 | 5 | This is the core difference. The baseline flagged three gaps correctly and filled three others with plausible specifics. The guide-informed output left every unstated owner and date unstated. |
+| Unknowns, updates and conflicts | 3 | 5 | This is the core difference. The baseline flagged five gaps correctly and filled three others with plausible specifics. The guide-informed output left every unstated owner and date unstated. |
 | Practical usefulness | 4 | 5 | Both are easy to act on. The baseline's priorities help, but they partly rest on a link between the service charge check and the 2 October print slot that the notes don't make. The guide-informed gap summary is grounded and ready to act on. |
 | Responsible use and human control | 4 | 5 | Neither took any action or mishandled personal information. The baseline gave ownership to Rowan with no basis in the notes, which quietly takes a decision that had been left to a person. |
 
@@ -86,7 +86,7 @@ The guide-informed output didn't fail automatically either. It stated no owner o
 
 The guide-informed output isn't better organised. The baseline's grouping is arguably easier to skim. The gain is in fidelity alone.
 
-It didn't name a month the notes never name, or an owner the notes never agreed. It didn't turn a colleague's return from leave into a deadline. It said "missing" six times, where the baseline said it three times and guessed three times. That is what the starter's last line asks for, and it is the whole of the difference.
+It didn't name a month the notes never name, or an owner the notes never agreed. It didn't turn a colleague's return from leave into a deadline. It flagged all eight gaps in the notes, seven of them with the word "missing". The baseline flagged five and guessed at three. That is what the starter's last line asks for, and it is the whole of the difference.
 
 ## What it still got wrong
 

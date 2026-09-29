@@ -26,7 +26,7 @@ So I changed the scenario once. It is the same project a fortnight later, but th
 
 | Area | Baseline | Guide-informed | Why it matters |
 | --- | ---: | ---: | --- |
-| Factual and evidence fidelity | 4 | 4 | Both read "the 15th" and "the 8th" as November and October, which the notes don't say. Only the baseline said it had made that guess and asked to be corrected. |
+| Factual and evidence fidelity | 4 | 4 | Both read "the 15th" as 15 November, which the notes don't say. The baseline also read "the 8th" as 8 October. Only the baseline said it had made those guesses and asked to be corrected. |
 | Task alignment | 5 | 5 | Both produced a short, clear update a team could read. |
 | Use of context | 5 | 5 | Both used all eight items. The guide-informed output also worked out that eight branches and two training sessions remain, which the notes only imply. |
 | Unknowns, updates and conflicts | 5 | 4 | Both caught the go live conflict and kept Prisha's estimate apart from the sourced figure. The guide-informed output then filed the disputed go live date, one person's impression of search speed and an unsigned kiosk plan under "Confirmed". |

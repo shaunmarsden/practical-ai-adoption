@@ -15,7 +15,7 @@ I gave an ordinary prompt and a guide-informed prompt the same six fictional tas
 
 | Area | Baseline | Guide-informed | Why it matters |
 | --- | ---: | ---: | --- |
-| Problem and task understanding | 4 | 5 | Both understood all six tasks. The guide-informed output checked whether the information was appropriate to use for every task, not only the most obviously sensitive one. |
+| Problem and task understanding | 4 | 5 | Both understood all six tasks. The guide-informed output checked whether the information was appropriate to use for its top pick as well as for the obviously sensitive board summary. |
 | Practical value and prioritisation | 4 | 5 | Both resisted picking the task with the biggest time saving. The baseline contradicts itself: it says Task 3 isn't an AI task at all, then ranks it above three tasks that suit AI but carry risk. The guide-informed output ranks Task 3 last, which fits its own reasoning. |
 | AI suitability versus simpler automation | 5 | 5 | Both saw Task 3 as a job for rules-based automation, not AI. The baseline got there without being told not to assume AI suits a repetitive task. The guide-informed prompt included that warning. |
 | Risk, privacy and human control | 4 | 5 | The guide-informed output lists what a person must still check and refuses to assume a data-handling policy for Task 4. The baseline covers similar ground less directly. |
@@ -34,7 +34,7 @@ I gave an ordinary prompt and a guide-informed prompt the same six fictional tas
 
 The guide-informed prompt gave a fuller answer, mainly on measuring the trial and on what a person still has to check. It didn't change the recommendation: both outputs chose the same first task.
 
-It checked whether the information was appropriate to use for every task, not just the obvious one. It gave four specific measures, not one instruction to time the trial. It named the gap in Task 4's data-handling policy instead of filling it. And it ranked Task 3 last, which fits its own analysis, where the baseline ranked it above tasks that suit AI but carry risk.
+It checked whether the information was appropriate to use for its top pick, not just the obviously sensitive board summary. It gave four specific measures, not one instruction to time the trial. It named the gap in Task 4's data-handling policy instead of filling it. And it ranked Task 3 last, which fits its own analysis, where the baseline ranked it above tasks that suit AI but carry risk.
 
 ## The trap both outputs avoided
 
