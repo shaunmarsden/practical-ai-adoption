@@ -114,7 +114,7 @@ Both caught the go live conflict, both kept Prisha's estimate away from the sour
 
 The difference is what the starter's third instruction did. Asked to sort every item into confirmed or still to be checked, the guide-informed output put three things in "Confirmed" that were not: a go live date that two sources disagree about, one person's impression of search speed, and a kiosk plan whose own support numbers have not been sent yet. The ordinary prompt, with no columns to fill, left all three as prose and got them right. Three items sitting under a heading that says Confirmed is one of the harder defects to spot, which is why it appears in [Which AI Mistakes Actually Get Through](https://github.com/shaunmarsden/practical-ai-sales-workflows/blob/main/guides/which-ai-mistakes-get-through.md), a sibling repository page sorting every scored defect across these three projects by whether a careful reader would have caught it.
 
-The ordinary prompt also disclosed an inference it had made, that "the 15th" and "the 8th" meant November and October, and asked to be corrected. The guide-informed output made the same inference silently.
+The ordinary prompt also disclosed an inference it had made, that "the 15th" and "the 8th" meant November and October, and asked to be corrected. The guide-informed output made the same inference for "the 15th" silently, and left "the 8th" as written.
 
 That result changed the starter. The rest of this page is the re-run.
 

@@ -1,6 +1,6 @@
 # Before You Put Work Data Into AI
 
-**Start here:** Copy the brief below, list what you are about to submit, and paste it into the AI tool you already use.
+**Start here:** Copy the brief below, list what you're about to put in, and paste it into the AI tool you already use.
 
 ```text
 I want to check each of these planned AI uses against the specific question of whether the data involved is safe to submit, not just whether the tool is generally approved.
@@ -19,33 +19,37 @@ Tell me which of these should not go ahead as planned, which need a specific cha
 Do not assume a tool is safe for everything just because it is the approved one, and do not treat a task as risky just because the topic sounds sensitive, if the actual data has been properly anonymised.
 ```
 
-Whether data is safe to submit to AI depends on two things together, not either one alone: what kind of tool it is going into, and what the data actually contains.
+Whether data is safe to put into AI depends on two things together, not either one alone: what kind of tool it's going into, and what the data contains.
 
 ## Why this needs its own check
 
-- **Do not include sensitive information in queries to public LLMs.** The UK National Cyber Security Centre's own guidance is direct: do not submit queries that would cause a problem if made public, naming confidential business information and personal or health matters as examples.
-- **There is a concrete organisational path for higher-sensitivity work.** Either a private, contractually-governed AI tool, or a self-hosted model after a proper security assessment, alongside clear rules on what can and cannot be submitted.
+Don't put sensitive information into public AI tools. The UK National Cyber Security Centre's guidance is direct: don't submit anything that would cause a problem if it were made public. It gives confidential business information and personal or health matters as examples.
 
-Sources are listed at the bottom of this guide.
+There is a clear route for more sensitive work. An organisation can use a private AI tool covered by a contract, or host its own model after a proper security check. Either way, it needs clear rules on what can and can't go in.
 
-## Two mistakes to check for directly
+The source is at the bottom of this guide.
 
-- **Assuming a tool is safe for everything just because it is the "approved" one.** Approval usually covers a level of sensitivity, not an unlimited one. A tool approved for ordinary internal drafting is not automatically approved for unreleased financial figures or similarly sensitive material. That needs actually checking, not assuming.
-- **Treating a task as risky just because the topic sounds sensitive.** Data that has genuinely been anonymised or fictionalised can be safe to use even in a public tool. Over-caution here just pushes people toward doing the work with no help at all.
+## Two mistakes to check for
+
+Assuming a tool is safe for everything because it's the "approved" one. Approval usually covers a level of sensitivity, not every level. A tool approved for ordinary internal drafting isn't automatically approved for unreleased financial figures or anything as sensitive. Someone needs to check that, not assume it.
+
+Treating a task as risky because the topic sounds sensitive. Data that has really been anonymised or made up can be safe to use, even in a public tool. Too much caution here just pushes people to do the work with no help at all.
 
 ## What to watch for
 
-- **"It's just names and titles."** Named individuals, job titles and contact details are personal data, and personal data going into a public tool with no data-handling agreement is exactly the pattern this guide is about, regardless of how mundane the framing sounds.
-- **"Leadership said the tool is safe for anything internal."** A general assurance about a tool is not the same as someone actually checking whether this specific piece of data is covered.
-- **"It's a client project, so it's automatically sensitive."** Aggregated, anonymised or genuinely fictionalised material can be low risk even though the underlying topic is a real piece of work. Check the actual data, not the label on the task.
+"It's just names and titles." Names, job titles and contact details are personal data. Personal data going into a public tool with no agreement on how it's handled is exactly what this guide is about, however ordinary it sounds.
+
+"Leadership said the tool is safe for anything internal." A general promise about a tool isn't the same as someone checking whether this piece of data is covered.
+
+"It's a client project, so it's automatically sensitive." Totals, anonymised figures or made-up material can be low risk, even when the topic is real work. Check the data, not the label on the task.
 
 ## Try it on your own list
 
-[Read the Delacroix Partners example](../examples/delacroix-partners-ai-data-safety-example.md) to see this checklist applied to six planned AI uses at a fictional consultancy, including ones designed to look safer or riskier than they actually are. [Read the honest review](../evaluations/delacroix-partners-ai-data-safety-review.md) for the full scoring.
+[Read the Delacroix Partners example](../examples/delacroix-partners-ai-data-safety-example.md) to see this checklist used on six planned AI uses at a fictional consultancy. Some were built to look safer or riskier than they are. [Read the review](../evaluations/delacroix-partners-ai-data-safety-review.md) for the full scoring.
 
 ## Basis for this guide
 
 - UK National Cyber Security Centre, "ChatGPT and large language models: what's the risk?":
   https://www.ncsc.gov.uk/blog-post/chatgpt-and-large-language-models-whats-the-risk
 
-This is a project-authored checklist, not a named framework. It is not endorsed by the NCSC, AiCore or any other organisation. This is practical guidance, not legal advice.
+I wrote this checklist myself. It isn't a named framework, and the NCSC, AiCore and other organisations haven't endorsed it. It's practical guidance, not legal advice.

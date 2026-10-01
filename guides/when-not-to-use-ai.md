@@ -1,6 +1,6 @@
 # When Not to Use AI
 
-**Start here:** Copy the brief below, list the AI uses you are reviewing, and paste it into the AI tool you already use.
+**Start here:** Copy the brief below, list the AI uses you're reviewing, and paste it into the AI tool you already use.
 
 ```text
 I want to check each of these proposed AI uses against specific categories where AI should not be used, or not without a safeguard, regardless of how polished or convenient it looks.
@@ -19,32 +19,39 @@ Tell me which proposals should not go ahead as currently designed, which need a 
 Do not treat a task as safe just because it seems mundane, and do not treat a task as unsafe just because it feels emotionally uncomfortable.
 ```
 
-Most guidance on using AI well assumes the task is a reasonable one to try. This one is about the categories that stay unsuitable for unsupervised AI use no matter how good the tool is or how experienced you already are.
+Most advice on using AI well assumes the task is a reasonable one to try. This guide covers the kinds of task that stay unsuitable for AI without supervision, however good the tool and however experienced you are.
 
 ## Why this needs its own check
 
-- **Specialised legal AI tools still hallucinate 17 to 33% of the time.** Stanford RegLab found this despite the tools being marketed as reliable; the researchers describe providers' "hallucination-free" claims as overstated.
-- **Human involvement in high-stakes decisions has to be real, not a token check.** The UK's Information Commissioner's Office is explicit that where a decision has a legal or similarly significant effect on someone, human involvement must be active rather than a token gesture. The law underneath this changed in 2025 and the ICO's guidance is being rewritten to match, but the safeguard did not disappear: the newer regime still expects an organisation to show the safeguards around such a decision, rather than removing the need for them. The ICO's own impact assessment for that rewrite records why the clarification is needed: "Organisations can also be unsure about key concepts. For example, what counts as a 'decision', when a decision is 'solely automated', or what 'meaningful human involvement' looks like." If those are open enough questions for the regulator to be rewriting its guidance around them, they are worth checking rather than assuming in your own case.
+Specialist legal AI tools still hallucinate 17 to 33% of the time. Stanford RegLab found this even though the tools are sold as reliable. The researchers call the providers' "hallucination-free" claims overstated.
 
-Neither finding is about AI being generally unreliable. Both point at the same two specific patterns: confident but unverified claims in a domain where being wrong matters, and decisions with real effect on people that nobody meaningfully reviews.
+A person's part in a high-stakes decision has to be real, not a token check. The UK Information Commissioner's Office (ICO) says that where a decision has a legal or similarly significant effect on someone, the person involved must take an active part, not make a token gesture. The law behind this changed in 2025, and the ICO is rewriting its guidance to match. The safeguard didn't go away. The newer rules still expect an organisation to show the safeguards around such a decision.
 
-Sources are listed at the bottom of this guide.
+The ICO's own impact assessment for that rewrite says why it needs to clarify things: "Organisations can also be unsure about key concepts. For example, what counts as a 'decision', when a decision is 'solely automated', or what 'meaningful human involvement' looks like." If the regulator is rewriting its guidance around those questions, check them in your own case rather than assume.
+
+Neither finding says AI is unreliable in general. Both point at the same two patterns: confident but unchecked claims where being wrong matters, and decisions that affect people and that nobody properly reviews.
+
+The sources are at the bottom of this guide.
 
 ## The two patterns to check for
 
-- **An unsupervised decision with real effect on a person.** If an AI output effectively decides something with a legal or otherwise significant effect on someone, such as rejecting a job application, and no person meaningfully reviews it before it takes effect, that is a structural problem. A better model does not fix it. The fix is a genuine human review step, not necessarily abandoning the tool.
-- **Confident, unverified factual or legal claims in a consequential domain.** Specialised, professionally marketed tools still produce wrong citations and wrong facts at meaningful rates. A polished, professional-sounding draft is not the same as a verified one. The fix is having someone qualified check the specific claims, not just reading the draft for tone.
+A decision about a person that nobody reviews. Say an AI output in effect decides something with a legal or otherwise significant effect on someone, such as rejecting a job application, and no person properly reviews it first. That's a problem with how the process is built, and a better model won't fix it. The fix is a real review by a person, not necessarily dropping the tool.
+
+Confident, unchecked factual or legal claims where the stakes are high. Specialist tools sold to professionals still get citations and facts wrong often enough to matter. A polished, professional-sounding draft isn't a checked one. The fix is for someone qualified to check the specific claims, not just read the draft for tone.
 
 ## What to watch for
 
-- **Mistaking "it's just filtering" for low risk.** Automatically rejecting people below a threshold, with no human review, is not a neutral filtering step. It is an adverse decision about a real person, made without anyone checking it.
-- **Mistaking fluent writing for verified fact.** "It reads really professionally" is not evidence that a citation or a statutory reference is correct. It can be exactly the sign that a confident, wrong answer is about to go unnoticed.
-- **Mistaking discomfort for risk.** A task can feel emotionally difficult, such as preparing for a hard conversation, and still be entirely appropriate for AI assistance, as long as a person still owns and delivers the actual outcome.
-- **Mistaking convenience pressure for evidence.** "It's been running well in early testing" or "the review would cost money and take time" are real business pressures, but neither one changes whether the actual safeguard is in place.
+Thinking "it's just filtering" means low risk. Rejecting people below a threshold automatically, with no one reviewing it, isn't a neutral filter. It's a decision against a real person that nobody checked.
+
+Taking fluent writing for checked fact. "It reads really professionally" isn't evidence that a citation or a reference to the law is right. It can be the very sign that a confident, wrong answer is about to slip through.
+
+Taking discomfort for risk. A task can feel hard, such as preparing for a difficult conversation, and still be fine for AI to help with, as long as a person still owns and delivers the outcome.
+
+Taking convenience for evidence. "It's been running well in early testing" and "the review would cost money and take time" are real business pressures. Neither changes whether the safeguard is in place.
 
 ## Try it on your own list
 
-[Read the Ashworth & Vale example](../examples/ashworth-vale-ai-safeguards-example.md) to see this checklist applied to six proposed AI uses at a fictional retailer, including ones designed to look safer or riskier than they actually are. [Read the honest review](../evaluations/ashworth-vale-ai-safeguards-review.md) for the full scoring, including a second attempt run under realistic pressure to approve everything.
+[Read the Ashworth & Vale example](../examples/ashworth-vale-ai-safeguards-example.md) to see this checklist used on six proposed AI uses at a fictional retailer. Some were built to look safer or riskier than they are. [Read the review](../evaluations/ashworth-vale-ai-safeguards-review.md) for the full scoring, including a second attempt under the kind of pressure to approve everything you'd meet at work.
 
 ## Basis for this guide
 
@@ -55,6 +62,6 @@ Sources are listed at the bottom of this guide.
 - UK Information Commissioner's Office, "Update to automated decision making guidance: Draft Impact Assessment," March 2026, section 3.2.1 on information asymmetry:
   https://ico.org.uk/media2/bbzdvqqy/adm-impact-assessment.pdf
 
-Checked 26 August 2026: the Data (Use and Access) Act 2025 revised the automated decision-making provisions in the UK GDPR, replacing a general prohibition with a permissive, safeguard-led approach. The ICO consulted on replacement guidance between 31 March and 29 May 2026 and final guidance is expected later in 2026. The two patterns this guide describes are not affected, but confirm the current legal position before relying on it for a specific decision about a real person.
+Checked 26 August 2026: the Data (Use and Access) Act 2025 changed the rules on automated decision-making in the UK GDPR. It replaced a general ban with an approach that allows it, subject to safeguards. The ICO consulted on new guidance between 31 March and 29 May 2026, and expects to publish final guidance later in 2026. This doesn't affect the two patterns in this guide. But check the current legal position before you rely on it for a decision about a real person.
 
-This is a project-authored checklist, not a named framework. It is not endorsed by Stanford RegLab, the ICO, AiCore or any other organisation. It does not cover every way AI use can go wrong, only these two specific, evidenced patterns.
+I wrote this checklist myself. It isn't a named framework, and Stanford RegLab, the ICO, AiCore and other organisations haven't endorsed it. It doesn't cover every way AI use can go wrong, only these two patterns, which the sources above back up.

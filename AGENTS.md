@@ -1,31 +1,31 @@
 # Contribution Rules
 
-This is a public repository for nontechnical people using AI at work.
+This is a public repository for people without a technical background who use AI at work.
 
 ## Writing and scope
 
-- Use plain-English British writing. Keep sentences short.
-- Avoid AI hype, corporate language and unexplained technical terms.
+- Write in plain British English. Keep sentences short.
+- Avoid AI hype, corporate language and technical terms you don't explain.
 - Use ASCII punctuation only. Do not use em dashes, en dashes or smart quotes.
-- Give the reader one obvious first action. It must not require installation, coding, an API, a command line or a particular paid product.
-- Inspect existing files before adding material. Grow the repository only when real use or testing justifies it.
+- Give the reader one obvious first thing to do. It must not need installing, coding, an API, a command line or a particular paid product.
+- Read the existing files before adding anything. Only add to the repository when real use or testing justifies it.
 
 ## Evidence and examples
 
-- Do not fabricate evidence, references, outcomes or testing.
-- Clearly distinguish fictional tests, real use and external use.
-- Every fictional worked example must be invented from scratch. Never adapt a real customer, learner, employer or confidential example.
-- Important guidance should be tested against a deliberately difficult fictional case.
-- Test runners must not receive the evaluator answer key. Log failures honestly. Do not overwrite weak results to make the project look stronger.
+- Don't make up evidence, references, outcomes or testing.
+- Keep fictional tests, real use and use by other people clearly apart.
+- Invent every fictional worked example from scratch. Never adapt a real customer, learner, employer or confidential example.
+- Test important guidance against a fictional case that's hard on purpose.
+- Don't give the answer key to whatever runs the test. Log failures as they happened. Don't overwrite weak results to make the project look stronger.
 
 ## Privacy and responsibility
 
-- Keep consequential external actions human-approved where appropriate.
-- Use the minimum sensitive information needed. Follow the organisation's rules and approved tools.
-- Prefer current primary public sources for factual claims. Never invent a reference when one is missing.
+- Keep a person's approval on actions with real effects outside the team, where that's appropriate.
+- Use as little sensitive information as you need. Follow the organisation's rules and approved tools.
+- For factual claims, prefer current primary public sources. Never invent a reference when one is missing.
 
 ## AiCore IP boundary
 
-- Never reproduce, adapt or reconstruct AiCore curriculum design, including named frameworks, programme structures, exercises, case packs, competency mappings or assessment designs.
-- General concepts may be expressed independently. Do not use the CRISP prompting framework, AiCore AI Fluency Framework, Automation Lens, AiCore suitability framework or any renamed version of them.
+- Never reproduce, adapt or rebuild AiCore curriculum design. That includes named frameworks, programme structures, exercises, case packs, competency mappings and assessment designs.
+- You can express general ideas in your own way. Don't use the CRISP prompting framework, AiCore AI Fluency Framework, Automation Lens, AiCore suitability framework or any renamed version of them.
 - If the AiCore IP line is unclear, ask me before drafting.

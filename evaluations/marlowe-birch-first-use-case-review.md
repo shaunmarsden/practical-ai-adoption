@@ -1,6 +1,8 @@
 # Marlowe & Birch: Finding a Good First AI Use Case Review
 
-This is a project-authored scoring rubric. It is not endorsed by DSIT, the ONS, OpenAI or AiCore.
+This is a project-authored scoring rubric, not one endorsed by DSIT, the ONS, OpenAI or AiCore.
+
+I gave an ordinary prompt and a guide-informed prompt the same six fictional tasks and asked which to try first. The [worked example](../examples/marlowe-birch-first-use-case-example.md) has both prompts and both outputs.
 
 ## Result
 
@@ -13,58 +15,59 @@ This is a project-authored scoring rubric. It is not endorsed by DSIT, the ONS, 
 
 | Area | Baseline | Guide-informed | Why it matters |
 | --- | ---: | ---: | --- |
-| Problem and task understanding | 4 | 5 | Both understood all six tasks correctly. The guide-informed output checked whether the information was appropriate to use for every task, not only the most obviously sensitive one. |
-| Practical value and prioritisation | 4 | 5 | Both resisted picking the task with the largest time saving. The baseline is internally inconsistent: it says Task 3 is not an AI task at all, then ranks it above three AI-suited-but-risky tasks. The guide-informed output ranks Task 3 last, consistent with its own reasoning. |
-| AI suitability versus simpler automation | 5 | 5 | Both correctly identified Task 3 as a rules-based automation candidate rather than an AI one. The baseline reached this without being told not to assume AI suits a repetitive task; the guide-informed prompt stated that caution explicitly. |
-| Risk, privacy and human control | 4 | 5 | The guide-informed output has an explicit list of what a person must still check and explicitly declines to assume Task 4's data-handling policy. The baseline covers similar ground but less explicitly. |
-| Testability and success measures | 3 | 5 | The baseline suggests timing the trial. The guide-informed output gives four distinct measures, including separating generation time from correction time. |
-| Practical first-step usefulness | 4 | 5 | Both propose a small, reversible trial. The guide-informed output is more explicit about scope: run in parallel, and nothing changes for the six project leads. |
+| Problem and task understanding | 4 | 5 | Both understood all six tasks. The guide-informed output checked whether the information was appropriate to use for its top pick as well as for the obviously sensitive board summary. |
+| Practical value and prioritisation | 4 | 5 | Both resisted picking the task with the biggest time saving. The baseline contradicts itself: it says Task 3 isn't an AI task at all, then ranks it above three tasks that suit AI but carry risk. The guide-informed output ranks Task 3 last, which fits its own reasoning. |
+| AI suitability versus simpler automation | 5 | 5 | Both saw Task 3 as a job for rules-based automation, not AI. The baseline got there without being told not to assume AI suits a repetitive task. The guide-informed prompt included that warning. |
+| Risk, privacy and human control | 4 | 5 | The guide-informed output lists what a person must still check and refuses to assume a data-handling policy for Task 4. The baseline covers similar ground less directly. |
+| Testability and success measures | 3 | 5 | The baseline suggests timing the trial. The guide-informed output gives four separate measures, including separating generation time from correction time. |
+| Practical first-step usefulness | 4 | 5 | Both propose a small trial that can be undone. The guide-informed output is clearer about scope: run it alongside the current process, and nothing changes for the six project leads. |
 
 ### Score meanings
 
-- **1:** Unsafe or unusable
-- **2:** Weak, substantial correction needed
-- **3:** Useful with careful review
-- **4:** Strong, minor correction needed
-- **5:** Strong enough to support a human decision, subject to normal checking
+- 1: Unsafe or unusable
+- 2: Weak, substantial correction needed
+- 3: Useful with careful review
+- 4: Strong, minor correction needed
+- 5: Strong enough to support a human decision, subject to normal checking
 
-## What genuinely improved
+## What improved
 
-The guide-informed prompt produced a more thoroughly developed answer, particularly on testability and on making the remaining human checks explicit. It did not produce a fundamentally different recommendation: both outputs chose the same first task.
+The guide-informed prompt gave a fuller answer, mainly on measuring the trial and on what a person still has to check. It didn't change the recommendation: both outputs chose the same first task.
 
-- It checked information-appropriateness for every task, not just the obvious one.
-- It gave four specific measures instead of one general instruction to time the trial.
-- It explicitly declined to assume a data-handling policy for Task 4, naming the gap rather than filling it.
-- It ranked Task 3 last for a reason consistent with its own analysis, rather than ranking it above genuinely AI-suited but risky tasks.
+It checked whether the information was appropriate to use for its top pick, not just the obviously sensitive board summary. It gave four specific measures, not one instruction to time the trial. It named the gap in Task 4's data-handling policy instead of filling it. And it ranked Task 3 last, which fits its own analysis, where the baseline ranked it above tasks that suit AI but carry risk.
 
-## What the test does not show as clearly as it might seem to
+## The trap both outputs avoided
 
-The single most important trap in this test, the risk of defaulting to AI for a fixed-rules copying task, was caught by both outputs. The baseline reached that conclusion without any prompt telling it not to assume AI suits a repetitive task. This test shows the guide improves thoroughness, consistency and the explicitness of what still needs checking. It does not show that an ordinary prompt would have failed the core safety check in this scenario.
+The main trap in this test was treating a fixed-rules copying task as an AI task. Both outputs avoided it, and the baseline did so without any instruction telling it not to assume AI suits a repetitive task.
+
+So the guide made the answer more thorough, more consistent and clearer about what still needs checking. This test doesn't show that an ordinary prompt would have failed the core safety check here.
 
 ## What a person still has to check
 
-- Confirm which AI tool is actually approved for this kind of internal content before running any trial.
-- Decide what "needing management attention" means for this organisation; that judgement is not something to hand to a drafting tool.
-- Read the six original updates rather than relying on the summary alone, at least during the trial period.
-- Resolve the Task 4 data-handling question separately and explicitly before considering it as a future experiment; do not treat this test's silence on it as an answer.
-- Decide, if moving to Task 2 or Task 6 later, whether the AI drafts a recommendation for a person to decide, rather than assuming the same shape used for Task 1 carries over.
+- Which AI tool is approved for this kind of internal content, before running any trial.
+- What "needing management attention" means for this organisation. That's a judgement to keep, not one to hand to a drafting tool.
+- The six original updates, not only the summary, at least during the trial.
+- The Task 4 data-handling question. Settle it separately before treating Task 4 as a future experiment. This test's silence on it is not an answer.
+- If moving to Task 2 or Task 6 later, whether the AI should draft a recommendation for a person to decide. Don't assume the Task 1 setup carries over.
 
 ## What this test supports
 
-In this one fictional scenario, the guide-informed prompt produced a more thorough and internally consistent result from the same task list. Both outputs avoided the specific trap the scenario was built to test.
+In this one fictional scenario, the guide-informed prompt gave a more thorough and more consistent answer from the same task list. Both outputs avoided the trap the scenario was built to test.
 
 ## What this test does not support
 
-- This is one fictional scenario only.
-- It is a builder-run test, not independent validation.
-- The two outputs were generated as separate, isolated runs, but by the same underlying model family; a different model or tool might behave differently.
-- It does not show a real-world business outcome or a measured productivity improvement.
-- It does not include an independent external user's result.
+- It is one fictional scenario.
+- I ran it myself, so it isn't independent validation.
+- The two runs were separate and isolated, but used the same model family. A different model or tool might behave differently.
+- It doesn't show a real business outcome or a measured productivity gain.
+- It includes no outside user's result.
 
 ## Test integrity
 
-Each run was generated in a fresh, isolated context with no visibility into the other run, the rubric, the automatic-failure criteria or the expected reasoning. Neither runner was told this was a test or comparison. The evaluator received both completed outputs and the answer key only after both runs were finished. A contamination risk remains because the same person designed the scenario, wrote the rubric and scored both outputs.
+I ran each prompt in a fresh, isolated context. Neither run saw the other run, the rubric, the automatic-failure criteria or the expected reasoning, and neither was told it was a test or a comparison. The scorer got the two outputs and the answer key only after both runs had finished.
+
+One risk remains: I designed the scenario, wrote the rubric and scored both outputs.
 
 ## Next evidence
 
-Use the guide on a real low-risk first-use-case decision when one naturally arises, or log feedback if an outside user tries it.
+Use the guide on a real, low-risk choice of first use case when one comes up, or log feedback if an outside user tries it.
