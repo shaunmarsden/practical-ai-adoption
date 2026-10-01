@@ -55,7 +55,7 @@ Notes:
 [paste notes]
 ```
 
-This one did best in testing. The [Sowerby and Crane agenda example](../examples/sowerby-crane-agenda-example.md) runs it against an ordinary "turn these notes into an agenda" prompt. [Read the review](../evaluations/sowerby-crane-agenda-review.md). On simple notes the two scored the same. Then I used notes where an earlier decision was disputed and a partner's offhand remark could be read as approval. The ordinary prompt closed three questions the notes had left open, and this starter asked about all three. The last line does the work, because it gives an open question somewhere to go.
+This one did best in testing. The [Sowerby and Crane agenda example](../examples/sowerby-crane-agenda-example.md) runs it against an ordinary "turn these notes into an agenda" prompt. [Read the review](../evaluations/sowerby-crane-agenda-review.md). On simple notes the two scored the same. Then I used notes where an earlier decision was disputed and a partner's offhand remark could be read as approval. In the first run, the ordinary prompt closed three questions the notes had left open, and this starter asked about all three. In two repeat runs, it closed two of the three again every time. The last line does the work, because it gives an open question somewhere to go.
 
 ### Summarising: make an action list from notes
 
