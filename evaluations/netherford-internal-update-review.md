@@ -4,7 +4,7 @@ This is a project-authored scoring rubric, not one endorsed by any organisation.
 
 This scores the [Netherford internal update example](../examples/netherford-internal-update-example.md), which tests the internal update starter in [You Have Been Given AI at Work](../guides/you-have-been-given-ai-at-work.md).
 
-I ran three attempts. The first showed no difference. The second, on harder notes, showed a difference the other way from the one I expected. The ordinary prompt scored higher, because the starter's two-column sort had nowhere to put a contested item. I then rewrote the starter and re-ran the second attempt, with nothing else changed. The rewrite fixed the defect and still didn't beat the ordinary prompt. All three are recorded here.
+I ran three attempts. The first showed no difference. On harder notes, the second scored the ordinary prompt higher, because the starter's two-column sort had nowhere to put a contested item. I rewrote the starter. The rewrite fixed the defect and still didn't beat the ordinary prompt.
 
 ## Result
 
@@ -18,9 +18,9 @@ Neither version hit an automatic failure in Attempt 1 or Attempt 2.
 
 ## Why there were three attempts
 
-The first attempt used notes where the note taker had already labelled most of the uncertainty: "Not fixed yet", "It has not started because", "Not signed off", "We have not seen it or tested it", "no new date has been agreed". Asked plainly for an update, the ordinary prompt carried every one of those labels through. It attributed one person's theory to that person and kept a sourced budget figure sourced. It scored 29 out of 30, the same as the starter.
+The first attempt used notes that labelled their own uncertainty: "Not fixed yet", "Not signed off", "no new date has been agreed". The ordinary prompt carried every label through.
 
-So I changed the scenario once. It is the same project a fortnight later, but the uncertainty sits inside the notes instead of being stated. There is an impression reported as a result, a go live date the plan and the branch managers disagree about, and a sourced figure next to somebody's estimate. I didn't change either prompt, and took a fresh, isolated run of each. That is Attempt 2, shown in [the worked example](../examples/netherford-internal-update-example.md).
+So I changed the scenario. It is the same project a fortnight later, but the uncertainty sits inside the notes: an impression reported as a result, a go live date the plan and the branch managers disagree about, and a sourced figure next to somebody's estimate. I changed neither prompt. That is Attempt 2, shown in [the worked example](../examples/netherford-internal-update-example.md).
 
 ## Score breakdown, Attempt 2
 
@@ -43,7 +43,7 @@ So I changed the scenario once. It is the same project a fortnight later, but th
 
 ## Score breakdown, Attempt 3
 
-For Attempt 3 I replaced the starter's third instruction with two lines. The first sorts each point into confirmed, still needs checking, or what the notes disagree about. The second says to call something confirmed only if the notes settle it, because somebody's impression is not confirmation. Nothing else changed. The notes and the ordinary prompt were the same as in Attempt 2, and I ran both again in fresh isolated contexts.
+For Attempt 3 I replaced the starter's third instruction with two lines. One sorts each point into confirmed, still needs checking, or what the notes disagree about. The other says to call something confirmed only if the notes settle it, because somebody's impression is not confirmation. The notes and the ordinary prompt stayed the same, and I ran both again.
 
 | Area | Baseline | Guide-informed | Why it matters |
 | --- | ---: | ---: | --- |
@@ -54,19 +54,17 @@ For Attempt 3 I replaced the starter's third instruction with two lines. The fir
 | Practical usefulness | 5 | 5 | The starter's third group gives the decision needed before the 8th a section of its own. The baseline's two closing flags say the same in fewer words. |
 | Responsible use and human control | 5 | 5 | Neither took action. Both left the date decision with a person. |
 
-## What the rewrite fixed, and what it didn't
+## What the rewrite fixed
 
-It fixed the defect it was written for, completely. Every item misfiled under "Confirmed" moved. Marguerite's impression of search speed and the unsigned kiosk plan went to "still to check". The disputed go live date went to the new third group, where it reads as the decision it is. The starter also went further than any earlier run. It separated "branch testing started Monday", which is a fact, from "Ines says feedback is positive", which is not.
-
-It didn't make the starter better than asking plainly. The ordinary prompt scored 30 out of 30 on this run, against the starter's 29.
+It fixed the defect it was written for. Marguerite's impression and the unsigned kiosk plan went to "still to check", and the disputed go live date went to the new third group. The starter also separated "branch testing started Monday", a fact, from "Ines says feedback is positive", which no earlier run did. But the ordinary prompt scored 30 out of 30 on this run, against the starter's 29.
 
 ## The variance this test measured by accident
 
-Attempt 3 re-ran the ordinary prompt unchanged, on unchanged notes, only to keep the comparison consistent. It scored 30. The same prompt on the same notes had scored 29 the run before.
+The ordinary prompt ran unchanged on unchanged notes in Attempt 3. It scored 30. The same prompt on the same notes had scored 29 the run before.
 
-That one-point movement, with nothing changed, is the same size as the gap in Attempt 2 and the gap in Attempt 3. It is the clearest evidence in this repository for a limit every review here already states: one run, scored once by one person, can't resolve a difference of one point. So read Attempt 2 as "the starter had a specific, reproducible defect", which it did. Don't read it as "the ordinary prompt is one point better", which this run contradicts.
+That one-point movement, with nothing changed, is the size of the gaps in Attempts 2 and 3. One run can't resolve a one-point difference. So Attempt 2 shows the starter had a specific, reproducible defect, not that the ordinary prompt is one point better.
 
-I then checked the six-point gap in the [agenda starter review](sowerby-crane-agenda-review.md) the same way, with three runs of each prompt on the same notes. It gave 23, 24 and 24 for the ordinary prompt against 29, 30 and 29 for the starter. The ranges don't overlap, and the gap is at least five points at its narrowest. That gap survives repetition. The one-point gaps here don't.
+I checked the six-point gap in the [agenda starter review](sowerby-crane-agenda-review.md) the same way. Three runs of each prompt gave 23, 24 and 24 for the ordinary prompt against 29, 30 and 29 for the starter. That gap survives repetition. The one-point gaps here don't.
 
 ## What each run did with the harder notes
 
@@ -80,66 +78,57 @@ I then checked the six-point gap in the [agenda starter review](sowerby-crane-ag
 | Old system | December booking, cannot start until 30 days after go live | Stated both | Stated both, and noted the booking should be rechecked once go live is settled |
 | Training | 4 of 6 sessions, 58 people | Correct | Correct |
 
-One thing I designed as a trap turned out not to be one. The December decommissioning booking looked inconsistent with an unsettled go live date. But 30 days after either candidate date still falls in December, so both runs were right to report it without alarm. I've kept that here instead of dropping it, because a test is only worth as much as its answer key.
-
-The interactive page had this wrong until 15th September 2026. [Sort the Notes Yourself](https://shaunmarsden.github.io/practical-ai-adoption/) asked visitors to place the same claim, and marked "the notes disagree" as the right answer. That is the reading the paragraph above retired. Both model runs and this review had it as something to check. Only the page carried the earlier version, so anyone who sorted it correctly was told they were wrong. It now reads as something to check, with the arithmetic spelled out: 30 days after either candidate date lands in December, and what is missing is the date in December the booking sits on.
+The December decommissioning booking looked like a trap, but 30 days after either candidate go live date still falls in December. Both runs were right to report it without alarm.
 
 ## Automatic failure review
 
-The Attempt 2 baseline didn't fail automatically. Its month guess is a scoring weakness, not an automatic failure, because the output itself discloses it and asks the reader to correct it.
+The Attempt 2 baseline didn't fail. Its month guess costs points, but the output discloses it and asks the reader to correct it.
 
-The Attempt 2 guide-informed output didn't fail automatically either. Filing three unsettled items under "Confirmed" is a real weakness. But each entry's own text still carries the qualifier that contradicts the heading. Ines and Marguerite are named as the sources, the go live entry states both dates, and the kiosk numbers appear as outstanding two paragraphs later. A reader who reads the entry isn't misled. A reader who trusts the heading is.
+The Attempt 2 guide-informed output didn't fail either. Filing three unsettled items under "Confirmed" is a real weakness, but each entry's own text carries the qualifier: Ines and Marguerite are named as sources, the go live entry states both dates, and the kiosk numbers appear as outstanding later. A reader who reads the entry isn't misled. A reader who trusts the heading is.
 
 ## What the starter changed
 
-Not accuracy. Both runs handled the substance the same way, and both caught the two hardest items in the notes, the go live conflict and the budget estimate.
+Not accuracy. Both runs caught the two hardest items, the go live conflict and the budget estimate.
 
-It changed the shape, and the shape caused the loss. "Separate what is confirmed from what still needs checking" is a good instruction when items sort cleanly into two piles. Three of these didn't. A go live date that two sources disagree about is neither confirmed nor just pending. It is contested. One person's impression of search speed isn't an unchecked task. It is a different kind of evidence. Given two columns and no third option, the output put all three in the wrong one.
-
-The ordinary prompt had no columns to fill, so it left them as prose and described each one correctly.
+It changed the shape, and the shape caused the loss. "Separate what is confirmed from what still needs checking" works when items sort into two piles. Three of these didn't. A date two sources disagree about is contested, not pending. One person's impression is a different kind of evidence, not an unchecked task. With no third option, the starter put all three in the wrong column. The ordinary prompt had no columns, so it described each one correctly.
 
 ## What it still got wrong
 
-In Attempt 2, both runs turned "the 15th" and "the 8th" into November and October. That is probably right, and it is the reading almost any colleague would make. But it is still a guess from notes that don't name the months. In a document meant to separate what is known from what isn't, that matters. Only the baseline disclosed it.
-
-Attempt 3 split on this. Its baseline left both dates alone. The rewritten starter guessed one of the two, writing "15 November" and leaving "the 8th" as it stood. Nothing in the rewrite was aimed at date guessing. So this is most likely run-to-run movement of the kind measured above, not an effect of the change.
+In Attempt 2, both runs turned "the 15th" and "the 8th" into November and October. That is probably right, but the notes don't name the months, and only the baseline disclosed the guess. In Attempt 3 the baseline left both dates alone, and the rewritten starter wrote "15 November" and left "the 8th". Nothing in the rewrite targeted dates, so this is most likely run-to-run movement.
 
 ## What a person still has to check
 
 - Which go live date is now real, before the board papers go out.
-- That someone has tested Marguerite's impression of the search speed, since the indexing issue was the reason for the release.
+- That someone has tested Marguerite's impression of the search speed.
 - Whether Ines's "positive so far" holds beyond the first three branches.
 - Prisha's revised budget figure, against a finance report.
-- Whether the kiosk plan can be treated as agreed before the support contract numbers have been sent.
+- Whether the kiosk plan is agreed before the support contract numbers go out.
 
 ## What this test supports
 
-- On notes that already label their own uncertainty, this starter added nothing. The ordinary prompt scored the same.
-- The two-column version had a specific defect. Given only confirmed and still-to-check, it filed a disputed date, an impression and an unsigned plan as confirmed.
-- Adding a third group for what the notes disagree about, plus a line saying an impression is not confirmation, fixed that defect on a re-run of the same notes.
-- The fix didn't make the starter more accurate than asking plainly. On these notes an ordinary prompt matched or beat it in all three attempts.
-- Across all three attempts and both prompts, no run invented a date, a decision or a piece of progress. Every impression was attributed to the person who held it.
-- Re-running one identical prompt on identical notes moved its score by a point. That puts a number on how much weight a one-point gap can carry here.
+- On notes that label their own uncertainty, the starter added nothing.
+- Given only confirmed and still-to-check, it filed a disputed date, an impression and an unsigned plan as confirmed. A third group and a line saying an impression is not confirmation fixed that on the same notes.
+- The fix didn't make the starter more accurate than asking plainly. An ordinary prompt matched or beat it in all three attempts.
+- No run invented a date, a decision or a piece of progress. Every impression was attributed to the person who held it.
 
 ## What this test does not support
 
-- It is three fictional attempts on one fictional project.
-- I ran it myself, so it isn't independent validation, and it includes no outside user's result.
-- It doesn't show the starter is wrong in general. It shows that on these notes the split cost more than it gained, and that a two-column instruction needs a third option for contested items.
-- It doesn't show a real business outcome or a measured time saving.
-- All runs used the same model. A one-point gap is inside the range this test measured as run-to-run noise. So in Attempts 2 and 3 the two prompts performed about the same, and the interesting part is the starter's failure and its fix.
-- It doesn't show the rewritten starter is now right in general. It shows one specific defect gone on one set of notes.
+- It is three fictional attempts on one fictional project, on one model.
+- I designed both scenarios, wrote the answer keys, ran every prompt and scored every output. It isn't independent validation and has no outside user's result.
+- It doesn't show the starter is wrong in general, or that the rewritten starter is now right. It shows one defect gone on one set of notes.
+- It shows no real business outcome or time saving.
+- A one-point gap is inside the run-to-run noise measured above.
 
 ## Test integrity
 
-I ran six runs in total, each in a fresh isolated context. Each run got only its own prompt and the fictional notes for its attempt. None got the other runs, the rubric, the automatic-failure criteria, the answer key, or any sign that this was a test or a comparison. I wrote each attempt's answer key before its runs.
+I ran six runs, each in a fresh isolated context. Each got only its own prompt and the fictional notes for its attempt: no other runs, rubric, automatic-failure criteria, answer key, or sign that this was a test. I wrote each answer key before its runs. All six used Claude Opus 5. The outputs are reproduced with only dash glyphs and currency symbols changed to ASCII.
 
-All six runs used Claude Opus 5. The outputs are reproduced with only dash glyphs and currency symbols changed to ASCII.
-
-Attempt 3 changed the guide-informed prompt, which the other attempts didn't. I held the notes, the ordinary prompt and the answer key constant. I re-ran both prompts instead of reusing Attempt 2's baseline, so the comparison is between two runs taken the same way at the same time. Reusing the earlier baseline would have hidden the variance reported above.
-
-I designed both scenarios, wrote the answer keys, ran all six prompts and scored every output. So read the one-point gaps as "no material difference, with a specific weakness worth reporting and then fixed", not as measured results.
+Attempt 3 changed the guide-informed prompt and held everything else constant. I re-ran both prompts instead of reusing Attempt 2's baseline, which would have hidden the variance above.
 
 ## Next evidence
 
-This test can't settle two things. Does the rewritten starter hold on notes with a different kind of conflict? And does an ordinary prompt keep matching it once notes get long enough that a reader needs the sorting to find anything? Both need real notes, not another invented set. So the next step is to use the revised starter on real low-risk internal notes when some come up, and log what it missed.
+This test can't say whether the rewritten starter holds on a different kind of conflict, or whether an ordinary prompt keeps matching it on long notes. Both need real notes. The next step is to use the revised starter on real low-risk internal notes when some come up, and log what it missed.
+
+## Corrections
+
+The interactive page [Sort the Notes Yourself](https://shaunmarsden.github.io/practical-ai-adoption/) marked the December decommissioning claim as "the notes disagree" until 15th September 2026, so anyone who sorted it correctly was told they were wrong. It now reads as something to check: 30 days after either candidate date lands in December, and what is missing is the December date the booking sits on.
