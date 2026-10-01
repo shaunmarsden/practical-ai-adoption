@@ -171,7 +171,7 @@
 <header class="top">
   <div class="kicker">Practical AI Adoption</div>
   <h1>Sort the Notes Yourself</h1>
-  <p>One person's meeting notes are below, written up after a project catch-up. They are fictional. Nine claims come out of those notes, and each one belongs in a different place: something the notes actually settle, something that only sounds settled, or something the notes contradict themselves about. Have a go at sorting them. Then see which three an AI prompt filed in the wrong column, and why that prompt had to be rewritten.</p>
+  <p>Below are one person's meeting notes, written up after a project catch-up. They are fictional. Nine claims come out of the notes, and each belongs in one of three places: something the notes settle, something that only sounds settled, or something the notes contradict themselves about. Have a go at sorting them. Then see which three an AI prompt put in the wrong column, and why that prompt had to be rewritten.</p>
   <a class="backlink" href="https://github.com/shaunmarsden/practical-ai-adoption">&larr; Back to the repository</a>
 </header>
 
@@ -188,12 +188,12 @@
 
 <div class="next-step">
   <a class="try-button" href="https://github.com/shaunmarsden/practical-ai-adoption/blob/main/guides/you-have-been-given-ai-at-work.md">Use the Starter on Your Own Notes</a>
-  <p>The rewritten prompt is in the guide, ready to copy. Bring notes you are allowed to put in the tool your organisation has approved.</p>
+  <p>The rewritten prompt is in the guide, ready to copy. Bring notes you're allowed to put in the tool your organisation has approved.</p>
 </div>
 
 <footer>
-  <p><strong>Nothing on this page is a live AI call.</strong> A static page cannot reach a model without a backend. The sorting you are marked against, and the three mistakes shown at the end, come from a run that was recorded and scored in this repository before this page existed.</p>
-  <p><strong>The honest part of the result.</strong> Rewriting that prompt fixed the defect it was written for: all three misfiled items moved to the right column. It did not make the prompt better than asking plainly. On the same notes, an ordinary "can you write this up as an update for the team please" scored 30 out of 30 against the rewritten starter's 29, and it had scored 29 the run before, on an identical prompt and identical notes. A one point movement with nothing changed is the same size as the difference the test set out to measure. Use the starter for the discipline of sorting, not because it is more accurate than asking plainly.</p>
+  <p><strong>Nothing on this page is a live AI call.</strong> A static page can't reach a model without a backend. The sorting you're marked against, and the three mistakes shown at the end, come from a run I recorded and scored in this repository before this page existed.</p>
+  <p><strong>What the result shows.</strong> Rewriting the prompt fixed the fault it was written for: all three misfiled items moved to the right column. It did not make the prompt better than asking plainly. On the same notes, an ordinary "can you write this up as an update for the team please" scored 30 out of 30 against the rewritten starter's 29. The same plain prompt had scored 29 the run before, on identical notes. A one point swing with nothing changed is as big as the difference the test set out to measure. Use the starter for the habit of sorting, not because it's more accurate than asking plainly.</p>
   <ul>
     <li>Read the full worked comparison in the <a href="https://github.com/shaunmarsden/practical-ai-adoption/blob/main/examples/netherford-internal-update-example.md">Netherford internal update example</a>, which shows all three attempts</li>
     <li>Then the <a href="https://github.com/shaunmarsden/practical-ai-adoption/blob/main/evaluations/netherford-internal-update-review.md">scored review</a>, which explains why there were three attempts and marks each one</li>
@@ -237,19 +237,19 @@
       claim: "All the records are across, and the validation fix worked.",
       source: "From the migration line.",
       answer: "confirmed",
-      because: "The notes state both flatly, with nobody hedging and nothing contradicting them. This is what a confirmed item actually looks like."
+      because: "The notes state both flatly. Nobody hedges and nothing contradicts them. This is what a confirmed item looks like."
     },
     {
       claim: "Three of the eleven branches have been through testing.",
       source: "From the testing line.",
       answer: "confirmed",
-      because: "A counted fact. Three of eleven is recorded, so the number itself is settled, whatever anyone thinks of how it is going."
+      because: "A counted fact. The notes record three of eleven, so the number is settled, whatever anyone thinks of how it's going."
     },
     {
       claim: "Branch testing is going well.",
       source: "Also from the testing line.",
       answer: "checking",
-      because: "Ines says feedback is positive so far. That is one person's early impression with eight branches still untested, and an impression is not a result. The same note line holds a confirmed fact and an unconfirmed one, which is the split most write-ups miss."
+      because: "Ines says feedback is positive so far. That's one person's early impression with eight branches still untested, and an impression is not a result. The same line holds a confirmed fact and an unconfirmed one, and most write-ups miss that split."
     },
     {
       claim: "Four of the six training sessions are done, with 58 people through.",
@@ -261,34 +261,34 @@
       claim: "Search is much faster in the supplier's new 4.2 release.",
       source: "From the supplier line.",
       answer: "checking",
-      because: "That 4.2 exists is confirmed. That search is much faster is Marguerite's view, not something measured on this side. This is one of the three an AI prompt filed as confirmed.",
+      because: "That 4.2 exists is confirmed. That search is much faster is Marguerite's view, and nobody on this side has measured it. An AI prompt filed this as confirmed, one of three it got wrong.",
       trap: true
     },
     {
       claim: "Go live is 1 November.",
       source: "From the go live line.",
       answer: "disagree",
-      because: "The plan says 1 November and the branch managers were told to work to the 15th. Both are in the same note. It is not an unchecked fact, it is a decision nobody has made yet, and the board papers go out on the 8th.",
+      because: "The plan says 1 November, and the branch managers were told to work to the 15th. Both are in the same note. This isn't an unchecked fact. It's a decision nobody has made yet, and the board papers go out on the 8th.",
       trap: true
     },
     {
       claim: "Spend is around 70,000 pounds.",
       source: "From the budget line.",
       answer: "checking",
-      because: "The confirmed figure is 61,000 pounds from the 5 September finance report. The 70,000 is Prisha's estimate of where it lands once a renewal arrives, and it is not in a report yet. Keep the estimate away from the sourced number."
+      because: "The confirmed figure is 61,000 pounds, from the 5 September finance report. The 70,000 is Prisha's estimate of where spend ends up once a renewal arrives, and no report shows it yet. Keep the estimate apart from the sourced number."
     },
     {
       claim: "The kiosk plan is agreed.",
       source: "From the kiosks line.",
       answer: "checking",
-      because: "Marguerite is happy with the plan, and the support contract numbers she asked for have not been sent. Somebody being happy with a plan whose own open item is outstanding is not agreement.",
+      because: "Marguerite is happy with the plan, but the support contract numbers she asked for haven't been sent. Being happy with a plan whose own open item is outstanding is not agreement.",
       trap: true
     },
     {
       claim: "December is a safe slot for decommissioning the old system.",
       source: "From the old system line, read against the go live line.",
       answer: "checking",
-      because: "This one looks like a conflict and is not. Thirty days after 1 November is 1 December, and thirty days after the 15th is 15 December, so either go live date leaves the start in December. What is missing is the date in December the booking actually sits on, since an early December slot would clear one go live date and not the other. That is something to check, not something the notes disagree about."
+      because: "This looks like a conflict and isn't. Thirty days after 1 November is 1 December, and thirty days after the 15th is 15 December, so either go live date puts the start in December. What's missing is the date in December the booking sits on, since an early December slot would clear one go live date and not the other. That's something to check, not something the notes disagree about."
     }
   ];
 
@@ -336,7 +336,7 @@
     html += "<p class=\"claim-source\">" + escapeHtml(q.source) + "</p>";
     html += "<div class=\"verdict " + (correct ? "right" : "wrong") + "\">";
     html += "<div class=\"headline\">" +
-            (correct ? "That is where it goes." : "Not quite.") + "</div>";
+            (correct ? "That's where it goes." : "Not quite.") + "</div>";
     html += "<div>" + tag(q.answer) + "</div>";
     html += "<p class=\"because\">" + escapeHtml(q.because) + "</p>";
     html += "</div>";
@@ -355,19 +355,19 @@
     var html = "";
     html += "<p class=\"scoreline\">" + right + " out of " + CLAIMS.length + "</p>";
     html += "<div class=\"tally\">";
-    html += "<p>Three of these nine are the ones that matter, because they are the three an AI prompt got wrong on these exact notes. Asked to sort every point into confirmed or still to be checked, it put all three in the confirmed column: Marguerite's impression of search speed, a kiosk plan with an outstanding item of its own, and a go live date that two lines of the same note disagree about.</p>";
+    html += "<p>Three of these nine matter most, because an AI prompt got them wrong on these exact notes. Asked to sort every point into confirmed or still to be checked, it put all three in the confirmed column: Marguerite's impression of search speed, a kiosk plan with an outstanding item of its own, and a go live date that two lines of the same note disagree about.</p>";
     if (wrongOnTraps === 0) {
       html += "<p>You placed all three of those correctly.</p>";
     } else if (wrongOnTraps === traps) {
       html += "<p>You misplaced all three, which is the mistake the prompt made, " +
-              "and it is an easy one to make at speed.</p>";
+              "and it's an easy one to make at speed.</p>";
     } else {
       html += "<p>You misplaced " + (wrongOnTraps === 1 ? "one" : "two") +
               " of those three, which is the same kind of mistake the prompt made, " +
-              "and it is an easy one to make at speed.</p>";
+              "and it's an easy one to make at speed.</p>";
     }
-    html += "<p>There was a fourth thing, and it was an omission rather than a misfiling. No earlier run separated the confirmed fact that testing has begun from Ines's impression of how it is going. They sat in one bullet together.</p>";
-    html += "<p>The fix was structural rather than a matter of trying harder. A two column sort has nowhere to put an item that is contested rather than merely unchecked, so the prompt was given a third column and one extra line: only call something confirmed if the notes actually settle it, because somebody's impression is not confirmation.</p>";
+    html += "<p>There was a fourth problem, an omission rather than a misfiling. No earlier run separated the confirmed fact that testing has begun from Ines's impression of how it's going. They sat in one bullet together.</p>";
+    html += "<p>The fix was structural, not a matter of trying harder. A two column sort has nowhere to put an item that's contested, not just unchecked, so I gave the prompt a third column and one extra line: only call something confirmed if the notes settle it, because somebody's impression is not confirmation.</p>";
     html += "</div>";
     html += "<button class=\"restart\" id=\"restart\" type=\"button\">Start again</button>";
     bodyEl.innerHTML = html;
