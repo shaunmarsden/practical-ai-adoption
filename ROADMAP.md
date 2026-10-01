@@ -6,7 +6,7 @@ This is a direction of travel, not a commitment to publish everything listed.
 
 Two gaps, both named by the tests themselves rather than guessed at.
 
-- **Nobody outside this project has scored anything here.** All three starter reviews for [You Have Been Given AI at Work](guides/you-have-been-given-ai-at-work.md) end on the same next step: somebody other than the author scoring the same outputs against the same rubric. Repeating runs, which those three reviews now do, rules out run-to-run noise and nothing else. A scoring bias held consistently by one scorer looks exactly like a real effect.
+- **Nobody outside this project has scored anything here.** Two of the three starter reviews for [You Have Been Given AI at Work](guides/you-have-been-given-ai-at-work.md) end on the same next step: somebody other than the author scoring the same outputs against the same rubric. The third, the internal update starter, ends on a different open question, whether it holds on notes with a different shape of conflict, since that is what its own repeat run still left unsettled. Repeating runs, which these reviews now do, rules out run-to-run noise and nothing else. A scoring bias held consistently by one scorer looks exactly like a real effect.
 - **No guide here has a logged real use of its own.** Both records in [evidence](evidence/) say so on their own first lines: they are real use, but not of the current guides. The [fact-check failure](evidence/real-use-ai-assisted-fact-check-failure.md) is the closer of the two to what these guides are about, and it still does not test one.
 
 ## Next
