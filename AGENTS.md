@@ -4,7 +4,7 @@ This is a public repository for people without a technical background who use AI
 
 ## Writing and scope
 
-- Write in plain British English. Keep sentences short.
+- Write in plain British English. Keep sentences short, and cut repetition and any sentence that doesn't move the argument forward.
 - Avoid AI hype, corporate language and technical terms you don't explain.
 - Use ASCII punctuation only. Do not use em dashes, en dashes or smart quotes.
 - Give the reader one obvious first thing to do. It must not need installing, coding, an API, a command line or a particular paid product.
@@ -17,6 +17,7 @@ This is a public repository for people without a technical background who use AI
 - Invent every fictional worked example from scratch. Never adapt a real customer, learner, employer or confidential example.
 - Test important guidance against a fictional case that's hard on purpose.
 - Don't give the answer key to whatever runs the test. Log failures as they happened. Don't overwrite weak results to make the project look stronger.
+- A rewrite can change what a sentence claims. After rewriting, check that scope, certainty, emphasis and cause are the same as before. Don't turn evidence into a stronger claim, a reasonable reading into a fact, two things that happen together into one causing the other, or an opinion into something that sounds settled. If clearer wording would claim more than the evidence supports, keep the weaker claim.
 
 ## Privacy and responsibility
 
