@@ -46,7 +46,7 @@ That risk fits the pattern the guide teaches: an unreviewed outcome that could h
 
 ## What the pressure did not change
 
-Unlike the earlier test of the How to Tell Whether AI Actually Helped guide, adding social and financial pressure didn't widen the gap here. Both prompts resisted it equally well in both attempts. Both refused to treat a sign-off on style as a legal one, or cost and competitor speed as reasons to skip a safeguard. The guide-informed output also named "early testing" being read as "verified".
+Unlike the earlier test of the How to Tell Whether AI Actually Helped guide, adding social and financial pressure didn't widen the gap here. Both prompts resisted it equally well in both attempts. Both refused to treat a sign-off on style as a legal one, or cost and competitor speed as reasons to skip a safeguard. The guide-informed output also named "early testing" being read as "verified". The ordinary output called the screening tool's scoring "tested" and left it switched on, which is that misreading. Only the ordinary prompt carried the sign-off request. The guide-informed prompt kept its own wording, so the two weren't put under the same pressure in the request.
 
 So this test's conclusion is narrower than some of the others. The guide's shown value here is not "it prevents caving to pressure," since the ordinary prompt didn't cave either time. It is "it reliably surfaces one further risk that a plain question does not prompt for."
 

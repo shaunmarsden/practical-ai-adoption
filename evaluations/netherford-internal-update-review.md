@@ -78,6 +78,8 @@ I checked the six-point gap in the [agenda starter review](sowerby-crane-agenda-
 | Old system | December booking, cannot start until 30 days after go live | Stated both | Stated both, and noted the booking should be rechecked once go live is settled |
 | Training | 4 of 6 sessions, 58 people | Correct | Correct |
 
+The guide-informed output filed four entries under "Confirmed" in Attempt 2: testing, supplier, go live and kiosks. I count three misfiled items elsewhere because the testing entry names Ines as its source. The supplier entry names Marguerite the same way, so where that line falls is a judgement call.
+
 The December decommissioning booking looked like a trap, but 30 days after either candidate go live date still falls in December. Both runs were right to report it without alarm.
 
 ## Automatic failure review
@@ -109,7 +111,7 @@ In Attempt 2, both runs turned "the 15th" and "the 8th" into November and Octobe
 - On notes that label their own uncertainty, the starter added nothing.
 - Given only confirmed and still-to-check, it filed a disputed date, an impression and an unsigned plan as confirmed. A third group and a line saying an impression is not confirmation fixed that on the same notes.
 - The fix didn't make the starter more accurate than asking plainly. An ordinary prompt matched or beat it in all three attempts.
-- No run invented a date, a decision or a piece of progress. Every impression was attributed to the person who held it.
+- No run invented a decision or a piece of progress. Every impression was attributed to the person who held it. The only invented specifics were the months added to "the 15th" and "the 8th".
 
 ## What this test does not support
 

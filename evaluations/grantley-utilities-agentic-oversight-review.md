@@ -32,7 +32,7 @@ I gave an ordinary prompt and a guide-informed prompt the same six proposed chai
 
 ## What improved
 
-The guide-informed prompt didn't just add caution everywhere. It cleared the same three low-risk chains as the baseline. It also caught two real risks the baseline missed: the regulatory response and the untested ambiguous case. And it put the compensation chain's fix at the point of risk, not at an arbitrary amount.
+The guide-informed prompt didn't just add caution everywhere. It cleared the same three low-risk chains as the baseline. It also caught two real risks the baseline missed: the regulatory response and the untested ambiguous case. And for the compensation chain it gave the reason for a checkpoint: a hard-to-reverse handoff after an untested classifier. The baseline's review step covered the whole chain, not only amounts above a threshold, so it would also have caught those cases. It gave money as the reason and didn't mention the classifier.
 
 Three things made the difference. It rejected "reused successfully before" as evidence that wording is right for a new batch of complaints. It saw the difference between a routing rule that exists and one that has been tested against the case most likely to break it. And for the compensation chain it proposed a checkpoint set off by classifier uncertainty, which would also catch a wrongly classified case above or below any fixed amount.
 

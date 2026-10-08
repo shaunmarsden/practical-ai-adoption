@@ -36,11 +36,11 @@ None of these findings says the models stopped working. They all point at the sa
 
 The sources are at the bottom of this guide.
 
-## What usually explains a stall
+## What often explains a stall
 
 No named owner. Someone ran the demo and got people interested. If nobody is responsible for what happens next, interest fades, and nobody notices until someone checks.
 
-Not part of the normal process. If using the tool is optional and left to habit, it competes with the familiar way every time, and it usually loses when people are busy.
+Not part of the normal process. If using the tool is optional and left to habit, it competes with the familiar way every time, and it often loses when people are busy.
 
 No training after the demo. A demo shows what's possible when everything goes right. It doesn't teach anyone what to do when the output is wrong, unclear or needs fixing. That's the moment that decides whether someone keeps using it.
 
@@ -56,7 +56,7 @@ Reading too much into small numbers. A few bad reports and a couple of good ones
 
 Treating a demo as proof people will use it. A good demo proves the tool can do the job once, with everyone paying attention and an expert in the room. It says very little about ordinary use months later with no support.
 
-Reaching for a replacement too early. If you switch tools before ruling out gaps in ownership, process and incentives, you usually get the same stall with a different product.
+Reaching for a replacement too early. If you switch tools before ruling out gaps in ownership, process and incentives, you may well get the same stall with a different product.
 
 ## Try it on your own stalled rollout
 

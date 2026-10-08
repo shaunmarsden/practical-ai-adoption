@@ -2,7 +2,7 @@
 
 This is a project-authored scoring rubric, not one endorsed by NBER, AiCore or any other organisation.
 
-I ran two attempts. In the first, the ordinary prompt and the guide-informed prompt scored the same. I then made the scenario harder, and in the second the guide-informed prompt scored ten points higher. Both attempts are recorded here in full, as the rules for this test require.
+I ran two attempts. In the first, the ordinary prompt and the guide-informed prompt scored the same. I then made the scenario harder, and in the second the guide-informed prompt scored ten points higher. Both attempts are reported here, as the rules for this test require. Only Attempt 2's outputs are reproduced in the example.
 
 ## Result
 
@@ -44,7 +44,7 @@ Under a neutral question, the guide made no difference I could measure in this f
 
 ## What the baseline got right
 
-The ordinary prompt's answer in Attempt 2 was not a poor one. It still found the measurement gap, still treated the compliance error as important, and still resisted a full, unrestricted rollout. Its weaknesses were specific, not a wholesale failure. So this test shows the guide helps under pressure to agree. It doesn't show that an ordinary prompt is unreliable in general. Attempt 1 is direct evidence of that: without the added pressure, the ordinary prompt scored the same as the guide-informed one.
+The ordinary prompt's answer in Attempt 2 was not a poor one. It still found the measurement gap, still treated the compliance error as important, and still resisted a full, unrestricted rollout. Its weaknesses were specific, not a wholesale failure. So this test shows the guide helps under pressure to agree. It doesn't show that an ordinary prompt is unreliable in general. Attempt 1 is direct evidence of that: without the added pressure, the ordinary prompt scored the same as the guide-informed one. It also acknowledged the pressure: it discounted the other branches' good feedback and said the region was keen to move. What it missed was the observation effect.
 
 ## What a person still has to check
 
@@ -63,11 +63,12 @@ In this one fictional scenario, the guide-informed prompt held up under social a
 - It is one fictional scenario.
 - I ran it myself, so it isn't independent validation, and it includes no outside user's result.
 - The four outputs across both attempts were separate, isolated runs, but all from the same model family. A different model or tool might behave differently.
+- Only the ordinary prompt carried the pressure in its request ("the regional director wants this rolled out"). The guide-informed prompt asked for an honest assessment, so the ten-point gap mixes the guide's effect with a more neutral ask.
 - It doesn't show a real business outcome or a measured productivity gain.
 
 ## Test integrity
 
-Each run had a fresh, isolated context and couldn't see the other run, the rubric, the automatic-failure criteria or the expected reasoning. Neither runner was told this was a test or a comparison. The evaluator got both outputs and the answer key only after both runs in each attempt had finished. I made one revision to the scenario and one regression run, as this test's rules allow, and both attempts are shown in full above, not only the more favourable one. A contamination risk remains, because I designed the scenario, wrote the rubric and scored both outputs.
+Each run had a fresh, isolated context and couldn't see the other run, the rubric, the automatic-failure criteria or the expected reasoning. Neither runner was told this was a test or a comparison. The evaluator got both outputs and the answer key only after both runs in each attempt had finished. I made one revision to the scenario and one regression run, as this test's rules allow, and both attempts are reported above, not only the more favourable one. A contamination risk remains, because I designed the scenario, wrote the rubric and scored both outputs.
 
 ## Next evidence
 

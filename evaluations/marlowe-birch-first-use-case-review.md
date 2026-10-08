@@ -36,6 +36,8 @@ The guide-informed prompt gave a fuller answer, mainly on measuring the trial an
 
 It checked whether the information was appropriate to use for its top pick, not just the obviously sensitive board summary. It gave four specific measures, not one instruction to time the trial. It named the gap in Task 4's data-handling policy instead of filling it. And it ranked Task 3 last, which fits its own analysis, where the baseline ranked it above tasks that suit AI but carry risk.
 
+The baseline wasn't silent on information either. It noted that Task 1 is low sensitivity, told Nadia to use an approved tool and not a personal account, and said Task 4 should wait for an answer on which tool is approved. The guide-informed output's gain there is that it checked each criterion in turn. The guide-informed output also ranked Task 4, the confidential salary data, third, above the complaints and invoice tasks, although it called Task 4 blocked. The baseline ranked it last.
+
 ## The trap both outputs avoided
 
 The main trap in this test was treating a fixed-rules copying task as an AI task. Both outputs avoided it, and the baseline did so without any instruction telling it not to assume AI suits a repetitive task.

@@ -30,7 +30,7 @@ Attempt 2 was one run of each prompt, and the [internal update test](netherford-
 | Ordinary prompt | 23/30 | 24/30 | 24/30 | 23 to 24 |
 | Guide-informed starter | 29/30 | 30/30 | 29/30 | 29 to 30 |
 
-The gap holds. Every starter run scored at least five points above every ordinary-prompt run, and at its widest the gap is seven. It is the widest of the three starters. The [action list](ambleforth-action-list-review.md) gap narrows to two points at its closest once repeated, and the [internal update](netherford-internal-update-review.md) has none.
+The gap holds. Every starter run scored at least five points above every ordinary-prompt run, and at its widest the gap is seven. Its closest gap, five points, is the largest of the three starters. The [action list](ambleforth-action-list-review.md) gap narrows to two points at its closest once repeated, and the [internal update](netherford-internal-update-review.md) has none.
 
 Which failures repeated matters more. Attempt 2 recorded three places where the ordinary prompt closed a question the notes had left open. Across three runs:
 
@@ -84,13 +84,13 @@ The guide-informed output didn't fail either. It asserted nothing the notes don'
 
 ## What improved
 
-Unlike the internal update starter, this one earned its place under pressure. Its second instruction, "flag anything missing that I need to decide before the meeting", gives an open question somewhere to go. The internal update starter's confirmed-or-checking split has no such place, which is why it filed contested items as confirmed.
+Unlike the internal update starter, this one earned its place under pressure. Its last instruction, "flag anything missing that I need to decide before the meeting", gives an open question somewhere to go. The internal update starter's confirmed-or-checking split has no such place, which is why it filed contested items as confirmed.
 
 It asked whether "happy for us to get on with it" amounts to spend approval, the question the organiser most needed to ask. It made the supplier decision conditional, left the length open with what each option buys, and added an approval route the notes never mention but a spend this size implies.
 
 ## What it still got wrong
 
-The guide-informed output is too long to send as an agenda. Its five pre-meeting decisions and five "gaps in the notes" add to the organiser's job instead of shaping the meeting. Two of the gaps, whether anyone else uses the spreadsheets daily and restating the underlying problem, have no basis in the notes. Its timings total 65 minutes against a stated assumption of roughly two hours. Two of the three repeats also ran long enough to need trimming.
+The guide-informed output is too long to send as an agenda. Its five pre-meeting decisions and five "gaps in the notes" add to the organiser's job instead of shaping the meeting. Two of the gaps, what happens if no decision is reached and restating the underlying problem, have no basis in the notes. Its timings total 65 minutes against a stated assumption of roughly two hours. Two of the three repeats also ran long enough to need trimming.
 
 The baseline is the better document. The starter's version is the better preparation.
 

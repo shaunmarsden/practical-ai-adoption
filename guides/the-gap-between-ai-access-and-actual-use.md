@@ -20,13 +20,13 @@ Tell me:
 Do not treat confidence or seniority as evidence of skill, and do not assume someone who talks about AI fluently is using it, or that someone quiet about it is not.
 ```
 
-Most advice on AI adoption assumes you already know where your people stand. This guide is about checking that before you plan around it.
+Much advice on AI adoption assumes you already know where your people stand. This guide is about checking that before you plan around it.
 
 ## Why this needs its own check
 
-Access isn't use. IBM's 2026 CEO study found a wide gap between what AI can do and what people do with it. Most employees have access to AI tools, but only around a quarter use them regularly, even though most of the CEOs surveyed believed their people already used AI well. The study calls this a gap in design and in managing change, not in technology.
+Access isn't use. IBM's 2026 CEO study found that only around a quarter of workers use AI regularly as part of their job, even though 86% of the CEOs surveyed thought their people were ready for it. In the same study, 83% of CEOs said AI success depends more on people's adoption than on the technology.
 
-People's confidence in their own skill isn't a reliable measure, and it gets worse with seniority. Pluralsight's 2025 AI Skills Report found that most professionals overstate their AI expertise, and senior leaders overstate it most. The great majority of C-suite respondents were the worst offenders in the sample. The same report found that most professionals feel confident in their own AI skills, and also believe their colleagues' lack of skill is what's holding projects back.
+People's confidence in their own skill isn't a reliable measure, and it gets worse with seniority. Pluralsight's 2025 AI Skills Report, a survey of 1,200 technology decision-makers and practitioners in the US and UK, found that most of them admit to pretending to know more about AI than they do, and C-suite executives admit it most (91%). The same report found that most professionals feel confident in their own AI skills, and also believe their colleagues' lack of skill is what's holding projects back.
 
 Neither finding says AI tools are unreliable. Both point at the same trap. A title, a confident claim or a senior role isn't evidence that someone uses AI, or uses it well. And the mismatch is biggest exactly where it's easiest to assume otherwise.
 

@@ -40,7 +40,7 @@ The workflow-informed output found no new evidence. It handled the same notes mo
 
 ## What it still got wrong or left incomplete
 
-It didn't resolve the budget, date or ownership questions, because the notes don't resolve them. The test doesn't show whether the workflow saves time in real use, or whether the team would find the output useful. And the action list is a draft, not a system of record.
+It didn't resolve the budget, date or ownership questions, because the notes don't resolve them. The test doesn't show whether the workflow saves time in real use, or whether the team would find the output useful. And the action list is a draft, not a system of record. Its last line says a private personal matter was left out. That line is a note to Mara, not part of the update, and shouldn't go into the version the team sees.
 
 ## What a person still has to check
 
