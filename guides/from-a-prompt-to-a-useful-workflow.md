@@ -138,7 +138,7 @@ This turns a one-off prompt into something you can improve. It also gives you a 
 
 Choose a low-risk task you already do. Use the brief at the top, keep your current process running, and compare the result with the source before you use it.
 
-The [Juniper Vale example](../examples/juniper-vale-prompt-to-workflow-example.md) tries this on a fictional planning task with an unconfirmed date, two different budget figures and an unclear owner. The [review](../evaluations/juniper-vale-prompt-to-workflow-review.md) says what the comparison does and doesn't show.
+The [Juniper Vale example](../examples/juniper-vale-prompt-to-workflow-example.md) shows this on a fictional planning task with an unconfirmed date, two different budget figures and an unclear owner. The [review](../evaluations/juniper-vale-prompt-to-workflow-review.md) says what the comparison does and doesn't show.
 
 ## Basis for this guide
 

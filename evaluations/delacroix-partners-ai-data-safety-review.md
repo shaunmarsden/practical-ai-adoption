@@ -34,9 +34,9 @@ The two tied.
 
 ## What this test shows
 
-Both prompts reached the same verdict on all six items. That includes the two items built to cut against intuition: the routine-sounding item that was risky, and the sensitive-sounding item that was fine. Neither output missed or softened anything, and neither needed the guide's structure to get the right answer.
+Both prompts reached the same verdict on all six items. That includes the two items built to cut against intuition: the routine-sounding item that was risky, and the sensitive-sounding item that was fine. Neither output missed or softened anything, and neither needed the guide's structure to get the right answer. Each added something the other didn't. The guide-informed output suggested placeholder figures. The ordinary output named who should sign off if the figures turn out to be inside information: a partner or the risk function.
 
-This is the second guide in this project where a neutral test tied, after the when-not-to-use-AI review. Together, the two results suggest that general-purpose models already reason well on structured, multi-item risk questions like these, once asked a reasonably specific question. That is a useful finding about the limits of what a guide like this adds.
+This is the second multi-item risk test in this project where the ordinary prompt matched the guide-informed one, or came within a point of it, after the when-not-to-use-AI review. Together, the two results suggest that general-purpose models already reason well on structured, multi-item risk questions like these, once asked a reasonably specific question. That is a useful finding about the limits of what a guide like this adds.
 
 ## What a person still has to check
 
@@ -57,7 +57,7 @@ In this one fictional scenario, the ordinary prompt and the guide-informed promp
 - The two runs were separate and isolated, but used the same model family. A different model or tool might behave differently.
 - It doesn't show a real case of data exposure avoided.
 - It includes no outside user's result.
-- With ties here and in the when-not-to-use-AI review, I haven't tested whether this guide makes a difference under pressure, as the how-to-tell-whether-AI-actually-helped test found for that guide. This evidence can't rule that in or out.
+- With a tie here, and a one-point gap in the when-not-to-use-AI review that didn't widen under pressure, I haven't tested whether this guide makes a difference under pressure, as the how-to-tell-whether-AI-actually-helped test found for that guide. This evidence can't rule that in or out.
 
 ## Test integrity
 

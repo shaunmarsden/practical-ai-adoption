@@ -82,7 +82,7 @@ The guide-informed draft did better in four ways. It asked about a loyalty disco
 
 ## What it still got wrong
 
-The guide-informed draft has no material factual error in the areas I scored. It asks Priya to check for other dietary requirements. That's a sensible prompt, but the sources don't say there are any. It's framed as a check, not a claim that more exist.
+The guide-informed draft has no material factual error in the areas I scored. It asks Priya to check for other dietary requirements. That's a sensible prompt, but the sources don't say there are any. It's framed as a check, not a claim that more exist. It also asks the venue to quote the standard buffet lunch and bases its GBP 1,008 estimate on that. No source says Priya has chosen that menu.
 
 ## What a person still has to check
 

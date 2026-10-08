@@ -29,9 +29,9 @@ Feeling that AI helped isn't the same as evidence that it did. Both can be true 
 
 ## Why this needs its own check
 
-Nine in ten executives saw no measurable impact. A survey of nearly 6,000 senior executives in the US, UK, Germany and Australia found this over the previous three years, even though most of their firms were using AI.
+Nine in ten executives reported no impact on employment or productivity. A survey of nearly 6,000 senior executives in the US, UK, Germany and Australia found this over the previous three years, even though most of their firms were using AI.
 
-People believe the gains are bigger than they are. Separate research on what CFOs report describes a "productivity paradox": the gains people believe AI brought are consistently larger than the ones revenue and employment figures suggest.
+People may believe the gains are bigger than they are. Separate research, a survey of nearly 750 corporate executives, describes a "productivity paradox": the gains people perceive are larger than the ones measured. The authors think that may partly reflect a delay before revenue shows the gains.
 
 Neither finding says AI can't help. They say a good impression, on its own, is weak evidence of a real result. This guide is aimed at that gap.
 
@@ -41,13 +41,13 @@ The sources are at the bottom of this guide.
 
 A real starting point. You need something measured before AI was used, from a similar period, workload and set of conditions. A figure from a much quieter or busier time isn't comparable, even if it's the only one you have.
 
-The whole task time, not just the AI's part. Writing the draft is often the quickest step. Reviewing, correcting and sending it is usually where the time goes, and it's the step people leave out when they say how "fast" something felt.
+The whole task time, not just the AI's part. Writing the draft is often the quickest step. Reviewing, correcting and sending it is often where the time goes, and it's the step people leave out when they say how "fast" something felt.
 
-A sample that covers the whole job, not just the easy parts. If only some cases were logged in detail, ask which were skipped and why. People have time to log the simple cases and no time to log the hard ones, and that tilts the evidence towards a win.
+A sample that covers the whole job, not just the easy parts. If only some cases were logged in detail, ask which were skipped and why. People may have time to log the simple cases and none to log the hard ones, and that can tilt the evidence towards a win.
 
 A look at what went wrong, not only what went well. One clear mistake, especially in a sensitive or regulated area, can matter more than a dozen smooth cases. Ask how the mistake was found and how long that took.
 
-Knowing that being watched changes how people work. People work more carefully, and report more positively, while they know a trial is being watched closely. That wears off once the work becomes routine.
+Knowing that being watched changes how people work. People often work more carefully, and report more positively, while they know a trial is being watched closely. That can wear off once the work becomes routine.
 
 Being ready for no difference. If a careful check finds no real difference, that's a fair result, not a failed test. Treating "no difference found" as a let-down, rather than as useful information, is what pushes people to turn a weak signal into a confident claim.
 

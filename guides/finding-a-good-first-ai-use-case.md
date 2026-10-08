@@ -31,7 +31,7 @@ Do not assume permissions, policies or facts I have not given you.
 Do not assume AI is the right tool just because a task is repetitive.
 ```
 
-Most people trying AI at work don't fail because the tool is weak. They fail because they chose the wrong first task. Either it was too risky to learn from safely, or it mattered so little that it proved nothing.
+Many people trying AI at work don't fail because the tool is weak. They fail because they chose the wrong first task. Either it was too risky to learn from safely, or it mattered so little that it proved nothing.
 
 ## Start with a job, not a feature
 

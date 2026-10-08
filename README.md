@@ -26,7 +26,7 @@ Already know what you need? [Prompting Fundamentals: Give AI a Better Brief](gui
 
 ## Also available: turning a prompt into a useful workflow
 
-[From a Prompt to a Useful Workflow](guides/from-a-prompt-to-a-useful-workflow.md) shows how to turn a one-off prompt into a small process you can repeat, with clear sources, checks and a handover to a person. I tested it in the [Juniper Vale example](examples/juniper-vale-prompt-to-workflow-example.md) on the same hard, made-up notes. [Read the review](evaluations/juniper-vale-prompt-to-workflow-review.md): ordinary prompt **17/30**, workflow-informed **29/30**. Neither output failed automatically.
+[From a Prompt to a Useful Workflow](guides/from-a-prompt-to-a-useful-workflow.md) shows how to turn a one-off prompt into a small process you can repeat, with clear sources, checks and a handover to a person. I tested it in the [Juniper Vale example](examples/juniper-vale-prompt-to-workflow-example.md) on hard, made-up notes. Both outputs there are fixed examples, not live runs. [Read the review](evaluations/juniper-vale-prompt-to-workflow-review.md): ordinary prompt **17/30**, workflow-informed **29/30**. Neither output failed automatically.
 
 ## Also available: telling whether AI actually helped
 
@@ -54,17 +54,17 @@ Already know what you need? [Prompting Fundamentals: Give AI a Better Brief](gui
 
 ## What is actually proven, and what is not
 
-Read [Evidence Status](EVIDENCE-STATUS.md) before you trust any score here. Every guide has a worked example and a scored test. No guide has been used on real work and logged. Nobody outside this project has scored anything. And nine of the 12 tests ran each prompt only once, which I've since measured as weak evidence.
+Read [Evidence Status](EVIDENCE-STATUS.md) before you trust any score here. Every guide has a worked example and a scored test. No guide has been used on real work and logged. Nobody outside this project has scored anything. Eight of the 12 tests ran each prompt only once, and one (Juniper Vale) used fixed outputs, not live runs. I've since measured a single run as weak evidence.
 
 ## How this differs from the big AI courses
 
-You may have found [Generative AI for Beginners](https://github.com/microsoft/generative-ai-for-beginners) or the [Prompt Engineering Guide](https://github.com/dair-ai/Prompt-Engineering-Guide). Both have tens of thousands of stars and far more resources than this, and both are more thorough than anything here. They're also a different thing. They teach you to build with AI through a structured course. This is for someone who got a licence on Monday, has an ordinary work task on Tuesday, and wants one page rather than twenty-one lessons.
+You may have found [Generative AI for Beginners](https://github.com/microsoft/generative-ai-for-beginners) or the [Prompt Engineering Guide](https://github.com/dair-ai/Prompt-Engineering-Guide). Both have tens of thousands of stars and far more resources than this, and both are more thorough than anything here. They're also a different thing. They teach you to build with AI through a structured course. This is for someone who got a licence on Monday, has an ordinary work task on Tuesday, and wants one page rather than 21 lessons.
 
 Closer in aim are [GitHub's AI adoption playbook](https://github.com/github/ai-adoption-playbook), which is written for organisations rolling AI out rather than for the person receiving it, and [AI Literacy Superpowers](https://github.com/Habitat-Thinking/ai-literacy-superpowers), which packages a literacy framework as developer tooling. Both are worth reading if either suits you better than this.
 
 I searched all four for a rubric or a scored result. The one thing here I didn't find in any of them is a scored before-and-after of the advice itself: an ordinary attempt and a guide-informed attempt on the same made-up notes, both scored, with the failures written down. [Evidence Status](EVIDENCE-STATUS.md) shows how far that goes and where it stops, including the two columns that are empty for every guide.
 
-I haven't built a comparison table for this repository, as I did for [Practical AI Sales Workflows](https://github.com/shaunmarsden/practical-ai-sales-workflows/blob/main/COMPARISON.md). Only two projects do the same job. Scoring a twenty-one-lesson course against a rubric it never signed up to would look like a comparison and work like a smear.
+I haven't built a comparison table for this repository, as I did for [Practical AI Sales Workflows](https://github.com/shaunmarsden/practical-ai-sales-workflows/blob/main/COMPARISON.md). Only two projects do the same job. Scoring a 21-lesson course against a rubric it never signed up to would look like a comparison and work like a smear.
 
 ## What I plan to do next
 

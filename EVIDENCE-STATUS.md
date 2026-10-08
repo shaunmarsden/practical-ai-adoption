@@ -8,7 +8,7 @@ Every guide here has a worked example and a scored test. None of that shows the 
 
 - The scenario column links the worked example. It's a before-and-after on made-up information: an ordinary first attempt, and one written using the guide. Every company and person in them is invented.
 - The scored test column gives the two results out of 30, ordinary prompt first. Where a test ran more than one scenario, the figure is for the hardest one. **Don't compare these figures across rows.** Every test scores six areas out of five, so the scale is the same. But eight different sets of six areas are in use, and most are written for their own scenario. See [the rubrics](#the-rubrics-these-scores-use).
-- The runs per prompt column matters most and looks worst. A test marked **1** ran each prompt once. One run is weak evidence, and I've measured how weak. Re-running one identical prompt on identical notes moved its score by a point, and another moved five. I've repeated three of the 12 tests. Nine haven't been repeated.
+- The runs per prompt column matters most and looks worst. A test marked **1** ran each prompt once. The Juniper Vale test used fixed outputs, not live runs. One run is weak evidence, and I've measured how weak. Re-running one identical prompt on identical notes moved its score by a point, and another moved five. I've repeated three of the 12 tests. Nine haven't been repeated.
 - Real use means someone has used the guide on real, low-risk work and logged what happened. No guide here has this. There are two records in [evidence](evidence/), and each says in its first line that it isn't a test of the current guides. One is [a reusable handover workflow](evidence/real-use-reusable-handover-workflow.md) used across repeated internal work. The other is [an AI-assisted report that went out with an incorrect figure in it](evidence/real-use-ai-assisted-fact-check-failure.md). The second is a negative finding, and it's the more useful of the two.
 - Outside scoring means someone other than me scored the outputs. Nobody has.
 
@@ -25,7 +25,7 @@ The internal update row is the awkward one, and its figure shows it. I ran its o
 | [You Have Been Given AI at Work](guides/you-have-been-given-ai-at-work.md), internal update starter | [Netherford](examples/netherford-internal-update-example.md) | [29 to 30 vs 28 to 29](evaluations/netherford-internal-update-review.md) | 2 (ordinary prompt only) | Not yet | Not yet |
 | [Prompting Fundamentals](guides/prompting-fundamentals.md) | [Thornfield](examples/thornfield-team-connect-prompting-example.md) | [24 vs 30](evaluations/thornfield-team-connect-prompting-review.md) | 1 | Not yet | Not yet |
 | [Finding a Good First AI Use Case](guides/finding-a-good-first-ai-use-case.md) | [Marlowe & Birch](examples/marlowe-birch-first-use-case-example.md) | [24 vs 30](evaluations/marlowe-birch-first-use-case-review.md) | 1 | Not yet | Not yet |
-| [From a Prompt to a Useful Workflow](guides/from-a-prompt-to-a-useful-workflow.md) | [Juniper Vale](examples/juniper-vale-prompt-to-workflow-example.md) | [17 vs 29](evaluations/juniper-vale-prompt-to-workflow-review.md) | 1 | Not yet | Not yet |
+| [From a Prompt to a Useful Workflow](guides/from-a-prompt-to-a-useful-workflow.md) | [Juniper Vale](examples/juniper-vale-prompt-to-workflow-example.md) | [17 vs 29](evaluations/juniper-vale-prompt-to-workflow-review.md) | None (fixed outputs) | Not yet | Not yet |
 | [How to Tell Whether AI Actually Helped](guides/how-to-tell-whether-ai-actually-helped.md) | [Calthorpe & Rees](examples/calthorpe-rees-ai-trial-evaluation-example.md) | [20 vs 30](evaluations/calthorpe-rees-ai-trial-evaluation-review.md) | 1 | Not yet | Not yet |
 | [When Not to Use AI](guides/when-not-to-use-ai.md) | [Ashworth & Vale](examples/ashworth-vale-ai-safeguards-example.md) | [29 vs 30](evaluations/ashworth-vale-ai-safeguards-review.md) | 1 | Not yet | Not yet |
 | [Before You Put Work Data Into AI](guides/before-you-put-work-data-into-ai.md) | [Delacroix Partners](examples/delacroix-partners-ai-data-safety-example.md) | [30 vs 30](evaluations/delacroix-partners-ai-data-safety-review.md) | 1 | Not yet | Not yet |
@@ -37,7 +37,7 @@ The internal update row is the awkward one, and its figure shows it. I ran its o
 
 The three repeated tests are the only ones whose gaps I've checked. One gap held, one narrowed a long way, and one disappeared:
 
-| Test | Single-run gap | Gap after three runs of each prompt |
+| Test | Single-run gap | Gap after repeat runs |
 | --- | --- | --- |
 | Agenda starter | 6 points | 5 to 7 points, ranges do not overlap. Confirmed |
 | Action list starter | 7 points | 2 to 8 points, ranges do not overlap. Narrowed to as little as 2 |
@@ -45,7 +45,7 @@ The three repeated tests are the only ones whose gaps I've checked. One gap held
 
 So repeating the runs confirmed one result, narrowed another a lot, and removed the third. It also corrected three claims in the reviews. A failure recorded from a single run turned out to happen once in three. A weakness described as a one-off turned out to repeat in two of three. And a seven-point gap turned out to be as little as two.
 
-The nine tests marked **1** in the matrix haven't had that check. Their gaps may hold, narrow or disappear. A seventeen-point gap like the access-and-use test is unlikely to vanish, but nothing here shows that it doesn't narrow.
+The nine tests I haven't repeated haven't had that check. Their gaps may hold, narrow or disappear. A 17-point gap like the access-and-use test is unlikely to vanish, but nothing here shows that it doesn't narrow.
 
 Repetition does nothing about the other limit. I wrote every scenario and every answer key, and scored every output. If I'm biased the same way every time, it looks just like a real effect. That's why the last column exists, and why it's the one that would change most.
 

@@ -17,7 +17,7 @@ For this chain, tell me:
 Do not treat a chain as safe just because each individual step looks reasonable on its own, and do not assume a chain that worked in testing will behave the same once an input is ambiguous rather than clean.
 ```
 
-Most advice on AI adoption covers one AI step at a time. This guide is about what changes when several steps are chained together and act on each other's output with no person in between.
+Much advice on AI adoption covers one AI step at a time. This guide is about what changes when several steps are chained together and act on each other's output with no person in between.
 
 ## Why this needs its own check
 
@@ -27,7 +27,7 @@ Government cyber security guidance now treats chained AI systems that act on the
 
 Two limits on the first finding matter as much as the finding. Anthropic says plainly that it hasn't seen this behaviour in real use. And the scenarios were built on purpose to force a choice between failure and harm, which real work rarely does. So this isn't evidence that chained AI tools go wrong in normal use.
 
-What it does show is that these systems can behave this way under pressure. It also shows something more awkward. The behaviour appeared more often, not less, when a model judged the situation to be real rather than a test. In one case that was 55% of runs against 6%. A chain that behaves well while it's watched isn't evidence of how it behaves in ordinary use. That's the whole reason the checkpoint matters.
+What it does show is that these systems can behave this way under pressure. It also shows something more awkward. The behaviour appeared more often, not less, when a model judged the situation to be real rather than a test. In the case measured, Claude Opus 4 blackmailed in 55% of the runs where it said the situation was real, against 6.5% of the runs where it said it was an evaluation. A chain that behaves well while it's watched isn't evidence of how it behaves in ordinary use. That's the whole reason the checkpoint matters.
 
 Neither finding says one AI tool is unreliable. Both point at the same pattern. Chaining AI steps together changes the risk, not just the convenience, and the change shows up most at the handoffs, not inside any one step.
 

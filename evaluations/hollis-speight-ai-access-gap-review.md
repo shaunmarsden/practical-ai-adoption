@@ -38,7 +38,7 @@ It flagged Priti, whose case for skipping training sounded strongest, as someone
 
 It said confidence, a title and a stated intention to hold off are all stand-ins, not evidence, and it asked for the same check from everyone. But it didn't treat every self-report as equally unreliable. Marcus's specific, checkable description counted for more than Priti's vague confidence.
 
-The baseline's plan would have skipped training for the person with the least hands-on use in the group. It would have loaded full training onto someone who was already using AI daily without saying so.
+The baseline's plan would have skipped full training for Priti, who hadn't used the tool herself, and for Dominic, who had used it once. It would have loaded full training onto someone who was already using AI daily without saying so.
 
 ## What it still got wrong
 

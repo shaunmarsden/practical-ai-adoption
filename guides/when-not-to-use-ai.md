@@ -19,11 +19,11 @@ Tell me which proposals should not go ahead as currently designed, which need a 
 Do not treat a task as safe just because it seems mundane, and do not treat a task as unsafe just because it feels emotionally uncomfortable.
 ```
 
-Most advice on using AI well assumes the task is a reasonable one to try. This guide covers the kinds of task that stay unsuitable for AI without supervision, however good the tool and however experienced you are.
+Much advice on using AI well assumes the task is a reasonable one to try. This guide covers the kinds of task that stay unsuitable for AI without supervision, however good the tool and however experienced you are.
 
 ## Why this needs its own check
 
-Specialist legal AI tools still hallucinate 17 to 33% of the time. Stanford RegLab found this even though the tools are sold as reliable. The researchers call the providers' "hallucination-free" claims overstated.
+In Stanford RegLab's tests, specialist legal AI tools hallucinated 17 to 33% of the time, even though they are sold as reliable. The researchers call the providers' "hallucination-free" claims overstated.
 
 A person's part in a high-stakes decision has to be real, not a token check. The UK Information Commissioner's Office (ICO) says that where a decision has a legal or similarly significant effect on someone, the person involved must take an active part, not make a token gesture. The law behind this changed in 2025, and the ICO is rewriting its guidance to match. The safeguard didn't go away. The newer rules still expect an organisation to show the safeguards around such a decision.
 
@@ -37,7 +37,7 @@ The sources are at the bottom of this guide.
 
 A decision about a person that nobody reviews. Say an AI output in effect decides something with a legal or otherwise significant effect on someone, such as rejecting a job application, and no person properly reviews it first. That's a problem with how the process is built, and a better model won't fix it. The fix is a real review by a person, not necessarily dropping the tool.
 
-Confident, unchecked factual or legal claims where the stakes are high. Specialist tools sold to professionals still get citations and facts wrong often enough to matter. A polished, professional-sounding draft isn't a checked one. The fix is for someone qualified to check the specific claims, not just read the draft for tone.
+Confident, unchecked factual or legal claims where the stakes are high. Specialist tools sold to professionals can still get citations and facts wrong often enough to matter. A polished, professional-sounding draft isn't a checked one. The fix is for someone qualified to check the specific claims, not just read the draft for tone.
 
 ## What to watch for
 

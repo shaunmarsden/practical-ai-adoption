@@ -23,7 +23,7 @@ Whether data is safe to put into AI depends on two things together, not either o
 
 ## Why this needs its own check
 
-Don't put sensitive information into public AI tools. The UK National Cyber Security Centre's guidance is direct: don't submit anything that would cause a problem if it were made public. It gives confidential business information and personal or health matters as examples.
+Don't put sensitive information into public AI tools. The UK National Cyber Security Centre's guidance is direct: don't submit anything that would cause a problem if it were made public. Its examples of a sensitive question are a chief executive asking how best to lay off an employee, and revealing health or relationship questions.
 
 There is a clear route for more sensitive work. An organisation can use a private AI tool covered by a contract, or host its own model after a proper security check. Either way, it needs clear rules on what can and can't go in.
 
@@ -31,9 +31,9 @@ The source is at the bottom of this guide.
 
 ## Two mistakes to check for
 
-Assuming a tool is safe for everything because it's the "approved" one. Approval usually covers a level of sensitivity, not every level. A tool approved for ordinary internal drafting isn't automatically approved for unreleased financial figures or anything as sensitive. Someone needs to check that, not assume it.
+Assuming a tool is safe for everything because it's the "approved" one. Approval often covers a level of sensitivity, not every level. A tool approved for ordinary internal drafting isn't automatically approved for unreleased financial figures or anything as sensitive. Someone needs to check that, not assume it.
 
-Treating a task as risky because the topic sounds sensitive. Data that has really been anonymised or made up can be safe to use, even in a public tool. Too much caution here just pushes people to do the work with no help at all.
+Treating a task as risky because the topic sounds sensitive. Data that has really been anonymised or made up can be safe to use, even in a public tool. Too much caution here can push people to do the work with no help at all.
 
 ## What to watch for
 
