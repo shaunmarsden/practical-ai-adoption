@@ -33,6 +33,10 @@ The internal update row is the awkward one, and its figure shows it. I ran its o
 | [The Gap Between AI Access and Actual Use](guides/the-gap-between-ai-access-and-actual-use.md) | [Hollis & Speight](examples/hollis-speight-ai-access-gap-example.md) | [11 vs 28](evaluations/hollis-speight-ai-access-gap-review.md) | 1 | Not yet | Not yet |
 | [Why AI Projects Stall After the Demo Works](guides/why-ai-projects-stall-after-the-demo-works.md) | [Pemberton Underwriters](examples/pemberton-underwriters-ai-adoption-stall-example.md) | [28 vs 30](evaluations/pemberton-underwriters-ai-adoption-stall-review.md) | 1 | Not yet | Not yet |
 
+## A Test Without a Guide
+
+One test here has no guide yet. [Editing Without Rewriting](evaluations/edit-without-rewriting-test.md) ran three requests on six fictional passages, three runs each, scored by a [script](scripts/edit_drift.py). A strict edit-only request made every planted fix and changed nothing else in 18 runs of 18. A request to "correct and polish" was safe in one run of 18. It's one model, passages I wrote and a key I wrote. By the rule I set beforehand a guide is worth writing, and I haven't written one.
+
 ## How Much Weight the Scores Can Carry
 
 The three repeated tests are the only ones whose gaps I've checked. One gap held, one narrowed a long way, and one disappeared:
