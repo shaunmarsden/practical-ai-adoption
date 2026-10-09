@@ -76,7 +76,7 @@ Thanks,
 Tom
 ```
 
-## The Three Requests
+## The Four Requests
 
 Each request went before one passage, followed by this line, which is the same in all three:
 
@@ -89,6 +89,10 @@ Each request went before one passage, followed by this line, which is the same i
 **Edit only:**
 
 > Correct only the spelling, grammar and punctuation in the text below. Don't change the wording, word choice, order, tone or meaning. If you're not sure whether something is an error, leave it as it is. Return the whole text with your corrections.
+
+**Plain** (added in a follow-up):
+
+> Please fix any mistakes in the text below.
 
 **Suggest:**
 

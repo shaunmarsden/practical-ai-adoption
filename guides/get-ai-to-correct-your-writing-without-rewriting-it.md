@@ -16,6 +16,10 @@ Ask like that and you get your own text back with the mistakes fixed. Ask for it
 
 In my test, that request changed things the writer had chosen. In all three runs it replaced the spoken "gonna", and it cut or reworded "Very, very good". It rewrote figures written as "GBP 12k" and "12,000". It picked one of two people for a sentence that could mean either. It listed these changes in its notes, but you have to read the notes to find them.
 
+## Why not just say "fix any mistakes"?
+
+It's better than "polish", and not enough. In my test, "Please fix any mistakes in the text below" made every fix and kept the voice, but it also rewrote a sentence that had no subject, changed "3rd March" to "3 March", and in two runs added "GBP" to a figure that had no currency. It was safe in 11 of 18 runs. The strict request above was safe in all 18.
+
 ## What the test showed
 
 I ran three requests on six short made-up passages, three runs each. The request above made every planted fix and changed nothing else, in 18 runs of 18. "Correct and polish" was safe in one run of 18. Where a sentence couldn't be fixed without choosing a meaning, the strict request left it alone and told me so.
