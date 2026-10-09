@@ -41,7 +41,7 @@ This one isn't scored out of 30 and isn't one of the 12 above, so no count on th
 | --- | --- | --- | --- | --- | --- |
 | [Getting AI to Correct Your Writing Without Rewriting It](guides/get-ai-to-correct-your-writing-without-rewriting-it.md) | [Six passages](examples/edit-without-rewriting-passages.md) | [Safe in 18 of 18 runs vs 1 of 18, plain request 11 of 18](evaluations/edit-without-rewriting-test.md) | 3 | Not yet | Not yet |
 
-It's one model, short passages and mistakes I wrote, and the comparison is against one phrasing of a plain request. The result column compares the strict edit-only request with "correct and polish", and then with a plain "fix any mistakes".
+It's two models, and short passages and mistakes I wrote. The result column compares the strict edit-only request with "correct and polish", and then with a plain "fix any mistakes".
 
 ## How Much Weight the Scores Can Carry
 
