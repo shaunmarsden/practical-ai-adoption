@@ -54,7 +54,7 @@ Already know what you need? [Prompting Fundamentals: Give AI a Better Brief](gui
 
 ## Also available: correcting your writing without rewriting it
 
-[Getting AI to Correct Your Writing Without Rewriting It](guides/get-ai-to-correct-your-writing-without-rewriting-it.md) gives you a request that fixes spelling, grammar and punctuation and leaves your wording alone, and a second that lists changes for you to accept. I tested three ways of asking on six made-up passages in [this set](examples/edit-without-rewriting-passages.md). [Read the review](evaluations/edit-without-rewriting-test.md): the strict request was safe in **18 of 18** runs, "correct and polish" in **1 of 18**. A script scored it, not a 30-point rubric.
+[Getting AI to Correct Your Writing Without Rewriting It](guides/get-ai-to-correct-your-writing-without-rewriting-it.md) gives you a request that fixes spelling, grammar and punctuation and leaves your wording alone, and a second that lists changes for you to accept. I tested three ways of asking on six made-up passages in [this set](examples/edit-without-rewriting-passages.md). [Read the review](evaluations/edit-without-rewriting-test.md): the strict request was safe in **18 of 18** runs, a plain "fix any mistakes" in **11 of 18**, "correct and polish" in **1 of 18**. A script scored it, not a 30-point rubric.
 
 ## What is actually proven, and what is not
 
