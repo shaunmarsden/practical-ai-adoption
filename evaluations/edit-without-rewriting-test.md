@@ -1,6 +1,6 @@
 # Editing Without Rewriting: Three Ways to Ask an AI to Proofread
 
-I wanted to know whether an AI tool can fix spelling, grammar and punctuation without changing what I said. I asked three ways, on six short passages with known mistakes, then added a fourth, plainer way. A strict edit-only request fixed every planted mistake and changed nothing else, in 18 runs of 18. A request to "correct and polish" was safe in one run of 18.
+I wanted to know whether an AI tool can fix spelling, grammar and punctuation without changing what I said. I asked three ways, on six short passages with known mistakes, then added a fourth, plainer way. A strict edit-only request fixed every planted mistake and changed nothing else, in 18 runs of 18. A request to "correct and polish" was safe in one run of 18. A smaller second model gave 16 and 5, so the pattern holds but the margin is smaller.
 
 ## What I Tested
 
@@ -73,11 +73,24 @@ The plain request, "Please fix any mistakes in the text below.", was added after
 
 **Where all three agreed.** In all nine runs on the figures passage, the AI said the amounts might not add up. Noticing wasn't the difference. What differed was whether the text changed afterwards.
 
+## A Second Model
+
+Everything above ran on one model, so I ran all four requests again on a smaller one, Claude Haiku, with the same passages, key, script and rules. A subagent on that setting reported its model as `claude-haiku-5-5`, which is self-reported. I wrote the test of whether it would replicate first: edit-only safe in at least 16 of 18 runs, and rewrite safe in fewer than 16.
+
+| Safe runs, of 18 | Rewrite | Edit only | Suggest | Plain |
+| --- | ---: | ---: | ---: | ---: |
+| First model | 1 | 18 | 10 | 11 |
+| Haiku | 5 | 16 | 12 | 13 |
+
+By that rule it replicates, though edit-only only just clears 16. Both of its misses were on the passage with the quotation. In two of three runs it corrected "we was" to "we were" inside Rina's quoted words, which the first model never did. Suggest and plain were also unsafe on that passage in all three runs, and on the sentence with no subject. Rewrite did better than on the first model, 5 of 18, because it changed less. It still rewrote the spoken voice in all three runs.
+
+Seventeen of the Haiku runs were cut off by a usage limit and I reran them. Nothing from a cut-off run counts. Each Haiku run read one file and wrote one, as before, and one Haiku run mentioned seeing the connector notice from the harness, so these runs weren't a blank chat either.
+
 ## What Went Wrong, and What I Can't Tell
 
 - **Rewrite is the extreme phrasing.** "Correct and polish" invites a rewrite. The plain request shows a milder one does better, and still not well enough.
 - **The mistakes were easy.** They were common spelling slips. Edit-only making all 54 fixes says nothing about subtler grammar.
-- **The passages are short.** They run to 124 words at most, and I wrote them, the key and the rules. One model ran them. Three runs a cell is a small number.
+- **The passages are short.** They run to 124 words at most, and I wrote them, the key and the rules. Two models ran them. Three runs a cell is a small number.
 - **The suggest result is a worst case.** My script accepts every suggestion. Nothing here shows what a person would do.
 - **A missed fix also counts as drift.** The script measures every word that differs from the original with only the planted fixes applied. Rewrite missed 6 of its 54, mostly by rewording the sentence. I recomputed without them: rewrite is still safe in one run of 18, with the same median.
 - **The script is strict.** A date written "3 March" for "3rd March" counts as a lost figure. I think that's right, since it's a change a reader should see, but it isn't a change of meaning.

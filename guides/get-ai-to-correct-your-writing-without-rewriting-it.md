@@ -24,7 +24,7 @@ It's better than "polish", and not enough. In my test, "Please fix any mistakes 
 
 I ran three requests on six short made-up passages, three runs each. The request above made every planted fix and changed nothing else, in 18 runs of 18. "Correct and polish" was safe in one run of 18. Where a sentence couldn't be fixed without choosing a meaning, the strict request left it alone and told me so.
 
-It's one AI model, short passages I wrote and mistakes that were easy to spot. Treat it as a good sign, not a guarantee. [Read the passages](../examples/edit-without-rewriting-passages.md) and [the review](../evaluations/edit-without-rewriting-test.md).
+I repeated it on a smaller model. The strict request was safe in 16 of 18 runs, and both misses corrected the grammar inside a quotation. So check quotations even then. It's two AI models, short passages I wrote and mistakes that were easy to spot. Treat it as a good sign, not a guarantee. [Read the passages](../examples/edit-without-rewriting-passages.md) and [the review](../evaluations/edit-without-rewriting-test.md).
 
 ## Check what changed
 
