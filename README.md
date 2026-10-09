@@ -52,9 +52,13 @@ Already know what you need? [Prompting Fundamentals: Give AI a Better Brief](gui
 
 [Before You Let AI Tools Work Together Unsupervised](guides/before-you-let-ai-tools-work-together-unsupervised.md) is a checklist for chains of AI steps, where one step's output feeds straight into the next step's action. It checks for a handoff that's hard to undo, and for a step that has to make sense of unclear inputs rather than clean test cases. I tested it in the [Grantley Utilities example](examples/grantley-utilities-agentic-oversight-example.md) on six proposed automation chains at a made-up utility company, some built to look safer or riskier than they are. [Read the review](evaluations/grantley-utilities-agentic-oversight-review.md): ordinary prompt **14/30**, guide-informed **29/30**. Neither output failed automatically.
 
+## Also available: correcting your writing without rewriting it
+
+[Getting AI to Correct Your Writing Without Rewriting It](guides/get-ai-to-correct-your-writing-without-rewriting-it.md) gives you a request that fixes spelling, grammar and punctuation and leaves your wording alone, and a second that lists changes for you to accept. I tested three ways of asking on six made-up passages in [this set](examples/edit-without-rewriting-passages.md). [Read the review](evaluations/edit-without-rewriting-test.md): the strict request was safe in **18 of 18** runs, "correct and polish" in **1 of 18**. A script scored it, not a 30-point rubric.
+
 ## What is actually proven, and what is not
 
-Read [Evidence Status](EVIDENCE-STATUS.md) before you trust any score here. Every guide has a worked example and a scored test. No guide has been used on real work and logged. Nobody outside this project has scored anything. Eight of the 12 tests ran each prompt only once, and one (Juniper Vale) used fixed outputs, not live runs. I've since measured a single run as weak evidence.
+Read [Evidence Status](EVIDENCE-STATUS.md) before you trust any score here. Every guide has a worked example and a scored test. No guide has been used on real work and logged. Nobody outside this project has scored anything. Eight of the 12 prompt-against-guide tests ran each prompt only once, and one (Juniper Vale) used fixed outputs, not live runs. The editing test is separate: it ran each request three times and was scored by a script. I've since measured a single run as weak evidence.
 
 ## How this differs from the big AI courses
 

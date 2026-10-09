@@ -61,7 +61,7 @@ By the rules I set, edit-only holds, suggest and rewrite don't, and a guide is w
 
 ## What the Requests Did
 
-**Rewrite changed the writer's voice and figures.** All three runs on the spoken-voice passage changed "gonna", and all lost "Very, very good". One turned it into "Really well done" and said so. On the figures passage, all three rewrote how the amounts and dates were written. All three added a currency to the figure that had none, and one said none of the values had changed. On the pronoun passage, all three picked a meaning, "I guessed Priya", and rewrote the sentence. They told me each change in their notes, which is honest, and it is also more to read: 135 words of notes on average, against 70 for edit-only.
+**Rewrite changed the writer's voice and figures.** All three runs on the spoken-voice passage replaced "gonna". Two changed "Very, very good" to "Really well done" and one cut it, and each said so. On the figures passage, all three rewrote how the amounts and dates were written. All three added a currency to the figure that had none, and one said none of the values had changed. On the pronoun passage, all three picked a meaning, "I guessed Priya", and rewrote the sentence. They told me each change in their notes, which is honest, and it is also more to read: 135 words of notes on average, against 70 for edit-only.
 
 **Edit-only fixed the mistakes and said what it left.** All 18 replies had every planted fix and no other change. On the two ambiguity passages all six said they'd left the pronoun and the opening phrase alone, and why, or that the figures might not add up. It also kept the quotation, the product name and the voice.
 
@@ -81,6 +81,6 @@ By the rules I set, edit-only holds, suggest and rewrite don't, and a guide is w
 - **Flagging is a judgement.** I read each run's notes for whether it mentioned the ambiguity. That part isn't scripted.
 - **It's fictional text.** It says nothing about a long document, a language other than English, or a writer's real prose.
 
-## What I'd Do Next
+## What I Did Next
 
-I haven't written a guide. By my own rule one is worth writing: the edit-only request, with the line that tells the AI to leave uncertain things alone, and how to check the result. A compare or tracked-changes feature in a word processor should show the same changes as the script, but I haven't tried it. The guide would need its own scenario and scored test to sit in the [evidence matrix](../EVIDENCE-STATUS.md). The main thing to test next is whether a plain request such as "fix any mistakes" is also safe, because it's a request people plausibly type.
+By my own rule a guide was worth writing, so I wrote a short one: [Getting AI to Correct Your Writing Without Rewriting It](../guides/get-ai-to-correct-your-writing-without-rewriting-it.md). It gives the edit-only request as tested, and the suggestion request with the warning from this page. A compare or tracked-changes feature in a word processor should show the same changes as the script, but I haven't tried it. The main thing to test next is whether a plain request such as "fix any mistakes" is also safe, because it's a request people plausibly type.
