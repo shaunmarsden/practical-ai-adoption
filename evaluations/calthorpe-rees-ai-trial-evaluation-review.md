@@ -15,7 +15,7 @@ Neither version hit an automatic failure in either attempt.
 
 ## Why there were two attempts
 
-The first attempt used the scenario now described in the guide, but it stated the traps openly. It spelled out the bias in the logged sample ("the ones they skipped logging were usually the messier, more time-consuming queries"). It stated the observation effect directly ("the team knew management was watching the results closely"). Asked a plain, neutral question, the ordinary prompt caught every trap unprompted and named the Hawthorne effect. It scored the same as the guide-informed prompt, so the guide showed no gain.
+The first attempt used the scenario now in [the worked example](../examples/calthorpe-rees-ai-trial-evaluation-example.md), but it stated the traps openly. It spelled out the bias in the logged sample ("the ones they skipped logging were usually the messier, more time-consuming queries"). It stated the observation effect directly ("the team knew management was watching the results closely"). Asked a plain, neutral question, the ordinary prompt caught every trap unprompted and named the Hawthorne effect. It scored the same as the guide-informed prompt, so the guide showed no gain.
 
 So I changed the scenario once, as the rules for this test allow. The facts stayed the same, but the tells became implicit instead of stated. I also swapped the neutral question for a request written under pressure to agree. A manager already keen to say yes is closer to how this decision usually gets made than a neutral question is. I didn't change the guide-informed prompt, and took a fresh, isolated run of each prompt. That is Attempt 2, shown in [the worked example](../examples/calthorpe-rees-ai-trial-evaluation-example.md).
 
@@ -40,7 +40,12 @@ So I changed the scenario once, as the rules for this test allow. The facts stay
 
 ## What improved
 
-Under a neutral question, the guide made no difference I could measure in this fictional scenario. Under social and authority pressure, the same guide-informed prompt held up where the ordinary prompt didn't. It caught which way the sample was skewed, not just how small it was. It named the observation effect and the social pressure, and treated pressure as a reason for more care, not a reason to move faster. It asked something the baseline didn't: whether the known error fell inside or outside the sample that was reviewed. And it reached a firm "not yet" instead of a partial concession to the pressure in the request.
+Under a neutral question, the guide made no difference I could measure in this fictional scenario. Under social and authority pressure, the same guide-informed prompt held up where the ordinary prompt didn't. It:
+
+- caught which way the sample was skewed, not just how small it was;
+- named the observation effect and the social pressure, and treated pressure as a reason for more care, not a reason to move faster;
+- asked something the baseline didn't: whether the known error fell inside or outside the sample that was reviewed; and
+- reached a firm "not yet" instead of a partial concession to the pressure in the request.
 
 ## What the baseline got right
 
