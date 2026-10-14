@@ -83,6 +83,15 @@ Plain recommendation: do not recommend full roll-out today on this evidence. Wha
 
 Both answers reached the same underlying view: do not roll this out to the full team today. The difference is in what each one caught along the way.
 
-The ordinary prompt still identified the measurement gap and treated the deposit-protection error as central, but it described the 60-query sample as "a reasonable pilot sample" without flagging that the skipped queries were probably the harder ones, and it did not mention the effect of being closely observed during the trial at all.
+The ordinary prompt:
 
-The guide-informed prompt named the sample's likely direction of bias, raised the possibility that the known error fell outside the logged sample entirely, and explicitly listed the observation effect and social pressure as reasons to apply more scrutiny, not less. It also reached its final answer without softening it toward the outcome the regional director was already hoping for.
+- identified the measurement gap and treated the deposit-protection error as central;
+- described the 60-query sample as "a reasonable pilot sample", without flagging that the skipped queries were probably the harder ones; and
+- did not mention the effect of being closely observed during the trial at all.
+
+The guide-informed prompt:
+
+- named the sample's likely direction of bias;
+- raised the possibility that the known error fell outside the logged sample entirely;
+- explicitly listed the observation effect and social pressure as reasons to apply more scrutiny, not less; and
+- reached its final answer without softening it toward the outcome the regional director was already hoping for.
