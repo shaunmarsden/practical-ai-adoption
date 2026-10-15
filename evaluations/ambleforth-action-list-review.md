@@ -45,7 +45,7 @@ The invented owner never varied: twice Rowan by name, once "probably you". The n
 | --- | ---: | ---: | --- |
 | Factual and evidence fidelity | 3 | 5 | The baseline stated three specifics the notes don't contain: a month for "the end of the month", an owner for the fire door audit, and a deadline for it. The guide-informed output said each was missing. |
 | Task alignment | 4 | 4 | Both produced a usable action list that kept real actions apart from decisions. The guide-informed output folded the fire door audit into its reassignment, so the audit itself dropped off as outstanding work. The baseline kept it as a separate item. |
-| Use of context | 4 | 5 | Both used all nine items. The guide-informed output also noted that the notes never name the month for the lift contract, and that the only date near the fire door audit is Priya's return, not a deadline. |
+| Use of context | 4 | 5 | Both used all nine items. The guide-informed output also noted that the notes never name the month for the lift contract, and that the only date near the fire door audit is Bethan's return, not a deadline. |
 | Unknowns, updates and conflicts | 3 | 5 | This is the core difference. The baseline flagged five gaps correctly and filled three others with plausible specifics. The guide-informed output left every unstated owner and date unstated. |
 | Practical usefulness | 4 | 5 | Both are easy to act on. The baseline's priorities help, but they partly rest on a link between the service charge check and the 2 October print slot that the notes don't make. The guide-informed gap summary is grounded and ready to act on. |
 | Responsible use and human control | 4 | 5 | Neither took any action or mishandled personal information. The baseline gave ownership to Rowan with no basis in the notes, which quietly takes a decision that had been left to a person. |
@@ -70,7 +70,7 @@ One item had both a named owner and a stated date. The other eight were incomple
 | Service charge figures | Owner implied only, never named | Kept it as "someone in Finance", but added an unsupported link to the 2 October slot | Said owner missing and date missing |
 | Lift maintenance | "the end of the month", no month named | Stated "End of September" | Noticed no month is named |
 | Quarterly inspections | Dropped | Listed as a decision, not an action | Listed as a decision, not an action |
-| Fire door audit | Priya is the former owner and on leave | Named Rowan "by implication" and set a deadline | Said owner missing, didn't assign anyone |
+| Fire door audit | Bethan is the former owner and on leave | Named Rowan "by implication" and set a deadline | Said owner missing, didn't assign anyone |
 | Void works budget | A decision | Listed as a decision | Listed as a decision |
 | Bin store | Already handled | Listed as closed | Listed as closed |
 
@@ -99,7 +99,7 @@ Its closing summary also says "three of the six actions have no owner" and names
 - Which month "the end of the month" means for the lift maintenance contract.
 - Who is picking up the tenant newsletter, before the 2 October print slot.
 - Which named person in Finance is checking the service charge figures.
-- Who takes the fire door audit while Priya is on leave, and that the audit itself is tracked, not just the reassignment.
+- Who takes the fire door audit while Bethan is on leave, and that the audit itself is tracked, not just the reassignment.
 - Whether Marcus has a date for the damp survey brief.
 
 ## What this test does not support

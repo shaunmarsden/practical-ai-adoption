@@ -4,18 +4,18 @@ This is a fictional company and a fictional trial, used to test [How to Tell Whe
 
 ## The scenario
 
-Calthorpe & Rees is a fictional UK property letting and management agency. Priya Sandhu is the Customer Operations Lead. She ran a six-week trial letting AI draft first responses to routine tenant maintenance queries, before a person reviews and sends them.
+Calthorpe & Rees is a fictional UK property letting and management agency. Lorna Mackay is the Customer Operations Lead. She ran a six-week trial letting AI draft first responses to routine tenant maintenance queries, before a person reviews and sends them.
 
 She has been reporting progress weekly to the regional director throughout the trial, and the regional director has said the trial "sounds like exactly what we should be doing" and is keen to see it rolled out to the rest of Customer Operations (12 people) as soon as possible. Two other branches in the group have already rolled out similar AI drafting tools for tenant queries and report positive feedback from their teams.
 
-Priya has pulled together what she has before writing her recommendation:
+Lorna has pulled together what she has before writing her recommendation:
 
 - Before the trial, replying to a routine maintenance query took about 14 minutes on average, based on a spreadsheet sample from three months earlier.
 - During the trial, the AI draft itself was produced in under a minute. Team members logged whether the draft was used "as is" or "with light edits" when they had a moment to do so.
 - Of roughly 340 queries handled during the trial, 60 were logged in detail.
 - Team members reported the trial "felt a lot faster" and morale around the tool is high.
 - One AI-drafted reply, sent without correction, gave a tenant incorrect information about deposit protection scheme timelines. It was not caught until the tenant queried it five weeks later.
-- Priya wants to send her recommendation to the regional director today.
+- Lorna wants to send her recommendation to the regional director today.
 
 ## First attempt: a neutral question
 

@@ -1,6 +1,6 @@
 # Ambleforth Community Housing: Action List Example
 
-**Everything in this example is fictional.** Ambleforth Community Housing, Rowan Alcott, Deniz Kaya, Marcus Ilori, Fenella Wrenn, Priya Nadeem and the Rushmere block were invented from scratch for this repository.
+**Everything in this example is fictional.** Ambleforth Community Housing, Rowan Alcott, Deniz Kaya, Marcus Ilori, Fenella Wrenn, Bethan Vaughan and the Rushmere block were invented from scratch for this repository.
 
 This tests the third starter prompt in [You Have Been Given AI at Work](../guides/you-have-been-given-ai-at-work.md), the one that turns notes into an action list. That starter makes a specific, checkable promise: show any date that is actually stated, say when an owner or date is missing, and do not guess.
 
@@ -18,7 +18,7 @@ Rowan's notes, used unchanged in both runs:
 Property team meeting, Tuesday 8 September 2026, 10am, Ambleforth Community Housing
 
 Present: me (Rowan), Deniz Kaya (Repairs), Marcus Ilori (Assets), Fenella Wrenn (Housing Officer).
-Priya Nadeem not there, annual leave until 5 October.
+Bethan Vaughan not there, annual leave until 5 October.
 
 - Contractor framework. Deniz to get the approved contractor list into the board pack by Friday 18 September.
 - Damp survey. Marcus is rewriting the damp survey brief for the Rushmere block. Didn't say when he'd have it.
@@ -26,7 +26,7 @@ Priya Nadeem not there, annual leave until 5 October.
 - Service charge figures. Someone in Finance will need to sanity check the service charge figures before they go out to tenants. No name agreed.
 - Lift maintenance. We should get the lift maintenance contract sorted by the end of the month.
 - Quarterly inspections. Talked about moving from six monthly to quarterly stock inspections. Agreed to leave it as it is for now and revisit at the next budget round.
-- Fire door audit. This was Priya's. She is on leave until 5 October so it needs a new owner. We said we would sort that out offline.
+- Fire door audit. This was Bethan's. She is on leave until 5 October so it needs a new owner. We said we would sort that out offline.
 - Void works budget. Agreed the void works budget line stays at 4,000 pounds.
 - Bin store. Fenella said two tenants had asked about the bin store at Rushmere. She has already replied to both of them.
 ```
@@ -50,7 +50,7 @@ Here are the actions from those notes.
 | 1 | Get the approved contractor list into the board pack | Deniz Kaya | Fri 18 September |
 | 2 | Rewrite the damp survey brief for the Rushmere block | Marcus Ilori | Not stated, needs a date |
 | 3 | Get the lift maintenance contract sorted | Unclear ("we"), needs naming | End of September |
-| 4 | Find a new owner for the fire door audit (to be sorted offline) | You (Rowan), by implication | Before 5 October, when Priya returns |
+| 4 | Find a new owner for the fire door audit (to be sorted offline) | You (Rowan), by implication | Before 5 October, when Bethan returns |
 
 **Actions with no owner yet, these are the gaps**
 
@@ -58,7 +58,7 @@ Here are the actions from those notes.
 | --- | --- | --- | --- |
 | 5 | Tenant newsletter, produce and send | No owner agreed | Must go out 2 October (printer's slot, fixed) |
 | 6 | Sanity check the service charge figures before they go to tenants | "Someone in Finance", no name | Before the figures go out, likely tied to the newsletter/2 Oct |
-| 7 | Fire door audit itself (the work, not just reassigning it) | Owner vacant while Priya is on leave | |
+| 7 | Fire door audit itself (the work, not just reassigning it) | Owner vacant while Bethan is on leave | |
 
 **Decisions, not actions** (no follow-up needed)
 
@@ -116,8 +116,8 @@ Action list from the property team meeting notes (Tuesday 8 September 2026, Ambl
 
 **6. Fire door audit, find a new owner for the audit**
 
-- Owner of the audit itself: missing. It was Priya Nadeem's, and she is on annual leave until 5 October. The notes say reassignment would be sorted out offline but do not say who will do that.
-- Date: missing. The only date stated is Priya's return from leave, 5 October.
+- Owner of the audit itself: missing. It was Bethan Vaughan's, and she is on annual leave until 5 October. The notes say reassignment would be sorted out offline but do not say who will do that.
+- Date: missing. The only date stated is Bethan's return from leave, 5 October.
 
 **Decisions and closed items (no action needed)**
 
@@ -135,6 +135,6 @@ For repository formatting, both raw outputs had their dash glyphs and currency s
 
 Both outputs are organised and usable, and both correctly separated the dropped inspections item, the budget decision and the already-answered bin store query from the real actions.
 
-The difference is what each did with the things the notes never said. The baseline turned "the end of the month" into "End of September", named Rowan as the fire door owner "by implication", and gave that item a deadline of "Before 5 October, when Priya returns". None of those three specifics is in the notes. The guide-informed output stated each as missing, and explicitly noticed that the notes never name the month.
+The difference is what each did with the things the notes never said. The baseline turned "the end of the month" into "End of September", named Rowan as the fire door owner "by implication", and gave that item a deadline of "Before 5 October, when Bethan returns". None of those three specifics is in the notes. The guide-informed output stated each as missing, and explicitly noticed that the notes never name the month.
 
 The baseline was better in one respect: it listed the fire door audit itself as an outstanding action as well as the reassignment, which the guide-informed output collapsed into one item. [Read the scored review](../evaluations/ambleforth-action-list-review.md).

@@ -47,9 +47,9 @@ I've logged both points on the shared tracker at https://tracker.example.com/hal
 ```text
 Notes from Tuesday's catch-up
 
-Sam told Priya she would need to approve the budget before Friday. Walking into the room, the projector was already broken, so we ran the review from a laptop. The delay occured because the supplier was late.
+Sam told Marian she would need to approve the budget before Friday. Walking into the room, the projector was already broken, so we ran the review from a laptop. The delay occured because the supplier was late.
 
-We also agreed to pause the pilot untill the data is clean. Nobody objected, and Priya definatly seemed relieved.
+We also agreed to pause the pilot untill the data is clean. Nobody objected, and Marian definatly seemed relieved.
 ```
 
 ### Passage 5: Figures written three different ways
@@ -68,7 +68,7 @@ Alina
 ```text
 Hi team,
 
-Here is the plan for next week. On Monday we will review the open tickets, and on Tuesday the new starters will shadow the support desk. Priya has agreed to lead the Wednesday session, which will cover the refund process and the escalation route. If anything changes, I will let you know by Thursday morning.
+Here is the plan for next week. On Monday we will review the open tickets, and on Tuesday the new starters will shadow the support desk. Marian has agreed to lead the Wednesday session, which will cover the refund process and the escalation route. If anything changes, I will let you know by Thursday morning.
 
 Please read the attached notes beforehand. They are short, and they will save us a good ten minutes on the day.
 
@@ -109,7 +109,7 @@ I wrote this before any run. Each planted mistake has one correct fix. A string 
 | 1 | recieved => received; its been => it's been; Your welcome => You're welcome; definately => definitely; alot => a lot; If your free => If you're free | Marcus; 14 March; 1,450 units; Friday; Thursday; colour; Helen Ashworth; Brightwell Supplies |
 | 2 | seperate => separate; loosing => losing; Check weather => Check whether | Right. Quick one for the team.; gonna; nowt; Very, very good.; Dave's lot; faff; That's it. Cheers, Jo.; the 9th; fortnight; Monday |
 | 3 | it's settings => its settings; big affect => big effect; summery => summary | Skedulr feedback; Skedulr rollout; Rina Kapoor; Halden Care; "we was never told about the change to the rota, and nobody asked us."; Q3_forecast_FINAL_v2.xlsx; https://tracker.example.com/halden |
-| 4 | occured => occurred; untill => until; definatly => definitely | Sam told Priya she would need to approve the budget before Friday.; Walking into the room, the projector was already broken |
+| 4 | occured => occurred; untill => until; definatly => definitely | Sam told Marian she would need to approve the budget before Friday.; Walking into the room, the projector was already broken |
 | 5 | recieve => receive; Febuary => February; seperately => separately | GBP 12k; 12,000; 3rd March; GBP 1.2k; 21 March; Dev; Alina |
 | 6 | none | the whole passage |
 
@@ -118,7 +118,7 @@ I wrote this before any run. Each planted mistake has one correct fix. A string 
 - **Passage 1:** ordinary mistakes with one correct fix each, and British spelling ("colour") that is correct.
 - **Passage 2:** a plain, spoken voice. "Gonna", "nowt" and "Very, very good." are the writer's choices, not mistakes.
 - **Passage 3:** a product name spelled on purpose, a file name, a link, and a quotation that has its own grammar slip. A quotation records what someone said.
-- **Passage 4:** two sentences where the obvious fix changes the meaning. "She" could be Sam or Priya, and the opening phrase of the second sentence has no subject to attach to. Fixing either means choosing a meaning, so the right move is to leave both and say so.
+- **Passage 4:** two sentences where the obvious fix changes the meaning. "She" could be Sam or Marian, and the opening phrase of the second sentence has no subject to attach to. Fixing either means choosing a meaning, so the right move is to leave both and say so.
 - **Passage 5:** figures written three ways ("GBP 12k", "12,000", "GBP 1.2k") and dates written two ways. They may not add up. Nothing in the passage says which is right.
 - **Passage 6:** no mistakes. The right result is no change.
 

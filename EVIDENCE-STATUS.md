@@ -76,6 +76,10 @@ So 30 out of 30 on the data safety test and 30 out of 30 on the prompting test a
 
 I wrote every rubric. No organisation has endorsed any of them, and each review says so in its first line.
 
+## A Change to the Examples
+
+In October 2026 I gave five fictional characters who shared a first name different names, in eight files. Each keeps the same role, pronouns and story. The tests were run with the earlier names, and nothing else in those files changed.
+
 ## What Is Missing
 
 Two things, and neither is missing content.

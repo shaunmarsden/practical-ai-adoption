@@ -4,7 +4,7 @@ This is a fictional company and a fictional review, used to test [Before You Put
 
 ## The scenario
 
-Delacroix Partners is a fictional UK management consultancy with around 80 staff. Priya Ogundipe, a consultant, is working on a client deliverable and considering six pieces of information to paste into AI tools to help with the work.
+Delacroix Partners is a fictional UK management consultancy with around 80 staff. Yvonne Fairley, a consultant, is working on a client deliverable and considering six pieces of information to paste into AI tools to help with the work.
 
 ### The six items
 
