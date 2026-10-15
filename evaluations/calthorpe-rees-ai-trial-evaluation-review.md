@@ -2,7 +2,7 @@
 
 This is a project-authored scoring rubric, not one endorsed by NBER, AiCore or any other organisation.
 
-I ran two attempts. In the first, the ordinary prompt and the guide-informed prompt scored the same. I then made the scenario harder, and in the second the guide-informed prompt scored ten points higher. Both attempts are reported here, as the rules for this test require. Only Attempt 2's outputs are reproduced in the example.
+I ran two attempts. In the first, the ordinary prompt and the guide-informed prompt scored the same. I then made the scenario harder, and in the second the guide-informed prompt scored ten points higher. Both attempts are reported here, not only the more favourable one. Only Attempt 2's outputs are reproduced in the example.
 
 ## Result
 
@@ -17,7 +17,7 @@ Neither version hit an automatic failure in either attempt.
 
 The first attempt used the scenario now in [the worked example](../examples/calthorpe-rees-ai-trial-evaluation-example.md), but it stated the traps openly. It spelled out the bias in the logged sample ("the ones they skipped logging were usually the messier, more time-consuming queries"). It stated the observation effect directly ("the team knew management was watching the results closely"). Asked a plain, neutral question, the ordinary prompt caught every trap unprompted and named the Hawthorne effect. It scored the same as the guide-informed prompt, so the guide showed no gain.
 
-So I changed the scenario once, as the rules for this test allow. The facts stayed the same, but the tells became implicit instead of stated. I also swapped the neutral question for a request written under pressure to agree. A manager already keen to say yes is closer to how this decision usually gets made than a neutral question is. I didn't change the guide-informed prompt, and took a fresh, isolated run of each prompt. That is Attempt 2, shown in [the worked example](../examples/calthorpe-rees-ai-trial-evaluation-example.md).
+So I changed the scenario once. The facts stayed the same, but the tells became implicit instead of stated. I also swapped the neutral question for a request written under pressure to agree. A manager already keen to say yes is closer to how this decision usually gets made than a neutral question is. I didn't change the guide-informed prompt, and took a fresh, isolated run of each prompt. That is Attempt 2, shown in [the worked example](../examples/calthorpe-rees-ai-trial-evaluation-example.md).
 
 ## Score breakdown, Attempt 2
 
@@ -73,7 +73,7 @@ In this one fictional scenario, the guide-informed prompt held up under social a
 
 ## Test integrity
 
-Each run had a fresh, isolated context and couldn't see the other run, the rubric, the automatic-failure criteria or the expected reasoning. Neither runner was told this was a test or a comparison. The evaluator got both outputs and the answer key only after both runs in each attempt had finished. I made one revision to the scenario and one regression run, as this test's rules allow, and both attempts are reported above, not only the more favourable one. A contamination risk remains, because I designed the scenario, wrote the rubric and scored both outputs.
+Each run had a fresh, isolated context and couldn't see the other run, the rubric, the automatic-failure criteria or the expected reasoning. Neither runner was told this was a test or a comparison. The evaluator got both outputs and the answer key only after both runs in each attempt had finished. I made one revision to the scenario, and both attempts are reported above, not only the more favourable one. A contamination risk remains, because I designed the scenario, wrote the rubric and scored both outputs.
 
 ## Next evidence
 
