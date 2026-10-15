@@ -35,13 +35,13 @@ The internal update row is the awkward one, and its figure shows it. I ran its o
 
 ## One Test Scored by Script
 
-This one isn't scored out of 30 and isn't one of the 12 above, so no count on this page includes it. It asks a narrower question: does the AI change text it was only asked to correct? A [script](scripts/edit_drift.py) scored 72 runs against a key I wrote first.
+This one isn't scored out of 30 and isn't one of the 12 above, so no count on this page includes it. It asks a narrower question: does the AI change text it was only asked to correct? A [script](scripts/edit_drift.py) scored 144 completed runs against a key I wrote first: 72 on each of two model settings. Each model ran four requests on six passages, three times each. Interrupted attempts were rerun and aren't part of that count.
 
 | Guide | Scenario | Result | Runs per request | Real use | Outside scoring |
 | --- | --- | --- | --- | --- | --- |
 | [Getting AI to Correct Your Writing Without Rewriting It](guides/get-ai-to-correct-your-writing-without-rewriting-it.md) | [Six passages](examples/edit-without-rewriting-passages.md) | [Safe in 18 of 18 runs vs 1 of 18, plain request 11 of 18](evaluations/edit-without-rewriting-test.md) | 3 | Not yet | Not yet |
 
-It's two models, and short passages and mistakes I wrote. The result column compares the strict edit-only request with "correct and polish", and then with a plain "fix any mistakes".
+It's two model settings, and short passages and mistakes I wrote. The result column gives the first model's scores. On the second, edit-only was safe in 16 of 18 runs, "correct and polish" in five, and the plain request in 13. The [review](evaluations/edit-without-rewriting-test.md#a-second-model) gives both sets of results and the two misses on quotations.
 
 ## How Much Weight the Scores Can Carry
 
