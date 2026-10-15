@@ -63,7 +63,7 @@ The plain request, "Please fix any mistakes in the text below.", was added after
 
 ## What the Requests Did
 
-**Rewrite changed the writer's voice and figures.** All three runs on the spoken-voice passage replaced "gonna". Two changed "Very, very good" to "Really well done" and one cut it, and each said so. On the figures passage, all three rewrote how the amounts and dates were written. All three added a currency to the figure that had none, and one said none of the values had changed. On the pronoun passage, all three picked a meaning, "I guessed Priya", and rewrote the sentence. They told me each change in their notes, which is honest, and it is also more to read: 135 words of notes on average, against 70 for edit-only.
+**Rewrite changed the writer's voice and figures.** All three runs on the spoken-voice passage replaced "gonna". Two changed "Very, very good" to "Really well done" and one cut it, and each said so. On the figures passage, all three rewrote how the amounts and dates were written. All three added a currency to the figure that had none, and one said none of the values had changed. On the pronoun passage, all three picked a meaning, "I guessed Marian", and rewrote the sentence. They told me each change in their notes, which is honest, and it is also more to read: 135 words of notes on average, against 70 for edit-only.
 
 **Edit-only fixed the mistakes and said what it left.** All 18 replies had every planted fix and no other change. On the two ambiguity passages all six said they'd left the pronoun and the opening phrase alone, and why, or that the figures might not add up. It also kept the quotation, the product name and the voice.
 
