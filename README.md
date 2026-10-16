@@ -4,63 +4,50 @@ Plain-English guides for using AI well at work, based on evidence. You don't nee
 
 It starts with one habit: give AI a better brief, then check what comes back. The examples are made up. Each test says what it does and doesn't show.
 
-**Want to try the habit before reading anything?** [Sort the notes yourself](https://shaunmarsden.github.io/practical-ai-adoption/). There are nine claims from one set of made-up meeting notes. You decide which the notes settle, which only sound settled and which the notes contradict themselves on. An AI prompt got three of the nine wrong here, which is why I rewrote that prompt. The page also says that an ordinary prompt still matched the rewritten one.
-
 ## Start here
 
-[You Have Been Given AI at Work. Start Here.](guides/you-have-been-given-ai-at-work.md) is for anyone who has an AI tool at work and wants one sensible first step. It has three simple starters, for writing, planning and summarising, and points you to the right guide next.
+**[Try one ordinary task with your approved AI tool](guides/you-have-been-given-ai-at-work.md).** The starting guide has three prompts for writing, planning and summarising. Pick one, give it information you're allowed to use, and check the result.
 
-Already know what you need? [Prompting Fundamentals: Give AI a Better Brief](guides/prompting-fundamentals.md) gives you a prompt starter, three reusable patterns and a simple way to check or improve what comes back.
+No coding or installation needed.
 
-## See it tested
+## Find the guide you need
 
-[Thornfield Team Connect: Prompting Example](examples/thornfield-team-connect-prompting-example.md) compares an ordinary first attempt with a prompt written using the guide, on the same made-up evidence.
+### For your own work
 
-## Read the review
+| What you need | Open this guide |
+| --- | --- |
+| A clearer request and a way to check the answer | [Give AI a better brief](guides/prompting-fundamentals.md) |
+| Help choosing a task to try | [Find a good first AI use case](guides/finding-a-good-first-ai-use-case.md) |
+| Corrections without changing your wording | [Correct your writing without rewriting it](guides/get-ai-to-correct-your-writing-without-rewriting-it.md) |
+| A process you can repeat, not another one-off prompt | [Turn a prompt into a useful workflow](guides/from-a-prompt-to-a-useful-workflow.md) |
+| A fair check of whether it was worth the effort | [Tell whether AI actually helped](guides/how-to-tell-whether-ai-actually-helped.md) |
 
-[Thornfield Team Connect: Prompting Review](evaluations/thornfield-team-connect-prompting-review.md) scored the ordinary prompt at **24/30** and the guide-informed one at **30/30**. Neither output failed automatically. This is fictional testing only.
+### For safety and team decisions
 
-## Also available: finding a good first AI use case
+| What you need | Open this guide |
+| --- | --- |
+| A check before pasting work information | [Before you put work data into AI](guides/before-you-put-work-data-into-ai.md) |
+| Help recognising work AI shouldn't do unsupervised | [When not to use AI](guides/when-not-to-use-ai.md) |
+| A check before linking AI steps that can act without review | [Before you let AI tools work together unsupervised](guides/before-you-let-ai-tools-work-together-unsupervised.md) |
+| A picture of how people actually use AI, beyond having a licence | [The gap between AI access and actual use](guides/the-gap-between-ai-access-and-actual-use.md) |
+| Help understanding why a rollout has stalled | [Why AI projects stall after the demo works](guides/why-ai-projects-stall-after-the-demo-works.md) |
 
-[Finding a Good First AI Use Case](guides/finding-a-good-first-ai-use-case.md) helps you choose which task to try AI on first, with a checklist you can copy and adapt. I tested it in the [Marlowe & Birch example](examples/marlowe-birch-first-use-case-example.md) on six mixed tasks. One of them looks like a good AI task but isn't. [Read the review](evaluations/marlowe-birch-first-use-case-review.md): ordinary prompt **24/30**, guide-informed **30/30**. Neither output failed automatically.
+## See one complete test
 
-## Also available: turning a prompt into a useful workflow
+The [Thornfield Team Connect example](examples/thornfield-team-connect-prompting-example.md) gives an ordinary prompt and a guide-informed prompt the same made-up evidence. Both write a reply to a venue.
 
-[From a Prompt to a Useful Workflow](guides/from-a-prompt-to-a-useful-workflow.md) shows how to turn a one-off prompt into a small process you can repeat, with clear sources, checks and a handover to a person. I tested it in the [Juniper Vale example](examples/juniper-vale-prompt-to-workflow-example.md) on hard, made-up notes. Both outputs there are fixed examples, not live runs. [Read the review](evaluations/juniper-vale-prompt-to-workflow-review.md): ordinary prompt **17/30**, workflow-informed **29/30**. Neither output failed automatically.
+[Read the scored review](evaluations/thornfield-team-connect-prompting-review.md): ordinary prompt **24/30**, guide-informed **30/30**. Neither output failed automatically. I ran each prompt once and scored both outputs myself. This is one fictional test, not proof of a real business benefit.
 
-## Also available: telling whether AI actually helped
-
-[How to Tell Whether AI Actually Helped](guides/how-to-tell-whether-ai-actually-helped.md) is a checklist for telling a good feeling about an AI trial apart from evidence that it worked. I tested it in the [Calthorpe & Rees example](examples/calthorpe-rees-ai-trial-evaluation-example.md) on a trial with no clear answer. I asked once as a neutral question, and once with the kind of pressure to say yes you'd meet at work. [Read the review](evaluations/calthorpe-rees-ai-trial-evaluation-review.md). Asked neutrally, an ordinary prompt and the guide-informed one both scored **30/30**, so there was no real difference. Under pressure, the ordinary prompt scored **20/30** and the guide-informed one **30/30**. Neither output failed automatically.
-
-## Also available: why AI projects stall after the demo works
-
-[Why AI Projects Stall After the Demo Works](guides/why-ai-projects-stall-after-the-demo-works.md) is a checklist for working out why a rollout has stalled, without blaming the tool straight away. I tested it in the [Pemberton Underwriters example](examples/pemberton-underwriters-ai-adoption-stall-example.md), where a popular demo led to almost no lasting use. [Read the review](evaluations/pemberton-underwriters-ai-adoption-stall-review.md): ordinary prompt **28/30**, guide-informed **30/30**. Both reached the same, correct answer. The guide-informed output was clearer about what still needed checking. Neither output failed automatically.
-
-## Also available: when not to use AI
-
-[When Not to Use AI](guides/when-not-to-use-ai.md) is a checklist for two kinds of task that AI shouldn't do unsupervised, however good the tool. One is a decision that affects a person and that nobody reviews. The other is a confident but unchecked claim where the stakes are high. I tested it in the [Ashworth & Vale example](examples/ashworth-vale-ai-safeguards-example.md) on six proposed AI uses, some built to look safer or riskier than they are. [Read the review](evaluations/ashworth-vale-ai-safeguards-review.md): ordinary prompt **29/30**, guide-informed **30/30**. The scores didn't change between a neutral attempt and a second attempt under pressure to approve everything. Neither output failed automatically.
-
-## Also available: before you put work data into AI
-
-[Before You Put Work Data Into AI](guides/before-you-put-work-data-into-ai.md) is a checklist for whether a particular piece of data is safe to put in. It checks the tool and the data together, not either one alone. I tested it in the [Delacroix Partners example](examples/delacroix-partners-ai-data-safety-example.md) on six planned AI uses, some built to look safer or riskier than they are. [Read the review](evaluations/delacroix-partners-ai-data-safety-review.md): ordinary prompt **30/30**, guide-informed **30/30**. It was a tie, and the review says so. Neither output failed automatically.
-
-## Also available: the gap between AI access and actual use
-
-[The Gap Between AI Access and Actual Use](guides/the-gap-between-ai-access-and-actual-use.md) is a checklist for finding out how a person or team uses AI before you plan training, a rollout or expectations around it. A job title, a confident claim or seniority isn't evidence of use. I tested it in the [Hollis & Speight example](examples/hollis-speight-ai-access-gap-example.md) on a made-up professional services team, where titles, confidence and actual use don't line up the way a manager assumes. [Read the review](evaluations/hollis-speight-ai-access-gap-review.md): ordinary prompt **11/30**, guide-informed **28/30**. Neither output failed automatically.
-
-## Also available: before you let AI tools work together unsupervised
-
-[Before You Let AI Tools Work Together Unsupervised](guides/before-you-let-ai-tools-work-together-unsupervised.md) is a checklist for chains of AI steps, where one step's output feeds straight into the next step's action. It checks for a handoff that's hard to undo, and for a step that has to make sense of unclear inputs rather than clean test cases. I tested it in the [Grantley Utilities example](examples/grantley-utilities-agentic-oversight-example.md) on six proposed automation chains at a made-up utility company, some built to look safer or riskier than they are. [Read the review](evaluations/grantley-utilities-agentic-oversight-review.md): ordinary prompt **14/30**, guide-informed **29/30**. Neither output failed automatically.
-
-## Also available: correcting your writing without rewriting it
-
-[Getting AI to Correct Your Writing Without Rewriting It](guides/get-ai-to-correct-your-writing-without-rewriting-it.md) gives you a request that fixes spelling, grammar and punctuation and leaves your wording alone, and a second that lists changes for you to accept. I tested three ways of asking on six made-up passages in [this set](examples/edit-without-rewriting-passages.md). [Read the review](evaluations/edit-without-rewriting-test.md): the strict request was safe in **18 of 18** runs, a plain "fix any mistakes" in **11 of 18**, "correct and polish" in **1 of 18**. A script scored it, not a 30-point rubric.
+Rather try checking an output yourself? [Sort nine claims from made-up meeting notes](https://shaunmarsden.github.io/practical-ai-adoption/). An AI prompt got three wrong, so I rewrote it. The page shows that an ordinary prompt still matched the rewritten one.
 
 ## What is actually proven, and what is not
 
-Read [Evidence Status](EVIDENCE-STATUS.md) before you trust any score here. Every guide has a worked example and a scored test. No guide has been used on real work and logged. Nobody outside this project has scored anything. Eight of the 12 prompt-against-guide tests ran each prompt only once, and one (Juniper Vale) used fixed outputs, not live runs. The editing test is separate: it ran each request three times and was scored by a script. I've since measured a single run as weak evidence.
+Every guide has a worked example and a scored test. No guide has been used on real work and logged. Nobody outside this project has scored anything.
 
-## How this differs from the big AI courses
+[Evidence Status](EVIDENCE-STATUS.md) links every example and review, including ties, failures and repeat runs. Eight of the 12 prompt-against-guide tests ran each prompt only once, and one (Juniper Vale) used fixed outputs, not live runs. The editing test is separate and was scored by a script. A single run is weak evidence, and scores from different tests aren't directly comparable.
+
+<details>
+<summary>How this differs from the big AI courses</summary>
 
 You may have found [Generative AI for Beginners](https://github.com/microsoft/generative-ai-for-beginners) or the [Prompt Engineering Guide](https://github.com/dair-ai/Prompt-Engineering-Guide). Both have tens of thousands of stars and far more resources than this, and both are more thorough than anything here. They're also a different thing. They teach you to build with AI through a structured course. This is for someone who got a licence on Monday, has an ordinary work task on Tuesday, and wants one page rather than 21 lessons.
 
@@ -69,6 +56,8 @@ Closer in aim are [GitHub's AI adoption playbook](https://github.com/github/ai-a
 I searched all four for a rubric or a scored result. The one thing here I didn't find in any of them is a scored before-and-after of the advice itself: an ordinary attempt and a guide-informed attempt on the same made-up notes, both scored, with the failures written down. [Evidence Status](EVIDENCE-STATUS.md) shows how far that goes and where it stops, including the two columns that are empty for every guide.
 
 I haven't built a comparison table for this repository, as I did for [Practical AI Sales Workflows](https://github.com/shaunmarsden/practical-ai-sales-workflows/blob/main/COMPARISON.md). Only two projects do the same job. Scoring a 21-lesson course against a rubric it never signed up to would look like a comparison and work like a smear.
+
+</details>
 
 ## What I plan to do next
 
