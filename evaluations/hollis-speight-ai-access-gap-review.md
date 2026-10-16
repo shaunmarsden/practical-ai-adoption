@@ -16,9 +16,9 @@ This scores the [Hollis & Speight example](../examples/hollis-speight-ai-access-
 | Area | Baseline | Guide-informed | Why it matters |
 | --- | ---: | ---: | --- |
 | Separating stated confidence or title from actual evidence | 1 | 5 | The baseline treated every description as if it were already the answer. The guide-informed output said none of the five descriptions was evidence on its own. |
-| Catching the false positive (confident, title-matching, no shown example) | 1 | 5 | The baseline fast-tracked Priti on her title and confidence alone. The guide-informed output named hers as the profile most likely to be taken at face value and least likely to be checked. |
+| Catching the false positive (confident, title-matching, no shown example) | 1 | 5 | The baseline fast-tracked Hilary on her title and confidence alone. The guide-informed output named hers as the profile most likely to be taken at face value and least likely to be checked. |
 | Catching the false negative (quiet, self-deprecating, actually a daily user) | 1 | 4 | The baseline gave Callum full training on his own modest view of himself. The guide-informed output named the same risk in reverse, but not the likely reason he undersold himself (fear that using AI would look like cutting corners). |
-| Correctly confirming the true positive without over-flagging it | 4 | 5 | The baseline fast-tracked Marcus. The guide-informed output treated him as the strongest case, needing only a quick check, and told his specific description apart from Priti's vague confidence. |
+| Correctly confirming the true positive without over-flagging it | 4 | 5 | The baseline fast-tracked Marcus. The guide-informed output treated him as the strongest case, needing only a quick check, and told his specific description apart from Hilary's vague confidence. |
 | Catching the planner's own blind spot | 1 | 5 | The baseline exempted Dominic from any check, on his own general view of himself. The guide-informed output named this as a blind spot built into the exercise he was running. |
 | Practical, low-friction next step | 3 | 4 | The baseline gave a workable plan built entirely on unchecked assumptions. The guide-informed output proposed one easy check for all five, Dominic included, but didn't say the rollout messages should address Callum's reason for playing down his use. |
 
@@ -34,11 +34,11 @@ This scores the [Hollis & Speight example](../examples/hollis-speight-ai-access-
 
 The guide-informed prompt didn't just add caveats to the same plan. It produced a different and more accurate one.
 
-It flagged Priti, whose case for skipping training sounded strongest, as someone who might need the foundational session most. It said Callum's quiet self-assessment was no more evidence of low use than confidence is of high use. And it named the exercise's own blind spot: Dominic exempting himself.
+It flagged Hilary, whose case for skipping training sounded strongest, as someone who might need the foundational session most. It said Callum's quiet self-assessment was no more evidence of low use than confidence is of high use. And it named the exercise's own blind spot: Dominic exempting himself.
 
-It said confidence, a title and a stated intention to hold off are all stand-ins, not evidence, and it asked for the same check from everyone. But it didn't treat every self-report as equally unreliable. Marcus's specific, checkable description counted for more than Priti's vague confidence.
+It said confidence, a title and a stated intention to hold off are all stand-ins, not evidence, and it asked for the same check from everyone. But it didn't treat every self-report as equally unreliable. Marcus's specific, checkable description counted for more than Hilary's vague confidence.
 
-The baseline's plan would have skipped full training for Priti, who hadn't used the tool herself, and for Dominic, who had used it once. It would have loaded full training onto someone who was already using AI daily without saying so.
+The baseline's plan would have skipped full training for Hilary, who hadn't used the tool herself, and for Dominic, who had used it once. It would have loaded full training onto someone who was already using AI daily without saying so.
 
 ## What it still got wrong
 
