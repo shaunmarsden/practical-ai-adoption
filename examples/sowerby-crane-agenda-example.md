@@ -1,6 +1,6 @@
 # Sowerby and Crane: Meeting Agenda Example
 
-**Everything in this example is fictional.** Sowerby and Crane, Kestrelby, Dilan Sarpong, Prisha Bhatt, Tomasz Wieczorek, Marguerite Loxley and the job tracking project were invented from scratch for this repository.
+**Everything in this example is fictional.** Sowerby and Crane, Kestrelby, Dilan Sarpong, Prisha Bhatt, Rufus Wieczorek, Marguerite Loxley and the job tracking project were invented from scratch for this repository.
 
 This tests the second starter prompt in [You Have Been Given AI at Work](../guides/you-have-been-given-ai-at-work.md), the one that turns rough notes into a meeting agenda. That starter promises two things beyond producing an agenda: do not assume a decision has already been made, and flag anything missing that the organiser needs to decide before the meeting.
 
@@ -22,7 +22,7 @@ Rough notes before the follow up job tracking meeting, Sowerby and Crane
 - Follow up on the job tracking thing. We agreed to work up Option A.
 - Although Dilan thinks we said we would look at both. I think it was A. Need to check my notes from last time.
 - Prisha has the licence numbers now. Option A is 4,200 a year. Option B she has as around 9,000, maybe more with the extra modules.
-- Tomasz has looked at the history question. He says the twelve years can come across but not cleanly, and he would want to talk it through.
+- Rufus has looked at the history question. He says the twelve years can come across but not cleanly, and he would want to talk it through.
 - Marguerite came to the last one. She said she was happy for us to get on with it.
 - Need to get to a supplier decision this time. Or at least that is what I would like.
 - Half day probably. Or two hours.
@@ -42,7 +42,7 @@ Can you turn these notes into an agenda for the meeting? Thanks
 
 Sowerby and Crane
 
-**Attendees:** Dilan, Prisha, Tomasz, Marguerite (optional, she confirmed at the last meeting she's happy for us to proceed)
+**Attendees:** Dilan, Prisha, Rufus, Marguerite (optional, she confirmed at the last meeting she's happy for us to proceed)
 
 **Duration:** 2 hours (half day as fallback if we need it)
 
@@ -65,7 +65,7 @@ Sowerby and Crane
 
 **3. Data history and migration (30 mins)**
 
-- Tomasz on the twelve years of history
+- Rufus on the twelve years of history
 - His view: it can come across, but not cleanly, he wants to talk it through
 - Agree what "good enough" looks like, and what we're prepared to lose
 
@@ -124,7 +124,7 @@ Prisha to walk through the licence numbers now available:
 
 **3. Data history (15 min)**
 
-Tomasz on the twelve years of historical data:
+Rufus on the twelve years of historical data:
 
 - His position: the history can be migrated, but not cleanly, and he wants to talk it through
 - What "not cleanly" means in practice, what is lost, degraded, or needs manual work
@@ -152,7 +152,7 @@ Attempt a supplier decision. If not possible, name the specific blocker.
 **Next steps (to be assigned in the meeting)**
 
 - Owner and date for firming up whichever cost figures are still indicative
-- Owner for the data migration scoping work following Tomasz's input
+- Owner for the data migration scoping work following Rufus's input
 - Owner for the approval/sign-off route
 - Date and purpose of any further meeting, scheduled around the 12th
 
@@ -160,8 +160,8 @@ Attempt a supplier decision. If not possible, name the specific blocker.
 
 1. **Check your notes on Option A vs both options.** You and Dilan remember the last meeting differently. Resolve this beforehand if you can, if you walk in disagreeing, you will spend the meeting on it.
 2. **Length: half day or two hours.** These lead to different meetings. Two hours covers the agenda above with a decision attempt at the end. A half day allows genuine working-through of the migration question. Pick one and set the agenda accordingly, the timings above assume roughly two hours.
-3. **Attendees.** Prisha and Tomasz clearly need to be there. Is Marguerite attending, or is her "happy for us to get on with it" comment standing in for her presence? Related: does "get on with it" constitute spend approval, or only permission to continue the evaluation? Worth being clear, because a supplier decision at GBP 4,200 or GBP 9,000 a year may need her explicit sign-off.
-4. **Whether a decision is realistically achievable.** You want one. But Tomasz wants to talk the history question through, and that is unresolved. If the data answer changes the supplier choice, a decision today may not be available, decide in advance whether you would accept a conditional decision (for example, proceed with A subject to migration scoping) or hold out for a firm one.
+3. **Attendees.** Prisha and Rufus clearly need to be there. Is Marguerite attending, or is her "happy for us to get on with it" comment standing in for her presence? Related: does "get on with it" constitute spend approval, or only permission to continue the evaluation? Worth being clear, because a supplier decision at GBP 4,200 or GBP 9,000 a year may need her explicit sign-off.
+4. **Whether a decision is realistically achievable.** You want one. But Rufus wants to talk the history question through, and that is unresolved. If the data answer changes the supplier choice, a decision today may not be available, decide in advance whether you would accept a conditional decision (for example, proceed with A subject to migration scoping) or hold out for a firm one.
 5. **Date.** Not yet fixed. Avoid the week of the 12th if Dilan needs to be there, and note that the 31 March renewal sets the outer limit.
 
 **Gaps in the notes**
@@ -176,7 +176,7 @@ For repository formatting, both raw outputs had their dash glyphs and currency s
 
 ## Short comparison
 
-Both runs caught the biggest problem in the notes: that the organiser and Dilan remember the last meeting differently, so Option A cannot be treated as chosen. Both kept Option B's cost soft and Tomasz's "not cleanly" unresolved.
+Both runs caught the biggest problem in the notes: that the organiser and Dilan remember the last meeting differently, so Option A cannot be treated as chosen. Both kept Option B's cost soft and Rufus's "not cleanly" unresolved.
 
 Three things separate them, and all three are decisions the notes left open.
 

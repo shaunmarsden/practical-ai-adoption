@@ -16,7 +16,7 @@ Your welcome to call me if you'd like to talk it through. I'm in the office all 
 If your free on Thursday, I'd be glad to go through the new process with you. I've also attached the updated price list, which covers the colour options you asked about.
 
 Kind regards,
-Helen Ashworth
+Marianne Ellison
 Brightwell Supplies
 ```
 
@@ -106,7 +106,7 @@ I wrote this before any run. Each planted mistake has one correct fix. A string 
 
 | Passage | Planted mistakes (wrong => right) | Must survive exactly |
 | --- | --- | --- |
-| 1 | recieved => received; its been => it's been; Your welcome => You're welcome; definately => definitely; alot => a lot; If your free => If you're free | Marcus; 14 March; 1,450 units; Friday; Thursday; colour; Helen Ashworth; Brightwell Supplies |
+| 1 | recieved => received; its been => it's been; Your welcome => You're welcome; definately => definitely; alot => a lot; If your free => If you're free | Marcus; 14 March; 1,450 units; Friday; Thursday; colour; Marianne Ellison; Brightwell Supplies |
 | 2 | seperate => separate; loosing => losing; Check weather => Check whether | Right. Quick one for the team.; gonna; nowt; Very, very good.; Dave's lot; faff; That's it. Cheers, Jo.; the 9th; fortnight; Monday |
 | 3 | it's settings => its settings; big affect => big effect; summery => summary | Skedulr feedback; Skedulr rollout; Ingrid Beaumont; Halden Care; "we was never told about the change to the rota, and nobody asked us."; Q3_forecast_FINAL_v2.xlsx; https://tracker.example.com/halden |
 | 4 | occured => occurred; untill => until; definatly => definitely | Sam told Marian she would need to approve the budget before Friday.; Walking into the room, the projector was already broken |

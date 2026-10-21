@@ -9,7 +9,7 @@ Hollis & Speight is a fictional 40-person professional services firm. Dominic Fa
 ### Who Dominic is planning around
 
 1. **Hilary Denholm, Head of Knowledge Management.** Confident and vocal about AI in team meetings, says "I'm completely across this, I use it daily," and her role sounds like the most AI-adjacent title in the firm.
-2. **Callum Webb, graduate associate.** Quiet whenever AI comes up, once said "I probably need the full training, I haven't really got into it," and has no AI-sounding responsibility in his role.
+2. **Callum Stanbridge, graduate associate.** Quiet whenever AI comes up, once said "I probably need the full training, I haven't really got into it," and has no AI-sounding responsibility in his role.
 3. **Cedric Ilundu, Senior Associate.** Talks about AI confidently and specifically, mentioning particular tasks he uses it for and what changed as a result.
 4. **Dominic Farrow himself.** Believes he is already past needing training because he uses AI for email.
 5. **Sarah Tregear, Compliance Manager.** Has said plainly she has never used a general AI tool and does not plan to until the firm formally sanctions one.
