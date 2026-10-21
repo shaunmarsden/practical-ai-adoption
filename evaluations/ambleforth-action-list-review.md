@@ -100,7 +100,7 @@ Its closing summary also says "three of the six actions have no owner" and names
 - Who is picking up the tenant newsletter, before the 2 October print slot.
 - Which named person in Finance is checking the service charge figures.
 - Who takes the fire door audit while Bethan is on leave, and that the audit itself is tracked, not just the reassignment.
-- Whether Marcus has a date for the damp survey brief.
+- Whether Lionel has a date for the damp survey brief.
 
 ## What this test does not support
 

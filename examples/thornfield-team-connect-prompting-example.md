@@ -1,6 +1,6 @@
 # Thornfield Team Connect: Prompting Example
 
-**Everything in this example is fictional.** Thornfield Facilities Group, Merewick Hall, Annika Solberg, Rosalind Whitmore, Dean Okafor, Grace Lindqvist and the Team Connect event were invented from scratch for this repository.
+**Everything in this example is fictional.** Thornfield Facilities Group, Merewick Hall, Annika Solberg, Rosalind Whitmore, Dean Aldridge, Grace Lindqvist and the Team Connect event were invented from scratch for this repository.
 
 ## The workplace situation
 
@@ -35,7 +35,7 @@ The next event is on Thursday 10 September 2026. Merewick Hall is holding the Ga
 
 ### Source 2: Teams message
 
-**From:** Dean Okafor
+**From:** Dean Aldridge
 
 **Sent:** Thursday 20 August 2026
 
