@@ -1,6 +1,6 @@
 # Netherford Libraries: Internal Update Example
 
-**Everything in this example is fictional.** Netherford Libraries, Cardinal Systems, Ines Adeyemi, Marguerite Loxley, Prisha Bhatt and the catalogue migration were invented from scratch for this repository.
+**Everything in this example is fictional.** Netherford Libraries, Cardinal Systems, Ines Adeyemi, Marguerite Loxley, Agnes Pickering and the catalogue migration were invented from scratch for this repository.
 
 This tests the first starter prompt in [You Have Been Given AI at Work](../guides/you-have-been-given-ai-at-work.md), the one that turns notes into a short internal update. That starter promises three things: do not invent progress, do not invent decisions or deadlines, and separate what is confirmed from what still needs checking.
 
@@ -25,7 +25,7 @@ Catalogue migration, Thursday catch-up, 24 September 2026, Netherford Libraries
 - Supplier. Cardinal have released 4.2. Marguerite said the search speed is much better.
 - Go live. Plan still shows 1 November. I told the branch managers on Monday to work to the 15th as more realistic. Board papers go out on the 8th.
 - Kiosks. Marguerite is happy with the kiosk plan. Still need to get her the support contract numbers she asked for.
-- Budget. 61,000 pounds spent as at the 5 September finance report. Prisha reckons we are nearer 70 now once the licence renewal lands.
+- Budget. 61,000 pounds spent as at the 5 September finance report. Agnes reckons we are nearer 70 now once the licence renewal lands.
 - Old system. Decommissioning booked in for December. Cannot start until 30 days after go live.
 ```
 
@@ -53,7 +53,7 @@ Thursday catch-up, 24 September 2026, Netherford Libraries
 
 **Kiosks.** Marguerite is happy with the kiosk plan. Outstanding action: get her the support contract numbers she requested.
 
-**Budget.** GBP 61,000 spent as at the 5 September finance report. Prisha expects this to be nearer GBP 70,000 once the licence renewal lands.
+**Budget.** GBP 61,000 spent as at the 5 September finance report. Agnes expects this to be nearer GBP 70,000 once the licence renewal lands.
 
 **Old system.** Decommissioning is booked for December. It cannot begin until 30 days after go live.
 
@@ -100,7 +100,7 @@ Thursday catch-up, 24 September 2026, Netherford Libraries
 
 - **Go live date:** The 1 November plan date and the 15 November date given to branch managers do not currently match. Which date the board papers should carry needs deciding before the 8th.
 - **Kiosk support contract numbers:** Still to be sent to Marguerite.
-- **Budget position:** Prisha's estimate is nearer GBP 70,000 once the licence renewal lands. This is not yet reflected in a finance report.
+- **Budget position:** Agnes's estimate is nearer GBP 70,000 once the licence renewal lands. This is not yet reflected in a finance report.
 - **Remaining testing and training:** Eight branches still to test; two training sessions still to run. No dates recorded for these in the catch-up.
 - **Decommissioning date:** Depends on the confirmed go live date, so the December booking should be checked once that is settled.
 
@@ -110,7 +110,7 @@ For repository formatting, both raw outputs had their dash glyphs and currency s
 
 This is the one test in this repository where the ordinary prompt scored higher than the guide-informed one.
 
-Both caught the go live conflict, both kept Prisha's estimate away from the sourced figure, and both attributed Ines's and Marguerite's impressions to the people who held them rather than stating them as results.
+Both caught the go live conflict, both kept Agnes's estimate away from the sourced figure, and both attributed Ines's and Marguerite's impressions to the people who held them rather than stating them as results.
 
 The difference is what the starter's third instruction did. Asked to sort every item into confirmed or still to be checked, the guide-informed output put three things in "Confirmed" that were not: a go live date that two sources disagree about, one person's impression of search speed, and a kiosk plan whose own support numbers have not been sent yet. The ordinary prompt, with no columns to fill, left all three as prose and got them right. Three items sitting under a heading that says Confirmed is one of the harder defects to spot, which is why it appears in [Which AI Mistakes Actually Get Through](https://github.com/shaunmarsden/practical-ai-sales-workflows/blob/main/guides/which-ai-mistakes-get-through.md), a sibling repository page sorting every scored defect across these three projects by whether a careful reader would have caught it.
 
@@ -156,7 +156,7 @@ Thursday catch-up, 24 September 2026, Netherford Libraries
 - **Testing feedback.** Ines reports feedback is positive so far. That is an early impression, not a validated result, eight branches remain untested.
 - **Search speed.** Marguerite said search speed in 4.2 is much better. Not yet measured or verified on our side.
 - **Kiosks.** Marguerite is happy with the kiosk plan. The support contract numbers she asked for still need to be sent to her.
-- **Budget position.** Prisha's estimate is nearer GBP 70,000 once the licence renewal lands. The GBP 61,000 figure is the last confirmed number; the GBP 70,000 figure is not yet in a finance report.
+- **Budget position.** Agnes's estimate is nearer GBP 70,000 once the licence renewal lands. The GBP 61,000 figure is the last confirmed number; the GBP 70,000 figure is not yet in a finance report.
 
 **Where the notes disagree**
 
@@ -181,7 +181,7 @@ Netherford Libraries, Thursday catch-up, 24 September 2026
 
 **Kiosks.** Marguerite is happy with the kiosk plan. Outstanding: the support contract numbers she asked for still need to go to her.
 
-**Budget.** GBP 61,000 spent as at the 5 September finance report. Prisha expects this to be nearer GBP 70,000 once the licence renewal lands.
+**Budget.** GBP 61,000 spent as at the 5 September finance report. Agnes expects this to be nearer GBP 70,000 once the licence renewal lands.
 
 **Old system.** Decommissioning is booked for December. It cannot begin until 30 days after go live.
 

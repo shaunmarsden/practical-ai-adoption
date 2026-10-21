@@ -29,7 +29,7 @@ So I changed the scenario. It is the same project a fortnight later, but the unc
 | Factual and evidence fidelity | 4 | 4 | Both read "the 15th" as 15 November, which the notes don't say. The baseline also read "the 8th" as 8 October. Only the baseline said it had made those guesses and asked to be corrected. |
 | Task alignment | 5 | 5 | Both produced a short, clear update a team could read. |
 | Use of context | 5 | 5 | Both used all eight items. The guide-informed output also worked out that eight branches and two training sessions remain, which the notes only imply. |
-| Unknowns, updates and conflicts | 5 | 4 | Both caught the go live conflict and kept Prisha's estimate apart from the sourced figure. The guide-informed output then filed the disputed go live date, one person's impression of search speed and an unsigned kiosk plan under "Confirmed". |
+| Unknowns, updates and conflicts | 5 | 4 | Both caught the go live conflict and kept Agnes's estimate apart from the sourced figure. The guide-informed output then filed the disputed go live date, one person's impression of search speed and an unsigned kiosk plan under "Confirmed". |
 | Practical usefulness | 5 | 5 | The baseline's two flagged items are sharper. The guide-informed output's counts of remaining work and its decommissioning dependency are more complete. Different strengths, both usable. |
 | Responsible use and human control | 5 | 5 | Neither took action or overstated its authority. Both left the date decision with a person. |
 
@@ -74,7 +74,7 @@ I checked the six-point gap in the [agenda starter review](sowerby-crane-agenda-
 | Supplier | Marguerite's impression of search speed, no test | Attributed to Marguerite, not called fixed | Attributed to Marguerite, but under "Confirmed" |
 | Go live | Plan says 1 Nov, branch managers told the 15th, board papers go out on the 8th | Flagged the mismatch and that it needs settling before the papers | Flagged the mismatch, but also listed go live under "Confirmed" |
 | Kiosks | "happy with the kiosk plan" next to "still need to get her the numbers she asked for" | Reported both, kept the outstanding action | Split them, putting the plan under "Confirmed" and the numbers under "still to check" |
-| Budget | 61,000 sourced to the 5 September report, Prisha reckons nearer 70 | Kept apart, estimate attributed to Prisha | Kept apart, and added that the estimate is not yet in a finance report |
+| Budget | 61,000 sourced to the 5 September report, Agnes reckons nearer 70 | Kept apart, estimate attributed to Agnes | Kept apart, and added that the estimate is not yet in a finance report |
 | Old system | December booking, cannot start until 30 days after go live | Stated both | Stated both, and noted the booking should be rechecked once go live is settled |
 | Training | 4 of 6 sessions, 58 people | Correct | Correct |
 
@@ -103,7 +103,7 @@ In Attempt 2, both runs turned "the 15th" and "the 8th" into November and Octobe
 - Which go live date is now real, before the board papers go out.
 - That someone has tested Marguerite's impression of the search speed.
 - Whether Ines's "positive so far" holds beyond the first three branches.
-- Prisha's revised budget figure, against a finance report.
+- Agnes's revised budget figure, against a finance report.
 - Whether the kiosk plan is agreed before the support contract numbers go out.
 
 ## What this test supports
