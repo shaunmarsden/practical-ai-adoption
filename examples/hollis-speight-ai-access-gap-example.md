@@ -10,15 +10,15 @@ Hollis & Speight is a fictional 40-person professional services firm. Dominic Fa
 
 1. **Hilary Denholm, Head of Knowledge Management.** Confident and vocal about AI in team meetings, says "I'm completely across this, I use it daily," and her role sounds like the most AI-adjacent title in the firm.
 2. **Callum Webb, graduate associate.** Quiet whenever AI comes up, once said "I probably need the full training, I haven't really got into it," and has no AI-sounding responsibility in his role.
-3. **Marcus Ilundu, Senior Associate.** Talks about AI confidently and specifically, mentioning particular tasks he uses it for and what changed as a result.
+3. **Cedric Ilundu, Senior Associate.** Talks about AI confidently and specifically, mentioning particular tasks he uses it for and what changed as a result.
 4. **Dominic Farrow himself.** Believes he is already past needing training because he uses AI for email.
-5. **Sarah Okafor, Compliance Manager.** Has said plainly she has never used a general AI tool and does not plan to until the firm formally sanctions one.
+5. **Sarah Tregear, Compliance Manager.** Has said plainly she has never used a general AI tool and does not plan to until the firm formally sanctions one.
 
 ### What is actually true, established separately from what each person said
 
 - Hilary built none of the firm's AI template library herself. When asked directly for one specific task she has done with the AI tool, she could not name one; her team built the templates and she has approved and presented them, not used the tool herself.
 - Callum uses a general AI tool most days to produce a first-pass summary of case research, which he then rewrites in his own words before it goes anywhere near a partner. He has not mentioned this because he was worried it would look like he was not doing the work himself.
-- Marcus's confident description matches a specific, real pattern: he drafts a first version of client memos with AI most days, and edits it against the file before sending, exactly as he describes.
+- Cedric's confident description matches a specific, real pattern: he drafts a first version of client memos with AI most days, and edits it against the file before sending, exactly as he describes.
 - Dominic's own AI use, when he is asked for a specific recent example rather than a general impression of himself, turns out to be one occasion of asking a tool to suggest a subject line for an email, several weeks ago.
 - Sarah's self-report matches reality. She genuinely has not used a general AI tool for work.
 
@@ -30,9 +30,9 @@ I'm planning our firm's AI training rollout. Here's what I know about five peopl
 
 ### Ordinary prompt: what came back
 
-Fast-track Hilary and Marcus, since both describe confident, regular AI use and Hilary's role is the most AI-adjacent in the firm; they should need light or no support to move onto the new tool. Fast-track Dominic too, since he already uses AI and is leading the rollout, so his own onboarding should be minimal. Give Callum the full training track, since he said directly that he has not really engaged with it yet. Sarah should get full training when she is ready to start, on her own timeline, since she has said she is holding off until the firm formally sanctions a tool.
+Fast-track Hilary and Cedric, since both describe confident, regular AI use and Hilary's role is the most AI-adjacent in the firm; they should need light or no support to move onto the new tool. Fast-track Dominic too, since he already uses AI and is leading the rollout, so his own onboarding should be minimal. Give Callum the full training track, since he said directly that he has not really engaged with it yet. Sarah should get full training when she is ready to start, on her own timeline, since she has said she is holding off until the firm formally sanctions a tool.
 
-A short rollout plan followed: light-touch sessions for Hilary, Marcus and Dominic focused on the new tool's specific features, full foundational training for Callum, and Sarah left on a self-paced track to start whenever she chooses.
+A short rollout plan followed: light-touch sessions for Hilary, Cedric and Dominic focused on the new tool's specific features, full foundational training for Callum, and Sarah left on a self-paced track to start whenever she chooses.
 
 ## Guide-informed prompt
 
@@ -54,7 +54,7 @@ Hilary's description (confident, AI-adjacent title) is the exact profile most li
 
 Callum's description (quiet, self-deprecating, no AI-sounding role) is the profile most likely to be assumed behind without being checked either. Undersold self-assessment is not evidence of low actual use any more than confident self-assessment is evidence of high use; both need the same specific check before a track is assigned.
 
-Marcus's description is the one case here that already includes something closer to actual evidence: naming specific tasks and what changed as a result, not just a general claim of confidence. That is still worth a quick confirming check, but it starts from a stronger position than Hilary's or Dominic's.
+Cedric's description is the one case here that already includes something closer to actual evidence: naming specific tasks and what changed as a result, not just a general claim of confidence. That is still worth a quick confirming check, but it starts from a stronger position than Hilary's or Dominic's.
 
 Dominic's own plan has a structural blind spot: he is exempting himself from the same check he is applying to everyone else, based on his own general impression of himself rather than a specific example, which is exactly the standard he should not accept from anyone else in this exercise.
 
@@ -64,4 +64,4 @@ Recommended next step: before assigning any track, ask each of the five the same
 
 ## Short comparison
 
-Both prompts produced a rollout plan, but only the guide-informed prompt separated what was actually said from what would count as evidence, and applied that separation evenly, including to the person running the exercise. The ordinary prompt took every description at face value: Hilary's confidence and title, Marcus's confidence, Dominic's self-assessment, Callum's self-deprecation and Sarah's stated position were all accepted as if they were already the answer, producing a plan that would have skipped training for the one person here who had done the least actual hands-on AI work and loaded full training onto someone who was already using it daily without saying so.
+Both prompts produced a rollout plan, but only the guide-informed prompt separated what was actually said from what would count as evidence, and applied that separation evenly, including to the person running the exercise. The ordinary prompt took every description at face value: Hilary's confidence and title, Cedric's confidence, Dominic's self-assessment, Callum's self-deprecation and Sarah's stated position were all accepted as if they were already the answer, producing a plan that would have skipped training for the one person here who had done the least actual hands-on AI work and loaded full training onto someone who was already using it daily without saying so.

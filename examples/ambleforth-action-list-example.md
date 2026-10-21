@@ -1,6 +1,6 @@
 # Ambleforth Community Housing: Action List Example
 
-**Everything in this example is fictional.** Ambleforth Community Housing, Rowan Alcott, Deniz Kaya, Marcus Ilori, Fenella Wrenn, Bethan Vaughan and the Rushmere block were invented from scratch for this repository.
+**Everything in this example is fictional.** Ambleforth Community Housing, Rowan Alcott, Deniz Kaya, Lionel Ilori, Fenella Wrenn, Bethan Vaughan and the Rushmere block were invented from scratch for this repository.
 
 This tests the third starter prompt in [You Have Been Given AI at Work](../guides/you-have-been-given-ai-at-work.md), the one that turns notes into an action list. That starter makes a specific, checkable promise: show any date that is actually stated, say when an owner or date is missing, and do not guess.
 
@@ -17,11 +17,11 @@ Rowan's notes, used unchanged in both runs:
 ```text
 Property team meeting, Tuesday 8 September 2026, 10am, Ambleforth Community Housing
 
-Present: me (Rowan), Deniz Kaya (Repairs), Marcus Ilori (Assets), Fenella Wrenn (Housing Officer).
+Present: me (Rowan), Deniz Kaya (Repairs), Lionel Ilori (Assets), Fenella Wrenn (Housing Officer).
 Bethan Vaughan not there, annual leave until 5 October.
 
 - Contractor framework. Deniz to get the approved contractor list into the board pack by Friday 18 September.
-- Damp survey. Marcus is rewriting the damp survey brief for the Rushmere block. Didn't say when he'd have it.
+- Damp survey. Lionel is rewriting the damp survey brief for the Rushmere block. Didn't say when he'd have it.
 - Tenant newsletter. Has to go out 2 October, that date is fixed by the printer's slot. We ran out of time before saying who is actually picking it up.
 - Service charge figures. Someone in Finance will need to sanity check the service charge figures before they go out to tenants. No name agreed.
 - Lift maintenance. We should get the lift maintenance contract sorted by the end of the month.
@@ -48,7 +48,7 @@ Here are the actions from those notes.
 | # | Action | Owner | Due |
 | --- | --- | --- | --- |
 | 1 | Get the approved contractor list into the board pack | Deniz Kaya | Fri 18 September |
-| 2 | Rewrite the damp survey brief for the Rushmere block | Marcus Ilori | Not stated, needs a date |
+| 2 | Rewrite the damp survey brief for the Rushmere block | Lionel Ilori | Not stated, needs a date |
 | 3 | Get the lift maintenance contract sorted | Unclear ("we"), needs naming | End of September |
 | 4 | Find a new owner for the fire door audit (to be sorted offline) | You (Rowan), by implication | Before 5 October, when Bethan returns |
 
@@ -96,7 +96,7 @@ Action list from the property team meeting notes (Tuesday 8 September 2026, Ambl
 
 **2. Damp survey, rewrite the damp survey brief for the Rushmere block**
 
-- Owner: Marcus Ilori (Assets)
+- Owner: Lionel Ilori (Assets)
 - Date: missing. The notes say he didn't state when it would be ready.
 
 **3. Tenant newsletter, get the newsletter out**
