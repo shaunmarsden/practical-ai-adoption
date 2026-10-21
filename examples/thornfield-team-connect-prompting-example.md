@@ -1,6 +1,6 @@
 # Thornfield Team Connect: Prompting Example
 
-**Everything in this example is fictional.** Thornfield Facilities Group, Merewick Hall, Annika Solberg, Rosalind Whitmore, Dean Aldridge, Grace Lindqvist and the Team Connect event were invented from scratch for this repository.
+**Everything in this example is fictional.** Thornfield Facilities Group, Merewick Hall, Annika Solberg, Rosalind Whitmore, Dean Aldridge, Verena Lindqvist and the Team Connect event were invented from scratch for this repository.
 
 ## The workplace situation
 
@@ -43,7 +43,7 @@ The next event is on Thursday 10 September 2026. Merewick Hall is holding the Ga
 >
 > Final number is 52 attending, up from the 45 we first said. Finance and ops are both sending extra people this time.
 >
-> Also, Grace Lindqvist from the Reading office flagged that she's got a serious nut allergy. Wanted to make sure whoever's doing catering knows.
+> Also, Verena Lindqvist from the Reading office flagged that she's got a serious nut allergy. Wanted to make sure whoever's doing catering knows.
 >
 > She said it's fine to mention as long as they take it seriously. Obviously don't want it lost in the shuffle.
 

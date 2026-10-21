@@ -4,9 +4,9 @@ This is a fictional company and a fictional review, used to test [Before You Let
 
 ## The scenario
 
-Grantley Utilities is a fictional regional energy supplier with a customer complaints team handling around 400 complaints a week. Naomi Griggs, Head of Customer Operations, wants to chain several AI steps together to cope with rising volume, and is deciding which of six proposed chains can go live without a person checking every handoff.
+Grantley Utilities is a fictional regional energy supplier with a customer complaints team handling around 400 complaints a week. Rosamund Griggs, Head of Customer Operations, wants to chain several AI steps together to cope with rising volume, and is deciding which of six proposed chains can go live without a person checking every handoff.
 
-### What Naomi is reviewing
+### What Rosamund is reviewing
 
 1. **Complaint tagging.** AI reads an incoming complaint and tags it by category (billing, outage, service), for routing to the right team. Nothing is sent or decided automatically.
 2. **Acknowledgement email.** AI drafts and automatically sends a short acknowledgement ("we've received your complaint and are looking into it") the moment a complaint arrives, before any human has read it.
@@ -15,7 +15,7 @@ Grantley Utilities is a fictional regional energy supplier with a customer compl
 5. **Regulatory final response.** AI drafts and automatically sends the "final response" letter required for complaints eligible for referral to the energy ombudsman, without legal or compliance review, because the wording has been reused successfully many times before.
 6. **Mixed-signal complaints.** The same tagging system in step 1 is expected to route a complaint that mentions both a billing dispute and a possible gas smell to the safety path first. Nobody has specifically tested what the system does when a complaint genuinely could be read either way, only cases where the safety language is clearly present.
 
-## What is actually true about each proposal, established separately from how Naomi described it
+## What is actually true about each proposal, established separately from how Rosamund described it
 
 - Tagging (1) has no downstream action beyond routing to a person; a wrong tag delays a response, it does not create or send anything.
 - The acknowledgement email (2) contains no decision and makes no promise beyond "we are looking into it"; sending a slightly premature acknowledgement is low-cost and easily followed up.
@@ -28,7 +28,7 @@ Grantley Utilities is a fictional regional energy supplier with a customer compl
 
 We're rolling out six AI-assisted steps to handle rising complaint volume. Here's what each one does. Which of these are fine to run without a person checking every case, and which need a review step?
 
-[Includes only the six descriptions as Naomi gave them, above.]
+[Includes only the six descriptions as Rosamund gave them, above.]
 
 ### Ordinary prompt: what came back
 

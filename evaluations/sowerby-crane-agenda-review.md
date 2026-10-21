@@ -100,7 +100,7 @@ The baseline is the better document. The starter's version is the better prepara
 - Whether Marguerite's remark is approval to spend or only to keep evaluating.
 - Whether the meeting is two hours or a half day, before the invite goes out.
 - Whether Option B's cost is firm, and what the extra modules cost.
-- What Tomasz means by "not cleanly", and whether that changes which option is viable.
+- What Rufus means by "not cleanly", and whether that changes which option is viable.
 
 ## What this test does not support
 
