@@ -56,7 +56,7 @@ For Attempt 3 I replaced the starter's third instruction with two lines. One sor
 
 ## What the rewrite fixed
 
-It fixed the defect it was written for. Marguerite's impression and the unsigned kiosk plan went to "still to check", and the disputed go live date went to the new third group. The starter also separated "branch testing started Monday", a fact, from "Ines says feedback is positive", which no earlier run did. But the ordinary prompt scored 30 out of 30 on this run, against the starter's 29.
+It fixed the defect it was written for. Lavinia's impression and the unsigned kiosk plan went to "still to check", and the disputed go live date went to the new third group. The starter also separated "branch testing started Monday", a fact, from "Ines says feedback is positive", which no earlier run did. But the ordinary prompt scored 30 out of 30 on this run, against the starter's 29.
 
 ## The variance this test measured by accident
 
@@ -71,14 +71,14 @@ I checked the six-point gap in the [agenda starter review](sowerby-crane-agenda-
 | Item | What the notes say | Baseline | Guide-informed |
 | --- | --- | --- | --- |
 | Testing | "Ines says feedback is positive so far", 3 of 11 branches | Attributed to Ines, kept 3 of 11 | Attributed to Ines, kept 3 of 11, but under "Confirmed" |
-| Supplier | Marguerite's impression of search speed, no test | Attributed to Marguerite, not called fixed | Attributed to Marguerite, but under "Confirmed" |
+| Supplier | Lavinia's impression of search speed, no test | Attributed to Lavinia, not called fixed | Attributed to Lavinia, but under "Confirmed" |
 | Go live | Plan says 1 Nov, branch managers told the 15th, board papers go out on the 8th | Flagged the mismatch and that it needs settling before the papers | Flagged the mismatch, but also listed go live under "Confirmed" |
 | Kiosks | "happy with the kiosk plan" next to "still need to get her the numbers she asked for" | Reported both, kept the outstanding action | Split them, putting the plan under "Confirmed" and the numbers under "still to check" |
 | Budget | 61,000 sourced to the 5 September report, Agnes reckons nearer 70 | Kept apart, estimate attributed to Agnes | Kept apart, and added that the estimate is not yet in a finance report |
 | Old system | December booking, cannot start until 30 days after go live | Stated both | Stated both, and noted the booking should be rechecked once go live is settled |
 | Training | 4 of 6 sessions, 58 people | Correct | Correct |
 
-The guide-informed output filed four entries under "Confirmed" in Attempt 2: testing, supplier, go live and kiosks. I count three misfiled items elsewhere because the testing entry names Ines as its source. The supplier entry names Marguerite the same way, so where that line falls is a judgement call.
+The guide-informed output filed four entries under "Confirmed" in Attempt 2: testing, supplier, go live and kiosks. I count three misfiled items elsewhere because the testing entry names Ines as its source. The supplier entry names Lavinia the same way, so where that line falls is a judgement call.
 
 The December decommissioning booking looked like a trap, but 30 days after either candidate go live date still falls in December. Both runs were right to report it without alarm.
 
@@ -86,7 +86,7 @@ The December decommissioning booking looked like a trap, but 30 days after eithe
 
 The Attempt 2 baseline didn't fail. Its month guess costs points, but the output discloses it and asks the reader to correct it.
 
-The Attempt 2 guide-informed output didn't fail either. Filing three unsettled items under "Confirmed" is a real weakness, but each entry's own text carries the qualifier: Ines and Marguerite are named as sources, the go live entry states both dates, and the kiosk numbers appear as outstanding later. A reader who reads the entry isn't misled. A reader who trusts the heading is.
+The Attempt 2 guide-informed output didn't fail either. Filing three unsettled items under "Confirmed" is a real weakness, but each entry's own text carries the qualifier: Ines and Lavinia are named as sources, the go live entry states both dates, and the kiosk numbers appear as outstanding later. A reader who reads the entry isn't misled. A reader who trusts the heading is.
 
 ## What the starter changed
 
@@ -101,7 +101,7 @@ In Attempt 2, both runs turned "the 15th" and "the 8th" into November and Octobe
 ## What a person still has to check
 
 - Which go live date is now real, before the board papers go out.
-- That someone has tested Marguerite's impression of the search speed.
+- That someone has tested Lavinia's impression of the search speed.
 - Whether Ines's "positive so far" holds beyond the first three branches.
 - Agnes's revised budget figure, against a finance report.
 - Whether the kiosk plan is agreed before the support contract numbers go out.

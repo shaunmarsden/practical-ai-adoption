@@ -228,12 +228,12 @@
     "- Testing. Branch testing started Monday. Ines says feedback is",
     "  positive so far. Three branches have been through it, out of eleven.",
     "- Training. Four of the six sessions done, 58 people through.",
-    "- Supplier. Cardinal have released 4.2. Marguerite said the search",
+    "- Supplier. Cardinal have released 4.2. Lavinia said the search",
     "  speed is much better.",
     "- Go live. Plan still shows 1 November. I told the branch managers on",
     "  Monday to work to the 15th as more realistic. Board papers go out",
     "  on the 8th.",
-    "- Kiosks. Marguerite is happy with the kiosk plan. Still need to get",
+    "- Kiosks. Lavinia is happy with the kiosk plan. Still need to get",
     "  her the support contract numbers she asked for.",
     "- Budget. 61,000 pounds spent as at the 5 September finance report.",
     "  Agnes reckons we are nearer 70 now once the licence renewal lands.",
@@ -279,10 +279,10 @@
     },
     {
       claim: "Search is much faster in the supplier's new 4.2 release.",
-      lines: ["- Supplier. Cardinal have released 4.2. Marguerite said the search speed is much better."],
+      lines: ["- Supplier. Cardinal have released 4.2. Lavinia said the search speed is much better."],
       source: "From the supplier line.",
       answer: "checking",
-      because: "That 4.2 exists is confirmed. That search is much faster is Marguerite's view, and nobody on this side has measured it. An AI prompt filed this as confirmed, one of three it got wrong.",
+      because: "That 4.2 exists is confirmed. That search is much faster is Lavinia's view, and nobody on this side has measured it. An AI prompt filed this as confirmed, one of three it got wrong.",
       trap: true
     },
     {
@@ -302,10 +302,10 @@
     },
     {
       claim: "The kiosk plan is agreed.",
-      lines: ["- Kiosks. Marguerite is happy with the kiosk plan. Still need to get her the support contract numbers she asked for."],
+      lines: ["- Kiosks. Lavinia is happy with the kiosk plan. Still need to get her the support contract numbers she asked for."],
       source: "From the kiosks line.",
       answer: "checking",
-      because: "Marguerite is happy with the plan, but the support contract numbers she asked for haven't been sent. Being happy with a plan whose own open item is outstanding is not agreement.",
+      because: "Lavinia is happy with the plan, but the support contract numbers she asked for haven't been sent. Being happy with a plan whose own open item is outstanding is not agreement.",
       trap: true
     },
     {
@@ -398,7 +398,7 @@
     var html = "";
     html += "<p class=\"scoreline\">" + right + " out of " + CLAIMS.length + "</p>";
     html += "<div class=\"tally\">";
-    html += "<p>Three of these nine matter most, because an AI prompt got them wrong on these exact notes. Asked to sort every point into confirmed or still to be checked, it put all three in the confirmed column: Marguerite's impression of search speed, a kiosk plan with an outstanding item of its own, and a go live date that two lines of the same note disagree about.</p>";
+    html += "<p>Three of these nine matter most, because an AI prompt got them wrong on these exact notes. Asked to sort every point into confirmed or still to be checked, it put all three in the confirmed column: Lavinia's impression of search speed, a kiosk plan with an outstanding item of its own, and a go live date that two lines of the same note disagree about.</p>";
     var some = function (n) { return n === 3 ? "all three of those" : (n === 1 ? "one" : "two") + " of those three"; };
     if (confirmedTraps > 0) {
       html += "<p>You put " + some(confirmedTraps) + " under \"" + LABELS.confirmed + "\", " +
