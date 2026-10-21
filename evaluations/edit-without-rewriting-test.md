@@ -69,7 +69,7 @@ The plain request, "Please fix any mistakes in the text below.", was added after
 
 **A plain request kept most of what rewrite lost, and not all of it.** It made every planted fix and left the clean passage, the spoken voice, the product name, the file name and the link alone. But it changed things the strict request left. All three runs on the pronoun passage rewrote the sentence with no subject to "When we walked into the room", and said so. All three on the figures passage changed "3rd March" to "3 March". Two added "GBP" to the figure that had no currency, and one said "I've assumed it's pounds". One run capitalised the first word of the quotation. It still told me about the pronoun and the figures, as the strict request did.
 
-**Suggest found every mistake and also proposed changes I'd have wanted to decline.** Two of three runs proposed capitalising the start of Rina's quotation, and one proposed "we were". All three suggested "When we walked into the room", which adds a subject the writer never gave. All three suggested "3 March" for "3rd March", which is a style choice. Applying every suggestion at once is the harshest way to use the list. A person would reject some. Two runs said in their notes that the quotation was Rina's own words and could stay as it was.
+**Suggest found every mistake and also proposed changes I'd have wanted to decline.** Two of three runs proposed capitalising the start of Ingrid's quotation, and one proposed "we were". All three suggested "When we walked into the room", which adds a subject the writer never gave. All three suggested "3 March" for "3rd March", which is a style choice. Applying every suggestion at once is the harshest way to use the list. A person would reject some. Two runs said in their notes that the quotation was Ingrid's own words and could stay as it was.
 
 **Where all three agreed.** In all nine runs on the figures passage, the AI said the amounts might not add up. Noticing wasn't the difference. What differed was whether the text changed afterwards.
 
@@ -82,7 +82,7 @@ Everything above ran on one model, so I ran all four requests again on a smaller
 | First model | 1 | 18 | 10 | 11 |
 | Haiku | 5 | 16 | 12 | 13 |
 
-By that rule it replicates, though edit-only only just clears 16. Both of its misses were on the passage with the quotation. In two of three runs it corrected "we was" to "we were" inside Rina's quoted words, which the first model never did. Suggest and plain were also unsafe on that passage in all three runs, and on the sentence with no subject. Rewrite did better than on the first model, 5 of 18, because it changed less. It still rewrote the spoken voice in all three runs.
+By that rule it replicates, though edit-only only just clears 16. Both of its misses were on the passage with the quotation. In two of three runs it corrected "we was" to "we were" inside Ingrid's quoted words, which the first model never did. Suggest and plain were also unsafe on that passage in all three runs, and on the sentence with no subject. Rewrite did better than on the first model, 5 of 18, because it changed less. It still rewrote the spoken voice in all three runs.
 
 Seventeen of the Haiku runs were cut off by a usage limit and I reran them. Nothing from a cut-off run counts. Each Haiku run read one file and wrote one, as before, and one Haiku run mentioned seeing the connector notice from the harness, so these runs weren't a blank chat either.
 

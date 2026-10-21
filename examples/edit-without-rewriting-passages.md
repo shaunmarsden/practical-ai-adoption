@@ -37,9 +37,9 @@ Subject: Skedulr feedback
 
 Hi all,
 
-I spoke to Rina Kapoor at Halden Care yesterday about the Skedulr rollout. Her comment was blunt: "we was never told about the change to the rota, and nobody asked us." She also said that the tool lost it's settings after the update, and that the change had a big affect on how she plans shifts. She rebuilt them from the Q3_forecast_FINAL_v2.xlsx file.
+I spoke to Ingrid Beaumont at Halden Care yesterday about the Skedulr rollout. Her comment was blunt: "we was never told about the change to the rota, and nobody asked us." She also said that the tool lost it's settings after the update, and that the change had a big affect on how she plans shifts. She rebuilt them from the Q3_forecast_FINAL_v2.xlsx file.
 
-I've logged both points on the shared tracker at https://tracker.example.com/halden. Rina has asked if we can send a written summery by the end of the week, so I'll draft something tomorrow and share it before it goes out.
+I've logged both points on the shared tracker at https://tracker.example.com/halden. Ingrid has asked if we can send a written summery by the end of the week, so I'll draft something tomorrow and share it before it goes out.
 ```
 
 ### Passage 4: Two sentences where the obvious fix changes the meaning
@@ -108,7 +108,7 @@ I wrote this before any run. Each planted mistake has one correct fix. A string 
 | --- | --- | --- |
 | 1 | recieved => received; its been => it's been; Your welcome => You're welcome; definately => definitely; alot => a lot; If your free => If you're free | Marcus; 14 March; 1,450 units; Friday; Thursday; colour; Helen Ashworth; Brightwell Supplies |
 | 2 | seperate => separate; loosing => losing; Check weather => Check whether | Right. Quick one for the team.; gonna; nowt; Very, very good.; Dave's lot; faff; That's it. Cheers, Jo.; the 9th; fortnight; Monday |
-| 3 | it's settings => its settings; big affect => big effect; summery => summary | Skedulr feedback; Skedulr rollout; Rina Kapoor; Halden Care; "we was never told about the change to the rota, and nobody asked us."; Q3_forecast_FINAL_v2.xlsx; https://tracker.example.com/halden |
+| 3 | it's settings => its settings; big affect => big effect; summery => summary | Skedulr feedback; Skedulr rollout; Ingrid Beaumont; Halden Care; "we was never told about the change to the rota, and nobody asked us."; Q3_forecast_FINAL_v2.xlsx; https://tracker.example.com/halden |
 | 4 | occured => occurred; untill => until; definatly => definitely | Sam told Marian she would need to approve the budget before Friday.; Walking into the room, the projector was already broken |
 | 5 | recieve => receive; Febuary => February; seperately => separately | GBP 12k; 12,000; 3rd March; GBP 1.2k; 21 March; Dev; Alina |
 | 6 | none | the whole passage |
