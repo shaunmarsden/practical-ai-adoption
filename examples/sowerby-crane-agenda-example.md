@@ -1,6 +1,6 @@
 # Sowerby and Crane: Meeting Agenda Example
 
-**Everything in this example is fictional.** Sowerby and Crane, Kestrelby, Dilan Sarpong, Beatrice Larkin, Rufus Wieczorek, Marguerite Loxley and the job tracking project were invented from scratch for this repository.
+**Everything in this example is fictional.** Sowerby and Crane, Kestrelby, Dilan Sarpong, Beatrice Larkin, Rufus Wieczorek, Thea Danforth and the job tracking project were invented from scratch for this repository.
 
 This tests the second starter prompt in [You Have Been Given AI at Work](../guides/you-have-been-given-ai-at-work.md), the one that turns rough notes into a meeting agenda. That starter promises two things beyond producing an agenda: do not assume a decision has already been made, and flag anything missing that the organiser needs to decide before the meeting.
 
@@ -23,7 +23,7 @@ Rough notes before the follow up job tracking meeting, Sowerby and Crane
 - Although Dilan thinks we said we would look at both. I think it was A. Need to check my notes from last time.
 - Beatrice has the licence numbers now. Option A is 4,200 a year. Option B she has as around 9,000, maybe more with the extra modules.
 - Rufus has looked at the history question. He says the twelve years can come across but not cleanly, and he would want to talk it through.
-- Marguerite came to the last one. She said she was happy for us to get on with it.
+- Thea came to the last one. She said she was happy for us to get on with it.
 - Need to get to a supplier decision this time. Or at least that is what I would like.
 - Half day probably. Or two hours.
 - Dilan is on leave the week of the 12th.
@@ -42,7 +42,7 @@ Can you turn these notes into an agenda for the meeting? Thanks
 
 Sowerby and Crane
 
-**Attendees:** Dilan, Beatrice, Rufus, Marguerite (optional, she confirmed at the last meeting she's happy for us to proceed)
+**Attendees:** Dilan, Beatrice, Rufus, Thea (optional, she confirmed at the last meeting she's happy for us to proceed)
 
 **Duration:** 2 hours (half day as fallback if we need it)
 
@@ -160,7 +160,7 @@ Attempt a supplier decision. If not possible, name the specific blocker.
 
 1. **Check your notes on Option A vs both options.** You and Dilan remember the last meeting differently. Resolve this beforehand if you can, if you walk in disagreeing, you will spend the meeting on it.
 2. **Length: half day or two hours.** These lead to different meetings. Two hours covers the agenda above with a decision attempt at the end. A half day allows genuine working-through of the migration question. Pick one and set the agenda accordingly, the timings above assume roughly two hours.
-3. **Attendees.** Beatrice and Rufus clearly need to be there. Is Marguerite attending, or is her "happy for us to get on with it" comment standing in for her presence? Related: does "get on with it" constitute spend approval, or only permission to continue the evaluation? Worth being clear, because a supplier decision at GBP 4,200 or GBP 9,000 a year may need her explicit sign-off.
+3. **Attendees.** Beatrice and Rufus clearly need to be there. Is Thea attending, or is her "happy for us to get on with it" comment standing in for her presence? Related: does "get on with it" constitute spend approval, or only permission to continue the evaluation? Worth being clear, because a supplier decision at GBP 4,200 or GBP 9,000 a year may need her explicit sign-off.
 4. **Whether a decision is realistically achievable.** You want one. But Rufus wants to talk the history question through, and that is unresolved. If the data answer changes the supplier choice, a decision today may not be available, decide in advance whether you would accept a conditional decision (for example, proceed with A subject to migration scoping) or hold out for a firm one.
 5. **Date.** Not yet fixed. Avoid the week of the 12th if Dilan needs to be there, and note that the 31 March renewal sets the outer limit.
 
@@ -180,6 +180,6 @@ Both runs caught the biggest problem in the notes: that the organiser and Dilan 
 
 Three things separate them, and all three are decisions the notes left open.
 
-The ordinary prompt settled the meeting's length at two hours, when the notes say "Half day probably. Or two hours." It stated "Reach a supplier decision" as the objective, when the notes say "Or at least that is what I would like". And it marked Marguerite optional on the grounds that she "confirmed at the last meeting she's happy for us to proceed", which upgrades an offhand remark into an approval.
+The ordinary prompt settled the meeting's length at two hours, when the notes say "Half day probably. Or two hours." It stated "Reach a supplier decision" as the objective, when the notes say "Or at least that is what I would like". And it marked Thea optional on the grounds that she "confirmed at the last meeting she's happy for us to proceed", which upgrades an offhand remark into an approval.
 
 The guide-informed output left the length open with the trade-off spelled out, made the supplier decision conditional on the group being ready, and asked the question the notes invite: does "happy for us to get on with it" mean spend approval, or only permission to keep evaluating. [Read the scored review](../evaluations/sowerby-crane-agenda-review.md).

@@ -36,22 +36,22 @@ Which failures repeated matters more. Attempt 2 recorded three places where the 
 
 | Question the notes left open | Runs where the ordinary prompt closed it |
 | --- | --- |
-| Does "happy for us to get on with it" mean Marguerite approves the spend? | 3 of 3 |
+| Does "happy for us to get on with it" mean Thea approves the spend? | 3 of 3 |
 | Is a supplier decision the agreed purpose, or the organiser's wish? | 3 of 3 |
 | Is the meeting two hours or a half day? | 1 of 3 |
 
 The first two repeat. The third doesn't: the two later runs built the agenda for two hours and handed the choice back with a reason, as the starter does.
 
-All three starter runs asked whether Marguerite's remark amounted to spend approval, and all three kept the supplier decision conditional.
+All three starter runs asked whether Thea's remark amounted to spend approval, and all three kept the supplier decision conditional.
 
 ## Score breakdown, Attempt 2
 
 | Area | Baseline | Guide-informed | Why it matters |
 | --- | ---: | ---: | --- |
-| Factual and evidence fidelity | 3 | 5 | The baseline wrote that Marguerite "confirmed at the last meeting she's happy for us to proceed". The notes say she "said she was happy for us to get on with it". Turning that into a confirmation, and marking her optional because of it, is the kind of upgrade nobody rereads. |
+| Factual and evidence fidelity | 3 | 5 | The baseline wrote that Thea "confirmed at the last meeting she's happy for us to proceed". The notes say she "said she was happy for us to get on with it". Turning that into a confirmation, and marking her optional because of it, is the kind of upgrade nobody rereads. |
 | Task alignment | 4 | 5 | Both produced a usable agenda. The starter's also gives the four things asked for by name (purpose, topics, decisions needed and next steps), plus the pre-meeting flags. |
 | Use of context | 5 | 5 | Both used every item, including Dilan's leave week and the 31 March renewal as the outer limit. |
-| Unknowns, updates and conflicts | 3 | 5 | Both caught the Option A dispute. The baseline then closed three open questions itself: the length, the objective and Marguerite's status. The guide-informed output left all three open and set out the trade-offs. On repeat runs the objective and Marguerite failures held every time and the length one didn't, as the repeat runs section records. |
+| Unknowns, updates and conflicts | 3 | 5 | Both caught the Option A dispute. The baseline then closed three open questions itself: the length, the objective and Thea's status. The guide-informed output left all three open and set out the trade-offs. On repeat runs the objective and Thea failures held every time and the length one didn't, as the repeat runs section records. |
 | Practical usefulness | 5 | 4 | The baseline is the better agenda as written: timed, tight, ready to send. The guide-informed version is long, and its item timings add up to 65 minutes while it says they assume roughly two hours. It needs trimming before it goes out. |
 | Responsible use and human control | 3 | 5 | The notes left three decisions with the organiser: whether a partner is optional, how long the meeting runs, and what its objective is. The baseline made all three. |
 
@@ -68,7 +68,7 @@ All three starter runs asked whether Marguerite's remark amounted to spend appro
 | Item | What the notes say | Baseline | Guide-informed |
 | --- | --- | --- | --- |
 | Option A | "We agreed to work up Option A", then Dilan thinks both, organiser unsure, notes unchecked | Item 1 reconciles it. Not treated as agreed | Same, plus a scope note saying settle it before costs |
-| Marguerite | "said she was happy for us to get on with it" | "confirmed... happy for us to proceed", marked optional | Asked whether that is spend approval or only permission to keep evaluating |
+| Thea | "said she was happy for us to get on with it" | "confirmed... happy for us to proceed", marked optional | Asked whether that is spend approval or only permission to keep evaluating |
 | Supplier decision | "Or at least that is what I would like" | "Objective: Reach a supplier decision" | "if the group is ready", with a fallback if not |
 | Length | "Half day probably. Or two hours." | Set at 2 hours, half day as fallback | Left open, both shapes described, organiser to pick |
 | Option B cost | "around 9,000, maybe more with the extra modules" | Kept approximate | Kept approximate, and asked whether figures are firm or indicative |
@@ -78,7 +78,7 @@ All three starter runs asked whether Marguerite's remark amounted to spend appro
 
 ## Automatic failure review
 
-The baseline didn't fail. It didn't claim the supplier decision was made or present Option A as chosen. The Marguerite upgrade is its most serious weakness, because a reader is least likely to check it, but it overstates a loose approval. It doesn't claim one never given.
+The baseline didn't fail. It didn't claim the supplier decision was made or present Option A as chosen. The Thea upgrade is its most serious weakness, because a reader is least likely to check it, but it overstates a loose approval. It doesn't claim one never given.
 
 The guide-informed output didn't fail either. It asserted nothing the notes don't support and left every open decision open.
 
@@ -97,7 +97,7 @@ The baseline is the better document. The starter's version is the better prepara
 ## What a person still has to check
 
 - The notes from the previous meeting, to settle whether Option A alone or both options were agreed.
-- Whether Marguerite's remark is approval to spend or only to keep evaluating.
+- Whether Thea's remark is approval to spend or only to keep evaluating.
 - Whether the meeting is two hours or a half day, before the invite goes out.
 - Whether Option B's cost is firm, and what the extra modules cost.
 - What Rufus means by "not cleanly", and whether that changes which option is viable.

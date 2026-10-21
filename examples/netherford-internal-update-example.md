@@ -1,6 +1,6 @@
 # Netherford Libraries: Internal Update Example
 
-**Everything in this example is fictional.** Netherford Libraries, Cardinal Systems, Ines Adeyemi, Marguerite Loxley, Agnes Pickering and the catalogue migration were invented from scratch for this repository.
+**Everything in this example is fictional.** Netherford Libraries, Cardinal Systems, Ines Adeyemi, Lavinia Greaves, Agnes Pickering and the catalogue migration were invented from scratch for this repository.
 
 This tests the first starter prompt in [You Have Been Given AI at Work](../guides/you-have-been-given-ai-at-work.md), the one that turns notes into a short internal update. That starter promises three things: do not invent progress, do not invent decisions or deadlines, and separate what is confirmed from what still needs checking.
 
@@ -22,9 +22,9 @@ Catalogue migration, Thursday catch-up, 24 September 2026, Netherford Libraries
 - Migration. Records are all across now. The validation fix worked.
 - Testing. Branch testing started Monday. Ines says feedback is positive so far. Three branches have been through it, out of eleven.
 - Training. Four of the six sessions done, 58 people through.
-- Supplier. Cardinal have released 4.2. Marguerite said the search speed is much better.
+- Supplier. Cardinal have released 4.2. Lavinia said the search speed is much better.
 - Go live. Plan still shows 1 November. I told the branch managers on Monday to work to the 15th as more realistic. Board papers go out on the 8th.
-- Kiosks. Marguerite is happy with the kiosk plan. Still need to get her the support contract numbers she asked for.
+- Kiosks. Lavinia is happy with the kiosk plan. Still need to get her the support contract numbers she asked for.
 - Budget. 61,000 pounds spent as at the 5 September finance report. Agnes reckons we are nearer 70 now once the licence renewal lands.
 - Old system. Decommissioning booked in for December. Cannot start until 30 days after go live.
 ```
@@ -47,11 +47,11 @@ Thursday catch-up, 24 September 2026, Netherford Libraries
 
 **Training.** Four of six sessions delivered, with 58 people trained.
 
-**Supplier.** Cardinal have released version 4.2. Marguerite reports search speed is noticeably better.
+**Supplier.** Cardinal have released version 4.2. Lavinia reports search speed is noticeably better.
 
 **Go live.** The plan still shows 1 November. I asked branch managers on Monday to work to 15 November as a more realistic date. Board papers go out on 8 October.
 
-**Kiosks.** Marguerite is happy with the kiosk plan. Outstanding action: get her the support contract numbers she requested.
+**Kiosks.** Lavinia is happy with the kiosk plan. Outstanding action: get her the support contract numbers she requested.
 
 **Budget.** GBP 61,000 spent as at the 5 September finance report. Agnes expects this to be nearer GBP 70,000 once the licence renewal lands.
 
@@ -90,8 +90,8 @@ Thursday catch-up, 24 September 2026, Netherford Libraries
 - **Migration:** All records are now across. The validation fix worked.
 - **Testing:** Branch testing began Monday. Three of eleven branches have completed it. Ines reports feedback is positive so far.
 - **Training:** Four of six sessions delivered, with 58 people trained.
-- **Supplier:** Cardinal have released version 4.2. Marguerite reports search speed is much improved.
-- **Kiosks:** Marguerite is happy with the kiosk plan.
+- **Supplier:** Cardinal have released version 4.2. Lavinia reports search speed is much improved.
+- **Kiosks:** Lavinia is happy with the kiosk plan.
 - **Budget:** GBP 61,000 spent as at the 5 September finance report.
 - **Go live:** The plan still shows 1 November. I asked branch managers on Monday to work to the 15th as a more realistic date. Board papers go out on the 8th.
 - **Old system:** Decommissioning is booked for December. It cannot start until 30 days after go live.
@@ -99,7 +99,7 @@ Thursday catch-up, 24 September 2026, Netherford Libraries
 **Still to check or confirm**
 
 - **Go live date:** The 1 November plan date and the 15 November date given to branch managers do not currently match. Which date the board papers should carry needs deciding before the 8th.
-- **Kiosk support contract numbers:** Still to be sent to Marguerite.
+- **Kiosk support contract numbers:** Still to be sent to Lavinia.
 - **Budget position:** Agnes's estimate is nearer GBP 70,000 once the licence renewal lands. This is not yet reflected in a finance report.
 - **Remaining testing and training:** Eight branches still to test; two training sessions still to run. No dates recorded for these in the catch-up.
 - **Decommissioning date:** Depends on the confirmed go live date, so the December booking should be checked once that is settled.
@@ -110,7 +110,7 @@ For repository formatting, both raw outputs had their dash glyphs and currency s
 
 This is the one test in this repository where the ordinary prompt scored higher than the guide-informed one.
 
-Both caught the go live conflict, both kept Agnes's estimate away from the sourced figure, and both attributed Ines's and Marguerite's impressions to the people who held them rather than stating them as results.
+Both caught the go live conflict, both kept Agnes's estimate away from the sourced figure, and both attributed Ines's and Lavinia's impressions to the people who held them rather than stating them as results.
 
 The difference is what the starter's third instruction did. Asked to sort every item into confirmed or still to be checked, the guide-informed output put three things in "Confirmed" that were not: a go live date that two sources disagree about, one person's impression of search speed, and a kiosk plan whose own support numbers have not been sent yet. The ordinary prompt, with no columns to fill, left all three as prose and got them right. Three items sitting under a heading that says Confirmed is one of the harder defects to spot, which is why it appears in [Which AI Mistakes Actually Get Through](https://github.com/shaunmarsden/practical-ai-sales-workflows/blob/main/guides/which-ai-mistakes-get-through.md), a sibling repository page sorting every scored defect across these three projects by whether a careful reader would have caught it.
 
@@ -154,8 +154,8 @@ Thursday catch-up, 24 September 2026, Netherford Libraries
 **Still to check or do**
 
 - **Testing feedback.** Ines reports feedback is positive so far. That is an early impression, not a validated result, eight branches remain untested.
-- **Search speed.** Marguerite said search speed in 4.2 is much better. Not yet measured or verified on our side.
-- **Kiosks.** Marguerite is happy with the kiosk plan. The support contract numbers she asked for still need to be sent to her.
+- **Search speed.** Lavinia said search speed in 4.2 is much better. Not yet measured or verified on our side.
+- **Kiosks.** Lavinia is happy with the kiosk plan. The support contract numbers she asked for still need to be sent to her.
 - **Budget position.** Agnes's estimate is nearer GBP 70,000 once the licence renewal lands. The GBP 61,000 figure is the last confirmed number; the GBP 70,000 figure is not yet in a finance report.
 
 **Where the notes disagree**
@@ -175,11 +175,11 @@ Netherford Libraries, Thursday catch-up, 24 September 2026
 
 **Training.** Four of six sessions complete, with 58 people trained.
 
-**Supplier.** Cardinal have released version 4.2. Marguerite has noted a marked improvement in search speed.
+**Supplier.** Cardinal have released version 4.2. Lavinia has noted a marked improvement in search speed.
 
 **Go live.** The plan still shows 1 November. I asked branch managers on Monday to work towards the 15th as a more realistic date, worth noting the plan and the working assumption currently differ. Board papers go out on the 8th.
 
-**Kiosks.** Marguerite is happy with the kiosk plan. Outstanding: the support contract numbers she asked for still need to go to her.
+**Kiosks.** Lavinia is happy with the kiosk plan. Outstanding: the support contract numbers she asked for still need to go to her.
 
 **Budget.** GBP 61,000 spent as at the 5 September finance report. Agnes expects this to be nearer GBP 70,000 once the licence renewal lands.
 
@@ -189,7 +189,7 @@ Two things to flag: the go live date discrepancy (plan says 1 November, managers
 
 ### What the re-run showed
 
-The rewrite fixed the defect it was written for. All three items that had been misfiled under "Confirmed" moved: Marguerite's search speed impression and the unsigned kiosk plan into "still to check", and the disputed go live date into the new third group, where it reads as the decision it actually is. The starter also separated the fact that testing has begun from Ines's impression of how it is going, which no earlier run did.
+The rewrite fixed the defect it was written for. All three items that had been misfiled under "Confirmed" moved: Lavinia's search speed impression and the unsigned kiosk plan into "still to check", and the disputed go live date into the new third group, where it reads as the decision it actually is. The starter also separated the fact that testing has begun from Ines's impression of how it is going, which no earlier run did.
 
 It did not make the starter score higher than an ordinary prompt. The ordinary prompt, unchanged, on unchanged notes, scored 30 out of 30 this time against the starter's 29. It had scored 29 the run before, on the same prompt and the same notes.
 
