@@ -32,6 +32,10 @@ No coding or installation needed.
 | A picture of how people actually use AI, beyond having a licence | [The gap between AI access and actual use](guides/the-gap-between-ai-access-and-actual-use.md) |
 | Help understanding why a rollout has stalled | [Why AI projects stall after the demo works](guides/why-ai-projects-stall-after-the-demo-works.md) |
 
+## Official adoption research
+
+[OpenAI, Anthropic and Google adoption resources](research/official-ai-adoption-resources.md) collects links to publicly available vendor guides, including downloadable PDFs. It distinguishes publisher recommendations from evidence and shows how to apply the ideas to an ordinary workflow. No third-party PDFs are copied here.
+
 ## See one complete test
 
 The [Thornfield Team Connect example](examples/thornfield-team-connect-prompting-example.md) gives an ordinary prompt and a guide-informed prompt the same made-up evidence. Both write a reply to a venue.
