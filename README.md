@@ -38,7 +38,9 @@ No coding or installation needed.
 
 ## Check whether a pilot is ready to expand
 
-[AI pilot readiness checker](tools/pilot-readiness/README.md) is a small local Python tool that checks ten recorded conditions before a pilot is considered for wider use. It reports blockers and missing evidence; it never authorises deployment. Includes fictional sample data and eight code tests.
+**[Open the AI Pilot Readiness Assessment](https://shaunmarsden.github.io/practical-ai-adoption/pilot-readiness/).** Complete ten guided checks in your browser, explore a fictional example and download a PDF report. No installation, account or AI API is needed. Answers stay in page memory unless you export them.
+
+It identifies recorded blockers and evidence gaps; it never authorises deployment. [Methodology, tests and the existing Python checker](tools/pilot-readiness/README.md) explain the rules and validation limits.
 
 ## See one complete test
 
