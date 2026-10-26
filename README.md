@@ -40,9 +40,11 @@ No coding or installation needed.
 
 **[Open the AI Pilot Readiness Assessment](https://shaunmarsden.github.io/practical-ai-adoption/pilot-readiness/).** V2 asks whether ten conditions are currently acceptable for the intended use, explicitly records unresolved material issues and produces a local PDF report. Explore a fictional example without installation, an account or an AI API. Answers stay in page memory unless you export them.
 
-A completed review is not necessarily an acceptable result. V2 separates withheld expansion, further evidence needed and a complete record requiring independent human decision. [Method changes and all thirty adversarial comparisons](tools/pilot-readiness/v2/METHODOLOGY.md) explain its limits. V2 remains a review-branch implementation until an approved merge and live verification.
+A completed review is not necessarily an acceptable result. V2 separates withheld expansion, further evidence needed and a complete record requiring independent human decision. [Method changes and all thirty adversarial comparisons](tools/pilot-readiness/v2/METHODOLOGY.md) explain its limits. V2 was merged and a subsequent production smoke test reported successful live browser and PDF checks on 26 October 2026.
 
 It identifies recorded blockers and evidence gaps; it never authorises deployment. [Methodology, tests and the existing Python checker](tools/pilot-readiness/README.md) explain the rules and validation limits.
+
+[Read the development case study](case-studies/ai-pilot-readiness-assessment.md) to see the V1 failure, the V2 correction and what the fictional tests do and do not establish.
 
 ## See one complete test
 
