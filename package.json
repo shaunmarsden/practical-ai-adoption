@@ -1,0 +1,9 @@
+{
+  "name": "practical-ai-adoption-checks",
+  "private": true,
+  "scripts": {
+    "test": "node --test tools/pilot-readiness/tests/browser/model.test.mjs",
+    "test:browser": "node tools/pilot-readiness/tests/browser/ui.mjs"
+  },
+  "devDependencies": {"playwright": "1.62.1"}
+}

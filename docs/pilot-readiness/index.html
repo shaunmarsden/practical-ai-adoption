@@ -1,0 +1,194 @@
+<!doctype html>
+<html lang="en-GB">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="An evidence-led assessment for business managers considering wider adoption of an AI pilot. Private browser processing and a downloadable report."
+    />
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="default-src 'self'; script-src 'self'; style-src 'self'; font-src 'self'; connect-src 'self'; img-src 'self' data:; object-src 'none'; base-uri 'none'; form-action 'none'"
+    />
+    <title>AI Pilot Readiness Assessment | Practical AI Adoption</title>
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="vendor/jspdf.umd.min.js"></script>
+    <script type="module" src="app.mjs"></script>
+  </head>
+  <body>
+    <a href="#main" class="skip">Skip to assessment</a>
+    <header>
+      <a href="../">Practical AI Adoption</a
+      ><span>Evidence before expansion</span>
+    </header>
+    <main id="main">
+      <section class="intro" aria-labelledby="title">
+        <p class="eyebrow">A decision aid for business managers</p>
+        <h1 id="title">Is your AI pilot ready <br />for the next step?</h1>
+        <p class="lead">
+          Review the evidence, identify the gaps and prepare for a responsible
+          human decision.
+        </p>
+        <div class="intro-grid">
+          <div>
+            <h2>Bring the records behind the pilot</h2>
+            <p>
+              You will need a business target, baseline, test results and
+              records of ownership, safeguards and operational support. Use
+              short references to records you can inspect. Do not paste
+              confidential details or personal information.
+            </p>
+          </div>
+          <div>
+            <h2>Ten checks. No automated approval.</h2>
+            <p>
+              This assessment checks recorded conditions for wider use. It
+              cannot verify evidence, certify compliance or prove business
+              value. A responsible person must review the supporting records.
+            </p>
+          </div>
+        </div>
+        <div class="actions">
+          <button id="start" class="primary">Start an assessment</button
+          ><button id="explore">Explore a fictional example</button>
+        </div>
+        <details>
+          <summary>Privacy and how this works</summary>
+          <p>
+            Answers stay in this page's memory. There is no account, analytics,
+            AI API or server storage of answers. Refreshing or closing the page
+            clears them, though your browser may retain form values through its
+            own session recovery. No browser storage is used by this
+            application. JSON and PDF exports are files saved to your device;
+            handle and delete them under your organisation's rules. Import reads
+            a file locally. GitHub Pages receives normal page and asset
+            requests, never your submitted answers. All scripts and the PDF font
+            are served with this site.
+          </p>
+          <p>
+            Do not enter sensitive data. Use role names and safe internal record
+            references. The suggested methodology is independent of any vendor.
+          </p>
+        </details>
+      </section>
+      <noscript
+        ><p class="notice">
+          JavaScript is needed for the assessment and report. Enable it to use
+          this tool. No answers are uploaded.
+        </p></noscript
+      >
+      <section id="workspace" hidden aria-label="Assessment workspace">
+        <div class="workspace-top">
+          <div>
+            <p class="eyebrow">Your evidence record</p>
+            <p id="progress-text" role="status" aria-live="polite"></p>
+          </div>
+          <button id="reset">Clear and start again</button>
+        </div>
+        <progress
+          id="progress"
+          value="0"
+          max="10"
+          aria-label="Checks answered"
+        ></progress>
+        <p id="fictional" class="notice" hidden>
+          FICTIONAL EXAMPLE: invented records for exploring the tool. These are
+          not business evidence. Editing this record keeps the fictional label;
+          clear it to start your own.
+        </p>
+        <nav id="steps" aria-label="Assessment sections"></nav>
+        <form id="assessment" novalidate autocomplete="off">
+          <div id="form-error" role="alert" tabindex="-1" hidden></div>
+          <section
+            id="details-panel"
+            class="card"
+            aria-labelledby="details-title"
+          >
+            <p class="eyebrow">Start with the pilot</p>
+            <h2 id="details-title" tabindex="-1">Pilot details</h2>
+            <p>
+              Record enough to identify the work. All fields except the internal
+              reference are required.
+            </p>
+            <label for="pilot">Pilot name</label
+            ><input id="pilot" maxlength="200" required />
+            <label for="process">Business process being tested</label
+            ><textarea
+              id="process"
+              rows="2"
+              maxlength="500"
+              required
+            ></textarea>
+            <label for="outcome">Intended business outcome</label
+            ><textarea
+              id="outcome"
+              rows="2"
+              maxlength="500"
+              required
+            ></textarea>
+            <div class="details-grid">
+              <div>
+                <label for="date">Assessment date</label
+                ><input id="date" type="date" required />
+              </div>
+              <div>
+                <label for="reference">Internal reference (optional)</label
+                ><input id="reference" maxlength="500" />
+              </div>
+            </div>
+            <div class="actions">
+              <button type="button" id="begin" class="primary">
+                Continue to the ten checks
+              </button>
+            </div>
+          </section>
+          <div id="questions"></div>
+          <div id="question-nav" class="actions" hidden>
+            <button type="button" id="previous">Previous</button
+            ><button type="button" id="next" class="primary">Next check</button>
+          </div>
+        </form>
+        <section
+          id="results"
+          class="card"
+          hidden
+          aria-labelledby="result-title"
+        ></section>
+        <div class="file-tools">
+          <button id="export">Save assessment JSON</button
+          ><label class="file-label" for="import">Import assessment JSON</label
+          ><input id="import" type="file" accept=".json,application/json" />
+          <p>
+            Save JSON if you want to continue later. Import replaces the current
+            record after validation. PDF is available after reviewing the
+            checks.
+          </p>
+        </div>
+        <p id="file-message" role="status" aria-live="polite"></p>
+      </section>
+      <footer>
+        <p>Practical AI Adoption / Independent, rule-based decision support</p>
+        <a
+          href="https://github.com/shaunmarsden/practical-ai-adoption/blob/main/tools/pilot-readiness/README.md"
+          >Methodology, tests and limitations</a
+        ><span> | </span
+        ><a
+          href="https://github.com/shaunmarsden/practical-ai-adoption/blob/main/research/official-ai-adoption-resources.md"
+          >Official adoption reading</a
+        >
+      </footer>
+    </main>
+    <dialog id="confirm-dialog">
+      <h2>Replace this assessment?</h2>
+      <p>
+        Your current answers will be cleared. Save JSON first if you need to
+        keep them.
+      </p>
+      <form method="dialog">
+        <button value="cancel">Keep current answers</button
+        ><button value="replace" class="primary">Replace assessment</button>
+      </form>
+    </dialog>
+  </body>
+</html>

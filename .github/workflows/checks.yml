@@ -24,3 +24,40 @@ jobs:
 
       - name: Run repository checks
         run: python3 .github/scripts/repo_checks.py
+
+      - name: Set up Node for assessment tests
+        uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+          cache: npm
+
+      - name: Test existing Python checker
+        working-directory: tools/pilot-readiness
+        run: python3 -m unittest discover -s tests -v
+
+      - name: Test browser and Python decision parity
+        run: |
+          npm ci
+          npm test
+
+      - name: Install test browser
+        run: npx playwright install --with-deps chromium
+
+      - name: Test assessment journeys and local PDF downloads
+        run: |
+          python3 -m http.server 8765 --directory docs > /tmp/pilot-preview.log 2>&1 &
+          SERVER_PID=$!
+          trap 'kill "$SERVER_PID"' EXIT
+          for attempt in $(seq 1 20); do
+            if curl --fail --silent http://localhost:8765/pilot-readiness/ > /dev/null; then break; fi
+            sleep 1
+          done
+          npm run test:browser
+
+      - name: Retain browser validation artefacts
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: pilot-readiness-browser-checks
+          path: test-results/
+          if-no-files-found: ignore
