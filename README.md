@@ -42,6 +42,8 @@ No coding or installation needed.
 
 It identifies recorded blockers and evidence gaps; it never authorises deployment. [Methodology, tests and the existing Python checker](tools/pilot-readiness/README.md) explain the rules and validation limits.
 
+For a short explanation of what the tool demonstrates, see [the portfolio overview](research/pilot-readiness-portfolio-explanation.md). A [methodology desk review](research/pilot-readiness-methodology-review.md) documents where its rules could still give false reassurance and what independent validation is missing.
+
 ## See one complete test
 
 The [Thornfield Team Connect example](examples/thornfield-team-connect-prompting-example.md) gives an ordinary prompt and a guide-informed prompt the same made-up evidence. Both write a reply to a venue.
