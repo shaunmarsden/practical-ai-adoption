@@ -1,0 +1,1569 @@
+{
+  "methodology_version": "2.0",
+  "original_fixture_sha256": "6301443b722507364a8f84d00c89515027b6b88a617104f59db3a858dc4ebb21",
+  "total": 30,
+  "observable_adverse_cases": 23,
+  "resolved_with_faithful_structured_inputs": 23,
+  "remaining_observable_cases": 0,
+  "remaining_information_limit": [
+    "AD-19",
+    "N16"
+  ],
+  "limits": "These results depend on explicitly reassessed structured facts and disclosed fictional supplements, not semantic detection of the original notes. They are not external validation or an error-rate estimate.",
+  "results": [
+    {
+      "source_id": "AD-01",
+      "original_expectation": "HOLD_EXPANSION",
+      "v1_decision": "LIMITED PILOT ONLY",
+      "v2_decision": "WITHHOLD EXPANSION",
+      "resolution": "Agreement retained; no original expansion-direction failure",
+      "v2_output": {
+        "schema_version": 2,
+        "methodology_version": "2.0",
+        "pilot": "Fictional technical accuracy without business value",
+        "assessment_route": "operational",
+        "decision": "WITHHOLD EXPANSION",
+        "reason": "One or more required current conditions are recorded as not satisfied. Withhold expansion until the named conditions are resolved.",
+        "known_issues": [],
+        "known_blockers": [
+          {
+            "check": "business_outcome",
+            "requirement": "Do results meet the agreed business threshold, with acceptable trade-offs and viable operating costs?",
+            "status": "no",
+            "note": "Fictional sponsor has not agreed a measurable outcome or meaningful success threshold.",
+            "reference": "Fictional record 1",
+            "next_action": "Agree the business threshold and acceptable trade-offs; demonstrate that results and full operating costs meet them."
+          },
+          {
+            "check": "baseline",
+            "requirement": "Is the baseline relevant and comparable to this workflow and its intended users?",
+            "status": "no",
+            "note": "Fictional trial has no credible baseline from the same process.",
+            "reference": "Fictional record 2",
+            "next_action": "Obtain a comparable baseline and document its limitations before relying on the comparison."
+          }
+        ],
+        "essential_blockers": [],
+        "evidence_gaps": [],
+        "next_actions": [
+          {
+            "check": "business_outcome",
+            "owner": "Responsible workflow owner",
+            "action": "Agree the business threshold and acceptable trade-offs; demonstrate that results and full operating costs meet them."
+          },
+          {
+            "check": "baseline",
+            "owner": "Responsible workflow owner",
+            "action": "Obtain a comparable baseline and document its limitations before relying on the comparison."
+          }
+        ],
+        "warning": "All answers, acceptance claims and issue positions are self-reported, not independently verified. No result authorises operation, expansion or deployment, certifies compliance or proves business value."
+      }
+    },
+    {
+      "source_id": "AD-02",
+      "original_expectation": "STOP_OR_CONTAIN",
+      "v1_decision": "READY FOR HUMAN REVIEW",
+      "v2_decision": "WITHHOLD EXPANSION",
+      "resolution": "Resolves observable weakness with faithful V2 structured answers",
+      "v2_output": {
+        "schema_version": 2,
+        "methodology_version": "2.0",
+        "pilot": "Fictional strong value with severe errors",
+        "assessment_route": "operational",
+        "decision": "WITHHOLD EXPANSION",
+        "reason": "A material issue is reported as unresolved. Withhold expansion and have a responsible human investigate, contain or resolve it before reconsideration.",
+        "known_issues": [
+          {
+            "summary": "Material harm from rare high-severity errors. Handling time falls, but the review finds dangerous wrong instructions.",
+            "owner": "Fictional responsible sponsor",
+            "action": "contain",
+            "next_step": "Evidence that the severe failure has been contained and retested. Investigate and determine safe containment before reconsidering expansion."
+          }
+        ],
+        "known_blockers": [
+          {
+            "check": "quality_review",
+            "requirement": "Do results meet agreed quality and error-severity limits, with no known unacceptable findings?",
+            "status": "no",
+            "note": "Fictional review QR-14 was completed and records unresolved critical errors giving unsafe instructions in two representative cases.",
+            "reference": "Fictional record 4",
+            "next_action": "Contain unacceptable output where needed, resolve the findings and obtain an acceptable representative retest."
+          }
+        ],
+        "essential_blockers": [
+          {
+            "check": "quality_review",
+            "requirement": "Do results meet agreed quality and error-severity limits, with no known unacceptable findings?",
+            "status": "no",
+            "note": "Fictional review QR-14 was completed and records unresolved critical errors giving unsafe instructions in two representative cases.",
+            "reference": "Fictional record 4",
+            "next_action": "Contain unacceptable output where needed, resolve the findings and obtain an acceptable representative retest."
+          }
+        ],
+        "evidence_gaps": [],
+        "next_actions": [
+          {
+            "check": "material_issue",
+            "owner": "Fictional responsible sponsor",
+            "action": "Material harm from rare high-severity errors. Handling time falls, but the review finds dangerous wrong instructions. Next: Evidence that the severe failure has been contained and retested. Investigate and determine safe containment before reconsidering expansion. Human action: contain."
+          },
+          {
+            "check": "quality_review",
+            "owner": "Responsible workflow owner",
+            "action": "Contain unacceptable output where needed, resolve the findings and obtain an acceptable representative retest."
+          }
+        ],
+        "warning": "All answers, acceptance claims and issue positions are self-reported, not independently verified. No result authorises operation, expansion or deployment, certifies compliance or proves business value."
+      }
+    },
+    {
+      "source_id": "AD-03",
+      "original_expectation": "STOP_OR_CONTAIN",
+      "v1_decision": "READY FOR HUMAN REVIEW",
+      "v2_decision": "WITHHOLD EXPANSION",
+      "resolution": "Resolves observable weakness with faithful V2 structured answers",
+      "v2_output": {
+        "schema_version": 2,
+        "methodology_version": "2.0",
+        "pilot": "Fictional average accuracy hides vulnerable users",
+        "assessment_route": "operational",
+        "decision": "WITHHOLD EXPANSION",
+        "reason": "A material issue is reported as unresolved. Withhold expansion and have a responsible human investigate, contain or resolve it before reconsideration.",
+        "known_issues": [
+          {
+            "summary": "Failure is concentrated on people needing additional support. High mean accuracy; all severe failures affect the vulnerable subgroup.",
+            "owner": "Fictional responsible sponsor",
+            "action": "contain",
+            "next_step": "Acceptable subgroup performance and a safe alternative route. Investigate and determine safe containment before reconsidering expansion."
+          }
+        ],
+        "known_blockers": [
+          {
+            "check": "quality_review",
+            "requirement": "Do results meet agreed quality and error-severity limits, with no known unacceptable findings?",
+            "status": "no",
+            "note": "Fictional review QR-14 records these subgroup failures and says the issue remains unresolved despite good overall accuracy.",
+            "reference": "Fictional record 4",
+            "next_action": "Contain unacceptable output where needed, resolve the findings and obtain an acceptable representative retest."
+          }
+        ],
+        "essential_blockers": [
+          {
+            "check": "quality_review",
+            "requirement": "Do results meet agreed quality and error-severity limits, with no known unacceptable findings?",
+            "status": "no",
+            "note": "Fictional review QR-14 records these subgroup failures and says the issue remains unresolved despite good overall accuracy.",
+            "reference": "Fictional record 4",
+            "next_action": "Contain unacceptable output where needed, resolve the findings and obtain an acceptable representative retest."
+          }
+        ],
+        "evidence_gaps": [],
+        "next_actions": [
+          {
+            "check": "material_issue",
+            "owner": "Fictional responsible sponsor",
+            "action": "Failure is concentrated on people needing additional support. High mean accuracy; all severe failures affect the vulnerable subgroup. Next: Acceptable subgroup performance and a safe alternative route. Investigate and determine safe containment before reconsidering expansion. Human action: contain."
+          },
+          {
+            "check": "quality_review",
+            "owner": "Responsible workflow owner",
+            "action": "Contain unacceptable output where needed, resolve the findings and obtain an acceptable representative retest."
+          }
+        ],
+        "warning": "All answers, acceptance claims and issue positions are self-reported, not independently verified. No result authorises operation, expansion or deployment, certifies compliance or proves business value."
+      }
+    },
+    {
+      "source_id": "AD-04",
+      "original_expectation": "STOP_OR_CONTAIN",
+      "v1_decision": "READY FOR HUMAN REVIEW",
+      "v2_decision": "WITHHOLD EXPANSION",
+      "resolution": "Resolves observable weakness with faithful V2 structured answers",
+      "v2_output": {
+        "schema_version": 2,
+        "methodology_version": "2.0",
+        "pilot": "Fictional completed review with critical findings",
+        "assessment_route": "operational",
+        "decision": "WITHHOLD EXPANSION",
+        "reason": "A material issue is reported as unresolved. Withhold expansion and have a responsible human investigate, contain or resolve it before reconsideration.",
+        "known_issues": [
+          {
+            "summary": "A review activity is mistaken for acceptable findings. Signed quality review explicitly rejects the current results.",
+            "owner": "Fictional responsible sponsor",
+            "action": "contain",
+            "next_step": "Resolution and new evidence meeting the agreed safety threshold. Investigate and determine safe containment before reconsidering expansion."
+          }
+        ],
+        "known_blockers": [
+          {
+            "check": "quality_review",
+            "requirement": "Do results meet agreed quality and error-severity limits, with no known unacceptable findings?",
+            "status": "no",
+            "note": "Fictional review QR-14 is signed and complete; it states that critical errors remain unresolved and wider use is unacceptable.",
+            "reference": "Fictional record 4",
+            "next_action": "Contain unacceptable output where needed, resolve the findings and obtain an acceptable representative retest."
+          }
+        ],
+        "essential_blockers": [
+          {
+            "check": "quality_review",
+            "requirement": "Do results meet agreed quality and error-severity limits, with no known unacceptable findings?",
+            "status": "no",
+            "note": "Fictional review QR-14 is signed and complete; it states that critical errors remain unresolved and wider use is unacceptable.",
+            "reference": "Fictional record 4",
+            "next_action": "Contain unacceptable output where needed, resolve the findings and obtain an acceptable representative retest."
+          }
+        ],
+        "evidence_gaps": [],
+        "next_actions": [
+          {
+            "check": "material_issue",
+            "owner": "Fictional responsible sponsor",
+            "action": "A review activity is mistaken for acceptable findings. Signed quality review explicitly rejects the current results. Next: Resolution and new evidence meeting the agreed safety threshold. Investigate and determine safe containment before reconsidering expansion. Human action: contain."
+          },
+          {
+            "check": "quality_review",
+            "owner": "Responsible workflow owner",
+            "action": "Contain unacceptable output where needed, resolve the findings and obtain an acceptable representative retest."
+          }
+        ],
+        "warning": "All answers, acceptance claims and issue positions are self-reported, not independently verified. No result authorises operation, expansion or deployment, certifies compliance or proves business value."
+      }
+    },
+    {
+      "source_id": "AD-05",
+      "original_expectation": "HOLD_EXPANSION",
+      "v1_decision": "READY FOR HUMAN REVIEW",
+      "v2_decision": "WITHHOLD EXPANSION",
+      "resolution": "Resolves observable weakness with faithful V2 structured answers",
+      "v2_output": {
+        "schema_version": 2,
+        "methodology_version": "2.0",
+        "pilot": "Fictional owner without authority or resources",
+        "assessment_route": "operational",
+        "decision": "WITHHOLD EXPANSION",
+        "reason": "One or more required current conditions are recorded as not satisfied. Withhold expansion until the named conditions are resolved.",
+        "known_issues": [],
+        "known_blockers": [
+          {
+            "check": "workflow_owner",
+            "requirement": "Has a current accountable owner accepted the role with authority, resources and continuity cover?",
+            "status": "no",
+            "note": "Fictional record OW-15 names the coordinator as owner, but the role has no budget, no stop authority and no support resources.",
+            "reference": "Fictional record 5",
+            "next_action": "Appoint an accountable current owner with authority, resources and continuity cover."
+          }
+        ],
+        "essential_blockers": [
+          {
+            "check": "workflow_owner",
+            "requirement": "Has a current accountable owner accepted the role with authority, resources and continuity cover?",
+            "status": "no",
+            "note": "Fictional record OW-15 names the coordinator as owner, but the role has no budget, no stop authority and no support resources.",
+            "reference": "Fictional record 5",
+            "next_action": "Appoint an accountable current owner with authority, resources and continuity cover."
+          }
+        ],
+        "evidence_gaps": [],
+        "next_actions": [
+          {
+            "check": "workflow_owner",
+            "owner": "Responsible workflow owner",
+            "action": "Appoint an accountable current owner with authority, resources and continuity cover."
+          }
+        ],
+        "warning": "All answers, acceptance claims and issue positions are self-reported, not independently verified. No result authorises operation, expansion or deployment, certifies compliance or proves business value."
+      }
+    },
+    {
+      "source_id": "AD-06",
+      "original_expectation": "STOP_OR_CONTAIN",
+      "v1_decision": "READY FOR HUMAN REVIEW",
+      "v2_decision": "WITHHOLD EXPANSION",
+      "resolution": "Resolves observable weakness with faithful V2 structured answers",
+      "v2_output": {
+        "schema_version": 2,
+        "methodology_version": "2.0",
+        "pilot": "Fictional approval routinely bypassed",
+        "assessment_route": "operational",
+        "decision": "WITHHOLD EXPANSION",
+        "reason": "A material issue is reported as unresolved. Withhold expansion and have a responsible human investigate, contain or resolve it before reconsideration.",
+        "known_issues": [
+          {
+            "summary": "The intended human safety layer is ineffective. Review process is documented; logs show automatic acceptance and bypass.",
+            "owner": "Fictional responsible sponsor",
+            "action": "contain",
+            "next_step": "Effective review demonstrated under actual workload. Investigate and determine safe containment before reconsidering expansion."
+          }
+        ],
+        "known_blockers": [
+          {
+            "check": "human_oversight",
+            "requirement": "Do necessary approvals and exception handling work under realistic conditions, without routine bypass?",
+            "status": "no",
+            "note": "Fictional workflow HU-16 has an approval checkbox, but users routinely bypass it and external messages are sent before review.",
+            "reference": "Fictional record 6",
+            "next_action": "Demonstrate effective review and exception handling; prevent unreviewed external actions where approval is necessary."
+          }
+        ],
+        "essential_blockers": [
+          {
+            "check": "human_oversight",
+            "requirement": "Do necessary approvals and exception handling work under realistic conditions, without routine bypass?",
+            "status": "no",
+            "note": "Fictional workflow HU-16 has an approval checkbox, but users routinely bypass it and external messages are sent before review.",
+            "reference": "Fictional record 6",
+            "next_action": "Demonstrate effective review and exception handling; prevent unreviewed external actions where approval is necessary."
+          }
+        ],
+        "evidence_gaps": [],
+        "next_actions": [
+          {
+            "check": "material_issue",
+            "owner": "Fictional responsible sponsor",
+            "action": "The intended human safety layer is ineffective. Review process is documented; logs show automatic acceptance and bypass. Next: Effective review demonstrated under actual workload. Investigate and determine safe containment before reconsidering expansion. Human action: contain."
+          },
+          {
+            "check": "human_oversight",
+            "owner": "Responsible workflow owner",
+            "action": "Demonstrate effective review and exception handling; prevent unreviewed external actions where approval is necessary."
+          }
+        ],
+        "warning": "All answers, acceptance claims and issue positions are self-reported, not independently verified. No result authorises operation, expansion or deployment, certifies compliance or proves business value."
+      }
+    },
+    {
+      "source_id": "AD-07",
+      "original_expectation": "HOLD_EXPANSION",
+      "v1_decision": "READY FOR HUMAN REVIEW",
+      "v2_decision": "WITHHOLD EXPANSION",
+      "resolution": "Resolves observable weakness with faithful V2 structured answers",
+      "v2_output": {
+        "schema_version": 2,
+        "methodology_version": "2.0",
+        "pilot": "Fictional permission for another purpose",
+        "assessment_route": "operational",
+        "decision": "WITHHOLD EXPANSION",
+        "reason": "One or more required current conditions are recorded as not satisfied. Withhold expansion until the named conditions are resolved.",
+        "known_issues": [],
+        "known_blockers": [
+          {
+            "check": "data_approval",
+            "requirement": "Are permissions and safeguards current and applicable to the actual data, purpose, tool and proposed use?",
+            "status": "no",
+            "note": "Fictional approval DA-17 permits anonymous research only; the proposed customer decision workflow is outside its purpose and not approved.",
+            "reference": "Fictional record 7",
+            "next_action": "Confirm current in-scope permissions and safeguards with the authorised data/security owner; resolve conflicting or refused approvals."
+          }
+        ],
+        "essential_blockers": [
+          {
+            "check": "data_approval",
+            "requirement": "Are permissions and safeguards current and applicable to the actual data, purpose, tool and proposed use?",
+            "status": "no",
+            "note": "Fictional approval DA-17 permits anonymous research only; the proposed customer decision workflow is outside its purpose and not approved.",
+            "reference": "Fictional record 7",
+            "next_action": "Confirm current in-scope permissions and safeguards with the authorised data/security owner; resolve conflicting or refused approvals."
+          }
+        ],
+        "evidence_gaps": [],
+        "next_actions": [
+          {
+            "check": "data_approval",
+            "owner": "Responsible workflow owner",
+            "action": "Confirm current in-scope permissions and safeguards with the authorised data/security owner; resolve conflicting or refused approvals."
+          }
+        ],
+        "warning": "All answers, acceptance claims and issue positions are self-reported, not independently verified. No result authorises operation, expansion or deployment, certifies compliance or proves business value."
+      }
+    },
+    {
+      "source_id": "AD-08",
+      "original_expectation": "HOLD_EXPANSION",
+      "v1_decision": "READY FOR HUMAN REVIEW",
+      "v2_decision": "WITHHOLD EXPANSION",
+      "resolution": "Resolves observable weakness with faithful V2 structured answers",
+      "v2_output": {
+        "schema_version": 2,
+        "methodology_version": "2.0",
+        "pilot": "Fictional untested recovery plan",
+        "assessment_route": "operational",
+        "decision": "WITHHOLD EXPANSION",
+        "reason": "One or more required current conditions are recorded as not satisfied. Withhold expansion until the named conditions are resolved.",
+        "known_issues": [],
+        "known_blockers": [
+          {
+            "check": "rollback",
+            "requirement": "Have proportionate stopping, recovery and containment arrangements been demonstrated for this use?",
+            "status": "no",
+            "note": "Fictional plan RC-18 describes a rollback procedure for a business-critical workflow, but the control has never been tested.",
+            "reference": "Fictional record 8",
+            "next_action": "Demonstrate stopping and recovery where proportionate; prevent or contain consequences that rollback cannot reverse."
+          }
+        ],
+        "essential_blockers": [
+          {
+            "check": "rollback",
+            "requirement": "Have proportionate stopping, recovery and containment arrangements been demonstrated for this use?",
+            "status": "no",
+            "note": "Fictional plan RC-18 describes a rollback procedure for a business-critical workflow, but the control has never been tested.",
+            "reference": "Fictional record 8",
+            "next_action": "Demonstrate stopping and recovery where proportionate; prevent or contain consequences that rollback cannot reverse."
+          }
+        ],
+        "evidence_gaps": [],
+        "next_actions": [
+          {
+            "check": "rollback",
+            "owner": "Responsible workflow owner",
+            "action": "Demonstrate stopping and recovery where proportionate; prevent or contain consequences that rollback cannot reverse."
+          }
+        ],
+        "warning": "All answers, acceptance claims and issue positions are self-reported, not independently verified. No result authorises operation, expansion or deployment, certifies compliance or proves business value."
+      }
+    },
+    {
+      "source_id": "AD-09",
+      "original_expectation": "HOLD_EXPANSION",
+      "v1_decision": "READY FOR HUMAN REVIEW",
+      "v2_decision": "WITHHOLD EXPANSION",
+      "resolution": "Resolves observable weakness with faithful V2 structured answers",
+      "v2_output": {
+        "schema_version": 2,
+        "methodology_version": "2.0",
+        "pilot": "Fictional cherry-picked success sample",
+        "assessment_route": "operational",
+        "decision": "WITHHOLD EXPANSION",
+        "reason": "One or more required current conditions are recorded as not satisfied. Withhold expansion until the named conditions are resolved.",
+        "known_issues": [],
+        "known_blockers": [
+          {
+            "check": "representative_test",
+            "requirement": "Do current tests cover the intended scale, users and exceptions on this workflow and model version?",
+            "status": "no",
+            "note": "Fictional test EV-13 contains only cherry-picked examples selected for likely success; difficult and ordinary random cases were excluded.",
+            "reference": "Fictional record 3",
+            "next_action": "Test the current version on representative work, users and exceptions at the intended scale."
+          }
+        ],
+        "essential_blockers": [],
+        "evidence_gaps": [],
+        "next_actions": [
+          {
+            "check": "representative_test",
+            "owner": "Responsible workflow owner",
+            "action": "Test the current version on representative work, users and exceptions at the intended scale."
+          }
+        ],
+        "warning": "All answers, acceptance claims and issue positions are self-reported, not independently verified. No result authorises operation, expansion or deployment, certifies compliance or proves business value."
+      }
+    },
+    {
+      "source_id": "AD-10",
+      "original_expectation": "HOLD_EXPANSION",
+      "v1_decision": "READY FOR HUMAN REVIEW",
+      "v2_decision": "WITHHOLD EXPANSION",
+      "resolution": "Resolves observable weakness with faithful V2 structured answers",
+      "v2_output": {
+        "schema_version": 2,
+        "methodology_version": "2.0",
+        "pilot": "Fictional users refuse adoption",
+        "assessment_route": "operational",
+        "decision": "WITHHOLD EXPANSION",
+        "reason": "One or more required current conditions are recorded as not satisfied. Withhold expansion until the named conditions are resolved.",
+        "known_issues": [],
+        "known_blockers": [
+          {
+            "check": "user_training",
+            "requirement": "Can and will intended users operate the workflow, with training, support and sustainable maintenance?",
+            "status": "no",
+            "note": "Fictional training TR-19 was delivered with support, but all intended users refuse to adopt the extra review steps and work around them.",
+            "reference": "Fictional record 9",
+            "next_action": "Resolve user acceptance and workflow fit; provide usable training, support and sustainable maintenance."
+          }
+        ],
+        "essential_blockers": [],
+        "evidence_gaps": [],
+        "next_actions": [
+          {
+            "check": "user_training",
+            "owner": "Responsible workflow owner",
+            "action": "Resolve user acceptance and workflow fit; provide usable training, support and sustainable maintenance."
+          }
+        ],
+        "warning": "All answers, acceptance claims and issue positions are self-reported, not independently verified. No result authorises operation, expansion or deployment, certifies compliance or proves business value."
+      }
+    },
+    {
+      "source_id": "AD-11",
+      "original_expectation": "HOLD_EXPANSION",
+      "v1_decision": "READY FOR HUMAN REVIEW",
+      "v2_decision": "WITHHOLD EXPANSION",
+      "resolution": "Resolves observable weakness with faithful V2 structured answers",
+      "v2_output": {
+        "schema_version": 2,
+        "methodology_version": "2.0",
+        "pilot": "Fictional departing sole maintainer",
+        "assessment_route": "operational",
+        "decision": "WITHHOLD EXPANSION",
+        "reason": "One or more required current conditions are recorded as not satisfied. Withhold expansion until the named conditions are resolved.",
+        "known_issues": [],
+        "known_blockers": [
+          {
+            "check": "workflow_owner",
+            "requirement": "Has a current accountable owner accepted the role with authority, resources and continuity cover?",
+            "status": "no",
+            "note": "Fictional OW-15 names an accountable manager with authority, but the sole technical maintainer leaves next week with no handover or replacement.",
+            "reference": "Fictional record 5",
+            "next_action": "Appoint an accountable current owner with authority, resources and continuity cover."
+          },
+          {
+            "check": "user_training",
+            "requirement": "Can and will intended users operate the workflow, with training, support and sustainable maintenance?",
+            "status": "no",
+            "note": "Fictional support TR-19 records willing users completing the practice workflow and having access to instructions and support.",
+            "reference": "Fictional record 9",
+            "next_action": "Resolve user acceptance and workflow fit; provide usable training, support and sustainable maintenance."
+          }
+        ],
+        "essential_blockers": [
+          {
+            "check": "workflow_owner",
+            "requirement": "Has a current accountable owner accepted the role with authority, resources and continuity cover?",
+            "status": "no",
+            "note": "Fictional OW-15 names an accountable manager with authority, but the sole technical maintainer leaves next week with no handover or replacement.",
+            "reference": "Fictional record 5",
+            "next_action": "Appoint an accountable current owner with authority, resources and continuity cover."
+          }
+        ],
+        "evidence_gaps": [],
+        "next_actions": [
+          {
+            "check": "workflow_owner",
+            "owner": "Responsible workflow owner",
+            "action": "Appoint an accountable current owner with authority, resources and continuity cover."
+          },
+          {
+            "check": "user_training",
+            "owner": "Responsible workflow owner",
+            "action": "Resolve user acceptance and workflow fit; provide usable training, support and sustainable maintenance."
+          }
+        ],
+        "warning": "All answers, acceptance claims and issue positions are self-reported, not independently verified. No result authorises operation, expansion or deployment, certifies compliance or proves business value."
+      }
+    },
+    {
+      "source_id": "AD-12",
+      "original_expectation": "HOLD_EXPANSION",
+      "v1_decision": "READY FOR HUMAN REVIEW",
+      "v2_decision": "WITHHOLD EXPANSION",
+      "resolution": "Resolves observable weakness with faithful V2 structured answers",
+      "v2_output": {
+        "schema_version": 2,
+        "methodology_version": "2.0",
+        "pilot": "Fictional unsustainable operating cost",
+        "assessment_route": "operational",
+        "decision": "WITHHOLD EXPANSION",
+        "reason": "One or more required current conditions are recorded as not satisfied. Withhold expansion until the named conditions are resolved.",
+        "known_issues": [],
+        "known_blockers": [
+          {
+            "check": "business_outcome",
+            "requirement": "Do results meet the agreed business threshold, with acceptable trade-offs and viable operating costs?",
+            "status": "no",
+            "note": "Fictional BO-11 shows a time saving that meets the task threshold, but full review, licence and support costs exceed the approved operating budget.",
+            "reference": "Fictional record 1",
+            "next_action": "Agree the business threshold and acceptable trade-offs; demonstrate that results and full operating costs meet them."
+          }
+        ],
+        "essential_blockers": [],
+        "evidence_gaps": [],
+        "next_actions": [
+          {
+            "check": "business_outcome",
+            "owner": "Responsible workflow owner",
+            "action": "Agree the business threshold and acceptable trade-offs; demonstrate that results and full operating costs meet them."
+          }
+        ],
+        "warning": "All answers, acceptance claims and issue positions are self-reported, not independently verified. No result authorises operation, expansion or deployment, certifies compliance or proves business value."
+      }
+    },
+    {
+      "source_id": "AD-13",
+      "original_expectation": "HOLD_EXPANSION",
+      "v1_decision": "READY FOR HUMAN REVIEW",
+      "v2_decision": "WITHHOLD EXPANSION",
+      "resolution": "Resolves observable weakness with faithful V2 structured answers",
+      "v2_output": {
+        "schema_version": 2,
+        "methodology_version": "2.0",
+        "pilot": "Fictional evaluation invalidated by model update",
+        "assessment_route": "operational",
+        "decision": "WITHHOLD EXPANSION",
+        "reason": "One or more required current conditions are recorded as not satisfied. Withhold expansion until the named conditions are resolved.",
+        "known_issues": [],
+        "known_blockers": [
+          {
+            "check": "representative_test",
+            "requirement": "Do current tests cover the intended scale, users and exceptions on this workflow and model version?",
+            "status": "no",
+            "note": "Fictional EV-13 passed on model version one; the provider changed the model yesterday and version two has not been evaluated.",
+            "reference": "Fictional record 3",
+            "next_action": "Test the current version on representative work, users and exceptions at the intended scale."
+          }
+        ],
+        "essential_blockers": [],
+        "evidence_gaps": [],
+        "next_actions": [
+          {
+            "check": "representative_test",
+            "owner": "Responsible workflow owner",
+            "action": "Test the current version on representative work, users and exceptions at the intended scale."
+          }
+        ],
+        "warning": "All answers, acceptance claims and issue positions are self-reported, not independently verified. No result authorises operation, expansion or deployment, certifies compliance or proves business value."
+      }
+    },
+    {
+      "source_id": "AD-14",
+      "original_expectation": "STOP_OR_CONTAIN",
+      "v1_decision": "READY FOR HUMAN REVIEW",
+      "v2_decision": "WITHHOLD EXPANSION",
+      "resolution": "Resolves observable weakness with faithful V2 structured answers",
+      "v2_output": {
+        "schema_version": 2,
+        "methodology_version": "2.0",
+        "pilot": "Fictional routine success and exception failures",
+        "assessment_route": "operational",
+        "decision": "WITHHOLD EXPANSION",
+        "reason": "A material issue is reported as unresolved. Withhold expansion and have a responsible human investigate, contain or resolve it before reconsideration.",
+        "known_issues": [
+          {
+            "summary": "Serious failures persist in predictable exceptions. Routine cases pass; the actual exception route produces unsafe output.",
+            "owner": "Fictional responsible sponsor",
+            "action": "contain",
+            "next_step": "A safe exception path with representative retesting. Investigate and determine safe containment before reconsidering expansion."
+          }
+        ],
+        "known_blockers": [
+          {
+            "check": "quality_review",
+            "requirement": "Do results meet agreed quality and error-severity limits, with no known unacceptable findings?",
+            "status": "no",
+            "note": "Fictional quality review QR-14 records error severity and confirms no unresolved material failures for the proposed operating scope.",
+            "reference": "Fictional record 4",
+            "next_action": "Contain unacceptable output where needed, resolve the findings and obtain an acceptable representative retest."
+          }
+        ],
+        "essential_blockers": [
+          {
+            "check": "quality_review",
+            "requirement": "Do results meet agreed quality and error-severity limits, with no known unacceptable findings?",
+            "status": "no",
+            "note": "Fictional quality review QR-14 records error severity and confirms no unresolved material failures for the proposed operating scope.",
+            "reference": "Fictional record 4",
+            "next_action": "Contain unacceptable output where needed, resolve the findings and obtain an acceptable representative retest."
+          }
+        ],
+        "evidence_gaps": [],
+        "next_actions": [
+          {
+            "check": "material_issue",
+            "owner": "Fictional responsible sponsor",
+            "action": "Serious failures persist in predictable exceptions. Routine cases pass; the actual exception route produces unsafe output. Next: A safe exception path with representative retesting. Investigate and determine safe containment before reconsidering expansion. Human action: contain."
+          },
+          {
+            "check": "quality_review",
+            "owner": "Responsible workflow owner",
+            "action": "Contain unacceptable output where needed, resolve the findings and obtain an acceptable representative retest."
+          }
+        ],
+        "warning": "All answers, acceptance claims and issue positions are self-reported, not independently verified. No result authorises operation, expansion or deployment, certifies compliance or proves business value."
+      }
+    },
+    {
+      "source_id": "AD-15",
+      "original_expectation": "STOP_OR_CONTAIN",
+      "v1_decision": "READY FOR HUMAN REVIEW",
+      "v2_decision": "WITHHOLD EXPANSION",
+      "resolution": "Resolves observable weakness with faithful V2 structured answers",
+      "v2_output": {
+        "schema_version": 2,
+        "methodology_version": "2.0",
+        "pilot": "Fictional low-risk drafting sends wrong information",
+        "assessment_route": "operational",
+        "decision": "WITHHOLD EXPANSION",
+        "reason": "A material issue is reported as unresolved. Withhold expansion and have a responsible human investigate, contain or resolve it before reconsideration.",
+        "known_issues": [
+          {
+            "summary": "An apparently clerical task creates irreversible external effects. Incorrect dates and commitments have been emailed automatically.",
+            "owner": "Fictional responsible sponsor",
+            "action": "contain",
+            "next_step": "A real send boundary and effective checking before external action. Investigate and determine safe containment before reconsidering expansion."
+          }
+        ],
+        "known_blockers": [
+          {
+            "check": "human_oversight",
+            "requirement": "Do necessary approvals and exception handling work under realistic conditions, without routine bypass?",
+            "status": "no",
+            "note": "Fictional HU-16 asks people to review draft notices, but the send step occurs automatically first and wrong commitments have already gone out.",
+            "reference": "Fictional record 6",
+            "next_action": "Demonstrate effective review and exception handling; prevent unreviewed external actions where approval is necessary."
+          },
+          {
+            "check": "rollback",
+            "requirement": "Have proportionate stopping, recovery and containment arrangements been demonstrated for this use?",
+            "status": "no",
+            "note": "Fictional RC-18 can restore the drafting system but cannot recall notices already delivered to external recipients.",
+            "reference": "Fictional record 8",
+            "next_action": "Demonstrate stopping and recovery where proportionate; prevent or contain consequences that rollback cannot reverse."
+          }
+        ],
+        "essential_blockers": [
+          {
+            "check": "human_oversight",
+            "requirement": "Do necessary approvals and exception handling work under realistic conditions, without routine bypass?",
+            "status": "no",
+            "note": "Fictional HU-16 asks people to review draft notices, but the send step occurs automatically first and wrong commitments have already gone out.",
+            "reference": "Fictional record 6",
+            "next_action": "Demonstrate effective review and exception handling; prevent unreviewed external actions where approval is necessary."
+          },
+          {
+            "check": "rollback",
+            "requirement": "Have proportionate stopping, recovery and containment arrangements been demonstrated for this use?",
+            "status": "no",
+            "note": "Fictional RC-18 can restore the drafting system but cannot recall notices already delivered to external recipients.",
+            "reference": "Fictional record 8",
+            "next_action": "Demonstrate stopping and recovery where proportionate; prevent or contain consequences that rollback cannot reverse."
+          }
+        ],
+        "evidence_gaps": [],
+        "next_actions": [
+          {
+            "check": "material_issue",
+            "owner": "Fictional responsible sponsor",
+            "action": "An apparently clerical task creates irreversible external effects. Incorrect dates and commitments have been emailed automatically. Next: A real send boundary and effective checking before external action. Investigate and determine safe containment before reconsidering expansion. Human action: contain."
+          },
+          {
+            "check": "human_oversight",
+            "owner": "Responsible workflow owner",
+            "action": "Demonstrate effective review and exception handling; prevent unreviewed external actions where approval is necessary."
+          },
+          {
+            "check": "rollback",
+            "owner": "Responsible workflow owner",
+            "action": "Demonstrate stopping and recovery where proportionate; prevent or contain consequences that rollback cannot reverse."
+          }
+        ],
+        "warning": "All answers, acceptance claims and issue positions are self-reported, not independently verified. No result authorises operation, expansion or deployment, certifies compliance or proves business value."
+      }
+    },
+    {
+      "source_id": "AD-16",
+      "original_expectation": "HOLD_EXPANSION",
+      "v1_decision": "READY FOR HUMAN REVIEW",
+      "v2_decision": "WITHHOLD EXPANSION",
+      "resolution": "Resolves observable weakness with faithful V2 structured answers",
+      "v2_output": {
+        "schema_version": 2,
+        "methodology_version": "2.0",
+        "pilot": "Fictional critical workflow without incident response",
+        "assessment_route": "operational",
+        "decision": "WITHHOLD EXPANSION",
+        "reason": "One or more required current conditions are recorded as not satisfied. Withhold expansion until the named conditions are resolved.",
+        "known_issues": [],
+        "known_blockers": [
+          {
+            "check": "monitoring",
+            "requirement": "Are monitoring, incident response and re-evaluation after material changes workable and owned?",
+            "status": "no",
+            "note": "Fictional MO-20 monitors a business-critical process weekly, but there is no incident response, alert owner or out-of-hours continuity route.",
+            "reference": "Fictional record 10",
+            "next_action": "Establish owned monitoring and incident response, review dates and re-evaluation after material changes."
+          }
+        ],
+        "essential_blockers": [],
+        "evidence_gaps": [],
+        "next_actions": [
+          {
+            "check": "monitoring",
+            "owner": "Responsible workflow owner",
+            "action": "Establish owned monitoring and incident response, review dates and re-evaluation after material changes."
+          }
+        ],
+        "warning": "All answers, acceptance claims and issue positions are self-reported, not independently verified. No result authorises operation, expansion or deployment, certifies compliance or proves business value."
+      }
+    },
+    {
+      "source_id": "AD-17",
+      "original_expectation": "STOP_OR_CONTAIN",
+      "v1_decision": "READY FOR HUMAN REVIEW",
+      "v2_decision": "WITHHOLD EXPANSION",
+      "resolution": "Resolves observable weakness with faithful V2 structured answers",
+      "v2_output": {
+        "schema_version": 2,
+        "methodology_version": "2.0",
+        "pilot": "Fictional sensitive data in a generally approved tool",
+        "assessment_route": "operational",
+        "decision": "WITHHOLD EXPANSION",
+        "reason": "A material issue is reported as unresolved. Withhold expansion and have a responsible human investigate, contain or resolve it before reconsideration.",
+        "known_issues": [
+          {
+            "summary": "General tool approval conceals a data-scope restriction. Tool is approved for public content; this case uses sensitive records.",
+            "owner": "Fictional responsible sponsor",
+            "action": "contain",
+            "next_step": "Approval and safeguards for the actual information being used. Investigate and determine safe containment before reconsidering expansion."
+          }
+        ],
+        "known_blockers": [
+          {
+            "check": "data_approval",
+            "requirement": "Are permissions and safeguards current and applicable to the actual data, purpose, tool and proposed use?",
+            "status": "no",
+            "note": "Fictional DA-17 approves the tool for public text only; this pilot is processing sensitive records for which permission has not been obtained.",
+            "reference": "Fictional record 7",
+            "next_action": "Confirm current in-scope permissions and safeguards with the authorised data/security owner; resolve conflicting or refused approvals."
+          }
+        ],
+        "essential_blockers": [
+          {
+            "check": "data_approval",
+            "requirement": "Are permissions and safeguards current and applicable to the actual data, purpose, tool and proposed use?",
+            "status": "no",
+            "note": "Fictional DA-17 approves the tool for public text only; this pilot is processing sensitive records for which permission has not been obtained.",
+            "reference": "Fictional record 7",
+            "next_action": "Confirm current in-scope permissions and safeguards with the authorised data/security owner; resolve conflicting or refused approvals."
+          }
+        ],
+        "evidence_gaps": [],
+        "next_actions": [
+          {
+            "check": "material_issue",
+            "owner": "Fictional responsible sponsor",
+            "action": "General tool approval conceals a data-scope restriction. Tool is approved for public content; this case uses sensitive records. Next: Approval and safeguards for the actual information being used. Investigate and determine safe containment before reconsidering expansion. Human action: contain."
+          },
+          {
+            "check": "data_approval",
+            "owner": "Responsible workflow owner",
+            "action": "Confirm current in-scope permissions and safeguards with the authorised data/security owner; resolve conflicting or refused approvals."
+          }
+        ],
+        "warning": "All answers, acceptance claims and issue positions are self-reported, not independently verified. No result authorises operation, expansion or deployment, certifies compliance or proves business value."
+      }
+    },
+    {
+      "source_id": "AD-18",
+      "original_expectation": "HOLD_EXPANSION",
+      "v1_decision": "READY FOR HUMAN REVIEW",
+      "v2_decision": "WITHHOLD EXPANSION",
+      "resolution": "Resolves observable weakness with faithful V2 structured answers",
+      "v2_output": {
+        "schema_version": 2,
+        "methodology_version": "2.0",
+        "pilot": "Fictional stakeholders disagree about success",
+        "assessment_route": "operational",
+        "decision": "WITHHOLD EXPANSION",
+        "reason": "One or more required current conditions are recorded as not satisfied. Withhold expansion until the named conditions are resolved.",
+        "known_issues": [],
+        "known_blockers": [
+          {
+            "check": "business_outcome",
+            "requirement": "Do results meet the agreed business threshold, with acceptable trade-offs and viable operating costs?",
+            "status": "no",
+            "note": "Fictional BO-11 meets the operations time target, but the service sponsor rejects the quality trade-off and no shared success threshold is agreed.",
+            "reference": "Fictional record 1",
+            "next_action": "Agree the business threshold and acceptable trade-offs; demonstrate that results and full operating costs meet them."
+          }
+        ],
+        "essential_blockers": [],
+        "evidence_gaps": [],
+        "next_actions": [
+          {
+            "check": "business_outcome",
+            "owner": "Responsible workflow owner",
+            "action": "Agree the business threshold and acceptable trade-offs; demonstrate that results and full operating costs meet them."
+          }
+        ],
+        "warning": "All answers, acceptance claims and issue positions are self-reported, not independently verified. No result authorises operation, expansion or deployment, certifies compliance or proves business value."
+      }
+    },
+    {
+      "source_id": "AD-19",
+      "original_expectation": "HOLD_EXPANSION",
+      "v1_decision": "READY FOR HUMAN REVIEW",
+      "v2_decision": "COMPLETE RECORD - HUMAN DECISION REQUIRED",
+      "resolution": "Unresolved: fabricated evidence remains an information limit",
+      "v2_output": {
+        "schema_version": 2,
+        "methodology_version": "2.0",
+        "pilot": "Fictional plausible but misleading completeness",
+        "assessment_route": "operational",
+        "decision": "COMPLETE RECORD - HUMAN DECISION REQUIRED",
+        "reason": "All ten current conditions have affirmative references and findings, with no material issue reported. This describes a complete self-reported record, not verified suitability. An independent responsible person must decide.",
+        "known_issues": [],
+        "known_blockers": [],
+        "essential_blockers": [],
+        "evidence_gaps": [],
+        "next_actions": [
+          {
+            "check": "business_outcome",
+            "owner": "Independent responsible reviewer",
+            "action": "Inspect the actual acceptance evidence. Agree the business threshold and acceptable trade-offs; demonstrate that results and full operating costs meet them."
+          },
+          {
+            "check": "baseline",
+            "owner": "Independent responsible reviewer",
+            "action": "Inspect the actual acceptance evidence. Obtain a comparable baseline and document its limitations before relying on the comparison."
+          },
+          {
+            "check": "representative_test",
+            "owner": "Independent responsible reviewer",
+            "action": "Inspect the actual acceptance evidence. Test the current version on representative work, users and exceptions at the intended scale."
+          },
+          {
+            "check": "quality_review",
+            "owner": "Independent responsible reviewer",
+            "action": "Inspect the actual acceptance evidence. Contain unacceptable output where needed, resolve the findings and obtain an acceptable representative retest."
+          },
+          {
+            "check": "workflow_owner",
+            "owner": "Independent responsible reviewer",
+            "action": "Inspect the actual acceptance evidence. Appoint an accountable current owner with authority, resources and continuity cover."
+          },
+          {
+            "check": "human_oversight",
+            "owner": "Independent responsible reviewer",
+            "action": "Inspect the actual acceptance evidence. Demonstrate effective review and exception handling; prevent unreviewed external actions where approval is necessary."
+          },
+          {
+            "check": "data_approval",
+            "owner": "Independent responsible reviewer",
+            "action": "Inspect the actual acceptance evidence. Confirm current in-scope permissions and safeguards with the authorised data/security owner; resolve conflicting or refused approvals."
+          },
+          {
+            "check": "rollback",
+            "owner": "Independent responsible reviewer",
+            "action": "Inspect the actual acceptance evidence. Demonstrate stopping and recovery where proportionate; prevent or contain consequences that rollback cannot reverse."
+          },
+          {
+            "check": "user_training",
+            "owner": "Independent responsible reviewer",
+            "action": "Inspect the actual acceptance evidence. Resolve user acceptance and workflow fit; provide usable training, support and sustainable maintenance."
+          },
+          {
+            "check": "monitoring",
+            "owner": "Independent responsible reviewer",
+            "action": "Inspect the actual acceptance evidence. Establish owned monitoring and incident response, review dates and re-evaluation after material changes."
+          }
+        ],
+        "warning": "All answers, acceptance claims and issue positions are self-reported, not independently verified. No result authorises operation, expansion or deployment, certifies compliance or proves business value."
+      }
+    },
+    {
+      "source_id": "AD-20",
+      "original_expectation": "PROPORTIONATE_EXPERIMENT",
+      "v1_decision": "DO NOT EXPAND",
+      "v2_decision": "OFFLINE EXPERIMENT - NO ROLLOUT DECISION",
+      "resolution": "Resolves offline-scope concern",
+      "v2_output": {
+        "schema_version": 2,
+        "methodology_version": "2.0",
+        "pilot": "Fictional harmless offline experiment",
+        "assessment_route": "offline_learning",
+        "decision": "OFFLINE EXPERIMENT - NO ROLLOUT DECISION",
+        "reason": "This is recorded as a synthetic/public offline exercise with no real people or external effects and applicable permission. Production governance gaps do not prohibit learning. This is no operational approval; reassess before any real use.",
+        "known_issues": [],
+        "known_blockers": [],
+        "essential_blockers": [],
+        "evidence_gaps": [],
+        "next_actions": [
+          {
+            "check": "scope",
+            "owner": "Person responsible for the exercise",
+            "action": "Keep the exercise offline and within applicable permissions. Reassess before real data, external actions, real people or operational use."
+          }
+        ],
+        "warning": "All answers, acceptance claims and issue positions are self-reported, not independently verified. No result authorises operation, expansion or deployment, certifies compliance or proves business value."
+      }
+    },
+    {
+      "source_id": "AD-21",
+      "original_expectation": "HOLD_EXPANSION",
+      "v1_decision": "DO NOT EXPAND",
+      "v2_decision": "WITHHOLD EXPANSION",
+      "resolution": "Agreement retained; no original expansion-direction failure",
+      "v2_output": {
+        "schema_version": 2,
+        "methodology_version": "2.0",
+        "pilot": "Fictional clear missing data permission",
+        "assessment_route": "operational",
+        "decision": "WITHHOLD EXPANSION",
+        "reason": "One or more required current conditions are recorded as not satisfied. Withhold expansion until the named conditions are resolved.",
+        "known_issues": [],
+        "known_blockers": [
+          {
+            "check": "data_approval",
+            "requirement": "Are permissions and safeguards current and applicable to the actual data, purpose, tool and proposed use?",
+            "status": "no",
+            "note": "Fictional DA-17 records that this data use has no approval and the pilot remains offline.",
+            "reference": "Fictional record 7",
+            "next_action": "Confirm current in-scope permissions and safeguards with the authorised data/security owner; resolve conflicting or refused approvals."
+          }
+        ],
+        "essential_blockers": [
+          {
+            "check": "data_approval",
+            "requirement": "Are permissions and safeguards current and applicable to the actual data, purpose, tool and proposed use?",
+            "status": "no",
+            "note": "Fictional DA-17 records that this data use has no approval and the pilot remains offline.",
+            "reference": "Fictional record 7",
+            "next_action": "Confirm current in-scope permissions and safeguards with the authorised data/security owner; resolve conflicting or refused approvals."
+          }
+        ],
+        "evidence_gaps": [],
+        "next_actions": [
+          {
+            "check": "data_approval",
+            "owner": "Responsible workflow owner",
+            "action": "Confirm current in-scope permissions and safeguards with the authorised data/security owner; resolve conflicting or refused approvals."
+          }
+        ],
+        "warning": "All answers, acceptance claims and issue positions are self-reported, not independently verified. No result authorises operation, expansion or deployment, certifies compliance or proves business value."
+      }
+    },
+    {
+      "source_id": "AD-22",
+      "original_expectation": "HUMAN_REVIEW",
+      "v1_decision": "READY FOR HUMAN REVIEW",
+      "v2_decision": "COMPLETE RECORD - HUMAN DECISION REQUIRED",
+      "resolution": "Agreement retained; no original expansion-direction failure",
+      "v2_output": {
+        "schema_version": 2,
+        "methodology_version": "2.0",
+        "pilot": "Fictional bounded complete business case",
+        "assessment_route": "operational",
+        "decision": "COMPLETE RECORD - HUMAN DECISION REQUIRED",
+        "reason": "All ten current conditions have affirmative references and findings, with no material issue reported. This describes a complete self-reported record, not verified suitability. An independent responsible person must decide.",
+        "known_issues": [],
+        "known_blockers": [],
+        "essential_blockers": [],
+        "evidence_gaps": [],
+        "next_actions": [
+          {
+            "check": "business_outcome",
+            "owner": "Independent responsible reviewer",
+            "action": "Inspect the actual acceptance evidence. Agree the business threshold and acceptable trade-offs; demonstrate that results and full operating costs meet them."
+          },
+          {
+            "check": "baseline",
+            "owner": "Independent responsible reviewer",
+            "action": "Inspect the actual acceptance evidence. Obtain a comparable baseline and document its limitations before relying on the comparison."
+          },
+          {
+            "check": "representative_test",
+            "owner": "Independent responsible reviewer",
+            "action": "Inspect the actual acceptance evidence. Test the current version on representative work, users and exceptions at the intended scale."
+          },
+          {
+            "check": "quality_review",
+            "owner": "Independent responsible reviewer",
+            "action": "Inspect the actual acceptance evidence. Contain unacceptable output where needed, resolve the findings and obtain an acceptable representative retest."
+          },
+          {
+            "check": "workflow_owner",
+            "owner": "Independent responsible reviewer",
+            "action": "Inspect the actual acceptance evidence. Appoint an accountable current owner with authority, resources and continuity cover."
+          },
+          {
+            "check": "human_oversight",
+            "owner": "Independent responsible reviewer",
+            "action": "Inspect the actual acceptance evidence. Demonstrate effective review and exception handling; prevent unreviewed external actions where approval is necessary."
+          },
+          {
+            "check": "data_approval",
+            "owner": "Independent responsible reviewer",
+            "action": "Inspect the actual acceptance evidence. Confirm current in-scope permissions and safeguards with the authorised data/security owner; resolve conflicting or refused approvals."
+          },
+          {
+            "check": "rollback",
+            "owner": "Independent responsible reviewer",
+            "action": "Inspect the actual acceptance evidence. Demonstrate stopping and recovery where proportionate; prevent or contain consequences that rollback cannot reverse."
+          },
+          {
+            "check": "user_training",
+            "owner": "Independent responsible reviewer",
+            "action": "Inspect the actual acceptance evidence. Resolve user acceptance and workflow fit; provide usable training, support and sustainable maintenance."
+          },
+          {
+            "check": "monitoring",
+            "owner": "Independent responsible reviewer",
+            "action": "Inspect the actual acceptance evidence. Establish owned monitoring and incident response, review dates and re-evaluation after material changes."
+          }
+        ],
+        "warning": "All answers, acceptance claims and issue positions are self-reported, not independently verified. No result authorises operation, expansion or deployment, certifies compliance or proves business value."
+      }
+    },
+    {
+      "source_id": "AD-23",
+      "original_expectation": "STOP_OR_CONTAIN",
+      "v1_decision": "DO NOT EXPAND",
+      "v2_decision": "WITHHOLD EXPANSION",
+      "resolution": "Agreement retained; no original expansion-direction failure",
+      "v2_output": {
+        "schema_version": 2,
+        "methodology_version": "2.0",
+        "pilot": "Fictional quality review honestly marked failed",
+        "assessment_route": "operational",
+        "decision": "WITHHOLD EXPANSION",
+        "reason": "A material issue is reported as unresolved. Withhold expansion and have a responsible human investigate, contain or resolve it before reconsideration.",
+        "known_issues": [
+          {
+            "summary": "Known serious risk is explicitly recorded as No. The negative quality finding is correctly mapped to the response.",
+            "owner": "Fictional responsible sponsor",
+            "action": "contain",
+            "next_step": "A resolved failure and successful retest. Investigate and determine safe containment before reconsidering expansion."
+          }
+        ],
+        "known_blockers": [
+          {
+            "check": "quality_review",
+            "requirement": "Do results meet agreed quality and error-severity limits, with no known unacceptable findings?",
+            "status": "no",
+            "note": "Fictional review QR-14 identified unacceptable material errors and has not accepted this operating scope.",
+            "reference": "Fictional record 4",
+            "next_action": "Contain unacceptable output where needed, resolve the findings and obtain an acceptable representative retest."
+          }
+        ],
+        "essential_blockers": [
+          {
+            "check": "quality_review",
+            "requirement": "Do results meet agreed quality and error-severity limits, with no known unacceptable findings?",
+            "status": "no",
+            "note": "Fictional review QR-14 identified unacceptable material errors and has not accepted this operating scope.",
+            "reference": "Fictional record 4",
+            "next_action": "Contain unacceptable output where needed, resolve the findings and obtain an acceptable representative retest."
+          }
+        ],
+        "evidence_gaps": [],
+        "next_actions": [
+          {
+            "check": "material_issue",
+            "owner": "Fictional responsible sponsor",
+            "action": "Known serious risk is explicitly recorded as No. The negative quality finding is correctly mapped to the response. Next: A resolved failure and successful retest. Investigate and determine safe containment before reconsidering expansion. Human action: contain."
+          },
+          {
+            "check": "quality_review",
+            "owner": "Responsible workflow owner",
+            "action": "Contain unacceptable output where needed, resolve the findings and obtain an acceptable representative retest."
+          }
+        ],
+        "warning": "All answers, acceptance claims and issue positions are self-reported, not independently verified. No result authorises operation, expansion or deployment, certifies compliance or proves business value."
+      }
+    },
+    {
+      "source_id": "AD-24",
+      "original_expectation": "HOLD_EXPANSION",
+      "v1_decision": "LIMITED PILOT ONLY",
+      "v2_decision": "FURTHER ASSESSMENT REQUIRED",
+      "resolution": "Agreement retained; no original expansion-direction failure",
+      "v2_output": {
+        "schema_version": 2,
+        "methodology_version": "2.0",
+        "pilot": "Fictional training and monitoring explicitly incomplete",
+        "assessment_route": "operational",
+        "decision": "FURTHER ASSESSMENT REQUIRED",
+        "reason": "Evidence or context is incomplete, unknown or unsupported. This is not permission to continue or expand a pilot.",
+        "known_issues": [],
+        "known_blockers": [],
+        "essential_blockers": [],
+        "evidence_gaps": [
+          {
+            "check": "material_issue",
+            "problem": "Material issue position is unknown or insufficiently assessed",
+            "next_action": "Have a responsible owner investigate quality, safety, security, applicable requirements and operational concerns."
+          },
+          {
+            "check": "user_training",
+            "problem": "Current acceptable condition has not been established",
+            "next_action": "Resolve user acceptance and workflow fit; provide usable training, support and sustainable maintenance."
+          },
+          {
+            "check": "monitoring",
+            "problem": "Current acceptable condition has not been established",
+            "next_action": "Establish owned monitoring and incident response, review dates and re-evaluation after material changes."
+          }
+        ],
+        "next_actions": [
+          {
+            "check": "material_issue",
+            "owner": "Responsible workflow owner",
+            "action": "Have a responsible owner investigate quality, safety, security, applicable requirements and operational concerns."
+          },
+          {
+            "check": "user_training",
+            "owner": "Responsible workflow owner",
+            "action": "Resolve user acceptance and workflow fit; provide usable training, support and sustainable maintenance."
+          },
+          {
+            "check": "monitoring",
+            "owner": "Responsible workflow owner",
+            "action": "Establish owned monitoring and incident response, review dates and re-evaluation after material changes."
+          }
+        ],
+        "warning": "All answers, acceptance claims and issue positions are self-reported, not independently verified. No result authorises operation, expansion or deployment, certifies compliance or proves business value."
+      }
+    },
+    {
+      "source_id": "AD-25",
+      "original_expectation": "HOLD_EXPANSION",
+      "v1_decision": "READY FOR HUMAN REVIEW",
+      "v2_decision": "WITHHOLD EXPANSION",
+      "resolution": "Resolves observable weakness with faithful V2 structured answers",
+      "v2_output": {
+        "schema_version": 2,
+        "methodology_version": "2.0",
+        "pilot": "Fictional approval requested but refused",
+        "assessment_route": "operational",
+        "decision": "WITHHOLD EXPANSION",
+        "reason": "One or more required current conditions are recorded as not satisfied. Withhold expansion until the named conditions are resolved.",
+        "known_issues": [],
+        "known_blockers": [
+          {
+            "check": "data_approval",
+            "requirement": "Are permissions and safeguards current and applicable to the actual data, purpose, tool and proposed use?",
+            "status": "no",
+            "note": "Fictional DA-17 records that approval was requested but refused; the proposed use remains unapproved and is held offline.",
+            "reference": "Fictional record 7",
+            "next_action": "Confirm current in-scope permissions and safeguards with the authorised data/security owner; resolve conflicting or refused approvals."
+          }
+        ],
+        "essential_blockers": [
+          {
+            "check": "data_approval",
+            "requirement": "Are permissions and safeguards current and applicable to the actual data, purpose, tool and proposed use?",
+            "status": "no",
+            "note": "Fictional DA-17 records that approval was requested but refused; the proposed use remains unapproved and is held offline.",
+            "reference": "Fictional record 7",
+            "next_action": "Confirm current in-scope permissions and safeguards with the authorised data/security owner; resolve conflicting or refused approvals."
+          }
+        ],
+        "evidence_gaps": [],
+        "next_actions": [
+          {
+            "check": "data_approval",
+            "owner": "Responsible workflow owner",
+            "action": "Confirm current in-scope permissions and safeguards with the authorised data/security owner; resolve conflicting or refused approvals."
+          }
+        ],
+        "warning": "All answers, acceptance claims and issue positions are self-reported, not independently verified. No result authorises operation, expansion or deployment, certifies compliance or proves business value."
+      }
+    },
+    {
+      "source_id": "AD-26",
+      "original_expectation": "HOLD_EXPANSION",
+      "v1_decision": "READY FOR HUMAN REVIEW",
+      "v2_decision": "WITHHOLD EXPANSION",
+      "resolution": "Resolves observable weakness with faithful V2 structured answers",
+      "v2_output": {
+        "schema_version": 2,
+        "methodology_version": "2.0",
+        "pilot": "Fictional owner has left",
+        "assessment_route": "operational",
+        "decision": "WITHHOLD EXPANSION",
+        "reason": "One or more required current conditions are recorded as not satisfied. Withhold expansion until the named conditions are resolved.",
+        "known_issues": [],
+        "known_blockers": [
+          {
+            "check": "workflow_owner",
+            "requirement": "Has a current accountable owner accepted the role with authority, resources and continuity cover?",
+            "status": "no",
+            "note": "Fictional OW-15 names the previous manager, but the owner has left the organisation and no successor has accepted responsibility.",
+            "reference": "Fictional record 5",
+            "next_action": "Appoint an accountable current owner with authority, resources and continuity cover."
+          }
+        ],
+        "essential_blockers": [
+          {
+            "check": "workflow_owner",
+            "requirement": "Has a current accountable owner accepted the role with authority, resources and continuity cover?",
+            "status": "no",
+            "note": "Fictional OW-15 names the previous manager, but the owner has left the organisation and no successor has accepted responsibility.",
+            "reference": "Fictional record 5",
+            "next_action": "Appoint an accountable current owner with authority, resources and continuity cover."
+          }
+        ],
+        "evidence_gaps": [],
+        "next_actions": [
+          {
+            "check": "workflow_owner",
+            "owner": "Responsible workflow owner",
+            "action": "Appoint an accountable current owner with authority, resources and continuity cover."
+          }
+        ],
+        "warning": "All answers, acceptance claims and issue positions are self-reported, not independently verified. No result authorises operation, expansion or deployment, certifies compliance or proves business value."
+      }
+    },
+    {
+      "source_id": "AD-27",
+      "original_expectation": "HOLD_EXPANSION",
+      "v1_decision": "READY FOR HUMAN REVIEW",
+      "v2_decision": "WITHHOLD EXPANSION",
+      "resolution": "Resolves observable weakness with faithful V2 structured answers",
+      "v2_output": {
+        "schema_version": 2,
+        "methodology_version": "2.0",
+        "pilot": "Fictional monitoring discontinued",
+        "assessment_route": "operational",
+        "decision": "WITHHOLD EXPANSION",
+        "reason": "One or more required current conditions are recorded as not satisfied. Withhold expansion until the named conditions are resolved.",
+        "known_issues": [],
+        "known_blockers": [
+          {
+            "check": "monitoring",
+            "requirement": "Are monitoring, incident response and re-evaluation after material changes workable and owned?",
+            "status": "no",
+            "note": "Fictional MO-20 describes the old weekly process, but monitoring was discontinued last month and no replacement exists.",
+            "reference": "Fictional record 10",
+            "next_action": "Establish owned monitoring and incident response, review dates and re-evaluation after material changes."
+          }
+        ],
+        "essential_blockers": [],
+        "evidence_gaps": [],
+        "next_actions": [
+          {
+            "check": "monitoring",
+            "owner": "Responsible workflow owner",
+            "action": "Establish owned monitoring and incident response, review dates and re-evaluation after material changes."
+          }
+        ],
+        "warning": "All answers, acceptance claims and issue positions are self-reported, not independently verified. No result authorises operation, expansion or deployment, certifies compliance or proves business value."
+      }
+    },
+    {
+      "source_id": "AD-28",
+      "original_expectation": "HOLD_EXPANSION",
+      "v1_decision": "READY FOR HUMAN REVIEW",
+      "v2_decision": "WITHHOLD EXPANSION",
+      "resolution": "Resolves observable weakness with faithful V2 structured answers",
+      "v2_output": {
+        "schema_version": 2,
+        "methodology_version": "2.0",
+        "pilot": "Fictional baseline from another workflow",
+        "assessment_route": "operational",
+        "decision": "WITHHOLD EXPANSION",
+        "reason": "One or more required current conditions are recorded as not satisfied. Withhold expansion until the named conditions are resolved.",
+        "known_issues": [],
+        "known_blockers": [
+          {
+            "check": "baseline",
+            "requirement": "Is the baseline relevant and comparable to this workflow and its intended users?",
+            "status": "no",
+            "note": "Fictional BA-12 is a baseline from a different workflow with simpler tasks and different users; comparability has not been assessed.",
+            "reference": "Fictional record 2",
+            "next_action": "Obtain a comparable baseline and document its limitations before relying on the comparison."
+          }
+        ],
+        "essential_blockers": [],
+        "evidence_gaps": [],
+        "next_actions": [
+          {
+            "check": "baseline",
+            "owner": "Responsible workflow owner",
+            "action": "Obtain a comparable baseline and document its limitations before relying on the comparison."
+          }
+        ],
+        "warning": "All answers, acceptance claims and issue positions are self-reported, not independently verified. No result authorises operation, expansion or deployment, certifies compliance or proves business value."
+      }
+    },
+    {
+      "source_id": "AD-29",
+      "original_expectation": "HOLD_EXPANSION",
+      "v1_decision": "READY FOR HUMAN REVIEW",
+      "v2_decision": "WITHHOLD EXPANSION",
+      "resolution": "Resolves observable weakness with faithful V2 structured answers",
+      "v2_output": {
+        "schema_version": 2,
+        "methodology_version": "2.0",
+        "pilot": "Fictional permission expired with previous pilot",
+        "assessment_route": "operational",
+        "decision": "WITHHOLD EXPANSION",
+        "reason": "One or more required current conditions are recorded as not satisfied. Withhold expansion until the named conditions are resolved.",
+        "known_issues": [],
+        "known_blockers": [
+          {
+            "check": "data_approval",
+            "requirement": "Are permissions and safeguards current and applicable to the actual data, purpose, tool and proposed use?",
+            "status": "no",
+            "note": "Fictional DA-17 applies only to the previous pilot and expired before this assessment; the current process is outside its approved scope.",
+            "reference": "Fictional record 7",
+            "next_action": "Confirm current in-scope permissions and safeguards with the authorised data/security owner; resolve conflicting or refused approvals."
+          }
+        ],
+        "essential_blockers": [
+          {
+            "check": "data_approval",
+            "requirement": "Are permissions and safeguards current and applicable to the actual data, purpose, tool and proposed use?",
+            "status": "no",
+            "note": "Fictional DA-17 applies only to the previous pilot and expired before this assessment; the current process is outside its approved scope.",
+            "reference": "Fictional record 7",
+            "next_action": "Confirm current in-scope permissions and safeguards with the authorised data/security owner; resolve conflicting or refused approvals."
+          }
+        ],
+        "evidence_gaps": [],
+        "next_actions": [
+          {
+            "check": "data_approval",
+            "owner": "Responsible workflow owner",
+            "action": "Confirm current in-scope permissions and safeguards with the authorised data/security owner; resolve conflicting or refused approvals."
+          }
+        ],
+        "warning": "All answers, acceptance claims and issue positions are self-reported, not independently verified. No result authorises operation, expansion or deployment, certifies compliance or proves business value."
+      }
+    },
+    {
+      "source_id": "AD-30",
+      "original_expectation": "HOLD_EXPANSION",
+      "v1_decision": "READY FOR HUMAN REVIEW",
+      "v2_decision": "WITHHOLD EXPANSION",
+      "resolution": "Resolves observable weakness with faithful V2 structured answers",
+      "v2_output": {
+        "schema_version": 2,
+        "methodology_version": "2.0",
+        "pilot": "Fictional contract forbids external processing",
+        "assessment_route": "operational",
+        "decision": "WITHHOLD EXPANSION",
+        "reason": "One or more required current conditions are recorded as not satisfied. Withhold expansion until the named conditions are resolved.",
+        "known_issues": [],
+        "known_blockers": [
+          {
+            "check": "data_approval",
+            "requirement": "Are permissions and safeguards current and applicable to the actual data, purpose, tool and proposed use?",
+            "status": "no",
+            "note": "Fictional DA-17 records internal tool approval, but the current service contract prohibits this external processing and that conflict remains unresolved.",
+            "reference": "Fictional record 7",
+            "next_action": "Confirm current in-scope permissions and safeguards with the authorised data/security owner; resolve conflicting or refused approvals."
+          }
+        ],
+        "essential_blockers": [
+          {
+            "check": "data_approval",
+            "requirement": "Are permissions and safeguards current and applicable to the actual data, purpose, tool and proposed use?",
+            "status": "no",
+            "note": "Fictional DA-17 records internal tool approval, but the current service contract prohibits this external processing and that conflict remains unresolved.",
+            "reference": "Fictional record 7",
+            "next_action": "Confirm current in-scope permissions and safeguards with the authorised data/security owner; resolve conflicting or refused approvals."
+          }
+        ],
+        "evidence_gaps": [],
+        "next_actions": [
+          {
+            "check": "data_approval",
+            "owner": "Responsible workflow owner",
+            "action": "Confirm current in-scope permissions and safeguards with the authorised data/security owner; resolve conflicting or refused approvals."
+          }
+        ],
+        "warning": "All answers, acceptance claims and issue positions are self-reported, not independently verified. No result authorises operation, expansion or deployment, certifies compliance or proves business value."
+      }
+    }
+  ],
+  "new_challenges": [
+    {
+      "id": "N01",
+      "expected": "FURTHER ASSESSMENT REQUIRED",
+      "actual": "FURTHER ASSESSMENT REQUIRED",
+      "negative_control": false
+    },
+    {
+      "id": "N02",
+      "expected": "COMPLETE RECORD - HUMAN DECISION REQUIRED",
+      "actual": "COMPLETE RECORD - HUMAN DECISION REQUIRED",
+      "negative_control": false
+    },
+    {
+      "id": "N03",
+      "expected": "WITHHOLD EXPANSION",
+      "actual": "WITHHOLD EXPANSION",
+      "negative_control": false
+    },
+    {
+      "id": "N04",
+      "expected": "WITHHOLD EXPANSION",
+      "actual": "WITHHOLD EXPANSION",
+      "negative_control": false
+    },
+    {
+      "id": "N05",
+      "expected": "WITHHOLD EXPANSION",
+      "actual": "WITHHOLD EXPANSION",
+      "negative_control": false
+    },
+    {
+      "id": "N06",
+      "expected": "WITHHOLD EXPANSION",
+      "actual": "WITHHOLD EXPANSION",
+      "negative_control": false
+    },
+    {
+      "id": "N07",
+      "expected": "WITHHOLD EXPANSION",
+      "actual": "WITHHOLD EXPANSION",
+      "negative_control": false
+    },
+    {
+      "id": "N08",
+      "expected": "COMPLETE RECORD - HUMAN DECISION REQUIRED",
+      "actual": "COMPLETE RECORD - HUMAN DECISION REQUIRED",
+      "negative_control": false
+    },
+    {
+      "id": "N09",
+      "expected": "COMPLETE RECORD - HUMAN DECISION REQUIRED",
+      "actual": "COMPLETE RECORD - HUMAN DECISION REQUIRED",
+      "negative_control": false
+    },
+    {
+      "id": "N10",
+      "expected": "WITHHOLD EXPANSION",
+      "actual": "WITHHOLD EXPANSION",
+      "negative_control": false
+    },
+    {
+      "id": "N11",
+      "expected": "OFFLINE EXPERIMENT - NO ROLLOUT DECISION",
+      "actual": "OFFLINE EXPERIMENT - NO ROLLOUT DECISION",
+      "negative_control": false
+    },
+    {
+      "id": "N12",
+      "expected": "FURTHER ASSESSMENT REQUIRED",
+      "actual": "FURTHER ASSESSMENT REQUIRED",
+      "negative_control": false
+    },
+    {
+      "id": "N13",
+      "expected": "FURTHER ASSESSMENT REQUIRED",
+      "actual": "FURTHER ASSESSMENT REQUIRED",
+      "negative_control": false
+    },
+    {
+      "id": "N14",
+      "expected": "FURTHER ASSESSMENT REQUIRED",
+      "actual": "FURTHER ASSESSMENT REQUIRED",
+      "negative_control": false
+    },
+    {
+      "id": "N15",
+      "expected": "WITHHOLD EXPANSION",
+      "actual": "WITHHOLD EXPANSION",
+      "negative_control": false
+    },
+    {
+      "id": "N16",
+      "expected": "COMPLETE RECORD - HUMAN DECISION REQUIRED",
+      "actual": "COMPLETE RECORD - HUMAN DECISION REQUIRED",
+      "negative_control": true
+    }
+  ]
+}

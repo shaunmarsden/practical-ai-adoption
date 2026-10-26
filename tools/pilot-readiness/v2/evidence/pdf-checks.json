@@ -1,0 +1,93 @@
+[
+  {
+    "file": "blocked-1440.pdf",
+    "sha256": "871b327270faf503dcc0677180fefb68163abacc061968880c37a1ed17fad704",
+    "pages": 6,
+    "decision": "WITHHOLD EXPANSION",
+    "note_reference_issue_and_bounds_checks": "pass"
+  },
+  {
+    "file": "blocked-390.pdf",
+    "sha256": "e317ba1e91dbd1b7e8506a76480c297822f8d1ac132628d536f10a8e312cc23e",
+    "pages": 6,
+    "decision": "WITHHOLD EXPANSION",
+    "note_reference_issue_and_bounds_checks": "pass"
+  },
+  {
+    "file": "complete-1440.pdf",
+    "sha256": "979b1dc5ac0fb4aae9db1ca6892b01b846cac882ffadd41d8b855178c8025b91",
+    "pages": 6,
+    "decision": "COMPLETE RECORD - HUMAN DECISION REQUIRED",
+    "note_reference_issue_and_bounds_checks": "pass"
+  },
+  {
+    "file": "complete-390.pdf",
+    "sha256": "58087541091fc5937858c604b6e81903ea8ea6521c74a58fe564cf27eec53484",
+    "pages": 6,
+    "decision": "COMPLETE RECORD - HUMAN DECISION REQUIRED",
+    "note_reference_issue_and_bounds_checks": "pass"
+  },
+  {
+    "file": "further-1440.pdf",
+    "sha256": "8569ee3f4dca478f6db79b2093e65e06bda3a3bdacd483a442ee6b88ae87937b",
+    "pages": 6,
+    "decision": "FURTHER ASSESSMENT REQUIRED",
+    "note_reference_issue_and_bounds_checks": "pass"
+  },
+  {
+    "file": "further-390.pdf",
+    "sha256": "aa4e360cc5fa5414b1aa16684e3ca406340f7828c20a36dc09c300d4a27cb05f",
+    "pages": 6,
+    "decision": "FURTHER ASSESSMENT REQUIRED",
+    "note_reference_issue_and_bounds_checks": "pass"
+  },
+  {
+    "file": "long-notes-1440.pdf",
+    "sha256": "673f83b9ca0c339e38b08842336049027c8f322926c7aa6985d55cea868a678b",
+    "pages": 12,
+    "decision": "COMPLETE RECORD - HUMAN DECISION REQUIRED",
+    "note_reference_issue_and_bounds_checks": "pass"
+  },
+  {
+    "file": "migration-1440.pdf",
+    "sha256": "2082393d1fd4ee0cf2836b8ae24bfd2a325260c3555a7937a37f67b9894b96d6",
+    "pages": 7,
+    "decision": "FURTHER ASSESSMENT REQUIRED",
+    "note_reference_issue_and_bounds_checks": "pass"
+  },
+  {
+    "file": "migration-390.pdf",
+    "sha256": "053ee34d5864fd99738f5df7e2d39e92801e207f6baebd267d3ad4d39ae93836",
+    "pages": 7,
+    "decision": "FURTHER ASSESSMENT REQUIRED",
+    "note_reference_issue_and_bounds_checks": "pass"
+  },
+  {
+    "file": "offline-1440.pdf",
+    "sha256": "958cf24f8771ef1242f578836d6420833864e0b2bcd83f594f431bbc89978a6b",
+    "pages": 5,
+    "decision": "OFFLINE EXPERIMENT - NO ROLLOUT DECISION",
+    "note_reference_issue_and_bounds_checks": "pass"
+  },
+  {
+    "file": "offline-390.pdf",
+    "sha256": "aa33c9526a792865b2edf6af6f5e0978492f1ed4046f174ffdcf1c3164c64add",
+    "pages": 5,
+    "decision": "OFFLINE EXPERIMENT - NO ROLLOUT DECISION",
+    "note_reference_issue_and_bounds_checks": "pass"
+  },
+  {
+    "file": "supported-text-1440.pdf",
+    "sha256": "0367049f2b60c5ee246dc96e820a3216ebe4e9ff25de021d17c0e9d798bd499b",
+    "pages": 6,
+    "decision": "COMPLETE RECORD - HUMAN DECISION REQUIRED",
+    "note_reference_issue_and_bounds_checks": "pass"
+  },
+  {
+    "file": "supported-text-390.pdf",
+    "sha256": "d3a10702a9bfd38f400c8963d48f39339222aaf2e7ca72841aafd195919ef650",
+    "pages": 6,
+    "decision": "COMPLETE RECORD - HUMAN DECISION REQUIRED",
+    "note_reference_issue_and_bounds_checks": "pass"
+  }
+]

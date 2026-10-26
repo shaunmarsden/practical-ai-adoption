@@ -1,0 +1,82 @@
+[
+  {
+    "url": "http://localhost:8765/pilot-readiness/",
+    "method": "GET",
+    "body": null
+  },
+  {
+    "url": "http://localhost:8765/pilot-readiness/style.css",
+    "method": "GET",
+    "body": null
+  },
+  {
+    "url": "http://localhost:8765/pilot-readiness/vendor/jspdf.umd.min.js",
+    "method": "GET",
+    "body": null
+  },
+  {
+    "url": "http://localhost:8765/pilot-readiness/app.mjs",
+    "method": "GET",
+    "body": null
+  },
+  {
+    "url": "http://localhost:8765/pilot-readiness/model-v2.mjs",
+    "method": "GET",
+    "body": null
+  },
+  {
+    "url": "http://localhost:8765/pilot-readiness/examples-v2.mjs",
+    "method": "GET",
+    "body": null
+  },
+  {
+    "url": "http://localhost:8765/pilot-readiness/report.mjs",
+    "method": "GET",
+    "body": null
+  },
+  {
+    "url": "http://localhost:8765/pilot-readiness/icon.svg",
+    "method": "GET",
+    "body": null
+  },
+  {
+    "url": "http://localhost:8765/pilot-readiness/vendor/NotoSans-Regular.ttf",
+    "method": "GET",
+    "body": null
+  },
+  {
+    "url": "http://localhost:8765/pilot-readiness/vendor/NotoSans-Regular.ttf",
+    "method": "GET",
+    "body": null
+  },
+  {
+    "url": "http://localhost:8765/pilot-readiness/vendor/NotoSans-Regular.ttf",
+    "method": "GET",
+    "body": null
+  },
+  {
+    "url": "http://localhost:8765/pilot-readiness/vendor/NotoSans-Regular.ttf",
+    "method": "GET",
+    "body": null
+  },
+  {
+    "url": "http://localhost:8765/pilot-readiness/vendor/NotoSans-Regular.ttf",
+    "method": "GET",
+    "body": null
+  },
+  {
+    "url": "http://localhost:8765/pilot-readiness/vendor/NotoSans-Regular.ttf",
+    "method": "GET",
+    "body": null
+  },
+  {
+    "url": "http://localhost:8765/pilot-readiness/vendor/NotoSans-Regular.ttf",
+    "method": "GET",
+    "body": null
+  },
+  {
+    "url": "http://localhost:8765/pilot-readiness/vendor/NotoSans-Regular.ttf",
+    "method": "GET",
+    "body": null
+  }
+]

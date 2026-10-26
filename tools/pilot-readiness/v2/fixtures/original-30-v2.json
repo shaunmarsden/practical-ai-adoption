@@ -1,0 +1,2957 @@
+{
+  "source_pr": 74,
+  "source_commit": "b2440a8160cf4262a38b18f77bab3325982cbcda",
+  "source_sha256": "6301443b722507364a8f84d00c89515027b6b88a617104f59db3a858dc4ebb21",
+  "cases": [
+    {
+      "source_id": "AD-01",
+      "source_expected_recommendation": "HOLD_EXPANSION",
+      "source_sha256": "6301443b722507364a8f84d00c89515027b6b88a617104f59db3a858dc4ebb21",
+      "transformations": [
+        {
+          "key": "business_outcome",
+          "from": "no",
+          "to": "no",
+          "reason": "The original facts must be answered against V2's current acceptable-condition question, not V1's activity-existence question."
+        },
+        {
+          "key": "baseline",
+          "from": "no",
+          "to": "no",
+          "reason": "The original facts must be answered against V2's current acceptable-condition question, not V1's activity-existence question."
+        }
+      ],
+      "material_issue_basis": "No additional material issue is stipulated; this is an explicit fictional assumption, not a conclusion drawn from a note.",
+      "assumptions": [
+        "Unchanged dimensions receive explicitly invented positive V2 supplements, including scope, measured value, full costs and sustainable support. These are not recovered from V1 flags.",
+        "References are fictional V2 record references; they have not been independently verified.",
+        "The supplemental positive facts apply only where they do not replace the specified adverse condition."
+      ],
+      "payload": {
+        "schema_version": 2,
+        "methodology_version": "2.0",
+        "pilot": "Fictional technical accuracy without business value",
+        "fictional": true,
+        "details": {
+          "process": "Synthetic process for adversarial case 01",
+          "outcome": "Assess a proposed expansion; all records are invented",
+          "date": "2026-10-26",
+          "reference": "AD-01"
+        },
+        "scope": {
+          "activity": "bounded_internal_pilot",
+          "data": "synthetic_public",
+          "external_effects": "no",
+          "people_impact": "no",
+          "proposed_scale": "Five internal users reviewing synthetic batches",
+          "current_version": "Fictional workflow 2 / model A"
+        },
+        "material_issue": {
+          "status": "none_identified",
+          "summary": "",
+          "owner": "",
+          "action": "unknown",
+          "next_step": ""
+        },
+        "evidence": {
+          "business_outcome": {
+            "status": "no",
+            "reference": "Fictional record 1",
+            "note": "Fictional sponsor has not agreed a measurable outcome or meaningful success threshold."
+          },
+          "baseline": {
+            "status": "no",
+            "reference": "Fictional record 2",
+            "note": "Fictional trial has no credible baseline from the same process."
+          },
+          "representative_test": {
+            "status": "yes",
+            "reference": "Fictional record 3",
+            "note": "Fictional evaluation EV-13 records normal and exceptional cases sampled from the intended population on the current model version.\nV2 fictional supplement: Fictional RT-03 covers intended users, routine and exceptional cases at the proposed scale on the current workflow and model version."
+          },
+          "quality_review": {
+            "status": "yes",
+            "reference": "Fictional record 4",
+            "note": "Fictional quality review QR-14 records error severity and confirms no unresolved material failures for the proposed operating scope.\nV2 fictional supplement: Fictional QR-04 records acceptable quality against agreed severity limits across affected groups, with material findings resolved."
+          },
+          "workflow_owner": {
+            "status": "yes",
+            "reference": "Fictional record 5",
+            "note": "Fictional ownership OW-15 records acceptance by the operations role with authority, cover and budget to run and stop the workflow.\nV2 fictional supplement: Fictional OW-05 records current role acceptance, stop authority, support budget and a tested continuity handover."
+          },
+          "human_oversight": {
+            "status": "yes",
+            "reference": "Fictional record 6",
+            "note": "Fictional oversight HU-16 records a timed review exercise with corrections, escalation and no observed approval bypass.\nV2 fictional supplement: Fictional HO-06 records an effective timed human review exercise with escalation and prevention of routine approval bypass."
+          },
+          "data_approval": {
+            "status": "yes",
+            "reference": "Fictional record 7",
+            "note": "Fictional approval DA-17 covers this purpose, data, tool and recipients, with security controls and the relevant contract review recorded.\nV2 fictional supplement: Fictional DP-07 records current permission for the actual data, purpose, tool and recipients, with applicable security and contract checks accepted."
+          },
+          "rollback": {
+            "status": "yes",
+            "reference": "Fictional record 8",
+            "note": "Fictional recovery RC-18 records a successful safe-stop and manual recovery exercise within the agreed continuity window.\nV2 fictional supplement: Fictional RC-08 records a proportionate safe-stop and manual recovery exercise, plus prevention and containment of irreversible external effects."
+          },
+          "user_training": {
+            "status": "yes",
+            "reference": "Fictional record 9",
+            "note": "Fictional support TR-19 records willing users completing the practice workflow and having access to instructions and support.\nV2 fictional supplement: Fictional UR-09 records willing users successfully performing the workflow, with instructions, support and sustainable maintenance cover."
+          },
+          "monitoring": {
+            "status": "yes",
+            "reference": "Fictional record 10",
+            "note": "Fictional monitoring MO-20 assigns alerts, incident response, maintenance cover and a review date after any model or workflow change.\nV2 fictional supplement: Fictional MO-10 records owned alerts, a practised incident response, review dates and re-evaluation after material changes."
+          }
+        }
+      }
+    },
+    {
+      "source_id": "AD-02",
+      "source_expected_recommendation": "STOP_OR_CONTAIN",
+      "source_sha256": "6301443b722507364a8f84d00c89515027b6b88a617104f59db3a858dc4ebb21",
+      "transformations": [
+        {
+          "key": "quality_review",
+          "from": "yes",
+          "to": "no",
+          "reason": "The original facts must be answered against V2's current acceptable-condition question, not V1's activity-existence question."
+        }
+      ],
+      "material_issue_basis": "The case states an unacceptable unresolved exposure; this is entered explicitly, not inferred by the engine.",
+      "assumptions": [
+        "Unchanged dimensions receive explicitly invented positive V2 supplements, including scope, measured value, full costs and sustainable support. These are not recovered from V1 flags.",
+        "References are fictional V2 record references; they have not been independently verified.",
+        "The supplemental positive facts apply only where they do not replace the specified adverse condition."
+      ],
+      "payload": {
+        "schema_version": 2,
+        "methodology_version": "2.0",
+        "pilot": "Fictional strong value with severe errors",
+        "fictional": true,
+        "details": {
+          "process": "Synthetic process for adversarial case 02",
+          "outcome": "Assess a proposed expansion; all records are invented",
+          "date": "2026-10-26",
+          "reference": "AD-02"
+        },
+        "scope": {
+          "activity": "bounded_internal_pilot",
+          "data": "synthetic_public",
+          "external_effects": "no",
+          "people_impact": "no",
+          "proposed_scale": "Five internal users reviewing synthetic batches",
+          "current_version": "Fictional workflow 2 / model A"
+        },
+        "material_issue": {
+          "status": "unresolved",
+          "summary": "Material harm from rare high-severity errors. Handling time falls, but the review finds dangerous wrong instructions.",
+          "owner": "Fictional responsible sponsor",
+          "action": "contain",
+          "next_step": "Evidence that the severe failure has been contained and retested. Investigate and determine safe containment before reconsidering expansion."
+        },
+        "evidence": {
+          "business_outcome": {
+            "status": "yes",
+            "reference": "Fictional record 1",
+            "note": "Fictional record BO-11 agrees a reduction in manual handling time of at least 10 minutes per batch without worse serious errors.\nV2 fictional supplement: Fictional BR-01 records measured savings above the agreed threshold, acceptable quality trade-offs and full operating costs within budget."
+          },
+          "baseline": {
+            "status": "yes",
+            "reference": "Fictional record 2",
+            "note": "Fictional baseline BA-12 records time and quality for 50 comparable batches from the same workflow before the trial.\nV2 fictional supplement: Fictional BL-02 records a comparable baseline on the same batches, population and measurement method with sampling limits documented."
+          },
+          "representative_test": {
+            "status": "yes",
+            "reference": "Fictional record 3",
+            "note": "Fictional evaluation EV-13 records normal and exceptional cases sampled from the intended population on the current model version.\nV2 fictional supplement: Fictional RT-03 covers intended users, routine and exceptional cases at the proposed scale on the current workflow and model version."
+          },
+          "quality_review": {
+            "status": "no",
+            "reference": "Fictional record 4",
+            "note": "Fictional review QR-14 was completed and records unresolved critical errors giving unsafe instructions in two representative cases."
+          },
+          "workflow_owner": {
+            "status": "yes",
+            "reference": "Fictional record 5",
+            "note": "Fictional ownership OW-15 records acceptance by the operations role with authority, cover and budget to run and stop the workflow.\nV2 fictional supplement: Fictional OW-05 records current role acceptance, stop authority, support budget and a tested continuity handover."
+          },
+          "human_oversight": {
+            "status": "yes",
+            "reference": "Fictional record 6",
+            "note": "Fictional oversight HU-16 records a timed review exercise with corrections, escalation and no observed approval bypass.\nV2 fictional supplement: Fictional HO-06 records an effective timed human review exercise with escalation and prevention of routine approval bypass."
+          },
+          "data_approval": {
+            "status": "yes",
+            "reference": "Fictional record 7",
+            "note": "Fictional approval DA-17 covers this purpose, data, tool and recipients, with security controls and the relevant contract review recorded.\nV2 fictional supplement: Fictional DP-07 records current permission for the actual data, purpose, tool and recipients, with applicable security and contract checks accepted."
+          },
+          "rollback": {
+            "status": "yes",
+            "reference": "Fictional record 8",
+            "note": "Fictional recovery RC-18 records a successful safe-stop and manual recovery exercise within the agreed continuity window.\nV2 fictional supplement: Fictional RC-08 records a proportionate safe-stop and manual recovery exercise, plus prevention and containment of irreversible external effects."
+          },
+          "user_training": {
+            "status": "yes",
+            "reference": "Fictional record 9",
+            "note": "Fictional support TR-19 records willing users completing the practice workflow and having access to instructions and support.\nV2 fictional supplement: Fictional UR-09 records willing users successfully performing the workflow, with instructions, support and sustainable maintenance cover."
+          },
+          "monitoring": {
+            "status": "yes",
+            "reference": "Fictional record 10",
+            "note": "Fictional monitoring MO-20 assigns alerts, incident response, maintenance cover and a review date after any model or workflow change.\nV2 fictional supplement: Fictional MO-10 records owned alerts, a practised incident response, review dates and re-evaluation after material changes."
+          }
+        }
+      }
+    },
+    {
+      "source_id": "AD-03",
+      "source_expected_recommendation": "STOP_OR_CONTAIN",
+      "source_sha256": "6301443b722507364a8f84d00c89515027b6b88a617104f59db3a858dc4ebb21",
+      "transformations": [
+        {
+          "key": "quality_review",
+          "from": "yes",
+          "to": "no",
+          "reason": "The original facts must be answered against V2's current acceptable-condition question, not V1's activity-existence question."
+        }
+      ],
+      "material_issue_basis": "The case states an unacceptable unresolved exposure; this is entered explicitly, not inferred by the engine.",
+      "assumptions": [
+        "Unchanged dimensions receive explicitly invented positive V2 supplements, including scope, measured value, full costs and sustainable support. These are not recovered from V1 flags.",
+        "References are fictional V2 record references; they have not been independently verified.",
+        "The supplemental positive facts apply only where they do not replace the specified adverse condition."
+      ],
+      "payload": {
+        "schema_version": 2,
+        "methodology_version": "2.0",
+        "pilot": "Fictional average accuracy hides vulnerable users",
+        "fictional": true,
+        "details": {
+          "process": "Synthetic process for adversarial case 03",
+          "outcome": "Assess a proposed expansion; all records are invented",
+          "date": "2026-10-26",
+          "reference": "AD-03"
+        },
+        "scope": {
+          "activity": "bounded_internal_pilot",
+          "data": "synthetic_public",
+          "external_effects": "no",
+          "people_impact": "no",
+          "proposed_scale": "Five internal users reviewing synthetic batches",
+          "current_version": "Fictional workflow 2 / model A"
+        },
+        "material_issue": {
+          "status": "unresolved",
+          "summary": "Failure is concentrated on people needing additional support. High mean accuracy; all severe failures affect the vulnerable subgroup.",
+          "owner": "Fictional responsible sponsor",
+          "action": "contain",
+          "next_step": "Acceptable subgroup performance and a safe alternative route. Investigate and determine safe containment before reconsidering expansion."
+        },
+        "evidence": {
+          "business_outcome": {
+            "status": "yes",
+            "reference": "Fictional record 1",
+            "note": "Fictional record BO-11 agrees a reduction in manual handling time of at least 10 minutes per batch without worse serious errors.\nV2 fictional supplement: Fictional BR-01 records measured savings above the agreed threshold, acceptable quality trade-offs and full operating costs within budget."
+          },
+          "baseline": {
+            "status": "yes",
+            "reference": "Fictional record 2",
+            "note": "Fictional baseline BA-12 records time and quality for 50 comparable batches from the same workflow before the trial.\nV2 fictional supplement: Fictional BL-02 records a comparable baseline on the same batches, population and measurement method with sampling limits documented."
+          },
+          "representative_test": {
+            "status": "yes",
+            "reference": "Fictional record 3",
+            "note": "Fictional test EV-13 reports high average accuracy, but every vulnerable-user exception failed and no safe route is available.\nV2 fictional supplement: Fictional RT-03 covers intended users, routine and exceptional cases at the proposed scale on the current workflow and model version."
+          },
+          "quality_review": {
+            "status": "no",
+            "reference": "Fictional record 4",
+            "note": "Fictional review QR-14 records these subgroup failures and says the issue remains unresolved despite good overall accuracy."
+          },
+          "workflow_owner": {
+            "status": "yes",
+            "reference": "Fictional record 5",
+            "note": "Fictional ownership OW-15 records acceptance by the operations role with authority, cover and budget to run and stop the workflow.\nV2 fictional supplement: Fictional OW-05 records current role acceptance, stop authority, support budget and a tested continuity handover."
+          },
+          "human_oversight": {
+            "status": "yes",
+            "reference": "Fictional record 6",
+            "note": "Fictional oversight HU-16 records a timed review exercise with corrections, escalation and no observed approval bypass.\nV2 fictional supplement: Fictional HO-06 records an effective timed human review exercise with escalation and prevention of routine approval bypass."
+          },
+          "data_approval": {
+            "status": "yes",
+            "reference": "Fictional record 7",
+            "note": "Fictional approval DA-17 covers this purpose, data, tool and recipients, with security controls and the relevant contract review recorded.\nV2 fictional supplement: Fictional DP-07 records current permission for the actual data, purpose, tool and recipients, with applicable security and contract checks accepted."
+          },
+          "rollback": {
+            "status": "yes",
+            "reference": "Fictional record 8",
+            "note": "Fictional recovery RC-18 records a successful safe-stop and manual recovery exercise within the agreed continuity window.\nV2 fictional supplement: Fictional RC-08 records a proportionate safe-stop and manual recovery exercise, plus prevention and containment of irreversible external effects."
+          },
+          "user_training": {
+            "status": "yes",
+            "reference": "Fictional record 9",
+            "note": "Fictional support TR-19 records willing users completing the practice workflow and having access to instructions and support.\nV2 fictional supplement: Fictional UR-09 records willing users successfully performing the workflow, with instructions, support and sustainable maintenance cover."
+          },
+          "monitoring": {
+            "status": "yes",
+            "reference": "Fictional record 10",
+            "note": "Fictional monitoring MO-20 assigns alerts, incident response, maintenance cover and a review date after any model or workflow change.\nV2 fictional supplement: Fictional MO-10 records owned alerts, a practised incident response, review dates and re-evaluation after material changes."
+          }
+        }
+      }
+    },
+    {
+      "source_id": "AD-04",
+      "source_expected_recommendation": "STOP_OR_CONTAIN",
+      "source_sha256": "6301443b722507364a8f84d00c89515027b6b88a617104f59db3a858dc4ebb21",
+      "transformations": [
+        {
+          "key": "quality_review",
+          "from": "yes",
+          "to": "no",
+          "reason": "The original facts must be answered against V2's current acceptable-condition question, not V1's activity-existence question."
+        }
+      ],
+      "material_issue_basis": "The case states an unacceptable unresolved exposure; this is entered explicitly, not inferred by the engine.",
+      "assumptions": [
+        "Unchanged dimensions receive explicitly invented positive V2 supplements, including scope, measured value, full costs and sustainable support. These are not recovered from V1 flags.",
+        "References are fictional V2 record references; they have not been independently verified.",
+        "The supplemental positive facts apply only where they do not replace the specified adverse condition."
+      ],
+      "payload": {
+        "schema_version": 2,
+        "methodology_version": "2.0",
+        "pilot": "Fictional completed review with critical findings",
+        "fictional": true,
+        "details": {
+          "process": "Synthetic process for adversarial case 04",
+          "outcome": "Assess a proposed expansion; all records are invented",
+          "date": "2026-10-26",
+          "reference": "AD-04"
+        },
+        "scope": {
+          "activity": "bounded_internal_pilot",
+          "data": "synthetic_public",
+          "external_effects": "no",
+          "people_impact": "no",
+          "proposed_scale": "Five internal users reviewing synthetic batches",
+          "current_version": "Fictional workflow 2 / model A"
+        },
+        "material_issue": {
+          "status": "unresolved",
+          "summary": "A review activity is mistaken for acceptable findings. Signed quality review explicitly rejects the current results.",
+          "owner": "Fictional responsible sponsor",
+          "action": "contain",
+          "next_step": "Resolution and new evidence meeting the agreed safety threshold. Investigate and determine safe containment before reconsidering expansion."
+        },
+        "evidence": {
+          "business_outcome": {
+            "status": "yes",
+            "reference": "Fictional record 1",
+            "note": "Fictional record BO-11 agrees a reduction in manual handling time of at least 10 minutes per batch without worse serious errors.\nV2 fictional supplement: Fictional BR-01 records measured savings above the agreed threshold, acceptable quality trade-offs and full operating costs within budget."
+          },
+          "baseline": {
+            "status": "yes",
+            "reference": "Fictional record 2",
+            "note": "Fictional baseline BA-12 records time and quality for 50 comparable batches from the same workflow before the trial.\nV2 fictional supplement: Fictional BL-02 records a comparable baseline on the same batches, population and measurement method with sampling limits documented."
+          },
+          "representative_test": {
+            "status": "yes",
+            "reference": "Fictional record 3",
+            "note": "Fictional evaluation EV-13 records normal and exceptional cases sampled from the intended population on the current model version.\nV2 fictional supplement: Fictional RT-03 covers intended users, routine and exceptional cases at the proposed scale on the current workflow and model version."
+          },
+          "quality_review": {
+            "status": "no",
+            "reference": "Fictional record 4",
+            "note": "Fictional review QR-14 is signed and complete; it states that critical errors remain unresolved and wider use is unacceptable."
+          },
+          "workflow_owner": {
+            "status": "yes",
+            "reference": "Fictional record 5",
+            "note": "Fictional ownership OW-15 records acceptance by the operations role with authority, cover and budget to run and stop the workflow.\nV2 fictional supplement: Fictional OW-05 records current role acceptance, stop authority, support budget and a tested continuity handover."
+          },
+          "human_oversight": {
+            "status": "yes",
+            "reference": "Fictional record 6",
+            "note": "Fictional oversight HU-16 records a timed review exercise with corrections, escalation and no observed approval bypass.\nV2 fictional supplement: Fictional HO-06 records an effective timed human review exercise with escalation and prevention of routine approval bypass."
+          },
+          "data_approval": {
+            "status": "yes",
+            "reference": "Fictional record 7",
+            "note": "Fictional approval DA-17 covers this purpose, data, tool and recipients, with security controls and the relevant contract review recorded.\nV2 fictional supplement: Fictional DP-07 records current permission for the actual data, purpose, tool and recipients, with applicable security and contract checks accepted."
+          },
+          "rollback": {
+            "status": "yes",
+            "reference": "Fictional record 8",
+            "note": "Fictional recovery RC-18 records a successful safe-stop and manual recovery exercise within the agreed continuity window.\nV2 fictional supplement: Fictional RC-08 records a proportionate safe-stop and manual recovery exercise, plus prevention and containment of irreversible external effects."
+          },
+          "user_training": {
+            "status": "yes",
+            "reference": "Fictional record 9",
+            "note": "Fictional support TR-19 records willing users completing the practice workflow and having access to instructions and support.\nV2 fictional supplement: Fictional UR-09 records willing users successfully performing the workflow, with instructions, support and sustainable maintenance cover."
+          },
+          "monitoring": {
+            "status": "yes",
+            "reference": "Fictional record 10",
+            "note": "Fictional monitoring MO-20 assigns alerts, incident response, maintenance cover and a review date after any model or workflow change.\nV2 fictional supplement: Fictional MO-10 records owned alerts, a practised incident response, review dates and re-evaluation after material changes."
+          }
+        }
+      }
+    },
+    {
+      "source_id": "AD-05",
+      "source_expected_recommendation": "HOLD_EXPANSION",
+      "source_sha256": "6301443b722507364a8f84d00c89515027b6b88a617104f59db3a858dc4ebb21",
+      "transformations": [
+        {
+          "key": "workflow_owner",
+          "from": "yes",
+          "to": "no",
+          "reason": "The original facts must be answered against V2's current acceptable-condition question, not V1's activity-existence question."
+        }
+      ],
+      "material_issue_basis": "No additional material issue is stipulated; this is an explicit fictional assumption, not a conclusion drawn from a note.",
+      "assumptions": [
+        "Unchanged dimensions receive explicitly invented positive V2 supplements, including scope, measured value, full costs and sustainable support. These are not recovered from V1 flags.",
+        "References are fictional V2 record references; they have not been independently verified.",
+        "The supplemental positive facts apply only where they do not replace the specified adverse condition."
+      ],
+      "payload": {
+        "schema_version": 2,
+        "methodology_version": "2.0",
+        "pilot": "Fictional owner without authority or resources",
+        "fictional": true,
+        "details": {
+          "process": "Synthetic process for adversarial case 05",
+          "outcome": "Assess a proposed expansion; all records are invented",
+          "date": "2026-10-26",
+          "reference": "AD-05"
+        },
+        "scope": {
+          "activity": "bounded_internal_pilot",
+          "data": "synthetic_public",
+          "external_effects": "no",
+          "people_impact": "no",
+          "proposed_scale": "Five internal users reviewing synthetic batches",
+          "current_version": "Fictional workflow 2 / model A"
+        },
+        "material_issue": {
+          "status": "none_identified",
+          "summary": "",
+          "owner": "",
+          "action": "unknown",
+          "next_step": ""
+        },
+        "evidence": {
+          "business_outcome": {
+            "status": "yes",
+            "reference": "Fictional record 1",
+            "note": "Fictional record BO-11 agrees a reduction in manual handling time of at least 10 minutes per batch without worse serious errors.\nV2 fictional supplement: Fictional BR-01 records measured savings above the agreed threshold, acceptable quality trade-offs and full operating costs within budget."
+          },
+          "baseline": {
+            "status": "yes",
+            "reference": "Fictional record 2",
+            "note": "Fictional baseline BA-12 records time and quality for 50 comparable batches from the same workflow before the trial.\nV2 fictional supplement: Fictional BL-02 records a comparable baseline on the same batches, population and measurement method with sampling limits documented."
+          },
+          "representative_test": {
+            "status": "yes",
+            "reference": "Fictional record 3",
+            "note": "Fictional evaluation EV-13 records normal and exceptional cases sampled from the intended population on the current model version.\nV2 fictional supplement: Fictional RT-03 covers intended users, routine and exceptional cases at the proposed scale on the current workflow and model version."
+          },
+          "quality_review": {
+            "status": "yes",
+            "reference": "Fictional record 4",
+            "note": "Fictional quality review QR-14 records error severity and confirms no unresolved material failures for the proposed operating scope.\nV2 fictional supplement: Fictional QR-04 records acceptable quality against agreed severity limits across affected groups, with material findings resolved."
+          },
+          "workflow_owner": {
+            "status": "no",
+            "reference": "Fictional record 5",
+            "note": "Fictional record OW-15 names the coordinator as owner, but the role has no budget, no stop authority and no support resources."
+          },
+          "human_oversight": {
+            "status": "yes",
+            "reference": "Fictional record 6",
+            "note": "Fictional oversight HU-16 records a timed review exercise with corrections, escalation and no observed approval bypass.\nV2 fictional supplement: Fictional HO-06 records an effective timed human review exercise with escalation and prevention of routine approval bypass."
+          },
+          "data_approval": {
+            "status": "yes",
+            "reference": "Fictional record 7",
+            "note": "Fictional approval DA-17 covers this purpose, data, tool and recipients, with security controls and the relevant contract review recorded.\nV2 fictional supplement: Fictional DP-07 records current permission for the actual data, purpose, tool and recipients, with applicable security and contract checks accepted."
+          },
+          "rollback": {
+            "status": "yes",
+            "reference": "Fictional record 8",
+            "note": "Fictional recovery RC-18 records a successful safe-stop and manual recovery exercise within the agreed continuity window.\nV2 fictional supplement: Fictional RC-08 records a proportionate safe-stop and manual recovery exercise, plus prevention and containment of irreversible external effects."
+          },
+          "user_training": {
+            "status": "yes",
+            "reference": "Fictional record 9",
+            "note": "Fictional support TR-19 records willing users completing the practice workflow and having access to instructions and support.\nV2 fictional supplement: Fictional UR-09 records willing users successfully performing the workflow, with instructions, support and sustainable maintenance cover."
+          },
+          "monitoring": {
+            "status": "yes",
+            "reference": "Fictional record 10",
+            "note": "Fictional monitoring MO-20 assigns alerts, incident response, maintenance cover and a review date after any model or workflow change.\nV2 fictional supplement: Fictional MO-10 records owned alerts, a practised incident response, review dates and re-evaluation after material changes."
+          }
+        }
+      }
+    },
+    {
+      "source_id": "AD-06",
+      "source_expected_recommendation": "STOP_OR_CONTAIN",
+      "source_sha256": "6301443b722507364a8f84d00c89515027b6b88a617104f59db3a858dc4ebb21",
+      "transformations": [
+        {
+          "key": "human_oversight",
+          "from": "yes",
+          "to": "no",
+          "reason": "The original facts must be answered against V2's current acceptable-condition question, not V1's activity-existence question."
+        }
+      ],
+      "material_issue_basis": "The case states an unacceptable unresolved exposure; this is entered explicitly, not inferred by the engine.",
+      "assumptions": [
+        "Unchanged dimensions receive explicitly invented positive V2 supplements, including scope, measured value, full costs and sustainable support. These are not recovered from V1 flags.",
+        "References are fictional V2 record references; they have not been independently verified.",
+        "The supplemental positive facts apply only where they do not replace the specified adverse condition."
+      ],
+      "payload": {
+        "schema_version": 2,
+        "methodology_version": "2.0",
+        "pilot": "Fictional approval routinely bypassed",
+        "fictional": true,
+        "details": {
+          "process": "Synthetic process for adversarial case 06",
+          "outcome": "Assess a proposed expansion; all records are invented",
+          "date": "2026-10-26",
+          "reference": "AD-06"
+        },
+        "scope": {
+          "activity": "bounded_internal_pilot",
+          "data": "synthetic_public",
+          "external_effects": "no",
+          "people_impact": "no",
+          "proposed_scale": "Five internal users reviewing synthetic batches",
+          "current_version": "Fictional workflow 2 / model A"
+        },
+        "material_issue": {
+          "status": "unresolved",
+          "summary": "The intended human safety layer is ineffective. Review process is documented; logs show automatic acceptance and bypass.",
+          "owner": "Fictional responsible sponsor",
+          "action": "contain",
+          "next_step": "Effective review demonstrated under actual workload. Investigate and determine safe containment before reconsidering expansion."
+        },
+        "evidence": {
+          "business_outcome": {
+            "status": "yes",
+            "reference": "Fictional record 1",
+            "note": "Fictional record BO-11 agrees a reduction in manual handling time of at least 10 minutes per batch without worse serious errors.\nV2 fictional supplement: Fictional BR-01 records measured savings above the agreed threshold, acceptable quality trade-offs and full operating costs within budget."
+          },
+          "baseline": {
+            "status": "yes",
+            "reference": "Fictional record 2",
+            "note": "Fictional baseline BA-12 records time and quality for 50 comparable batches from the same workflow before the trial.\nV2 fictional supplement: Fictional BL-02 records a comparable baseline on the same batches, population and measurement method with sampling limits documented."
+          },
+          "representative_test": {
+            "status": "yes",
+            "reference": "Fictional record 3",
+            "note": "Fictional evaluation EV-13 records normal and exceptional cases sampled from the intended population on the current model version.\nV2 fictional supplement: Fictional RT-03 covers intended users, routine and exceptional cases at the proposed scale on the current workflow and model version."
+          },
+          "quality_review": {
+            "status": "yes",
+            "reference": "Fictional record 4",
+            "note": "Fictional quality review QR-14 records error severity and confirms no unresolved material failures for the proposed operating scope.\nV2 fictional supplement: Fictional QR-04 records acceptable quality against agreed severity limits across affected groups, with material findings resolved."
+          },
+          "workflow_owner": {
+            "status": "yes",
+            "reference": "Fictional record 5",
+            "note": "Fictional ownership OW-15 records acceptance by the operations role with authority, cover and budget to run and stop the workflow.\nV2 fictional supplement: Fictional OW-05 records current role acceptance, stop authority, support budget and a tested continuity handover."
+          },
+          "human_oversight": {
+            "status": "no",
+            "reference": "Fictional record 6",
+            "note": "Fictional workflow HU-16 has an approval checkbox, but users routinely bypass it and external messages are sent before review."
+          },
+          "data_approval": {
+            "status": "yes",
+            "reference": "Fictional record 7",
+            "note": "Fictional approval DA-17 covers this purpose, data, tool and recipients, with security controls and the relevant contract review recorded.\nV2 fictional supplement: Fictional DP-07 records current permission for the actual data, purpose, tool and recipients, with applicable security and contract checks accepted."
+          },
+          "rollback": {
+            "status": "yes",
+            "reference": "Fictional record 8",
+            "note": "Fictional recovery RC-18 records a successful safe-stop and manual recovery exercise within the agreed continuity window.\nV2 fictional supplement: Fictional RC-08 records a proportionate safe-stop and manual recovery exercise, plus prevention and containment of irreversible external effects."
+          },
+          "user_training": {
+            "status": "yes",
+            "reference": "Fictional record 9",
+            "note": "Fictional support TR-19 records willing users completing the practice workflow and having access to instructions and support.\nV2 fictional supplement: Fictional UR-09 records willing users successfully performing the workflow, with instructions, support and sustainable maintenance cover."
+          },
+          "monitoring": {
+            "status": "yes",
+            "reference": "Fictional record 10",
+            "note": "Fictional monitoring MO-20 assigns alerts, incident response, maintenance cover and a review date after any model or workflow change.\nV2 fictional supplement: Fictional MO-10 records owned alerts, a practised incident response, review dates and re-evaluation after material changes."
+          }
+        }
+      }
+    },
+    {
+      "source_id": "AD-07",
+      "source_expected_recommendation": "HOLD_EXPANSION",
+      "source_sha256": "6301443b722507364a8f84d00c89515027b6b88a617104f59db3a858dc4ebb21",
+      "transformations": [
+        {
+          "key": "data_approval",
+          "from": "yes",
+          "to": "no",
+          "reason": "The original facts must be answered against V2's current acceptable-condition question, not V1's activity-existence question."
+        }
+      ],
+      "material_issue_basis": "No additional material issue is stipulated; this is an explicit fictional assumption, not a conclusion drawn from a note.",
+      "assumptions": [
+        "Unchanged dimensions receive explicitly invented positive V2 supplements, including scope, measured value, full costs and sustainable support. These are not recovered from V1 flags.",
+        "References are fictional V2 record references; they have not been independently verified.",
+        "The supplemental positive facts apply only where they do not replace the specified adverse condition."
+      ],
+      "payload": {
+        "schema_version": 2,
+        "methodology_version": "2.0",
+        "pilot": "Fictional permission for another purpose",
+        "fictional": true,
+        "details": {
+          "process": "Synthetic process for adversarial case 07",
+          "outcome": "Assess a proposed expansion; all records are invented",
+          "date": "2026-10-26",
+          "reference": "AD-07"
+        },
+        "scope": {
+          "activity": "bounded_internal_pilot",
+          "data": "synthetic_public",
+          "external_effects": "no",
+          "people_impact": "no",
+          "proposed_scale": "Five internal users reviewing synthetic batches",
+          "current_version": "Fictional workflow 2 / model A"
+        },
+        "material_issue": {
+          "status": "none_identified",
+          "summary": "",
+          "owner": "",
+          "action": "unknown",
+          "next_step": ""
+        },
+        "evidence": {
+          "business_outcome": {
+            "status": "yes",
+            "reference": "Fictional record 1",
+            "note": "Fictional record BO-11 agrees a reduction in manual handling time of at least 10 minutes per batch without worse serious errors.\nV2 fictional supplement: Fictional BR-01 records measured savings above the agreed threshold, acceptable quality trade-offs and full operating costs within budget."
+          },
+          "baseline": {
+            "status": "yes",
+            "reference": "Fictional record 2",
+            "note": "Fictional baseline BA-12 records time and quality for 50 comparable batches from the same workflow before the trial.\nV2 fictional supplement: Fictional BL-02 records a comparable baseline on the same batches, population and measurement method with sampling limits documented."
+          },
+          "representative_test": {
+            "status": "yes",
+            "reference": "Fictional record 3",
+            "note": "Fictional evaluation EV-13 records normal and exceptional cases sampled from the intended population on the current model version.\nV2 fictional supplement: Fictional RT-03 covers intended users, routine and exceptional cases at the proposed scale on the current workflow and model version."
+          },
+          "quality_review": {
+            "status": "yes",
+            "reference": "Fictional record 4",
+            "note": "Fictional quality review QR-14 records error severity and confirms no unresolved material failures for the proposed operating scope.\nV2 fictional supplement: Fictional QR-04 records acceptable quality against agreed severity limits across affected groups, with material findings resolved."
+          },
+          "workflow_owner": {
+            "status": "yes",
+            "reference": "Fictional record 5",
+            "note": "Fictional ownership OW-15 records acceptance by the operations role with authority, cover and budget to run and stop the workflow.\nV2 fictional supplement: Fictional OW-05 records current role acceptance, stop authority, support budget and a tested continuity handover."
+          },
+          "human_oversight": {
+            "status": "yes",
+            "reference": "Fictional record 6",
+            "note": "Fictional oversight HU-16 records a timed review exercise with corrections, escalation and no observed approval bypass.\nV2 fictional supplement: Fictional HO-06 records an effective timed human review exercise with escalation and prevention of routine approval bypass."
+          },
+          "data_approval": {
+            "status": "no",
+            "reference": "Fictional record 7",
+            "note": "Fictional approval DA-17 permits anonymous research only; the proposed customer decision workflow is outside its purpose and not approved."
+          },
+          "rollback": {
+            "status": "yes",
+            "reference": "Fictional record 8",
+            "note": "Fictional recovery RC-18 records a successful safe-stop and manual recovery exercise within the agreed continuity window.\nV2 fictional supplement: Fictional RC-08 records a proportionate safe-stop and manual recovery exercise, plus prevention and containment of irreversible external effects."
+          },
+          "user_training": {
+            "status": "yes",
+            "reference": "Fictional record 9",
+            "note": "Fictional support TR-19 records willing users completing the practice workflow and having access to instructions and support.\nV2 fictional supplement: Fictional UR-09 records willing users successfully performing the workflow, with instructions, support and sustainable maintenance cover."
+          },
+          "monitoring": {
+            "status": "yes",
+            "reference": "Fictional record 10",
+            "note": "Fictional monitoring MO-20 assigns alerts, incident response, maintenance cover and a review date after any model or workflow change.\nV2 fictional supplement: Fictional MO-10 records owned alerts, a practised incident response, review dates and re-evaluation after material changes."
+          }
+        }
+      }
+    },
+    {
+      "source_id": "AD-08",
+      "source_expected_recommendation": "HOLD_EXPANSION",
+      "source_sha256": "6301443b722507364a8f84d00c89515027b6b88a617104f59db3a858dc4ebb21",
+      "transformations": [
+        {
+          "key": "rollback",
+          "from": "yes",
+          "to": "no",
+          "reason": "The original facts must be answered against V2's current acceptable-condition question, not V1's activity-existence question."
+        }
+      ],
+      "material_issue_basis": "No additional material issue is stipulated; this is an explicit fictional assumption, not a conclusion drawn from a note.",
+      "assumptions": [
+        "Unchanged dimensions receive explicitly invented positive V2 supplements, including scope, measured value, full costs and sustainable support. These are not recovered from V1 flags.",
+        "References are fictional V2 record references; they have not been independently verified.",
+        "The supplemental positive facts apply only where they do not replace the specified adverse condition."
+      ],
+      "payload": {
+        "schema_version": 2,
+        "methodology_version": "2.0",
+        "pilot": "Fictional untested recovery plan",
+        "fictional": true,
+        "details": {
+          "process": "Synthetic process for adversarial case 08",
+          "outcome": "Assess a proposed expansion; all records are invented",
+          "date": "2026-10-26",
+          "reference": "AD-08"
+        },
+        "scope": {
+          "activity": "bounded_internal_pilot",
+          "data": "synthetic_public",
+          "external_effects": "no",
+          "people_impact": "no",
+          "proposed_scale": "Five internal users reviewing synthetic batches",
+          "current_version": "Fictional workflow 2 / model A"
+        },
+        "material_issue": {
+          "status": "none_identified",
+          "summary": "",
+          "owner": "",
+          "action": "unknown",
+          "next_step": ""
+        },
+        "evidence": {
+          "business_outcome": {
+            "status": "yes",
+            "reference": "Fictional record 1",
+            "note": "Fictional record BO-11 agrees a reduction in manual handling time of at least 10 minutes per batch without worse serious errors.\nV2 fictional supplement: Fictional BR-01 records measured savings above the agreed threshold, acceptable quality trade-offs and full operating costs within budget."
+          },
+          "baseline": {
+            "status": "yes",
+            "reference": "Fictional record 2",
+            "note": "Fictional baseline BA-12 records time and quality for 50 comparable batches from the same workflow before the trial.\nV2 fictional supplement: Fictional BL-02 records a comparable baseline on the same batches, population and measurement method with sampling limits documented."
+          },
+          "representative_test": {
+            "status": "yes",
+            "reference": "Fictional record 3",
+            "note": "Fictional evaluation EV-13 records normal and exceptional cases sampled from the intended population on the current model version.\nV2 fictional supplement: Fictional RT-03 covers intended users, routine and exceptional cases at the proposed scale on the current workflow and model version."
+          },
+          "quality_review": {
+            "status": "yes",
+            "reference": "Fictional record 4",
+            "note": "Fictional quality review QR-14 records error severity and confirms no unresolved material failures for the proposed operating scope.\nV2 fictional supplement: Fictional QR-04 records acceptable quality against agreed severity limits across affected groups, with material findings resolved."
+          },
+          "workflow_owner": {
+            "status": "yes",
+            "reference": "Fictional record 5",
+            "note": "Fictional ownership OW-15 records acceptance by the operations role with authority, cover and budget to run and stop the workflow.\nV2 fictional supplement: Fictional OW-05 records current role acceptance, stop authority, support budget and a tested continuity handover."
+          },
+          "human_oversight": {
+            "status": "yes",
+            "reference": "Fictional record 6",
+            "note": "Fictional oversight HU-16 records a timed review exercise with corrections, escalation and no observed approval bypass.\nV2 fictional supplement: Fictional HO-06 records an effective timed human review exercise with escalation and prevention of routine approval bypass."
+          },
+          "data_approval": {
+            "status": "yes",
+            "reference": "Fictional record 7",
+            "note": "Fictional approval DA-17 covers this purpose, data, tool and recipients, with security controls and the relevant contract review recorded.\nV2 fictional supplement: Fictional DP-07 records current permission for the actual data, purpose, tool and recipients, with applicable security and contract checks accepted."
+          },
+          "rollback": {
+            "status": "no",
+            "reference": "Fictional record 8",
+            "note": "Fictional plan RC-18 describes a rollback procedure for a business-critical workflow, but the control has never been tested."
+          },
+          "user_training": {
+            "status": "yes",
+            "reference": "Fictional record 9",
+            "note": "Fictional support TR-19 records willing users completing the practice workflow and having access to instructions and support.\nV2 fictional supplement: Fictional UR-09 records willing users successfully performing the workflow, with instructions, support and sustainable maintenance cover."
+          },
+          "monitoring": {
+            "status": "yes",
+            "reference": "Fictional record 10",
+            "note": "Fictional monitoring MO-20 assigns alerts, incident response, maintenance cover and a review date after any model or workflow change.\nV2 fictional supplement: Fictional MO-10 records owned alerts, a practised incident response, review dates and re-evaluation after material changes."
+          }
+        }
+      }
+    },
+    {
+      "source_id": "AD-09",
+      "source_expected_recommendation": "HOLD_EXPANSION",
+      "source_sha256": "6301443b722507364a8f84d00c89515027b6b88a617104f59db3a858dc4ebb21",
+      "transformations": [
+        {
+          "key": "representative_test",
+          "from": "yes",
+          "to": "no",
+          "reason": "The original facts must be answered against V2's current acceptable-condition question, not V1's activity-existence question."
+        }
+      ],
+      "material_issue_basis": "No additional material issue is stipulated; this is an explicit fictional assumption, not a conclusion drawn from a note.",
+      "assumptions": [
+        "Unchanged dimensions receive explicitly invented positive V2 supplements, including scope, measured value, full costs and sustainable support. These are not recovered from V1 flags.",
+        "References are fictional V2 record references; they have not been independently verified.",
+        "The supplemental positive facts apply only where they do not replace the specified adverse condition."
+      ],
+      "payload": {
+        "schema_version": 2,
+        "methodology_version": "2.0",
+        "pilot": "Fictional cherry-picked success sample",
+        "fictional": true,
+        "details": {
+          "process": "Synthetic process for adversarial case 09",
+          "outcome": "Assess a proposed expansion; all records are invented",
+          "date": "2026-10-26",
+          "reference": "AD-09"
+        },
+        "scope": {
+          "activity": "bounded_internal_pilot",
+          "data": "synthetic_public",
+          "external_effects": "no",
+          "people_impact": "no",
+          "proposed_scale": "Five internal users reviewing synthetic batches",
+          "current_version": "Fictional workflow 2 / model A"
+        },
+        "material_issue": {
+          "status": "none_identified",
+          "summary": "",
+          "owner": "",
+          "action": "unknown",
+          "next_step": ""
+        },
+        "evidence": {
+          "business_outcome": {
+            "status": "yes",
+            "reference": "Fictional record 1",
+            "note": "Fictional record BO-11 agrees a reduction in manual handling time of at least 10 minutes per batch without worse serious errors.\nV2 fictional supplement: Fictional BR-01 records measured savings above the agreed threshold, acceptable quality trade-offs and full operating costs within budget."
+          },
+          "baseline": {
+            "status": "yes",
+            "reference": "Fictional record 2",
+            "note": "Fictional baseline BA-12 records time and quality for 50 comparable batches from the same workflow before the trial.\nV2 fictional supplement: Fictional BL-02 records a comparable baseline on the same batches, population and measurement method with sampling limits documented."
+          },
+          "representative_test": {
+            "status": "no",
+            "reference": "Fictional record 3",
+            "note": "Fictional test EV-13 contains only cherry-picked examples selected for likely success; difficult and ordinary random cases were excluded."
+          },
+          "quality_review": {
+            "status": "yes",
+            "reference": "Fictional record 4",
+            "note": "Fictional quality review QR-14 records error severity and confirms no unresolved material failures for the proposed operating scope.\nV2 fictional supplement: Fictional QR-04 records acceptable quality against agreed severity limits across affected groups, with material findings resolved."
+          },
+          "workflow_owner": {
+            "status": "yes",
+            "reference": "Fictional record 5",
+            "note": "Fictional ownership OW-15 records acceptance by the operations role with authority, cover and budget to run and stop the workflow.\nV2 fictional supplement: Fictional OW-05 records current role acceptance, stop authority, support budget and a tested continuity handover."
+          },
+          "human_oversight": {
+            "status": "yes",
+            "reference": "Fictional record 6",
+            "note": "Fictional oversight HU-16 records a timed review exercise with corrections, escalation and no observed approval bypass.\nV2 fictional supplement: Fictional HO-06 records an effective timed human review exercise with escalation and prevention of routine approval bypass."
+          },
+          "data_approval": {
+            "status": "yes",
+            "reference": "Fictional record 7",
+            "note": "Fictional approval DA-17 covers this purpose, data, tool and recipients, with security controls and the relevant contract review recorded.\nV2 fictional supplement: Fictional DP-07 records current permission for the actual data, purpose, tool and recipients, with applicable security and contract checks accepted."
+          },
+          "rollback": {
+            "status": "yes",
+            "reference": "Fictional record 8",
+            "note": "Fictional recovery RC-18 records a successful safe-stop and manual recovery exercise within the agreed continuity window.\nV2 fictional supplement: Fictional RC-08 records a proportionate safe-stop and manual recovery exercise, plus prevention and containment of irreversible external effects."
+          },
+          "user_training": {
+            "status": "yes",
+            "reference": "Fictional record 9",
+            "note": "Fictional support TR-19 records willing users completing the practice workflow and having access to instructions and support.\nV2 fictional supplement: Fictional UR-09 records willing users successfully performing the workflow, with instructions, support and sustainable maintenance cover."
+          },
+          "monitoring": {
+            "status": "yes",
+            "reference": "Fictional record 10",
+            "note": "Fictional monitoring MO-20 assigns alerts, incident response, maintenance cover and a review date after any model or workflow change.\nV2 fictional supplement: Fictional MO-10 records owned alerts, a practised incident response, review dates and re-evaluation after material changes."
+          }
+        }
+      }
+    },
+    {
+      "source_id": "AD-10",
+      "source_expected_recommendation": "HOLD_EXPANSION",
+      "source_sha256": "6301443b722507364a8f84d00c89515027b6b88a617104f59db3a858dc4ebb21",
+      "transformations": [
+        {
+          "key": "user_training",
+          "from": "yes",
+          "to": "no",
+          "reason": "The original facts must be answered against V2's current acceptable-condition question, not V1's activity-existence question."
+        }
+      ],
+      "material_issue_basis": "No additional material issue is stipulated; this is an explicit fictional assumption, not a conclusion drawn from a note.",
+      "assumptions": [
+        "Unchanged dimensions receive explicitly invented positive V2 supplements, including scope, measured value, full costs and sustainable support. These are not recovered from V1 flags.",
+        "References are fictional V2 record references; they have not been independently verified.",
+        "The supplemental positive facts apply only where they do not replace the specified adverse condition."
+      ],
+      "payload": {
+        "schema_version": 2,
+        "methodology_version": "2.0",
+        "pilot": "Fictional users refuse adoption",
+        "fictional": true,
+        "details": {
+          "process": "Synthetic process for adversarial case 10",
+          "outcome": "Assess a proposed expansion; all records are invented",
+          "date": "2026-10-26",
+          "reference": "AD-10"
+        },
+        "scope": {
+          "activity": "bounded_internal_pilot",
+          "data": "synthetic_public",
+          "external_effects": "no",
+          "people_impact": "no",
+          "proposed_scale": "Five internal users reviewing synthetic batches",
+          "current_version": "Fictional workflow 2 / model A"
+        },
+        "material_issue": {
+          "status": "none_identified",
+          "summary": "",
+          "owner": "",
+          "action": "unknown",
+          "next_step": ""
+        },
+        "evidence": {
+          "business_outcome": {
+            "status": "yes",
+            "reference": "Fictional record 1",
+            "note": "Fictional record BO-11 agrees a reduction in manual handling time of at least 10 minutes per batch without worse serious errors.\nV2 fictional supplement: Fictional BR-01 records measured savings above the agreed threshold, acceptable quality trade-offs and full operating costs within budget."
+          },
+          "baseline": {
+            "status": "yes",
+            "reference": "Fictional record 2",
+            "note": "Fictional baseline BA-12 records time and quality for 50 comparable batches from the same workflow before the trial.\nV2 fictional supplement: Fictional BL-02 records a comparable baseline on the same batches, population and measurement method with sampling limits documented."
+          },
+          "representative_test": {
+            "status": "yes",
+            "reference": "Fictional record 3",
+            "note": "Fictional evaluation EV-13 records normal and exceptional cases sampled from the intended population on the current model version.\nV2 fictional supplement: Fictional RT-03 covers intended users, routine and exceptional cases at the proposed scale on the current workflow and model version."
+          },
+          "quality_review": {
+            "status": "yes",
+            "reference": "Fictional record 4",
+            "note": "Fictional quality review QR-14 records error severity and confirms no unresolved material failures for the proposed operating scope.\nV2 fictional supplement: Fictional QR-04 records acceptable quality against agreed severity limits across affected groups, with material findings resolved."
+          },
+          "workflow_owner": {
+            "status": "yes",
+            "reference": "Fictional record 5",
+            "note": "Fictional ownership OW-15 records acceptance by the operations role with authority, cover and budget to run and stop the workflow.\nV2 fictional supplement: Fictional OW-05 records current role acceptance, stop authority, support budget and a tested continuity handover."
+          },
+          "human_oversight": {
+            "status": "yes",
+            "reference": "Fictional record 6",
+            "note": "Fictional oversight HU-16 records a timed review exercise with corrections, escalation and no observed approval bypass.\nV2 fictional supplement: Fictional HO-06 records an effective timed human review exercise with escalation and prevention of routine approval bypass."
+          },
+          "data_approval": {
+            "status": "yes",
+            "reference": "Fictional record 7",
+            "note": "Fictional approval DA-17 covers this purpose, data, tool and recipients, with security controls and the relevant contract review recorded.\nV2 fictional supplement: Fictional DP-07 records current permission for the actual data, purpose, tool and recipients, with applicable security and contract checks accepted."
+          },
+          "rollback": {
+            "status": "yes",
+            "reference": "Fictional record 8",
+            "note": "Fictional recovery RC-18 records a successful safe-stop and manual recovery exercise within the agreed continuity window.\nV2 fictional supplement: Fictional RC-08 records a proportionate safe-stop and manual recovery exercise, plus prevention and containment of irreversible external effects."
+          },
+          "user_training": {
+            "status": "no",
+            "reference": "Fictional record 9",
+            "note": "Fictional training TR-19 was delivered with support, but all intended users refuse to adopt the extra review steps and work around them."
+          },
+          "monitoring": {
+            "status": "yes",
+            "reference": "Fictional record 10",
+            "note": "Fictional monitoring MO-20 assigns alerts, incident response, maintenance cover and a review date after any model or workflow change.\nV2 fictional supplement: Fictional MO-10 records owned alerts, a practised incident response, review dates and re-evaluation after material changes."
+          }
+        }
+      }
+    },
+    {
+      "source_id": "AD-11",
+      "source_expected_recommendation": "HOLD_EXPANSION",
+      "source_sha256": "6301443b722507364a8f84d00c89515027b6b88a617104f59db3a858dc4ebb21",
+      "transformations": [
+        {
+          "key": "workflow_owner",
+          "from": "yes",
+          "to": "no",
+          "reason": "The original facts must be answered against V2's current acceptable-condition question, not V1's activity-existence question."
+        },
+        {
+          "key": "user_training",
+          "from": "yes",
+          "to": "no",
+          "reason": "The original facts must be answered against V2's current acceptable-condition question, not V1's activity-existence question."
+        }
+      ],
+      "material_issue_basis": "No additional material issue is stipulated; this is an explicit fictional assumption, not a conclusion drawn from a note.",
+      "assumptions": [
+        "Unchanged dimensions receive explicitly invented positive V2 supplements, including scope, measured value, full costs and sustainable support. These are not recovered from V1 flags.",
+        "References are fictional V2 record references; they have not been independently verified.",
+        "The supplemental positive facts apply only where they do not replace the specified adverse condition."
+      ],
+      "payload": {
+        "schema_version": 2,
+        "methodology_version": "2.0",
+        "pilot": "Fictional departing sole maintainer",
+        "fictional": true,
+        "details": {
+          "process": "Synthetic process for adversarial case 11",
+          "outcome": "Assess a proposed expansion; all records are invented",
+          "date": "2026-10-26",
+          "reference": "AD-11"
+        },
+        "scope": {
+          "activity": "bounded_internal_pilot",
+          "data": "synthetic_public",
+          "external_effects": "no",
+          "people_impact": "no",
+          "proposed_scale": "Five internal users reviewing synthetic batches",
+          "current_version": "Fictional workflow 2 / model A"
+        },
+        "material_issue": {
+          "status": "none_identified",
+          "summary": "",
+          "owner": "",
+          "action": "unknown",
+          "next_step": ""
+        },
+        "evidence": {
+          "business_outcome": {
+            "status": "yes",
+            "reference": "Fictional record 1",
+            "note": "Fictional record BO-11 agrees a reduction in manual handling time of at least 10 minutes per batch without worse serious errors.\nV2 fictional supplement: Fictional BR-01 records measured savings above the agreed threshold, acceptable quality trade-offs and full operating costs within budget."
+          },
+          "baseline": {
+            "status": "yes",
+            "reference": "Fictional record 2",
+            "note": "Fictional baseline BA-12 records time and quality for 50 comparable batches from the same workflow before the trial.\nV2 fictional supplement: Fictional BL-02 records a comparable baseline on the same batches, population and measurement method with sampling limits documented."
+          },
+          "representative_test": {
+            "status": "yes",
+            "reference": "Fictional record 3",
+            "note": "Fictional evaluation EV-13 records normal and exceptional cases sampled from the intended population on the current model version.\nV2 fictional supplement: Fictional RT-03 covers intended users, routine and exceptional cases at the proposed scale on the current workflow and model version."
+          },
+          "quality_review": {
+            "status": "yes",
+            "reference": "Fictional record 4",
+            "note": "Fictional quality review QR-14 records error severity and confirms no unresolved material failures for the proposed operating scope.\nV2 fictional supplement: Fictional QR-04 records acceptable quality against agreed severity limits across affected groups, with material findings resolved."
+          },
+          "workflow_owner": {
+            "status": "no",
+            "reference": "Fictional record 5",
+            "note": "Fictional OW-15 names an accountable manager with authority, but the sole technical maintainer leaves next week with no handover or replacement."
+          },
+          "human_oversight": {
+            "status": "yes",
+            "reference": "Fictional record 6",
+            "note": "Fictional oversight HU-16 records a timed review exercise with corrections, escalation and no observed approval bypass.\nV2 fictional supplement: Fictional HO-06 records an effective timed human review exercise with escalation and prevention of routine approval bypass."
+          },
+          "data_approval": {
+            "status": "yes",
+            "reference": "Fictional record 7",
+            "note": "Fictional approval DA-17 covers this purpose, data, tool and recipients, with security controls and the relevant contract review recorded.\nV2 fictional supplement: Fictional DP-07 records current permission for the actual data, purpose, tool and recipients, with applicable security and contract checks accepted."
+          },
+          "rollback": {
+            "status": "yes",
+            "reference": "Fictional record 8",
+            "note": "Fictional recovery RC-18 records a successful safe-stop and manual recovery exercise within the agreed continuity window.\nV2 fictional supplement: Fictional RC-08 records a proportionate safe-stop and manual recovery exercise, plus prevention and containment of irreversible external effects."
+          },
+          "user_training": {
+            "status": "no",
+            "reference": "Fictional record 9",
+            "note": "Fictional support TR-19 records willing users completing the practice workflow and having access to instructions and support."
+          },
+          "monitoring": {
+            "status": "yes",
+            "reference": "Fictional record 10",
+            "note": "Fictional monitoring MO-20 assigns alerts, incident response, maintenance cover and a review date after any model or workflow change.\nV2 fictional supplement: Fictional MO-10 records owned alerts, a practised incident response, review dates and re-evaluation after material changes."
+          }
+        }
+      }
+    },
+    {
+      "source_id": "AD-12",
+      "source_expected_recommendation": "HOLD_EXPANSION",
+      "source_sha256": "6301443b722507364a8f84d00c89515027b6b88a617104f59db3a858dc4ebb21",
+      "transformations": [
+        {
+          "key": "business_outcome",
+          "from": "yes",
+          "to": "no",
+          "reason": "The original facts must be answered against V2's current acceptable-condition question, not V1's activity-existence question."
+        }
+      ],
+      "material_issue_basis": "No additional material issue is stipulated; this is an explicit fictional assumption, not a conclusion drawn from a note.",
+      "assumptions": [
+        "Unchanged dimensions receive explicitly invented positive V2 supplements, including scope, measured value, full costs and sustainable support. These are not recovered from V1 flags.",
+        "References are fictional V2 record references; they have not been independently verified.",
+        "The supplemental positive facts apply only where they do not replace the specified adverse condition."
+      ],
+      "payload": {
+        "schema_version": 2,
+        "methodology_version": "2.0",
+        "pilot": "Fictional unsustainable operating cost",
+        "fictional": true,
+        "details": {
+          "process": "Synthetic process for adversarial case 12",
+          "outcome": "Assess a proposed expansion; all records are invented",
+          "date": "2026-10-26",
+          "reference": "AD-12"
+        },
+        "scope": {
+          "activity": "bounded_internal_pilot",
+          "data": "synthetic_public",
+          "external_effects": "no",
+          "people_impact": "no",
+          "proposed_scale": "Five internal users reviewing synthetic batches",
+          "current_version": "Fictional workflow 2 / model A"
+        },
+        "material_issue": {
+          "status": "none_identified",
+          "summary": "",
+          "owner": "",
+          "action": "unknown",
+          "next_step": ""
+        },
+        "evidence": {
+          "business_outcome": {
+            "status": "no",
+            "reference": "Fictional record 1",
+            "note": "Fictional BO-11 shows a time saving that meets the task threshold, but full review, licence and support costs exceed the approved operating budget."
+          },
+          "baseline": {
+            "status": "yes",
+            "reference": "Fictional record 2",
+            "note": "Fictional baseline BA-12 records time and quality for 50 comparable batches from the same workflow before the trial.\nV2 fictional supplement: Fictional BL-02 records a comparable baseline on the same batches, population and measurement method with sampling limits documented."
+          },
+          "representative_test": {
+            "status": "yes",
+            "reference": "Fictional record 3",
+            "note": "Fictional evaluation EV-13 records normal and exceptional cases sampled from the intended population on the current model version.\nV2 fictional supplement: Fictional RT-03 covers intended users, routine and exceptional cases at the proposed scale on the current workflow and model version."
+          },
+          "quality_review": {
+            "status": "yes",
+            "reference": "Fictional record 4",
+            "note": "Fictional quality review QR-14 records error severity and confirms no unresolved material failures for the proposed operating scope.\nV2 fictional supplement: Fictional QR-04 records acceptable quality against agreed severity limits across affected groups, with material findings resolved."
+          },
+          "workflow_owner": {
+            "status": "yes",
+            "reference": "Fictional record 5",
+            "note": "Fictional ownership OW-15 records acceptance by the operations role with authority, cover and budget to run and stop the workflow.\nV2 fictional supplement: Fictional OW-05 records current role acceptance, stop authority, support budget and a tested continuity handover."
+          },
+          "human_oversight": {
+            "status": "yes",
+            "reference": "Fictional record 6",
+            "note": "Fictional oversight HU-16 records a timed review exercise with corrections, escalation and no observed approval bypass.\nV2 fictional supplement: Fictional HO-06 records an effective timed human review exercise with escalation and prevention of routine approval bypass."
+          },
+          "data_approval": {
+            "status": "yes",
+            "reference": "Fictional record 7",
+            "note": "Fictional approval DA-17 covers this purpose, data, tool and recipients, with security controls and the relevant contract review recorded.\nV2 fictional supplement: Fictional DP-07 records current permission for the actual data, purpose, tool and recipients, with applicable security and contract checks accepted."
+          },
+          "rollback": {
+            "status": "yes",
+            "reference": "Fictional record 8",
+            "note": "Fictional recovery RC-18 records a successful safe-stop and manual recovery exercise within the agreed continuity window.\nV2 fictional supplement: Fictional RC-08 records a proportionate safe-stop and manual recovery exercise, plus prevention and containment of irreversible external effects."
+          },
+          "user_training": {
+            "status": "yes",
+            "reference": "Fictional record 9",
+            "note": "Fictional support TR-19 records willing users completing the practice workflow and having access to instructions and support.\nV2 fictional supplement: Fictional UR-09 records willing users successfully performing the workflow, with instructions, support and sustainable maintenance cover."
+          },
+          "monitoring": {
+            "status": "yes",
+            "reference": "Fictional record 10",
+            "note": "Fictional monitoring MO-20 assigns alerts, incident response, maintenance cover and a review date after any model or workflow change.\nV2 fictional supplement: Fictional MO-10 records owned alerts, a practised incident response, review dates and re-evaluation after material changes."
+          }
+        }
+      }
+    },
+    {
+      "source_id": "AD-13",
+      "source_expected_recommendation": "HOLD_EXPANSION",
+      "source_sha256": "6301443b722507364a8f84d00c89515027b6b88a617104f59db3a858dc4ebb21",
+      "transformations": [
+        {
+          "key": "representative_test",
+          "from": "yes",
+          "to": "no",
+          "reason": "The original facts must be answered against V2's current acceptable-condition question, not V1's activity-existence question."
+        }
+      ],
+      "material_issue_basis": "No additional material issue is stipulated; this is an explicit fictional assumption, not a conclusion drawn from a note.",
+      "assumptions": [
+        "Unchanged dimensions receive explicitly invented positive V2 supplements, including scope, measured value, full costs and sustainable support. These are not recovered from V1 flags.",
+        "References are fictional V2 record references; they have not been independently verified.",
+        "The supplemental positive facts apply only where they do not replace the specified adverse condition."
+      ],
+      "payload": {
+        "schema_version": 2,
+        "methodology_version": "2.0",
+        "pilot": "Fictional evaluation invalidated by model update",
+        "fictional": true,
+        "details": {
+          "process": "Synthetic process for adversarial case 13",
+          "outcome": "Assess a proposed expansion; all records are invented",
+          "date": "2026-10-26",
+          "reference": "AD-13"
+        },
+        "scope": {
+          "activity": "bounded_internal_pilot",
+          "data": "synthetic_public",
+          "external_effects": "no",
+          "people_impact": "no",
+          "proposed_scale": "Five internal users reviewing synthetic batches",
+          "current_version": "Fictional workflow 2 / model A"
+        },
+        "material_issue": {
+          "status": "none_identified",
+          "summary": "",
+          "owner": "",
+          "action": "unknown",
+          "next_step": ""
+        },
+        "evidence": {
+          "business_outcome": {
+            "status": "yes",
+            "reference": "Fictional record 1",
+            "note": "Fictional record BO-11 agrees a reduction in manual handling time of at least 10 minutes per batch without worse serious errors.\nV2 fictional supplement: Fictional BR-01 records measured savings above the agreed threshold, acceptable quality trade-offs and full operating costs within budget."
+          },
+          "baseline": {
+            "status": "yes",
+            "reference": "Fictional record 2",
+            "note": "Fictional baseline BA-12 records time and quality for 50 comparable batches from the same workflow before the trial.\nV2 fictional supplement: Fictional BL-02 records a comparable baseline on the same batches, population and measurement method with sampling limits documented."
+          },
+          "representative_test": {
+            "status": "no",
+            "reference": "Fictional record 3",
+            "note": "Fictional EV-13 passed on model version one; the provider changed the model yesterday and version two has not been evaluated."
+          },
+          "quality_review": {
+            "status": "yes",
+            "reference": "Fictional record 4",
+            "note": "Fictional quality review QR-14 records error severity and confirms no unresolved material failures for the proposed operating scope.\nV2 fictional supplement: Fictional QR-04 records acceptable quality against agreed severity limits across affected groups, with material findings resolved."
+          },
+          "workflow_owner": {
+            "status": "yes",
+            "reference": "Fictional record 5",
+            "note": "Fictional ownership OW-15 records acceptance by the operations role with authority, cover and budget to run and stop the workflow.\nV2 fictional supplement: Fictional OW-05 records current role acceptance, stop authority, support budget and a tested continuity handover."
+          },
+          "human_oversight": {
+            "status": "yes",
+            "reference": "Fictional record 6",
+            "note": "Fictional oversight HU-16 records a timed review exercise with corrections, escalation and no observed approval bypass.\nV2 fictional supplement: Fictional HO-06 records an effective timed human review exercise with escalation and prevention of routine approval bypass."
+          },
+          "data_approval": {
+            "status": "yes",
+            "reference": "Fictional record 7",
+            "note": "Fictional approval DA-17 covers this purpose, data, tool and recipients, with security controls and the relevant contract review recorded.\nV2 fictional supplement: Fictional DP-07 records current permission for the actual data, purpose, tool and recipients, with applicable security and contract checks accepted."
+          },
+          "rollback": {
+            "status": "yes",
+            "reference": "Fictional record 8",
+            "note": "Fictional recovery RC-18 records a successful safe-stop and manual recovery exercise within the agreed continuity window.\nV2 fictional supplement: Fictional RC-08 records a proportionate safe-stop and manual recovery exercise, plus prevention and containment of irreversible external effects."
+          },
+          "user_training": {
+            "status": "yes",
+            "reference": "Fictional record 9",
+            "note": "Fictional support TR-19 records willing users completing the practice workflow and having access to instructions and support.\nV2 fictional supplement: Fictional UR-09 records willing users successfully performing the workflow, with instructions, support and sustainable maintenance cover."
+          },
+          "monitoring": {
+            "status": "yes",
+            "reference": "Fictional record 10",
+            "note": "Fictional monitoring MO-20 assigns alerts, incident response, maintenance cover and a review date after any model or workflow change.\nV2 fictional supplement: Fictional MO-10 records owned alerts, a practised incident response, review dates and re-evaluation after material changes."
+          }
+        }
+      }
+    },
+    {
+      "source_id": "AD-14",
+      "source_expected_recommendation": "STOP_OR_CONTAIN",
+      "source_sha256": "6301443b722507364a8f84d00c89515027b6b88a617104f59db3a858dc4ebb21",
+      "transformations": [
+        {
+          "key": "quality_review",
+          "from": "yes",
+          "to": "no",
+          "reason": "The original facts must be answered against V2's current acceptable-condition question, not V1's activity-existence question."
+        }
+      ],
+      "material_issue_basis": "The case states an unacceptable unresolved exposure; this is entered explicitly, not inferred by the engine.",
+      "assumptions": [
+        "Unchanged dimensions receive explicitly invented positive V2 supplements, including scope, measured value, full costs and sustainable support. These are not recovered from V1 flags.",
+        "References are fictional V2 record references; they have not been independently verified.",
+        "The supplemental positive facts apply only where they do not replace the specified adverse condition."
+      ],
+      "payload": {
+        "schema_version": 2,
+        "methodology_version": "2.0",
+        "pilot": "Fictional routine success and exception failures",
+        "fictional": true,
+        "details": {
+          "process": "Synthetic process for adversarial case 14",
+          "outcome": "Assess a proposed expansion; all records are invented",
+          "date": "2026-10-26",
+          "reference": "AD-14"
+        },
+        "scope": {
+          "activity": "bounded_internal_pilot",
+          "data": "synthetic_public",
+          "external_effects": "no",
+          "people_impact": "no",
+          "proposed_scale": "Five internal users reviewing synthetic batches",
+          "current_version": "Fictional workflow 2 / model A"
+        },
+        "material_issue": {
+          "status": "unresolved",
+          "summary": "Serious failures persist in predictable exceptions. Routine cases pass; the actual exception route produces unsafe output.",
+          "owner": "Fictional responsible sponsor",
+          "action": "contain",
+          "next_step": "A safe exception path with representative retesting. Investigate and determine safe containment before reconsidering expansion."
+        },
+        "evidence": {
+          "business_outcome": {
+            "status": "yes",
+            "reference": "Fictional record 1",
+            "note": "Fictional record BO-11 agrees a reduction in manual handling time of at least 10 minutes per batch without worse serious errors.\nV2 fictional supplement: Fictional BR-01 records measured savings above the agreed threshold, acceptable quality trade-offs and full operating costs within budget."
+          },
+          "baseline": {
+            "status": "yes",
+            "reference": "Fictional record 2",
+            "note": "Fictional baseline BA-12 records time and quality for 50 comparable batches from the same workflow before the trial.\nV2 fictional supplement: Fictional BL-02 records a comparable baseline on the same batches, population and measurement method with sampling limits documented."
+          },
+          "representative_test": {
+            "status": "yes",
+            "reference": "Fictional record 3",
+            "note": "Fictional EV-13 records that routine cases work, but known exception cases fail dangerously and still enter the live workflow.\nV2 fictional supplement: Fictional RT-03 covers intended users, routine and exceptional cases at the proposed scale on the current workflow and model version."
+          },
+          "quality_review": {
+            "status": "no",
+            "reference": "Fictional record 4",
+            "note": "Fictional quality review QR-14 records error severity and confirms no unresolved material failures for the proposed operating scope."
+          },
+          "workflow_owner": {
+            "status": "yes",
+            "reference": "Fictional record 5",
+            "note": "Fictional ownership OW-15 records acceptance by the operations role with authority, cover and budget to run and stop the workflow.\nV2 fictional supplement: Fictional OW-05 records current role acceptance, stop authority, support budget and a tested continuity handover."
+          },
+          "human_oversight": {
+            "status": "yes",
+            "reference": "Fictional record 6",
+            "note": "Fictional oversight HU-16 records a timed review exercise with corrections, escalation and no observed approval bypass.\nV2 fictional supplement: Fictional HO-06 records an effective timed human review exercise with escalation and prevention of routine approval bypass."
+          },
+          "data_approval": {
+            "status": "yes",
+            "reference": "Fictional record 7",
+            "note": "Fictional approval DA-17 covers this purpose, data, tool and recipients, with security controls and the relevant contract review recorded.\nV2 fictional supplement: Fictional DP-07 records current permission for the actual data, purpose, tool and recipients, with applicable security and contract checks accepted."
+          },
+          "rollback": {
+            "status": "yes",
+            "reference": "Fictional record 8",
+            "note": "Fictional recovery RC-18 records a successful safe-stop and manual recovery exercise within the agreed continuity window.\nV2 fictional supplement: Fictional RC-08 records a proportionate safe-stop and manual recovery exercise, plus prevention and containment of irreversible external effects."
+          },
+          "user_training": {
+            "status": "yes",
+            "reference": "Fictional record 9",
+            "note": "Fictional support TR-19 records willing users completing the practice workflow and having access to instructions and support.\nV2 fictional supplement: Fictional UR-09 records willing users successfully performing the workflow, with instructions, support and sustainable maintenance cover."
+          },
+          "monitoring": {
+            "status": "yes",
+            "reference": "Fictional record 10",
+            "note": "Fictional monitoring MO-20 assigns alerts, incident response, maintenance cover and a review date after any model or workflow change.\nV2 fictional supplement: Fictional MO-10 records owned alerts, a practised incident response, review dates and re-evaluation after material changes."
+          }
+        }
+      }
+    },
+    {
+      "source_id": "AD-15",
+      "source_expected_recommendation": "STOP_OR_CONTAIN",
+      "source_sha256": "6301443b722507364a8f84d00c89515027b6b88a617104f59db3a858dc4ebb21",
+      "transformations": [
+        {
+          "key": "human_oversight",
+          "from": "yes",
+          "to": "no",
+          "reason": "The original facts must be answered against V2's current acceptable-condition question, not V1's activity-existence question."
+        },
+        {
+          "key": "rollback",
+          "from": "yes",
+          "to": "no",
+          "reason": "The original facts must be answered against V2's current acceptable-condition question, not V1's activity-existence question."
+        }
+      ],
+      "material_issue_basis": "The case states an unacceptable unresolved exposure; this is entered explicitly, not inferred by the engine.",
+      "assumptions": [
+        "Unchanged dimensions receive explicitly invented positive V2 supplements, including scope, measured value, full costs and sustainable support. These are not recovered from V1 flags.",
+        "References are fictional V2 record references; they have not been independently verified.",
+        "The supplemental positive facts apply only where they do not replace the specified adverse condition."
+      ],
+      "payload": {
+        "schema_version": 2,
+        "methodology_version": "2.0",
+        "pilot": "Fictional low-risk drafting sends wrong information",
+        "fictional": true,
+        "details": {
+          "process": "Synthetic process for adversarial case 15",
+          "outcome": "Assess a proposed expansion; all records are invented",
+          "date": "2026-10-26",
+          "reference": "AD-15"
+        },
+        "scope": {
+          "activity": "bounded_internal_pilot",
+          "data": "synthetic_public",
+          "external_effects": "no",
+          "people_impact": "no",
+          "proposed_scale": "Five internal users reviewing synthetic batches",
+          "current_version": "Fictional workflow 2 / model A"
+        },
+        "material_issue": {
+          "status": "unresolved",
+          "summary": "An apparently clerical task creates irreversible external effects. Incorrect dates and commitments have been emailed automatically.",
+          "owner": "Fictional responsible sponsor",
+          "action": "contain",
+          "next_step": "A real send boundary and effective checking before external action. Investigate and determine safe containment before reconsidering expansion."
+        },
+        "evidence": {
+          "business_outcome": {
+            "status": "yes",
+            "reference": "Fictional record 1",
+            "note": "Fictional record BO-11 agrees a reduction in manual handling time of at least 10 minutes per batch without worse serious errors.\nV2 fictional supplement: Fictional BR-01 records measured savings above the agreed threshold, acceptable quality trade-offs and full operating costs within budget."
+          },
+          "baseline": {
+            "status": "yes",
+            "reference": "Fictional record 2",
+            "note": "Fictional baseline BA-12 records time and quality for 50 comparable batches from the same workflow before the trial.\nV2 fictional supplement: Fictional BL-02 records a comparable baseline on the same batches, population and measurement method with sampling limits documented."
+          },
+          "representative_test": {
+            "status": "yes",
+            "reference": "Fictional record 3",
+            "note": "Fictional evaluation EV-13 records normal and exceptional cases sampled from the intended population on the current model version.\nV2 fictional supplement: Fictional RT-03 covers intended users, routine and exceptional cases at the proposed scale on the current workflow and model version."
+          },
+          "quality_review": {
+            "status": "yes",
+            "reference": "Fictional record 4",
+            "note": "Fictional quality review QR-14 records error severity and confirms no unresolved material failures for the proposed operating scope.\nV2 fictional supplement: Fictional QR-04 records acceptable quality against agreed severity limits across affected groups, with material findings resolved."
+          },
+          "workflow_owner": {
+            "status": "yes",
+            "reference": "Fictional record 5",
+            "note": "Fictional ownership OW-15 records acceptance by the operations role with authority, cover and budget to run and stop the workflow.\nV2 fictional supplement: Fictional OW-05 records current role acceptance, stop authority, support budget and a tested continuity handover."
+          },
+          "human_oversight": {
+            "status": "no",
+            "reference": "Fictional record 6",
+            "note": "Fictional HU-16 asks people to review draft notices, but the send step occurs automatically first and wrong commitments have already gone out."
+          },
+          "data_approval": {
+            "status": "yes",
+            "reference": "Fictional record 7",
+            "note": "Fictional approval DA-17 covers this purpose, data, tool and recipients, with security controls and the relevant contract review recorded.\nV2 fictional supplement: Fictional DP-07 records current permission for the actual data, purpose, tool and recipients, with applicable security and contract checks accepted."
+          },
+          "rollback": {
+            "status": "no",
+            "reference": "Fictional record 8",
+            "note": "Fictional RC-18 can restore the drafting system but cannot recall notices already delivered to external recipients."
+          },
+          "user_training": {
+            "status": "yes",
+            "reference": "Fictional record 9",
+            "note": "Fictional support TR-19 records willing users completing the practice workflow and having access to instructions and support.\nV2 fictional supplement: Fictional UR-09 records willing users successfully performing the workflow, with instructions, support and sustainable maintenance cover."
+          },
+          "monitoring": {
+            "status": "yes",
+            "reference": "Fictional record 10",
+            "note": "Fictional monitoring MO-20 assigns alerts, incident response, maintenance cover and a review date after any model or workflow change.\nV2 fictional supplement: Fictional MO-10 records owned alerts, a practised incident response, review dates and re-evaluation after material changes."
+          }
+        }
+      }
+    },
+    {
+      "source_id": "AD-16",
+      "source_expected_recommendation": "HOLD_EXPANSION",
+      "source_sha256": "6301443b722507364a8f84d00c89515027b6b88a617104f59db3a858dc4ebb21",
+      "transformations": [
+        {
+          "key": "monitoring",
+          "from": "yes",
+          "to": "no",
+          "reason": "The original facts must be answered against V2's current acceptable-condition question, not V1's activity-existence question."
+        }
+      ],
+      "material_issue_basis": "No additional material issue is stipulated; this is an explicit fictional assumption, not a conclusion drawn from a note.",
+      "assumptions": [
+        "Unchanged dimensions receive explicitly invented positive V2 supplements, including scope, measured value, full costs and sustainable support. These are not recovered from V1 flags.",
+        "References are fictional V2 record references; they have not been independently verified.",
+        "The supplemental positive facts apply only where they do not replace the specified adverse condition."
+      ],
+      "payload": {
+        "schema_version": 2,
+        "methodology_version": "2.0",
+        "pilot": "Fictional critical workflow without incident response",
+        "fictional": true,
+        "details": {
+          "process": "Synthetic process for adversarial case 16",
+          "outcome": "Assess a proposed expansion; all records are invented",
+          "date": "2026-10-26",
+          "reference": "AD-16"
+        },
+        "scope": {
+          "activity": "bounded_internal_pilot",
+          "data": "synthetic_public",
+          "external_effects": "no",
+          "people_impact": "no",
+          "proposed_scale": "Five internal users reviewing synthetic batches",
+          "current_version": "Fictional workflow 2 / model A"
+        },
+        "material_issue": {
+          "status": "none_identified",
+          "summary": "",
+          "owner": "",
+          "action": "unknown",
+          "next_step": ""
+        },
+        "evidence": {
+          "business_outcome": {
+            "status": "yes",
+            "reference": "Fictional record 1",
+            "note": "Fictional record BO-11 agrees a reduction in manual handling time of at least 10 minutes per batch without worse serious errors.\nV2 fictional supplement: Fictional BR-01 records measured savings above the agreed threshold, acceptable quality trade-offs and full operating costs within budget."
+          },
+          "baseline": {
+            "status": "yes",
+            "reference": "Fictional record 2",
+            "note": "Fictional baseline BA-12 records time and quality for 50 comparable batches from the same workflow before the trial.\nV2 fictional supplement: Fictional BL-02 records a comparable baseline on the same batches, population and measurement method with sampling limits documented."
+          },
+          "representative_test": {
+            "status": "yes",
+            "reference": "Fictional record 3",
+            "note": "Fictional evaluation EV-13 records normal and exceptional cases sampled from the intended population on the current model version.\nV2 fictional supplement: Fictional RT-03 covers intended users, routine and exceptional cases at the proposed scale on the current workflow and model version."
+          },
+          "quality_review": {
+            "status": "yes",
+            "reference": "Fictional record 4",
+            "note": "Fictional quality review QR-14 records error severity and confirms no unresolved material failures for the proposed operating scope.\nV2 fictional supplement: Fictional QR-04 records acceptable quality against agreed severity limits across affected groups, with material findings resolved."
+          },
+          "workflow_owner": {
+            "status": "yes",
+            "reference": "Fictional record 5",
+            "note": "Fictional ownership OW-15 records acceptance by the operations role with authority, cover and budget to run and stop the workflow.\nV2 fictional supplement: Fictional OW-05 records current role acceptance, stop authority, support budget and a tested continuity handover."
+          },
+          "human_oversight": {
+            "status": "yes",
+            "reference": "Fictional record 6",
+            "note": "Fictional oversight HU-16 records a timed review exercise with corrections, escalation and no observed approval bypass.\nV2 fictional supplement: Fictional HO-06 records an effective timed human review exercise with escalation and prevention of routine approval bypass."
+          },
+          "data_approval": {
+            "status": "yes",
+            "reference": "Fictional record 7",
+            "note": "Fictional approval DA-17 covers this purpose, data, tool and recipients, with security controls and the relevant contract review recorded.\nV2 fictional supplement: Fictional DP-07 records current permission for the actual data, purpose, tool and recipients, with applicable security and contract checks accepted."
+          },
+          "rollback": {
+            "status": "yes",
+            "reference": "Fictional record 8",
+            "note": "Fictional recovery RC-18 records a successful safe-stop and manual recovery exercise within the agreed continuity window.\nV2 fictional supplement: Fictional RC-08 records a proportionate safe-stop and manual recovery exercise, plus prevention and containment of irreversible external effects."
+          },
+          "user_training": {
+            "status": "yes",
+            "reference": "Fictional record 9",
+            "note": "Fictional support TR-19 records willing users completing the practice workflow and having access to instructions and support.\nV2 fictional supplement: Fictional UR-09 records willing users successfully performing the workflow, with instructions, support and sustainable maintenance cover."
+          },
+          "monitoring": {
+            "status": "no",
+            "reference": "Fictional record 10",
+            "note": "Fictional MO-20 monitors a business-critical process weekly, but there is no incident response, alert owner or out-of-hours continuity route."
+          }
+        }
+      }
+    },
+    {
+      "source_id": "AD-17",
+      "source_expected_recommendation": "STOP_OR_CONTAIN",
+      "source_sha256": "6301443b722507364a8f84d00c89515027b6b88a617104f59db3a858dc4ebb21",
+      "transformations": [
+        {
+          "key": "data_approval",
+          "from": "yes",
+          "to": "no",
+          "reason": "The original facts must be answered against V2's current acceptable-condition question, not V1's activity-existence question."
+        }
+      ],
+      "material_issue_basis": "The case states an unacceptable unresolved exposure; this is entered explicitly, not inferred by the engine.",
+      "assumptions": [
+        "Unchanged dimensions receive explicitly invented positive V2 supplements, including scope, measured value, full costs and sustainable support. These are not recovered from V1 flags.",
+        "References are fictional V2 record references; they have not been independently verified.",
+        "The supplemental positive facts apply only where they do not replace the specified adverse condition."
+      ],
+      "payload": {
+        "schema_version": 2,
+        "methodology_version": "2.0",
+        "pilot": "Fictional sensitive data in a generally approved tool",
+        "fictional": true,
+        "details": {
+          "process": "Synthetic process for adversarial case 17",
+          "outcome": "Assess a proposed expansion; all records are invented",
+          "date": "2026-10-26",
+          "reference": "AD-17"
+        },
+        "scope": {
+          "activity": "bounded_internal_pilot",
+          "data": "synthetic_public",
+          "external_effects": "no",
+          "people_impact": "no",
+          "proposed_scale": "Five internal users reviewing synthetic batches",
+          "current_version": "Fictional workflow 2 / model A"
+        },
+        "material_issue": {
+          "status": "unresolved",
+          "summary": "General tool approval conceals a data-scope restriction. Tool is approved for public content; this case uses sensitive records.",
+          "owner": "Fictional responsible sponsor",
+          "action": "contain",
+          "next_step": "Approval and safeguards for the actual information being used. Investigate and determine safe containment before reconsidering expansion."
+        },
+        "evidence": {
+          "business_outcome": {
+            "status": "yes",
+            "reference": "Fictional record 1",
+            "note": "Fictional record BO-11 agrees a reduction in manual handling time of at least 10 minutes per batch without worse serious errors.\nV2 fictional supplement: Fictional BR-01 records measured savings above the agreed threshold, acceptable quality trade-offs and full operating costs within budget."
+          },
+          "baseline": {
+            "status": "yes",
+            "reference": "Fictional record 2",
+            "note": "Fictional baseline BA-12 records time and quality for 50 comparable batches from the same workflow before the trial.\nV2 fictional supplement: Fictional BL-02 records a comparable baseline on the same batches, population and measurement method with sampling limits documented."
+          },
+          "representative_test": {
+            "status": "yes",
+            "reference": "Fictional record 3",
+            "note": "Fictional evaluation EV-13 records normal and exceptional cases sampled from the intended population on the current model version.\nV2 fictional supplement: Fictional RT-03 covers intended users, routine and exceptional cases at the proposed scale on the current workflow and model version."
+          },
+          "quality_review": {
+            "status": "yes",
+            "reference": "Fictional record 4",
+            "note": "Fictional quality review QR-14 records error severity and confirms no unresolved material failures for the proposed operating scope.\nV2 fictional supplement: Fictional QR-04 records acceptable quality against agreed severity limits across affected groups, with material findings resolved."
+          },
+          "workflow_owner": {
+            "status": "yes",
+            "reference": "Fictional record 5",
+            "note": "Fictional ownership OW-15 records acceptance by the operations role with authority, cover and budget to run and stop the workflow.\nV2 fictional supplement: Fictional OW-05 records current role acceptance, stop authority, support budget and a tested continuity handover."
+          },
+          "human_oversight": {
+            "status": "yes",
+            "reference": "Fictional record 6",
+            "note": "Fictional oversight HU-16 records a timed review exercise with corrections, escalation and no observed approval bypass.\nV2 fictional supplement: Fictional HO-06 records an effective timed human review exercise with escalation and prevention of routine approval bypass."
+          },
+          "data_approval": {
+            "status": "no",
+            "reference": "Fictional record 7",
+            "note": "Fictional DA-17 approves the tool for public text only; this pilot is processing sensitive records for which permission has not been obtained."
+          },
+          "rollback": {
+            "status": "yes",
+            "reference": "Fictional record 8",
+            "note": "Fictional recovery RC-18 records a successful safe-stop and manual recovery exercise within the agreed continuity window.\nV2 fictional supplement: Fictional RC-08 records a proportionate safe-stop and manual recovery exercise, plus prevention and containment of irreversible external effects."
+          },
+          "user_training": {
+            "status": "yes",
+            "reference": "Fictional record 9",
+            "note": "Fictional support TR-19 records willing users completing the practice workflow and having access to instructions and support.\nV2 fictional supplement: Fictional UR-09 records willing users successfully performing the workflow, with instructions, support and sustainable maintenance cover."
+          },
+          "monitoring": {
+            "status": "yes",
+            "reference": "Fictional record 10",
+            "note": "Fictional monitoring MO-20 assigns alerts, incident response, maintenance cover and a review date after any model or workflow change.\nV2 fictional supplement: Fictional MO-10 records owned alerts, a practised incident response, review dates and re-evaluation after material changes."
+          }
+        }
+      }
+    },
+    {
+      "source_id": "AD-18",
+      "source_expected_recommendation": "HOLD_EXPANSION",
+      "source_sha256": "6301443b722507364a8f84d00c89515027b6b88a617104f59db3a858dc4ebb21",
+      "transformations": [
+        {
+          "key": "business_outcome",
+          "from": "yes",
+          "to": "no",
+          "reason": "The original facts must be answered against V2's current acceptable-condition question, not V1's activity-existence question."
+        }
+      ],
+      "material_issue_basis": "No additional material issue is stipulated; this is an explicit fictional assumption, not a conclusion drawn from a note.",
+      "assumptions": [
+        "Unchanged dimensions receive explicitly invented positive V2 supplements, including scope, measured value, full costs and sustainable support. These are not recovered from V1 flags.",
+        "References are fictional V2 record references; they have not been independently verified.",
+        "The supplemental positive facts apply only where they do not replace the specified adverse condition."
+      ],
+      "payload": {
+        "schema_version": 2,
+        "methodology_version": "2.0",
+        "pilot": "Fictional stakeholders disagree about success",
+        "fictional": true,
+        "details": {
+          "process": "Synthetic process for adversarial case 18",
+          "outcome": "Assess a proposed expansion; all records are invented",
+          "date": "2026-10-26",
+          "reference": "AD-18"
+        },
+        "scope": {
+          "activity": "bounded_internal_pilot",
+          "data": "synthetic_public",
+          "external_effects": "no",
+          "people_impact": "no",
+          "proposed_scale": "Five internal users reviewing synthetic batches",
+          "current_version": "Fictional workflow 2 / model A"
+        },
+        "material_issue": {
+          "status": "none_identified",
+          "summary": "",
+          "owner": "",
+          "action": "unknown",
+          "next_step": ""
+        },
+        "evidence": {
+          "business_outcome": {
+            "status": "no",
+            "reference": "Fictional record 1",
+            "note": "Fictional BO-11 meets the operations time target, but the service sponsor rejects the quality trade-off and no shared success threshold is agreed."
+          },
+          "baseline": {
+            "status": "yes",
+            "reference": "Fictional record 2",
+            "note": "Fictional baseline BA-12 records time and quality for 50 comparable batches from the same workflow before the trial.\nV2 fictional supplement: Fictional BL-02 records a comparable baseline on the same batches, population and measurement method with sampling limits documented."
+          },
+          "representative_test": {
+            "status": "yes",
+            "reference": "Fictional record 3",
+            "note": "Fictional evaluation EV-13 records normal and exceptional cases sampled from the intended population on the current model version.\nV2 fictional supplement: Fictional RT-03 covers intended users, routine and exceptional cases at the proposed scale on the current workflow and model version."
+          },
+          "quality_review": {
+            "status": "yes",
+            "reference": "Fictional record 4",
+            "note": "Fictional quality review QR-14 records error severity and confirms no unresolved material failures for the proposed operating scope.\nV2 fictional supplement: Fictional QR-04 records acceptable quality against agreed severity limits across affected groups, with material findings resolved."
+          },
+          "workflow_owner": {
+            "status": "yes",
+            "reference": "Fictional record 5",
+            "note": "Fictional ownership OW-15 records acceptance by the operations role with authority, cover and budget to run and stop the workflow.\nV2 fictional supplement: Fictional OW-05 records current role acceptance, stop authority, support budget and a tested continuity handover."
+          },
+          "human_oversight": {
+            "status": "yes",
+            "reference": "Fictional record 6",
+            "note": "Fictional oversight HU-16 records a timed review exercise with corrections, escalation and no observed approval bypass.\nV2 fictional supplement: Fictional HO-06 records an effective timed human review exercise with escalation and prevention of routine approval bypass."
+          },
+          "data_approval": {
+            "status": "yes",
+            "reference": "Fictional record 7",
+            "note": "Fictional approval DA-17 covers this purpose, data, tool and recipients, with security controls and the relevant contract review recorded.\nV2 fictional supplement: Fictional DP-07 records current permission for the actual data, purpose, tool and recipients, with applicable security and contract checks accepted."
+          },
+          "rollback": {
+            "status": "yes",
+            "reference": "Fictional record 8",
+            "note": "Fictional recovery RC-18 records a successful safe-stop and manual recovery exercise within the agreed continuity window.\nV2 fictional supplement: Fictional RC-08 records a proportionate safe-stop and manual recovery exercise, plus prevention and containment of irreversible external effects."
+          },
+          "user_training": {
+            "status": "yes",
+            "reference": "Fictional record 9",
+            "note": "Fictional support TR-19 records willing users completing the practice workflow and having access to instructions and support.\nV2 fictional supplement: Fictional UR-09 records willing users successfully performing the workflow, with instructions, support and sustainable maintenance cover."
+          },
+          "monitoring": {
+            "status": "yes",
+            "reference": "Fictional record 10",
+            "note": "Fictional monitoring MO-20 assigns alerts, incident response, maintenance cover and a review date after any model or workflow change.\nV2 fictional supplement: Fictional MO-10 records owned alerts, a practised incident response, review dates and re-evaluation after material changes."
+          }
+        }
+      }
+    },
+    {
+      "source_id": "AD-19",
+      "source_expected_recommendation": "HOLD_EXPANSION",
+      "source_sha256": "6301443b722507364a8f84d00c89515027b6b88a617104f59db3a858dc4ebb21",
+      "transformations": [],
+      "material_issue_basis": "No additional material issue is stipulated; this is an explicit fictional assumption, not a conclusion drawn from a note.",
+      "assumptions": [
+        "Unchanged dimensions receive explicitly invented positive V2 supplements, including scope, measured value, full costs and sustainable support. These are not recovered from V1 flags.",
+        "References are fictional V2 record references; they have not been independently verified.",
+        "The fabricated record remains undiscoverable: the preparer falsely claims acceptable conditions and no issue. Expected residual limitation."
+      ],
+      "payload": {
+        "schema_version": 2,
+        "methodology_version": "2.0",
+        "pilot": "Fictional plausible but misleading completeness",
+        "fictional": true,
+        "details": {
+          "process": "Synthetic process for adversarial case 19",
+          "outcome": "Assess a proposed expansion; all records are invented",
+          "date": "2026-10-26",
+          "reference": "AD-19"
+        },
+        "scope": {
+          "activity": "bounded_internal_pilot",
+          "data": "synthetic_public",
+          "external_effects": "no",
+          "people_impact": "no",
+          "proposed_scale": "Five internal users reviewing synthetic batches",
+          "current_version": "Fictional workflow 2 / model A"
+        },
+        "material_issue": {
+          "status": "none_identified",
+          "summary": "",
+          "owner": "",
+          "action": "unknown",
+          "next_step": ""
+        },
+        "evidence": {
+          "business_outcome": {
+            "status": "yes",
+            "reference": "Fictional record 1",
+            "note": "Fictional record BO-11 agrees a reduction in manual handling time of at least 10 minutes per batch without worse serious errors.\nV2 fictional supplement: Fictional BR-01 records measured savings above the agreed threshold, acceptable quality trade-offs and full operating costs within budget."
+          },
+          "baseline": {
+            "status": "yes",
+            "reference": "Fictional record 2",
+            "note": "Fictional baseline BA-12 records time and quality for 50 comparable batches from the same workflow before the trial.\nV2 fictional supplement: Fictional BL-02 records a comparable baseline on the same batches, population and measurement method with sampling limits documented."
+          },
+          "representative_test": {
+            "status": "yes",
+            "reference": "Fictional record 3",
+            "note": "Fictional evaluation EV-13 records normal and exceptional cases sampled from the intended population on the current model version.\nV2 fictional supplement: Fictional RT-03 covers intended users, routine and exceptional cases at the proposed scale on the current workflow and model version."
+          },
+          "quality_review": {
+            "status": "yes",
+            "reference": "Fictional record 4",
+            "note": "Fictional quality review QR-14 records error severity and confirms no unresolved material failures for the proposed operating scope.\nV2 fictional supplement: Fictional QR-04 records acceptable quality against agreed severity limits across affected groups, with material findings resolved."
+          },
+          "workflow_owner": {
+            "status": "yes",
+            "reference": "Fictional record 5",
+            "note": "Fictional ownership OW-15 records acceptance by the operations role with authority, cover and budget to run and stop the workflow.\nV2 fictional supplement: Fictional OW-05 records current role acceptance, stop authority, support budget and a tested continuity handover."
+          },
+          "human_oversight": {
+            "status": "yes",
+            "reference": "Fictional record 6",
+            "note": "Fictional oversight HU-16 records a timed review exercise with corrections, escalation and no observed approval bypass.\nV2 fictional supplement: Fictional HO-06 records an effective timed human review exercise with escalation and prevention of routine approval bypass."
+          },
+          "data_approval": {
+            "status": "yes",
+            "reference": "Fictional record 7",
+            "note": "Fictional approval DA-17 covers this purpose, data, tool and recipients, with security controls and the relevant contract review recorded.\nV2 fictional supplement: Fictional DP-07 records current permission for the actual data, purpose, tool and recipients, with applicable security and contract checks accepted."
+          },
+          "rollback": {
+            "status": "yes",
+            "reference": "Fictional record 8",
+            "note": "Fictional recovery RC-18 records a successful safe-stop and manual recovery exercise within the agreed continuity window.\nV2 fictional supplement: Fictional RC-08 records a proportionate safe-stop and manual recovery exercise, plus prevention and containment of irreversible external effects."
+          },
+          "user_training": {
+            "status": "yes",
+            "reference": "Fictional record 9",
+            "note": "Fictional support TR-19 records willing users completing the practice workflow and having access to instructions and support.\nV2 fictional supplement: Fictional UR-09 records willing users successfully performing the workflow, with instructions, support and sustainable maintenance cover."
+          },
+          "monitoring": {
+            "status": "yes",
+            "reference": "Fictional record 10",
+            "note": "Fictional monitoring MO-20 assigns alerts, incident response, maintenance cover and a review date after any model or workflow change.\nV2 fictional supplement: Fictional MO-10 records owned alerts, a practised incident response, review dates and re-evaluation after material changes."
+          }
+        }
+      }
+    },
+    {
+      "source_id": "AD-20",
+      "source_expected_recommendation": "PROPORTIONATE_EXPERIMENT",
+      "source_sha256": "6301443b722507364a8f84d00c89515027b6b88a617104f59db3a858dc4ebb21",
+      "transformations": [
+        {
+          "key": "quality_review",
+          "from": "unknown",
+          "to": "unknown",
+          "reason": "The original facts must be answered against V2's current acceptable-condition question, not V1's activity-existence question."
+        }
+      ],
+      "material_issue_basis": "No additional material issue is stipulated; this is an explicit fictional assumption, not a conclusion drawn from a note.",
+      "assumptions": [
+        "Unchanged dimensions receive explicitly invented positive V2 supplements, including scope, measured value, full costs and sustainable support. These are not recovered from V1 flags.",
+        "References are fictional V2 record references; they have not been independently verified.",
+        "The original case states synthetic offline use, no real effects and discarded outputs; applicable local tool/data permission is explicitly assumed in the separate V2 record."
+      ],
+      "payload": {
+        "schema_version": 2,
+        "methodology_version": "2.0",
+        "pilot": "Fictional harmless offline experiment",
+        "fictional": true,
+        "details": {
+          "process": "Synthetic process for adversarial case 20",
+          "outcome": "Assess a proposed expansion; all records are invented",
+          "date": "2026-10-26",
+          "reference": "AD-20"
+        },
+        "scope": {
+          "activity": "offline_experiment",
+          "data": "synthetic_public",
+          "external_effects": "no",
+          "people_impact": "no",
+          "proposed_scale": "One offline synthetic-data learner; outputs discarded",
+          "current_version": "Fictional learning exercise"
+        },
+        "material_issue": {
+          "status": "none_identified",
+          "summary": "",
+          "owner": "",
+          "action": "unknown",
+          "next_step": ""
+        },
+        "evidence": {
+          "business_outcome": {
+            "status": "yes",
+            "reference": "Fictional record 1",
+            "note": "Fictional record BO-11 agrees a reduction in manual handling time of at least 10 minutes per batch without worse serious errors.\nV2 fictional supplement: Fictional BR-01 records measured savings above the agreed threshold, acceptable quality trade-offs and full operating costs within budget."
+          },
+          "baseline": {
+            "status": "yes",
+            "reference": "Fictional record 2",
+            "note": "Fictional baseline BA-12 records time and quality for 50 comparable batches from the same workflow before the trial.\nV2 fictional supplement: Fictional BL-02 records a comparable baseline on the same batches, population and measurement method with sampling limits documented."
+          },
+          "representative_test": {
+            "status": "yes",
+            "reference": "Fictional record 3",
+            "note": "Fictional evaluation EV-13 records normal and exceptional cases sampled from the intended population on the current model version.\nV2 fictional supplement: Fictional RT-03 covers intended users, routine and exceptional cases at the proposed scale on the current workflow and model version."
+          },
+          "quality_review": {
+            "status": "unknown",
+            "reference": "Fictional record 4",
+            "note": "Fictional offline synthetic-data exercise has no independent named quality reviewer and produces no operational output."
+          },
+          "workflow_owner": {
+            "status": "yes",
+            "reference": "Fictional record 5",
+            "note": "Fictional ownership OW-15 records acceptance by the operations role with authority, cover and budget to run and stop the workflow.\nV2 fictional supplement: Fictional OW-05 records current role acceptance, stop authority, support budget and a tested continuity handover."
+          },
+          "human_oversight": {
+            "status": "yes",
+            "reference": "Fictional record 6",
+            "note": "Fictional oversight HU-16 records a timed review exercise with corrections, escalation and no observed approval bypass.\nV2 fictional supplement: Fictional HO-06 records an effective timed human review exercise with escalation and prevention of routine approval bypass."
+          },
+          "data_approval": {
+            "status": "yes",
+            "reference": "Fictional record 7",
+            "note": "Fictional approval DA-17 covers this purpose, data, tool and recipients, with security controls and the relevant contract review recorded.\nV2 fictional supplement: Fictional DP-07 records current permission for the actual data, purpose, tool and recipients, with applicable security and contract checks accepted."
+          },
+          "rollback": {
+            "status": "yes",
+            "reference": "Fictional record 8",
+            "note": "Fictional recovery RC-18 records a successful safe-stop and manual recovery exercise within the agreed continuity window.\nV2 fictional supplement: Fictional RC-08 records a proportionate safe-stop and manual recovery exercise, plus prevention and containment of irreversible external effects."
+          },
+          "user_training": {
+            "status": "yes",
+            "reference": "Fictional record 9",
+            "note": "Fictional support TR-19 records willing users completing the practice workflow and having access to instructions and support.\nV2 fictional supplement: Fictional UR-09 records willing users successfully performing the workflow, with instructions, support and sustainable maintenance cover."
+          },
+          "monitoring": {
+            "status": "yes",
+            "reference": "Fictional record 10",
+            "note": "Fictional monitoring MO-20 assigns alerts, incident response, maintenance cover and a review date after any model or workflow change.\nV2 fictional supplement: Fictional MO-10 records owned alerts, a practised incident response, review dates and re-evaluation after material changes."
+          }
+        }
+      }
+    },
+    {
+      "source_id": "AD-21",
+      "source_expected_recommendation": "HOLD_EXPANSION",
+      "source_sha256": "6301443b722507364a8f84d00c89515027b6b88a617104f59db3a858dc4ebb21",
+      "transformations": [
+        {
+          "key": "data_approval",
+          "from": "no",
+          "to": "no",
+          "reason": "The original facts must be answered against V2's current acceptable-condition question, not V1's activity-existence question."
+        }
+      ],
+      "material_issue_basis": "No additional material issue is stipulated; this is an explicit fictional assumption, not a conclusion drawn from a note.",
+      "assumptions": [
+        "Unchanged dimensions receive explicitly invented positive V2 supplements, including scope, measured value, full costs and sustainable support. These are not recovered from V1 flags.",
+        "References are fictional V2 record references; they have not been independently verified.",
+        "The supplemental positive facts apply only where they do not replace the specified adverse condition."
+      ],
+      "payload": {
+        "schema_version": 2,
+        "methodology_version": "2.0",
+        "pilot": "Fictional clear missing data permission",
+        "fictional": true,
+        "details": {
+          "process": "Synthetic process for adversarial case 21",
+          "outcome": "Assess a proposed expansion; all records are invented",
+          "date": "2026-10-26",
+          "reference": "AD-21"
+        },
+        "scope": {
+          "activity": "bounded_internal_pilot",
+          "data": "synthetic_public",
+          "external_effects": "no",
+          "people_impact": "no",
+          "proposed_scale": "Five internal users reviewing synthetic batches",
+          "current_version": "Fictional workflow 2 / model A"
+        },
+        "material_issue": {
+          "status": "none_identified",
+          "summary": "",
+          "owner": "",
+          "action": "unknown",
+          "next_step": ""
+        },
+        "evidence": {
+          "business_outcome": {
+            "status": "yes",
+            "reference": "Fictional record 1",
+            "note": "Fictional record BO-11 agrees a reduction in manual handling time of at least 10 minutes per batch without worse serious errors.\nV2 fictional supplement: Fictional BR-01 records measured savings above the agreed threshold, acceptable quality trade-offs and full operating costs within budget."
+          },
+          "baseline": {
+            "status": "yes",
+            "reference": "Fictional record 2",
+            "note": "Fictional baseline BA-12 records time and quality for 50 comparable batches from the same workflow before the trial.\nV2 fictional supplement: Fictional BL-02 records a comparable baseline on the same batches, population and measurement method with sampling limits documented."
+          },
+          "representative_test": {
+            "status": "yes",
+            "reference": "Fictional record 3",
+            "note": "Fictional evaluation EV-13 records normal and exceptional cases sampled from the intended population on the current model version.\nV2 fictional supplement: Fictional RT-03 covers intended users, routine and exceptional cases at the proposed scale on the current workflow and model version."
+          },
+          "quality_review": {
+            "status": "yes",
+            "reference": "Fictional record 4",
+            "note": "Fictional quality review QR-14 records error severity and confirms no unresolved material failures for the proposed operating scope.\nV2 fictional supplement: Fictional QR-04 records acceptable quality against agreed severity limits across affected groups, with material findings resolved."
+          },
+          "workflow_owner": {
+            "status": "yes",
+            "reference": "Fictional record 5",
+            "note": "Fictional ownership OW-15 records acceptance by the operations role with authority, cover and budget to run and stop the workflow.\nV2 fictional supplement: Fictional OW-05 records current role acceptance, stop authority, support budget and a tested continuity handover."
+          },
+          "human_oversight": {
+            "status": "yes",
+            "reference": "Fictional record 6",
+            "note": "Fictional oversight HU-16 records a timed review exercise with corrections, escalation and no observed approval bypass.\nV2 fictional supplement: Fictional HO-06 records an effective timed human review exercise with escalation and prevention of routine approval bypass."
+          },
+          "data_approval": {
+            "status": "no",
+            "reference": "Fictional record 7",
+            "note": "Fictional DA-17 records that this data use has no approval and the pilot remains offline."
+          },
+          "rollback": {
+            "status": "yes",
+            "reference": "Fictional record 8",
+            "note": "Fictional recovery RC-18 records a successful safe-stop and manual recovery exercise within the agreed continuity window.\nV2 fictional supplement: Fictional RC-08 records a proportionate safe-stop and manual recovery exercise, plus prevention and containment of irreversible external effects."
+          },
+          "user_training": {
+            "status": "yes",
+            "reference": "Fictional record 9",
+            "note": "Fictional support TR-19 records willing users completing the practice workflow and having access to instructions and support.\nV2 fictional supplement: Fictional UR-09 records willing users successfully performing the workflow, with instructions, support and sustainable maintenance cover."
+          },
+          "monitoring": {
+            "status": "yes",
+            "reference": "Fictional record 10",
+            "note": "Fictional monitoring MO-20 assigns alerts, incident response, maintenance cover and a review date after any model or workflow change.\nV2 fictional supplement: Fictional MO-10 records owned alerts, a practised incident response, review dates and re-evaluation after material changes."
+          }
+        }
+      }
+    },
+    {
+      "source_id": "AD-22",
+      "source_expected_recommendation": "HUMAN_REVIEW",
+      "source_sha256": "6301443b722507364a8f84d00c89515027b6b88a617104f59db3a858dc4ebb21",
+      "transformations": [],
+      "material_issue_basis": "No additional material issue is stipulated; this is an explicit fictional assumption, not a conclusion drawn from a note.",
+      "assumptions": [
+        "Unchanged dimensions receive explicitly invented positive V2 supplements, including scope, measured value, full costs and sustainable support. These are not recovered from V1 flags.",
+        "References are fictional V2 record references; they have not been independently verified.",
+        "The supplemental positive facts apply only where they do not replace the specified adverse condition."
+      ],
+      "payload": {
+        "schema_version": 2,
+        "methodology_version": "2.0",
+        "pilot": "Fictional bounded complete business case",
+        "fictional": true,
+        "details": {
+          "process": "Synthetic process for adversarial case 22",
+          "outcome": "Assess a proposed expansion; all records are invented",
+          "date": "2026-10-26",
+          "reference": "AD-22"
+        },
+        "scope": {
+          "activity": "bounded_internal_pilot",
+          "data": "synthetic_public",
+          "external_effects": "no",
+          "people_impact": "no",
+          "proposed_scale": "Five internal users reviewing synthetic batches",
+          "current_version": "Fictional workflow 2 / model A"
+        },
+        "material_issue": {
+          "status": "none_identified",
+          "summary": "",
+          "owner": "",
+          "action": "unknown",
+          "next_step": ""
+        },
+        "evidence": {
+          "business_outcome": {
+            "status": "yes",
+            "reference": "Fictional record 1",
+            "note": "Fictional record BO-11 agrees a reduction in manual handling time of at least 10 minutes per batch without worse serious errors.\nV2 fictional supplement: Fictional BR-01 records measured savings above the agreed threshold, acceptable quality trade-offs and full operating costs within budget."
+          },
+          "baseline": {
+            "status": "yes",
+            "reference": "Fictional record 2",
+            "note": "Fictional baseline BA-12 records time and quality for 50 comparable batches from the same workflow before the trial.\nV2 fictional supplement: Fictional BL-02 records a comparable baseline on the same batches, population and measurement method with sampling limits documented."
+          },
+          "representative_test": {
+            "status": "yes",
+            "reference": "Fictional record 3",
+            "note": "Fictional evaluation EV-13 records normal and exceptional cases sampled from the intended population on the current model version.\nV2 fictional supplement: Fictional RT-03 covers intended users, routine and exceptional cases at the proposed scale on the current workflow and model version."
+          },
+          "quality_review": {
+            "status": "yes",
+            "reference": "Fictional record 4",
+            "note": "Fictional quality review QR-14 records error severity and confirms no unresolved material failures for the proposed operating scope.\nV2 fictional supplement: Fictional QR-04 records acceptable quality against agreed severity limits across affected groups, with material findings resolved."
+          },
+          "workflow_owner": {
+            "status": "yes",
+            "reference": "Fictional record 5",
+            "note": "Fictional ownership OW-15 records acceptance by the operations role with authority, cover and budget to run and stop the workflow.\nV2 fictional supplement: Fictional OW-05 records current role acceptance, stop authority, support budget and a tested continuity handover."
+          },
+          "human_oversight": {
+            "status": "yes",
+            "reference": "Fictional record 6",
+            "note": "Fictional oversight HU-16 records a timed review exercise with corrections, escalation and no observed approval bypass.\nV2 fictional supplement: Fictional HO-06 records an effective timed human review exercise with escalation and prevention of routine approval bypass."
+          },
+          "data_approval": {
+            "status": "yes",
+            "reference": "Fictional record 7",
+            "note": "Fictional approval DA-17 covers this purpose, data, tool and recipients, with security controls and the relevant contract review recorded.\nV2 fictional supplement: Fictional DP-07 records current permission for the actual data, purpose, tool and recipients, with applicable security and contract checks accepted."
+          },
+          "rollback": {
+            "status": "yes",
+            "reference": "Fictional record 8",
+            "note": "Fictional recovery RC-18 records a successful safe-stop and manual recovery exercise within the agreed continuity window.\nV2 fictional supplement: Fictional RC-08 records a proportionate safe-stop and manual recovery exercise, plus prevention and containment of irreversible external effects."
+          },
+          "user_training": {
+            "status": "yes",
+            "reference": "Fictional record 9",
+            "note": "Fictional support TR-19 records willing users completing the practice workflow and having access to instructions and support.\nV2 fictional supplement: Fictional UR-09 records willing users successfully performing the workflow, with instructions, support and sustainable maintenance cover."
+          },
+          "monitoring": {
+            "status": "yes",
+            "reference": "Fictional record 10",
+            "note": "Fictional monitoring MO-20 assigns alerts, incident response, maintenance cover and a review date after any model or workflow change.\nV2 fictional supplement: Fictional MO-10 records owned alerts, a practised incident response, review dates and re-evaluation after material changes."
+          }
+        }
+      }
+    },
+    {
+      "source_id": "AD-23",
+      "source_expected_recommendation": "STOP_OR_CONTAIN",
+      "source_sha256": "6301443b722507364a8f84d00c89515027b6b88a617104f59db3a858dc4ebb21",
+      "transformations": [
+        {
+          "key": "quality_review",
+          "from": "no",
+          "to": "no",
+          "reason": "The original facts must be answered against V2's current acceptable-condition question, not V1's activity-existence question."
+        }
+      ],
+      "material_issue_basis": "The case states an unacceptable unresolved exposure; this is entered explicitly, not inferred by the engine.",
+      "assumptions": [
+        "Unchanged dimensions receive explicitly invented positive V2 supplements, including scope, measured value, full costs and sustainable support. These are not recovered from V1 flags.",
+        "References are fictional V2 record references; they have not been independently verified.",
+        "The supplemental positive facts apply only where they do not replace the specified adverse condition."
+      ],
+      "payload": {
+        "schema_version": 2,
+        "methodology_version": "2.0",
+        "pilot": "Fictional quality review honestly marked failed",
+        "fictional": true,
+        "details": {
+          "process": "Synthetic process for adversarial case 23",
+          "outcome": "Assess a proposed expansion; all records are invented",
+          "date": "2026-10-26",
+          "reference": "AD-23"
+        },
+        "scope": {
+          "activity": "bounded_internal_pilot",
+          "data": "synthetic_public",
+          "external_effects": "no",
+          "people_impact": "no",
+          "proposed_scale": "Five internal users reviewing synthetic batches",
+          "current_version": "Fictional workflow 2 / model A"
+        },
+        "material_issue": {
+          "status": "unresolved",
+          "summary": "Known serious risk is explicitly recorded as No. The negative quality finding is correctly mapped to the response.",
+          "owner": "Fictional responsible sponsor",
+          "action": "contain",
+          "next_step": "A resolved failure and successful retest. Investigate and determine safe containment before reconsidering expansion."
+        },
+        "evidence": {
+          "business_outcome": {
+            "status": "yes",
+            "reference": "Fictional record 1",
+            "note": "Fictional record BO-11 agrees a reduction in manual handling time of at least 10 minutes per batch without worse serious errors.\nV2 fictional supplement: Fictional BR-01 records measured savings above the agreed threshold, acceptable quality trade-offs and full operating costs within budget."
+          },
+          "baseline": {
+            "status": "yes",
+            "reference": "Fictional record 2",
+            "note": "Fictional baseline BA-12 records time and quality for 50 comparable batches from the same workflow before the trial.\nV2 fictional supplement: Fictional BL-02 records a comparable baseline on the same batches, population and measurement method with sampling limits documented."
+          },
+          "representative_test": {
+            "status": "yes",
+            "reference": "Fictional record 3",
+            "note": "Fictional evaluation EV-13 records normal and exceptional cases sampled from the intended population on the current model version.\nV2 fictional supplement: Fictional RT-03 covers intended users, routine and exceptional cases at the proposed scale on the current workflow and model version."
+          },
+          "quality_review": {
+            "status": "no",
+            "reference": "Fictional record 4",
+            "note": "Fictional review QR-14 identified unacceptable material errors and has not accepted this operating scope."
+          },
+          "workflow_owner": {
+            "status": "yes",
+            "reference": "Fictional record 5",
+            "note": "Fictional ownership OW-15 records acceptance by the operations role with authority, cover and budget to run and stop the workflow.\nV2 fictional supplement: Fictional OW-05 records current role acceptance, stop authority, support budget and a tested continuity handover."
+          },
+          "human_oversight": {
+            "status": "yes",
+            "reference": "Fictional record 6",
+            "note": "Fictional oversight HU-16 records a timed review exercise with corrections, escalation and no observed approval bypass.\nV2 fictional supplement: Fictional HO-06 records an effective timed human review exercise with escalation and prevention of routine approval bypass."
+          },
+          "data_approval": {
+            "status": "yes",
+            "reference": "Fictional record 7",
+            "note": "Fictional approval DA-17 covers this purpose, data, tool and recipients, with security controls and the relevant contract review recorded.\nV2 fictional supplement: Fictional DP-07 records current permission for the actual data, purpose, tool and recipients, with applicable security and contract checks accepted."
+          },
+          "rollback": {
+            "status": "yes",
+            "reference": "Fictional record 8",
+            "note": "Fictional recovery RC-18 records a successful safe-stop and manual recovery exercise within the agreed continuity window.\nV2 fictional supplement: Fictional RC-08 records a proportionate safe-stop and manual recovery exercise, plus prevention and containment of irreversible external effects."
+          },
+          "user_training": {
+            "status": "yes",
+            "reference": "Fictional record 9",
+            "note": "Fictional support TR-19 records willing users completing the practice workflow and having access to instructions and support.\nV2 fictional supplement: Fictional UR-09 records willing users successfully performing the workflow, with instructions, support and sustainable maintenance cover."
+          },
+          "monitoring": {
+            "status": "yes",
+            "reference": "Fictional record 10",
+            "note": "Fictional monitoring MO-20 assigns alerts, incident response, maintenance cover and a review date after any model or workflow change.\nV2 fictional supplement: Fictional MO-10 records owned alerts, a practised incident response, review dates and re-evaluation after material changes."
+          }
+        }
+      }
+    },
+    {
+      "source_id": "AD-24",
+      "source_expected_recommendation": "HOLD_EXPANSION",
+      "source_sha256": "6301443b722507364a8f84d00c89515027b6b88a617104f59db3a858dc4ebb21",
+      "transformations": [
+        {
+          "key": "user_training",
+          "from": "unknown",
+          "to": "unknown",
+          "reason": "The original facts must be answered against V2's current acceptable-condition question, not V1's activity-existence question."
+        },
+        {
+          "key": "monitoring",
+          "from": "unknown",
+          "to": "unknown",
+          "reason": "The original facts must be answered against V2's current acceptable-condition question, not V1's activity-existence question."
+        }
+      ],
+      "material_issue_basis": "Operational arrangements are insufficiently assessed.",
+      "assumptions": [
+        "Unchanged dimensions receive explicitly invented positive V2 supplements, including scope, measured value, full costs and sustainable support. These are not recovered from V1 flags.",
+        "References are fictional V2 record references; they have not been independently verified.",
+        "The supplemental positive facts apply only where they do not replace the specified adverse condition."
+      ],
+      "payload": {
+        "schema_version": 2,
+        "methodology_version": "2.0",
+        "pilot": "Fictional training and monitoring explicitly incomplete",
+        "fictional": true,
+        "details": {
+          "process": "Synthetic process for adversarial case 24",
+          "outcome": "Assess a proposed expansion; all records are invented",
+          "date": "2026-10-26",
+          "reference": "AD-24"
+        },
+        "scope": {
+          "activity": "bounded_internal_pilot",
+          "data": "synthetic_public",
+          "external_effects": "no",
+          "people_impact": "no",
+          "proposed_scale": "Five internal users reviewing synthetic batches",
+          "current_version": "Fictional workflow 2 / model A"
+        },
+        "material_issue": {
+          "status": "unknown",
+          "summary": "",
+          "owner": "",
+          "action": "unknown",
+          "next_step": ""
+        },
+        "evidence": {
+          "business_outcome": {
+            "status": "yes",
+            "reference": "Fictional record 1",
+            "note": "Fictional record BO-11 agrees a reduction in manual handling time of at least 10 minutes per batch without worse serious errors.\nV2 fictional supplement: Fictional BR-01 records measured savings above the agreed threshold, acceptable quality trade-offs and full operating costs within budget."
+          },
+          "baseline": {
+            "status": "yes",
+            "reference": "Fictional record 2",
+            "note": "Fictional baseline BA-12 records time and quality for 50 comparable batches from the same workflow before the trial.\nV2 fictional supplement: Fictional BL-02 records a comparable baseline on the same batches, population and measurement method with sampling limits documented."
+          },
+          "representative_test": {
+            "status": "yes",
+            "reference": "Fictional record 3",
+            "note": "Fictional evaluation EV-13 records normal and exceptional cases sampled from the intended population on the current model version.\nV2 fictional supplement: Fictional RT-03 covers intended users, routine and exceptional cases at the proposed scale on the current workflow and model version."
+          },
+          "quality_review": {
+            "status": "yes",
+            "reference": "Fictional record 4",
+            "note": "Fictional quality review QR-14 records error severity and confirms no unresolved material failures for the proposed operating scope.\nV2 fictional supplement: Fictional QR-04 records acceptable quality against agreed severity limits across affected groups, with material findings resolved."
+          },
+          "workflow_owner": {
+            "status": "yes",
+            "reference": "Fictional record 5",
+            "note": "Fictional ownership OW-15 records acceptance by the operations role with authority, cover and budget to run and stop the workflow.\nV2 fictional supplement: Fictional OW-05 records current role acceptance, stop authority, support budget and a tested continuity handover."
+          },
+          "human_oversight": {
+            "status": "yes",
+            "reference": "Fictional record 6",
+            "note": "Fictional oversight HU-16 records a timed review exercise with corrections, escalation and no observed approval bypass.\nV2 fictional supplement: Fictional HO-06 records an effective timed human review exercise with escalation and prevention of routine approval bypass."
+          },
+          "data_approval": {
+            "status": "yes",
+            "reference": "Fictional record 7",
+            "note": "Fictional approval DA-17 covers this purpose, data, tool and recipients, with security controls and the relevant contract review recorded.\nV2 fictional supplement: Fictional DP-07 records current permission for the actual data, purpose, tool and recipients, with applicable security and contract checks accepted."
+          },
+          "rollback": {
+            "status": "yes",
+            "reference": "Fictional record 8",
+            "note": "Fictional recovery RC-18 records a successful safe-stop and manual recovery exercise within the agreed continuity window.\nV2 fictional supplement: Fictional RC-08 records a proportionate safe-stop and manual recovery exercise, plus prevention and containment of irreversible external effects."
+          },
+          "user_training": {
+            "status": "unknown",
+            "reference": "Fictional record 9",
+            "note": "Fictional support and user preparation have not been arranged."
+          },
+          "monitoring": {
+            "status": "unknown",
+            "reference": "Fictional record 10",
+            "note": "Fictional ongoing monitoring and review arrangements have not been agreed."
+          }
+        }
+      }
+    },
+    {
+      "source_id": "AD-25",
+      "source_expected_recommendation": "HOLD_EXPANSION",
+      "source_sha256": "6301443b722507364a8f84d00c89515027b6b88a617104f59db3a858dc4ebb21",
+      "transformations": [
+        {
+          "key": "data_approval",
+          "from": "yes",
+          "to": "no",
+          "reason": "The original facts must be answered against V2's current acceptable-condition question, not V1's activity-existence question."
+        }
+      ],
+      "material_issue_basis": "No additional material issue is stipulated; this is an explicit fictional assumption, not a conclusion drawn from a note.",
+      "assumptions": [
+        "Unchanged dimensions receive explicitly invented positive V2 supplements, including scope, measured value, full costs and sustainable support. These are not recovered from V1 flags.",
+        "References are fictional V2 record references; they have not been independently verified.",
+        "The supplemental positive facts apply only where they do not replace the specified adverse condition."
+      ],
+      "payload": {
+        "schema_version": 2,
+        "methodology_version": "2.0",
+        "pilot": "Fictional approval requested but refused",
+        "fictional": true,
+        "details": {
+          "process": "Synthetic process for adversarial case 25",
+          "outcome": "Assess a proposed expansion; all records are invented",
+          "date": "2026-10-26",
+          "reference": "AD-25"
+        },
+        "scope": {
+          "activity": "bounded_internal_pilot",
+          "data": "synthetic_public",
+          "external_effects": "no",
+          "people_impact": "no",
+          "proposed_scale": "Five internal users reviewing synthetic batches",
+          "current_version": "Fictional workflow 2 / model A"
+        },
+        "material_issue": {
+          "status": "none_identified",
+          "summary": "",
+          "owner": "",
+          "action": "unknown",
+          "next_step": ""
+        },
+        "evidence": {
+          "business_outcome": {
+            "status": "yes",
+            "reference": "Fictional record 1",
+            "note": "Fictional record BO-11 agrees a reduction in manual handling time of at least 10 minutes per batch without worse serious errors.\nV2 fictional supplement: Fictional BR-01 records measured savings above the agreed threshold, acceptable quality trade-offs and full operating costs within budget."
+          },
+          "baseline": {
+            "status": "yes",
+            "reference": "Fictional record 2",
+            "note": "Fictional baseline BA-12 records time and quality for 50 comparable batches from the same workflow before the trial.\nV2 fictional supplement: Fictional BL-02 records a comparable baseline on the same batches, population and measurement method with sampling limits documented."
+          },
+          "representative_test": {
+            "status": "yes",
+            "reference": "Fictional record 3",
+            "note": "Fictional evaluation EV-13 records normal and exceptional cases sampled from the intended population on the current model version.\nV2 fictional supplement: Fictional RT-03 covers intended users, routine and exceptional cases at the proposed scale on the current workflow and model version."
+          },
+          "quality_review": {
+            "status": "yes",
+            "reference": "Fictional record 4",
+            "note": "Fictional quality review QR-14 records error severity and confirms no unresolved material failures for the proposed operating scope.\nV2 fictional supplement: Fictional QR-04 records acceptable quality against agreed severity limits across affected groups, with material findings resolved."
+          },
+          "workflow_owner": {
+            "status": "yes",
+            "reference": "Fictional record 5",
+            "note": "Fictional ownership OW-15 records acceptance by the operations role with authority, cover and budget to run and stop the workflow.\nV2 fictional supplement: Fictional OW-05 records current role acceptance, stop authority, support budget and a tested continuity handover."
+          },
+          "human_oversight": {
+            "status": "yes",
+            "reference": "Fictional record 6",
+            "note": "Fictional oversight HU-16 records a timed review exercise with corrections, escalation and no observed approval bypass.\nV2 fictional supplement: Fictional HO-06 records an effective timed human review exercise with escalation and prevention of routine approval bypass."
+          },
+          "data_approval": {
+            "status": "no",
+            "reference": "Fictional record 7",
+            "note": "Fictional DA-17 records that approval was requested but refused; the proposed use remains unapproved and is held offline."
+          },
+          "rollback": {
+            "status": "yes",
+            "reference": "Fictional record 8",
+            "note": "Fictional recovery RC-18 records a successful safe-stop and manual recovery exercise within the agreed continuity window.\nV2 fictional supplement: Fictional RC-08 records a proportionate safe-stop and manual recovery exercise, plus prevention and containment of irreversible external effects."
+          },
+          "user_training": {
+            "status": "yes",
+            "reference": "Fictional record 9",
+            "note": "Fictional support TR-19 records willing users completing the practice workflow and having access to instructions and support.\nV2 fictional supplement: Fictional UR-09 records willing users successfully performing the workflow, with instructions, support and sustainable maintenance cover."
+          },
+          "monitoring": {
+            "status": "yes",
+            "reference": "Fictional record 10",
+            "note": "Fictional monitoring MO-20 assigns alerts, incident response, maintenance cover and a review date after any model or workflow change.\nV2 fictional supplement: Fictional MO-10 records owned alerts, a practised incident response, review dates and re-evaluation after material changes."
+          }
+        }
+      }
+    },
+    {
+      "source_id": "AD-26",
+      "source_expected_recommendation": "HOLD_EXPANSION",
+      "source_sha256": "6301443b722507364a8f84d00c89515027b6b88a617104f59db3a858dc4ebb21",
+      "transformations": [
+        {
+          "key": "workflow_owner",
+          "from": "yes",
+          "to": "no",
+          "reason": "The original facts must be answered against V2's current acceptable-condition question, not V1's activity-existence question."
+        }
+      ],
+      "material_issue_basis": "No additional material issue is stipulated; this is an explicit fictional assumption, not a conclusion drawn from a note.",
+      "assumptions": [
+        "Unchanged dimensions receive explicitly invented positive V2 supplements, including scope, measured value, full costs and sustainable support. These are not recovered from V1 flags.",
+        "References are fictional V2 record references; they have not been independently verified.",
+        "The supplemental positive facts apply only where they do not replace the specified adverse condition."
+      ],
+      "payload": {
+        "schema_version": 2,
+        "methodology_version": "2.0",
+        "pilot": "Fictional owner has left",
+        "fictional": true,
+        "details": {
+          "process": "Synthetic process for adversarial case 26",
+          "outcome": "Assess a proposed expansion; all records are invented",
+          "date": "2026-10-26",
+          "reference": "AD-26"
+        },
+        "scope": {
+          "activity": "bounded_internal_pilot",
+          "data": "synthetic_public",
+          "external_effects": "no",
+          "people_impact": "no",
+          "proposed_scale": "Five internal users reviewing synthetic batches",
+          "current_version": "Fictional workflow 2 / model A"
+        },
+        "material_issue": {
+          "status": "none_identified",
+          "summary": "",
+          "owner": "",
+          "action": "unknown",
+          "next_step": ""
+        },
+        "evidence": {
+          "business_outcome": {
+            "status": "yes",
+            "reference": "Fictional record 1",
+            "note": "Fictional record BO-11 agrees a reduction in manual handling time of at least 10 minutes per batch without worse serious errors.\nV2 fictional supplement: Fictional BR-01 records measured savings above the agreed threshold, acceptable quality trade-offs and full operating costs within budget."
+          },
+          "baseline": {
+            "status": "yes",
+            "reference": "Fictional record 2",
+            "note": "Fictional baseline BA-12 records time and quality for 50 comparable batches from the same workflow before the trial.\nV2 fictional supplement: Fictional BL-02 records a comparable baseline on the same batches, population and measurement method with sampling limits documented."
+          },
+          "representative_test": {
+            "status": "yes",
+            "reference": "Fictional record 3",
+            "note": "Fictional evaluation EV-13 records normal and exceptional cases sampled from the intended population on the current model version.\nV2 fictional supplement: Fictional RT-03 covers intended users, routine and exceptional cases at the proposed scale on the current workflow and model version."
+          },
+          "quality_review": {
+            "status": "yes",
+            "reference": "Fictional record 4",
+            "note": "Fictional quality review QR-14 records error severity and confirms no unresolved material failures for the proposed operating scope.\nV2 fictional supplement: Fictional QR-04 records acceptable quality against agreed severity limits across affected groups, with material findings resolved."
+          },
+          "workflow_owner": {
+            "status": "no",
+            "reference": "Fictional record 5",
+            "note": "Fictional OW-15 names the previous manager, but the owner has left the organisation and no successor has accepted responsibility."
+          },
+          "human_oversight": {
+            "status": "yes",
+            "reference": "Fictional record 6",
+            "note": "Fictional oversight HU-16 records a timed review exercise with corrections, escalation and no observed approval bypass.\nV2 fictional supplement: Fictional HO-06 records an effective timed human review exercise with escalation and prevention of routine approval bypass."
+          },
+          "data_approval": {
+            "status": "yes",
+            "reference": "Fictional record 7",
+            "note": "Fictional approval DA-17 covers this purpose, data, tool and recipients, with security controls and the relevant contract review recorded.\nV2 fictional supplement: Fictional DP-07 records current permission for the actual data, purpose, tool and recipients, with applicable security and contract checks accepted."
+          },
+          "rollback": {
+            "status": "yes",
+            "reference": "Fictional record 8",
+            "note": "Fictional recovery RC-18 records a successful safe-stop and manual recovery exercise within the agreed continuity window.\nV2 fictional supplement: Fictional RC-08 records a proportionate safe-stop and manual recovery exercise, plus prevention and containment of irreversible external effects."
+          },
+          "user_training": {
+            "status": "yes",
+            "reference": "Fictional record 9",
+            "note": "Fictional support TR-19 records willing users completing the practice workflow and having access to instructions and support.\nV2 fictional supplement: Fictional UR-09 records willing users successfully performing the workflow, with instructions, support and sustainable maintenance cover."
+          },
+          "monitoring": {
+            "status": "yes",
+            "reference": "Fictional record 10",
+            "note": "Fictional monitoring MO-20 assigns alerts, incident response, maintenance cover and a review date after any model or workflow change.\nV2 fictional supplement: Fictional MO-10 records owned alerts, a practised incident response, review dates and re-evaluation after material changes."
+          }
+        }
+      }
+    },
+    {
+      "source_id": "AD-27",
+      "source_expected_recommendation": "HOLD_EXPANSION",
+      "source_sha256": "6301443b722507364a8f84d00c89515027b6b88a617104f59db3a858dc4ebb21",
+      "transformations": [
+        {
+          "key": "monitoring",
+          "from": "yes",
+          "to": "no",
+          "reason": "The original facts must be answered against V2's current acceptable-condition question, not V1's activity-existence question."
+        }
+      ],
+      "material_issue_basis": "No additional material issue is stipulated; this is an explicit fictional assumption, not a conclusion drawn from a note.",
+      "assumptions": [
+        "Unchanged dimensions receive explicitly invented positive V2 supplements, including scope, measured value, full costs and sustainable support. These are not recovered from V1 flags.",
+        "References are fictional V2 record references; they have not been independently verified.",
+        "The supplemental positive facts apply only where they do not replace the specified adverse condition."
+      ],
+      "payload": {
+        "schema_version": 2,
+        "methodology_version": "2.0",
+        "pilot": "Fictional monitoring discontinued",
+        "fictional": true,
+        "details": {
+          "process": "Synthetic process for adversarial case 27",
+          "outcome": "Assess a proposed expansion; all records are invented",
+          "date": "2026-10-26",
+          "reference": "AD-27"
+        },
+        "scope": {
+          "activity": "bounded_internal_pilot",
+          "data": "synthetic_public",
+          "external_effects": "no",
+          "people_impact": "no",
+          "proposed_scale": "Five internal users reviewing synthetic batches",
+          "current_version": "Fictional workflow 2 / model A"
+        },
+        "material_issue": {
+          "status": "none_identified",
+          "summary": "",
+          "owner": "",
+          "action": "unknown",
+          "next_step": ""
+        },
+        "evidence": {
+          "business_outcome": {
+            "status": "yes",
+            "reference": "Fictional record 1",
+            "note": "Fictional record BO-11 agrees a reduction in manual handling time of at least 10 minutes per batch without worse serious errors.\nV2 fictional supplement: Fictional BR-01 records measured savings above the agreed threshold, acceptable quality trade-offs and full operating costs within budget."
+          },
+          "baseline": {
+            "status": "yes",
+            "reference": "Fictional record 2",
+            "note": "Fictional baseline BA-12 records time and quality for 50 comparable batches from the same workflow before the trial.\nV2 fictional supplement: Fictional BL-02 records a comparable baseline on the same batches, population and measurement method with sampling limits documented."
+          },
+          "representative_test": {
+            "status": "yes",
+            "reference": "Fictional record 3",
+            "note": "Fictional evaluation EV-13 records normal and exceptional cases sampled from the intended population on the current model version.\nV2 fictional supplement: Fictional RT-03 covers intended users, routine and exceptional cases at the proposed scale on the current workflow and model version."
+          },
+          "quality_review": {
+            "status": "yes",
+            "reference": "Fictional record 4",
+            "note": "Fictional quality review QR-14 records error severity and confirms no unresolved material failures for the proposed operating scope.\nV2 fictional supplement: Fictional QR-04 records acceptable quality against agreed severity limits across affected groups, with material findings resolved."
+          },
+          "workflow_owner": {
+            "status": "yes",
+            "reference": "Fictional record 5",
+            "note": "Fictional ownership OW-15 records acceptance by the operations role with authority, cover and budget to run and stop the workflow.\nV2 fictional supplement: Fictional OW-05 records current role acceptance, stop authority, support budget and a tested continuity handover."
+          },
+          "human_oversight": {
+            "status": "yes",
+            "reference": "Fictional record 6",
+            "note": "Fictional oversight HU-16 records a timed review exercise with corrections, escalation and no observed approval bypass.\nV2 fictional supplement: Fictional HO-06 records an effective timed human review exercise with escalation and prevention of routine approval bypass."
+          },
+          "data_approval": {
+            "status": "yes",
+            "reference": "Fictional record 7",
+            "note": "Fictional approval DA-17 covers this purpose, data, tool and recipients, with security controls and the relevant contract review recorded.\nV2 fictional supplement: Fictional DP-07 records current permission for the actual data, purpose, tool and recipients, with applicable security and contract checks accepted."
+          },
+          "rollback": {
+            "status": "yes",
+            "reference": "Fictional record 8",
+            "note": "Fictional recovery RC-18 records a successful safe-stop and manual recovery exercise within the agreed continuity window.\nV2 fictional supplement: Fictional RC-08 records a proportionate safe-stop and manual recovery exercise, plus prevention and containment of irreversible external effects."
+          },
+          "user_training": {
+            "status": "yes",
+            "reference": "Fictional record 9",
+            "note": "Fictional support TR-19 records willing users completing the practice workflow and having access to instructions and support.\nV2 fictional supplement: Fictional UR-09 records willing users successfully performing the workflow, with instructions, support and sustainable maintenance cover."
+          },
+          "monitoring": {
+            "status": "no",
+            "reference": "Fictional record 10",
+            "note": "Fictional MO-20 describes the old weekly process, but monitoring was discontinued last month and no replacement exists."
+          }
+        }
+      }
+    },
+    {
+      "source_id": "AD-28",
+      "source_expected_recommendation": "HOLD_EXPANSION",
+      "source_sha256": "6301443b722507364a8f84d00c89515027b6b88a617104f59db3a858dc4ebb21",
+      "transformations": [
+        {
+          "key": "baseline",
+          "from": "yes",
+          "to": "no",
+          "reason": "The original facts must be answered against V2's current acceptable-condition question, not V1's activity-existence question."
+        }
+      ],
+      "material_issue_basis": "No additional material issue is stipulated; this is an explicit fictional assumption, not a conclusion drawn from a note.",
+      "assumptions": [
+        "Unchanged dimensions receive explicitly invented positive V2 supplements, including scope, measured value, full costs and sustainable support. These are not recovered from V1 flags.",
+        "References are fictional V2 record references; they have not been independently verified.",
+        "The supplemental positive facts apply only where they do not replace the specified adverse condition."
+      ],
+      "payload": {
+        "schema_version": 2,
+        "methodology_version": "2.0",
+        "pilot": "Fictional baseline from another workflow",
+        "fictional": true,
+        "details": {
+          "process": "Synthetic process for adversarial case 28",
+          "outcome": "Assess a proposed expansion; all records are invented",
+          "date": "2026-10-26",
+          "reference": "AD-28"
+        },
+        "scope": {
+          "activity": "bounded_internal_pilot",
+          "data": "synthetic_public",
+          "external_effects": "no",
+          "people_impact": "no",
+          "proposed_scale": "Five internal users reviewing synthetic batches",
+          "current_version": "Fictional workflow 2 / model A"
+        },
+        "material_issue": {
+          "status": "none_identified",
+          "summary": "",
+          "owner": "",
+          "action": "unknown",
+          "next_step": ""
+        },
+        "evidence": {
+          "business_outcome": {
+            "status": "yes",
+            "reference": "Fictional record 1",
+            "note": "Fictional record BO-11 agrees a reduction in manual handling time of at least 10 minutes per batch without worse serious errors.\nV2 fictional supplement: Fictional BR-01 records measured savings above the agreed threshold, acceptable quality trade-offs and full operating costs within budget."
+          },
+          "baseline": {
+            "status": "no",
+            "reference": "Fictional record 2",
+            "note": "Fictional BA-12 is a baseline from a different workflow with simpler tasks and different users; comparability has not been assessed."
+          },
+          "representative_test": {
+            "status": "yes",
+            "reference": "Fictional record 3",
+            "note": "Fictional evaluation EV-13 records normal and exceptional cases sampled from the intended population on the current model version.\nV2 fictional supplement: Fictional RT-03 covers intended users, routine and exceptional cases at the proposed scale on the current workflow and model version."
+          },
+          "quality_review": {
+            "status": "yes",
+            "reference": "Fictional record 4",
+            "note": "Fictional quality review QR-14 records error severity and confirms no unresolved material failures for the proposed operating scope.\nV2 fictional supplement: Fictional QR-04 records acceptable quality against agreed severity limits across affected groups, with material findings resolved."
+          },
+          "workflow_owner": {
+            "status": "yes",
+            "reference": "Fictional record 5",
+            "note": "Fictional ownership OW-15 records acceptance by the operations role with authority, cover and budget to run and stop the workflow.\nV2 fictional supplement: Fictional OW-05 records current role acceptance, stop authority, support budget and a tested continuity handover."
+          },
+          "human_oversight": {
+            "status": "yes",
+            "reference": "Fictional record 6",
+            "note": "Fictional oversight HU-16 records a timed review exercise with corrections, escalation and no observed approval bypass.\nV2 fictional supplement: Fictional HO-06 records an effective timed human review exercise with escalation and prevention of routine approval bypass."
+          },
+          "data_approval": {
+            "status": "yes",
+            "reference": "Fictional record 7",
+            "note": "Fictional approval DA-17 covers this purpose, data, tool and recipients, with security controls and the relevant contract review recorded.\nV2 fictional supplement: Fictional DP-07 records current permission for the actual data, purpose, tool and recipients, with applicable security and contract checks accepted."
+          },
+          "rollback": {
+            "status": "yes",
+            "reference": "Fictional record 8",
+            "note": "Fictional recovery RC-18 records a successful safe-stop and manual recovery exercise within the agreed continuity window.\nV2 fictional supplement: Fictional RC-08 records a proportionate safe-stop and manual recovery exercise, plus prevention and containment of irreversible external effects."
+          },
+          "user_training": {
+            "status": "yes",
+            "reference": "Fictional record 9",
+            "note": "Fictional support TR-19 records willing users completing the practice workflow and having access to instructions and support.\nV2 fictional supplement: Fictional UR-09 records willing users successfully performing the workflow, with instructions, support and sustainable maintenance cover."
+          },
+          "monitoring": {
+            "status": "yes",
+            "reference": "Fictional record 10",
+            "note": "Fictional monitoring MO-20 assigns alerts, incident response, maintenance cover and a review date after any model or workflow change.\nV2 fictional supplement: Fictional MO-10 records owned alerts, a practised incident response, review dates and re-evaluation after material changes."
+          }
+        }
+      }
+    },
+    {
+      "source_id": "AD-29",
+      "source_expected_recommendation": "HOLD_EXPANSION",
+      "source_sha256": "6301443b722507364a8f84d00c89515027b6b88a617104f59db3a858dc4ebb21",
+      "transformations": [
+        {
+          "key": "data_approval",
+          "from": "yes",
+          "to": "no",
+          "reason": "The original facts must be answered against V2's current acceptable-condition question, not V1's activity-existence question."
+        }
+      ],
+      "material_issue_basis": "No additional material issue is stipulated; this is an explicit fictional assumption, not a conclusion drawn from a note.",
+      "assumptions": [
+        "Unchanged dimensions receive explicitly invented positive V2 supplements, including scope, measured value, full costs and sustainable support. These are not recovered from V1 flags.",
+        "References are fictional V2 record references; they have not been independently verified.",
+        "The supplemental positive facts apply only where they do not replace the specified adverse condition."
+      ],
+      "payload": {
+        "schema_version": 2,
+        "methodology_version": "2.0",
+        "pilot": "Fictional permission expired with previous pilot",
+        "fictional": true,
+        "details": {
+          "process": "Synthetic process for adversarial case 29",
+          "outcome": "Assess a proposed expansion; all records are invented",
+          "date": "2026-10-26",
+          "reference": "AD-29"
+        },
+        "scope": {
+          "activity": "bounded_internal_pilot",
+          "data": "synthetic_public",
+          "external_effects": "no",
+          "people_impact": "no",
+          "proposed_scale": "Five internal users reviewing synthetic batches",
+          "current_version": "Fictional workflow 2 / model A"
+        },
+        "material_issue": {
+          "status": "none_identified",
+          "summary": "",
+          "owner": "",
+          "action": "unknown",
+          "next_step": ""
+        },
+        "evidence": {
+          "business_outcome": {
+            "status": "yes",
+            "reference": "Fictional record 1",
+            "note": "Fictional record BO-11 agrees a reduction in manual handling time of at least 10 minutes per batch without worse serious errors.\nV2 fictional supplement: Fictional BR-01 records measured savings above the agreed threshold, acceptable quality trade-offs and full operating costs within budget."
+          },
+          "baseline": {
+            "status": "yes",
+            "reference": "Fictional record 2",
+            "note": "Fictional baseline BA-12 records time and quality for 50 comparable batches from the same workflow before the trial.\nV2 fictional supplement: Fictional BL-02 records a comparable baseline on the same batches, population and measurement method with sampling limits documented."
+          },
+          "representative_test": {
+            "status": "yes",
+            "reference": "Fictional record 3",
+            "note": "Fictional evaluation EV-13 records normal and exceptional cases sampled from the intended population on the current model version.\nV2 fictional supplement: Fictional RT-03 covers intended users, routine and exceptional cases at the proposed scale on the current workflow and model version."
+          },
+          "quality_review": {
+            "status": "yes",
+            "reference": "Fictional record 4",
+            "note": "Fictional quality review QR-14 records error severity and confirms no unresolved material failures for the proposed operating scope.\nV2 fictional supplement: Fictional QR-04 records acceptable quality against agreed severity limits across affected groups, with material findings resolved."
+          },
+          "workflow_owner": {
+            "status": "yes",
+            "reference": "Fictional record 5",
+            "note": "Fictional ownership OW-15 records acceptance by the operations role with authority, cover and budget to run and stop the workflow.\nV2 fictional supplement: Fictional OW-05 records current role acceptance, stop authority, support budget and a tested continuity handover."
+          },
+          "human_oversight": {
+            "status": "yes",
+            "reference": "Fictional record 6",
+            "note": "Fictional oversight HU-16 records a timed review exercise with corrections, escalation and no observed approval bypass.\nV2 fictional supplement: Fictional HO-06 records an effective timed human review exercise with escalation and prevention of routine approval bypass."
+          },
+          "data_approval": {
+            "status": "no",
+            "reference": "Fictional record 7",
+            "note": "Fictional DA-17 applies only to the previous pilot and expired before this assessment; the current process is outside its approved scope."
+          },
+          "rollback": {
+            "status": "yes",
+            "reference": "Fictional record 8",
+            "note": "Fictional recovery RC-18 records a successful safe-stop and manual recovery exercise within the agreed continuity window.\nV2 fictional supplement: Fictional RC-08 records a proportionate safe-stop and manual recovery exercise, plus prevention and containment of irreversible external effects."
+          },
+          "user_training": {
+            "status": "yes",
+            "reference": "Fictional record 9",
+            "note": "Fictional support TR-19 records willing users completing the practice workflow and having access to instructions and support.\nV2 fictional supplement: Fictional UR-09 records willing users successfully performing the workflow, with instructions, support and sustainable maintenance cover."
+          },
+          "monitoring": {
+            "status": "yes",
+            "reference": "Fictional record 10",
+            "note": "Fictional monitoring MO-20 assigns alerts, incident response, maintenance cover and a review date after any model or workflow change.\nV2 fictional supplement: Fictional MO-10 records owned alerts, a practised incident response, review dates and re-evaluation after material changes."
+          }
+        }
+      }
+    },
+    {
+      "source_id": "AD-30",
+      "source_expected_recommendation": "HOLD_EXPANSION",
+      "source_sha256": "6301443b722507364a8f84d00c89515027b6b88a617104f59db3a858dc4ebb21",
+      "transformations": [
+        {
+          "key": "data_approval",
+          "from": "yes",
+          "to": "no",
+          "reason": "The original facts must be answered against V2's current acceptable-condition question, not V1's activity-existence question."
+        }
+      ],
+      "material_issue_basis": "No additional material issue is stipulated; this is an explicit fictional assumption, not a conclusion drawn from a note.",
+      "assumptions": [
+        "Unchanged dimensions receive explicitly invented positive V2 supplements, including scope, measured value, full costs and sustainable support. These are not recovered from V1 flags.",
+        "References are fictional V2 record references; they have not been independently verified.",
+        "The supplemental positive facts apply only where they do not replace the specified adverse condition."
+      ],
+      "payload": {
+        "schema_version": 2,
+        "methodology_version": "2.0",
+        "pilot": "Fictional contract forbids external processing",
+        "fictional": true,
+        "details": {
+          "process": "Synthetic process for adversarial case 30",
+          "outcome": "Assess a proposed expansion; all records are invented",
+          "date": "2026-10-26",
+          "reference": "AD-30"
+        },
+        "scope": {
+          "activity": "bounded_internal_pilot",
+          "data": "synthetic_public",
+          "external_effects": "no",
+          "people_impact": "no",
+          "proposed_scale": "Five internal users reviewing synthetic batches",
+          "current_version": "Fictional workflow 2 / model A"
+        },
+        "material_issue": {
+          "status": "none_identified",
+          "summary": "",
+          "owner": "",
+          "action": "unknown",
+          "next_step": ""
+        },
+        "evidence": {
+          "business_outcome": {
+            "status": "yes",
+            "reference": "Fictional record 1",
+            "note": "Fictional record BO-11 agrees a reduction in manual handling time of at least 10 minutes per batch without worse serious errors.\nV2 fictional supplement: Fictional BR-01 records measured savings above the agreed threshold, acceptable quality trade-offs and full operating costs within budget."
+          },
+          "baseline": {
+            "status": "yes",
+            "reference": "Fictional record 2",
+            "note": "Fictional baseline BA-12 records time and quality for 50 comparable batches from the same workflow before the trial.\nV2 fictional supplement: Fictional BL-02 records a comparable baseline on the same batches, population and measurement method with sampling limits documented."
+          },
+          "representative_test": {
+            "status": "yes",
+            "reference": "Fictional record 3",
+            "note": "Fictional evaluation EV-13 records normal and exceptional cases sampled from the intended population on the current model version.\nV2 fictional supplement: Fictional RT-03 covers intended users, routine and exceptional cases at the proposed scale on the current workflow and model version."
+          },
+          "quality_review": {
+            "status": "yes",
+            "reference": "Fictional record 4",
+            "note": "Fictional quality review QR-14 records error severity and confirms no unresolved material failures for the proposed operating scope.\nV2 fictional supplement: Fictional QR-04 records acceptable quality against agreed severity limits across affected groups, with material findings resolved."
+          },
+          "workflow_owner": {
+            "status": "yes",
+            "reference": "Fictional record 5",
+            "note": "Fictional ownership OW-15 records acceptance by the operations role with authority, cover and budget to run and stop the workflow.\nV2 fictional supplement: Fictional OW-05 records current role acceptance, stop authority, support budget and a tested continuity handover."
+          },
+          "human_oversight": {
+            "status": "yes",
+            "reference": "Fictional record 6",
+            "note": "Fictional oversight HU-16 records a timed review exercise with corrections, escalation and no observed approval bypass.\nV2 fictional supplement: Fictional HO-06 records an effective timed human review exercise with escalation and prevention of routine approval bypass."
+          },
+          "data_approval": {
+            "status": "no",
+            "reference": "Fictional record 7",
+            "note": "Fictional DA-17 records internal tool approval, but the current service contract prohibits this external processing and that conflict remains unresolved."
+          },
+          "rollback": {
+            "status": "yes",
+            "reference": "Fictional record 8",
+            "note": "Fictional recovery RC-18 records a successful safe-stop and manual recovery exercise within the agreed continuity window.\nV2 fictional supplement: Fictional RC-08 records a proportionate safe-stop and manual recovery exercise, plus prevention and containment of irreversible external effects."
+          },
+          "user_training": {
+            "status": "yes",
+            "reference": "Fictional record 9",
+            "note": "Fictional support TR-19 records willing users completing the practice workflow and having access to instructions and support.\nV2 fictional supplement: Fictional UR-09 records willing users successfully performing the workflow, with instructions, support and sustainable maintenance cover."
+          },
+          "monitoring": {
+            "status": "yes",
+            "reference": "Fictional record 10",
+            "note": "Fictional monitoring MO-20 assigns alerts, incident response, maintenance cover and a review date after any model or workflow change.\nV2 fictional supplement: Fictional MO-10 records owned alerts, a practised incident response, review dates and re-evaluation after material changes."
+          }
+        }
+      }
+    }
+  ]
+}

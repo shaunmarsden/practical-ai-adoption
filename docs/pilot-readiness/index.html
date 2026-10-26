@@ -5,13 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta
       name="description"
-      content="An evidence-led assessment for business managers considering wider adoption of an AI pilot. Private browser processing and a downloadable report."
+      content="V2 evidence assessment: current acceptable conditions, explicit material issues and independent human decisions. Private browser processing."
     />
     <meta
       http-equiv="Content-Security-Policy"
       content="default-src 'self'; script-src 'self'; style-src 'self'; font-src 'self'; connect-src 'self'; img-src 'self' data:; object-src 'none'; base-uri 'none'; form-action 'none'"
     />
-    <title>AI Pilot Readiness Assessment | Practical AI Adoption</title>
+    <title>AI Pilot Readiness Assessment V2 | Practical AI Adoption</title>
+    <link rel="icon" href="icon.svg" type="image/svg+xml" />
     <link rel="stylesheet" href="style.css" />
     <script defer src="vendor/jspdf.umd.min.js"></script>
     <script type="module" src="app.mjs"></script>
@@ -20,133 +21,310 @@
     <a href="#main" class="skip">Skip to assessment</a>
     <header>
       <a href="../">Practical AI Adoption</a
-      ><span>Evidence before expansion</span>
+      ><span>Method 2.0 / Evidence before expansion</span>
     </header>
-    <main id="main">
+    <main id="main" tabindex="-1">
       <section class="intro" aria-labelledby="title">
-        <p class="eyebrow">A decision aid for business managers</p>
-        <h1 id="title">Is your AI pilot ready <br />for the next step?</h1>
+        <p class="eyebrow">
+          For managers considering an AI workflow's next step
+        </p>
+        <h1 id="title">
+          What does your pilot's <br />evidence actually support?
+        </h1>
         <p class="lead">
-          Review the evidence, identify the gaps and prepare for a responsible
-          human decision.
+          Check current acceptable outcomes, effective safeguards and unresolved
+          issues. Prepare a record for an independent human decision.
         </p>
         <div class="intro-grid">
           <div>
-            <h2>Bring the records behind the pilot</h2>
+            <h2>A completed review can still reject wider use</h2>
             <p>
-              You will need a business target, baseline, test results and
-              records of ownership, safeguards and operational support. Use
-              short references to records you can inspect. Do not paste
-              confidential details or personal information.
+              In V2, Yes means the condition is currently satisfied for the
+              intended workflow and proposed scale. A review, plan or approval
+              document alone is not enough. Bring records of findings,
+              acceptance, effectiveness and current scope.
             </p>
           </div>
           <div>
-            <h2>Ten checks. No automated approval.</h2>
+            <h2>Choose the actual scope first</h2>
             <p>
-              This assessment checks recorded conditions for wider use. It
-              cannot verify evidence, certify compliance or prove business
-              value. A responsible person must review the supporting records.
+              This assesses operational use and expansion. Synthetic/public
+              offline learning has a separate route when it affects no real
+              people or external actions and applicable permission is recorded.
+              It is not operational approval.
             </p>
           </div>
         </div>
         <div class="actions">
           <button id="start" class="primary">Start an assessment</button
-          ><button id="explore">Explore a fictional example</button>
+          ><button id="explore">Explore a fictional example</button
+          ><label class="example-label" for="example-kind">Example</label
+          ><select id="example-kind">
+            <option value="blocked">Unresolved critical finding</option>
+            <option value="further">Incomplete operating evidence</option>
+            <option value="complete">Complete self-reported record</option>
+            <option value="offline">Offline synthetic learning</option>
+          </select>
         </div>
+        <p class="hint">
+          No account, installation or AI API. Use safe record references and
+          role names; do not enter personal or confidential details.
+        </p>
         <details>
-          <summary>Privacy and how this works</summary>
+          <summary>Privacy and limits</summary>
           <p>
-            Answers stay in this page's memory. There is no account, analytics,
-            AI API or server storage of answers. Refreshing or closing the page
-            clears them, though your browser may retain form values through its
-            own session recovery. No browser storage is used by this
-            application. JSON and PDF exports are files saved to your device;
-            handle and delete them under your organisation's rules. Import reads
-            a file locally. GitHub Pages receives normal page and asset
-            requests, never your submitted answers. All scripts and the PDF font
-            are served with this site.
+            Answers stay in page memory. The app uses no browser storage,
+            analytics, account or AI service and does not upload answers. GitHub
+            Pages receives ordinary page and asset requests; answers are not
+            included. All PDF assets are served with this site. Refreshing or
+            closing clears app memory, though the browser may restore form
+            values through session recovery. Exported JSON and PDF files persist
+            on your device. Handle them under your organisation's rules.
           </p>
           <p>
-            Do not enter sensitive data. Use role names and safe internal record
-            references. The suggested methodology is independent of any vendor.
+            The tool cannot verify notes, detect fabrication or infer risk from
+            prose. False Yes or no-issue claims can still mislead. An
+            independent responsible person must inspect the records and
+            applicable requirements. No result permits a pilot to continue or
+            deploy without its own approvals.
           </p>
         </details>
       </section>
       <noscript
         ><p class="notice">
-          JavaScript is needed for the assessment and report. Enable it to use
-          this tool. No answers are uploaded.
+          Enable JavaScript to use this local assessment. No answers are
+          uploaded.
         </p></noscript
       >
-      <section id="workspace" hidden aria-label="Assessment workspace">
+      <section
+        id="workspace"
+        hidden
+        aria-label="Assessment workspace"
+        tabindex="-1"
+      >
         <div class="workspace-top">
           <div>
-            <p class="eyebrow">Your evidence record</p>
+            <p class="eyebrow">V2 / Current acceptable conditions</p>
             <p id="progress-text" role="status" aria-live="polite"></p>
           </div>
           <button id="reset">Clear and start again</button>
         </div>
         <progress
           id="progress"
-          value="0"
           max="10"
-          aria-label="Checks answered"
+          value="0"
+          aria-label="Conditions answered Yes or No"
         ></progress>
         <p id="fictional" class="notice" hidden>
-          FICTIONAL EXAMPLE: invented records for exploring the tool. These are
-          not business evidence. Editing this record keeps the fictional label;
-          clear it to start your own.
+          FICTIONAL EXAMPLE. All records and outcomes are invented. Editing
+          keeps this label; clear the record to start your own.
         </p>
+        <aside id="migration-notice" class="notice" hidden>
+          <strong>V1 import: reassessment required.</strong>
+          <p>
+            Original notes and the full original record are preserved. Every
+            stronger V2 condition starts Unknown. A historical Yes is not a V2
+            acceptance. Choose and confirm the date for this reassessment.
+          </p>
+          <details>
+            <summary>Original imported V1 record (not V2 acceptance)</summary>
+            <pre id="legacy-source"></pre>
+          </details>
+        </aside>
         <nav id="steps" aria-label="Assessment sections"></nav>
         <form id="assessment" novalidate autocomplete="off">
-          <div id="form-error" role="alert" tabindex="-1" hidden></div>
-          <section
-            id="details-panel"
-            class="card"
-            aria-labelledby="details-title"
-          >
-            <p class="eyebrow">Start with the pilot</p>
-            <h2 id="details-title" tabindex="-1">Pilot details</h2>
-            <p>
-              Record enough to identify the work. All fields except the internal
-              reference are required.
-            </p>
+          <p id="form-error" role="alert" tabindex="-1" hidden></p>
+          <section id="context-panel" class="card">
+            <p class="eyebrow">Start with scope</p>
+            <h2 id="context-title" tabindex="-1">
+              What use is being assessed?
+            </h2>
             <label for="pilot">Pilot name</label
-            ><input id="pilot" maxlength="200" required />
-            <label for="process">Business process being tested</label
+            ><input id="pilot" data-path="pilot" maxlength="200" />
+            <label for="process">Business process</label
             ><textarea
               id="process"
-              rows="2"
+              data-path="details.process"
               maxlength="500"
-              required
+              rows="2"
             ></textarea>
             <label for="outcome">Intended business outcome</label
             ><textarea
               id="outcome"
-              rows="2"
+              data-path="details.outcome"
               maxlength="500"
-              required
+              rows="2"
             ></textarea>
             <div class="details-grid">
               <div>
                 <label for="date">Assessment date</label
-                ><input id="date" type="date" required />
+                ><input id="date" type="date" data-path="details.date" /><button
+                  id="today"
+                  type="button"
+                >
+                  Use today's date
+                </button>
               </div>
               <div>
                 <label for="reference">Internal reference (optional)</label
-                ><input id="reference" maxlength="500" />
+                ><input
+                  id="reference"
+                  data-path="details.reference"
+                  maxlength="500"
+                />
               </div>
             </div>
-            <div class="actions">
-              <button type="button" id="begin" class="primary">
-                Continue to the ten checks
-              </button>
+            <label id="date-review-label" class="attestation" hidden
+              ><input
+                id="date-reviewed"
+                type="checkbox"
+                data-path="migration.date_reviewed"
+              /><span
+                >I reviewed the date for this V2 reassessment. This confirms a
+                date, not evidence truth.</span
+              ></label
+            >
+            <label for="activity">Activity scope</label
+            ><select id="activity" data-path="scope.activity">
+              <option value="unknown">Unknown / not selected</option>
+              <option value="offline_experiment">
+                Offline experiment with synthetic/public information
+              </option>
+              <option value="bounded_internal_pilot">
+                Bounded internal pilot
+              </option>
+              <option value="real_world_workflow">
+                Workflow affecting real people, data or decisions
+              </option>
+              <option value="wider_deployment">
+                Proposed wider operational deployment
+              </option>
+            </select>
+            <label for="data">Information being used</label
+            ><select id="data" data-path="scope.data">
+              <option value="unknown">Unknown / not assessed</option>
+              <option value="synthetic_public">
+                Fictional, synthetic or public information only
+              </option>
+              <option value="real_data">Real information</option>
+              <option value="sensitive_data">Sensitive real information</option>
+            </select>
+            <div class="details-grid">
+              <div>
+                <label for="external-effects"
+                  >Can this use create external actions or irreversible
+                  effects?</label
+                ><select
+                  id="external-effects"
+                  data-path="scope.external_effects"
+                >
+                  <option value="unknown">Unknown</option>
+                  <option value="no">No</option>
+                  <option value="yes">Yes</option>
+                </select>
+              </div>
+              <div>
+                <label for="people-impact"
+                  >Can this use affect real people or operational
+                  decisions?</label
+                ><select id="people-impact" data-path="scope.people_impact">
+                  <option value="unknown">Unknown</option>
+                  <option value="no">No</option>
+                  <option value="yes">Yes</option>
+                </select>
+              </div>
             </div>
+            <label for="scale">Proposed scale and operating boundary</label
+            ><textarea
+              id="scale"
+              data-path="scope.proposed_scale"
+              maxlength="500"
+              rows="2"
+            ></textarea>
+            <p class="hint">
+              For example, five internal reviewers drafting only, or a proposed
+              external send workflow. Do not include sensitive details.
+            </p>
+            <label for="version"
+              >Current workflow/model version covered by the evidence</label
+            ><input
+              id="version"
+              data-path="scope.current_version"
+              maxlength="500"
+            />
+            <p class="hint">
+              Unknown context stays an evidence gap. An offline label cannot
+              override real data, external effects or applicable permission.
+            </p>
+          </section>
+          <section id="issue-panel" class="card" hidden>
+            <p class="eyebrow">Record adverse findings explicitly</p>
+            <h2 id="issue-title" tabindex="-1">
+              Are material issues unresolved?
+            </h2>
+            <p>
+              Consider unacceptable quality or error severity, safety, security,
+              applicable permissions or requirements, and other material
+              operational concerns. The tool does not interpret your notes to
+              decide this.
+            </p>
+            <label for="issue-status">Position in the evidence reviewed</label
+            ><select id="issue-status" data-path="material_issue.status">
+              <option value="unknown">
+                Unknown or insufficiently assessed
+              </option>
+              <option value="none_identified">
+                No material issue identified in the evidence reviewed
+              </option>
+              <option value="unresolved">
+                A material issue exists and remains unresolved
+              </option>
+            </select>
+            <p class="notice">
+              An unresolved issue withholds expansion even if all ten conditions
+              are marked Yes. Unknown requires further assessment. These
+              positions are your own reports, not independent verification.
+            </p>
+            <label for="issue-summary">Issue or assessment-position note</label
+            ><textarea
+              id="issue-summary"
+              data-path="material_issue.summary"
+              maxlength="3000"
+              rows="4"
+            ></textarea>
+            <label for="issue-owner"
+              >Responsible human role or owner (use a safe role name)</label
+            ><input
+              id="issue-owner"
+              data-path="material_issue.owner"
+              maxlength="200"
+            />
+            <label for="issue-action">Required human action</label
+            ><select id="issue-action" data-path="material_issue.action">
+              <option value="unknown">Not yet determined</option>
+              <option value="investigate">Investigate</option>
+              <option value="contain">Contain affected use</option>
+              <option value="resolve">Resolve and retest</option>
+              <option value="determine">Determine an appropriate course</option>
+            </select>
+            <label for="issue-next"
+              >Specific next action and evidence needed</label
+            ><textarea
+              id="issue-next"
+              data-path="material_issue.next_step"
+              maxlength="3000"
+              rows="3"
+            ></textarea>
+            <p class="hint">
+              Missing ownership or action details do not hide the issue: the
+              result will require a responsible owner to be assigned. Keep this
+              note visible and current if the issue is later resolved.
+            </p>
           </section>
           <div id="questions"></div>
-          <div id="question-nav" class="actions" hidden>
-            <button type="button" id="previous">Previous</button
-            ><button type="button" id="next" class="primary">Next check</button>
+          <div id="question-nav" class="actions">
+            <button id="previous" type="button">Previous</button
+            ><button id="next" type="button" class="primary">Next</button>
           </div>
         </form>
         <section
@@ -160,31 +338,32 @@
           ><label class="file-label" for="import">Import assessment JSON</label
           ><input id="import" type="file" accept=".json,application/json" />
           <p>
-            Save JSON if you want to continue later. Import replaces the current
-            record after validation. PDF is available after reviewing the
-            checks.
+            Save a V2 draft at any time. V1 imports retain original data but
+            require reassessment. Unsupported fields or versions in a V2 file
+            are rejected; nothing is silently discarded. File limit: 1 MB.
           </p>
         </div>
         <p id="file-message" role="status" aria-live="polite"></p>
       </section>
       <footer>
-        <p>Practical AI Adoption / Independent, rule-based decision support</p>
+        <p>
+          Independent decision aid / schema 2, method 2.0 / no automated
+          approval
+        </p>
         <a
           href="https://github.com/shaunmarsden/practical-ai-adoption/blob/main/tools/pilot-readiness/README.md"
-          >Methodology, tests and limitations</a
-        ><span> | </span
-        ><a
+          >Method, migration and evidence</a
+        >
+        |
+        <a
           href="https://github.com/shaunmarsden/practical-ai-adoption/blob/main/research/official-ai-adoption-resources.md"
-          >Official adoption reading</a
+          >OpenAI, Anthropic and Google reading</a
         >
       </footer>
     </main>
     <dialog id="confirm-dialog">
       <h2>Replace this assessment?</h2>
-      <p>
-        Your current answers will be cleared. Save JSON first if you need to
-        keep them.
-      </p>
+      <p>Save JSON first if you need the current answers.</p>
       <form method="dialog">
         <button value="cancel">Keep current answers</button
         ><button value="replace" class="primary">Replace assessment</button>
