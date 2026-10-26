@@ -36,6 +36,10 @@ No coding or installation needed.
 
 [OpenAI, Anthropic and Google adoption resources](research/official-ai-adoption-resources.md) collects links to publicly available vendor guides, including downloadable PDFs. It distinguishes publisher recommendations from evidence and shows how to apply the ideas to an ordinary workflow. No third-party PDFs are copied here.
 
+## Check whether a pilot is ready to expand
+
+[AI pilot readiness checker](tools/pilot-readiness/README.md) is a small local Python tool that checks ten recorded conditions before a pilot is considered for wider use. It reports blockers and missing evidence; it never authorises deployment. Includes fictional sample data and eight code tests.
+
 ## See one complete test
 
 The [Thornfield Team Connect example](examples/thornfield-team-connect-prompting-example.md) gives an ordinary prompt and a guide-informed prompt the same made-up evidence. Both write a reply to a venue.
