@@ -1,0 +1,57 @@
+[
+  {
+    "url": "https://shaunmarsden.github.io/practical-ai-adoption/pilot-readiness/",
+    "method": "GET",
+    "body": null
+  },
+  {
+    "url": "https://shaunmarsden.github.io/practical-ai-adoption/pilot-readiness/style.css",
+    "method": "GET",
+    "body": null
+  },
+  {
+    "url": "https://shaunmarsden.github.io/practical-ai-adoption/pilot-readiness/vendor/jspdf.umd.min.js",
+    "method": "GET",
+    "body": null
+  },
+  {
+    "url": "https://shaunmarsden.github.io/practical-ai-adoption/pilot-readiness/app.mjs",
+    "method": "GET",
+    "body": null
+  },
+  {
+    "url": "https://shaunmarsden.github.io/practical-ai-adoption/pilot-readiness/model.mjs",
+    "method": "GET",
+    "body": null
+  },
+  {
+    "url": "https://shaunmarsden.github.io/practical-ai-adoption/pilot-readiness/examples.mjs",
+    "method": "GET",
+    "body": null
+  },
+  {
+    "url": "https://shaunmarsden.github.io/practical-ai-adoption/pilot-readiness/report.mjs",
+    "method": "GET",
+    "body": null
+  },
+  {
+    "url": "https://shaunmarsden.github.io/practical-ai-adoption/pilot-readiness/vendor/NotoSans-Regular.ttf",
+    "method": "GET",
+    "body": null
+  },
+  {
+    "url": "https://shaunmarsden.github.io/practical-ai-adoption/pilot-readiness/vendor/NotoSans-Regular.ttf",
+    "method": "GET",
+    "body": null
+  },
+  {
+    "url": "https://shaunmarsden.github.io/practical-ai-adoption/pilot-readiness/vendor/NotoSans-Regular.ttf",
+    "method": "GET",
+    "body": null
+  },
+  {
+    "url": "https://shaunmarsden.github.io/practical-ai-adoption/pilot-readiness/vendor/NotoSans-Regular.ttf",
+    "method": "GET",
+    "body": null
+  }
+]

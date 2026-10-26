@@ -1,0 +1,950 @@
+{
+  "expectations_sha256": "6301443b722507364a8f84d00c89515027b6b88a617104f59db3a858dc4ebb21",
+  "source_sha256": {
+    "docs/pilot-readiness/model.mjs": "49a91b5e62541f83aa4c4d2db834540cbee79b3317a4f5d4077b40b8cdbee330",
+    "docs/pilot-readiness/app.mjs": "9a028245fc87ab8fd3310c1888683ac2079716c7854062449e74bb3a3f697c5d",
+    "docs/pilot-readiness/report.mjs": "4bc2ce26af91305dad3ed21b8683b0c57aea2e459d64557a3bfa4efa6b7bd740",
+    "tools/pilot-readiness/pilot_readiness.py": "97c5a72e04a3e134a92753f110e7bc8bff107b3e97f07d303a8f08bf037bd02c"
+  },
+  "total": 30,
+  "by_comparison": {
+    "Agreement": 5,
+    "Potential false reassurance": 24,
+    "Potential unnecessary restriction": 1
+  },
+  "by_decision": {
+    "LIMITED PILOT ONLY": 2,
+    "READY FOR HUMAN REVIEW": 25,
+    "DO NOT EXPAND": 3
+  },
+  "comparison_basis": "Agreement refers to expansion direction, not equivalence of next actions. STOP_OR_CONTAIN versus DO NOT EXPAND still leaves containment to a human.",
+  "note": "Judgement comparison is an analytical opinion, not a ground-truth accuracy measurement. Python parity establishes implementation agreement only.",
+  "results": [
+    {
+      "id": "AD-01",
+      "expected_recommendation": "HOLD_EXPANSION",
+      "comparison": "Agreement",
+      "caveat": null,
+      "form_errors": {},
+      "browser": {
+        "pilot": "Fictional technical accuracy without business value",
+        "decision": "LIMITED PILOT ONLY",
+        "reason": "Essential controls are recorded, but the case for wider use is incomplete.",
+        "essential_blockers": [],
+        "remaining_gaps": [
+          {
+            "check": "business_outcome",
+            "requirement": "An agreed business outcome and success threshold",
+            "status": "no"
+          },
+          {
+            "check": "baseline",
+            "requirement": "A baseline for comparison",
+            "status": "no"
+          }
+        ],
+        "checks_met": 8,
+        "checks_total": 10,
+        "warning": "Self-reported notes are not independently verified. This tool cannot authorise deployment or establish ROI."
+      },
+      "python": {
+        "pilot": "Fictional technical accuracy without business value",
+        "decision": "LIMITED PILOT ONLY",
+        "reason": "Essential controls are recorded, but the case for wider use is incomplete.",
+        "essential_blockers": [],
+        "remaining_gaps": [
+          {
+            "check": "business_outcome",
+            "requirement": "An agreed business outcome and success threshold",
+            "status": "no"
+          },
+          {
+            "check": "baseline",
+            "requirement": "A baseline for comparison",
+            "status": "no"
+          }
+        ],
+        "checks_met": 8,
+        "checks_total": 10,
+        "warning": "Self-reported notes are not independently verified. This tool cannot authorise deployment or establish ROI."
+      }
+    },
+    {
+      "id": "AD-02",
+      "expected_recommendation": "STOP_OR_CONTAIN",
+      "comparison": "Potential false reassurance",
+      "caveat": null,
+      "form_errors": {},
+      "browser": {
+        "pilot": "Fictional strong value with severe errors",
+        "decision": "READY FOR HUMAN REVIEW",
+        "reason": "All checks are recorded as met; a responsible person must still validate the evidence and approve any expansion.",
+        "essential_blockers": [],
+        "remaining_gaps": [],
+        "checks_met": 10,
+        "checks_total": 10,
+        "warning": "Self-reported notes are not independently verified. This tool cannot authorise deployment or establish ROI."
+      },
+      "python": {
+        "pilot": "Fictional strong value with severe errors",
+        "decision": "READY FOR HUMAN REVIEW",
+        "reason": "All checks are recorded as met; a responsible person must still validate the evidence and approve any expansion.",
+        "essential_blockers": [],
+        "remaining_gaps": [],
+        "checks_met": 10,
+        "checks_total": 10,
+        "warning": "Self-reported notes are not independently verified. This tool cannot authorise deployment or establish ROI."
+      }
+    },
+    {
+      "id": "AD-03",
+      "expected_recommendation": "STOP_OR_CONTAIN",
+      "comparison": "Potential false reassurance",
+      "caveat": null,
+      "form_errors": {},
+      "browser": {
+        "pilot": "Fictional average accuracy hides vulnerable users",
+        "decision": "READY FOR HUMAN REVIEW",
+        "reason": "All checks are recorded as met; a responsible person must still validate the evidence and approve any expansion.",
+        "essential_blockers": [],
+        "remaining_gaps": [],
+        "checks_met": 10,
+        "checks_total": 10,
+        "warning": "Self-reported notes are not independently verified. This tool cannot authorise deployment or establish ROI."
+      },
+      "python": {
+        "pilot": "Fictional average accuracy hides vulnerable users",
+        "decision": "READY FOR HUMAN REVIEW",
+        "reason": "All checks are recorded as met; a responsible person must still validate the evidence and approve any expansion.",
+        "essential_blockers": [],
+        "remaining_gaps": [],
+        "checks_met": 10,
+        "checks_total": 10,
+        "warning": "Self-reported notes are not independently verified. This tool cannot authorise deployment or establish ROI."
+      }
+    },
+    {
+      "id": "AD-04",
+      "expected_recommendation": "STOP_OR_CONTAIN",
+      "comparison": "Potential false reassurance",
+      "caveat": null,
+      "form_errors": {},
+      "browser": {
+        "pilot": "Fictional completed review with critical findings",
+        "decision": "READY FOR HUMAN REVIEW",
+        "reason": "All checks are recorded as met; a responsible person must still validate the evidence and approve any expansion.",
+        "essential_blockers": [],
+        "remaining_gaps": [],
+        "checks_met": 10,
+        "checks_total": 10,
+        "warning": "Self-reported notes are not independently verified. This tool cannot authorise deployment or establish ROI."
+      },
+      "python": {
+        "pilot": "Fictional completed review with critical findings",
+        "decision": "READY FOR HUMAN REVIEW",
+        "reason": "All checks are recorded as met; a responsible person must still validate the evidence and approve any expansion.",
+        "essential_blockers": [],
+        "remaining_gaps": [],
+        "checks_met": 10,
+        "checks_total": 10,
+        "warning": "Self-reported notes are not independently verified. This tool cannot authorise deployment or establish ROI."
+      }
+    },
+    {
+      "id": "AD-05",
+      "expected_recommendation": "HOLD_EXPANSION",
+      "comparison": "Potential false reassurance",
+      "caveat": null,
+      "form_errors": {},
+      "browser": {
+        "pilot": "Fictional owner without authority or resources",
+        "decision": "READY FOR HUMAN REVIEW",
+        "reason": "All checks are recorded as met; a responsible person must still validate the evidence and approve any expansion.",
+        "essential_blockers": [],
+        "remaining_gaps": [],
+        "checks_met": 10,
+        "checks_total": 10,
+        "warning": "Self-reported notes are not independently verified. This tool cannot authorise deployment or establish ROI."
+      },
+      "python": {
+        "pilot": "Fictional owner without authority or resources",
+        "decision": "READY FOR HUMAN REVIEW",
+        "reason": "All checks are recorded as met; a responsible person must still validate the evidence and approve any expansion.",
+        "essential_blockers": [],
+        "remaining_gaps": [],
+        "checks_met": 10,
+        "checks_total": 10,
+        "warning": "Self-reported notes are not independently verified. This tool cannot authorise deployment or establish ROI."
+      }
+    },
+    {
+      "id": "AD-06",
+      "expected_recommendation": "STOP_OR_CONTAIN",
+      "comparison": "Potential false reassurance",
+      "caveat": null,
+      "form_errors": {},
+      "browser": {
+        "pilot": "Fictional approval routinely bypassed",
+        "decision": "READY FOR HUMAN REVIEW",
+        "reason": "All checks are recorded as met; a responsible person must still validate the evidence and approve any expansion.",
+        "essential_blockers": [],
+        "remaining_gaps": [],
+        "checks_met": 10,
+        "checks_total": 10,
+        "warning": "Self-reported notes are not independently verified. This tool cannot authorise deployment or establish ROI."
+      },
+      "python": {
+        "pilot": "Fictional approval routinely bypassed",
+        "decision": "READY FOR HUMAN REVIEW",
+        "reason": "All checks are recorded as met; a responsible person must still validate the evidence and approve any expansion.",
+        "essential_blockers": [],
+        "remaining_gaps": [],
+        "checks_met": 10,
+        "checks_total": 10,
+        "warning": "Self-reported notes are not independently verified. This tool cannot authorise deployment or establish ROI."
+      }
+    },
+    {
+      "id": "AD-07",
+      "expected_recommendation": "HOLD_EXPANSION",
+      "comparison": "Potential false reassurance",
+      "caveat": null,
+      "form_errors": {},
+      "browser": {
+        "pilot": "Fictional permission for another purpose",
+        "decision": "READY FOR HUMAN REVIEW",
+        "reason": "All checks are recorded as met; a responsible person must still validate the evidence and approve any expansion.",
+        "essential_blockers": [],
+        "remaining_gaps": [],
+        "checks_met": 10,
+        "checks_total": 10,
+        "warning": "Self-reported notes are not independently verified. This tool cannot authorise deployment or establish ROI."
+      },
+      "python": {
+        "pilot": "Fictional permission for another purpose",
+        "decision": "READY FOR HUMAN REVIEW",
+        "reason": "All checks are recorded as met; a responsible person must still validate the evidence and approve any expansion.",
+        "essential_blockers": [],
+        "remaining_gaps": [],
+        "checks_met": 10,
+        "checks_total": 10,
+        "warning": "Self-reported notes are not independently verified. This tool cannot authorise deployment or establish ROI."
+      }
+    },
+    {
+      "id": "AD-08",
+      "expected_recommendation": "HOLD_EXPANSION",
+      "comparison": "Potential false reassurance",
+      "caveat": null,
+      "form_errors": {},
+      "browser": {
+        "pilot": "Fictional untested recovery plan",
+        "decision": "READY FOR HUMAN REVIEW",
+        "reason": "All checks are recorded as met; a responsible person must still validate the evidence and approve any expansion.",
+        "essential_blockers": [],
+        "remaining_gaps": [],
+        "checks_met": 10,
+        "checks_total": 10,
+        "warning": "Self-reported notes are not independently verified. This tool cannot authorise deployment or establish ROI."
+      },
+      "python": {
+        "pilot": "Fictional untested recovery plan",
+        "decision": "READY FOR HUMAN REVIEW",
+        "reason": "All checks are recorded as met; a responsible person must still validate the evidence and approve any expansion.",
+        "essential_blockers": [],
+        "remaining_gaps": [],
+        "checks_met": 10,
+        "checks_total": 10,
+        "warning": "Self-reported notes are not independently verified. This tool cannot authorise deployment or establish ROI."
+      }
+    },
+    {
+      "id": "AD-09",
+      "expected_recommendation": "HOLD_EXPANSION",
+      "comparison": "Potential false reassurance",
+      "caveat": null,
+      "form_errors": {},
+      "browser": {
+        "pilot": "Fictional cherry-picked success sample",
+        "decision": "READY FOR HUMAN REVIEW",
+        "reason": "All checks are recorded as met; a responsible person must still validate the evidence and approve any expansion.",
+        "essential_blockers": [],
+        "remaining_gaps": [],
+        "checks_met": 10,
+        "checks_total": 10,
+        "warning": "Self-reported notes are not independently verified. This tool cannot authorise deployment or establish ROI."
+      },
+      "python": {
+        "pilot": "Fictional cherry-picked success sample",
+        "decision": "READY FOR HUMAN REVIEW",
+        "reason": "All checks are recorded as met; a responsible person must still validate the evidence and approve any expansion.",
+        "essential_blockers": [],
+        "remaining_gaps": [],
+        "checks_met": 10,
+        "checks_total": 10,
+        "warning": "Self-reported notes are not independently verified. This tool cannot authorise deployment or establish ROI."
+      }
+    },
+    {
+      "id": "AD-10",
+      "expected_recommendation": "HOLD_EXPANSION",
+      "comparison": "Potential false reassurance",
+      "caveat": null,
+      "form_errors": {},
+      "browser": {
+        "pilot": "Fictional users refuse adoption",
+        "decision": "READY FOR HUMAN REVIEW",
+        "reason": "All checks are recorded as met; a responsible person must still validate the evidence and approve any expansion.",
+        "essential_blockers": [],
+        "remaining_gaps": [],
+        "checks_met": 10,
+        "checks_total": 10,
+        "warning": "Self-reported notes are not independently verified. This tool cannot authorise deployment or establish ROI."
+      },
+      "python": {
+        "pilot": "Fictional users refuse adoption",
+        "decision": "READY FOR HUMAN REVIEW",
+        "reason": "All checks are recorded as met; a responsible person must still validate the evidence and approve any expansion.",
+        "essential_blockers": [],
+        "remaining_gaps": [],
+        "checks_met": 10,
+        "checks_total": 10,
+        "warning": "Self-reported notes are not independently verified. This tool cannot authorise deployment or establish ROI."
+      }
+    },
+    {
+      "id": "AD-11",
+      "expected_recommendation": "HOLD_EXPANSION",
+      "comparison": "Potential false reassurance",
+      "caveat": null,
+      "form_errors": {},
+      "browser": {
+        "pilot": "Fictional departing sole maintainer",
+        "decision": "READY FOR HUMAN REVIEW",
+        "reason": "All checks are recorded as met; a responsible person must still validate the evidence and approve any expansion.",
+        "essential_blockers": [],
+        "remaining_gaps": [],
+        "checks_met": 10,
+        "checks_total": 10,
+        "warning": "Self-reported notes are not independently verified. This tool cannot authorise deployment or establish ROI."
+      },
+      "python": {
+        "pilot": "Fictional departing sole maintainer",
+        "decision": "READY FOR HUMAN REVIEW",
+        "reason": "All checks are recorded as met; a responsible person must still validate the evidence and approve any expansion.",
+        "essential_blockers": [],
+        "remaining_gaps": [],
+        "checks_met": 10,
+        "checks_total": 10,
+        "warning": "Self-reported notes are not independently verified. This tool cannot authorise deployment or establish ROI."
+      }
+    },
+    {
+      "id": "AD-12",
+      "expected_recommendation": "HOLD_EXPANSION",
+      "comparison": "Potential false reassurance",
+      "caveat": null,
+      "form_errors": {},
+      "browser": {
+        "pilot": "Fictional unsustainable operating cost",
+        "decision": "READY FOR HUMAN REVIEW",
+        "reason": "All checks are recorded as met; a responsible person must still validate the evidence and approve any expansion.",
+        "essential_blockers": [],
+        "remaining_gaps": [],
+        "checks_met": 10,
+        "checks_total": 10,
+        "warning": "Self-reported notes are not independently verified. This tool cannot authorise deployment or establish ROI."
+      },
+      "python": {
+        "pilot": "Fictional unsustainable operating cost",
+        "decision": "READY FOR HUMAN REVIEW",
+        "reason": "All checks are recorded as met; a responsible person must still validate the evidence and approve any expansion.",
+        "essential_blockers": [],
+        "remaining_gaps": [],
+        "checks_met": 10,
+        "checks_total": 10,
+        "warning": "Self-reported notes are not independently verified. This tool cannot authorise deployment or establish ROI."
+      }
+    },
+    {
+      "id": "AD-13",
+      "expected_recommendation": "HOLD_EXPANSION",
+      "comparison": "Potential false reassurance",
+      "caveat": null,
+      "form_errors": {},
+      "browser": {
+        "pilot": "Fictional evaluation invalidated by model update",
+        "decision": "READY FOR HUMAN REVIEW",
+        "reason": "All checks are recorded as met; a responsible person must still validate the evidence and approve any expansion.",
+        "essential_blockers": [],
+        "remaining_gaps": [],
+        "checks_met": 10,
+        "checks_total": 10,
+        "warning": "Self-reported notes are not independently verified. This tool cannot authorise deployment or establish ROI."
+      },
+      "python": {
+        "pilot": "Fictional evaluation invalidated by model update",
+        "decision": "READY FOR HUMAN REVIEW",
+        "reason": "All checks are recorded as met; a responsible person must still validate the evidence and approve any expansion.",
+        "essential_blockers": [],
+        "remaining_gaps": [],
+        "checks_met": 10,
+        "checks_total": 10,
+        "warning": "Self-reported notes are not independently verified. This tool cannot authorise deployment or establish ROI."
+      }
+    },
+    {
+      "id": "AD-14",
+      "expected_recommendation": "STOP_OR_CONTAIN",
+      "comparison": "Potential false reassurance",
+      "caveat": null,
+      "form_errors": {},
+      "browser": {
+        "pilot": "Fictional routine success and exception failures",
+        "decision": "READY FOR HUMAN REVIEW",
+        "reason": "All checks are recorded as met; a responsible person must still validate the evidence and approve any expansion.",
+        "essential_blockers": [],
+        "remaining_gaps": [],
+        "checks_met": 10,
+        "checks_total": 10,
+        "warning": "Self-reported notes are not independently verified. This tool cannot authorise deployment or establish ROI."
+      },
+      "python": {
+        "pilot": "Fictional routine success and exception failures",
+        "decision": "READY FOR HUMAN REVIEW",
+        "reason": "All checks are recorded as met; a responsible person must still validate the evidence and approve any expansion.",
+        "essential_blockers": [],
+        "remaining_gaps": [],
+        "checks_met": 10,
+        "checks_total": 10,
+        "warning": "Self-reported notes are not independently verified. This tool cannot authorise deployment or establish ROI."
+      }
+    },
+    {
+      "id": "AD-15",
+      "expected_recommendation": "STOP_OR_CONTAIN",
+      "comparison": "Potential false reassurance",
+      "caveat": null,
+      "form_errors": {},
+      "browser": {
+        "pilot": "Fictional low-risk drafting sends wrong information",
+        "decision": "READY FOR HUMAN REVIEW",
+        "reason": "All checks are recorded as met; a responsible person must still validate the evidence and approve any expansion.",
+        "essential_blockers": [],
+        "remaining_gaps": [],
+        "checks_met": 10,
+        "checks_total": 10,
+        "warning": "Self-reported notes are not independently verified. This tool cannot authorise deployment or establish ROI."
+      },
+      "python": {
+        "pilot": "Fictional low-risk drafting sends wrong information",
+        "decision": "READY FOR HUMAN REVIEW",
+        "reason": "All checks are recorded as met; a responsible person must still validate the evidence and approve any expansion.",
+        "essential_blockers": [],
+        "remaining_gaps": [],
+        "checks_met": 10,
+        "checks_total": 10,
+        "warning": "Self-reported notes are not independently verified. This tool cannot authorise deployment or establish ROI."
+      }
+    },
+    {
+      "id": "AD-16",
+      "expected_recommendation": "HOLD_EXPANSION",
+      "comparison": "Potential false reassurance",
+      "caveat": null,
+      "form_errors": {},
+      "browser": {
+        "pilot": "Fictional critical workflow without incident response",
+        "decision": "READY FOR HUMAN REVIEW",
+        "reason": "All checks are recorded as met; a responsible person must still validate the evidence and approve any expansion.",
+        "essential_blockers": [],
+        "remaining_gaps": [],
+        "checks_met": 10,
+        "checks_total": 10,
+        "warning": "Self-reported notes are not independently verified. This tool cannot authorise deployment or establish ROI."
+      },
+      "python": {
+        "pilot": "Fictional critical workflow without incident response",
+        "decision": "READY FOR HUMAN REVIEW",
+        "reason": "All checks are recorded as met; a responsible person must still validate the evidence and approve any expansion.",
+        "essential_blockers": [],
+        "remaining_gaps": [],
+        "checks_met": 10,
+        "checks_total": 10,
+        "warning": "Self-reported notes are not independently verified. This tool cannot authorise deployment or establish ROI."
+      }
+    },
+    {
+      "id": "AD-17",
+      "expected_recommendation": "STOP_OR_CONTAIN",
+      "comparison": "Potential false reassurance",
+      "caveat": null,
+      "form_errors": {},
+      "browser": {
+        "pilot": "Fictional sensitive data in a generally approved tool",
+        "decision": "READY FOR HUMAN REVIEW",
+        "reason": "All checks are recorded as met; a responsible person must still validate the evidence and approve any expansion.",
+        "essential_blockers": [],
+        "remaining_gaps": [],
+        "checks_met": 10,
+        "checks_total": 10,
+        "warning": "Self-reported notes are not independently verified. This tool cannot authorise deployment or establish ROI."
+      },
+      "python": {
+        "pilot": "Fictional sensitive data in a generally approved tool",
+        "decision": "READY FOR HUMAN REVIEW",
+        "reason": "All checks are recorded as met; a responsible person must still validate the evidence and approve any expansion.",
+        "essential_blockers": [],
+        "remaining_gaps": [],
+        "checks_met": 10,
+        "checks_total": 10,
+        "warning": "Self-reported notes are not independently verified. This tool cannot authorise deployment or establish ROI."
+      }
+    },
+    {
+      "id": "AD-18",
+      "expected_recommendation": "HOLD_EXPANSION",
+      "comparison": "Potential false reassurance",
+      "caveat": null,
+      "form_errors": {},
+      "browser": {
+        "pilot": "Fictional stakeholders disagree about success",
+        "decision": "READY FOR HUMAN REVIEW",
+        "reason": "All checks are recorded as met; a responsible person must still validate the evidence and approve any expansion.",
+        "essential_blockers": [],
+        "remaining_gaps": [],
+        "checks_met": 10,
+        "checks_total": 10,
+        "warning": "Self-reported notes are not independently verified. This tool cannot authorise deployment or establish ROI."
+      },
+      "python": {
+        "pilot": "Fictional stakeholders disagree about success",
+        "decision": "READY FOR HUMAN REVIEW",
+        "reason": "All checks are recorded as met; a responsible person must still validate the evidence and approve any expansion.",
+        "essential_blockers": [],
+        "remaining_gaps": [],
+        "checks_met": 10,
+        "checks_total": 10,
+        "warning": "Self-reported notes are not independently verified. This tool cannot authorise deployment or establish ROI."
+      }
+    },
+    {
+      "id": "AD-19",
+      "expected_recommendation": "HOLD_EXPANSION",
+      "comparison": "Potential false reassurance",
+      "caveat": "Hidden falsity is not inferable from the payload. This is an information limit, not a confirmed software defect.",
+      "form_errors": {},
+      "browser": {
+        "pilot": "Fictional plausible but misleading completeness",
+        "decision": "READY FOR HUMAN REVIEW",
+        "reason": "All checks are recorded as met; a responsible person must still validate the evidence and approve any expansion.",
+        "essential_blockers": [],
+        "remaining_gaps": [],
+        "checks_met": 10,
+        "checks_total": 10,
+        "warning": "Self-reported notes are not independently verified. This tool cannot authorise deployment or establish ROI."
+      },
+      "python": {
+        "pilot": "Fictional plausible but misleading completeness",
+        "decision": "READY FOR HUMAN REVIEW",
+        "reason": "All checks are recorded as met; a responsible person must still validate the evidence and approve any expansion.",
+        "essential_blockers": [],
+        "remaining_gaps": [],
+        "checks_met": 10,
+        "checks_total": 10,
+        "warning": "Self-reported notes are not independently verified. This tool cannot authorise deployment or establish ROI."
+      }
+    },
+    {
+      "id": "AD-20",
+      "expected_recommendation": "PROPORTIONATE_EXPERIMENT",
+      "comparison": "Potential unnecessary restriction",
+      "caveat": "The tool blocks expansion, not the bounded experiment. This is a scope/wording concern, not proof that it prohibits experimentation.",
+      "form_errors": {},
+      "browser": {
+        "pilot": "Fictional harmless offline experiment",
+        "decision": "DO NOT EXPAND",
+        "reason": "One or more essential control checks lack affirmative evidence.",
+        "essential_blockers": [
+          {
+            "check": "quality_review",
+            "requirement": "A quality/error review with a named reviewer",
+            "status": "unknown"
+          }
+        ],
+        "remaining_gaps": [
+          {
+            "check": "quality_review",
+            "requirement": "A quality/error review with a named reviewer",
+            "status": "unknown"
+          }
+        ],
+        "checks_met": 9,
+        "checks_total": 10,
+        "warning": "Self-reported notes are not independently verified. This tool cannot authorise deployment or establish ROI."
+      },
+      "python": {
+        "pilot": "Fictional harmless offline experiment",
+        "decision": "DO NOT EXPAND",
+        "reason": "One or more essential control checks lack affirmative evidence.",
+        "essential_blockers": [
+          {
+            "check": "quality_review",
+            "requirement": "A quality/error review with a named reviewer",
+            "status": "unknown"
+          }
+        ],
+        "remaining_gaps": [
+          {
+            "check": "quality_review",
+            "requirement": "A quality/error review with a named reviewer",
+            "status": "unknown"
+          }
+        ],
+        "checks_met": 9,
+        "checks_total": 10,
+        "warning": "Self-reported notes are not independently verified. This tool cannot authorise deployment or establish ROI."
+      }
+    },
+    {
+      "id": "AD-21",
+      "expected_recommendation": "HOLD_EXPANSION",
+      "comparison": "Agreement",
+      "caveat": null,
+      "form_errors": {},
+      "browser": {
+        "pilot": "Fictional clear missing data permission",
+        "decision": "DO NOT EXPAND",
+        "reason": "One or more essential control checks lack affirmative evidence.",
+        "essential_blockers": [
+          {
+            "check": "data_approval",
+            "requirement": "Permission and controls for the data used",
+            "status": "no"
+          }
+        ],
+        "remaining_gaps": [
+          {
+            "check": "data_approval",
+            "requirement": "Permission and controls for the data used",
+            "status": "no"
+          }
+        ],
+        "checks_met": 9,
+        "checks_total": 10,
+        "warning": "Self-reported notes are not independently verified. This tool cannot authorise deployment or establish ROI."
+      },
+      "python": {
+        "pilot": "Fictional clear missing data permission",
+        "decision": "DO NOT EXPAND",
+        "reason": "One or more essential control checks lack affirmative evidence.",
+        "essential_blockers": [
+          {
+            "check": "data_approval",
+            "requirement": "Permission and controls for the data used",
+            "status": "no"
+          }
+        ],
+        "remaining_gaps": [
+          {
+            "check": "data_approval",
+            "requirement": "Permission and controls for the data used",
+            "status": "no"
+          }
+        ],
+        "checks_met": 9,
+        "checks_total": 10,
+        "warning": "Self-reported notes are not independently verified. This tool cannot authorise deployment or establish ROI."
+      }
+    },
+    {
+      "id": "AD-22",
+      "expected_recommendation": "HUMAN_REVIEW",
+      "comparison": "Agreement",
+      "caveat": null,
+      "form_errors": {},
+      "browser": {
+        "pilot": "Fictional bounded complete business case",
+        "decision": "READY FOR HUMAN REVIEW",
+        "reason": "All checks are recorded as met; a responsible person must still validate the evidence and approve any expansion.",
+        "essential_blockers": [],
+        "remaining_gaps": [],
+        "checks_met": 10,
+        "checks_total": 10,
+        "warning": "Self-reported notes are not independently verified. This tool cannot authorise deployment or establish ROI."
+      },
+      "python": {
+        "pilot": "Fictional bounded complete business case",
+        "decision": "READY FOR HUMAN REVIEW",
+        "reason": "All checks are recorded as met; a responsible person must still validate the evidence and approve any expansion.",
+        "essential_blockers": [],
+        "remaining_gaps": [],
+        "checks_met": 10,
+        "checks_total": 10,
+        "warning": "Self-reported notes are not independently verified. This tool cannot authorise deployment or establish ROI."
+      }
+    },
+    {
+      "id": "AD-23",
+      "expected_recommendation": "STOP_OR_CONTAIN",
+      "comparison": "Agreement",
+      "caveat": null,
+      "form_errors": {},
+      "browser": {
+        "pilot": "Fictional quality review honestly marked failed",
+        "decision": "DO NOT EXPAND",
+        "reason": "One or more essential control checks lack affirmative evidence.",
+        "essential_blockers": [
+          {
+            "check": "quality_review",
+            "requirement": "A quality/error review with a named reviewer",
+            "status": "no"
+          }
+        ],
+        "remaining_gaps": [
+          {
+            "check": "quality_review",
+            "requirement": "A quality/error review with a named reviewer",
+            "status": "no"
+          }
+        ],
+        "checks_met": 9,
+        "checks_total": 10,
+        "warning": "Self-reported notes are not independently verified. This tool cannot authorise deployment or establish ROI."
+      },
+      "python": {
+        "pilot": "Fictional quality review honestly marked failed",
+        "decision": "DO NOT EXPAND",
+        "reason": "One or more essential control checks lack affirmative evidence.",
+        "essential_blockers": [
+          {
+            "check": "quality_review",
+            "requirement": "A quality/error review with a named reviewer",
+            "status": "no"
+          }
+        ],
+        "remaining_gaps": [
+          {
+            "check": "quality_review",
+            "requirement": "A quality/error review with a named reviewer",
+            "status": "no"
+          }
+        ],
+        "checks_met": 9,
+        "checks_total": 10,
+        "warning": "Self-reported notes are not independently verified. This tool cannot authorise deployment or establish ROI."
+      }
+    },
+    {
+      "id": "AD-24",
+      "expected_recommendation": "HOLD_EXPANSION",
+      "comparison": "Agreement",
+      "caveat": null,
+      "form_errors": {},
+      "browser": {
+        "pilot": "Fictional training and monitoring explicitly incomplete",
+        "decision": "LIMITED PILOT ONLY",
+        "reason": "Essential controls are recorded, but the case for wider use is incomplete.",
+        "essential_blockers": [],
+        "remaining_gaps": [
+          {
+            "check": "user_training",
+            "requirement": "User instructions and support",
+            "status": "unknown"
+          },
+          {
+            "check": "monitoring",
+            "requirement": "Ongoing monitoring and review date",
+            "status": "unknown"
+          }
+        ],
+        "checks_met": 8,
+        "checks_total": 10,
+        "warning": "Self-reported notes are not independently verified. This tool cannot authorise deployment or establish ROI."
+      },
+      "python": {
+        "pilot": "Fictional training and monitoring explicitly incomplete",
+        "decision": "LIMITED PILOT ONLY",
+        "reason": "Essential controls are recorded, but the case for wider use is incomplete.",
+        "essential_blockers": [],
+        "remaining_gaps": [
+          {
+            "check": "user_training",
+            "requirement": "User instructions and support",
+            "status": "unknown"
+          },
+          {
+            "check": "monitoring",
+            "requirement": "Ongoing monitoring and review date",
+            "status": "unknown"
+          }
+        ],
+        "checks_met": 8,
+        "checks_total": 10,
+        "warning": "Self-reported notes are not independently verified. This tool cannot authorise deployment or establish ROI."
+      }
+    },
+    {
+      "id": "AD-25",
+      "expected_recommendation": "HOLD_EXPANSION",
+      "comparison": "Potential false reassurance",
+      "caveat": null,
+      "form_errors": {},
+      "browser": {
+        "pilot": "Fictional approval requested but refused",
+        "decision": "READY FOR HUMAN REVIEW",
+        "reason": "All checks are recorded as met; a responsible person must still validate the evidence and approve any expansion.",
+        "essential_blockers": [],
+        "remaining_gaps": [],
+        "checks_met": 10,
+        "checks_total": 10,
+        "warning": "Self-reported notes are not independently verified. This tool cannot authorise deployment or establish ROI."
+      },
+      "python": {
+        "pilot": "Fictional approval requested but refused",
+        "decision": "READY FOR HUMAN REVIEW",
+        "reason": "All checks are recorded as met; a responsible person must still validate the evidence and approve any expansion.",
+        "essential_blockers": [],
+        "remaining_gaps": [],
+        "checks_met": 10,
+        "checks_total": 10,
+        "warning": "Self-reported notes are not independently verified. This tool cannot authorise deployment or establish ROI."
+      }
+    },
+    {
+      "id": "AD-26",
+      "expected_recommendation": "HOLD_EXPANSION",
+      "comparison": "Potential false reassurance",
+      "caveat": null,
+      "form_errors": {},
+      "browser": {
+        "pilot": "Fictional owner has left",
+        "decision": "READY FOR HUMAN REVIEW",
+        "reason": "All checks are recorded as met; a responsible person must still validate the evidence and approve any expansion.",
+        "essential_blockers": [],
+        "remaining_gaps": [],
+        "checks_met": 10,
+        "checks_total": 10,
+        "warning": "Self-reported notes are not independently verified. This tool cannot authorise deployment or establish ROI."
+      },
+      "python": {
+        "pilot": "Fictional owner has left",
+        "decision": "READY FOR HUMAN REVIEW",
+        "reason": "All checks are recorded as met; a responsible person must still validate the evidence and approve any expansion.",
+        "essential_blockers": [],
+        "remaining_gaps": [],
+        "checks_met": 10,
+        "checks_total": 10,
+        "warning": "Self-reported notes are not independently verified. This tool cannot authorise deployment or establish ROI."
+      }
+    },
+    {
+      "id": "AD-27",
+      "expected_recommendation": "HOLD_EXPANSION",
+      "comparison": "Potential false reassurance",
+      "caveat": null,
+      "form_errors": {},
+      "browser": {
+        "pilot": "Fictional monitoring discontinued",
+        "decision": "READY FOR HUMAN REVIEW",
+        "reason": "All checks are recorded as met; a responsible person must still validate the evidence and approve any expansion.",
+        "essential_blockers": [],
+        "remaining_gaps": [],
+        "checks_met": 10,
+        "checks_total": 10,
+        "warning": "Self-reported notes are not independently verified. This tool cannot authorise deployment or establish ROI."
+      },
+      "python": {
+        "pilot": "Fictional monitoring discontinued",
+        "decision": "READY FOR HUMAN REVIEW",
+        "reason": "All checks are recorded as met; a responsible person must still validate the evidence and approve any expansion.",
+        "essential_blockers": [],
+        "remaining_gaps": [],
+        "checks_met": 10,
+        "checks_total": 10,
+        "warning": "Self-reported notes are not independently verified. This tool cannot authorise deployment or establish ROI."
+      }
+    },
+    {
+      "id": "AD-28",
+      "expected_recommendation": "HOLD_EXPANSION",
+      "comparison": "Potential false reassurance",
+      "caveat": null,
+      "form_errors": {},
+      "browser": {
+        "pilot": "Fictional baseline from another workflow",
+        "decision": "READY FOR HUMAN REVIEW",
+        "reason": "All checks are recorded as met; a responsible person must still validate the evidence and approve any expansion.",
+        "essential_blockers": [],
+        "remaining_gaps": [],
+        "checks_met": 10,
+        "checks_total": 10,
+        "warning": "Self-reported notes are not independently verified. This tool cannot authorise deployment or establish ROI."
+      },
+      "python": {
+        "pilot": "Fictional baseline from another workflow",
+        "decision": "READY FOR HUMAN REVIEW",
+        "reason": "All checks are recorded as met; a responsible person must still validate the evidence and approve any expansion.",
+        "essential_blockers": [],
+        "remaining_gaps": [],
+        "checks_met": 10,
+        "checks_total": 10,
+        "warning": "Self-reported notes are not independently verified. This tool cannot authorise deployment or establish ROI."
+      }
+    },
+    {
+      "id": "AD-29",
+      "expected_recommendation": "HOLD_EXPANSION",
+      "comparison": "Potential false reassurance",
+      "caveat": null,
+      "form_errors": {},
+      "browser": {
+        "pilot": "Fictional permission expired with previous pilot",
+        "decision": "READY FOR HUMAN REVIEW",
+        "reason": "All checks are recorded as met; a responsible person must still validate the evidence and approve any expansion.",
+        "essential_blockers": [],
+        "remaining_gaps": [],
+        "checks_met": 10,
+        "checks_total": 10,
+        "warning": "Self-reported notes are not independently verified. This tool cannot authorise deployment or establish ROI."
+      },
+      "python": {
+        "pilot": "Fictional permission expired with previous pilot",
+        "decision": "READY FOR HUMAN REVIEW",
+        "reason": "All checks are recorded as met; a responsible person must still validate the evidence and approve any expansion.",
+        "essential_blockers": [],
+        "remaining_gaps": [],
+        "checks_met": 10,
+        "checks_total": 10,
+        "warning": "Self-reported notes are not independently verified. This tool cannot authorise deployment or establish ROI."
+      }
+    },
+    {
+      "id": "AD-30",
+      "expected_recommendation": "HOLD_EXPANSION",
+      "comparison": "Potential false reassurance",
+      "caveat": null,
+      "form_errors": {},
+      "browser": {
+        "pilot": "Fictional contract forbids external processing",
+        "decision": "READY FOR HUMAN REVIEW",
+        "reason": "All checks are recorded as met; a responsible person must still validate the evidence and approve any expansion.",
+        "essential_blockers": [],
+        "remaining_gaps": [],
+        "checks_met": 10,
+        "checks_total": 10,
+        "warning": "Self-reported notes are not independently verified. This tool cannot authorise deployment or establish ROI."
+      },
+      "python": {
+        "pilot": "Fictional contract forbids external processing",
+        "decision": "READY FOR HUMAN REVIEW",
+        "reason": "All checks are recorded as met; a responsible person must still validate the evidence and approve any expansion.",
+        "essential_blockers": [],
+        "remaining_gaps": [],
+        "checks_met": 10,
+        "checks_total": 10,
+        "warning": "Self-reported notes are not independently verified. This tool cannot authorise deployment or establish ROI."
+      }
+    }
+  ]
+}

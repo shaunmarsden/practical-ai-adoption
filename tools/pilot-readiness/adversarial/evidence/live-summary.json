@@ -1,0 +1,380 @@
+{
+  "url": "https://shaunmarsden.github.io/practical-ai-adoption/pilot-readiness/",
+  "started_utc": "2026-10-26T12:54:52.063Z",
+  "desktop": {
+    "viewport": {
+      "width": 1440,
+      "height": 1000
+    },
+    "http_status": 200,
+    "ten_visible_questions_checked": true,
+    "roundtrip_matches": true,
+    "requests": 14,
+    "unexpected_requests": [],
+    "page_errors": [],
+    "console_errors": [
+      {
+        "text": "Failed to load resource: the server responded with a status of 404 ()",
+        "location": {
+          "url": "https://shaunmarsden.github.io/favicon.ico",
+          "line": 0,
+          "column": 0,
+          "lineNumber": 0,
+          "columnNumber": 0
+        }
+      }
+    ],
+    "http_errors": [],
+    "storage": {
+      "localStorage": 0,
+      "sessionStorage": 0,
+      "cookies": ""
+    }
+  },
+  "mobile": {
+    "viewport": {
+      "width": 390,
+      "height": 844
+    },
+    "http_status": 200,
+    "ten_visible_questions_checked": true,
+    "roundtrip_matches": true,
+    "requests": 11,
+    "unexpected_requests": [],
+    "page_errors": [],
+    "console_errors": [],
+    "http_errors": [],
+    "storage": {
+      "localStorage": 0,
+      "sessionStorage": 0,
+      "cookies": ""
+    }
+  },
+  "asset_checks": [
+    {
+      "path": "index.html",
+      "http_status": 200,
+      "sha256": "c4ba9135d24adab37ba135633a7f6348a5bafe25a81420eb0c37475efb1fcc6f",
+      "matches_merged_checkout": true
+    },
+    {
+      "path": "app.mjs",
+      "http_status": 200,
+      "sha256": "9a028245fc87ab8fd3310c1888683ac2079716c7854062449e74bb3a3f697c5d",
+      "matches_merged_checkout": true
+    },
+    {
+      "path": "model.mjs",
+      "http_status": 200,
+      "sha256": "49a91b5e62541f83aa4c4d2db834540cbee79b3317a4f5d4077b40b8cdbee330",
+      "matches_merged_checkout": true
+    },
+    {
+      "path": "report.mjs",
+      "http_status": 200,
+      "sha256": "4bc2ce26af91305dad3ed21b8683b0c57aea2e459d64557a3bfa4efa6b7bd740",
+      "matches_merged_checkout": true
+    },
+    {
+      "path": "examples.mjs",
+      "http_status": 200,
+      "sha256": "af5cc22e95ebed197d0962392d5793d8e0fc99d7fe86e9ab770c9480795edf2b",
+      "matches_merged_checkout": true
+    },
+    {
+      "path": "style.css",
+      "http_status": 200,
+      "sha256": "6f077dc55254de2e5139b7f4124db416101a48da5ac98d36646de7478014f63a",
+      "matches_merged_checkout": true
+    },
+    {
+      "path": "vendor/jspdf.umd.min.js",
+      "http_status": 200,
+      "sha256": "e6551fcdc32f09d6853b2c5126d18d01d9447e0da618a41a11ebeee0f6c20d54",
+      "matches_merged_checkout": true
+    },
+    {
+      "path": "vendor/NotoSans-Regular.ttf",
+      "http_status": 200,
+      "sha256": "b85c38ecea8a7cfb39c24e395a4007474fa5a4fc864f6ee33309eb4948d232d5",
+      "matches_merged_checkout": true
+    }
+  ],
+  "pdfs": [
+    {
+      "label": "built-in-blocked",
+      "viewport": 1440,
+      "path": "built-in-blocked-1440.pdf",
+      "decision": "DO NOT EXPAND"
+    },
+    {
+      "label": "AD-04",
+      "viewport": 1440,
+      "path": "AD-04-1440.pdf",
+      "decision": "READY FOR HUMAN REVIEW"
+    },
+    {
+      "label": "AD-22",
+      "viewport": 1440,
+      "path": "AD-22-1440.pdf",
+      "decision": "READY FOR HUMAN REVIEW"
+    },
+    {
+      "label": "AD-24",
+      "viewport": 1440,
+      "path": "AD-24-1440.pdf",
+      "decision": "LIMITED PILOT ONLY"
+    },
+    {
+      "label": "long-notes",
+      "viewport": 1440,
+      "path": "long-notes-1440.pdf",
+      "decision": "READY FOR HUMAN REVIEW"
+    },
+    {
+      "label": "undated-import",
+      "viewport": 1440,
+      "path": "undated-import-1440.pdf",
+      "decision": "READY FOR HUMAN REVIEW"
+    },
+    {
+      "label": "built-in-blocked",
+      "viewport": 390,
+      "path": "built-in-blocked-390.pdf",
+      "decision": "DO NOT EXPAND"
+    },
+    {
+      "label": "AD-04",
+      "viewport": 390,
+      "path": "AD-04-390.pdf",
+      "decision": "READY FOR HUMAN REVIEW"
+    },
+    {
+      "label": "AD-22",
+      "viewport": 390,
+      "path": "AD-22-390.pdf",
+      "decision": "READY FOR HUMAN REVIEW"
+    },
+    {
+      "label": "AD-24",
+      "viewport": 390,
+      "path": "AD-24-390.pdf",
+      "decision": "LIMITED PILOT ONLY"
+    }
+  ],
+  "observations": [
+    {
+      "viewport": 1440,
+      "id": "AD-01",
+      "decision": "LIMITED PILOT ONLY",
+      "results_text": "RULE-BASED INTERPRETATION / UNVERIFIED EVIDENCE\n\nLIMITED PILOT ONLY\n\nEssential controls are recorded, but the case for wider use is incomplete.\n\nFICTIONAL EXAMPLE: this result uses invented evidence.\n\nHuman approval is required. Self-reported notes are not independently verified. This tool cannot authorise deployment or establish ROI. A limited result does not authorise continued piloting without its own approvals.\n\nEssential blockers and next checks\n\nNone recorded. Supporting records still require verification.\n\nOther evidence gaps and next checks\nBusiness outcome (NO)\nAgree an outcome and success threshold with the sponsor; inspect the trial brief.\nBaseline for comparison (NO)\nRecord a comparable baseline and check how the pilot results differ.\nWhat remains with a human owner\n\nInspect the actual records, resolve contradictions, confirm local permissions and decide whether to stop, test further or propose wider use. Record that decision separately. A completed questionnaire is not an independently validated business case.\n\nDownload PDF report\nReview answers again\n\nAll ten responses and evidence notes\nMethodology and limitations"
+    },
+    {
+      "viewport": 1440,
+      "id": "AD-02",
+      "decision": "READY FOR HUMAN REVIEW",
+      "results_text": "RULE-BASED INTERPRETATION / UNVERIFIED EVIDENCE\n\nREADY FOR HUMAN REVIEW\n\nAll checks are recorded as met; a responsible person must still validate the evidence and approve any expansion.\n\nFICTIONAL EXAMPLE: this result uses invented evidence.\n\nHuman approval is required. Self-reported notes are not independently verified. This tool cannot authorise deployment or establish ROI. A limited result does not authorise continued piloting without its own approvals.\n\nEssential blockers and next checks\n\nNone recorded. Supporting records still require verification.\n\nOther evidence gaps and next checks\n\nNone recorded. Supporting records still require verification.\n\nWhat remains with a human owner\n\nInspect the actual records, resolve contradictions, confirm local permissions and decide whether to stop, test further or propose wider use. Record that decision separately. A completed questionnaire is not an independently validated business case.\n\nBefore considering expansion, independently verify all ten supporting records below.\n\nDownload PDF report\nReview answers again\n\nAll ten responses and evidence notes\nMethodology and limitations"
+    },
+    {
+      "viewport": 1440,
+      "id": "AD-03",
+      "decision": "READY FOR HUMAN REVIEW",
+      "results_text": "RULE-BASED INTERPRETATION / UNVERIFIED EVIDENCE\n\nREADY FOR HUMAN REVIEW\n\nAll checks are recorded as met; a responsible person must still validate the evidence and approve any expansion.\n\nFICTIONAL EXAMPLE: this result uses invented evidence.\n\nHuman approval is required. Self-reported notes are not independently verified. This tool cannot authorise deployment or establish ROI. A limited result does not authorise continued piloting without its own approvals.\n\nEssential blockers and next checks\n\nNone recorded. Supporting records still require verification.\n\nOther evidence gaps and next checks\n\nNone recorded. Supporting records still require verification.\n\nWhat remains with a human owner\n\nInspect the actual records, resolve contradictions, confirm local permissions and decide whether to stop, test further or propose wider use. Record that decision separately. A completed questionnaire is not an independently validated business case.\n\nBefore considering expansion, independently verify all ten supporting records below.\n\nDownload PDF report\nReview answers again\n\nAll ten responses and evidence notes\nMethodology and limitations"
+    },
+    {
+      "viewport": 1440,
+      "id": "AD-04",
+      "decision": "READY FOR HUMAN REVIEW",
+      "results_text": "RULE-BASED INTERPRETATION / UNVERIFIED EVIDENCE\n\nREADY FOR HUMAN REVIEW\n\nAll checks are recorded as met; a responsible person must still validate the evidence and approve any expansion.\n\nFICTIONAL EXAMPLE: this result uses invented evidence.\n\nHuman approval is required. Self-reported notes are not independently verified. This tool cannot authorise deployment or establish ROI. A limited result does not authorise continued piloting without its own approvals.\n\nEssential blockers and next checks\n\nNone recorded. Supporting records still require verification.\n\nOther evidence gaps and next checks\n\nNone recorded. Supporting records still require verification.\n\nWhat remains with a human owner\n\nInspect the actual records, resolve contradictions, confirm local permissions and decide whether to stop, test further or propose wider use. Record that decision separately. A completed questionnaire is not an independently validated business case.\n\nBefore considering expansion, independently verify all ten supporting records below.\n\nDownload PDF report\nReview answers again\n\nAll ten responses and evidence notes\nMethodology and limitations"
+    },
+    {
+      "viewport": 1440,
+      "id": "AD-05",
+      "decision": "READY FOR HUMAN REVIEW",
+      "results_text": "RULE-BASED INTERPRETATION / UNVERIFIED EVIDENCE\n\nREADY FOR HUMAN REVIEW\n\nAll checks are recorded as met; a responsible person must still validate the evidence and approve any expansion.\n\nFICTIONAL EXAMPLE: this result uses invented evidence.\n\nHuman approval is required. Self-reported notes are not independently verified. This tool cannot authorise deployment or establish ROI. A limited result does not authorise continued piloting without its own approvals.\n\nEssential blockers and next checks\n\nNone recorded. Supporting records still require verification.\n\nOther evidence gaps and next checks\n\nNone recorded. Supporting records still require verification.\n\nWhat remains with a human owner\n\nInspect the actual records, resolve contradictions, confirm local permissions and decide whether to stop, test further or propose wider use. Record that decision separately. A completed questionnaire is not an independently validated business case.\n\nBefore considering expansion, independently verify all ten supporting records below.\n\nDownload PDF report\nReview answers again\n\nAll ten responses and evidence notes\nMethodology and limitations"
+    },
+    {
+      "viewport": 1440,
+      "id": "AD-06",
+      "decision": "READY FOR HUMAN REVIEW",
+      "results_text": "RULE-BASED INTERPRETATION / UNVERIFIED EVIDENCE\n\nREADY FOR HUMAN REVIEW\n\nAll checks are recorded as met; a responsible person must still validate the evidence and approve any expansion.\n\nFICTIONAL EXAMPLE: this result uses invented evidence.\n\nHuman approval is required. Self-reported notes are not independently verified. This tool cannot authorise deployment or establish ROI. A limited result does not authorise continued piloting without its own approvals.\n\nEssential blockers and next checks\n\nNone recorded. Supporting records still require verification.\n\nOther evidence gaps and next checks\n\nNone recorded. Supporting records still require verification.\n\nWhat remains with a human owner\n\nInspect the actual records, resolve contradictions, confirm local permissions and decide whether to stop, test further or propose wider use. Record that decision separately. A completed questionnaire is not an independently validated business case.\n\nBefore considering expansion, independently verify all ten supporting records below.\n\nDownload PDF report\nReview answers again\n\nAll ten responses and evidence notes\nMethodology and limitations"
+    },
+    {
+      "viewport": 1440,
+      "id": "AD-07",
+      "decision": "READY FOR HUMAN REVIEW",
+      "results_text": "RULE-BASED INTERPRETATION / UNVERIFIED EVIDENCE\n\nREADY FOR HUMAN REVIEW\n\nAll checks are recorded as met; a responsible person must still validate the evidence and approve any expansion.\n\nFICTIONAL EXAMPLE: this result uses invented evidence.\n\nHuman approval is required. Self-reported notes are not independently verified. This tool cannot authorise deployment or establish ROI. A limited result does not authorise continued piloting without its own approvals.\n\nEssential blockers and next checks\n\nNone recorded. Supporting records still require verification.\n\nOther evidence gaps and next checks\n\nNone recorded. Supporting records still require verification.\n\nWhat remains with a human owner\n\nInspect the actual records, resolve contradictions, confirm local permissions and decide whether to stop, test further or propose wider use. Record that decision separately. A completed questionnaire is not an independently validated business case.\n\nBefore considering expansion, independently verify all ten supporting records below.\n\nDownload PDF report\nReview answers again\n\nAll ten responses and evidence notes\nMethodology and limitations"
+    },
+    {
+      "viewport": 1440,
+      "id": "AD-08",
+      "decision": "READY FOR HUMAN REVIEW",
+      "results_text": "RULE-BASED INTERPRETATION / UNVERIFIED EVIDENCE\n\nREADY FOR HUMAN REVIEW\n\nAll checks are recorded as met; a responsible person must still validate the evidence and approve any expansion.\n\nFICTIONAL EXAMPLE: this result uses invented evidence.\n\nHuman approval is required. Self-reported notes are not independently verified. This tool cannot authorise deployment or establish ROI. A limited result does not authorise continued piloting without its own approvals.\n\nEssential blockers and next checks\n\nNone recorded. Supporting records still require verification.\n\nOther evidence gaps and next checks\n\nNone recorded. Supporting records still require verification.\n\nWhat remains with a human owner\n\nInspect the actual records, resolve contradictions, confirm local permissions and decide whether to stop, test further or propose wider use. Record that decision separately. A completed questionnaire is not an independently validated business case.\n\nBefore considering expansion, independently verify all ten supporting records below.\n\nDownload PDF report\nReview answers again\n\nAll ten responses and evidence notes\nMethodology and limitations"
+    },
+    {
+      "viewport": 1440,
+      "id": "AD-09",
+      "decision": "READY FOR HUMAN REVIEW",
+      "results_text": "RULE-BASED INTERPRETATION / UNVERIFIED EVIDENCE\n\nREADY FOR HUMAN REVIEW\n\nAll checks are recorded as met; a responsible person must still validate the evidence and approve any expansion.\n\nFICTIONAL EXAMPLE: this result uses invented evidence.\n\nHuman approval is required. Self-reported notes are not independently verified. This tool cannot authorise deployment or establish ROI. A limited result does not authorise continued piloting without its own approvals.\n\nEssential blockers and next checks\n\nNone recorded. Supporting records still require verification.\n\nOther evidence gaps and next checks\n\nNone recorded. Supporting records still require verification.\n\nWhat remains with a human owner\n\nInspect the actual records, resolve contradictions, confirm local permissions and decide whether to stop, test further or propose wider use. Record that decision separately. A completed questionnaire is not an independently validated business case.\n\nBefore considering expansion, independently verify all ten supporting records below.\n\nDownload PDF report\nReview answers again\n\nAll ten responses and evidence notes\nMethodology and limitations"
+    },
+    {
+      "viewport": 1440,
+      "id": "AD-10",
+      "decision": "READY FOR HUMAN REVIEW",
+      "results_text": "RULE-BASED INTERPRETATION / UNVERIFIED EVIDENCE\n\nREADY FOR HUMAN REVIEW\n\nAll checks are recorded as met; a responsible person must still validate the evidence and approve any expansion.\n\nFICTIONAL EXAMPLE: this result uses invented evidence.\n\nHuman approval is required. Self-reported notes are not independently verified. This tool cannot authorise deployment or establish ROI. A limited result does not authorise continued piloting without its own approvals.\n\nEssential blockers and next checks\n\nNone recorded. Supporting records still require verification.\n\nOther evidence gaps and next checks\n\nNone recorded. Supporting records still require verification.\n\nWhat remains with a human owner\n\nInspect the actual records, resolve contradictions, confirm local permissions and decide whether to stop, test further or propose wider use. Record that decision separately. A completed questionnaire is not an independently validated business case.\n\nBefore considering expansion, independently verify all ten supporting records below.\n\nDownload PDF report\nReview answers again\n\nAll ten responses and evidence notes\nMethodology and limitations"
+    },
+    {
+      "viewport": 1440,
+      "id": "AD-11",
+      "decision": "READY FOR HUMAN REVIEW",
+      "results_text": "RULE-BASED INTERPRETATION / UNVERIFIED EVIDENCE\n\nREADY FOR HUMAN REVIEW\n\nAll checks are recorded as met; a responsible person must still validate the evidence and approve any expansion.\n\nFICTIONAL EXAMPLE: this result uses invented evidence.\n\nHuman approval is required. Self-reported notes are not independently verified. This tool cannot authorise deployment or establish ROI. A limited result does not authorise continued piloting without its own approvals.\n\nEssential blockers and next checks\n\nNone recorded. Supporting records still require verification.\n\nOther evidence gaps and next checks\n\nNone recorded. Supporting records still require verification.\n\nWhat remains with a human owner\n\nInspect the actual records, resolve contradictions, confirm local permissions and decide whether to stop, test further or propose wider use. Record that decision separately. A completed questionnaire is not an independently validated business case.\n\nBefore considering expansion, independently verify all ten supporting records below.\n\nDownload PDF report\nReview answers again\n\nAll ten responses and evidence notes\nMethodology and limitations"
+    },
+    {
+      "viewport": 1440,
+      "id": "AD-12",
+      "decision": "READY FOR HUMAN REVIEW",
+      "results_text": "RULE-BASED INTERPRETATION / UNVERIFIED EVIDENCE\n\nREADY FOR HUMAN REVIEW\n\nAll checks are recorded as met; a responsible person must still validate the evidence and approve any expansion.\n\nFICTIONAL EXAMPLE: this result uses invented evidence.\n\nHuman approval is required. Self-reported notes are not independently verified. This tool cannot authorise deployment or establish ROI. A limited result does not authorise continued piloting without its own approvals.\n\nEssential blockers and next checks\n\nNone recorded. Supporting records still require verification.\n\nOther evidence gaps and next checks\n\nNone recorded. Supporting records still require verification.\n\nWhat remains with a human owner\n\nInspect the actual records, resolve contradictions, confirm local permissions and decide whether to stop, test further or propose wider use. Record that decision separately. A completed questionnaire is not an independently validated business case.\n\nBefore considering expansion, independently verify all ten supporting records below.\n\nDownload PDF report\nReview answers again\n\nAll ten responses and evidence notes\nMethodology and limitations"
+    },
+    {
+      "viewport": 1440,
+      "id": "AD-13",
+      "decision": "READY FOR HUMAN REVIEW",
+      "results_text": "RULE-BASED INTERPRETATION / UNVERIFIED EVIDENCE\n\nREADY FOR HUMAN REVIEW\n\nAll checks are recorded as met; a responsible person must still validate the evidence and approve any expansion.\n\nFICTIONAL EXAMPLE: this result uses invented evidence.\n\nHuman approval is required. Self-reported notes are not independently verified. This tool cannot authorise deployment or establish ROI. A limited result does not authorise continued piloting without its own approvals.\n\nEssential blockers and next checks\n\nNone recorded. Supporting records still require verification.\n\nOther evidence gaps and next checks\n\nNone recorded. Supporting records still require verification.\n\nWhat remains with a human owner\n\nInspect the actual records, resolve contradictions, confirm local permissions and decide whether to stop, test further or propose wider use. Record that decision separately. A completed questionnaire is not an independently validated business case.\n\nBefore considering expansion, independently verify all ten supporting records below.\n\nDownload PDF report\nReview answers again\n\nAll ten responses and evidence notes\nMethodology and limitations"
+    },
+    {
+      "viewport": 1440,
+      "id": "AD-14",
+      "decision": "READY FOR HUMAN REVIEW",
+      "results_text": "RULE-BASED INTERPRETATION / UNVERIFIED EVIDENCE\n\nREADY FOR HUMAN REVIEW\n\nAll checks are recorded as met; a responsible person must still validate the evidence and approve any expansion.\n\nFICTIONAL EXAMPLE: this result uses invented evidence.\n\nHuman approval is required. Self-reported notes are not independently verified. This tool cannot authorise deployment or establish ROI. A limited result does not authorise continued piloting without its own approvals.\n\nEssential blockers and next checks\n\nNone recorded. Supporting records still require verification.\n\nOther evidence gaps and next checks\n\nNone recorded. Supporting records still require verification.\n\nWhat remains with a human owner\n\nInspect the actual records, resolve contradictions, confirm local permissions and decide whether to stop, test further or propose wider use. Record that decision separately. A completed questionnaire is not an independently validated business case.\n\nBefore considering expansion, independently verify all ten supporting records below.\n\nDownload PDF report\nReview answers again\n\nAll ten responses and evidence notes\nMethodology and limitations"
+    },
+    {
+      "viewport": 1440,
+      "id": "AD-15",
+      "decision": "READY FOR HUMAN REVIEW",
+      "results_text": "RULE-BASED INTERPRETATION / UNVERIFIED EVIDENCE\n\nREADY FOR HUMAN REVIEW\n\nAll checks are recorded as met; a responsible person must still validate the evidence and approve any expansion.\n\nFICTIONAL EXAMPLE: this result uses invented evidence.\n\nHuman approval is required. Self-reported notes are not independently verified. This tool cannot authorise deployment or establish ROI. A limited result does not authorise continued piloting without its own approvals.\n\nEssential blockers and next checks\n\nNone recorded. Supporting records still require verification.\n\nOther evidence gaps and next checks\n\nNone recorded. Supporting records still require verification.\n\nWhat remains with a human owner\n\nInspect the actual records, resolve contradictions, confirm local permissions and decide whether to stop, test further or propose wider use. Record that decision separately. A completed questionnaire is not an independently validated business case.\n\nBefore considering expansion, independently verify all ten supporting records below.\n\nDownload PDF report\nReview answers again\n\nAll ten responses and evidence notes\nMethodology and limitations"
+    },
+    {
+      "viewport": 1440,
+      "id": "AD-16",
+      "decision": "READY FOR HUMAN REVIEW",
+      "results_text": "RULE-BASED INTERPRETATION / UNVERIFIED EVIDENCE\n\nREADY FOR HUMAN REVIEW\n\nAll checks are recorded as met; a responsible person must still validate the evidence and approve any expansion.\n\nFICTIONAL EXAMPLE: this result uses invented evidence.\n\nHuman approval is required. Self-reported notes are not independently verified. This tool cannot authorise deployment or establish ROI. A limited result does not authorise continued piloting without its own approvals.\n\nEssential blockers and next checks\n\nNone recorded. Supporting records still require verification.\n\nOther evidence gaps and next checks\n\nNone recorded. Supporting records still require verification.\n\nWhat remains with a human owner\n\nInspect the actual records, resolve contradictions, confirm local permissions and decide whether to stop, test further or propose wider use. Record that decision separately. A completed questionnaire is not an independently validated business case.\n\nBefore considering expansion, independently verify all ten supporting records below.\n\nDownload PDF report\nReview answers again\n\nAll ten responses and evidence notes\nMethodology and limitations"
+    },
+    {
+      "viewport": 1440,
+      "id": "AD-17",
+      "decision": "READY FOR HUMAN REVIEW",
+      "results_text": "RULE-BASED INTERPRETATION / UNVERIFIED EVIDENCE\n\nREADY FOR HUMAN REVIEW\n\nAll checks are recorded as met; a responsible person must still validate the evidence and approve any expansion.\n\nFICTIONAL EXAMPLE: this result uses invented evidence.\n\nHuman approval is required. Self-reported notes are not independently verified. This tool cannot authorise deployment or establish ROI. A limited result does not authorise continued piloting without its own approvals.\n\nEssential blockers and next checks\n\nNone recorded. Supporting records still require verification.\n\nOther evidence gaps and next checks\n\nNone recorded. Supporting records still require verification.\n\nWhat remains with a human owner\n\nInspect the actual records, resolve contradictions, confirm local permissions and decide whether to stop, test further or propose wider use. Record that decision separately. A completed questionnaire is not an independently validated business case.\n\nBefore considering expansion, independently verify all ten supporting records below.\n\nDownload PDF report\nReview answers again\n\nAll ten responses and evidence notes\nMethodology and limitations"
+    },
+    {
+      "viewport": 1440,
+      "id": "AD-18",
+      "decision": "READY FOR HUMAN REVIEW",
+      "results_text": "RULE-BASED INTERPRETATION / UNVERIFIED EVIDENCE\n\nREADY FOR HUMAN REVIEW\n\nAll checks are recorded as met; a responsible person must still validate the evidence and approve any expansion.\n\nFICTIONAL EXAMPLE: this result uses invented evidence.\n\nHuman approval is required. Self-reported notes are not independently verified. This tool cannot authorise deployment or establish ROI. A limited result does not authorise continued piloting without its own approvals.\n\nEssential blockers and next checks\n\nNone recorded. Supporting records still require verification.\n\nOther evidence gaps and next checks\n\nNone recorded. Supporting records still require verification.\n\nWhat remains with a human owner\n\nInspect the actual records, resolve contradictions, confirm local permissions and decide whether to stop, test further or propose wider use. Record that decision separately. A completed questionnaire is not an independently validated business case.\n\nBefore considering expansion, independently verify all ten supporting records below.\n\nDownload PDF report\nReview answers again\n\nAll ten responses and evidence notes\nMethodology and limitations"
+    },
+    {
+      "viewport": 1440,
+      "id": "AD-19",
+      "decision": "READY FOR HUMAN REVIEW",
+      "results_text": "RULE-BASED INTERPRETATION / UNVERIFIED EVIDENCE\n\nREADY FOR HUMAN REVIEW\n\nAll checks are recorded as met; a responsible person must still validate the evidence and approve any expansion.\n\nFICTIONAL EXAMPLE: this result uses invented evidence.\n\nHuman approval is required. Self-reported notes are not independently verified. This tool cannot authorise deployment or establish ROI. A limited result does not authorise continued piloting without its own approvals.\n\nEssential blockers and next checks\n\nNone recorded. Supporting records still require verification.\n\nOther evidence gaps and next checks\n\nNone recorded. Supporting records still require verification.\n\nWhat remains with a human owner\n\nInspect the actual records, resolve contradictions, confirm local permissions and decide whether to stop, test further or propose wider use. Record that decision separately. A completed questionnaire is not an independently validated business case.\n\nBefore considering expansion, independently verify all ten supporting records below.\n\nDownload PDF report\nReview answers again\n\nAll ten responses and evidence notes\nMethodology and limitations"
+    },
+    {
+      "viewport": 1440,
+      "id": "AD-20",
+      "decision": "DO NOT EXPAND",
+      "results_text": "RULE-BASED INTERPRETATION / UNVERIFIED EVIDENCE\n\nDO NOT EXPAND\n\nOne or more essential control checks lack affirmative evidence.\n\nFICTIONAL EXAMPLE: this result uses invented evidence.\n\nHuman approval is required. Self-reported notes are not independently verified. This tool cannot authorise deployment or establish ROI. A limited result does not authorise continued piloting without its own approvals.\n\nEssential blockers and next checks\nQuality and error review (UNKNOWN)\nArrange a named quality reviewer and inspect the error log and unresolved risks.\nOther evidence gaps and next checks\n\nNone recorded. Supporting records still require verification.\n\nWhat remains with a human owner\n\nInspect the actual records, resolve contradictions, confirm local permissions and decide whether to stop, test further or propose wider use. Record that decision separately. A completed questionnaire is not an independently validated business case.\n\nDownload PDF report\nReview answers again\n\nAll ten responses and evidence notes\nMethodology and limitations"
+    },
+    {
+      "viewport": 1440,
+      "id": "AD-21",
+      "decision": "DO NOT EXPAND",
+      "results_text": "RULE-BASED INTERPRETATION / UNVERIFIED EVIDENCE\n\nDO NOT EXPAND\n\nOne or more essential control checks lack affirmative evidence.\n\nFICTIONAL EXAMPLE: this result uses invented evidence.\n\nHuman approval is required. Self-reported notes are not independently verified. This tool cannot authorise deployment or establish ROI. A limited result does not authorise continued piloting without its own approvals.\n\nEssential blockers and next checks\nData permission and controls (NO)\nCheck data permission, approved tool use, access and retention with the appropriate owner.\nOther evidence gaps and next checks\n\nNone recorded. Supporting records still require verification.\n\nWhat remains with a human owner\n\nInspect the actual records, resolve contradictions, confirm local permissions and decide whether to stop, test further or propose wider use. Record that decision separately. A completed questionnaire is not an independently validated business case.\n\nDownload PDF report\nReview answers again\n\nAll ten responses and evidence notes\nMethodology and limitations"
+    },
+    {
+      "viewport": 1440,
+      "id": "AD-22",
+      "decision": "READY FOR HUMAN REVIEW",
+      "results_text": "RULE-BASED INTERPRETATION / UNVERIFIED EVIDENCE\n\nREADY FOR HUMAN REVIEW\n\nAll checks are recorded as met; a responsible person must still validate the evidence and approve any expansion.\n\nFICTIONAL EXAMPLE: this result uses invented evidence.\n\nHuman approval is required. Self-reported notes are not independently verified. This tool cannot authorise deployment or establish ROI. A limited result does not authorise continued piloting without its own approvals.\n\nEssential blockers and next checks\n\nNone recorded. Supporting records still require verification.\n\nOther evidence gaps and next checks\n\nNone recorded. Supporting records still require verification.\n\nWhat remains with a human owner\n\nInspect the actual records, resolve contradictions, confirm local permissions and decide whether to stop, test further or propose wider use. Record that decision separately. A completed questionnaire is not an independently validated business case.\n\nBefore considering expansion, independently verify all ten supporting records below.\n\nDownload PDF report\nReview answers again\n\nAll ten responses and evidence notes\nMethodology and limitations"
+    },
+    {
+      "viewport": 1440,
+      "id": "AD-23",
+      "decision": "DO NOT EXPAND",
+      "results_text": "RULE-BASED INTERPRETATION / UNVERIFIED EVIDENCE\n\nDO NOT EXPAND\n\nOne or more essential control checks lack affirmative evidence.\n\nFICTIONAL EXAMPLE: this result uses invented evidence.\n\nHuman approval is required. Self-reported notes are not independently verified. This tool cannot authorise deployment or establish ROI. A limited result does not authorise continued piloting without its own approvals.\n\nEssential blockers and next checks\nQuality and error review (NO)\nArrange a named quality reviewer and inspect the error log and unresolved risks.\nOther evidence gaps and next checks\n\nNone recorded. Supporting records still require verification.\n\nWhat remains with a human owner\n\nInspect the actual records, resolve contradictions, confirm local permissions and decide whether to stop, test further or propose wider use. Record that decision separately. A completed questionnaire is not an independently validated business case.\n\nDownload PDF report\nReview answers again\n\nAll ten responses and evidence notes\nMethodology and limitations"
+    },
+    {
+      "viewport": 1440,
+      "id": "AD-24",
+      "decision": "LIMITED PILOT ONLY",
+      "results_text": "RULE-BASED INTERPRETATION / UNVERIFIED EVIDENCE\n\nLIMITED PILOT ONLY\n\nEssential controls are recorded, but the case for wider use is incomplete.\n\nFICTIONAL EXAMPLE: this result uses invented evidence.\n\nHuman approval is required. Self-reported notes are not independently verified. This tool cannot authorise deployment or establish ROI. A limited result does not authorise continued piloting without its own approvals.\n\nEssential blockers and next checks\n\nNone recorded. Supporting records still require verification.\n\nOther evidence gaps and next checks\nTraining and support (UNKNOWN)\nCheck user instructions, training needs and the available support route.\nMonitoring and review (UNKNOWN)\nAgree ongoing measures, review thresholds, a review owner and a review date.\nWhat remains with a human owner\n\nInspect the actual records, resolve contradictions, confirm local permissions and decide whether to stop, test further or propose wider use. Record that decision separately. A completed questionnaire is not an independently validated business case.\n\nDownload PDF report\nReview answers again\n\nAll ten responses and evidence notes\nMethodology and limitations"
+    },
+    {
+      "viewport": 1440,
+      "id": "AD-25",
+      "decision": "READY FOR HUMAN REVIEW",
+      "results_text": "RULE-BASED INTERPRETATION / UNVERIFIED EVIDENCE\n\nREADY FOR HUMAN REVIEW\n\nAll checks are recorded as met; a responsible person must still validate the evidence and approve any expansion.\n\nFICTIONAL EXAMPLE: this result uses invented evidence.\n\nHuman approval is required. Self-reported notes are not independently verified. This tool cannot authorise deployment or establish ROI. A limited result does not authorise continued piloting without its own approvals.\n\nEssential blockers and next checks\n\nNone recorded. Supporting records still require verification.\n\nOther evidence gaps and next checks\n\nNone recorded. Supporting records still require verification.\n\nWhat remains with a human owner\n\nInspect the actual records, resolve contradictions, confirm local permissions and decide whether to stop, test further or propose wider use. Record that decision separately. A completed questionnaire is not an independently validated business case.\n\nBefore considering expansion, independently verify all ten supporting records below.\n\nDownload PDF report\nReview answers again\n\nAll ten responses and evidence notes\nMethodology and limitations"
+    },
+    {
+      "viewport": 1440,
+      "id": "AD-26",
+      "decision": "READY FOR HUMAN REVIEW",
+      "results_text": "RULE-BASED INTERPRETATION / UNVERIFIED EVIDENCE\n\nREADY FOR HUMAN REVIEW\n\nAll checks are recorded as met; a responsible person must still validate the evidence and approve any expansion.\n\nFICTIONAL EXAMPLE: this result uses invented evidence.\n\nHuman approval is required. Self-reported notes are not independently verified. This tool cannot authorise deployment or establish ROI. A limited result does not authorise continued piloting without its own approvals.\n\nEssential blockers and next checks\n\nNone recorded. Supporting records still require verification.\n\nOther evidence gaps and next checks\n\nNone recorded. Supporting records still require verification.\n\nWhat remains with a human owner\n\nInspect the actual records, resolve contradictions, confirm local permissions and decide whether to stop, test further or propose wider use. Record that decision separately. A completed questionnaire is not an independently validated business case.\n\nBefore considering expansion, independently verify all ten supporting records below.\n\nDownload PDF report\nReview answers again\n\nAll ten responses and evidence notes\nMethodology and limitations"
+    },
+    {
+      "viewport": 1440,
+      "id": "AD-27",
+      "decision": "READY FOR HUMAN REVIEW",
+      "results_text": "RULE-BASED INTERPRETATION / UNVERIFIED EVIDENCE\n\nREADY FOR HUMAN REVIEW\n\nAll checks are recorded as met; a responsible person must still validate the evidence and approve any expansion.\n\nFICTIONAL EXAMPLE: this result uses invented evidence.\n\nHuman approval is required. Self-reported notes are not independently verified. This tool cannot authorise deployment or establish ROI. A limited result does not authorise continued piloting without its own approvals.\n\nEssential blockers and next checks\n\nNone recorded. Supporting records still require verification.\n\nOther evidence gaps and next checks\n\nNone recorded. Supporting records still require verification.\n\nWhat remains with a human owner\n\nInspect the actual records, resolve contradictions, confirm local permissions and decide whether to stop, test further or propose wider use. Record that decision separately. A completed questionnaire is not an independently validated business case.\n\nBefore considering expansion, independently verify all ten supporting records below.\n\nDownload PDF report\nReview answers again\n\nAll ten responses and evidence notes\nMethodology and limitations"
+    },
+    {
+      "viewport": 1440,
+      "id": "AD-28",
+      "decision": "READY FOR HUMAN REVIEW",
+      "results_text": "RULE-BASED INTERPRETATION / UNVERIFIED EVIDENCE\n\nREADY FOR HUMAN REVIEW\n\nAll checks are recorded as met; a responsible person must still validate the evidence and approve any expansion.\n\nFICTIONAL EXAMPLE: this result uses invented evidence.\n\nHuman approval is required. Self-reported notes are not independently verified. This tool cannot authorise deployment or establish ROI. A limited result does not authorise continued piloting without its own approvals.\n\nEssential blockers and next checks\n\nNone recorded. Supporting records still require verification.\n\nOther evidence gaps and next checks\n\nNone recorded. Supporting records still require verification.\n\nWhat remains with a human owner\n\nInspect the actual records, resolve contradictions, confirm local permissions and decide whether to stop, test further or propose wider use. Record that decision separately. A completed questionnaire is not an independently validated business case.\n\nBefore considering expansion, independently verify all ten supporting records below.\n\nDownload PDF report\nReview answers again\n\nAll ten responses and evidence notes\nMethodology and limitations"
+    },
+    {
+      "viewport": 1440,
+      "id": "AD-29",
+      "decision": "READY FOR HUMAN REVIEW",
+      "results_text": "RULE-BASED INTERPRETATION / UNVERIFIED EVIDENCE\n\nREADY FOR HUMAN REVIEW\n\nAll checks are recorded as met; a responsible person must still validate the evidence and approve any expansion.\n\nFICTIONAL EXAMPLE: this result uses invented evidence.\n\nHuman approval is required. Self-reported notes are not independently verified. This tool cannot authorise deployment or establish ROI. A limited result does not authorise continued piloting without its own approvals.\n\nEssential blockers and next checks\n\nNone recorded. Supporting records still require verification.\n\nOther evidence gaps and next checks\n\nNone recorded. Supporting records still require verification.\n\nWhat remains with a human owner\n\nInspect the actual records, resolve contradictions, confirm local permissions and decide whether to stop, test further or propose wider use. Record that decision separately. A completed questionnaire is not an independently validated business case.\n\nBefore considering expansion, independently verify all ten supporting records below.\n\nDownload PDF report\nReview answers again\n\nAll ten responses and evidence notes\nMethodology and limitations"
+    },
+    {
+      "viewport": 1440,
+      "id": "AD-30",
+      "decision": "READY FOR HUMAN REVIEW",
+      "results_text": "RULE-BASED INTERPRETATION / UNVERIFIED EVIDENCE\n\nREADY FOR HUMAN REVIEW\n\nAll checks are recorded as met; a responsible person must still validate the evidence and approve any expansion.\n\nFICTIONAL EXAMPLE: this result uses invented evidence.\n\nHuman approval is required. Self-reported notes are not independently verified. This tool cannot authorise deployment or establish ROI. A limited result does not authorise continued piloting without its own approvals.\n\nEssential blockers and next checks\n\nNone recorded. Supporting records still require verification.\n\nOther evidence gaps and next checks\n\nNone recorded. Supporting records still require verification.\n\nWhat remains with a human owner\n\nInspect the actual records, resolve contradictions, confirm local permissions and decide whether to stop, test further or propose wider use. Record that decision separately. A completed questionnaire is not an independently validated business case.\n\nBefore considering expansion, independently verify all ten supporting records below.\n\nDownload PDF report\nReview answers again\n\nAll ten responses and evidence notes\nMethodology and limitations"
+    },
+    {
+      "viewport": 390,
+      "id": "AD-04",
+      "decision": "READY FOR HUMAN REVIEW",
+      "results_text": "RULE-BASED INTERPRETATION / UNVERIFIED EVIDENCE\n\nREADY FOR HUMAN REVIEW\n\nAll checks are recorded as met; a responsible person must still validate the evidence and approve any expansion.\n\nFICTIONAL EXAMPLE: this result uses invented evidence.\n\nHuman approval is required. Self-reported notes are not independently verified. This tool cannot authorise deployment or establish ROI. A limited result does not authorise continued piloting without its own approvals.\n\nEssential blockers and next checks\n\nNone recorded. Supporting records still require verification.\n\nOther evidence gaps and next checks\n\nNone recorded. Supporting records still require verification.\n\nWhat remains with a human owner\n\nInspect the actual records, resolve contradictions, confirm local permissions and decide whether to stop, test further or propose wider use. Record that decision separately. A completed questionnaire is not an independently validated business case.\n\nBefore considering expansion, independently verify all ten supporting records below.\n\nDownload PDF report\nReview answers again\n\nAll ten responses and evidence notes\nMethodology and limitations"
+    },
+    {
+      "viewport": 390,
+      "id": "AD-21",
+      "decision": "DO NOT EXPAND",
+      "results_text": "RULE-BASED INTERPRETATION / UNVERIFIED EVIDENCE\n\nDO NOT EXPAND\n\nOne or more essential control checks lack affirmative evidence.\n\nFICTIONAL EXAMPLE: this result uses invented evidence.\n\nHuman approval is required. Self-reported notes are not independently verified. This tool cannot authorise deployment or establish ROI. A limited result does not authorise continued piloting without its own approvals.\n\nEssential blockers and next checks\nData permission and controls (NO)\nCheck data permission, approved tool use, access and retention with the appropriate owner.\nOther evidence gaps and next checks\n\nNone recorded. Supporting records still require verification.\n\nWhat remains with a human owner\n\nInspect the actual records, resolve contradictions, confirm local permissions and decide whether to stop, test further or propose wider use. Record that decision separately. A completed questionnaire is not an independently validated business case.\n\nDownload PDF report\nReview answers again\n\nAll ten responses and evidence notes\nMethodology and limitations"
+    },
+    {
+      "viewport": 390,
+      "id": "AD-22",
+      "decision": "READY FOR HUMAN REVIEW",
+      "results_text": "RULE-BASED INTERPRETATION / UNVERIFIED EVIDENCE\n\nREADY FOR HUMAN REVIEW\n\nAll checks are recorded as met; a responsible person must still validate the evidence and approve any expansion.\n\nFICTIONAL EXAMPLE: this result uses invented evidence.\n\nHuman approval is required. Self-reported notes are not independently verified. This tool cannot authorise deployment or establish ROI. A limited result does not authorise continued piloting without its own approvals.\n\nEssential blockers and next checks\n\nNone recorded. Supporting records still require verification.\n\nOther evidence gaps and next checks\n\nNone recorded. Supporting records still require verification.\n\nWhat remains with a human owner\n\nInspect the actual records, resolve contradictions, confirm local permissions and decide whether to stop, test further or propose wider use. Record that decision separately. A completed questionnaire is not an independently validated business case.\n\nBefore considering expansion, independently verify all ten supporting records below.\n\nDownload PDF report\nReview answers again\n\nAll ten responses and evidence notes\nMethodology and limitations"
+    },
+    {
+      "viewport": 390,
+      "id": "AD-24",
+      "decision": "LIMITED PILOT ONLY",
+      "results_text": "RULE-BASED INTERPRETATION / UNVERIFIED EVIDENCE\n\nLIMITED PILOT ONLY\n\nEssential controls are recorded, but the case for wider use is incomplete.\n\nFICTIONAL EXAMPLE: this result uses invented evidence.\n\nHuman approval is required. Self-reported notes are not independently verified. This tool cannot authorise deployment or establish ROI. A limited result does not authorise continued piloting without its own approvals.\n\nEssential blockers and next checks\n\nNone recorded. Supporting records still require verification.\n\nOther evidence gaps and next checks\nTraining and support (UNKNOWN)\nCheck user instructions, training needs and the available support route.\nMonitoring and review (UNKNOWN)\nAgree ongoing measures, review thresholds, a review owner and a review date.\nWhat remains with a human owner\n\nInspect the actual records, resolve contradictions, confirm local permissions and decide whether to stop, test further or propose wider use. Record that decision separately. A completed questionnaire is not an independently validated business case.\n\nDownload PDF report\nReview answers again\n\nAll ten responses and evidence notes\nMethodology and limitations"
+    }
+  ],
+  "unsupported_pdf_message": "PDF could not be created: The PDF font cannot represent these characters: 🚀. Save JSON to preserve the original text, or use supported characters for the PDF.",
+  "oversized_message": "Import failed. Current answers were kept. baseline exceeds 3000 characters",
+  "legacy_date_observation": {
+    "input_has_date": false,
+    "date_after_import": "2026-10-26",
+    "date_was_not_manually_entered": true
+  },
+  "homepage_quiz_interaction_verified": true,
+  "completed_utc": "2026-10-26T12:55:13.001Z"
+}
