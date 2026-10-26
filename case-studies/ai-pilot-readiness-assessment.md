@@ -2,7 +2,7 @@
 
 **Project:** [AI Pilot Readiness Assessment](https://shaunmarsden.github.io/practical-ai-adoption/pilot-readiness/)  
 **Type:** Independently developed, open-source demonstration, built with AI coding assistance  
-**Status:** V2 deployed; public software checks completed using fictional scenarios, not customer deployments
+**Status:** V2 deployed; production smoke tests reported on 26 October 2026 using fictional scenarios, not real organisational deployments
 
 ## The business question
 
@@ -38,9 +38,9 @@ The repository documents Python/browser decision parity, automated browser journ
 
 These checks establish the **software's tested behaviour**, not that the ten-question method predicts business success or that real users interpret every result correctly. There has been no external methodological validation, real-manager study or verified client outcome.
 
-## Why this matters for a client workflow
+## What this project demonstrates
 
-This is how I approach practical automation work: start with the real business decision, define what “acceptable” would look like, build the smallest useful tool, challenge it with difficult cases, and keep human responsibility explicit. A technically correct system can still support the wrong decision if its rules ask the wrong question.
+The useful lesson is about decision design, not a particular technology. A tool can behave exactly as coded and still mislead when the question it asks is too weak. This project shows the value of testing the rule itself, retaining failed examples and making the human decision boundary explicit.
 
 **Try the [live assessment](https://shaunmarsden.github.io/practical-ai-adoption/pilot-readiness/)** with its clearly fictional example, or inspect the [methodology](../tools/pilot-readiness/v2/METHODOLOGY.md), [V1-to-V2 comparison](../tools/pilot-readiness/v2/comparison.md) and [test record](../tools/pilot-readiness/v2/VALIDATION.md).
 
