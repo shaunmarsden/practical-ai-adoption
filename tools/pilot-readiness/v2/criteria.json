@@ -1,0 +1,82 @@
+[
+  {
+    "key": "business_outcome",
+    "title": "Business outcome",
+    "question": "Do results meet the agreed business threshold, with acceptable trade-offs and viable operating costs?",
+    "why": "A worthwhile outcome needs measured results and a sustainable full cost, including review and support.",
+    "example": "Accepted results against the target, a comparable baseline and a costed operating record.",
+    "next": "Agree the business threshold and acceptable trade-offs; demonstrate that results and full operating costs meet them."
+  },
+  {
+    "key": "baseline",
+    "title": "Comparable baseline",
+    "question": "Is the baseline relevant and comparable to this workflow and its intended users?",
+    "why": "A baseline from a different process may give a misleading comparison.",
+    "example": "A dated baseline with the same task, population and measurement method, or justified adjustments.",
+    "next": "Obtain a comparable baseline and document its limitations before relying on the comparison."
+  },
+  {
+    "key": "representative_test",
+    "title": "Current representative testing",
+    "question": "Do current tests cover the intended scale, users and exceptions on this workflow and model version?",
+    "why": "Chosen success cases or tests of an old version cannot establish current performance.",
+    "example": "Sampling and results covering routine work, difficult cases, affected groups and the current version.",
+    "next": "Test the current version on representative work, users and exceptions at the intended scale."
+  },
+  {
+    "key": "quality_review",
+    "title": "Acceptable quality",
+    "question": "Do results meet agreed quality and error-severity limits, with no known unacceptable findings?",
+    "why": "Completing a review is different from accepting its findings. Serious or concentrated failures need resolution.",
+    "example": "Reviewer acceptance against severity limits, subgroup results and evidence that material failures were resolved.",
+    "next": "Contain unacceptable output where needed, resolve the findings and obtain an acceptable representative retest."
+  },
+  {
+    "key": "workflow_owner",
+    "title": "Effective ownership",
+    "question": "Has a current accountable owner accepted the role with authority, resources and continuity cover?",
+    "why": "A name alone cannot operate, stop or maintain a workflow.",
+    "example": "Current role acceptance, stop authority, resources and a workable handover or cover arrangement.",
+    "next": "Appoint an accountable current owner with authority, resources and continuity cover."
+  },
+  {
+    "key": "human_oversight",
+    "title": "Effective human oversight",
+    "question": "Do necessary approvals and exception handling work under realistic conditions, without routine bypass?",
+    "why": "An approval step must be practical and effective before it is relied on.",
+    "example": "A realistic review exercise showing interventions, escalation, workload and prevention of bypass.",
+    "next": "Demonstrate effective review and exception handling; prevent unreviewed external actions where approval is necessary."
+  },
+  {
+    "key": "data_approval",
+    "title": "Current data permission",
+    "question": "Are permissions and safeguards current and applicable to the actual data, purpose, tool and proposed use?",
+    "why": "General tool approval or an old permission does not cover every use. Relevant security and contractual restrictions matter.",
+    "example": "Current in-scope permission, access/retention safeguards and resolution of relevant security or contractual restrictions.",
+    "next": "Confirm current in-scope permissions and safeguards with the authorised data/security owner; resolve conflicting or refused approvals."
+  },
+  {
+    "key": "rollback",
+    "title": "Demonstrated recovery",
+    "question": "Have proportionate stopping, recovery and containment arrangements been demonstrated for this use?",
+    "why": "A written plan is insufficient where recovery matters. Some external consequences cannot be reversed.",
+    "example": "A proportionate stop/recovery exercise and prevention or containment for irreversible effects.",
+    "next": "Demonstrate stopping and recovery where proportionate; prevent or contain consequences that rollback cannot reverse."
+  },
+  {
+    "key": "user_training",
+    "title": "Users and sustainable support",
+    "question": "Can and will intended users operate the workflow, with training, support and sustainable maintenance?",
+    "why": "Training attendance does not establish a workable accepted process or ongoing support.",
+    "example": "User acceptance under realistic work, instructions, support, maintenance capacity and continuity arrangements.",
+    "next": "Resolve user acceptance and workflow fit; provide usable training, support and sustainable maintenance."
+  },
+  {
+    "key": "monitoring",
+    "title": "Monitoring and response",
+    "question": "Are monitoring, incident response and re-evaluation after material changes workable and owned?",
+    "why": "A dashboard without a response or current review owner cannot manage a changing workflow.",
+    "example": "Owned alerts, incident exercises, review dates and triggers for re-testing after material changes.",
+    "next": "Establish owned monitoring and incident response, review dates and re-evaluation after material changes."
+  }
+]

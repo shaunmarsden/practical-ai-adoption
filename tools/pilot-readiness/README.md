@@ -1,72 +1,68 @@
-# AI Pilot Readiness Assessment
+# AI Pilot Readiness Assessment V2
 
-**[Open the browser assessment](https://shaunmarsden.github.io/practical-ai-adoption/pilot-readiness/).** No installation, registration, AI API or paid product is needed.
+**[Open the browser assessment](https://shaunmarsden.github.io/practical-ai-adoption/pilot-readiness/).** No installation, account, paid product or AI API is needed. Until the V2 pull request is approved, merged and its deployment checked, that public link still serves V1. This branch's V2 has been tested locally; publication is not inferred from tests.
 
-For a business manager considering wider use of an existing AI pilot. Review ten conditions, record references to evidence, identify gaps and download a PDF for a sponsor or workflow owner. It is decision support, not certification or deployment approval.
+V2 asks whether conditions are **currently acceptable for the actual workflow and proposed scale**, rather than whether a review, document or named role exists. It records material issues explicitly. A complete quality review that rejects wider use is not a Yes to acceptable quality.
 
-## Use the assessment
+## Use it
 
-1. Start an assessment, or choose the clearly labelled fictional example. The example intentionally lacks data approval.
-2. Identify the pilot, process, intended outcome and assessment date. Use an optional internal reference if useful. Avoid personal information and sensitive details.
-3. Answer each check Yes, No or Unknown. For Yes, identify a checkable record and what it shows. Examples describe possible evidence, not proof that a requirement is met.
-4. Read the responses and notes together. Correct a Yes if its note describes an unmet requirement. Confirm your own consistency review, then view the rule-based interpretation.
-5. Download the PDF or save JSON to your device. A responsible person must inspect the actual records and record any approval separately.
+1. Identify the pilot, assessment date and intended scope. Choose an operational activity or a genuinely offline synthetic/public exercise. Do not enter confidential data or personal details; use safe references and role names.
+2. Record the material issue position: none identified in the evidence reviewed, unresolved, or unknown. An unresolved issue withholds expansion even if all ten answers are Yes. It stays prominent in the result and opening PDF summary.
+3. Review ten current-condition questions. Yes means the whole condition is currently satisfied; No means it is not. Use Unknown when you cannot establish it. For a supported Yes, provide a record reference and a finding note. Short concrete notes are accepted; no word-count score or semantic judgement is applied.
+4. View the result at any stage. Missing information remains a visible gap. Follow the human-owned actions; inspect actual records before making a decision.
+5. Download the PDF or save JSON to continue later. Explore four clearly labelled fictional examples without typing ten notes.
 
-Use Previous, Next or the numbered navigation to move between checks. Progress counts valid form inputs, not readiness. An unanswered check becomes Unknown in a draft JSON export. Import accepts the Python evidence format, with optional `details` (process, outcome, date, reference) and a `fictional` flag. Short Yes notes from older files must be improved or changed before results are shown. Import validates the file before replacing current answers and asks before replacement. To start a real assessment after exploring an example, clear the record; editing an example retains its fictional label.
+Every acceptance claim and issue position is self-reported. The app cannot establish truth, compliance, security, business value or actual authority to deploy. No result permits a pilot to continue without its own approvals.
 
-## Decisions and essential gates
+## Decisions
 
-- **DO NOT EXPAND**: at least one essential control is No or Unknown. The five gates are quality review, workflow ownership, human oversight, data permission and rollback.
-- **LIMITED PILOT ONLY**: the five gates are recorded as Yes, but another condition is No or Unknown. This does not authorise a pilot to continue without its own approvals.
-- **READY FOR HUMAN REVIEW**: all ten conditions are recorded as Yes with notes. A responsible person must still verify the records and decide whether expansion is appropriate.
+| Operational decision | Meaning |
+| --- | --- |
+| WITHHOLD EXPANSION | A material issue is explicitly unresolved or at least one current required condition is No. Resolve the issue or unmet condition before reconsidering expansion. A human must determine appropriate containment where relevant. |
+| FURTHER ASSESSMENT REQUIRED | No current condition is reported No and no issue is reported unresolved, but evidence, context, issue assessment or date review is missing, Unknown or unsupported. This is not permission to operate. |
+| COMPLETE RECORD - HUMAN DECISION REQUIRED | All ten current conditions have affirmative references/findings, context and date are supplied, the legacy date is reviewed if relevant, and no material issue is reported. This describes record completeness, not verified suitability or approval. |
 
-Business outcome, baseline and representative testing remain required for a complete record even though they are not hard gates. Good technical performance alone cannot produce READY FOR HUMAN REVIEW without them. No numerical maturity score, confidence percentage or ROI is generated.
+A separate scope route, **OFFLINE EXPERIMENT - NO ROLLOUT DECISION**, applies only to recorded synthetic/public offline learning with no real-person/operational impact or external effects, an assessed no-issue position and supported applicable data/tool permission. Other production conditions need not be established for that exercise. Missing identification/date information requires further assessment without treating production gaps as a ban on learning. A conflicting offline label, real data/effects, unknown issue position or missing permission cannot bypass assessment. Reassess before real use.
 
-The browser decision function in [model.mjs](../../docs/pilot-readiness/model.mjs) mirrors [pilot_readiness.py](pilot_readiness.py). The five gates, categories, reasons and output fields are unchanged. The existing Python CLI and its example remain available and unchanged.
+All ten conditions are required for an operational complete record. The five original safeguards remain separately identifiable, but no longer allow other known failed conditions to return a limited-operation label. See the [exact criteria, ordering and methodological changes](v2/METHODOLOGY.md).
 
-### Evidence form checks are not verification
+## Versioning and old files
 
-The Python checker accepts any non-empty Yes note. The browser adds a separate form requirement: at least **40 characters, 6 whitespace-separated words and 4 different words** for every Yes. It rejects empty notes, `done`, `approved` and repeated one-word padding. It does not decide whether a note is specific, true, relevant or adequate. Plausible nonsense can pass. The threshold is a transparent input aid, not a validated evidence standard or a change to decision categories.
+V2 uses `schema_version: 2` and `methodology_version: "2.0"`. [Migration rules](v2/MIGRATION.md) cover exact fields, limits and source preservation.
 
-A human consistency review is required before the browser displays results. There is no keyword-based or AI semantic validation. A long note saying approval was refused can still pass the underlying rules if labelled Yes. The interface asks the user to correct it to No or Unknown; that correction blocks expansion at an essential gate. The review confirmation is self-reported and cannot prove that the user read or checked anything. Do not use the output as an independently validated business case.
+Valid supported V1 records can be imported. All ten current-condition statuses become Unknown; original notes are copied and the entire source object is retained in `migration.source_record`, including additional source fields. New references, scope and issue assessment are not inferred. Missing dates remain blank. Existing dates are preserved but require explicit review for V2. V2 files round-trip without changing answers or dates. Unsupported V2 fields/versions are rejected before replacement rather than silently discarded.
 
-For inputs accepted by the browser, decisions match the Python checker. The browser deliberately rejects some short notes accepted by the CLI and imposes file and field size limits. These differences are input validation, documented here rather than silently changing Python behaviour.
-
-## PDF report
-
-Download creates a text-based, paginated A4 PDF on your device. It includes pilot details, the decision and reason, essential blockers, other gaps, criterion-specific next checks, all ten responses and notes, methodology, privacy and limitations. Reports label evidence as user-reported and require human approval on every page. Example records are visibly labelled fictional.
-
-The locally bundled Noto Sans font supports Latin, Greek and Cyrillic characters. If a character is unsupported (for example, some emoji or CJK characters), export stops with an explicit message rather than silently losing text. Save JSON to preserve the original characters, or use supported characters for the PDF. The full notes are retained in JSON. Reports and files may contain sensitive information if you enter it; handle them under your organisation's rules.
-
-## Privacy and architecture
-
-Buildless HTML, CSS and JavaScript in [docs/pilot-readiness](../../docs/pilot-readiness/). There is no authentication, analytics, AI API, backend for answers or external runtime service. All assets, including PDF code and the font, are served from this site. Report generation requests only the local font, without answers in the request. The application never uploads answers or puts them in URLs.
-
-Answers live in page memory. The app uses neither localStorage nor sessionStorage, cookies or a service worker. Refreshing or closing clears the app's memory, though browsers may retain form values through their own session recovery. Downloaded JSON/PDF files persist on the user's device. The host receives ordinary page/asset requests; this is not a promise that GitHub keeps no hosting logs.
-
-The existing [meeting-notes activity](https://shaunmarsden.github.io/practical-ai-adoption/) remains at the homepage. The new route is `/practical-ai-adoption/pilot-readiness/`. Pages currently serves `main:/docs`; no framework build or deployment configuration change is required. Merging an approved pull request into `main` is the existing publication path. A feature branch or passing CI does not establish that the new route is live.
-
-Only the PDF library and font are bundled runtime dependencies. Their licences, pinned origins and checksums are in [vendor provenance](../../docs/pilot-readiness/vendor/README.md). Playwright is a development-only browser test dependency; visitors do not download or run it.
-
-## Run the existing Python checker
-
-From this folder, with Python 3:
+The exact legacy [Python checker](pilot_readiness_v1.py), [V1 browser model](../../docs/pilot-readiness/model.mjs), V1 examples and original model test assertions are retained for historical reproduction. Only their Python import points to the explicit V1 snapshot. They do not implement V2 and must not be used to claim a V2 result. The existing `pilot_readiness.py` command now delegates to V2, so V2 records cannot accidentally receive a V1 decision. The versioned module is also callable:
 
 ```bash
-python3 pilot_readiness.py examples/fictional-not-ready.json
-python3 -m unittest discover -s tests -v
+python3 tools/pilot-readiness/pilot_readiness_v2.py tools/pilot-readiness/v2/fixtures/example-blocked.json
+python3 tools/pilot-readiness/pilot_readiness_v2.py tools/pilot-readiness/examples/fictional-not-ready.json --migrate
 ```
 
-Copy the JSON and replace every status and note with your own information. Use `yes`, `no` or `unknown`. The CLI checks presence, not truth. It ignores optional browser metadata.
+Run these commands from the repository root. The second prints an unassessed V2 draft with full original-source preservation, not an approval or semantic interpretation.
 
-## Reproduce the tests
+## Architecture and privacy
 
-From the repository root, with Node 22 or later and Python 3:
+The same buildless GitHub Pages route, `docs/pilot-readiness/`, now loads [model-v2.mjs](../../docs/pilot-readiness/model-v2.mjs). The independent Python implementation is [pilot_readiness_v2.py](pilot_readiness_v2.py); parity tests compare full outputs. Shared question/action wording is checked against [criteria.json](v2/criteria.json). No paid infrastructure, authentication, tracking, external AI call or answer upload was added.
+
+Answers live in page memory. No localStorage, sessionStorage, cookie or service worker is used by the application. The browser may recover form values through its own session features. JSON and PDF downloads persist on the device and must follow local handling rules. GitHub Pages receives ordinary asset requests, not submitted answers. All scripts and PDF assets are served with the site; the font request carries no answers.
+
+The original meeting-notes homepage is preserved. Pages settings remain `main:/docs`; this branch does not change them. The PDF code/font and their licences remain [locally bundled](../../docs/pilot-readiness/vendor/README.md). Unsupported report characters fail with an explicit message; JSON retains the text. PDF preflight checks the V2 text it prints, rather than refusing an unprinted legacy extension. The full source object remains in JSON, not necessarily in the PDF.
+
+## Tests and actual evidence
+
+Read the [V2 validation record](v2/VALIDATION.md), [all thirty comparisons](v2/comparison.md) and [remaining limitations](v2/METHODOLOGY.md#limits).
+
+With faithfully reassessed V2 structured facts, the 23 observable adverse cases from PR #74 withhold expansion. This is **not detection of the meaning of old notes**. The fabricated-evidence case AD-19 remains unresolved. A new negative control N16 also demonstrates that false structured Yes/no-issue claims can reach the complete-record category despite adverse prose. There is no keyword filter or hidden AI verifier.
+
+The [PR #74 archive](adversarial/README.md) is copied from commit `b2440a8160cf4262a38b18f77bab3325982cbcda`. Its frozen scenarios, judgements and V1 results are unchanged. New V2 fixtures document every changed status and positive fictional supplement separately. This is development testing by the same assistant, not external independent validation or a blinded user study.
+
+From the root, with Node 22+ and Python 3:
 
 ```bash
 npm ci
 npm test
-python3 .github/scripts/repo_checks.py
+npm run test:compare
 (cd tools/pilot-readiness && python3 -m unittest discover -s tests -v)
 npx playwright install chromium
 python3 -m http.server 8765 --directory docs
@@ -76,10 +72,13 @@ Leave the server running. In a second terminal:
 
 ```bash
 npm run test:browser
+python3 -m pip install pdfplumber==0.11.9
+npm run test:pdf
+python3 .github/scripts/repo_checks.py
 ```
 
-`BASE_URL` can select another local preview origin. Browser artefacts are written to ignored `test-results/`. The GitHub checks workflow runs the same tests and uploads screenshots, request logs and sample PDFs. Test PDF text and layout can be inspected with `pdftotext` and `pdftoppm` (Poppler); these are maintainer tools, not visitor requirements.
+PDF extraction is optional maintainer tooling, not a visitor dependency. Browser tests write screenshots, requests, actual PDFs and matching input JSON under ignored `test-results/v2/`. CI runs the new suites, checks PDF text/bounds and retains artefacts. To inspect layout, render representative PDFs with Poppler, for example `pdftoppm -png test-results/v2/blocked-1440.pdf work/blocked`.
 
-See the [validation record](validation.md) for actual results, adverse findings and their limits. These tests check code and fictional inputs. They do not establish business effectiveness, genuine permissions, accessibility certification or legal compliance. The checklist and gates are this project's decision aid. No OpenAI, Anthropic or Google framework has been reproduced, and no vendor designed, validated or endorsed the tool.
+The unchanged V1 browser suite needs a V1 preview, not the V2 interface. [Reproduction instructions](v2/VALIDATION.md#historical-v1-checks) document the archived-site run. Historical PR #74 writer/live scripts likewise target V1; do not regenerate its frozen evidence against the V2 application.
 
-Related reading: [official OpenAI, Anthropic and Google adoption resources](../../research/official-ai-adoption-resources.md), [selecting a first use case](../../guides/finding-a-good-first-ai-use-case.md) and [why pilots stall](../../guides/why-ai-projects-stall-after-the-demo-works.md). The reading links remain independent of this methodology.
+The original [OpenAI, Anthropic and Google resource guide](../../research/official-ai-adoption-resources.md) remains external reading. It does not validate this method. No vendor designed, tested, validated or endorsed it. No customer outcome, saving or commercial effectiveness is claimed.

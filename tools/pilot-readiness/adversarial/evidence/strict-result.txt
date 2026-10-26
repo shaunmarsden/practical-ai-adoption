@@ -1,0 +1,16 @@
+{
+  "total": 30,
+  "by_comparison": {
+    "Agreement": 5,
+    "Potential false reassurance": 24,
+    "Potential unnecessary restriction": 1
+  },
+  "by_decision": {
+    "LIMITED PILOT ONLY": 2,
+    "READY FOR HUMAN REVIEW": 25,
+    "DO NOT EXPAND": 3
+  },
+  "all_python_outputs_match": true,
+  "all_browser_form_inputs_accepted": true
+}
+Adversarial suitability check FAILED: 23 observable-risk cases reach READY FOR HUMAN REVIEW. Hidden-deception case AD-19 is excluded from this failure count.

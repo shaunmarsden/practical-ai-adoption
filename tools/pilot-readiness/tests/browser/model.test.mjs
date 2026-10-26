@@ -26,7 +26,7 @@ const py = (source, input) => {
   return JSON.parse(r.stdout);
 };
 const importPy =
-  "import sys,json; sys.path.insert(0,'tools/pilot-readiness'); from pilot_readiness import assess,FIELDS,HARD_GATES; ";
+  "import sys,json; sys.path.insert(0,'tools/pilot-readiness'); from pilot_readiness_v1 import assess,FIELDS,HARD_GATES; ";
 test("criterion labels and five gates match the existing Python checker exactly", () => {
   const data = py(importPy + "print(json.dumps([FIELDS,HARD_GATES]))");
   assert.deepEqual(fields, data[0]);

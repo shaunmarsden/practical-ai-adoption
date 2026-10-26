@@ -1,0 +1,11 @@
+{
+  "status": "built",
+  "html_url": "https://shaunmarsden.github.io/practical-ai-adoption/",
+  "build_type": "legacy",
+  "source": {
+    "branch": "main",
+    "path": "/docs"
+  },
+  "public": true,
+  "https_enforced": true
+}

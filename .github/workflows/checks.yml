@@ -54,6 +54,14 @@ jobs:
           done
           npm run test:browser
 
+      - name: Inspect V2 report text and bounds
+        run: |
+          python3 -m pip install pdfplumber==0.11.9
+          npm run test:pdf
+
+      - name: Check V2 scenario comparison
+        run: npm run test:compare
+
       - name: Retain browser validation artefacts
         if: always()
         uses: actions/upload-artifact@v4

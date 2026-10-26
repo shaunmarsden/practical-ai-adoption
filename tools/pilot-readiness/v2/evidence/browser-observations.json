@@ -1,0 +1,462 @@
+[
+  {
+    "viewport": 1440,
+    "id": "AD-01",
+    "decision": "WITHHOLD EXPANSION"
+  },
+  {
+    "viewport": 1440,
+    "id": "AD-02",
+    "decision": "WITHHOLD EXPANSION"
+  },
+  {
+    "viewport": 1440,
+    "id": "AD-03",
+    "decision": "WITHHOLD EXPANSION"
+  },
+  {
+    "viewport": 1440,
+    "id": "AD-04",
+    "decision": "WITHHOLD EXPANSION"
+  },
+  {
+    "viewport": 1440,
+    "id": "AD-05",
+    "decision": "WITHHOLD EXPANSION"
+  },
+  {
+    "viewport": 1440,
+    "id": "AD-06",
+    "decision": "WITHHOLD EXPANSION"
+  },
+  {
+    "viewport": 1440,
+    "id": "AD-07",
+    "decision": "WITHHOLD EXPANSION"
+  },
+  {
+    "viewport": 1440,
+    "id": "AD-08",
+    "decision": "WITHHOLD EXPANSION"
+  },
+  {
+    "viewport": 1440,
+    "id": "AD-09",
+    "decision": "WITHHOLD EXPANSION"
+  },
+  {
+    "viewport": 1440,
+    "id": "AD-10",
+    "decision": "WITHHOLD EXPANSION"
+  },
+  {
+    "viewport": 1440,
+    "id": "AD-11",
+    "decision": "WITHHOLD EXPANSION"
+  },
+  {
+    "viewport": 1440,
+    "id": "AD-12",
+    "decision": "WITHHOLD EXPANSION"
+  },
+  {
+    "viewport": 1440,
+    "id": "AD-13",
+    "decision": "WITHHOLD EXPANSION"
+  },
+  {
+    "viewport": 1440,
+    "id": "AD-14",
+    "decision": "WITHHOLD EXPANSION"
+  },
+  {
+    "viewport": 1440,
+    "id": "AD-15",
+    "decision": "WITHHOLD EXPANSION"
+  },
+  {
+    "viewport": 1440,
+    "id": "AD-16",
+    "decision": "WITHHOLD EXPANSION"
+  },
+  {
+    "viewport": 1440,
+    "id": "AD-17",
+    "decision": "WITHHOLD EXPANSION"
+  },
+  {
+    "viewport": 1440,
+    "id": "AD-18",
+    "decision": "WITHHOLD EXPANSION"
+  },
+  {
+    "viewport": 1440,
+    "id": "AD-19",
+    "decision": "COMPLETE RECORD - HUMAN DECISION REQUIRED"
+  },
+  {
+    "viewport": 1440,
+    "id": "AD-20",
+    "decision": "OFFLINE EXPERIMENT - NO ROLLOUT DECISION"
+  },
+  {
+    "viewport": 1440,
+    "id": "AD-21",
+    "decision": "WITHHOLD EXPANSION"
+  },
+  {
+    "viewport": 1440,
+    "id": "AD-22",
+    "decision": "COMPLETE RECORD - HUMAN DECISION REQUIRED"
+  },
+  {
+    "viewport": 1440,
+    "id": "AD-23",
+    "decision": "WITHHOLD EXPANSION"
+  },
+  {
+    "viewport": 1440,
+    "id": "AD-24",
+    "decision": "FURTHER ASSESSMENT REQUIRED"
+  },
+  {
+    "viewport": 1440,
+    "id": "AD-25",
+    "decision": "WITHHOLD EXPANSION"
+  },
+  {
+    "viewport": 1440,
+    "id": "AD-26",
+    "decision": "WITHHOLD EXPANSION"
+  },
+  {
+    "viewport": 1440,
+    "id": "AD-27",
+    "decision": "WITHHOLD EXPANSION"
+  },
+  {
+    "viewport": 1440,
+    "id": "AD-28",
+    "decision": "WITHHOLD EXPANSION"
+  },
+  {
+    "viewport": 1440,
+    "id": "AD-29",
+    "decision": "WITHHOLD EXPANSION"
+  },
+  {
+    "viewport": 1440,
+    "id": "AD-30",
+    "decision": "WITHHOLD EXPANSION"
+  },
+  {
+    "viewport": 1440,
+    "id": "N01",
+    "decision": "FURTHER ASSESSMENT REQUIRED"
+  },
+  {
+    "viewport": 1440,
+    "id": "N02",
+    "decision": "COMPLETE RECORD - HUMAN DECISION REQUIRED"
+  },
+  {
+    "viewport": 1440,
+    "id": "N03",
+    "decision": "WITHHOLD EXPANSION"
+  },
+  {
+    "viewport": 1440,
+    "id": "N04",
+    "decision": "WITHHOLD EXPANSION"
+  },
+  {
+    "viewport": 1440,
+    "id": "N05",
+    "decision": "WITHHOLD EXPANSION"
+  },
+  {
+    "viewport": 1440,
+    "id": "N06",
+    "decision": "WITHHOLD EXPANSION"
+  },
+  {
+    "viewport": 1440,
+    "id": "N07",
+    "decision": "WITHHOLD EXPANSION"
+  },
+  {
+    "viewport": 1440,
+    "id": "N08",
+    "decision": "COMPLETE RECORD - HUMAN DECISION REQUIRED"
+  },
+  {
+    "viewport": 1440,
+    "id": "N09",
+    "decision": "COMPLETE RECORD - HUMAN DECISION REQUIRED"
+  },
+  {
+    "viewport": 1440,
+    "id": "N10",
+    "decision": "WITHHOLD EXPANSION"
+  },
+  {
+    "viewport": 1440,
+    "id": "N11",
+    "decision": "OFFLINE EXPERIMENT - NO ROLLOUT DECISION"
+  },
+  {
+    "viewport": 1440,
+    "id": "N12",
+    "decision": "FURTHER ASSESSMENT REQUIRED"
+  },
+  {
+    "viewport": 1440,
+    "id": "N13",
+    "decision": "FURTHER ASSESSMENT REQUIRED"
+  },
+  {
+    "viewport": 1440,
+    "id": "N14",
+    "decision": "FURTHER ASSESSMENT REQUIRED"
+  },
+  {
+    "viewport": 1440,
+    "id": "N15",
+    "decision": "WITHHOLD EXPANSION"
+  },
+  {
+    "viewport": 1440,
+    "id": "N16",
+    "decision": "COMPLETE RECORD - HUMAN DECISION REQUIRED"
+  },
+  {
+    "viewport": 390,
+    "id": "AD-01",
+    "decision": "WITHHOLD EXPANSION"
+  },
+  {
+    "viewport": 390,
+    "id": "AD-02",
+    "decision": "WITHHOLD EXPANSION"
+  },
+  {
+    "viewport": 390,
+    "id": "AD-03",
+    "decision": "WITHHOLD EXPANSION"
+  },
+  {
+    "viewport": 390,
+    "id": "AD-04",
+    "decision": "WITHHOLD EXPANSION"
+  },
+  {
+    "viewport": 390,
+    "id": "AD-05",
+    "decision": "WITHHOLD EXPANSION"
+  },
+  {
+    "viewport": 390,
+    "id": "AD-06",
+    "decision": "WITHHOLD EXPANSION"
+  },
+  {
+    "viewport": 390,
+    "id": "AD-07",
+    "decision": "WITHHOLD EXPANSION"
+  },
+  {
+    "viewport": 390,
+    "id": "AD-08",
+    "decision": "WITHHOLD EXPANSION"
+  },
+  {
+    "viewport": 390,
+    "id": "AD-09",
+    "decision": "WITHHOLD EXPANSION"
+  },
+  {
+    "viewport": 390,
+    "id": "AD-10",
+    "decision": "WITHHOLD EXPANSION"
+  },
+  {
+    "viewport": 390,
+    "id": "AD-11",
+    "decision": "WITHHOLD EXPANSION"
+  },
+  {
+    "viewport": 390,
+    "id": "AD-12",
+    "decision": "WITHHOLD EXPANSION"
+  },
+  {
+    "viewport": 390,
+    "id": "AD-13",
+    "decision": "WITHHOLD EXPANSION"
+  },
+  {
+    "viewport": 390,
+    "id": "AD-14",
+    "decision": "WITHHOLD EXPANSION"
+  },
+  {
+    "viewport": 390,
+    "id": "AD-15",
+    "decision": "WITHHOLD EXPANSION"
+  },
+  {
+    "viewport": 390,
+    "id": "AD-16",
+    "decision": "WITHHOLD EXPANSION"
+  },
+  {
+    "viewport": 390,
+    "id": "AD-17",
+    "decision": "WITHHOLD EXPANSION"
+  },
+  {
+    "viewport": 390,
+    "id": "AD-18",
+    "decision": "WITHHOLD EXPANSION"
+  },
+  {
+    "viewport": 390,
+    "id": "AD-19",
+    "decision": "COMPLETE RECORD - HUMAN DECISION REQUIRED"
+  },
+  {
+    "viewport": 390,
+    "id": "AD-20",
+    "decision": "OFFLINE EXPERIMENT - NO ROLLOUT DECISION"
+  },
+  {
+    "viewport": 390,
+    "id": "AD-21",
+    "decision": "WITHHOLD EXPANSION"
+  },
+  {
+    "viewport": 390,
+    "id": "AD-22",
+    "decision": "COMPLETE RECORD - HUMAN DECISION REQUIRED"
+  },
+  {
+    "viewport": 390,
+    "id": "AD-23",
+    "decision": "WITHHOLD EXPANSION"
+  },
+  {
+    "viewport": 390,
+    "id": "AD-24",
+    "decision": "FURTHER ASSESSMENT REQUIRED"
+  },
+  {
+    "viewport": 390,
+    "id": "AD-25",
+    "decision": "WITHHOLD EXPANSION"
+  },
+  {
+    "viewport": 390,
+    "id": "AD-26",
+    "decision": "WITHHOLD EXPANSION"
+  },
+  {
+    "viewport": 390,
+    "id": "AD-27",
+    "decision": "WITHHOLD EXPANSION"
+  },
+  {
+    "viewport": 390,
+    "id": "AD-28",
+    "decision": "WITHHOLD EXPANSION"
+  },
+  {
+    "viewport": 390,
+    "id": "AD-29",
+    "decision": "WITHHOLD EXPANSION"
+  },
+  {
+    "viewport": 390,
+    "id": "AD-30",
+    "decision": "WITHHOLD EXPANSION"
+  },
+  {
+    "viewport": 390,
+    "id": "N01",
+    "decision": "FURTHER ASSESSMENT REQUIRED"
+  },
+  {
+    "viewport": 390,
+    "id": "N02",
+    "decision": "COMPLETE RECORD - HUMAN DECISION REQUIRED"
+  },
+  {
+    "viewport": 390,
+    "id": "N03",
+    "decision": "WITHHOLD EXPANSION"
+  },
+  {
+    "viewport": 390,
+    "id": "N04",
+    "decision": "WITHHOLD EXPANSION"
+  },
+  {
+    "viewport": 390,
+    "id": "N05",
+    "decision": "WITHHOLD EXPANSION"
+  },
+  {
+    "viewport": 390,
+    "id": "N06",
+    "decision": "WITHHOLD EXPANSION"
+  },
+  {
+    "viewport": 390,
+    "id": "N07",
+    "decision": "WITHHOLD EXPANSION"
+  },
+  {
+    "viewport": 390,
+    "id": "N08",
+    "decision": "COMPLETE RECORD - HUMAN DECISION REQUIRED"
+  },
+  {
+    "viewport": 390,
+    "id": "N09",
+    "decision": "COMPLETE RECORD - HUMAN DECISION REQUIRED"
+  },
+  {
+    "viewport": 390,
+    "id": "N10",
+    "decision": "WITHHOLD EXPANSION"
+  },
+  {
+    "viewport": 390,
+    "id": "N11",
+    "decision": "OFFLINE EXPERIMENT - NO ROLLOUT DECISION"
+  },
+  {
+    "viewport": 390,
+    "id": "N12",
+    "decision": "FURTHER ASSESSMENT REQUIRED"
+  },
+  {
+    "viewport": 390,
+    "id": "N13",
+    "decision": "FURTHER ASSESSMENT REQUIRED"
+  },
+  {
+    "viewport": 390,
+    "id": "N14",
+    "decision": "FURTHER ASSESSMENT REQUIRED"
+  },
+  {
+    "viewport": 390,
+    "id": "N15",
+    "decision": "WITHHOLD EXPANSION"
+  },
+  {
+    "viewport": 390,
+    "id": "N16",
+    "decision": "COMPLETE RECORD - HUMAN DECISION REQUIRED"
+  }
+]

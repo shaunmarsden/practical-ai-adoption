@@ -1,5 +1,5 @@
 import unittest
-from pilot_readiness import FIELDS, assess
+from pilot_readiness_v1 import FIELDS, assess
 
 
 def case(status="yes"):

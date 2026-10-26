@@ -1,0 +1,1365 @@
+{
+  "provenance": "New fictional challenge cases, not a blinded external test. Judgements fixed before execution. N16 intentionally preserves the semantic self-report limit.",
+  "cases": [
+    {
+      "id": "N01",
+      "title": "accurate draft tool without support",
+      "expected_decision": "FURTHER ASSESSMENT REQUIRED",
+      "judgement_reason": "Technical acceptance does not establish operational support.",
+      "payload": {
+        "schema_version": 2,
+        "methodology_version": "2.0",
+        "pilot": "Fictional accurate draft tool without support",
+        "fictional": true,
+        "details": {
+          "process": "Sorting synthetic service requests",
+          "outcome": "Reduce handling time while maintaining acceptable quality and sustainable costs",
+          "date": "2026-10-26",
+          "reference": "Invented V2 example"
+        },
+        "scope": {
+          "activity": "bounded_internal_pilot",
+          "data": "synthetic_public",
+          "external_effects": "no",
+          "people_impact": "no",
+          "proposed_scale": "Five internal users reviewing synthetic batches",
+          "current_version": "Fictional workflow 2 / model A"
+        },
+        "material_issue": {
+          "status": "none_identified",
+          "summary": "",
+          "owner": "",
+          "action": "unknown",
+          "next_step": ""
+        },
+        "evidence": {
+          "business_outcome": {
+            "status": "yes",
+            "reference": "Fictional record 1",
+            "note": "Fictional BR-01 records measured savings above the agreed threshold, acceptable quality trade-offs and full operating costs within budget."
+          },
+          "baseline": {
+            "status": "yes",
+            "reference": "Fictional record 2",
+            "note": "Fictional BL-02 records a comparable baseline on the same batches, population and measurement method with sampling limits documented."
+          },
+          "representative_test": {
+            "status": "yes",
+            "reference": "Fictional record 3",
+            "note": "Fictional RT-03 covers intended users, routine and exceptional cases at the proposed scale on the current workflow and model version."
+          },
+          "quality_review": {
+            "status": "yes",
+            "reference": "Fictional record 4",
+            "note": "Fictional QR-04 records acceptable quality against agreed severity limits across affected groups, with material findings resolved."
+          },
+          "workflow_owner": {
+            "status": "yes",
+            "reference": "Fictional record 5",
+            "note": "Fictional OW-05 records current role acceptance, stop authority, support budget and a tested continuity handover."
+          },
+          "human_oversight": {
+            "status": "yes",
+            "reference": "Fictional record 6",
+            "note": "Fictional HO-06 records an effective timed human review exercise with escalation and prevention of routine approval bypass."
+          },
+          "data_approval": {
+            "status": "yes",
+            "reference": "Fictional record 7",
+            "note": "Fictional DP-07 records current permission for the actual data, purpose, tool and recipients, with applicable security and contract checks accepted."
+          },
+          "rollback": {
+            "status": "yes",
+            "reference": "Fictional record 8",
+            "note": "Fictional RC-08 records a proportionate safe-stop and manual recovery exercise, plus prevention and containment of irreversible external effects."
+          },
+          "user_training": {
+            "status": "unknown",
+            "reference": "Fictional record 9",
+            "note": "Fictional UR-09 records willing users successfully performing the workflow, with instructions, support and sustainable maintenance cover."
+          },
+          "monitoring": {
+            "status": "yes",
+            "reference": "Fictional record 10",
+            "note": "Fictional MO-10 records owned alerts, a practised incident response, review dates and re-evaluation after material changes."
+          }
+        }
+      }
+    },
+    {
+      "id": "N02",
+      "title": "viable internal low-risk assistant",
+      "expected_decision": "COMPLETE RECORD - HUMAN DECISION REQUIRED",
+      "judgement_reason": "The stipulated bounded case has proportionate effective safeguards and a complete record.",
+      "payload": {
+        "schema_version": 2,
+        "methodology_version": "2.0",
+        "pilot": "Fictional viable internal low-risk assistant",
+        "fictional": true,
+        "details": {
+          "process": "Sorting synthetic service requests",
+          "outcome": "Reduce handling time while maintaining acceptable quality and sustainable costs",
+          "date": "2026-10-26",
+          "reference": "Invented V2 example"
+        },
+        "scope": {
+          "activity": "bounded_internal_pilot",
+          "data": "synthetic_public",
+          "external_effects": "no",
+          "people_impact": "no",
+          "proposed_scale": "Five internal users reviewing synthetic batches",
+          "current_version": "Fictional workflow 2 / model A"
+        },
+        "material_issue": {
+          "status": "none_identified",
+          "summary": "",
+          "owner": "",
+          "action": "unknown",
+          "next_step": ""
+        },
+        "evidence": {
+          "business_outcome": {
+            "status": "yes",
+            "reference": "Fictional record 1",
+            "note": "Fictional BR-01 records measured savings above the agreed threshold, acceptable quality trade-offs and full operating costs within budget."
+          },
+          "baseline": {
+            "status": "yes",
+            "reference": "Fictional record 2",
+            "note": "Fictional BL-02 records a comparable baseline on the same batches, population and measurement method with sampling limits documented."
+          },
+          "representative_test": {
+            "status": "yes",
+            "reference": "Fictional record 3",
+            "note": "Fictional RT-03 covers intended users, routine and exceptional cases at the proposed scale on the current workflow and model version."
+          },
+          "quality_review": {
+            "status": "yes",
+            "reference": "Fictional record 4",
+            "note": "Fictional QR-04 records acceptable quality against agreed severity limits across affected groups, with material findings resolved."
+          },
+          "workflow_owner": {
+            "status": "yes",
+            "reference": "Fictional record 5",
+            "note": "Fictional OW-05 records current role acceptance, stop authority, support budget and a tested continuity handover."
+          },
+          "human_oversight": {
+            "status": "yes",
+            "reference": "Fictional record 6",
+            "note": "Fictional HO-06 records an effective timed human review exercise with escalation and prevention of routine approval bypass."
+          },
+          "data_approval": {
+            "status": "yes",
+            "reference": "Fictional record 7",
+            "note": "Fictional DP-07 records current permission for the actual data, purpose, tool and recipients, with applicable security and contract checks accepted."
+          },
+          "rollback": {
+            "status": "yes",
+            "reference": "Fictional record 8",
+            "note": "Fictional RC-08 records a proportionate safe-stop and manual recovery exercise, plus prevention and containment of irreversible external effects."
+          },
+          "user_training": {
+            "status": "yes",
+            "reference": "Fictional record 9",
+            "note": "Fictional UR-09 records willing users successfully performing the workflow, with instructions, support and sustainable maintenance cover."
+          },
+          "monitoring": {
+            "status": "yes",
+            "reference": "Fictional record 10",
+            "note": "Fictional MO-10 records owned alerts, a practised incident response, review dates and re-evaluation after material changes."
+          }
+        }
+      }
+    },
+    {
+      "id": "N03",
+      "title": "rejected quality review despite ten Yes flags",
+      "expected_decision": "WITHHOLD EXPANSION",
+      "judgement_reason": "Explicit unresolved material issues must override all affirmative flags.",
+      "payload": {
+        "schema_version": 2,
+        "methodology_version": "2.0",
+        "pilot": "Fictional rejected quality review despite ten Yes flags",
+        "fictional": true,
+        "details": {
+          "process": "Sorting synthetic service requests",
+          "outcome": "Reduce handling time while maintaining acceptable quality and sustainable costs",
+          "date": "2026-10-26",
+          "reference": "Invented V2 example"
+        },
+        "scope": {
+          "activity": "bounded_internal_pilot",
+          "data": "synthetic_public",
+          "external_effects": "no",
+          "people_impact": "no",
+          "proposed_scale": "Five internal users reviewing synthetic batches",
+          "current_version": "Fictional workflow 2 / model A"
+        },
+        "material_issue": {
+          "status": "unresolved",
+          "summary": "The completed review rejects the remaining severe failures.",
+          "owner": "Fictional duty owner",
+          "action": "contain",
+          "next_step": "Isolate the affected step and retest after correction."
+        },
+        "evidence": {
+          "business_outcome": {
+            "status": "yes",
+            "reference": "Fictional record 1",
+            "note": "Fictional BR-01 records measured savings above the agreed threshold, acceptable quality trade-offs and full operating costs within budget."
+          },
+          "baseline": {
+            "status": "yes",
+            "reference": "Fictional record 2",
+            "note": "Fictional BL-02 records a comparable baseline on the same batches, population and measurement method with sampling limits documented."
+          },
+          "representative_test": {
+            "status": "yes",
+            "reference": "Fictional record 3",
+            "note": "Fictional RT-03 covers intended users, routine and exceptional cases at the proposed scale on the current workflow and model version."
+          },
+          "quality_review": {
+            "status": "yes",
+            "reference": "Fictional record 4",
+            "note": "Fictional QR-04 records acceptable quality against agreed severity limits across affected groups, with material findings resolved."
+          },
+          "workflow_owner": {
+            "status": "yes",
+            "reference": "Fictional record 5",
+            "note": "Fictional OW-05 records current role acceptance, stop authority, support budget and a tested continuity handover."
+          },
+          "human_oversight": {
+            "status": "yes",
+            "reference": "Fictional record 6",
+            "note": "Fictional HO-06 records an effective timed human review exercise with escalation and prevention of routine approval bypass."
+          },
+          "data_approval": {
+            "status": "yes",
+            "reference": "Fictional record 7",
+            "note": "Fictional DP-07 records current permission for the actual data, purpose, tool and recipients, with applicable security and contract checks accepted."
+          },
+          "rollback": {
+            "status": "yes",
+            "reference": "Fictional record 8",
+            "note": "Fictional RC-08 records a proportionate safe-stop and manual recovery exercise, plus prevention and containment of irreversible external effects."
+          },
+          "user_training": {
+            "status": "yes",
+            "reference": "Fictional record 9",
+            "note": "Fictional UR-09 records willing users successfully performing the workflow, with instructions, support and sustainable maintenance cover."
+          },
+          "monitoring": {
+            "status": "yes",
+            "reference": "Fictional record 10",
+            "note": "Fictional MO-10 records owned alerts, a practised incident response, review dates and re-evaluation after material changes."
+          }
+        }
+      }
+    },
+    {
+      "id": "N04",
+      "title": "conflicting purpose approvals",
+      "expected_decision": "WITHHOLD EXPANSION",
+      "judgement_reason": "An internal approval does not resolve an explicit current refusal.",
+      "payload": {
+        "schema_version": 2,
+        "methodology_version": "2.0",
+        "pilot": "Fictional conflicting purpose approvals",
+        "fictional": true,
+        "details": {
+          "process": "Sorting synthetic service requests",
+          "outcome": "Reduce handling time while maintaining acceptable quality and sustainable costs",
+          "date": "2026-10-26",
+          "reference": "Invented V2 example"
+        },
+        "scope": {
+          "activity": "bounded_internal_pilot",
+          "data": "synthetic_public",
+          "external_effects": "no",
+          "people_impact": "no",
+          "proposed_scale": "Five internal users reviewing synthetic batches",
+          "current_version": "Fictional workflow 2 / model A"
+        },
+        "material_issue": {
+          "status": "unresolved",
+          "summary": "Two approval records conflict; the current purpose is refused.",
+          "owner": "Fictional data owner",
+          "action": "determine",
+          "next_step": "Resolve the conflicting permission before real data is processed."
+        },
+        "evidence": {
+          "business_outcome": {
+            "status": "yes",
+            "reference": "Fictional record 1",
+            "note": "Fictional BR-01 records measured savings above the agreed threshold, acceptable quality trade-offs and full operating costs within budget."
+          },
+          "baseline": {
+            "status": "yes",
+            "reference": "Fictional record 2",
+            "note": "Fictional BL-02 records a comparable baseline on the same batches, population and measurement method with sampling limits documented."
+          },
+          "representative_test": {
+            "status": "yes",
+            "reference": "Fictional record 3",
+            "note": "Fictional RT-03 covers intended users, routine and exceptional cases at the proposed scale on the current workflow and model version."
+          },
+          "quality_review": {
+            "status": "yes",
+            "reference": "Fictional record 4",
+            "note": "Fictional QR-04 records acceptable quality against agreed severity limits across affected groups, with material findings resolved."
+          },
+          "workflow_owner": {
+            "status": "yes",
+            "reference": "Fictional record 5",
+            "note": "Fictional OW-05 records current role acceptance, stop authority, support budget and a tested continuity handover."
+          },
+          "human_oversight": {
+            "status": "yes",
+            "reference": "Fictional record 6",
+            "note": "Fictional HO-06 records an effective timed human review exercise with escalation and prevention of routine approval bypass."
+          },
+          "data_approval": {
+            "status": "no",
+            "reference": "Fictional record 7",
+            "note": "Fictional DP-07 records current permission for the actual data, purpose, tool and recipients, with applicable security and contract checks accepted."
+          },
+          "rollback": {
+            "status": "yes",
+            "reference": "Fictional record 8",
+            "note": "Fictional RC-08 records a proportionate safe-stop and manual recovery exercise, plus prevention and containment of irreversible external effects."
+          },
+          "user_training": {
+            "status": "yes",
+            "reference": "Fictional record 9",
+            "note": "Fictional UR-09 records willing users successfully performing the workflow, with instructions, support and sustainable maintenance cover."
+          },
+          "monitoring": {
+            "status": "yes",
+            "reference": "Fictional record 10",
+            "note": "Fictional MO-10 records owned alerts, a practised incident response, review dates and re-evaluation after material changes."
+          }
+        }
+      }
+    },
+    {
+      "id": "N05",
+      "title": "unresolved overnight incident",
+      "expected_decision": "WITHHOLD EXPANSION",
+      "judgement_reason": "An unresolved incident prevents a reassuring result.",
+      "payload": {
+        "schema_version": 2,
+        "methodology_version": "2.0",
+        "pilot": "Fictional unresolved overnight incident",
+        "fictional": true,
+        "details": {
+          "process": "Sorting synthetic service requests",
+          "outcome": "Reduce handling time while maintaining acceptable quality and sustainable costs",
+          "date": "2026-10-26",
+          "reference": "Invented V2 example"
+        },
+        "scope": {
+          "activity": "bounded_internal_pilot",
+          "data": "synthetic_public",
+          "external_effects": "no",
+          "people_impact": "no",
+          "proposed_scale": "Five internal users reviewing synthetic batches",
+          "current_version": "Fictional workflow 2 / model A"
+        },
+        "material_issue": {
+          "status": "unresolved",
+          "summary": "An overnight exception incident remains unresolved.",
+          "owner": "Fictional incident lead",
+          "action": "investigate",
+          "next_step": "Investigate the affected outputs and establish containment."
+        },
+        "evidence": {
+          "business_outcome": {
+            "status": "yes",
+            "reference": "Fictional record 1",
+            "note": "Fictional BR-01 records measured savings above the agreed threshold, acceptable quality trade-offs and full operating costs within budget."
+          },
+          "baseline": {
+            "status": "yes",
+            "reference": "Fictional record 2",
+            "note": "Fictional BL-02 records a comparable baseline on the same batches, population and measurement method with sampling limits documented."
+          },
+          "representative_test": {
+            "status": "yes",
+            "reference": "Fictional record 3",
+            "note": "Fictional RT-03 covers intended users, routine and exceptional cases at the proposed scale on the current workflow and model version."
+          },
+          "quality_review": {
+            "status": "yes",
+            "reference": "Fictional record 4",
+            "note": "Fictional QR-04 records acceptable quality against agreed severity limits across affected groups, with material findings resolved."
+          },
+          "workflow_owner": {
+            "status": "yes",
+            "reference": "Fictional record 5",
+            "note": "Fictional OW-05 records current role acceptance, stop authority, support budget and a tested continuity handover."
+          },
+          "human_oversight": {
+            "status": "yes",
+            "reference": "Fictional record 6",
+            "note": "Fictional HO-06 records an effective timed human review exercise with escalation and prevention of routine approval bypass."
+          },
+          "data_approval": {
+            "status": "yes",
+            "reference": "Fictional record 7",
+            "note": "Fictional DP-07 records current permission for the actual data, purpose, tool and recipients, with applicable security and contract checks accepted."
+          },
+          "rollback": {
+            "status": "yes",
+            "reference": "Fictional record 8",
+            "note": "Fictional RC-08 records a proportionate safe-stop and manual recovery exercise, plus prevention and containment of irreversible external effects."
+          },
+          "user_training": {
+            "status": "yes",
+            "reference": "Fictional record 9",
+            "note": "Fictional UR-09 records willing users successfully performing the workflow, with instructions, support and sustainable maintenance cover."
+          },
+          "monitoring": {
+            "status": "yes",
+            "reference": "Fictional record 10",
+            "note": "Fictional MO-10 records owned alerts, a practised incident response, review dates and re-evaluation after material changes."
+          }
+        }
+      }
+    },
+    {
+      "id": "N06",
+      "title": "untested changed model",
+      "expected_decision": "WITHHOLD EXPANSION",
+      "judgement_reason": "Current-version acceptance is explicitly not satisfied.",
+      "payload": {
+        "schema_version": 2,
+        "methodology_version": "2.0",
+        "pilot": "Fictional untested changed model",
+        "fictional": true,
+        "details": {
+          "process": "Sorting synthetic service requests",
+          "outcome": "Reduce handling time while maintaining acceptable quality and sustainable costs",
+          "date": "2026-10-26",
+          "reference": "Invented V2 example"
+        },
+        "scope": {
+          "activity": "bounded_internal_pilot",
+          "data": "synthetic_public",
+          "external_effects": "no",
+          "people_impact": "no",
+          "proposed_scale": "Five internal users reviewing synthetic batches",
+          "current_version": "Fictional workflow 2 / model A"
+        },
+        "material_issue": {
+          "status": "none_identified",
+          "summary": "",
+          "owner": "",
+          "action": "unknown",
+          "next_step": ""
+        },
+        "evidence": {
+          "business_outcome": {
+            "status": "yes",
+            "reference": "Fictional record 1",
+            "note": "Fictional BR-01 records measured savings above the agreed threshold, acceptable quality trade-offs and full operating costs within budget."
+          },
+          "baseline": {
+            "status": "yes",
+            "reference": "Fictional record 2",
+            "note": "Fictional BL-02 records a comparable baseline on the same batches, population and measurement method with sampling limits documented."
+          },
+          "representative_test": {
+            "status": "no",
+            "reference": "Fictional record 3",
+            "note": "Fictional RT-03 covers intended users, routine and exceptional cases at the proposed scale on the current workflow and model version."
+          },
+          "quality_review": {
+            "status": "yes",
+            "reference": "Fictional record 4",
+            "note": "Fictional QR-04 records acceptable quality against agreed severity limits across affected groups, with material findings resolved."
+          },
+          "workflow_owner": {
+            "status": "yes",
+            "reference": "Fictional record 5",
+            "note": "Fictional OW-05 records current role acceptance, stop authority, support budget and a tested continuity handover."
+          },
+          "human_oversight": {
+            "status": "yes",
+            "reference": "Fictional record 6",
+            "note": "Fictional HO-06 records an effective timed human review exercise with escalation and prevention of routine approval bypass."
+          },
+          "data_approval": {
+            "status": "yes",
+            "reference": "Fictional record 7",
+            "note": "Fictional DP-07 records current permission for the actual data, purpose, tool and recipients, with applicable security and contract checks accepted."
+          },
+          "rollback": {
+            "status": "yes",
+            "reference": "Fictional record 8",
+            "note": "Fictional RC-08 records a proportionate safe-stop and manual recovery exercise, plus prevention and containment of irreversible external effects."
+          },
+          "user_training": {
+            "status": "yes",
+            "reference": "Fictional record 9",
+            "note": "Fictional UR-09 records willing users successfully performing the workflow, with instructions, support and sustainable maintenance cover."
+          },
+          "monitoring": {
+            "status": "yes",
+            "reference": "Fictional record 10",
+            "note": "Fictional MO-10 records owned alerts, a practised incident response, review dates and re-evaluation after material changes."
+          }
+        }
+      }
+    },
+    {
+      "id": "N07",
+      "title": "irreversible message consequence",
+      "expected_decision": "WITHHOLD EXPANSION",
+      "judgement_reason": "A software rollback is insufficient for a message already sent externally.",
+      "payload": {
+        "schema_version": 2,
+        "methodology_version": "2.0",
+        "pilot": "Fictional irreversible message consequence",
+        "fictional": true,
+        "details": {
+          "process": "Sorting synthetic service requests",
+          "outcome": "Reduce handling time while maintaining acceptable quality and sustainable costs",
+          "date": "2026-10-26",
+          "reference": "Invented V2 example"
+        },
+        "scope": {
+          "activity": "bounded_internal_pilot",
+          "data": "synthetic_public",
+          "external_effects": "yes",
+          "people_impact": "no",
+          "proposed_scale": "Five internal users reviewing synthetic batches",
+          "current_version": "Fictional workflow 2 / model A"
+        },
+        "material_issue": {
+          "status": "unresolved",
+          "summary": "Incorrect external notices cannot be recalled.",
+          "owner": "",
+          "action": "unknown",
+          "next_step": ""
+        },
+        "evidence": {
+          "business_outcome": {
+            "status": "yes",
+            "reference": "Fictional record 1",
+            "note": "Fictional BR-01 records measured savings above the agreed threshold, acceptable quality trade-offs and full operating costs within budget."
+          },
+          "baseline": {
+            "status": "yes",
+            "reference": "Fictional record 2",
+            "note": "Fictional BL-02 records a comparable baseline on the same batches, population and measurement method with sampling limits documented."
+          },
+          "representative_test": {
+            "status": "yes",
+            "reference": "Fictional record 3",
+            "note": "Fictional RT-03 covers intended users, routine and exceptional cases at the proposed scale on the current workflow and model version."
+          },
+          "quality_review": {
+            "status": "yes",
+            "reference": "Fictional record 4",
+            "note": "Fictional QR-04 records acceptable quality against agreed severity limits across affected groups, with material findings resolved."
+          },
+          "workflow_owner": {
+            "status": "yes",
+            "reference": "Fictional record 5",
+            "note": "Fictional OW-05 records current role acceptance, stop authority, support budget and a tested continuity handover."
+          },
+          "human_oversight": {
+            "status": "yes",
+            "reference": "Fictional record 6",
+            "note": "Fictional HO-06 records an effective timed human review exercise with escalation and prevention of routine approval bypass."
+          },
+          "data_approval": {
+            "status": "yes",
+            "reference": "Fictional record 7",
+            "note": "Fictional DP-07 records current permission for the actual data, purpose, tool and recipients, with applicable security and contract checks accepted."
+          },
+          "rollback": {
+            "status": "no",
+            "reference": "Fictional record 8",
+            "note": "Fictional RC-08 records a proportionate safe-stop and manual recovery exercise, plus prevention and containment of irreversible external effects."
+          },
+          "user_training": {
+            "status": "yes",
+            "reference": "Fictional record 9",
+            "note": "Fictional UR-09 records willing users successfully performing the workflow, with instructions, support and sustainable maintenance cover."
+          },
+          "monitoring": {
+            "status": "yes",
+            "reference": "Fictional record 10",
+            "note": "Fictional MO-10 records owned alerts, a practised incident response, review dates and re-evaluation after material changes."
+          }
+        }
+      }
+    },
+    {
+      "id": "N08",
+      "title": "current sensitive-data acceptance record",
+      "expected_decision": "COMPLETE RECORD - HUMAN DECISION REQUIRED",
+      "judgement_reason": "Stipulated current in-scope permission and specialist acceptance can support human review; the tool does not certify it.",
+      "payload": {
+        "schema_version": 2,
+        "methodology_version": "2.0",
+        "pilot": "Fictional current sensitive-data acceptance record",
+        "fictional": true,
+        "details": {
+          "process": "Sorting synthetic service requests",
+          "outcome": "Reduce handling time while maintaining acceptable quality and sustainable costs",
+          "date": "2026-10-26",
+          "reference": "Invented V2 example"
+        },
+        "scope": {
+          "activity": "bounded_internal_pilot",
+          "data": "sensitive_data",
+          "external_effects": "no",
+          "people_impact": "yes",
+          "proposed_scale": "Five internal users reviewing synthetic batches",
+          "current_version": "Fictional workflow 2 / model A"
+        },
+        "material_issue": {
+          "status": "none_identified",
+          "summary": "",
+          "owner": "",
+          "action": "unknown",
+          "next_step": ""
+        },
+        "evidence": {
+          "business_outcome": {
+            "status": "yes",
+            "reference": "Fictional record 1",
+            "note": "Fictional BR-01 records measured savings above the agreed threshold, acceptable quality trade-offs and full operating costs within budget."
+          },
+          "baseline": {
+            "status": "yes",
+            "reference": "Fictional record 2",
+            "note": "Fictional BL-02 records a comparable baseline on the same batches, population and measurement method with sampling limits documented."
+          },
+          "representative_test": {
+            "status": "yes",
+            "reference": "Fictional record 3",
+            "note": "Fictional RT-03 covers intended users, routine and exceptional cases at the proposed scale on the current workflow and model version."
+          },
+          "quality_review": {
+            "status": "yes",
+            "reference": "Fictional record 4",
+            "note": "Fictional QR-04 records acceptable quality against agreed severity limits across affected groups, with material findings resolved."
+          },
+          "workflow_owner": {
+            "status": "yes",
+            "reference": "Fictional record 5",
+            "note": "Fictional OW-05 records current role acceptance, stop authority, support budget and a tested continuity handover."
+          },
+          "human_oversight": {
+            "status": "yes",
+            "reference": "Fictional record 6",
+            "note": "Fictional HO-06 records an effective timed human review exercise with escalation and prevention of routine approval bypass."
+          },
+          "data_approval": {
+            "status": "yes",
+            "reference": "Fictional record 7",
+            "note": "Fictional DP-07 records current permission for the actual data, purpose, tool and recipients, with applicable security and contract checks accepted. Fictional specialist review accepts this specific sensitive-data purpose and safeguards."
+          },
+          "rollback": {
+            "status": "yes",
+            "reference": "Fictional record 8",
+            "note": "Fictional RC-08 records a proportionate safe-stop and manual recovery exercise, plus prevention and containment of irreversible external effects."
+          },
+          "user_training": {
+            "status": "yes",
+            "reference": "Fictional record 9",
+            "note": "Fictional UR-09 records willing users successfully performing the workflow, with instructions, support and sustainable maintenance cover."
+          },
+          "monitoring": {
+            "status": "yes",
+            "reference": "Fictional record 10",
+            "note": "Fictional MO-10 records owned alerts, a practised incident response, review dates and re-evaluation after material changes."
+          }
+        }
+      }
+    },
+    {
+      "id": "N09",
+      "title": "current empowered owner",
+      "expected_decision": "COMPLETE RECORD - HUMAN DECISION REQUIRED",
+      "judgement_reason": "A current owner with demonstrated authority satisfies the ownership condition.",
+      "payload": {
+        "schema_version": 2,
+        "methodology_version": "2.0",
+        "pilot": "Fictional current empowered owner",
+        "fictional": true,
+        "details": {
+          "process": "Sorting synthetic service requests",
+          "outcome": "Reduce handling time while maintaining acceptable quality and sustainable costs",
+          "date": "2026-10-26",
+          "reference": "Invented V2 example"
+        },
+        "scope": {
+          "activity": "bounded_internal_pilot",
+          "data": "synthetic_public",
+          "external_effects": "no",
+          "people_impact": "no",
+          "proposed_scale": "Five internal users reviewing synthetic batches",
+          "current_version": "Fictional workflow 2 / model A"
+        },
+        "material_issue": {
+          "status": "none_identified",
+          "summary": "",
+          "owner": "",
+          "action": "unknown",
+          "next_step": ""
+        },
+        "evidence": {
+          "business_outcome": {
+            "status": "yes",
+            "reference": "Fictional record 1",
+            "note": "Fictional BR-01 records measured savings above the agreed threshold, acceptable quality trade-offs and full operating costs within budget."
+          },
+          "baseline": {
+            "status": "yes",
+            "reference": "Fictional record 2",
+            "note": "Fictional BL-02 records a comparable baseline on the same batches, population and measurement method with sampling limits documented."
+          },
+          "representative_test": {
+            "status": "yes",
+            "reference": "Fictional record 3",
+            "note": "Fictional RT-03 covers intended users, routine and exceptional cases at the proposed scale on the current workflow and model version."
+          },
+          "quality_review": {
+            "status": "yes",
+            "reference": "Fictional record 4",
+            "note": "Fictional QR-04 records acceptable quality against agreed severity limits across affected groups, with material findings resolved."
+          },
+          "workflow_owner": {
+            "status": "yes",
+            "reference": "Fictional record 5",
+            "note": "Fictional OW-05 records current role acceptance, stop authority, support budget and a tested continuity handover."
+          },
+          "human_oversight": {
+            "status": "yes",
+            "reference": "Fictional record 6",
+            "note": "Fictional HO-06 records an effective timed human review exercise with escalation and prevention of routine approval bypass."
+          },
+          "data_approval": {
+            "status": "yes",
+            "reference": "Fictional record 7",
+            "note": "Fictional DP-07 records current permission for the actual data, purpose, tool and recipients, with applicable security and contract checks accepted."
+          },
+          "rollback": {
+            "status": "yes",
+            "reference": "Fictional record 8",
+            "note": "Fictional RC-08 records a proportionate safe-stop and manual recovery exercise, plus prevention and containment of irreversible external effects."
+          },
+          "user_training": {
+            "status": "yes",
+            "reference": "Fictional record 9",
+            "note": "Fictional UR-09 records willing users successfully performing the workflow, with instructions, support and sustainable maintenance cover."
+          },
+          "monitoring": {
+            "status": "yes",
+            "reference": "Fictional record 10",
+            "note": "Fictional MO-10 records owned alerts, a practised incident response, review dates and re-evaluation after material changes."
+          }
+        }
+      }
+    },
+    {
+      "id": "N10",
+      "title": "owner without stop authority",
+      "expected_decision": "WITHHOLD EXPANSION",
+      "judgement_reason": "A named person lacking authority is not effective ownership.",
+      "payload": {
+        "schema_version": 2,
+        "methodology_version": "2.0",
+        "pilot": "Fictional owner without stop authority",
+        "fictional": true,
+        "details": {
+          "process": "Sorting synthetic service requests",
+          "outcome": "Reduce handling time while maintaining acceptable quality and sustainable costs",
+          "date": "2026-10-26",
+          "reference": "Invented V2 example"
+        },
+        "scope": {
+          "activity": "bounded_internal_pilot",
+          "data": "synthetic_public",
+          "external_effects": "no",
+          "people_impact": "no",
+          "proposed_scale": "Five internal users reviewing synthetic batches",
+          "current_version": "Fictional workflow 2 / model A"
+        },
+        "material_issue": {
+          "status": "none_identified",
+          "summary": "",
+          "owner": "",
+          "action": "unknown",
+          "next_step": ""
+        },
+        "evidence": {
+          "business_outcome": {
+            "status": "yes",
+            "reference": "Fictional record 1",
+            "note": "Fictional BR-01 records measured savings above the agreed threshold, acceptable quality trade-offs and full operating costs within budget."
+          },
+          "baseline": {
+            "status": "yes",
+            "reference": "Fictional record 2",
+            "note": "Fictional BL-02 records a comparable baseline on the same batches, population and measurement method with sampling limits documented."
+          },
+          "representative_test": {
+            "status": "yes",
+            "reference": "Fictional record 3",
+            "note": "Fictional RT-03 covers intended users, routine and exceptional cases at the proposed scale on the current workflow and model version."
+          },
+          "quality_review": {
+            "status": "yes",
+            "reference": "Fictional record 4",
+            "note": "Fictional QR-04 records acceptable quality against agreed severity limits across affected groups, with material findings resolved."
+          },
+          "workflow_owner": {
+            "status": "no",
+            "reference": "Fictional record 5",
+            "note": "Fictional OW-05 records current role acceptance, stop authority, support budget and a tested continuity handover."
+          },
+          "human_oversight": {
+            "status": "yes",
+            "reference": "Fictional record 6",
+            "note": "Fictional HO-06 records an effective timed human review exercise with escalation and prevention of routine approval bypass."
+          },
+          "data_approval": {
+            "status": "yes",
+            "reference": "Fictional record 7",
+            "note": "Fictional DP-07 records current permission for the actual data, purpose, tool and recipients, with applicable security and contract checks accepted."
+          },
+          "rollback": {
+            "status": "yes",
+            "reference": "Fictional record 8",
+            "note": "Fictional RC-08 records a proportionate safe-stop and manual recovery exercise, plus prevention and containment of irreversible external effects."
+          },
+          "user_training": {
+            "status": "yes",
+            "reference": "Fictional record 9",
+            "note": "Fictional UR-09 records willing users successfully performing the workflow, with instructions, support and sustainable maintenance cover."
+          },
+          "monitoring": {
+            "status": "yes",
+            "reference": "Fictional record 10",
+            "note": "Fictional MO-10 records owned alerts, a practised incident response, review dates and re-evaluation after material changes."
+          }
+        }
+      }
+    },
+    {
+      "id": "N11",
+      "title": "offline synthetic sandbox",
+      "expected_decision": "OFFLINE EXPERIMENT - NO ROLLOUT DECISION",
+      "judgement_reason": "Production governance should not prohibit bounded learning with applicable permission.",
+      "payload": {
+        "schema_version": 2,
+        "methodology_version": "2.0",
+        "pilot": "Fictional offline synthetic sandbox",
+        "fictional": true,
+        "details": {
+          "process": "Sorting synthetic service requests",
+          "outcome": "Reduce handling time while maintaining acceptable quality and sustainable costs",
+          "date": "2026-10-26",
+          "reference": "Invented V2 example"
+        },
+        "scope": {
+          "activity": "offline_experiment",
+          "data": "synthetic_public",
+          "external_effects": "no",
+          "people_impact": "no",
+          "proposed_scale": "One offline learner; outputs discarded",
+          "current_version": "Fictional workflow 2 / model A"
+        },
+        "material_issue": {
+          "status": "none_identified",
+          "summary": "",
+          "owner": "",
+          "action": "unknown",
+          "next_step": ""
+        },
+        "evidence": {
+          "business_outcome": {
+            "status": "unknown",
+            "reference": "",
+            "note": "Not assessed for this non-operational learning exercise."
+          },
+          "baseline": {
+            "status": "unknown",
+            "reference": "",
+            "note": "Not assessed for this non-operational learning exercise."
+          },
+          "representative_test": {
+            "status": "unknown",
+            "reference": "",
+            "note": "Not assessed for this non-operational learning exercise."
+          },
+          "quality_review": {
+            "status": "unknown",
+            "reference": "",
+            "note": "Not assessed for this non-operational learning exercise."
+          },
+          "workflow_owner": {
+            "status": "unknown",
+            "reference": "",
+            "note": "Not assessed for this non-operational learning exercise."
+          },
+          "human_oversight": {
+            "status": "unknown",
+            "reference": "",
+            "note": "Not assessed for this non-operational learning exercise."
+          },
+          "data_approval": {
+            "status": "yes",
+            "reference": "Fictional record 7",
+            "note": "Fictional DP-07 records current permission for the actual data, purpose, tool and recipients, with applicable security and contract checks accepted."
+          },
+          "rollback": {
+            "status": "unknown",
+            "reference": "",
+            "note": "Not assessed for this non-operational learning exercise."
+          },
+          "user_training": {
+            "status": "unknown",
+            "reference": "",
+            "note": "Not assessed for this non-operational learning exercise."
+          },
+          "monitoring": {
+            "status": "unknown",
+            "reference": "",
+            "note": "Not assessed for this non-operational learning exercise."
+          }
+        }
+      }
+    },
+    {
+      "id": "N12",
+      "title": "offline label with real effects",
+      "expected_decision": "FURTHER ASSESSMENT REQUIRED",
+      "judgement_reason": "Scope contradiction must not bypass operational safeguards.",
+      "payload": {
+        "schema_version": 2,
+        "methodology_version": "2.0",
+        "pilot": "Fictional offline label with real effects",
+        "fictional": true,
+        "details": {
+          "process": "Sorting synthetic service requests",
+          "outcome": "Reduce handling time while maintaining acceptable quality and sustainable costs",
+          "date": "2026-10-26",
+          "reference": "Invented V2 example"
+        },
+        "scope": {
+          "activity": "offline_experiment",
+          "data": "synthetic_public",
+          "external_effects": "no",
+          "people_impact": "yes",
+          "proposed_scale": "Five internal users reviewing synthetic batches",
+          "current_version": "Fictional workflow 2 / model A"
+        },
+        "material_issue": {
+          "status": "none_identified",
+          "summary": "",
+          "owner": "",
+          "action": "unknown",
+          "next_step": ""
+        },
+        "evidence": {
+          "business_outcome": {
+            "status": "yes",
+            "reference": "Fictional record 1",
+            "note": "Fictional BR-01 records measured savings above the agreed threshold, acceptable quality trade-offs and full operating costs within budget."
+          },
+          "baseline": {
+            "status": "yes",
+            "reference": "Fictional record 2",
+            "note": "Fictional BL-02 records a comparable baseline on the same batches, population and measurement method with sampling limits documented."
+          },
+          "representative_test": {
+            "status": "yes",
+            "reference": "Fictional record 3",
+            "note": "Fictional RT-03 covers intended users, routine and exceptional cases at the proposed scale on the current workflow and model version."
+          },
+          "quality_review": {
+            "status": "yes",
+            "reference": "Fictional record 4",
+            "note": "Fictional QR-04 records acceptable quality against agreed severity limits across affected groups, with material findings resolved."
+          },
+          "workflow_owner": {
+            "status": "yes",
+            "reference": "Fictional record 5",
+            "note": "Fictional OW-05 records current role acceptance, stop authority, support budget and a tested continuity handover."
+          },
+          "human_oversight": {
+            "status": "yes",
+            "reference": "Fictional record 6",
+            "note": "Fictional HO-06 records an effective timed human review exercise with escalation and prevention of routine approval bypass."
+          },
+          "data_approval": {
+            "status": "yes",
+            "reference": "Fictional record 7",
+            "note": "Fictional DP-07 records current permission for the actual data, purpose, tool and recipients, with applicable security and contract checks accepted."
+          },
+          "rollback": {
+            "status": "yes",
+            "reference": "Fictional record 8",
+            "note": "Fictional RC-08 records a proportionate safe-stop and manual recovery exercise, plus prevention and containment of irreversible external effects."
+          },
+          "user_training": {
+            "status": "yes",
+            "reference": "Fictional record 9",
+            "note": "Fictional UR-09 records willing users successfully performing the workflow, with instructions, support and sustainable maintenance cover."
+          },
+          "monitoring": {
+            "status": "yes",
+            "reference": "Fictional record 10",
+            "note": "Fictional MO-10 records owned alerts, a practised incident response, review dates and re-evaluation after material changes."
+          }
+        }
+      }
+    },
+    {
+      "id": "N13",
+      "title": "unknown incident position",
+      "expected_decision": "FURTHER ASSESSMENT REQUIRED",
+      "judgement_reason": "Unknown is not evidence of no material issue.",
+      "payload": {
+        "schema_version": 2,
+        "methodology_version": "2.0",
+        "pilot": "Fictional unknown incident position",
+        "fictional": true,
+        "details": {
+          "process": "Sorting synthetic service requests",
+          "outcome": "Reduce handling time while maintaining acceptable quality and sustainable costs",
+          "date": "2026-10-26",
+          "reference": "Invented V2 example"
+        },
+        "scope": {
+          "activity": "bounded_internal_pilot",
+          "data": "synthetic_public",
+          "external_effects": "no",
+          "people_impact": "no",
+          "proposed_scale": "Five internal users reviewing synthetic batches",
+          "current_version": "Fictional workflow 2 / model A"
+        },
+        "material_issue": {
+          "status": "unknown",
+          "summary": "",
+          "owner": "",
+          "action": "unknown",
+          "next_step": ""
+        },
+        "evidence": {
+          "business_outcome": {
+            "status": "yes",
+            "reference": "Fictional record 1",
+            "note": "Fictional BR-01 records measured savings above the agreed threshold, acceptable quality trade-offs and full operating costs within budget."
+          },
+          "baseline": {
+            "status": "yes",
+            "reference": "Fictional record 2",
+            "note": "Fictional BL-02 records a comparable baseline on the same batches, population and measurement method with sampling limits documented."
+          },
+          "representative_test": {
+            "status": "yes",
+            "reference": "Fictional record 3",
+            "note": "Fictional RT-03 covers intended users, routine and exceptional cases at the proposed scale on the current workflow and model version."
+          },
+          "quality_review": {
+            "status": "yes",
+            "reference": "Fictional record 4",
+            "note": "Fictional QR-04 records acceptable quality against agreed severity limits across affected groups, with material findings resolved."
+          },
+          "workflow_owner": {
+            "status": "yes",
+            "reference": "Fictional record 5",
+            "note": "Fictional OW-05 records current role acceptance, stop authority, support budget and a tested continuity handover."
+          },
+          "human_oversight": {
+            "status": "yes",
+            "reference": "Fictional record 6",
+            "note": "Fictional HO-06 records an effective timed human review exercise with escalation and prevention of routine approval bypass."
+          },
+          "data_approval": {
+            "status": "yes",
+            "reference": "Fictional record 7",
+            "note": "Fictional DP-07 records current permission for the actual data, purpose, tool and recipients, with applicable security and contract checks accepted."
+          },
+          "rollback": {
+            "status": "yes",
+            "reference": "Fictional record 8",
+            "note": "Fictional RC-08 records a proportionate safe-stop and manual recovery exercise, plus prevention and containment of irreversible external effects."
+          },
+          "user_training": {
+            "status": "yes",
+            "reference": "Fictional record 9",
+            "note": "Fictional UR-09 records willing users successfully performing the workflow, with instructions, support and sustainable maintenance cover."
+          },
+          "monitoring": {
+            "status": "yes",
+            "reference": "Fictional record 10",
+            "note": "Fictional MO-10 records owned alerts, a practised incident response, review dates and re-evaluation after material changes."
+          }
+        }
+      }
+    },
+    {
+      "id": "N14",
+      "title": "affirmative flags without record reference",
+      "expected_decision": "FURTHER ASSESSMENT REQUIRED",
+      "judgement_reason": "An unsupported Yes must not complete the record.",
+      "payload": {
+        "schema_version": 2,
+        "methodology_version": "2.0",
+        "pilot": "Fictional affirmative flags without record reference",
+        "fictional": true,
+        "details": {
+          "process": "Sorting synthetic service requests",
+          "outcome": "Reduce handling time while maintaining acceptable quality and sustainable costs",
+          "date": "2026-10-26",
+          "reference": "Invented V2 example"
+        },
+        "scope": {
+          "activity": "bounded_internal_pilot",
+          "data": "synthetic_public",
+          "external_effects": "no",
+          "people_impact": "no",
+          "proposed_scale": "Five internal users reviewing synthetic batches",
+          "current_version": "Fictional workflow 2 / model A"
+        },
+        "material_issue": {
+          "status": "none_identified",
+          "summary": "",
+          "owner": "",
+          "action": "unknown",
+          "next_step": ""
+        },
+        "evidence": {
+          "business_outcome": {
+            "status": "yes",
+            "reference": "Fictional record 1",
+            "note": "Fictional BR-01 records measured savings above the agreed threshold, acceptable quality trade-offs and full operating costs within budget."
+          },
+          "baseline": {
+            "status": "yes",
+            "reference": "Fictional record 2",
+            "note": "Fictional BL-02 records a comparable baseline on the same batches, population and measurement method with sampling limits documented."
+          },
+          "representative_test": {
+            "status": "yes",
+            "reference": "Fictional record 3",
+            "note": "Fictional RT-03 covers intended users, routine and exceptional cases at the proposed scale on the current workflow and model version."
+          },
+          "quality_review": {
+            "status": "yes",
+            "reference": "",
+            "note": "Fictional QR-04 records acceptable quality against agreed severity limits across affected groups, with material findings resolved."
+          },
+          "workflow_owner": {
+            "status": "yes",
+            "reference": "Fictional record 5",
+            "note": "Fictional OW-05 records current role acceptance, stop authority, support budget and a tested continuity handover."
+          },
+          "human_oversight": {
+            "status": "yes",
+            "reference": "Fictional record 6",
+            "note": "Fictional HO-06 records an effective timed human review exercise with escalation and prevention of routine approval bypass."
+          },
+          "data_approval": {
+            "status": "yes",
+            "reference": "Fictional record 7",
+            "note": "Fictional DP-07 records current permission for the actual data, purpose, tool and recipients, with applicable security and contract checks accepted."
+          },
+          "rollback": {
+            "status": "yes",
+            "reference": "Fictional record 8",
+            "note": "Fictional RC-08 records a proportionate safe-stop and manual recovery exercise, plus prevention and containment of irreversible external effects."
+          },
+          "user_training": {
+            "status": "yes",
+            "reference": "Fictional record 9",
+            "note": "Fictional UR-09 records willing users successfully performing the workflow, with instructions, support and sustainable maintenance cover."
+          },
+          "monitoring": {
+            "status": "yes",
+            "reference": "Fictional record 10",
+            "note": "Fictional MO-10 records owned alerts, a practised incident response, review dates and re-evaluation after material changes."
+          }
+        }
+      }
+    },
+    {
+      "id": "N15",
+      "title": "public-data sandbox without permission",
+      "expected_decision": "WITHHOLD EXPANSION",
+      "judgement_reason": "Offline scope cannot bypass applicable permission.",
+      "payload": {
+        "schema_version": 2,
+        "methodology_version": "2.0",
+        "pilot": "Fictional public-data sandbox without permission",
+        "fictional": true,
+        "details": {
+          "process": "Sorting synthetic service requests",
+          "outcome": "Reduce handling time while maintaining acceptable quality and sustainable costs",
+          "date": "2026-10-26",
+          "reference": "Invented V2 example"
+        },
+        "scope": {
+          "activity": "offline_experiment",
+          "data": "synthetic_public",
+          "external_effects": "no",
+          "people_impact": "no",
+          "proposed_scale": "One offline learner; outputs discarded",
+          "current_version": "Fictional workflow 2 / model A"
+        },
+        "material_issue": {
+          "status": "none_identified",
+          "summary": "",
+          "owner": "",
+          "action": "unknown",
+          "next_step": ""
+        },
+        "evidence": {
+          "business_outcome": {
+            "status": "unknown",
+            "reference": "",
+            "note": "Not assessed for this non-operational learning exercise."
+          },
+          "baseline": {
+            "status": "unknown",
+            "reference": "",
+            "note": "Not assessed for this non-operational learning exercise."
+          },
+          "representative_test": {
+            "status": "unknown",
+            "reference": "",
+            "note": "Not assessed for this non-operational learning exercise."
+          },
+          "quality_review": {
+            "status": "unknown",
+            "reference": "",
+            "note": "Not assessed for this non-operational learning exercise."
+          },
+          "workflow_owner": {
+            "status": "unknown",
+            "reference": "",
+            "note": "Not assessed for this non-operational learning exercise."
+          },
+          "human_oversight": {
+            "status": "unknown",
+            "reference": "",
+            "note": "Not assessed for this non-operational learning exercise."
+          },
+          "data_approval": {
+            "status": "no",
+            "reference": "Fictional record 7",
+            "note": "Fictional DP-07 records current permission for the actual data, purpose, tool and recipients, with applicable security and contract checks accepted."
+          },
+          "rollback": {
+            "status": "unknown",
+            "reference": "",
+            "note": "Not assessed for this non-operational learning exercise."
+          },
+          "user_training": {
+            "status": "unknown",
+            "reference": "",
+            "note": "Not assessed for this non-operational learning exercise."
+          },
+          "monitoring": {
+            "status": "unknown",
+            "reference": "",
+            "note": "Not assessed for this non-operational learning exercise."
+          }
+        }
+      }
+    },
+    {
+      "id": "N16",
+      "title": "false no-issue statement with adverse prose",
+      "expected_decision": "COMPLETE RECORD - HUMAN DECISION REQUIRED",
+      "judgement_reason": "A negative control: if structured answers falsely claim acceptance and no issue, the rule engine cannot discover prose meaning. This remains a limitation, not a success.",
+      "payload": {
+        "schema_version": 2,
+        "methodology_version": "2.0",
+        "pilot": "Fictional false no-issue statement with adverse prose",
+        "fictional": true,
+        "details": {
+          "process": "Sorting synthetic service requests",
+          "outcome": "Reduce handling time while maintaining acceptable quality and sustainable costs",
+          "date": "2026-10-26",
+          "reference": "Invented V2 example"
+        },
+        "scope": {
+          "activity": "bounded_internal_pilot",
+          "data": "synthetic_public",
+          "external_effects": "no",
+          "people_impact": "no",
+          "proposed_scale": "Five internal users reviewing synthetic batches",
+          "current_version": "Fictional workflow 2 / model A"
+        },
+        "material_issue": {
+          "status": "none_identified",
+          "summary": "",
+          "owner": "",
+          "action": "unknown",
+          "next_step": ""
+        },
+        "evidence": {
+          "business_outcome": {
+            "status": "yes",
+            "reference": "Fictional record 1",
+            "note": "Fictional BR-01 records measured savings above the agreed threshold, acceptable quality trade-offs and full operating costs within budget."
+          },
+          "baseline": {
+            "status": "yes",
+            "reference": "Fictional record 2",
+            "note": "Fictional BL-02 records a comparable baseline on the same batches, population and measurement method with sampling limits documented."
+          },
+          "representative_test": {
+            "status": "yes",
+            "reference": "Fictional record 3",
+            "note": "Fictional RT-03 covers intended users, routine and exceptional cases at the proposed scale on the current workflow and model version."
+          },
+          "quality_review": {
+            "status": "yes",
+            "reference": "Fictional record 4",
+            "note": "Fictional completed review says severe errors remain, but the preparer falsely selected Yes and no issue."
+          },
+          "workflow_owner": {
+            "status": "yes",
+            "reference": "Fictional record 5",
+            "note": "Fictional OW-05 records current role acceptance, stop authority, support budget and a tested continuity handover."
+          },
+          "human_oversight": {
+            "status": "yes",
+            "reference": "Fictional record 6",
+            "note": "Fictional HO-06 records an effective timed human review exercise with escalation and prevention of routine approval bypass."
+          },
+          "data_approval": {
+            "status": "yes",
+            "reference": "Fictional record 7",
+            "note": "Fictional DP-07 records current permission for the actual data, purpose, tool and recipients, with applicable security and contract checks accepted."
+          },
+          "rollback": {
+            "status": "yes",
+            "reference": "Fictional record 8",
+            "note": "Fictional RC-08 records a proportionate safe-stop and manual recovery exercise, plus prevention and containment of irreversible external effects."
+          },
+          "user_training": {
+            "status": "yes",
+            "reference": "Fictional record 9",
+            "note": "Fictional UR-09 records willing users successfully performing the workflow, with instructions, support and sustainable maintenance cover."
+          },
+          "monitoring": {
+            "status": "yes",
+            "reference": "Fictional record 10",
+            "note": "Fictional MO-10 records owned alerts, a practised incident response, review dates and re-evaluation after material changes."
+          }
+        }
+      }
+    }
+  ]
+}

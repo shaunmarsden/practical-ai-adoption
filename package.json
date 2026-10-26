@@ -2,8 +2,13 @@
   "name": "practical-ai-adoption-checks",
   "private": true,
   "scripts": {
-    "test": "node --test tools/pilot-readiness/tests/browser/model.test.mjs",
-    "test:browser": "node tools/pilot-readiness/tests/browser/ui.mjs"
+    "test": "node --test tools/pilot-readiness/tests/browser/model.test.mjs tools/pilot-readiness/v2/tests/model.test.mjs",
+    "test:browser": "node tools/pilot-readiness/v2/tests/browser.mjs",
+    "test:v1:browser": "node tools/pilot-readiness/tests/browser/ui.mjs",
+    "test:compare": "node tools/pilot-readiness/v2/compare.mjs",
+    "test:pdf": "python3 tools/pilot-readiness/v2/tests/check_pdfs.py"
   },
-  "devDependencies": {"playwright": "1.62.1"}
+  "devDependencies": {
+    "playwright": "1.62.1"
+  }
 }

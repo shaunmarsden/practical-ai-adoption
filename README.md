@@ -38,7 +38,9 @@ No coding or installation needed.
 
 ## Check whether a pilot is ready to expand
 
-**[Open the AI Pilot Readiness Assessment](https://shaunmarsden.github.io/practical-ai-adoption/pilot-readiness/).** Complete ten guided checks in your browser, explore a fictional example and download a PDF report. No installation, account or AI API is needed. Answers stay in page memory unless you export them.
+**[Open the AI Pilot Readiness Assessment](https://shaunmarsden.github.io/practical-ai-adoption/pilot-readiness/).** V2 asks whether ten conditions are currently acceptable for the intended use, explicitly records unresolved material issues and produces a local PDF report. Explore a fictional example without installation, an account or an AI API. Answers stay in page memory unless you export them.
+
+A completed review is not necessarily an acceptable result. V2 separates withheld expansion, further evidence needed and a complete record requiring independent human decision. [Method changes and all thirty adversarial comparisons](tools/pilot-readiness/v2/METHODOLOGY.md) explain its limits. V2 remains a review-branch implementation until an approved merge and live verification.
 
 It identifies recorded blockers and evidence gaps; it never authorises deployment. [Methodology, tests and the existing Python checker](tools/pilot-readiness/README.md) explain the rules and validation limits.
 
