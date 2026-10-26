@@ -1,0 +1,226 @@
+[
+  {
+    "file": "blocked.pdf",
+    "sha256": "b7d53fadfbbb78088944d79100ad5c9b02e59a1c8f50ff06139be46bfefc975e",
+    "pages": 4,
+    "decision": "DO NOT EXPAND",
+    "text_and_note_checks_pass": true,
+    "page_checks": [
+      {
+        "page": 1,
+        "a4": true,
+        "margins_pass": true
+      },
+      {
+        "page": 2,
+        "a4": true,
+        "margins_pass": true
+      },
+      {
+        "page": 3,
+        "a4": true,
+        "margins_pass": true
+      },
+      {
+        "page": 4,
+        "a4": true,
+        "margins_pass": true
+      }
+    ]
+  },
+  {
+    "file": "limited.pdf",
+    "sha256": "357e8d370b60c0c68d44995ed384ef4743f833b9efb6882b208f3bb72aa85e39",
+    "pages": 4,
+    "decision": "LIMITED PILOT ONLY",
+    "text_and_note_checks_pass": true,
+    "page_checks": [
+      {
+        "page": 1,
+        "a4": true,
+        "margins_pass": true
+      },
+      {
+        "page": 2,
+        "a4": true,
+        "margins_pass": true
+      },
+      {
+        "page": 3,
+        "a4": true,
+        "margins_pass": true
+      },
+      {
+        "page": 4,
+        "a4": true,
+        "margins_pass": true
+      }
+    ]
+  },
+  {
+    "file": "all-yes.pdf",
+    "sha256": "4de1d36e323f8bfe3222b8fa8bc17cae6797f2b72bd1252e5251be74c83a6c0f",
+    "pages": 5,
+    "decision": "READY FOR HUMAN REVIEW",
+    "text_and_note_checks_pass": true,
+    "page_checks": [
+      {
+        "page": 1,
+        "a4": true,
+        "margins_pass": true
+      },
+      {
+        "page": 2,
+        "a4": true,
+        "margins_pass": true
+      },
+      {
+        "page": 3,
+        "a4": true,
+        "margins_pass": true
+      },
+      {
+        "page": 4,
+        "a4": true,
+        "margins_pass": true
+      },
+      {
+        "page": 5,
+        "a4": true,
+        "margins_pass": true
+      }
+    ]
+  },
+  {
+    "file": "critical-review.pdf",
+    "sha256": "38b11fc376a9dda4b2c4ebf898124fda040b8c85ddff3f5d7485ecb237c02b73",
+    "pages": 5,
+    "decision": "READY FOR HUMAN REVIEW",
+    "text_and_note_checks_pass": true,
+    "page_checks": [
+      {
+        "page": 1,
+        "a4": true,
+        "margins_pass": true
+      },
+      {
+        "page": 2,
+        "a4": true,
+        "margins_pass": true
+      },
+      {
+        "page": 3,
+        "a4": true,
+        "margins_pass": true
+      },
+      {
+        "page": 4,
+        "a4": true,
+        "margins_pass": true
+      },
+      {
+        "page": 5,
+        "a4": true,
+        "margins_pass": true
+      }
+    ]
+  },
+  {
+    "file": "long-notes.pdf",
+    "sha256": "e2cb1e347b6d16ed99ebe74de3c939d96fbee9bb08e23f7eac247369ce0a5282",
+    "pages": 11,
+    "decision": "READY FOR HUMAN REVIEW",
+    "text_and_note_checks_pass": true,
+    "page_checks": [
+      {
+        "page": 1,
+        "a4": true,
+        "margins_pass": true
+      },
+      {
+        "page": 2,
+        "a4": true,
+        "margins_pass": true
+      },
+      {
+        "page": 3,
+        "a4": true,
+        "margins_pass": true
+      },
+      {
+        "page": 4,
+        "a4": true,
+        "margins_pass": true
+      },
+      {
+        "page": 5,
+        "a4": true,
+        "margins_pass": true
+      },
+      {
+        "page": 6,
+        "a4": true,
+        "margins_pass": true
+      },
+      {
+        "page": 7,
+        "a4": true,
+        "margins_pass": true
+      },
+      {
+        "page": 8,
+        "a4": true,
+        "margins_pass": true
+      },
+      {
+        "page": 9,
+        "a4": true,
+        "margins_pass": true
+      },
+      {
+        "page": 10,
+        "a4": true,
+        "margins_pass": true
+      },
+      {
+        "page": 11,
+        "a4": true,
+        "margins_pass": true
+      }
+    ]
+  },
+  {
+    "file": "undated-import.pdf",
+    "sha256": "5d8e1971f6040d75179c41c58923aa55f2e5593461ccbd3a5f2fcf2a3b559221",
+    "pages": 5,
+    "decision": "READY FOR HUMAN REVIEW",
+    "text_and_note_checks_pass": true,
+    "page_checks": [
+      {
+        "page": 1,
+        "a4": true,
+        "margins_pass": true
+      },
+      {
+        "page": 2,
+        "a4": true,
+        "margins_pass": true
+      },
+      {
+        "page": 3,
+        "a4": true,
+        "margins_pass": true
+      },
+      {
+        "page": 4,
+        "a4": true,
+        "margins_pass": true
+      },
+      {
+        "page": 5,
+        "a4": true,
+        "margins_pass": true
+      }
+    ]
+  }
+]

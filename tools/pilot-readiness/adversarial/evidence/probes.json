@@ -1,0 +1,380 @@
+{
+  "results": [
+    {
+      "note": "done",
+      "form_errors": {
+        "business_outcome": "For Yes, identify a checkable record and what it shows: at least 40 characters, 6 words and 4 different words. Otherwise choose No or Unknown.",
+        "baseline": "For Yes, identify a checkable record and what it shows: at least 40 characters, 6 words and 4 different words. Otherwise choose No or Unknown.",
+        "representative_test": "For Yes, identify a checkable record and what it shows: at least 40 characters, 6 words and 4 different words. Otherwise choose No or Unknown.",
+        "quality_review": "For Yes, identify a checkable record and what it shows: at least 40 characters, 6 words and 4 different words. Otherwise choose No or Unknown.",
+        "workflow_owner": "For Yes, identify a checkable record and what it shows: at least 40 characters, 6 words and 4 different words. Otherwise choose No or Unknown.",
+        "human_oversight": "For Yes, identify a checkable record and what it shows: at least 40 characters, 6 words and 4 different words. Otherwise choose No or Unknown.",
+        "data_approval": "For Yes, identify a checkable record and what it shows: at least 40 characters, 6 words and 4 different words. Otherwise choose No or Unknown.",
+        "rollback": "For Yes, identify a checkable record and what it shows: at least 40 characters, 6 words and 4 different words. Otherwise choose No or Unknown.",
+        "user_training": "For Yes, identify a checkable record and what it shows: at least 40 characters, 6 words and 4 different words. Otherwise choose No or Unknown.",
+        "monitoring": "For Yes, identify a checkable record and what it shows: at least 40 characters, 6 words and 4 different words. Otherwise choose No or Unknown."
+      },
+      "python_compatible_payload": {
+        "pilot": "Fictional bounded complete business case",
+        "fictional": true,
+        "details": {
+          "process": "Synthetic process for adversarial case 22",
+          "outcome": "Assess a proposed expansion; all records are invented",
+          "date": "2026-10-26",
+          "reference": "AD-22"
+        },
+        "evidence": {
+          "business_outcome": {
+            "status": "yes",
+            "note": "done"
+          },
+          "baseline": {
+            "status": "yes",
+            "note": "done"
+          },
+          "representative_test": {
+            "status": "yes",
+            "note": "done"
+          },
+          "quality_review": {
+            "status": "yes",
+            "note": "done"
+          },
+          "workflow_owner": {
+            "status": "yes",
+            "note": "done"
+          },
+          "human_oversight": {
+            "status": "yes",
+            "note": "done"
+          },
+          "data_approval": {
+            "status": "yes",
+            "note": "done"
+          },
+          "rollback": {
+            "status": "yes",
+            "note": "done"
+          },
+          "user_training": {
+            "status": "yes",
+            "note": "done"
+          },
+          "monitoring": {
+            "status": "yes",
+            "note": "done"
+          }
+        }
+      },
+      "decision": {
+        "pilot": "Fictional bounded complete business case",
+        "decision": "READY FOR HUMAN REVIEW",
+        "reason": "All checks are recorded as met; a responsible person must still validate the evidence and approve any expansion.",
+        "essential_blockers": [],
+        "remaining_gaps": [],
+        "checks_met": 10,
+        "checks_total": 10,
+        "warning": "Self-reported notes are not independently verified. This tool cannot authorise deployment or establish ROI."
+      }
+    },
+    {
+      "note": "approved",
+      "form_errors": {
+        "business_outcome": "For Yes, identify a checkable record and what it shows: at least 40 characters, 6 words and 4 different words. Otherwise choose No or Unknown.",
+        "baseline": "For Yes, identify a checkable record and what it shows: at least 40 characters, 6 words and 4 different words. Otherwise choose No or Unknown.",
+        "representative_test": "For Yes, identify a checkable record and what it shows: at least 40 characters, 6 words and 4 different words. Otherwise choose No or Unknown.",
+        "quality_review": "For Yes, identify a checkable record and what it shows: at least 40 characters, 6 words and 4 different words. Otherwise choose No or Unknown.",
+        "workflow_owner": "For Yes, identify a checkable record and what it shows: at least 40 characters, 6 words and 4 different words. Otherwise choose No or Unknown.",
+        "human_oversight": "For Yes, identify a checkable record and what it shows: at least 40 characters, 6 words and 4 different words. Otherwise choose No or Unknown.",
+        "data_approval": "For Yes, identify a checkable record and what it shows: at least 40 characters, 6 words and 4 different words. Otherwise choose No or Unknown.",
+        "rollback": "For Yes, identify a checkable record and what it shows: at least 40 characters, 6 words and 4 different words. Otherwise choose No or Unknown.",
+        "user_training": "For Yes, identify a checkable record and what it shows: at least 40 characters, 6 words and 4 different words. Otherwise choose No or Unknown.",
+        "monitoring": "For Yes, identify a checkable record and what it shows: at least 40 characters, 6 words and 4 different words. Otherwise choose No or Unknown."
+      },
+      "python_compatible_payload": {
+        "pilot": "Fictional bounded complete business case",
+        "fictional": true,
+        "details": {
+          "process": "Synthetic process for adversarial case 22",
+          "outcome": "Assess a proposed expansion; all records are invented",
+          "date": "2026-10-26",
+          "reference": "AD-22"
+        },
+        "evidence": {
+          "business_outcome": {
+            "status": "yes",
+            "note": "approved"
+          },
+          "baseline": {
+            "status": "yes",
+            "note": "approved"
+          },
+          "representative_test": {
+            "status": "yes",
+            "note": "approved"
+          },
+          "quality_review": {
+            "status": "yes",
+            "note": "approved"
+          },
+          "workflow_owner": {
+            "status": "yes",
+            "note": "approved"
+          },
+          "human_oversight": {
+            "status": "yes",
+            "note": "approved"
+          },
+          "data_approval": {
+            "status": "yes",
+            "note": "approved"
+          },
+          "rollback": {
+            "status": "yes",
+            "note": "approved"
+          },
+          "user_training": {
+            "status": "yes",
+            "note": "approved"
+          },
+          "monitoring": {
+            "status": "yes",
+            "note": "approved"
+          }
+        }
+      },
+      "decision": {
+        "pilot": "Fictional bounded complete business case",
+        "decision": "READY FOR HUMAN REVIEW",
+        "reason": "All checks are recorded as met; a responsible person must still validate the evidence and approve any expansion.",
+        "essential_blockers": [],
+        "remaining_gaps": [],
+        "checks_met": 10,
+        "checks_total": 10,
+        "warning": "Self-reported notes are not independently verified. This tool cannot authorise deployment or establish ROI."
+      }
+    },
+    {
+      "note": "approved approved approved approved approved approved approved approved approved approved approved approved approved approved approved approved approved approved approved approved ",
+      "form_errors": {
+        "business_outcome": "For Yes, identify a checkable record and what it shows: at least 40 characters, 6 words and 4 different words. Otherwise choose No or Unknown.",
+        "baseline": "For Yes, identify a checkable record and what it shows: at least 40 characters, 6 words and 4 different words. Otherwise choose No or Unknown.",
+        "representative_test": "For Yes, identify a checkable record and what it shows: at least 40 characters, 6 words and 4 different words. Otherwise choose No or Unknown.",
+        "quality_review": "For Yes, identify a checkable record and what it shows: at least 40 characters, 6 words and 4 different words. Otherwise choose No or Unknown.",
+        "workflow_owner": "For Yes, identify a checkable record and what it shows: at least 40 characters, 6 words and 4 different words. Otherwise choose No or Unknown.",
+        "human_oversight": "For Yes, identify a checkable record and what it shows: at least 40 characters, 6 words and 4 different words. Otherwise choose No or Unknown.",
+        "data_approval": "For Yes, identify a checkable record and what it shows: at least 40 characters, 6 words and 4 different words. Otherwise choose No or Unknown.",
+        "rollback": "For Yes, identify a checkable record and what it shows: at least 40 characters, 6 words and 4 different words. Otherwise choose No or Unknown.",
+        "user_training": "For Yes, identify a checkable record and what it shows: at least 40 characters, 6 words and 4 different words. Otherwise choose No or Unknown.",
+        "monitoring": "For Yes, identify a checkable record and what it shows: at least 40 characters, 6 words and 4 different words. Otherwise choose No or Unknown."
+      },
+      "python_compatible_payload": {
+        "pilot": "Fictional bounded complete business case",
+        "fictional": true,
+        "details": {
+          "process": "Synthetic process for adversarial case 22",
+          "outcome": "Assess a proposed expansion; all records are invented",
+          "date": "2026-10-26",
+          "reference": "AD-22"
+        },
+        "evidence": {
+          "business_outcome": {
+            "status": "yes",
+            "note": "approved approved approved approved approved approved approved approved approved approved approved approved approved approved approved approved approved approved approved approved "
+          },
+          "baseline": {
+            "status": "yes",
+            "note": "approved approved approved approved approved approved approved approved approved approved approved approved approved approved approved approved approved approved approved approved "
+          },
+          "representative_test": {
+            "status": "yes",
+            "note": "approved approved approved approved approved approved approved approved approved approved approved approved approved approved approved approved approved approved approved approved "
+          },
+          "quality_review": {
+            "status": "yes",
+            "note": "approved approved approved approved approved approved approved approved approved approved approved approved approved approved approved approved approved approved approved approved "
+          },
+          "workflow_owner": {
+            "status": "yes",
+            "note": "approved approved approved approved approved approved approved approved approved approved approved approved approved approved approved approved approved approved approved approved "
+          },
+          "human_oversight": {
+            "status": "yes",
+            "note": "approved approved approved approved approved approved approved approved approved approved approved approved approved approved approved approved approved approved approved approved "
+          },
+          "data_approval": {
+            "status": "yes",
+            "note": "approved approved approved approved approved approved approved approved approved approved approved approved approved approved approved approved approved approved approved approved "
+          },
+          "rollback": {
+            "status": "yes",
+            "note": "approved approved approved approved approved approved approved approved approved approved approved approved approved approved approved approved approved approved approved approved "
+          },
+          "user_training": {
+            "status": "yes",
+            "note": "approved approved approved approved approved approved approved approved approved approved approved approved approved approved approved approved approved approved approved approved "
+          },
+          "monitoring": {
+            "status": "yes",
+            "note": "approved approved approved approved approved approved approved approved approved approved approved approved approved approved approved approved approved approved approved approved "
+          }
+        }
+      },
+      "decision": {
+        "pilot": "Fictional bounded complete business case",
+        "decision": "READY FOR HUMAN REVIEW",
+        "reason": "All checks are recorded as met; a responsible person must still validate the evidence and approve any expansion.",
+        "essential_blockers": [],
+        "remaining_gaps": [],
+        "checks_met": 10,
+        "checks_total": 10,
+        "warning": "Self-reported notes are not independently verified. This tool cannot authorise deployment or establish ROI."
+      }
+    },
+    {
+      "note": "This is approved and everything is completely fine.",
+      "form_errors": {},
+      "python_compatible_payload": {
+        "pilot": "Fictional bounded complete business case",
+        "fictional": true,
+        "details": {
+          "process": "Synthetic process for adversarial case 22",
+          "outcome": "Assess a proposed expansion; all records are invented",
+          "date": "2026-10-26",
+          "reference": "AD-22"
+        },
+        "evidence": {
+          "business_outcome": {
+            "status": "yes",
+            "note": "This is approved and everything is completely fine."
+          },
+          "baseline": {
+            "status": "yes",
+            "note": "This is approved and everything is completely fine."
+          },
+          "representative_test": {
+            "status": "yes",
+            "note": "This is approved and everything is completely fine."
+          },
+          "quality_review": {
+            "status": "yes",
+            "note": "This is approved and everything is completely fine."
+          },
+          "workflow_owner": {
+            "status": "yes",
+            "note": "This is approved and everything is completely fine."
+          },
+          "human_oversight": {
+            "status": "yes",
+            "note": "This is approved and everything is completely fine."
+          },
+          "data_approval": {
+            "status": "yes",
+            "note": "This is approved and everything is completely fine."
+          },
+          "rollback": {
+            "status": "yes",
+            "note": "This is approved and everything is completely fine."
+          },
+          "user_training": {
+            "status": "yes",
+            "note": "This is approved and everything is completely fine."
+          },
+          "monitoring": {
+            "status": "yes",
+            "note": "This is approved and everything is completely fine."
+          }
+        }
+      },
+      "decision": {
+        "pilot": "Fictional bounded complete business case",
+        "decision": "READY FOR HUMAN REVIEW",
+        "reason": "All checks are recorded as met; a responsible person must still validate the evidence and approve any expansion.",
+        "essential_blockers": [],
+        "remaining_gaps": [],
+        "checks_met": 10,
+        "checks_total": 10,
+        "warning": "Self-reported notes are not independently verified. This tool cannot authorise deployment or establish ROI."
+      }
+    },
+    {
+      "note": "QR-14: 0 critical errors in 200 tests.",
+      "form_errors": {
+        "business_outcome": "For Yes, identify a checkable record and what it shows: at least 40 characters, 6 words and 4 different words. Otherwise choose No or Unknown.",
+        "baseline": "For Yes, identify a checkable record and what it shows: at least 40 characters, 6 words and 4 different words. Otherwise choose No or Unknown.",
+        "representative_test": "For Yes, identify a checkable record and what it shows: at least 40 characters, 6 words and 4 different words. Otherwise choose No or Unknown.",
+        "quality_review": "For Yes, identify a checkable record and what it shows: at least 40 characters, 6 words and 4 different words. Otherwise choose No or Unknown.",
+        "workflow_owner": "For Yes, identify a checkable record and what it shows: at least 40 characters, 6 words and 4 different words. Otherwise choose No or Unknown.",
+        "human_oversight": "For Yes, identify a checkable record and what it shows: at least 40 characters, 6 words and 4 different words. Otherwise choose No or Unknown.",
+        "data_approval": "For Yes, identify a checkable record and what it shows: at least 40 characters, 6 words and 4 different words. Otherwise choose No or Unknown.",
+        "rollback": "For Yes, identify a checkable record and what it shows: at least 40 characters, 6 words and 4 different words. Otherwise choose No or Unknown.",
+        "user_training": "For Yes, identify a checkable record and what it shows: at least 40 characters, 6 words and 4 different words. Otherwise choose No or Unknown.",
+        "monitoring": "For Yes, identify a checkable record and what it shows: at least 40 characters, 6 words and 4 different words. Otherwise choose No or Unknown."
+      },
+      "python_compatible_payload": {
+        "pilot": "Fictional bounded complete business case",
+        "fictional": true,
+        "details": {
+          "process": "Synthetic process for adversarial case 22",
+          "outcome": "Assess a proposed expansion; all records are invented",
+          "date": "2026-10-26",
+          "reference": "AD-22"
+        },
+        "evidence": {
+          "business_outcome": {
+            "status": "yes",
+            "note": "QR-14: 0 critical errors in 200 tests."
+          },
+          "baseline": {
+            "status": "yes",
+            "note": "QR-14: 0 critical errors in 200 tests."
+          },
+          "representative_test": {
+            "status": "yes",
+            "note": "QR-14: 0 critical errors in 200 tests."
+          },
+          "quality_review": {
+            "status": "yes",
+            "note": "QR-14: 0 critical errors in 200 tests."
+          },
+          "workflow_owner": {
+            "status": "yes",
+            "note": "QR-14: 0 critical errors in 200 tests."
+          },
+          "human_oversight": {
+            "status": "yes",
+            "note": "QR-14: 0 critical errors in 200 tests."
+          },
+          "data_approval": {
+            "status": "yes",
+            "note": "QR-14: 0 critical errors in 200 tests."
+          },
+          "rollback": {
+            "status": "yes",
+            "note": "QR-14: 0 critical errors in 200 tests."
+          },
+          "user_training": {
+            "status": "yes",
+            "note": "QR-14: 0 critical errors in 200 tests."
+          },
+          "monitoring": {
+            "status": "yes",
+            "note": "QR-14: 0 critical errors in 200 tests."
+          }
+        }
+      },
+      "decision": {
+        "pilot": "Fictional bounded complete business case",
+        "decision": "READY FOR HUMAN REVIEW",
+        "reason": "All checks are recorded as met; a responsible person must still validate the evidence and approve any expansion.",
+        "essential_blockers": [],
+        "remaining_gaps": [],
+        "checks_met": 10,
+        "checks_total": 10,
+        "warning": "Self-reported notes are not independently verified. This tool cannot authorise deployment or establish ROI."
+      }
+    }
+  ],
+  "legacy_normalise_date": "",
+  "note": "The generic sentence passes form checks without naming a record. The short concrete reference fails length checks; its truth and sufficiency are unknown. Live date substitution happens later in app.load()."
+}
