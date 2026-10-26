@@ -1,0 +1,45 @@
+{
+  "pilot": "Fictional support email categorisation trial",
+  "evidence": {
+    "business_outcome": {
+      "status": "yes",
+      "note": "Fictional signed-off trial record, not real evidence"
+    },
+    "baseline": {
+      "status": "yes",
+      "note": "Fictional signed-off trial record, not real evidence"
+    },
+    "representative_test": {
+      "status": "yes",
+      "note": "Fictional signed-off trial record, not real evidence"
+    },
+    "quality_review": {
+      "status": "yes",
+      "note": "Fictional signed-off trial record, not real evidence"
+    },
+    "workflow_owner": {
+      "status": "yes",
+      "note": "Fictional signed-off trial record, not real evidence"
+    },
+    "human_oversight": {
+      "status": "yes",
+      "note": "Fictional signed-off trial record, not real evidence"
+    },
+    "data_approval": {
+      "status": "unknown",
+      "note": "Data protection review not yet completed"
+    },
+    "rollback": {
+      "status": "yes",
+      "note": "Fictional signed-off trial record, not real evidence"
+    },
+    "user_training": {
+      "status": "yes",
+      "note": "Fictional signed-off trial record, not real evidence"
+    },
+    "monitoring": {
+      "status": "yes",
+      "note": "Fictional signed-off trial record, not real evidence"
+    }
+  }
+}
