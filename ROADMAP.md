@@ -2,6 +2,18 @@
 
 This is where I'm heading. It isn't a promise to publish everything listed.
 
+## Pilot readiness assessment: next evidence, not more features
+
+The [V2 tool](https://shaunmarsden.github.io/practical-ai-adoption/pilot-readiness/) has been deployed and smoke-tested against fictional inputs. Its [case study](case-studies/ai-pilot-readiness-assessment.md) records why the first version's quality-review question produced false reassurance and how V2 changed the rules.
+
+The remaining gap is **independent judgement and real-user understanding**. The adversarial cases and software checks were carried out within the same AI-assisted development process. They do not show that an outside reviewer agrees with the methodology or that a manager understands what the result permits.
+
+Before describing this as a validated readiness method:
+
+- Ask someone independent of the implementation to judge a small, varied fictional case set before seeing the tool's output. Keep disagreements.
+- Observe whether a non-technical user understands the three operational decisions, particularly that a complete record is **not approval**.
+- Only consider further criteria or automation if those reviews reveal a material weakness. Do not add a new framework or claim real-world outcome evidence.
+
 ## Now
 
 There are two gaps. The tests named both, so I didn't have to guess.
