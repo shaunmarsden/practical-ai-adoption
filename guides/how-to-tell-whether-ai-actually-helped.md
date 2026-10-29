@@ -65,6 +65,10 @@ A mistake treated as a footnote. If a real error reached a real person before an
 
 [Read the Calthorpe & Rees example](../examples/calthorpe-rees-ai-trial-evaluation-example.md) to see this checklist used on a trial with no clear answer. I asked it once as a neutral question and once under the kind of pressure to say yes you'd meet at work. [Read the review](../evaluations/calthorpe-rees-ai-trial-evaluation-review.md) for what changed between the two attempts and why. The first attempt found no real difference, and the review says so rather than calling it a win.
 
+## Further reading: measuring success, not just usage
+
+[AI Business Models](https://www.businessmodels.ai/) is primarily about how vendors make money, but its sections on [AI add-ons](https://www.businessmodels.ai/ai-add-on/), [outcome-priced agents](https://www.businessmodels.ai/ai-outcome-pricing/) and [AI-native services](https://www.businessmodels.ai/ai-native-services/) offer useful questions about repeat use, disputed outcomes and the real cost of human review. [Read the attributed research note](../research/measuring-ai-adoption-business-model-references.md) for a workplace interpretation and its limits. These articles do not establish the effectiveness of this guide.
+
 ## Basis for this guide
 
 - NBER Working Paper No. 34836, "Firm Data on AI," surveyed nearly 6,000 senior executives in the US, UK, Germany and Australia:
