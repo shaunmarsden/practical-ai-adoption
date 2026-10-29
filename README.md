@@ -36,6 +36,8 @@ No coding or installation needed.
 
 [OpenAI, Anthropic and Google adoption resources](research/official-ai-adoption-resources.md) collects links to publicly available vendor guides, including downloadable PDFs. It distinguishes publisher recommendations from evidence and shows how to apply the ideas to an ordinary workflow. No third-party PDFs are copied here.
 
+For teams assessing a pilot, the [research note on measuring AI adoption](research/measuring-ai-adoption-business-model-references.md) links useful ideas from *AI Business Models* to outcome definitions, accepted work, rework and full-process costs. These are research prompts, not validated benchmarks.
+
 ## Check whether a pilot is ready to expand
 
 **[Open the AI Pilot Readiness Assessment](https://shaunmarsden.github.io/practical-ai-adoption/pilot-readiness/).** V2 asks whether ten conditions are currently acceptable for the intended use, explicitly records unresolved material issues and produces a local PDF report. Explore a fictional example without installation, an account or an AI API. Answers stay in page memory unless you export them.
