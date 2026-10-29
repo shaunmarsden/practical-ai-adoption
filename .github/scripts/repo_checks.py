@@ -165,7 +165,13 @@ for f in MD:
 # review sat unlinked while the README quoted its scores on the front page: two
 # guides pointed at the worked example and neither pointed at the scoring.
 GUIDES = [f for f in MD if f.startswith("guides/")]
-EVALUATIONS = [f for f in MD if f.startswith("evaluations/")]
+# A review that is prepared but has not run yet. It has no result to reach or
+# list, and linking its facilitator key from a guide could show a reviewer the
+# expected answers first. Remove a folder from here once its review has run,
+# so checks 4 and 5 apply to it again.
+PENDING_REVIEWS = ("evaluations/pilot-readiness-independent-review/",)
+EVALUATIONS = [f for f in MD if f.startswith("evaluations/")
+               and not f.startswith(PENDING_REVIEWS)]
 if GUIDES and EVALUATIONS:
     guide_text = "".join(read(g) for g in GUIDES)
     for ev in EVALUATIONS:
@@ -196,7 +202,8 @@ if os.path.exists(MATRIX):
     # own example, so the matrix is the route to the other eight. Dropping that
     # column once already orphaned them.
     for f in sorted(MD):
-        if f.startswith("evaluations/") and os.path.basename(f) not in matrix:
+        if (f.startswith("evaluations/") and not f.startswith(PENDING_REVIEWS)
+                and os.path.basename(f) not in matrix):
             fail("review-not-in-matrix", MATRIX,
                  f"{f} is a scored test the evidence matrix does not list")
         if f.startswith("examples/") and os.path.basename(f) not in matrix:

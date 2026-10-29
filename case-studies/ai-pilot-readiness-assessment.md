@@ -20,7 +20,7 @@ The rules are deterministic. A reported unresolved material issue, or a No to an
 
 ## What went wrong in the first version
 
-V1 asked whether a named person had reviewed quality. A fictional example recorded that the review had happened **and** had found unresolved critical errors. Because the response to “was it reviewed?” was Yes, the checker returned READY FOR HUMAN REVIEW with no blocker.
+V1 asked whether a named person had reviewed quality. A fictional example recorded that the review had happened **and** had found unresolved critical errors. Because the response to "was it reviewed?" was Yes, the checker returned READY FOR HUMAN REVIEW with no blocker.
 
 The code was following its rule. The rule was answering the wrong question.
 
