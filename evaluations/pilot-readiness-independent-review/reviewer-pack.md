@@ -12,7 +12,7 @@ These choices are not promises that any route is legally or operationally author
 
 ## R01: Good results, rejected safety finding
 
-A fictional support team tests an AI classifier on 400 tickets. It cuts average sorting time by 20%, compared with a recorded manual baseline. The operations owner and data team have approved the proposed use, and a fallback is demonstrated. A signed error review finds six cases in which urgent safeguarding messages were incorrectly categorised as routine. The reviewer writes, “Unacceptable for the planned live workflow until the issue is corrected and retested.” The team wants to expand next week.
+A fictional support team tests an AI classifier on 400 tickets. It cuts average sorting time by 20%, compared with a recorded manual baseline. The operations owner and data team have approved the proposed use, and a fallback is demonstrated. A signed error review finds six cases in which urgent safeguarding messages were incorrectly categorised as routine. The reviewer writes, "Unacceptable for the planned live workflow until the issue is corrected and retested." The team wants to expand next week.
 
 **Your decision:**  
 **Why:**  
@@ -57,7 +57,7 @@ An analyst wants to compare two prompt styles against ten invented meeting notes
 
 ## R06: A complete form that you cannot trust yet
 
-A manager has completed all ten conditions as Yes with convincing record references and reports “no material issues identified”. The source records have not been inspected by anyone reviewing the expansion decision. A colleague says the quality report may actually contain an unresolved serious incident, but cannot supply it during the meeting. The manager wants the assessment PDF treated as sign-off.
+A manager has completed all ten conditions as Yes with convincing record references and reports "no material issues identified". The source records have not been inspected by anyone reviewing the expansion decision. A colleague says the quality report may actually contain an unresolved serious incident, but cannot supply it during the meeting. The manager wants the assessment PDF treated as sign-off.
 
 **Your decision:**  
 **Why:**  
@@ -66,7 +66,7 @@ A manager has completed all ten conditions as Yes with convincing record referen
 
 ## R07: Unclear business benefit
 
-A fictional customer-service summarisation pilot has an approved tool, trained users, effective human review and a tested stop procedure. The testing record is current and acceptable, but its business-outcome target was never agreed and the baseline measures a different process. Full operating costs are not yet known. The team reports that users “like it” and requests expansion.
+A fictional customer-service summarisation pilot has an approved tool, trained users, effective human review and a tested stop procedure. The testing record is current and acceptable, but its business-outcome target was never agreed and the baseline measures a different process. Full operating costs are not yet known. The team reports that users "like it" and requests expansion.
 
 **Your decision:**  
 **Why:**  

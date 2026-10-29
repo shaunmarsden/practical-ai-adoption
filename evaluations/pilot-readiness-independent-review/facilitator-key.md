@@ -16,11 +16,11 @@
 ## Facilitator discipline
 
 - Enter only what each case establishes. Do **not** fill missing positive controls with invented Yes answers just to force a complete record.
-- Preserve the reviewer’s original decision before revealing these expectations.
+- Preserve the reviewer's original decision before revealing these expectations.
 - For each difference, label **rules problem / misleading wording / unsupported input / reviewer disagreement / ambiguous case**. More than one may apply.
 - In R06, the software cannot inspect absent source records. Do not call a complete-record result a successful assessment of source truth.
 - The offline-learning route is not permission to access real data or operate in production.
-- Do not use a numeric threshold such as “7/8 = validated”. One serious false reassurance may outweigh many benign agreements.
+- Do not use a numeric threshold such as "7/8 = validated". One serious false reassurance may outweigh many benign agreements.
 - If the reviewer is another AI, state that directly: **additional model critique, not independent human evaluation**.
 
 ## Decision after review
