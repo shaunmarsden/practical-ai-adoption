@@ -1,6 +1,6 @@
 # Prompting Fundamentals: Give AI a Better Brief
 
-**Start here:** Copy the starter below into the AI tool you already use and fill in the brackets. It works in ChatGPT, Claude, Gemini, Copilot or any other general AI tool.
+**Start here:** Copy the starter below into the AI tool you already use and fill in the brackets. You can paste it into ChatGPT, Claude, Gemini, Copilot or any other general AI tool.
 
 ```text
 Task:
