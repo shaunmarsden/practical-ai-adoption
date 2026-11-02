@@ -10,6 +10,21 @@ It starts with one habit: give AI a better brief, then check what comes back. Th
 
 No coding or installation needed.
 
+## Follow a practical adoption path
+
+If you're moving from a first experiment towards wider workplace use, follow the question that matches where you are. This is a reading route, **not** a fixed six-stage methodology or permission to deploy. Safety, data approval and human accountability apply from the beginning.
+
+| Your question | Start with |
+| --- | --- |
+| What can AI help with, and what should I check? | [Try an ordinary task](guides/you-have-been-given-ai-at-work.md) and [when not to use AI](guides/when-not-to-use-ai.md) |
+| Which job is worth trying? | [Find a good first use case](guides/finding-a-good-first-ai-use-case.md) |
+| How do I make this a safe, repeatable trial? | [Build a small human-reviewed workflow](guides/from-a-prompt-to-a-useful-workflow.md) and [check data permissions](guides/before-you-put-work-data-into-ai.md) |
+| Did it actually improve the work? | [Measure the whole task](guides/how-to-tell-whether-ai-actually-helped.md) |
+| Should we consider wider use? | [Review pilot readiness](https://shaunmarsden.github.io/practical-ai-adoption/pilot-readiness/), keeping human approval separate |
+| How do we make use sustainable? | [Check actual use](guides/the-gap-between-ai-access-and-actual-use.md) and [investigate stalls](guides/why-ai-projects-stall-after-the-demo-works.md) |
+
+[Read the coverage and gaps audit](research/ai-adoption-pathway-audit.md) for why these links were chosen, where guides overlap and what remains untested.
+
 ## Find the guide you need
 
 ### For your own work
