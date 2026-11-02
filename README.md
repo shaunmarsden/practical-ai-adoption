@@ -38,6 +38,8 @@ No coding or installation needed.
 
 For teams assessing a pilot, the [research note on measuring AI adoption](research/measuring-ai-adoption-business-model-references.md) links useful ideas from *AI Business Models* to outcome definitions, accepted work, rework and full-process costs. These are research prompts, not validated benchmarks.
 
+**Andrew Ng's AI adoption materials:** [Course slides and transformation playbook reading guide](research/andrew-ng-ai-adoption-resources.md) maps the four *AI for Everyone* sections and several editions of the *AI Transformation Playbook* to our existing workplace guides. It explains where these sources add value, repeat each other or need current verification. No third-party PDFs are hosted here.
+
 ## Check whether a pilot is ready to expand
 
 **[Open the AI Pilot Readiness Assessment](https://shaunmarsden.github.io/practical-ai-adoption/pilot-readiness/).** V2 asks whether ten conditions are currently acceptable for the intended use, explicitly records unresolved material issues and produces a local PDF report. Explore a fictional example without installation, an account or an AI API. Answers stay in page memory unless you export them.
