@@ -48,6 +48,18 @@ If you're moving from a first experiment towards wider workplace use, follow the
 | Help understanding why a rollout has stalled | [Why AI projects stall after the demo works](guides/why-ai-projects-stall-after-the-demo-works.md) |
 | A practical way to plan and record a small team trial | [Run a controlled team AI pilot](guides/run-a-controlled-team-ai-pilot.md) |
 
+## For managers and team adoption
+
+These guides adapt independently written working material from the private Personal AI Knowledge Base. **They have not been tested with real teams or independently scored**.
+
+| What you need to work out | Read |
+| --- | --- |
+| Whether AI is better than a simpler process or existing tool | [Compare AI with other ways to improve work](guides/compare-ai-with-other-ways-to-improve-work.md) |
+| How to help employees, managers and builders practise safely | [Build role-based AI capability](guides/build-role-based-ai-capability.md) |
+| Whether low use reflects tool fit, working conditions, skill or approval | [Diagnose why team AI adoption is not working](guides/diagnose-why-team-ai-adoption-is-not-working.md) |
+
+For the research cautions behind organisation-wide decisions, see [what organisational AI evidence can and cannot tell us](research/organisational-ai-decision-evidence.md).
+
 ## Official adoption research
 
 [OpenAI, Anthropic and Google adoption resources](research/official-ai-adoption-resources.md) collects links to publicly available vendor guides, including downloadable PDFs. It distinguishes publisher recommendations from evidence and shows how to apply the ideas to an ordinary workflow. No third-party PDFs are copied here.
@@ -76,7 +88,7 @@ Rather try checking an output yourself? [Sort nine claims from made-up meeting n
 
 ## What is actually proven, and what is not
 
-Every guide has a worked example and a scored test. No guide has been used on real work and logged. Nobody outside this project has scored anything.
+The original set of guides has worked fictional examples and scored tests; the newer team-pilot and organisational guides are unscored adaptations or illustrations. No current guide has a logged real-work use test, and nobody outside this project has scored the guide outputs.
 
 [Evidence Status](EVIDENCE-STATUS.md) links every example and review, including ties, failures and repeat runs. Eight of the 12 prompt-against-guide tests ran each prompt only once, and one (Juniper Vale) used fixed outputs, not live runs. The editing test is separate and was scored by a script. A single run is weak evidence, and scores from different tests aren't directly comparable.
 
