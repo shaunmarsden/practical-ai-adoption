@@ -114,7 +114,20 @@ A first workflow might look like this:
 
 Don't add a connection to another system, automatic sending or a system change just to make the workflow feel more advanced.
 
-## 7. Save what worked
+## 7. Check who will keep repeated work running
+
+If this becomes a recurring responsibility rather than a prompt someone runs occasionally, don't confuse a shared output with a team-owned process. Before relying on it, record:
+
+- **Trigger and continuity:** what starts each run, who notices a missed run, and what happens when the original owner leaves;
+- **Execution and permissions:** whose approved account or service runs it, which connections can read the sources, and who keeps access current;
+- **Audience and review:** who can see the output, who accepts it, and who handles missing information or errors;
+- **Evidence and cost:** how fresh sources must be, what a satisfactory result looks like, and the human checking, retries and maintenance needed to get there.
+
+Compare a personally operated routine, a team-owned process and an embedded application only if those are genuinely relevant. A page shared with colleagues does not itself provide scheduled execution or transferable ownership. Don't assume any AI product supports a specific sharing, scheduling or permission model without checking its current capabilities and your organisation's approval.
+
+For testing, compare several representative runs with the current workflow, including failed runs, source freshness, correction effort and total task cost. One good output is not proof of a reliable process.
+
+## 8. Save what worked
 
 After the first try, keep a short record:
 
@@ -134,7 +147,7 @@ Would I use this workflow again? Why or why not?
 
 This turns a one-off prompt into something you can improve. It also gives you a fairer way to judge whether AI helped. A polished output isn't enough on its own.
 
-## 8. Try it on one real task
+## 9. Try it on one real task
 
 Choose a low-risk task you already do. Use the brief at the top, keep your current process running, and compare the result with the source before you use it.
 
