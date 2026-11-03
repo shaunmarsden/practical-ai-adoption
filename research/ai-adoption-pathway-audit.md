@@ -1,6 +1,6 @@
 # AI adoption pathway: coverage and gaps audit
 
-**Reviewed:** 2nd November 2026. **Status:** repository navigation and evidence audit, not a validated adoption framework or a proposal to build six new products.
+**Reviewed:** 2nd November 2026. **Status:** repository navigation and evidence audit, not a validated adoption framework or a proposal to build six new products. **Historical checkpoint:** the navigation recommendation below was implemented in PR #81. Further guides added afterwards are assessed in the [3rd November repository consistency audit](repository-consistency-audit-2026-11-03.md).
 
 ## Decision
 
