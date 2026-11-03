@@ -2,7 +2,7 @@
 
 This page separates what exists from what has been shown.
 
-Every guide here has a worked example and a scored test. None of that shows the guide helps anyone else. Two of the columns below are empty for every row. That's where things stand, not a work in progress with a finish date.
+The original guide set has fictional examples and scored tests. Seven newer guides provide planning tools and illustrations but **do not** have scored experiments. Across the repository, no current guide has a logged real-work use test, and no outside person has scored its guide outputs. Software checks and fictional examples do not establish workplace value.
 
 ## How to Read the Matrix
 
@@ -32,6 +32,22 @@ The internal update row is the awkward one, and its figure shows it. I ran its o
 | [Before You Let AI Tools Work Together Unsupervised](guides/before-you-let-ai-tools-work-together-unsupervised.md) | [Grantley Utilities](examples/grantley-utilities-agentic-oversight-example.md) | [14 vs 29](evaluations/grantley-utilities-agentic-oversight-review.md) | 1 | Not yet | Not yet |
 | [The Gap Between AI Access and Actual Use](guides/the-gap-between-ai-access-and-actual-use.md) | [Hollis & Speight](examples/hollis-speight-ai-access-gap-example.md) | [11 vs 28](evaluations/hollis-speight-ai-access-gap-review.md) | 1 | Not yet | Not yet |
 | [Why AI Projects Stall After the Demo Works](guides/why-ai-projects-stall-after-the-demo-works.md) | [Pemberton Underwriters](examples/pemberton-underwriters-ai-adoption-stall-example.md) | [28 vs 30](evaluations/pemberton-underwriters-ai-adoption-stall-review.md) | 1 | Not yet | Not yet |
+
+## Newer guides without scored evaluations
+
+These seven guides were added after the original scored-guide set. Their examples are hypothetical illustrations, not model runs or scored before-and-after tests. They are not missing from the matrix because someone forgot to count them; **their test status is different**.
+
+| Guide | What it contains | Scored model test | Real use of guide | Outside scoring |
+| --- | --- | --- | --- | --- |
+| [Run a Controlled Team AI Pilot](guides/run-a-controlled-team-ai-pilot.md) | Pilot plan, record template, fictional example | Not conducted | Not yet | Not yet |
+| [Build Role-Based AI Capability](guides/build-role-based-ai-capability.md) | Role-specific practice, learning record, fictional example | Not conducted | Not yet | Not yet |
+| [Diagnose Why Team AI Adoption Is Not Working](guides/diagnose-why-team-ai-adoption-is-not-working.md) | Evidence-led adoption diagnostic, fictional example | Not conducted | Not yet | Not yet |
+| [Compare AI with Other Ways to Improve Work](guides/compare-ai-with-other-ways-to-improve-work.md) | Options comparison and decision record, fictional example | Not conducted | Not yet | Not yet |
+| [Map a Workflow Before Choosing AI](guides/map-a-workflow-before-choosing-ai.md) | Current-state process tracing and record, fictional example | Not conducted | Not yet | Not yet |
+| [Map AI Tool Actions and Permissions](guides/map-ai-tool-actions-and-permissions.md) | Action, authority and failure-control record, fictional example | Not conducted | Not yet | Not yet |
+| [Measure AI Capacity and Realised Value](guides/measure-ai-capacity-and-realised-value.md) | Evidence levels and value record, fictional arithmetic | Not conducted | Not yet | Not yet |
+
+No new scores should be inferred from the earlier tests. Creating an assessment worksheet does not demonstrate its validity.
 
 ## One Test Scored by Script
 
@@ -82,7 +98,7 @@ In October 2026 I gave five fictional characters who shared a first name differe
 
 ## What Is Missing
 
-Two things, and neither is missing content.
+The important gaps are external review and real-world use. The seven newer guides also have **no scored tests**, so their utility remains unestablished beyond their documented reasoning and illustrative examples.
 
 **Nobody has used these guides on real work and logged it.** Not one row. That isn't a reason to set up a test: [issue #4](https://github.com/shaunmarsden/practical-ai-adoption/issues/4) says on purpose to wait for a real low-risk task rather than go looking for one.
 
