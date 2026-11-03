@@ -60,6 +60,16 @@ These guides adapt independently written working material from the private Perso
 
 For the research cautions behind organisation-wide decisions, see [what organisational AI evidence can and cannot tell us](research/organisational-ai-decision-evidence.md).
 
+## Practical worksheets for deeper decisions
+
+These are adaptations of independently written working material from the private Personal AI Knowledge Base. They are **not scored tests, field-validated methods or professional approvals**.
+
+| Question | Guide |
+| --- | --- |
+| What is actually slowing the work down? | [Map a workflow before choosing AI](guides/map-a-workflow-before-choosing-ai.md) |
+| Does time saved produce usable capacity or a real business outcome? | [Measure AI capacity and realised value](guides/measure-ai-capacity-and-realised-value.md) |
+| What can a connected AI tool read, suggest, change or send? | [Map AI tool actions and permissions](guides/map-ai-tool-actions-and-permissions.md) |
+
 ## Official adoption research
 
 [OpenAI, Anthropic and Google adoption resources](research/official-ai-adoption-resources.md) collects links to publicly available vendor guides, including downloadable PDFs. It distinguishes publisher recommendations from evidence and shows how to apply the ideas to an ordinary workflow. No third-party PDFs are copied here.
