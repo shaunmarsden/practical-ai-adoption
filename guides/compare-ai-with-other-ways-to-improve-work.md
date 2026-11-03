@@ -50,4 +50,4 @@ A recommendation to measure, defer, simplify, use an existing system or do nothi
 
 A fictional office spends time moving correctly formatted details between two internal lists. Before introducing an AI agent, the team should check whether an existing import feature or fixed mapping solves the problem. If the data are predictable, conventional automation may be simpler to inspect and maintain. No comparative trial was performed for this illustration; it is a question to investigate, not a tested verdict.
 
-**Source and boundary:** Adapted from original working drafts in the Personal AI Knowledge Base dated 20th–26th October 2026. These were desk-reviewed, not tested with an actual organisation. This guide is a decision aid, not an independently validated assessment or approval.
+**Source and boundary:** Adapted from original working drafts in the Personal AI Knowledge Base dated 20th-26th October 2026. These were desk-reviewed, not tested with an actual organisation. This guide is a decision aid, not an independently validated assessment or approval.
