@@ -18,7 +18,7 @@ If you're moving from a first experiment towards wider workplace use, follow the
 | --- | --- |
 | What can AI help with, and what should I check? | [Try an ordinary task](guides/you-have-been-given-ai-at-work.md) and [when not to use AI](guides/when-not-to-use-ai.md) |
 | Which job is worth trying? | [Find a good first use case](guides/finding-a-good-first-ai-use-case.md) |
-| How do I make this a safe, repeatable trial? | [Build a small human-reviewed workflow](guides/from-a-prompt-to-a-useful-workflow.md) and [check data permissions](guides/before-you-put-work-data-into-ai.md) |
+| How do I make this a safe, repeatable trial? | [Run a small, controlled team pilot](guides/run-a-controlled-team-ai-pilot.md), [build a human-reviewed workflow](guides/from-a-prompt-to-a-useful-workflow.md) and [check data permissions](guides/before-you-put-work-data-into-ai.md) |
 | Did it actually improve the work? | [Measure the whole task](guides/how-to-tell-whether-ai-actually-helped.md) |
 | Should we consider wider use? | [Review pilot readiness](https://shaunmarsden.github.io/practical-ai-adoption/pilot-readiness/), keeping human approval separate |
 | How do we make use sustainable? | [Check actual use](guides/the-gap-between-ai-access-and-actual-use.md) and [investigate stalls](guides/why-ai-projects-stall-after-the-demo-works.md) |
@@ -46,6 +46,7 @@ If you're moving from a first experiment towards wider workplace use, follow the
 | A check before linking AI steps that can act without review | [Before you let AI tools work together unsupervised](guides/before-you-let-ai-tools-work-together-unsupervised.md) |
 | A picture of how people actually use AI, beyond having a licence | [The gap between AI access and actual use](guides/the-gap-between-ai-access-and-actual-use.md) |
 | Help understanding why a rollout has stalled | [Why AI projects stall after the demo works](guides/why-ai-projects-stall-after-the-demo-works.md) |
+| A practical way to plan and record a small team trial | [Run a controlled team AI pilot](guides/run-a-controlled-team-ai-pilot.md) |
 
 ## Official adoption research
 
