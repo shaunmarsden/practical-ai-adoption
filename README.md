@@ -117,7 +117,7 @@ I haven't built a comparison table for this repository, as I did for [Practical 
 
 ## What I plan to do next
 
-The [Roadmap](ROADMAP.md) lists the two gaps this repository has. The tests named both, so I didn't have to guess: nobody outside the project has scored anything, and no guide here has a logged real use of its own.
+The [Roadmap](ROADMAP.md) records the outstanding external-review and real-use evidence. The [Evidence Status](EVIDENCE-STATUS.md) distinguishes the original scored tests from seven newer guides without scored evaluations. Before adding more, see the [repository consistency audit](research/repository-consistency-audit-2026-11-03.md).
 
 ## Existing real use evidence
 
