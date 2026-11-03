@@ -16,7 +16,7 @@ Before describing this as a validated readiness method:
 
 ## Now
 
-There are two gaps. The tests named both, so I didn't have to guess.
+The original scored-guide tests identified two evidence gaps, and the seven more recent guides have not been scored. The repository has expanded since that first roadmap was written.
 
 - **Nobody outside this project has scored anything here.** Two of the three starter reviews for [You Have Been Given AI at Work](guides/you-have-been-given-ai-at-work.md) end on the same next step: someone other than me scoring the same outputs against the same rubric. The third, the internal update starter, ends on a different open question: does it hold on notes with a different kind of conflict? Its own repeat run left that unsettled. The action list and agenda reviews now repeat their runs, and that rules out chance differences between runs, but nothing else. If one scorer is biased the same way every time, it looks just like a real effect.
 - **No guide here has a logged real use of its own.** Both records in [evidence](evidence/) say so in their first lines: they record real use, but not of the current guides. The [fact-check failure](evidence/real-use-ai-assisted-fact-check-failure.md) is closer to what these guides are about, and it still doesn't test one.
@@ -29,4 +29,6 @@ There are two gaps. The tests named both, so I didn't have to guess.
 
 ## Later
 
-No candidate subjects are waiting. Five became guides of their own. The sixth, what should stay under a person's control, turned out to be covered already. [When Not to Use AI](guides/when-not-to-use-ai.md) covers decisions with a real effect on a person, and claims that need a qualified checker. [Before You Let AI Tools Work Together Unsupervised](guides/before-you-let-ai-tools-work-together-unsupervised.md) covers where a person's check sits and what makes it a real check. A third guide would repeat both.
+The research and private-knowledge-base transfer added seven practical team and organisational guides. They are listed separately in [Evidence Status](EVIDENCE-STATUS.md) because their fictional illustrations were not run or scored.
+
+Do not assume that more guidance is evidence of adoption. Before adding another topic, check the [six-stage coverage audit](research/ai-adoption-pathway-audit.md), existing guides and an actual reader need. Prioritise a clear route through the material, external review of the Pilot Readiness Assessment and one appropriately authorised low-risk use of an existing guide. Don't invent an exercise merely to fill an empty evidence column.
