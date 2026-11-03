@@ -1,6 +1,6 @@
 # AI adoption pathway: coverage and gaps audit
 
-**Reviewed:** 2nd November 2026. **Status:** repository navigation and evidence audit, not a validated adoption framework or a proposal to build six new products.
+**Reviewed:** 2nd November 2026. **Status:** repository navigation and evidence audit, not a validated adoption framework or a proposal to build six new products. **Historical checkpoint:** the navigation recommendation below was implemented in PR #81. Further guides added afterwards are assessed in the [3rd November repository consistency audit](repository-consistency-audit-2026-11-03.md).
 
 ## Decision
 
@@ -17,7 +17,7 @@ This six-part pathway is an **editorial map**, not a fixed process everyone must
 | **5. Is wider use justified?** | [Pilot Readiness Assessment V2](https://shaunmarsden.github.io/practical-ai-adoption/pilot-readiness/); [Methodology](../tools/pilot-readiness/v2/METHODOLOGY.md); [V1-to-V2 case study](../case-studies/ai-pilot-readiness-assessment.md); [independent evaluation pack](../evaluations/pilot-readiness-independent-review/README.md) | **Working decision aid, not validated method** | The review pack is prepared, not carried out. Self-reported evidence can be untrue; a completed record is not approval. |
 | **6. Will people use and maintain it?** | [Access versus actual use](../guides/the-gap-between-ai-access-and-actual-use.md); [Why projects stall after the demo](../guides/why-ai-projects-stall-after-the-demo-works.md); [Andrew Ng organisational guidance](../research/andrew-ng-ai-adoption-resources.md) | **Good diagnosis, lighter on day-to-day implementation** | There is no observed real-world application of these guides. A new training or operating-model document would be premature until an actual reader shows what is missing. |
 
-*Note: Stages 3–6 overlap deliberately. Permission, ownership and human checks are conditions throughout, not separate boxes to tick just before wider deployment.*
+*Note: Stages 3-6 overlap deliberately. Permission, ownership and human checks are conditions throughout, not separate boxes to tick just before wider deployment.*
 
 ## Overlap worth keeping, not duplicating
 

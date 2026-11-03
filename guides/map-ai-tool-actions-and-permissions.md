@@ -57,4 +57,4 @@ Outstanding uncertainty and next decision:
 
 A fictional AI assistant prepares an address correction for review. The first design asks it to update a live customer record automatically. Mapping the actions separately shows that **reading the address**, **drafting a proposed correction** and **writing it to the customer system** require different permissions and checks. This does not establish that any design is secure or approved.
 
-**Source and limitations:** Adapted from private working references dated 20th–21st October 2026. No real system, vulnerability test or formal security assessment was completed for this public guide.
+**Source and limitations:** Adapted from private working references dated 20th-21st October 2026. No real system, vulnerability test or formal security assessment was completed for this public guide.

@@ -25,7 +25,7 @@ The publisher states that its slide download may not reflect the latest videos. 
 
 The transformation playbook recommends pilots that are technically feasible, have measurable objectives and can gain early traction, rather than choosing only the largest imagined opportunity. Week 2 distinguishes a machine-learning build process (collect data, train, deploy, maintain) from a data-science project (collect, analyse, suggest changes, repeat).
 
-**Existing place for this:** [Find a good first AI use case](../guides/finding-a-good-first-ai-use-case.md). Our guide should still ask whether an ordinary rule-based process, rather than AI, is sufficient. The playbook's illustrative 6–12-month timeline is not a requirement for our much smaller workplace tests.
+**Existing place for this:** [Find a good first AI use case](../guides/finding-a-good-first-ai-use-case.md). Our guide should still ask whether an ordinary rule-based process, rather than AI, is sufficient. The playbook's illustrative 6-12-month timeline is not a requirement for our much smaller workplace tests.
 
 ### 2. Understand the work and data before choosing technology
 

@@ -11,7 +11,7 @@ The question throughout is what someone should check before deciding whether AI 
 | Faster completion of a narrow AI task does not automatically create organisational value | Does the *accepted end-to-end job* improve after checking, rework, queues and support? |
 | Results differ by task, tool, experience and setting | Has this specific work been compared against the existing method on representative cases? |
 | Organisational access, skills, ownership and incentives affect adoption, but there is no universal formula | What is actually stopping people using the tool appropriately? |
-| Human–AI collaboration and review design affect results; more review steps are not always better | Which checks genuinely catch important errors, who has authority, and how much effort do they add? |
+| Human-AI collaboration and review design affect results; more review steps are not always better | Which checks genuinely catch important errors, who has authority, and how much effort do they add? |
 | More AI-generated output is not necessarily more *correctly completed* work | What happened to quality, downstream workload and cost? |
 | Continued tool use is not the same thing as lasting benefit | Are quality, service, user impact and maintenance acceptable after the early trial? |
 
@@ -29,7 +29,7 @@ These sources are cited in the private synthesis. They have **not been independe
 - [Sawada et al., *To What Extent Does Agent-generated Code Require Maintenance?* (2026 preprint)](https://arxiv.org/abs/2605.06464): observed patterns in code changes; not a causal measure of time or cost.
 - [Tran et al., *Characterizing the Quality Profile of AI-Generated C++ in Production* (2026 preprint)](https://arxiv.org/abs/2608.06640) and [Liu et al., *Debt Behind the AI Boom* (2026 preprint)](https://arxiv.org/abs/2603.28592): technical warning signals from particular code samples. Static-analysis warnings and observed resource differences are not universal production failure rates or cost estimates.
 
-This short list emphasises economics and technical operating burden because those are particularly easy to overclaim. The seven private reviews covered a wider selection of work-design, adoption and human–AI interaction studies. **The list above is not a substitute for inspecting those reviews and their primary references.**
+This short list emphasises economics and technical operating burden because those are particularly easy to overclaim. The seven private reviews covered a wider selection of work-design, adoption and human-AI interaction studies. **The list above is not a substitute for inspecting those reviews and their primary references.**
 
 ## How to use it
 
