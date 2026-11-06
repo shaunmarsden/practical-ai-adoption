@@ -53,6 +53,7 @@ jobs:
             sleep 1
           done
           npm run test:browser
+          npm run test:workbench
 
       - name: Inspect V2 report text and bounds
         run: |
