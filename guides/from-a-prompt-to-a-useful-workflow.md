@@ -153,6 +153,10 @@ Choose a low-risk task you already do. Use the brief at the top, keep your curre
 
 The [Juniper Vale example](../examples/juniper-vale-prompt-to-workflow-example.md) shows this on a fictional planning task with an unconfirmed date, two different budget figures and an unclear owner. The [review](../evaluations/juniper-vale-prompt-to-workflow-review.md) says what the comparison does and doesn't show.
 
+## Next step
+
+If other people will take part, use [the controlled team-pilot guide](run-a-controlled-team-ai-pilot.md) to agree responsibilities, permissions and the comparison. To review an existing trial, [check whether AI improved the whole job](how-to-tell-whether-ai-actually-helped.md).
+
 ## Basis for this guide
 
 The workflow brief, the source checks, the handover to a person and the fictional test are my own. AiCore and other organisations didn't supply, review or endorse them.

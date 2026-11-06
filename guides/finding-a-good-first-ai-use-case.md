@@ -67,6 +67,10 @@ Write down two or three real tasks you do, with enough detail to judge them agai
 
 The [Marlowe & Birch example](../examples/marlowe-birch-first-use-case-example.md) tests this on six mixed tasks. One of them looks like a good AI task but isn't. [Read the review](../evaluations/marlowe-birch-first-use-case-review.md) for what the comparison did and didn't show.
 
+## After choosing a task
+
+For an individual trial, [build a small human-reviewed workflow](from-a-prompt-to-a-useful-workflow.md). If a team will test it, [plan a controlled pilot](run-a-controlled-team-ai-pilot.md), including actual tool and data permissions, a baseline and reasons to stop.
+
 ## Basis for this guide
 
 The UK government's [2026 AI Adoption Research](https://www.gov.uk/government/publications/ai-adoption-research/ai-adoption-research) and the [ONS's 2023 survey of management practices and technology adoption in UK firms](https://www.ons.gov.uk/economy/economicoutputandproductivity/productivitymeasures/articles/managementpracticesandtheadoptionoftechnologyandartificialintelligenceinukfirms2023/2025-03-24) record the problem this guide deals with.
