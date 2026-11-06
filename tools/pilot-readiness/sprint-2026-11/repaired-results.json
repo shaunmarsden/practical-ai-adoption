@@ -1,0 +1,432 @@
+{
+  "date": "2026-11-06",
+  "scope": "Local fictional software tests after repairs; not production or independent validation.",
+  "model": {
+    "cases": 24,
+    "frozen_prediction_matches": 24,
+    "full_python_javascript_output_parity": 24,
+    "negative_control_information_limit": "SQ16"
+  },
+  "browser": [
+    {
+      "width": 1440,
+      "cases": [
+        {
+          "id": "SQ01",
+          "decision": "COMPLETE RECORD - HUMAN DECISION REQUIRED",
+          "decisionMatches": true,
+          "exactRoundTrip": true
+        },
+        {
+          "id": "SQ02",
+          "decision": "FURTHER ASSESSMENT REQUIRED",
+          "decisionMatches": true,
+          "exactRoundTrip": true
+        },
+        {
+          "id": "SQ03",
+          "decision": "WITHHOLD EXPANSION",
+          "decisionMatches": true,
+          "exactRoundTrip": true
+        },
+        {
+          "id": "SQ04",
+          "decision": "FURTHER ASSESSMENT REQUIRED",
+          "decisionMatches": true,
+          "exactRoundTrip": true
+        },
+        {
+          "id": "SQ05",
+          "decision": "FURTHER ASSESSMENT REQUIRED",
+          "decisionMatches": true,
+          "exactRoundTrip": true
+        },
+        {
+          "id": "SQ06",
+          "decision": "WITHHOLD EXPANSION",
+          "decisionMatches": true,
+          "exactRoundTrip": true
+        },
+        {
+          "id": "SQ07",
+          "decision": "WITHHOLD EXPANSION",
+          "decisionMatches": true,
+          "exactRoundTrip": true
+        },
+        {
+          "id": "SQ08",
+          "decision": "WITHHOLD EXPANSION",
+          "decisionMatches": true,
+          "exactRoundTrip": true
+        },
+        {
+          "id": "SQ09",
+          "decision": "COMPLETE RECORD - HUMAN DECISION REQUIRED",
+          "decisionMatches": true,
+          "exactRoundTrip": true
+        },
+        {
+          "id": "SQ10",
+          "decision": "OFFLINE EXPERIMENT - NO ROLLOUT DECISION",
+          "decisionMatches": true,
+          "exactRoundTrip": true
+        },
+        {
+          "id": "SQ11",
+          "decision": "FURTHER ASSESSMENT REQUIRED",
+          "decisionMatches": true,
+          "exactRoundTrip": true
+        },
+        {
+          "id": "SQ12",
+          "decision": "FURTHER ASSESSMENT REQUIRED",
+          "decisionMatches": true,
+          "exactRoundTrip": true
+        },
+        {
+          "id": "SQ13",
+          "decision": "OFFLINE EXPERIMENT - NO ROLLOUT DECISION",
+          "decisionMatches": true,
+          "exactRoundTrip": true
+        },
+        {
+          "id": "SQ14",
+          "decision": "FURTHER ASSESSMENT REQUIRED",
+          "decisionMatches": true,
+          "exactRoundTrip": true
+        },
+        {
+          "id": "SQ15",
+          "decision": "FURTHER ASSESSMENT REQUIRED",
+          "decisionMatches": true,
+          "exactRoundTrip": true
+        },
+        {
+          "id": "SQ16",
+          "decision": "COMPLETE RECORD - HUMAN DECISION REQUIRED",
+          "decisionMatches": true,
+          "exactRoundTrip": true
+        },
+        {
+          "id": "SQ17",
+          "invalidRejected": true
+        },
+        {
+          "id": "SQ18",
+          "invalidRejected": true
+        },
+        {
+          "id": "SQ19",
+          "decision": "COMPLETE RECORD - HUMAN DECISION REQUIRED",
+          "decisionMatches": true,
+          "exactRoundTrip": true
+        },
+        {
+          "id": "SQ20",
+          "decision": "COMPLETE RECORD - HUMAN DECISION REQUIRED",
+          "decisionMatches": true,
+          "exactRoundTrip": true
+        },
+        {
+          "id": "SQ21",
+          "invalidRejected": true
+        },
+        {
+          "id": "SQ22",
+          "invalidRejected": true
+        },
+        {
+          "id": "SQ23",
+          "decision": "COMPLETE RECORD - HUMAN DECISION REQUIRED",
+          "decisionMatches": true,
+          "exactRoundTrip": true
+        },
+        {
+          "id": "SQ24",
+          "decision": "COMPLETE RECORD - HUMAN DECISION REQUIRED",
+          "decisionMatches": true,
+          "exactRoundTrip": true
+        }
+      ],
+      "errors": [],
+      "overflow": [],
+      "fieldEditingPreservesOtherImportedText": true,
+      "boundaryExportBytes": 999900,
+      "boundaryReimportExact": true,
+      "storage": {
+        "local": [],
+        "session": [],
+        "cookie": ""
+      },
+      "onlyStaticLocalGets": true
+    },
+    {
+      "width": 320,
+      "cases": [
+        {
+          "id": "SQ01",
+          "decision": "COMPLETE RECORD - HUMAN DECISION REQUIRED",
+          "decisionMatches": true,
+          "exactRoundTrip": true
+        },
+        {
+          "id": "SQ02",
+          "decision": "FURTHER ASSESSMENT REQUIRED",
+          "decisionMatches": true,
+          "exactRoundTrip": true
+        },
+        {
+          "id": "SQ03",
+          "decision": "WITHHOLD EXPANSION",
+          "decisionMatches": true,
+          "exactRoundTrip": true
+        },
+        {
+          "id": "SQ04",
+          "decision": "FURTHER ASSESSMENT REQUIRED",
+          "decisionMatches": true,
+          "exactRoundTrip": true
+        },
+        {
+          "id": "SQ05",
+          "decision": "FURTHER ASSESSMENT REQUIRED",
+          "decisionMatches": true,
+          "exactRoundTrip": true
+        },
+        {
+          "id": "SQ06",
+          "decision": "WITHHOLD EXPANSION",
+          "decisionMatches": true,
+          "exactRoundTrip": true
+        },
+        {
+          "id": "SQ07",
+          "decision": "WITHHOLD EXPANSION",
+          "decisionMatches": true,
+          "exactRoundTrip": true
+        },
+        {
+          "id": "SQ08",
+          "decision": "WITHHOLD EXPANSION",
+          "decisionMatches": true,
+          "exactRoundTrip": true
+        },
+        {
+          "id": "SQ09",
+          "decision": "COMPLETE RECORD - HUMAN DECISION REQUIRED",
+          "decisionMatches": true,
+          "exactRoundTrip": true
+        },
+        {
+          "id": "SQ10",
+          "decision": "OFFLINE EXPERIMENT - NO ROLLOUT DECISION",
+          "decisionMatches": true,
+          "exactRoundTrip": true
+        },
+        {
+          "id": "SQ11",
+          "decision": "FURTHER ASSESSMENT REQUIRED",
+          "decisionMatches": true,
+          "exactRoundTrip": true
+        },
+        {
+          "id": "SQ12",
+          "decision": "FURTHER ASSESSMENT REQUIRED",
+          "decisionMatches": true,
+          "exactRoundTrip": true
+        },
+        {
+          "id": "SQ13",
+          "decision": "OFFLINE EXPERIMENT - NO ROLLOUT DECISION",
+          "decisionMatches": true,
+          "exactRoundTrip": true
+        },
+        {
+          "id": "SQ14",
+          "decision": "FURTHER ASSESSMENT REQUIRED",
+          "decisionMatches": true,
+          "exactRoundTrip": true
+        },
+        {
+          "id": "SQ15",
+          "decision": "FURTHER ASSESSMENT REQUIRED",
+          "decisionMatches": true,
+          "exactRoundTrip": true
+        },
+        {
+          "id": "SQ16",
+          "decision": "COMPLETE RECORD - HUMAN DECISION REQUIRED",
+          "decisionMatches": true,
+          "exactRoundTrip": true
+        },
+        {
+          "id": "SQ17",
+          "invalidRejected": true
+        },
+        {
+          "id": "SQ18",
+          "invalidRejected": true
+        },
+        {
+          "id": "SQ19",
+          "decision": "COMPLETE RECORD - HUMAN DECISION REQUIRED",
+          "decisionMatches": true,
+          "exactRoundTrip": true
+        },
+        {
+          "id": "SQ20",
+          "decision": "COMPLETE RECORD - HUMAN DECISION REQUIRED",
+          "decisionMatches": true,
+          "exactRoundTrip": true
+        },
+        {
+          "id": "SQ21",
+          "invalidRejected": true
+        },
+        {
+          "id": "SQ22",
+          "invalidRejected": true
+        },
+        {
+          "id": "SQ23",
+          "decision": "COMPLETE RECORD - HUMAN DECISION REQUIRED",
+          "decisionMatches": true,
+          "exactRoundTrip": true
+        },
+        {
+          "id": "SQ24",
+          "decision": "COMPLETE RECORD - HUMAN DECISION REQUIRED",
+          "decisionMatches": true,
+          "exactRoundTrip": true
+        }
+      ],
+      "errors": [],
+      "overflow": [],
+      "fieldEditingPreservesOtherImportedText": true,
+      "boundaryExportBytes": 999900,
+      "boundaryReimportExact": true,
+      "storage": {
+        "local": [],
+        "session": [],
+        "cookie": ""
+      },
+      "onlyStaticLocalGets": true
+    }
+  ],
+  "pdf_checks": [
+    {
+      "file": "SQ01-1440.pdf",
+      "sha256": "a7901f775ee81c044faa97f62335addf9d4eff2607063e2407fe1a01f7ed2218",
+      "pages": 6,
+      "decision": "COMPLETE RECORD - HUMAN DECISION REQUIRED",
+      "note_reference_issue_and_bounds_checks": "pass"
+    },
+    {
+      "file": "SQ01-320.pdf",
+      "sha256": "c8c5b0e8f3d5e17c9196d3af3e92150de5b7d6fd87fc44f65a4b15481c77a048",
+      "pages": 6,
+      "decision": "COMPLETE RECORD - HUMAN DECISION REQUIRED",
+      "note_reference_issue_and_bounds_checks": "pass"
+    },
+    {
+      "file": "SQ06-1440.pdf",
+      "sha256": "16f3ddddb5209878dceede0e34824ef2f26d6407ed14ebbcfc5189f4c84f4c3a",
+      "pages": 6,
+      "decision": "WITHHOLD EXPANSION",
+      "note_reference_issue_and_bounds_checks": "pass"
+    },
+    {
+      "file": "SQ06-320.pdf",
+      "sha256": "4bc7dbfeead80fcd99a7b9e70a64982d45f5435155134ab3cd5613ef85f5da94",
+      "pages": 6,
+      "decision": "WITHHOLD EXPANSION",
+      "note_reference_issue_and_bounds_checks": "pass"
+    },
+    {
+      "file": "SQ10-1440.pdf",
+      "sha256": "e05a6ca04ec85ad45f5878929b70a2ec500d7d8ec37e57d687bed52a5574c904",
+      "pages": 6,
+      "decision": "OFFLINE EXPERIMENT - NO ROLLOUT DECISION",
+      "note_reference_issue_and_bounds_checks": "pass"
+    },
+    {
+      "file": "SQ10-320.pdf",
+      "sha256": "568171f27b3bd9a091465b2b8d42aa69a90ada317a6399c53654b74764747bc4",
+      "pages": 6,
+      "decision": "OFFLINE EXPERIMENT - NO ROLLOUT DECISION",
+      "note_reference_issue_and_bounds_checks": "pass"
+    },
+    {
+      "file": "SQ19-1440.pdf",
+      "sha256": "d264fd3cafddd8bc02d160510d8c2869c115c548ed93e054c10d73bb242d2bb6",
+      "pages": 6,
+      "decision": "COMPLETE RECORD - HUMAN DECISION REQUIRED",
+      "note_reference_issue_and_bounds_checks": "pass"
+    },
+    {
+      "file": "SQ19-320.pdf",
+      "sha256": "cc90c38877718240f3c4c603af7ae055ea83b77a2d03c38c58e71424f7986f3d",
+      "pages": 6,
+      "decision": "COMPLETE RECORD - HUMAN DECISION REQUIRED",
+      "note_reference_issue_and_bounds_checks": "pass"
+    },
+    {
+      "file": "SQ20-1440.pdf",
+      "sha256": "b20c82634752abe5ff6ec3dc51590fc1679c9de43aafaecff4e6c30b96c96101",
+      "pages": 6,
+      "decision": "COMPLETE RECORD - HUMAN DECISION REQUIRED",
+      "note_reference_issue_and_bounds_checks": "pass"
+    },
+    {
+      "file": "SQ20-320.pdf",
+      "sha256": "0600d871de8106eb8b9e7b4c8130776d4e392272f646c4551019bdba477b669f",
+      "pages": 6,
+      "decision": "COMPLETE RECORD - HUMAN DECISION REQUIRED",
+      "note_reference_issue_and_bounds_checks": "pass"
+    },
+    {
+      "file": "SQ23-1440.pdf",
+      "sha256": "bc9ad1b080265fa6ccb66b273a2835bf75c3f42b2646f377e60f038fff09cfd7",
+      "pages": 6,
+      "decision": "COMPLETE RECORD - HUMAN DECISION REQUIRED",
+      "note_reference_issue_and_bounds_checks": "pass"
+    },
+    {
+      "file": "SQ23-320.pdf",
+      "sha256": "833a4dc4ddf668dc6e3eda00a70170d8ff5f6f4c9c97b1f249d8ab9ad2192671",
+      "pages": 6,
+      "decision": "COMPLETE RECORD - HUMAN DECISION REQUIRED",
+      "note_reference_issue_and_bounds_checks": "pass"
+    },
+    {
+      "file": "SQ24-1440.pdf",
+      "sha256": "e56be065435c8af9464669249f706e573841b8bb5fb022260b85aa75013dc3c6",
+      "pages": 6,
+      "decision": "COMPLETE RECORD - HUMAN DECISION REQUIRED",
+      "note_reference_issue_and_bounds_checks": "pass"
+    },
+    {
+      "file": "SQ24-320.pdf",
+      "sha256": "c9778ffd693e24faf8bbe0830e5b07675397cde48f76ef28fe3300a57972e05f",
+      "pages": 6,
+      "decision": "COMPLETE RECORD - HUMAN DECISION REQUIRED",
+      "note_reference_issue_and_bounds_checks": "pass"
+    }
+  ],
+  "retained_regression": {
+    "node_tests": 23,
+    "python_tests": 8,
+    "existing_fixture_journeys": 92,
+    "existing_pdf_checks": 13
+  },
+  "rendered_pages_inspected": [
+    "SQ06-1440 page 1: decision and material issue",
+    "SQ24-320 page 3: long reference wrapping",
+    "SQ23-1440 page 3: Unicode and retained suffix after tab"
+  ],
+  "limits": [
+    "No independent human evaluation.",
+    "No screen-reader or tagged-PDF audit.",
+    "No physical-device test or new production deployment."
+  ]
+}

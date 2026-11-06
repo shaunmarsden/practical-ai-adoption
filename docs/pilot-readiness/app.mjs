@@ -47,12 +47,23 @@ function set(path, value) {
   for (const k of keys.slice(0, -1)) v = v[k];
   v[keys.at(-1)] = value;
 }
+// Native controls normalise line endings (and single-line inputs remove them).
+// Keep imported strings until that control is actually changed by the user.
+const displayedValues = new WeakMap();
 function read() {
   for (const el of document.querySelectorAll("[data-path]")) {
     const path = el.dataset.path;
     if (path.startsWith("migration.") && !record.migration) continue;
     if (el.type === "radio" && !el.checked) continue;
-    set(path, el.type === "checkbox" ? el.checked : el.value);
+    const value = el.type === "checkbox" ? el.checked : el.value;
+    if (
+      el.type === "radio" ||
+      el.type === "checkbox" ||
+      value !== displayedValues.get(el)
+    ) {
+      set(path, value);
+      displayedValues.set(el, value);
+    }
   }
   return structuredClone(record);
 }
@@ -63,6 +74,7 @@ function populate() {
     if (el.type === "radio") el.checked = el.value === value;
     else if (el.type === "checkbox") el.checked = value === true;
     else el.value = value ?? "";
+    displayedValues.set(el, el.type === "checkbox" ? el.checked : el.value);
   }
   openWorkspace();
   $("migration-notice").hidden = !record.migration;
@@ -260,7 +272,13 @@ $("export").onclick = () => {
   try {
     const p = read();
     validate(p);
-    save(JSON.stringify(p, null, 2), "pilot-readiness-v2.json");
+    const pretty = JSON.stringify(p, null, 2);
+    // Formatting must not make a supported record too large to import again.
+    const json =
+      new TextEncoder().encode(pretty).length <= MAX_IMPORT_BYTES
+        ? pretty
+        : JSON.stringify(p);
+    save(json, "pilot-readiness-v2.json");
     $("file-message").textContent =
       "V2 draft prepared. Export is a record, not an assessment approval. Any original V1 source data is included.";
   } catch (e) {

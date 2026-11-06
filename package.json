@@ -6,7 +6,9 @@
     "test:browser": "node tools/pilot-readiness/v2/tests/browser.mjs",
     "test:v1:browser": "node tools/pilot-readiness/tests/browser/ui.mjs",
     "test:compare": "node tools/pilot-readiness/v2/compare.mjs",
-    "test:pdf": "python3 tools/pilot-readiness/v2/tests/check_pdfs.py"
+    "test:pdf": "python3 tools/pilot-readiness/v2/tests/check_pdfs.py",
+    "test:sprint": "node tools/pilot-readiness/sprint-2026-11/run.mjs",
+    "test:sprint:browser": "node tools/pilot-readiness/sprint-2026-11/browser.mjs"
   },
   "devDependencies": {
     "playwright": "1.62.1"

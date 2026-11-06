@@ -64,10 +64,11 @@ export function buildReport(
     }
   }
   function text(value, size = 10, colour = colours.ink) {
-    const clean = String(value).replace(
-      /[\x00-\x08\x0B\x0C\x0E-\x1F\x7F]/g,
-      "",
-    );
+    // jsPDF's embedded-font output can lose the suffix after a literal tab.
+    // Render tabs as spacing; the exact original remains in the JSON record.
+    const clean = String(value)
+      .replace(/\t/g, "    ")
+      .replace(/[\x00-\x08\x0B\x0C\x0E-\x1F\x7F]/g, "");
     doc.setFontSize(size);
     const lines = doc.splitTextToSize(clean, 170);
     for (const line of lines) {

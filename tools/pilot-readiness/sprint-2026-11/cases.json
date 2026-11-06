@@ -1,0 +1,2023 @@
+{
+  "authored": "2026-11-06",
+  "fictional": true,
+  "origin": "Fresh independently invented Larch Quay cases; no original fixture payloads reused.",
+  "cases": [
+    {
+      "id": "SQ01",
+      "title": "Legitimate bounded use",
+      "kind": "structured",
+      "payload": {
+        "schema_version": 2,
+        "methodology_version": "2.0",
+        "pilot": "Fictional Larch Quay internal note trial SQ01",
+        "fictional": true,
+        "details": {
+          "process": "Drafting internal notes from invented queue items",
+          "outcome": "Reduce accepted handling effort without severe mistakes",
+          "date": "2026-11-06",
+          "reference": "Fictional sprint log LQ"
+        },
+        "scope": {
+          "activity": "bounded_internal_pilot",
+          "data": "synthetic_public",
+          "external_effects": "no",
+          "people_impact": "no",
+          "proposed_scale": "Three reviewers, invented notes only",
+          "current_version": "Draft workflow C / model M"
+        },
+        "material_issue": {
+          "status": "none_identified",
+          "summary": "",
+          "owner": "",
+          "action": "unknown",
+          "next_step": ""
+        },
+        "evidence": {
+          "business_outcome": {
+            "status": "yes",
+            "reference": "Invented LQ-01",
+            "note": "Fictional trial: accepted summaries took 18 minutes versus 24 including checking; operating cost accepted."
+          },
+          "baseline": {
+            "status": "yes",
+            "reference": "Invented LQ-02",
+            "note": "Fictional comparison used the same invented queue and reviewers on both routes, with ordering rotated."
+          },
+          "representative_test": {
+            "status": "yes",
+            "reference": "Invented LQ-03",
+            "note": "Fictional test includes mixed routine and exception cases on draft workflow C and model M."
+          },
+          "quality_review": {
+            "status": "yes",
+            "reference": "Invented LQ-04",
+            "note": "Fictional reviewers found no severity-one mistakes in the declared sample and accepted the remaining trade-offs."
+          },
+          "workflow_owner": {
+            "status": "yes",
+            "reference": "Invented LQ-05",
+            "note": "Fictional process lead accepted stop authority, weekly review time and deputy cover."
+          },
+          "human_oversight": {
+            "status": "yes",
+            "reference": "Invented LQ-06",
+            "note": "Fictional timed exercise kept source comparison and second-person release checks effective."
+          },
+          "data_approval": {
+            "status": "yes",
+            "reference": "Invented LQ-07",
+            "note": "Fictional tool steward confirmed invented records and this purpose are permitted in the sandbox."
+          },
+          "rollback": {
+            "status": "yes",
+            "reference": "Invented LQ-08",
+            "note": "Fictional recovery exercise stopped output use, restored the manual process and reconciled pending items."
+          },
+          "user_training": {
+            "status": "yes",
+            "reference": "Invented LQ-09",
+            "note": "Fictional reviewers completed practice and accepted a supported rota with time to check."
+          },
+          "monitoring": {
+            "status": "yes",
+            "reference": "Invented LQ-10",
+            "note": "Fictional response log assigns alerts, review dates and retesting after model or workflow changes."
+          }
+        }
+      }
+    },
+    {
+      "id": "SQ02",
+      "title": "Permission owner has not answered",
+      "kind": "structured",
+      "payload": {
+        "schema_version": 2,
+        "methodology_version": "2.0",
+        "pilot": "Fictional Larch Quay internal note trial SQ02",
+        "fictional": true,
+        "details": {
+          "process": "Drafting internal notes from invented queue items",
+          "outcome": "Reduce accepted handling effort without severe mistakes",
+          "date": "2026-11-06",
+          "reference": "Fictional sprint log LQ"
+        },
+        "scope": {
+          "activity": "bounded_internal_pilot",
+          "data": "synthetic_public",
+          "external_effects": "no",
+          "people_impact": "no",
+          "proposed_scale": "Three reviewers, invented notes only",
+          "current_version": "Draft workflow C / model M"
+        },
+        "material_issue": {
+          "status": "none_identified",
+          "summary": "",
+          "owner": "",
+          "action": "unknown",
+          "next_step": ""
+        },
+        "evidence": {
+          "business_outcome": {
+            "status": "yes",
+            "reference": "Invented LQ-01",
+            "note": "Fictional trial: accepted summaries took 18 minutes versus 24 including checking; operating cost accepted."
+          },
+          "baseline": {
+            "status": "yes",
+            "reference": "Invented LQ-02",
+            "note": "Fictional comparison used the same invented queue and reviewers on both routes, with ordering rotated."
+          },
+          "representative_test": {
+            "status": "yes",
+            "reference": "Invented LQ-03",
+            "note": "Fictional test includes mixed routine and exception cases on draft workflow C and model M."
+          },
+          "quality_review": {
+            "status": "yes",
+            "reference": "Invented LQ-04",
+            "note": "Fictional reviewers found no severity-one mistakes in the declared sample and accepted the remaining trade-offs."
+          },
+          "workflow_owner": {
+            "status": "yes",
+            "reference": "Invented LQ-05",
+            "note": "Fictional process lead accepted stop authority, weekly review time and deputy cover."
+          },
+          "human_oversight": {
+            "status": "yes",
+            "reference": "Invented LQ-06",
+            "note": "Fictional timed exercise kept source comparison and second-person release checks effective."
+          },
+          "data_approval": {
+            "status": "unknown",
+            "reference": "Invented LQ-07",
+            "note": "Fictional steward has not confirmed whether this workspace is covered."
+          },
+          "rollback": {
+            "status": "yes",
+            "reference": "Invented LQ-08",
+            "note": "Fictional recovery exercise stopped output use, restored the manual process and reconciled pending items."
+          },
+          "user_training": {
+            "status": "yes",
+            "reference": "Invented LQ-09",
+            "note": "Fictional reviewers completed practice and accepted a supported rota with time to check."
+          },
+          "monitoring": {
+            "status": "yes",
+            "reference": "Invented LQ-10",
+            "note": "Fictional response log assigns alerts, review dates and retesting after model or workflow changes."
+          }
+        }
+      }
+    },
+    {
+      "id": "SQ03",
+      "title": "Explicit permission refusal",
+      "kind": "structured",
+      "payload": {
+        "schema_version": 2,
+        "methodology_version": "2.0",
+        "pilot": "Fictional Larch Quay internal note trial SQ03",
+        "fictional": true,
+        "details": {
+          "process": "Drafting internal notes from invented queue items",
+          "outcome": "Reduce accepted handling effort without severe mistakes",
+          "date": "2026-11-06",
+          "reference": "Fictional sprint log LQ"
+        },
+        "scope": {
+          "activity": "bounded_internal_pilot",
+          "data": "synthetic_public",
+          "external_effects": "no",
+          "people_impact": "no",
+          "proposed_scale": "Three reviewers, invented notes only",
+          "current_version": "Draft workflow C / model M"
+        },
+        "material_issue": {
+          "status": "none_identified",
+          "summary": "",
+          "owner": "",
+          "action": "unknown",
+          "next_step": ""
+        },
+        "evidence": {
+          "business_outcome": {
+            "status": "yes",
+            "reference": "Invented LQ-01",
+            "note": "Fictional trial: accepted summaries took 18 minutes versus 24 including checking; operating cost accepted."
+          },
+          "baseline": {
+            "status": "yes",
+            "reference": "Invented LQ-02",
+            "note": "Fictional comparison used the same invented queue and reviewers on both routes, with ordering rotated."
+          },
+          "representative_test": {
+            "status": "yes",
+            "reference": "Invented LQ-03",
+            "note": "Fictional test includes mixed routine and exception cases on draft workflow C and model M."
+          },
+          "quality_review": {
+            "status": "yes",
+            "reference": "Invented LQ-04",
+            "note": "Fictional reviewers found no severity-one mistakes in the declared sample and accepted the remaining trade-offs."
+          },
+          "workflow_owner": {
+            "status": "yes",
+            "reference": "Invented LQ-05",
+            "note": "Fictional process lead accepted stop authority, weekly review time and deputy cover."
+          },
+          "human_oversight": {
+            "status": "yes",
+            "reference": "Invented LQ-06",
+            "note": "Fictional timed exercise kept source comparison and second-person release checks effective."
+          },
+          "data_approval": {
+            "status": "no",
+            "reference": "Invented LQ-07",
+            "note": "Fictional steward refuses this tool for the proposed purpose."
+          },
+          "rollback": {
+            "status": "yes",
+            "reference": "Invented LQ-08",
+            "note": "Fictional recovery exercise stopped output use, restored the manual process and reconciled pending items."
+          },
+          "user_training": {
+            "status": "yes",
+            "reference": "Invented LQ-09",
+            "note": "Fictional reviewers completed practice and accepted a supported rota with time to check."
+          },
+          "monitoring": {
+            "status": "yes",
+            "reference": "Invented LQ-10",
+            "note": "Fictional response log assigns alerts, review dates and retesting after model or workflow changes."
+          }
+        }
+      }
+    },
+    {
+      "id": "SQ04",
+      "title": "Quality review unfinished",
+      "kind": "structured",
+      "payload": {
+        "schema_version": 2,
+        "methodology_version": "2.0",
+        "pilot": "Fictional Larch Quay internal note trial SQ04",
+        "fictional": true,
+        "details": {
+          "process": "Drafting internal notes from invented queue items",
+          "outcome": "Reduce accepted handling effort without severe mistakes",
+          "date": "2026-11-06",
+          "reference": "Fictional sprint log LQ"
+        },
+        "scope": {
+          "activity": "bounded_internal_pilot",
+          "data": "synthetic_public",
+          "external_effects": "no",
+          "people_impact": "no",
+          "proposed_scale": "Three reviewers, invented notes only",
+          "current_version": "Draft workflow C / model M"
+        },
+        "material_issue": {
+          "status": "none_identified",
+          "summary": "",
+          "owner": "",
+          "action": "unknown",
+          "next_step": ""
+        },
+        "evidence": {
+          "business_outcome": {
+            "status": "yes",
+            "reference": "Invented LQ-01",
+            "note": "Fictional trial: accepted summaries took 18 minutes versus 24 including checking; operating cost accepted."
+          },
+          "baseline": {
+            "status": "yes",
+            "reference": "Invented LQ-02",
+            "note": "Fictional comparison used the same invented queue and reviewers on both routes, with ordering rotated."
+          },
+          "representative_test": {
+            "status": "yes",
+            "reference": "Invented LQ-03",
+            "note": "Fictional test includes mixed routine and exception cases on draft workflow C and model M."
+          },
+          "quality_review": {
+            "status": "unknown",
+            "reference": "Invented LQ-04",
+            "note": "Fictional reviewers checked only half the exceptions; no acceptance yet."
+          },
+          "workflow_owner": {
+            "status": "yes",
+            "reference": "Invented LQ-05",
+            "note": "Fictional process lead accepted stop authority, weekly review time and deputy cover."
+          },
+          "human_oversight": {
+            "status": "yes",
+            "reference": "Invented LQ-06",
+            "note": "Fictional timed exercise kept source comparison and second-person release checks effective."
+          },
+          "data_approval": {
+            "status": "yes",
+            "reference": "Invented LQ-07",
+            "note": "Fictional tool steward confirmed invented records and this purpose are permitted in the sandbox."
+          },
+          "rollback": {
+            "status": "yes",
+            "reference": "Invented LQ-08",
+            "note": "Fictional recovery exercise stopped output use, restored the manual process and reconciled pending items."
+          },
+          "user_training": {
+            "status": "yes",
+            "reference": "Invented LQ-09",
+            "note": "Fictional reviewers completed practice and accepted a supported rota with time to check."
+          },
+          "monitoring": {
+            "status": "yes",
+            "reference": "Invented LQ-10",
+            "note": "Fictional response log assigns alerts, review dates and retesting after model or workflow changes."
+          }
+        }
+      }
+    },
+    {
+      "id": "SQ05",
+      "title": "Competing claims awaiting investigation",
+      "kind": "structured",
+      "payload": {
+        "schema_version": 2,
+        "methodology_version": "2.0",
+        "pilot": "Fictional Larch Quay internal note trial SQ05",
+        "fictional": true,
+        "details": {
+          "process": "Drafting internal notes from invented queue items",
+          "outcome": "Reduce accepted handling effort without severe mistakes",
+          "date": "2026-11-06",
+          "reference": "Fictional sprint log LQ"
+        },
+        "scope": {
+          "activity": "bounded_internal_pilot",
+          "data": "synthetic_public",
+          "external_effects": "no",
+          "people_impact": "no",
+          "proposed_scale": "Three reviewers, invented notes only",
+          "current_version": "Draft workflow C / model M"
+        },
+        "material_issue": {
+          "status": "unknown",
+          "summary": "Fictional sponsor reports success; reviewers dispute missed urgent requests.",
+          "owner": "Fictional independent reviewer",
+          "action": "investigate",
+          "next_step": "Compare both claims against the invented source batch before proceeding."
+        },
+        "evidence": {
+          "business_outcome": {
+            "status": "yes",
+            "reference": "Invented LQ-01",
+            "note": "Fictional trial: accepted summaries took 18 minutes versus 24 including checking; operating cost accepted."
+          },
+          "baseline": {
+            "status": "yes",
+            "reference": "Invented LQ-02",
+            "note": "Fictional comparison used the same invented queue and reviewers on both routes, with ordering rotated."
+          },
+          "representative_test": {
+            "status": "yes",
+            "reference": "Invented LQ-03",
+            "note": "Fictional test includes mixed routine and exception cases on draft workflow C and model M."
+          },
+          "quality_review": {
+            "status": "yes",
+            "reference": "Invented LQ-04",
+            "note": "Fictional reviewers found no severity-one mistakes in the declared sample and accepted the remaining trade-offs."
+          },
+          "workflow_owner": {
+            "status": "yes",
+            "reference": "Invented LQ-05",
+            "note": "Fictional process lead accepted stop authority, weekly review time and deputy cover."
+          },
+          "human_oversight": {
+            "status": "yes",
+            "reference": "Invented LQ-06",
+            "note": "Fictional timed exercise kept source comparison and second-person release checks effective."
+          },
+          "data_approval": {
+            "status": "yes",
+            "reference": "Invented LQ-07",
+            "note": "Fictional tool steward confirmed invented records and this purpose are permitted in the sandbox."
+          },
+          "rollback": {
+            "status": "yes",
+            "reference": "Invented LQ-08",
+            "note": "Fictional recovery exercise stopped output use, restored the manual process and reconciled pending items."
+          },
+          "user_training": {
+            "status": "yes",
+            "reference": "Invented LQ-09",
+            "note": "Fictional reviewers completed practice and accepted a supported rota with time to check."
+          },
+          "monitoring": {
+            "status": "yes",
+            "reference": "Invented LQ-10",
+            "note": "Fictional response log assigns alerts, review dates and retesting after model or workflow changes."
+          }
+        }
+      }
+    },
+    {
+      "id": "SQ06",
+      "title": "All Yes cannot override an unresolved incident",
+      "kind": "structured",
+      "payload": {
+        "schema_version": 2,
+        "methodology_version": "2.0",
+        "pilot": "Fictional Larch Quay internal note trial SQ06",
+        "fictional": true,
+        "details": {
+          "process": "Drafting internal notes from invented queue items",
+          "outcome": "Reduce accepted handling effort without severe mistakes",
+          "date": "2026-11-06",
+          "reference": "Fictional sprint log LQ"
+        },
+        "scope": {
+          "activity": "bounded_internal_pilot",
+          "data": "synthetic_public",
+          "external_effects": "no",
+          "people_impact": "no",
+          "proposed_scale": "Three reviewers, invented notes only",
+          "current_version": "Draft workflow C / model M"
+        },
+        "material_issue": {
+          "status": "unresolved",
+          "summary": "Fictional test missed a critical instruction; affected notes remain quarantined.",
+          "owner": "Fictional queue lead",
+          "action": "contain",
+          "next_step": "Retest urgent exceptions before reconsidering expansion."
+        },
+        "evidence": {
+          "business_outcome": {
+            "status": "yes",
+            "reference": "Invented LQ-01",
+            "note": "Fictional trial: accepted summaries took 18 minutes versus 24 including checking; operating cost accepted."
+          },
+          "baseline": {
+            "status": "yes",
+            "reference": "Invented LQ-02",
+            "note": "Fictional comparison used the same invented queue and reviewers on both routes, with ordering rotated."
+          },
+          "representative_test": {
+            "status": "yes",
+            "reference": "Invented LQ-03",
+            "note": "Fictional test includes mixed routine and exception cases on draft workflow C and model M."
+          },
+          "quality_review": {
+            "status": "yes",
+            "reference": "Invented LQ-04",
+            "note": "Fictional reviewers found no severity-one mistakes in the declared sample and accepted the remaining trade-offs."
+          },
+          "workflow_owner": {
+            "status": "yes",
+            "reference": "Invented LQ-05",
+            "note": "Fictional process lead accepted stop authority, weekly review time and deputy cover."
+          },
+          "human_oversight": {
+            "status": "yes",
+            "reference": "Invented LQ-06",
+            "note": "Fictional timed exercise kept source comparison and second-person release checks effective."
+          },
+          "data_approval": {
+            "status": "yes",
+            "reference": "Invented LQ-07",
+            "note": "Fictional tool steward confirmed invented records and this purpose are permitted in the sandbox."
+          },
+          "rollback": {
+            "status": "yes",
+            "reference": "Invented LQ-08",
+            "note": "Fictional recovery exercise stopped output use, restored the manual process and reconciled pending items."
+          },
+          "user_training": {
+            "status": "yes",
+            "reference": "Invented LQ-09",
+            "note": "Fictional reviewers completed practice and accepted a supported rota with time to check."
+          },
+          "monitoring": {
+            "status": "yes",
+            "reference": "Invented LQ-10",
+            "note": "Fictional response log assigns alerts, review dates and retesting after model or workflow changes."
+          }
+        }
+      }
+    },
+    {
+      "id": "SQ07",
+      "title": "Changed model lacks applicable testing",
+      "kind": "structured",
+      "payload": {
+        "schema_version": 2,
+        "methodology_version": "2.0",
+        "pilot": "Fictional Larch Quay internal note trial SQ07",
+        "fictional": true,
+        "details": {
+          "process": "Drafting internal notes from invented queue items",
+          "outcome": "Reduce accepted handling effort without severe mistakes",
+          "date": "2026-11-06",
+          "reference": "Fictional sprint log LQ"
+        },
+        "scope": {
+          "activity": "bounded_internal_pilot",
+          "data": "synthetic_public",
+          "external_effects": "no",
+          "people_impact": "no",
+          "proposed_scale": "Three reviewers, invented notes only",
+          "current_version": "Draft workflow C / model M"
+        },
+        "material_issue": {
+          "status": "none_identified",
+          "summary": "",
+          "owner": "",
+          "action": "unknown",
+          "next_step": ""
+        },
+        "evidence": {
+          "business_outcome": {
+            "status": "yes",
+            "reference": "Invented LQ-01",
+            "note": "Fictional trial: accepted summaries took 18 minutes versus 24 including checking; operating cost accepted."
+          },
+          "baseline": {
+            "status": "yes",
+            "reference": "Invented LQ-02",
+            "note": "Fictional comparison used the same invented queue and reviewers on both routes, with ordering rotated."
+          },
+          "representative_test": {
+            "status": "no",
+            "reference": "Invented LQ-03",
+            "note": "Fictional model N replaced model M after testing; current results are not available."
+          },
+          "quality_review": {
+            "status": "yes",
+            "reference": "Invented LQ-04",
+            "note": "Fictional reviewers found no severity-one mistakes in the declared sample and accepted the remaining trade-offs."
+          },
+          "workflow_owner": {
+            "status": "yes",
+            "reference": "Invented LQ-05",
+            "note": "Fictional process lead accepted stop authority, weekly review time and deputy cover."
+          },
+          "human_oversight": {
+            "status": "yes",
+            "reference": "Invented LQ-06",
+            "note": "Fictional timed exercise kept source comparison and second-person release checks effective."
+          },
+          "data_approval": {
+            "status": "yes",
+            "reference": "Invented LQ-07",
+            "note": "Fictional tool steward confirmed invented records and this purpose are permitted in the sandbox."
+          },
+          "rollback": {
+            "status": "yes",
+            "reference": "Invented LQ-08",
+            "note": "Fictional recovery exercise stopped output use, restored the manual process and reconciled pending items."
+          },
+          "user_training": {
+            "status": "yes",
+            "reference": "Invented LQ-09",
+            "note": "Fictional reviewers completed practice and accepted a supported rota with time to check."
+          },
+          "monitoring": {
+            "status": "yes",
+            "reference": "Invented LQ-10",
+            "note": "Fictional response log assigns alerts, review dates and retesting after model or workflow changes."
+          }
+        }
+      }
+    },
+    {
+      "id": "SQ08",
+      "title": "Fast drafting loses end-to-end benefit",
+      "kind": "structured",
+      "payload": {
+        "schema_version": 2,
+        "methodology_version": "2.0",
+        "pilot": "Fictional Larch Quay internal note trial SQ08",
+        "fictional": true,
+        "details": {
+          "process": "Drafting internal notes from invented queue items",
+          "outcome": "Reduce accepted handling effort without severe mistakes",
+          "date": "2026-11-06",
+          "reference": "Fictional sprint log LQ"
+        },
+        "scope": {
+          "activity": "bounded_internal_pilot",
+          "data": "synthetic_public",
+          "external_effects": "no",
+          "people_impact": "no",
+          "proposed_scale": "Three reviewers, invented notes only",
+          "current_version": "Draft workflow C / model M"
+        },
+        "material_issue": {
+          "status": "none_identified",
+          "summary": "",
+          "owner": "",
+          "action": "unknown",
+          "next_step": ""
+        },
+        "evidence": {
+          "business_outcome": {
+            "status": "no",
+            "reference": "Invented LQ-01",
+            "note": "Fictional drafting saved four minutes; additional checking added seven; operating threshold failed."
+          },
+          "baseline": {
+            "status": "yes",
+            "reference": "Invented LQ-02",
+            "note": "Fictional comparison used the same invented queue and reviewers on both routes, with ordering rotated."
+          },
+          "representative_test": {
+            "status": "yes",
+            "reference": "Invented LQ-03",
+            "note": "Fictional test includes mixed routine and exception cases on draft workflow C and model M."
+          },
+          "quality_review": {
+            "status": "yes",
+            "reference": "Invented LQ-04",
+            "note": "Fictional reviewers found no severity-one mistakes in the declared sample and accepted the remaining trade-offs."
+          },
+          "workflow_owner": {
+            "status": "yes",
+            "reference": "Invented LQ-05",
+            "note": "Fictional process lead accepted stop authority, weekly review time and deputy cover."
+          },
+          "human_oversight": {
+            "status": "yes",
+            "reference": "Invented LQ-06",
+            "note": "Fictional timed exercise kept source comparison and second-person release checks effective."
+          },
+          "data_approval": {
+            "status": "yes",
+            "reference": "Invented LQ-07",
+            "note": "Fictional tool steward confirmed invented records and this purpose are permitted in the sandbox."
+          },
+          "rollback": {
+            "status": "yes",
+            "reference": "Invented LQ-08",
+            "note": "Fictional recovery exercise stopped output use, restored the manual process and reconciled pending items."
+          },
+          "user_training": {
+            "status": "yes",
+            "reference": "Invented LQ-09",
+            "note": "Fictional reviewers completed practice and accepted a supported rota with time to check."
+          },
+          "monitoring": {
+            "status": "yes",
+            "reference": "Invented LQ-10",
+            "note": "Fictional response log assigns alerts, review dates and retesting after model or workflow changes."
+          }
+        }
+      }
+    },
+    {
+      "id": "SQ09",
+      "title": "Literal markup remains inert text",
+      "kind": "structured",
+      "payload": {
+        "schema_version": 2,
+        "methodology_version": "2.0",
+        "pilot": "Fictional Larch Quay internal note trial SQ09",
+        "fictional": true,
+        "details": {
+          "process": "Drafting internal notes from invented queue items",
+          "outcome": "Reduce accepted handling effort without severe mistakes",
+          "date": "2026-11-06",
+          "reference": "Fictional sprint log LQ"
+        },
+        "scope": {
+          "activity": "bounded_internal_pilot",
+          "data": "synthetic_public",
+          "external_effects": "no",
+          "people_impact": "no",
+          "proposed_scale": "Three reviewers, invented notes only",
+          "current_version": "Draft workflow C / model M"
+        },
+        "material_issue": {
+          "status": "none_identified",
+          "summary": "",
+          "owner": "",
+          "action": "unknown",
+          "next_step": ""
+        },
+        "evidence": {
+          "business_outcome": {
+            "status": "yes",
+            "reference": "Invented LQ-01",
+            "note": "Fictional trial: accepted summaries took 18 minutes versus 24 including checking; operating cost accepted."
+          },
+          "baseline": {
+            "status": "yes",
+            "reference": "Invented LQ-02",
+            "note": "Fictional note <img src=\"https://invalid.example/answer\" onerror=\"alert(1)\"> & source text, not executable markup."
+          },
+          "representative_test": {
+            "status": "yes",
+            "reference": "Invented LQ-03",
+            "note": "Fictional test includes mixed routine and exception cases on draft workflow C and model M."
+          },
+          "quality_review": {
+            "status": "yes",
+            "reference": "Invented LQ-04",
+            "note": "Fictional reviewers found no severity-one mistakes in the declared sample and accepted the remaining trade-offs."
+          },
+          "workflow_owner": {
+            "status": "yes",
+            "reference": "Invented LQ-05",
+            "note": "Fictional process lead accepted stop authority, weekly review time and deputy cover."
+          },
+          "human_oversight": {
+            "status": "yes",
+            "reference": "Invented LQ-06",
+            "note": "Fictional timed exercise kept source comparison and second-person release checks effective."
+          },
+          "data_approval": {
+            "status": "yes",
+            "reference": "Invented LQ-07",
+            "note": "Fictional tool steward confirmed invented records and this purpose are permitted in the sandbox."
+          },
+          "rollback": {
+            "status": "yes",
+            "reference": "Invented LQ-08",
+            "note": "Fictional recovery exercise stopped output use, restored the manual process and reconciled pending items."
+          },
+          "user_training": {
+            "status": "yes",
+            "reference": "Invented LQ-09",
+            "note": "Fictional reviewers completed practice and accepted a supported rota with time to check."
+          },
+          "monitoring": {
+            "status": "yes",
+            "reference": "Invented LQ-10",
+            "note": "Fictional response log assigns alerts, review dates and retesting after model or workflow changes."
+          }
+        }
+      }
+    },
+    {
+      "id": "SQ10",
+      "title": "Low-risk offline learning needs no production evidence",
+      "kind": "structured",
+      "payload": {
+        "schema_version": 2,
+        "methodology_version": "2.0",
+        "pilot": "Fictional Larch Quay internal note trial SQ10",
+        "fictional": true,
+        "details": {
+          "process": "Drafting internal notes from invented queue items",
+          "outcome": "Reduce accepted handling effort without severe mistakes",
+          "date": "2026-11-06",
+          "reference": "Fictional sprint log LQ"
+        },
+        "scope": {
+          "activity": "offline_experiment",
+          "data": "synthetic_public",
+          "external_effects": "no",
+          "people_impact": "no",
+          "proposed_scale": "One learner; discard outputs",
+          "current_version": ""
+        },
+        "material_issue": {
+          "status": "none_identified",
+          "summary": "",
+          "owner": "",
+          "action": "unknown",
+          "next_step": ""
+        },
+        "evidence": {
+          "business_outcome": {
+            "status": "unknown",
+            "reference": "Invented LQ-01",
+            "note": "Fictional trial: accepted summaries took 18 minutes versus 24 including checking; operating cost accepted."
+          },
+          "baseline": {
+            "status": "unknown",
+            "reference": "Invented LQ-02",
+            "note": "Fictional comparison used the same invented queue and reviewers on both routes, with ordering rotated."
+          },
+          "representative_test": {
+            "status": "unknown",
+            "reference": "Invented LQ-03",
+            "note": "Fictional test includes mixed routine and exception cases on draft workflow C and model M."
+          },
+          "quality_review": {
+            "status": "unknown",
+            "reference": "Invented LQ-04",
+            "note": "Fictional reviewers found no severity-one mistakes in the declared sample and accepted the remaining trade-offs."
+          },
+          "workflow_owner": {
+            "status": "unknown",
+            "reference": "Invented LQ-05",
+            "note": "Fictional process lead accepted stop authority, weekly review time and deputy cover."
+          },
+          "human_oversight": {
+            "status": "unknown",
+            "reference": "Invented LQ-06",
+            "note": "Fictional timed exercise kept source comparison and second-person release checks effective."
+          },
+          "data_approval": {
+            "status": "yes",
+            "reference": "Invented LQ-07",
+            "note": "Fictional tool steward confirmed invented records and this purpose are permitted in the sandbox."
+          },
+          "rollback": {
+            "status": "unknown",
+            "reference": "Invented LQ-08",
+            "note": "Fictional recovery exercise stopped output use, restored the manual process and reconciled pending items."
+          },
+          "user_training": {
+            "status": "unknown",
+            "reference": "Invented LQ-09",
+            "note": "Fictional reviewers completed practice and accepted a supported rota with time to check."
+          },
+          "monitoring": {
+            "status": "unknown",
+            "reference": "Invented LQ-10",
+            "note": "Fictional response log assigns alerts, review dates and retesting after model or workflow changes."
+          }
+        }
+      }
+    },
+    {
+      "id": "SQ11",
+      "title": "Offline learning still needs applicable permission",
+      "kind": "structured",
+      "payload": {
+        "schema_version": 2,
+        "methodology_version": "2.0",
+        "pilot": "Fictional Larch Quay internal note trial SQ11",
+        "fictional": true,
+        "details": {
+          "process": "Drafting internal notes from invented queue items",
+          "outcome": "Reduce accepted handling effort without severe mistakes",
+          "date": "2026-11-06",
+          "reference": "Fictional sprint log LQ"
+        },
+        "scope": {
+          "activity": "offline_experiment",
+          "data": "synthetic_public",
+          "external_effects": "no",
+          "people_impact": "no",
+          "proposed_scale": "One learner; discard outputs",
+          "current_version": ""
+        },
+        "material_issue": {
+          "status": "none_identified",
+          "summary": "",
+          "owner": "",
+          "action": "unknown",
+          "next_step": ""
+        },
+        "evidence": {
+          "business_outcome": {
+            "status": "unknown",
+            "reference": "Invented LQ-01",
+            "note": "Fictional trial: accepted summaries took 18 minutes versus 24 including checking; operating cost accepted."
+          },
+          "baseline": {
+            "status": "unknown",
+            "reference": "Invented LQ-02",
+            "note": "Fictional comparison used the same invented queue and reviewers on both routes, with ordering rotated."
+          },
+          "representative_test": {
+            "status": "unknown",
+            "reference": "Invented LQ-03",
+            "note": "Fictional test includes mixed routine and exception cases on draft workflow C and model M."
+          },
+          "quality_review": {
+            "status": "unknown",
+            "reference": "Invented LQ-04",
+            "note": "Fictional reviewers found no severity-one mistakes in the declared sample and accepted the remaining trade-offs."
+          },
+          "workflow_owner": {
+            "status": "unknown",
+            "reference": "Invented LQ-05",
+            "note": "Fictional process lead accepted stop authority, weekly review time and deputy cover."
+          },
+          "human_oversight": {
+            "status": "unknown",
+            "reference": "Invented LQ-06",
+            "note": "Fictional timed exercise kept source comparison and second-person release checks effective."
+          },
+          "data_approval": {
+            "status": "unknown",
+            "reference": "Invented LQ-07",
+            "note": "Fictional tool steward confirmed invented records and this purpose are permitted in the sandbox."
+          },
+          "rollback": {
+            "status": "unknown",
+            "reference": "Invented LQ-08",
+            "note": "Fictional recovery exercise stopped output use, restored the manual process and reconciled pending items."
+          },
+          "user_training": {
+            "status": "unknown",
+            "reference": "Invented LQ-09",
+            "note": "Fictional reviewers completed practice and accepted a supported rota with time to check."
+          },
+          "monitoring": {
+            "status": "unknown",
+            "reference": "Invented LQ-10",
+            "note": "Fictional response log assigns alerts, review dates and retesting after model or workflow changes."
+          }
+        }
+      }
+    },
+    {
+      "id": "SQ12",
+      "title": "Offline label cannot hide an effect on a person",
+      "kind": "structured",
+      "payload": {
+        "schema_version": 2,
+        "methodology_version": "2.0",
+        "pilot": "Fictional Larch Quay internal note trial SQ12",
+        "fictional": true,
+        "details": {
+          "process": "Drafting internal notes from invented queue items",
+          "outcome": "Reduce accepted handling effort without severe mistakes",
+          "date": "2026-11-06",
+          "reference": "Fictional sprint log LQ"
+        },
+        "scope": {
+          "activity": "offline_experiment",
+          "data": "synthetic_public",
+          "external_effects": "no",
+          "people_impact": "yes",
+          "proposed_scale": "One learner; discard outputs",
+          "current_version": ""
+        },
+        "material_issue": {
+          "status": "none_identified",
+          "summary": "",
+          "owner": "",
+          "action": "unknown",
+          "next_step": ""
+        },
+        "evidence": {
+          "business_outcome": {
+            "status": "unknown",
+            "reference": "Invented LQ-01",
+            "note": "Fictional trial: accepted summaries took 18 minutes versus 24 including checking; operating cost accepted."
+          },
+          "baseline": {
+            "status": "unknown",
+            "reference": "Invented LQ-02",
+            "note": "Fictional comparison used the same invented queue and reviewers on both routes, with ordering rotated."
+          },
+          "representative_test": {
+            "status": "unknown",
+            "reference": "Invented LQ-03",
+            "note": "Fictional test includes mixed routine and exception cases on draft workflow C and model M."
+          },
+          "quality_review": {
+            "status": "unknown",
+            "reference": "Invented LQ-04",
+            "note": "Fictional reviewers found no severity-one mistakes in the declared sample and accepted the remaining trade-offs."
+          },
+          "workflow_owner": {
+            "status": "unknown",
+            "reference": "Invented LQ-05",
+            "note": "Fictional process lead accepted stop authority, weekly review time and deputy cover."
+          },
+          "human_oversight": {
+            "status": "unknown",
+            "reference": "Invented LQ-06",
+            "note": "Fictional timed exercise kept source comparison and second-person release checks effective."
+          },
+          "data_approval": {
+            "status": "yes",
+            "reference": "Invented LQ-07",
+            "note": "Fictional tool steward confirmed invented records and this purpose are permitted in the sandbox."
+          },
+          "rollback": {
+            "status": "unknown",
+            "reference": "Invented LQ-08",
+            "note": "Fictional recovery exercise stopped output use, restored the manual process and reconciled pending items."
+          },
+          "user_training": {
+            "status": "unknown",
+            "reference": "Invented LQ-09",
+            "note": "Fictional reviewers completed practice and accepted a supported rota with time to check."
+          },
+          "monitoring": {
+            "status": "unknown",
+            "reference": "Invented LQ-10",
+            "note": "Fictional response log assigns alerts, review dates and retesting after model or workflow changes."
+          }
+        }
+      }
+    },
+    {
+      "id": "SQ13",
+      "title": "Failed production training does not ban offline learning",
+      "kind": "structured",
+      "payload": {
+        "schema_version": 2,
+        "methodology_version": "2.0",
+        "pilot": "Fictional Larch Quay internal note trial SQ13",
+        "fictional": true,
+        "details": {
+          "process": "Drafting internal notes from invented queue items",
+          "outcome": "Reduce accepted handling effort without severe mistakes",
+          "date": "2026-11-06",
+          "reference": "Fictional sprint log LQ"
+        },
+        "scope": {
+          "activity": "offline_experiment",
+          "data": "synthetic_public",
+          "external_effects": "no",
+          "people_impact": "no",
+          "proposed_scale": "One learner; discard outputs",
+          "current_version": ""
+        },
+        "material_issue": {
+          "status": "none_identified",
+          "summary": "",
+          "owner": "",
+          "action": "unknown",
+          "next_step": ""
+        },
+        "evidence": {
+          "business_outcome": {
+            "status": "unknown",
+            "reference": "Invented LQ-01",
+            "note": "Fictional trial: accepted summaries took 18 minutes versus 24 including checking; operating cost accepted."
+          },
+          "baseline": {
+            "status": "unknown",
+            "reference": "Invented LQ-02",
+            "note": "Fictional comparison used the same invented queue and reviewers on both routes, with ordering rotated."
+          },
+          "representative_test": {
+            "status": "unknown",
+            "reference": "Invented LQ-03",
+            "note": "Fictional test includes mixed routine and exception cases on draft workflow C and model M."
+          },
+          "quality_review": {
+            "status": "unknown",
+            "reference": "Invented LQ-04",
+            "note": "Fictional reviewers found no severity-one mistakes in the declared sample and accepted the remaining trade-offs."
+          },
+          "workflow_owner": {
+            "status": "unknown",
+            "reference": "Invented LQ-05",
+            "note": "Fictional process lead accepted stop authority, weekly review time and deputy cover."
+          },
+          "human_oversight": {
+            "status": "unknown",
+            "reference": "Invented LQ-06",
+            "note": "Fictional timed exercise kept source comparison and second-person release checks effective."
+          },
+          "data_approval": {
+            "status": "yes",
+            "reference": "Invented LQ-07",
+            "note": "Fictional tool steward confirmed invented records and this purpose are permitted in the sandbox."
+          },
+          "rollback": {
+            "status": "unknown",
+            "reference": "Invented LQ-08",
+            "note": "Fictional recovery exercise stopped output use, restored the manual process and reconciled pending items."
+          },
+          "user_training": {
+            "status": "no",
+            "reference": "Invented LQ-09",
+            "note": "Fictional reviewers completed practice and accepted a supported rota with time to check."
+          },
+          "monitoring": {
+            "status": "unknown",
+            "reference": "Invented LQ-10",
+            "note": "Fictional response log assigns alerts, review dates and retesting after model or workflow changes."
+          }
+        }
+      }
+    },
+    {
+      "id": "SQ14",
+      "title": "Operational version missing",
+      "kind": "structured",
+      "payload": {
+        "schema_version": 2,
+        "methodology_version": "2.0",
+        "pilot": "Fictional Larch Quay internal note trial SQ14",
+        "fictional": true,
+        "details": {
+          "process": "Drafting internal notes from invented queue items",
+          "outcome": "Reduce accepted handling effort without severe mistakes",
+          "date": "2026-11-06",
+          "reference": "Fictional sprint log LQ"
+        },
+        "scope": {
+          "activity": "bounded_internal_pilot",
+          "data": "synthetic_public",
+          "external_effects": "no",
+          "people_impact": "no",
+          "proposed_scale": "Three reviewers, invented notes only",
+          "current_version": ""
+        },
+        "material_issue": {
+          "status": "none_identified",
+          "summary": "",
+          "owner": "",
+          "action": "unknown",
+          "next_step": ""
+        },
+        "evidence": {
+          "business_outcome": {
+            "status": "yes",
+            "reference": "Invented LQ-01",
+            "note": "Fictional trial: accepted summaries took 18 minutes versus 24 including checking; operating cost accepted."
+          },
+          "baseline": {
+            "status": "yes",
+            "reference": "Invented LQ-02",
+            "note": "Fictional comparison used the same invented queue and reviewers on both routes, with ordering rotated."
+          },
+          "representative_test": {
+            "status": "yes",
+            "reference": "Invented LQ-03",
+            "note": "Fictional test includes mixed routine and exception cases on draft workflow C and model M."
+          },
+          "quality_review": {
+            "status": "yes",
+            "reference": "Invented LQ-04",
+            "note": "Fictional reviewers found no severity-one mistakes in the declared sample and accepted the remaining trade-offs."
+          },
+          "workflow_owner": {
+            "status": "yes",
+            "reference": "Invented LQ-05",
+            "note": "Fictional process lead accepted stop authority, weekly review time and deputy cover."
+          },
+          "human_oversight": {
+            "status": "yes",
+            "reference": "Invented LQ-06",
+            "note": "Fictional timed exercise kept source comparison and second-person release checks effective."
+          },
+          "data_approval": {
+            "status": "yes",
+            "reference": "Invented LQ-07",
+            "note": "Fictional tool steward confirmed invented records and this purpose are permitted in the sandbox."
+          },
+          "rollback": {
+            "status": "yes",
+            "reference": "Invented LQ-08",
+            "note": "Fictional recovery exercise stopped output use, restored the manual process and reconciled pending items."
+          },
+          "user_training": {
+            "status": "yes",
+            "reference": "Invented LQ-09",
+            "note": "Fictional reviewers completed practice and accepted a supported rota with time to check."
+          },
+          "monitoring": {
+            "status": "yes",
+            "reference": "Invented LQ-10",
+            "note": "Fictional response log assigns alerts, review dates and retesting after model or workflow changes."
+          }
+        }
+      }
+    },
+    {
+      "id": "SQ15",
+      "title": "Whitespace is no supporting reference",
+      "kind": "structured",
+      "payload": {
+        "schema_version": 2,
+        "methodology_version": "2.0",
+        "pilot": "Fictional Larch Quay internal note trial SQ15",
+        "fictional": true,
+        "details": {
+          "process": "Drafting internal notes from invented queue items",
+          "outcome": "Reduce accepted handling effort without severe mistakes",
+          "date": "2026-11-06",
+          "reference": "Fictional sprint log LQ"
+        },
+        "scope": {
+          "activity": "bounded_internal_pilot",
+          "data": "synthetic_public",
+          "external_effects": "no",
+          "people_impact": "no",
+          "proposed_scale": "Three reviewers, invented notes only",
+          "current_version": "Draft workflow C / model M"
+        },
+        "material_issue": {
+          "status": "none_identified",
+          "summary": "",
+          "owner": "",
+          "action": "unknown",
+          "next_step": ""
+        },
+        "evidence": {
+          "business_outcome": {
+            "status": "yes",
+            "reference": "Invented LQ-01",
+            "note": "Fictional trial: accepted summaries took 18 minutes versus 24 including checking; operating cost accepted."
+          },
+          "baseline": {
+            "status": "yes",
+            "reference": "Invented LQ-02",
+            "note": "Fictional comparison used the same invented queue and reviewers on both routes, with ordering rotated."
+          },
+          "representative_test": {
+            "status": "yes",
+            "reference": "Invented LQ-03",
+            "note": "Fictional test includes mixed routine and exception cases on draft workflow C and model M."
+          },
+          "quality_review": {
+            "status": "yes",
+            "reference": "Invented LQ-04",
+            "note": "Fictional reviewers found no severity-one mistakes in the declared sample and accepted the remaining trade-offs."
+          },
+          "workflow_owner": {
+            "status": "yes",
+            "reference": "Invented LQ-05",
+            "note": "Fictional process lead accepted stop authority, weekly review time and deputy cover."
+          },
+          "human_oversight": {
+            "status": "yes",
+            "reference": "Invented LQ-06",
+            "note": "Fictional timed exercise kept source comparison and second-person release checks effective."
+          },
+          "data_approval": {
+            "status": "yes",
+            "reference": "Invented LQ-07",
+            "note": "Fictional tool steward confirmed invented records and this purpose are permitted in the sandbox."
+          },
+          "rollback": {
+            "status": "yes",
+            "reference": " \ufeff\t",
+            "note": "Fictional recovery exercise stopped output use, restored the manual process and reconciled pending items."
+          },
+          "user_training": {
+            "status": "yes",
+            "reference": "Invented LQ-09",
+            "note": "Fictional reviewers completed practice and accepted a supported rota with time to check."
+          },
+          "monitoring": {
+            "status": "yes",
+            "reference": "Invented LQ-10",
+            "note": "Fictional response log assigns alerts, review dates and retesting after model or workflow changes."
+          }
+        }
+      }
+    },
+    {
+      "id": "SQ16",
+      "title": "Negative control: adverse prose behind false Yes claims",
+      "kind": "information_limit",
+      "payload": {
+        "schema_version": 2,
+        "methodology_version": "2.0",
+        "pilot": "Fictional Larch Quay internal note trial SQ16",
+        "fictional": true,
+        "details": {
+          "process": "Drafting internal notes from invented queue items",
+          "outcome": "Reduce accepted handling effort without severe mistakes",
+          "date": "2026-11-06",
+          "reference": "Fictional sprint log LQ"
+        },
+        "scope": {
+          "activity": "bounded_internal_pilot",
+          "data": "synthetic_public",
+          "external_effects": "no",
+          "people_impact": "no",
+          "proposed_scale": "Three reviewers, invented notes only",
+          "current_version": "Draft workflow C / model M"
+        },
+        "material_issue": {
+          "status": "none_identified",
+          "summary": "Fictional sponsor says all clear despite the rejected review.",
+          "owner": "",
+          "action": "unknown",
+          "next_step": ""
+        },
+        "evidence": {
+          "business_outcome": {
+            "status": "yes",
+            "reference": "Invented LQ-01",
+            "note": "Fictional trial: accepted summaries took 18 minutes versus 24 including checking; operating cost accepted."
+          },
+          "baseline": {
+            "status": "yes",
+            "reference": "Invented LQ-02",
+            "note": "Fictional comparison used the same invented queue and reviewers on both routes, with ordering rotated."
+          },
+          "representative_test": {
+            "status": "yes",
+            "reference": "Invented LQ-03",
+            "note": "Fictional test includes mixed routine and exception cases on draft workflow C and model M."
+          },
+          "quality_review": {
+            "status": "yes",
+            "reference": "Invented LQ-04",
+            "note": "Fictional review rejects expansion: critical omissions remain unresolved."
+          },
+          "workflow_owner": {
+            "status": "yes",
+            "reference": "Invented LQ-05",
+            "note": "Fictional process lead accepted stop authority, weekly review time and deputy cover."
+          },
+          "human_oversight": {
+            "status": "yes",
+            "reference": "Invented LQ-06",
+            "note": "Fictional timed exercise kept source comparison and second-person release checks effective."
+          },
+          "data_approval": {
+            "status": "yes",
+            "reference": "Invented LQ-07",
+            "note": "Fictional tool steward confirmed invented records and this purpose are permitted in the sandbox."
+          },
+          "rollback": {
+            "status": "yes",
+            "reference": "Invented LQ-08",
+            "note": "Fictional recovery exercise stopped output use, restored the manual process and reconciled pending items."
+          },
+          "user_training": {
+            "status": "yes",
+            "reference": "Invented LQ-09",
+            "note": "Fictional reviewers completed practice and accepted a supported rota with time to check."
+          },
+          "monitoring": {
+            "status": "yes",
+            "reference": "Invented LQ-10",
+            "note": "Fictional response log assigns alerts, review dates and retesting after model or workflow changes."
+          }
+        }
+      }
+    },
+    {
+      "id": "SQ17",
+      "title": "Unsupported schema version",
+      "kind": "unexpected",
+      "payload": {
+        "schema_version": 99,
+        "methodology_version": "2.0",
+        "pilot": "Fictional Larch Quay internal note trial SQ17",
+        "fictional": true,
+        "details": {
+          "process": "Drafting internal notes from invented queue items",
+          "outcome": "Reduce accepted handling effort without severe mistakes",
+          "date": "2026-11-06",
+          "reference": "Fictional sprint log LQ"
+        },
+        "scope": {
+          "activity": "bounded_internal_pilot",
+          "data": "synthetic_public",
+          "external_effects": "no",
+          "people_impact": "no",
+          "proposed_scale": "Three reviewers, invented notes only",
+          "current_version": "Draft workflow C / model M"
+        },
+        "material_issue": {
+          "status": "none_identified",
+          "summary": "",
+          "owner": "",
+          "action": "unknown",
+          "next_step": ""
+        },
+        "evidence": {
+          "business_outcome": {
+            "status": "yes",
+            "reference": "Invented LQ-01",
+            "note": "Fictional trial: accepted summaries took 18 minutes versus 24 including checking; operating cost accepted."
+          },
+          "baseline": {
+            "status": "yes",
+            "reference": "Invented LQ-02",
+            "note": "Fictional comparison used the same invented queue and reviewers on both routes, with ordering rotated."
+          },
+          "representative_test": {
+            "status": "yes",
+            "reference": "Invented LQ-03",
+            "note": "Fictional test includes mixed routine and exception cases on draft workflow C and model M."
+          },
+          "quality_review": {
+            "status": "yes",
+            "reference": "Invented LQ-04",
+            "note": "Fictional reviewers found no severity-one mistakes in the declared sample and accepted the remaining trade-offs."
+          },
+          "workflow_owner": {
+            "status": "yes",
+            "reference": "Invented LQ-05",
+            "note": "Fictional process lead accepted stop authority, weekly review time and deputy cover."
+          },
+          "human_oversight": {
+            "status": "yes",
+            "reference": "Invented LQ-06",
+            "note": "Fictional timed exercise kept source comparison and second-person release checks effective."
+          },
+          "data_approval": {
+            "status": "yes",
+            "reference": "Invented LQ-07",
+            "note": "Fictional tool steward confirmed invented records and this purpose are permitted in the sandbox."
+          },
+          "rollback": {
+            "status": "yes",
+            "reference": "Invented LQ-08",
+            "note": "Fictional recovery exercise stopped output use, restored the manual process and reconciled pending items."
+          },
+          "user_training": {
+            "status": "yes",
+            "reference": "Invented LQ-09",
+            "note": "Fictional reviewers completed practice and accepted a supported rota with time to check."
+          },
+          "monitoring": {
+            "status": "yes",
+            "reference": "Invented LQ-10",
+            "note": "Fictional response log assigns alerts, review dates and retesting after model or workflow changes."
+          }
+        }
+      }
+    },
+    {
+      "id": "SQ18",
+      "title": "Impossible assessment date",
+      "kind": "unexpected",
+      "payload": {
+        "schema_version": 2,
+        "methodology_version": "2.0",
+        "pilot": "Fictional Larch Quay internal note trial SQ18",
+        "fictional": true,
+        "details": {
+          "process": "Drafting internal notes from invented queue items",
+          "outcome": "Reduce accepted handling effort without severe mistakes",
+          "date": "2026-11-31",
+          "reference": "Fictional sprint log LQ"
+        },
+        "scope": {
+          "activity": "bounded_internal_pilot",
+          "data": "synthetic_public",
+          "external_effects": "no",
+          "people_impact": "no",
+          "proposed_scale": "Three reviewers, invented notes only",
+          "current_version": "Draft workflow C / model M"
+        },
+        "material_issue": {
+          "status": "none_identified",
+          "summary": "",
+          "owner": "",
+          "action": "unknown",
+          "next_step": ""
+        },
+        "evidence": {
+          "business_outcome": {
+            "status": "yes",
+            "reference": "Invented LQ-01",
+            "note": "Fictional trial: accepted summaries took 18 minutes versus 24 including checking; operating cost accepted."
+          },
+          "baseline": {
+            "status": "yes",
+            "reference": "Invented LQ-02",
+            "note": "Fictional comparison used the same invented queue and reviewers on both routes, with ordering rotated."
+          },
+          "representative_test": {
+            "status": "yes",
+            "reference": "Invented LQ-03",
+            "note": "Fictional test includes mixed routine and exception cases on draft workflow C and model M."
+          },
+          "quality_review": {
+            "status": "yes",
+            "reference": "Invented LQ-04",
+            "note": "Fictional reviewers found no severity-one mistakes in the declared sample and accepted the remaining trade-offs."
+          },
+          "workflow_owner": {
+            "status": "yes",
+            "reference": "Invented LQ-05",
+            "note": "Fictional process lead accepted stop authority, weekly review time and deputy cover."
+          },
+          "human_oversight": {
+            "status": "yes",
+            "reference": "Invented LQ-06",
+            "note": "Fictional timed exercise kept source comparison and second-person release checks effective."
+          },
+          "data_approval": {
+            "status": "yes",
+            "reference": "Invented LQ-07",
+            "note": "Fictional tool steward confirmed invented records and this purpose are permitted in the sandbox."
+          },
+          "rollback": {
+            "status": "yes",
+            "reference": "Invented LQ-08",
+            "note": "Fictional recovery exercise stopped output use, restored the manual process and reconciled pending items."
+          },
+          "user_training": {
+            "status": "yes",
+            "reference": "Invented LQ-09",
+            "note": "Fictional reviewers completed practice and accepted a supported rota with time to check."
+          },
+          "monitoring": {
+            "status": "yes",
+            "reference": "Invented LQ-10",
+            "note": "Fictional response log assigns alerts, review dates and retesting after model or workflow changes."
+          }
+        }
+      }
+    },
+    {
+      "id": "SQ19",
+      "title": "Windows line endings must survive a JSON round trip",
+      "kind": "unexpected",
+      "payload": {
+        "schema_version": 2,
+        "methodology_version": "2.0",
+        "pilot": "Fictional Larch Quay internal note trial SQ19",
+        "fictional": true,
+        "details": {
+          "process": "Drafting internal notes from invented queue items",
+          "outcome": "Reduce accepted handling effort without severe mistakes",
+          "date": "2026-11-06",
+          "reference": "Fictional sprint log LQ"
+        },
+        "scope": {
+          "activity": "bounded_internal_pilot",
+          "data": "synthetic_public",
+          "external_effects": "no",
+          "people_impact": "no",
+          "proposed_scale": "Three reviewers, invented notes only",
+          "current_version": "Draft workflow C / model M"
+        },
+        "material_issue": {
+          "status": "none_identified",
+          "summary": "",
+          "owner": "",
+          "action": "unknown",
+          "next_step": ""
+        },
+        "evidence": {
+          "business_outcome": {
+            "status": "yes",
+            "reference": "Invented LQ-01",
+            "note": "Fictional trial: accepted summaries took 18 minutes versus 24 including checking; operating cost accepted."
+          },
+          "baseline": {
+            "status": "yes",
+            "reference": "Invented LQ-02",
+            "note": "Fictional first finding.\r\nFictional second finding.\rThird finding."
+          },
+          "representative_test": {
+            "status": "yes",
+            "reference": "Invented LQ-03",
+            "note": "Fictional test includes mixed routine and exception cases on draft workflow C and model M."
+          },
+          "quality_review": {
+            "status": "yes",
+            "reference": "Invented LQ-04",
+            "note": "Fictional reviewers found no severity-one mistakes in the declared sample and accepted the remaining trade-offs."
+          },
+          "workflow_owner": {
+            "status": "yes",
+            "reference": "Invented LQ-05",
+            "note": "Fictional process lead accepted stop authority, weekly review time and deputy cover."
+          },
+          "human_oversight": {
+            "status": "yes",
+            "reference": "Invented LQ-06",
+            "note": "Fictional timed exercise kept source comparison and second-person release checks effective."
+          },
+          "data_approval": {
+            "status": "yes",
+            "reference": "Invented LQ-07",
+            "note": "Fictional tool steward confirmed invented records and this purpose are permitted in the sandbox."
+          },
+          "rollback": {
+            "status": "yes",
+            "reference": "Invented LQ-08",
+            "note": "Fictional recovery exercise stopped output use, restored the manual process and reconciled pending items."
+          },
+          "user_training": {
+            "status": "yes",
+            "reference": "Invented LQ-09",
+            "note": "Fictional reviewers completed practice and accepted a supported rota with time to check."
+          },
+          "monitoring": {
+            "status": "yes",
+            "reference": "Invented LQ-10",
+            "note": "Fictional response log assigns alerts, review dates and retesting after model or workflow changes."
+          }
+        }
+      }
+    },
+    {
+      "id": "SQ20",
+      "title": "Newlines in single-line imported fields must survive export",
+      "kind": "unexpected",
+      "payload": {
+        "schema_version": 2,
+        "methodology_version": "2.0",
+        "pilot": "Fictional Larch Quay internal note trial SQ20",
+        "fictional": true,
+        "details": {
+          "process": "Drafting internal notes from invented queue items",
+          "outcome": "Reduce accepted handling effort without severe mistakes",
+          "date": "2026-11-06",
+          "reference": "Fictional source A\nSource B"
+        },
+        "scope": {
+          "activity": "bounded_internal_pilot",
+          "data": "synthetic_public",
+          "external_effects": "no",
+          "people_impact": "no",
+          "proposed_scale": "Three reviewers, invented notes only",
+          "current_version": "Draft workflow C / model M"
+        },
+        "material_issue": {
+          "status": "none_identified",
+          "summary": "",
+          "owner": "",
+          "action": "unknown",
+          "next_step": ""
+        },
+        "evidence": {
+          "business_outcome": {
+            "status": "yes",
+            "reference": "Invented LQ-01",
+            "note": "Fictional trial: accepted summaries took 18 minutes versus 24 including checking; operating cost accepted."
+          },
+          "baseline": {
+            "status": "yes",
+            "reference": "Fictional acceptance\r\nwith limits",
+            "note": "Fictional comparison used the same invented queue and reviewers on both routes, with ordering rotated."
+          },
+          "representative_test": {
+            "status": "yes",
+            "reference": "Invented LQ-03",
+            "note": "Fictional test includes mixed routine and exception cases on draft workflow C and model M."
+          },
+          "quality_review": {
+            "status": "yes",
+            "reference": "Invented LQ-04",
+            "note": "Fictional reviewers found no severity-one mistakes in the declared sample and accepted the remaining trade-offs."
+          },
+          "workflow_owner": {
+            "status": "yes",
+            "reference": "Invented LQ-05",
+            "note": "Fictional process lead accepted stop authority, weekly review time and deputy cover."
+          },
+          "human_oversight": {
+            "status": "yes",
+            "reference": "Invented LQ-06",
+            "note": "Fictional timed exercise kept source comparison and second-person release checks effective."
+          },
+          "data_approval": {
+            "status": "yes",
+            "reference": "Invented LQ-07",
+            "note": "Fictional tool steward confirmed invented records and this purpose are permitted in the sandbox."
+          },
+          "rollback": {
+            "status": "yes",
+            "reference": "Invented LQ-08",
+            "note": "Fictional recovery exercise stopped output use, restored the manual process and reconciled pending items."
+          },
+          "user_training": {
+            "status": "yes",
+            "reference": "Invented LQ-09",
+            "note": "Fictional reviewers completed practice and accepted a supported rota with time to check."
+          },
+          "monitoring": {
+            "status": "yes",
+            "reference": "Invented LQ-10",
+            "note": "Fictional response log assigns alerts, review dates and retesting after model or workflow changes."
+          }
+        }
+      }
+    },
+    {
+      "id": "SQ21",
+      "title": "Boolean schema is not a version",
+      "kind": "unexpected",
+      "payload": {
+        "schema_version": true,
+        "methodology_version": "2.0",
+        "pilot": "Fictional Larch Quay internal note trial SQ21",
+        "fictional": true,
+        "details": {
+          "process": "Drafting internal notes from invented queue items",
+          "outcome": "Reduce accepted handling effort without severe mistakes",
+          "date": "2026-11-06",
+          "reference": "Fictional sprint log LQ"
+        },
+        "scope": {
+          "activity": "bounded_internal_pilot",
+          "data": "synthetic_public",
+          "external_effects": "no",
+          "people_impact": "no",
+          "proposed_scale": "Three reviewers, invented notes only",
+          "current_version": "Draft workflow C / model M"
+        },
+        "material_issue": {
+          "status": "none_identified",
+          "summary": "",
+          "owner": "",
+          "action": "unknown",
+          "next_step": ""
+        },
+        "evidence": {
+          "business_outcome": {
+            "status": "yes",
+            "reference": "Invented LQ-01",
+            "note": "Fictional trial: accepted summaries took 18 minutes versus 24 including checking; operating cost accepted."
+          },
+          "baseline": {
+            "status": "yes",
+            "reference": "Invented LQ-02",
+            "note": "Fictional comparison used the same invented queue and reviewers on both routes, with ordering rotated."
+          },
+          "representative_test": {
+            "status": "yes",
+            "reference": "Invented LQ-03",
+            "note": "Fictional test includes mixed routine and exception cases on draft workflow C and model M."
+          },
+          "quality_review": {
+            "status": "yes",
+            "reference": "Invented LQ-04",
+            "note": "Fictional reviewers found no severity-one mistakes in the declared sample and accepted the remaining trade-offs."
+          },
+          "workflow_owner": {
+            "status": "yes",
+            "reference": "Invented LQ-05",
+            "note": "Fictional process lead accepted stop authority, weekly review time and deputy cover."
+          },
+          "human_oversight": {
+            "status": "yes",
+            "reference": "Invented LQ-06",
+            "note": "Fictional timed exercise kept source comparison and second-person release checks effective."
+          },
+          "data_approval": {
+            "status": "yes",
+            "reference": "Invented LQ-07",
+            "note": "Fictional tool steward confirmed invented records and this purpose are permitted in the sandbox."
+          },
+          "rollback": {
+            "status": "yes",
+            "reference": "Invented LQ-08",
+            "note": "Fictional recovery exercise stopped output use, restored the manual process and reconciled pending items."
+          },
+          "user_training": {
+            "status": "yes",
+            "reference": "Invented LQ-09",
+            "note": "Fictional reviewers completed practice and accepted a supported rota with time to check."
+          },
+          "monitoring": {
+            "status": "yes",
+            "reference": "Invented LQ-10",
+            "note": "Fictional response log assigns alerts, review dates and retesting after model or workflow changes."
+          }
+        }
+      }
+    },
+    {
+      "id": "SQ22",
+      "title": "Null note is not text",
+      "kind": "unexpected",
+      "payload": {
+        "schema_version": 2,
+        "methodology_version": "2.0",
+        "pilot": "Fictional Larch Quay internal note trial SQ22",
+        "fictional": true,
+        "details": {
+          "process": "Drafting internal notes from invented queue items",
+          "outcome": "Reduce accepted handling effort without severe mistakes",
+          "date": "2026-11-06",
+          "reference": "Fictional sprint log LQ"
+        },
+        "scope": {
+          "activity": "bounded_internal_pilot",
+          "data": "synthetic_public",
+          "external_effects": "no",
+          "people_impact": "no",
+          "proposed_scale": "Three reviewers, invented notes only",
+          "current_version": "Draft workflow C / model M"
+        },
+        "material_issue": {
+          "status": "none_identified",
+          "summary": "",
+          "owner": "",
+          "action": "unknown",
+          "next_step": ""
+        },
+        "evidence": {
+          "business_outcome": {
+            "status": "yes",
+            "reference": "Invented LQ-01",
+            "note": "Fictional trial: accepted summaries took 18 minutes versus 24 including checking; operating cost accepted."
+          },
+          "baseline": {
+            "status": "yes",
+            "reference": "Invented LQ-02",
+            "note": "Fictional comparison used the same invented queue and reviewers on both routes, with ordering rotated."
+          },
+          "representative_test": {
+            "status": "yes",
+            "reference": "Invented LQ-03",
+            "note": "Fictional test includes mixed routine and exception cases on draft workflow C and model M."
+          },
+          "quality_review": {
+            "status": "yes",
+            "reference": "Invented LQ-04",
+            "note": "Fictional reviewers found no severity-one mistakes in the declared sample and accepted the remaining trade-offs."
+          },
+          "workflow_owner": {
+            "status": "yes",
+            "reference": "Invented LQ-05",
+            "note": "Fictional process lead accepted stop authority, weekly review time and deputy cover."
+          },
+          "human_oversight": {
+            "status": "yes",
+            "reference": "Invented LQ-06",
+            "note": "Fictional timed exercise kept source comparison and second-person release checks effective."
+          },
+          "data_approval": {
+            "status": "yes",
+            "reference": "Invented LQ-07",
+            "note": "Fictional tool steward confirmed invented records and this purpose are permitted in the sandbox."
+          },
+          "rollback": {
+            "status": "yes",
+            "reference": "Invented LQ-08",
+            "note": "Fictional recovery exercise stopped output use, restored the manual process and reconciled pending items."
+          },
+          "user_training": {
+            "status": "yes",
+            "reference": "Invented LQ-09",
+            "note": "Fictional reviewers completed practice and accepted a supported rota with time to check."
+          },
+          "monitoring": {
+            "status": "yes",
+            "reference": "Invented LQ-10",
+            "note": null
+          }
+        }
+      }
+    },
+    {
+      "id": "SQ23",
+      "title": "Supported Unicode text remains exact",
+      "kind": "unexpected",
+      "payload": {
+        "schema_version": 2,
+        "methodology_version": "2.0",
+        "pilot": "Fictional Larch Quay internal note trial SQ23",
+        "fictional": true,
+        "details": {
+          "process": "Drafting internal notes from invented queue items",
+          "outcome": "Reduce accepted handling effort without severe mistakes",
+          "date": "2026-11-06",
+          "reference": "Fictional sprint log LQ"
+        },
+        "scope": {
+          "activity": "bounded_internal_pilot",
+          "data": "synthetic_public",
+          "external_effects": "no",
+          "people_impact": "no",
+          "proposed_scale": "Three reviewers, invented notes only",
+          "current_version": "Draft workflow C / model M"
+        },
+        "material_issue": {
+          "status": "none_identified",
+          "summary": "",
+          "owner": "",
+          "action": "unknown",
+          "next_step": ""
+        },
+        "evidence": {
+          "business_outcome": {
+            "status": "yes",
+            "reference": "Invented LQ-01",
+            "note": "Fictional trial: accepted summaries took 18 minutes versus 24 including checking; operating cost accepted."
+          },
+          "baseline": {
+            "status": "yes",
+            "reference": "Invented LQ-02",
+            "note": "Fictional caf\u00e9, \u0395\u03bb\u03bb\u03b7\u03bd\u03b9\u03ba\u03ac and \u041a\u0438\u0440\u0438\u043b\u043b\u0438\u0446\u0430; line\twith tab."
+          },
+          "representative_test": {
+            "status": "yes",
+            "reference": "Invented LQ-03",
+            "note": "Fictional test includes mixed routine and exception cases on draft workflow C and model M."
+          },
+          "quality_review": {
+            "status": "yes",
+            "reference": "Invented LQ-04",
+            "note": "Fictional reviewers found no severity-one mistakes in the declared sample and accepted the remaining trade-offs."
+          },
+          "workflow_owner": {
+            "status": "yes",
+            "reference": "Invented LQ-05",
+            "note": "Fictional process lead accepted stop authority, weekly review time and deputy cover."
+          },
+          "human_oversight": {
+            "status": "yes",
+            "reference": "Invented LQ-06",
+            "note": "Fictional timed exercise kept source comparison and second-person release checks effective."
+          },
+          "data_approval": {
+            "status": "yes",
+            "reference": "Invented LQ-07",
+            "note": "Fictional tool steward confirmed invented records and this purpose are permitted in the sandbox."
+          },
+          "rollback": {
+            "status": "yes",
+            "reference": "Invented LQ-08",
+            "note": "Fictional recovery exercise stopped output use, restored the manual process and reconciled pending items."
+          },
+          "user_training": {
+            "status": "yes",
+            "reference": "Invented LQ-09",
+            "note": "Fictional reviewers completed practice and accepted a supported rota with time to check."
+          },
+          "monitoring": {
+            "status": "yes",
+            "reference": "Invented LQ-10",
+            "note": "Fictional response log assigns alerts, review dates and retesting after model or workflow changes."
+          }
+        }
+      }
+    },
+    {
+      "id": "SQ24",
+      "title": "A long reference must wrap in the PDF",
+      "kind": "unexpected",
+      "payload": {
+        "schema_version": 2,
+        "methodology_version": "2.0",
+        "pilot": "Fictional Larch Quay internal note trial SQ24",
+        "fictional": true,
+        "details": {
+          "process": "Drafting internal notes from invented queue items",
+          "outcome": "Reduce accepted handling effort without severe mistakes",
+          "date": "2026-11-06",
+          "reference": "Fictional sprint log LQ"
+        },
+        "scope": {
+          "activity": "bounded_internal_pilot",
+          "data": "synthetic_public",
+          "external_effects": "no",
+          "people_impact": "no",
+          "proposed_scale": "Three reviewers, invented notes only",
+          "current_version": "Draft workflow C / model M"
+        },
+        "material_issue": {
+          "status": "none_identified",
+          "summary": "",
+          "owner": "",
+          "action": "unknown",
+          "next_step": ""
+        },
+        "evidence": {
+          "business_outcome": {
+            "status": "yes",
+            "reference": "Invented LQ-01",
+            "note": "Fictional trial: accepted summaries took 18 minutes versus 24 including checking; operating cost accepted."
+          },
+          "baseline": {
+            "status": "yes",
+            "reference": "LQ0123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789",
+            "note": "Fictional comparison used the same invented queue and reviewers on both routes, with ordering rotated."
+          },
+          "representative_test": {
+            "status": "yes",
+            "reference": "Invented LQ-03",
+            "note": "Fictional test includes mixed routine and exception cases on draft workflow C and model M."
+          },
+          "quality_review": {
+            "status": "yes",
+            "reference": "Invented LQ-04",
+            "note": "Fictional reviewers found no severity-one mistakes in the declared sample and accepted the remaining trade-offs."
+          },
+          "workflow_owner": {
+            "status": "yes",
+            "reference": "Invented LQ-05",
+            "note": "Fictional process lead accepted stop authority, weekly review time and deputy cover."
+          },
+          "human_oversight": {
+            "status": "yes",
+            "reference": "Invented LQ-06",
+            "note": "Fictional timed exercise kept source comparison and second-person release checks effective."
+          },
+          "data_approval": {
+            "status": "yes",
+            "reference": "Invented LQ-07",
+            "note": "Fictional tool steward confirmed invented records and this purpose are permitted in the sandbox."
+          },
+          "rollback": {
+            "status": "yes",
+            "reference": "Invented LQ-08",
+            "note": "Fictional recovery exercise stopped output use, restored the manual process and reconciled pending items."
+          },
+          "user_training": {
+            "status": "yes",
+            "reference": "Invented LQ-09",
+            "note": "Fictional reviewers completed practice and accepted a supported rota with time to check."
+          },
+          "monitoring": {
+            "status": "yes",
+            "reference": "Invented LQ-10",
+            "note": "Fictional response log assigns alerts, review dates and retesting after model or workflow changes."
+          }
+        }
+      }
+    }
+  ]
+}
