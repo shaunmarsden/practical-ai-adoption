@@ -8,7 +8,8 @@
     "test:compare": "node tools/pilot-readiness/v2/compare.mjs",
     "test:pdf": "python3 tools/pilot-readiness/v2/tests/check_pdfs.py",
     "test:sprint": "node tools/pilot-readiness/sprint-2026-11/run.mjs",
-    "test:sprint:browser": "node tools/pilot-readiness/sprint-2026-11/browser.mjs"
+    "test:sprint:browser": "node tools/pilot-readiness/sprint-2026-11/browser.mjs",
+    "test:workbench": "node tools/workbench/browser-test.mjs"
   },
   "devDependencies": {
     "playwright": "1.62.1"
