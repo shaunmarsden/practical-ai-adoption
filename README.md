@@ -1,4 +1,5 @@
 # Practical AI Adoption
+For a team work question, [open the AI Adoption Workbench](https://shaunmarsden.github.io/practical-ai-adoption/workbench/). It routes through existing guides, links separately to V2 and exports a caveated text record locally. Notes stay in page memory until you export; reload clears them. It is a planning aid, not a new assessment or approval. [Scope, tests and limitations](tools/workbench/README.md).
 
 Plain-English guides for using AI well at work, based on evidence. You don't need a technical background.
 
