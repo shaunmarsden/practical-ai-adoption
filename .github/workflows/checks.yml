@@ -53,6 +53,7 @@ jobs:
             sleep 1
           done
           npm run test:browser
+          npm run test:workbench
           npm run test:sprint
           npm run test:sprint:browser
 
