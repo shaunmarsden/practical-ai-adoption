@@ -1,0 +1,11 @@
+Independent interface expectations, frozen before running browser challenges.
+Reviewer: fresh AI reviewer. This is an AI interface review, not human usability validation.
+Scope: frozen workbench only; initial sources AGENTS.md and the four workbench files.
+
+Fictional case A: Moss Lantern Archive wants to prepare public exhibition label drafts from invented catalogue entries. No actual V2 review and no human decision have happened. The user advances across every step and exports blank notes. Expected safe interpretation: merely navigating or downloading does not establish completion, readiness or approval. Defaults and export must retain unknown/not reviewed/no decision and prominent caveats.
+
+Fictional case B: Wren Pebble Studio has an invented offline draft exercise. Two outputs contain invented dates. Permission for any operational use remains unknown; the fictional activity has no real-person or external effects. A user nevertheless manually chooses COMPLETE RECORD - HUMAN DECISION REQUIRED and Continue within an existing authorised boundary, leaves authority/date/reference/rationale empty, and records those adverse facts. Expected safe interpretation: the notebook can copy self-reported choices, but the screen and exported record must not present them as checked approval. Contradictions and missing authority should remain visible. An unvalidated record may be exportable; this alone is not a defect. Assess how readily caveats and problems accompany positive sounding selections.
+
+Fictional case C: On a 320 pixel wide screen, review the same manually selected V2 outcome and decision. Expected safe interpretation: complete selected wording is readable outside any cropped native select; especially HUMAN DECISION REQUIRED and authorised-boundary wording. No completion badge or terminal success statement should replace caveats. Confirm a missing optional field cannot silently gain a positive default.
+
+Assess observable interface behaviour separately from any hypothesis about how a person might interpret it. Do not claim observed human confusion. Preserve these expectations unchanged after execution.

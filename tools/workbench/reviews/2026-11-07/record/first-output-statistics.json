@@ -1,0 +1,30 @@
+[
+  {
+    "case": "c1-empty",
+    "bytes": 4174,
+    "physicalNewlines": 133,
+    "literalBackslashN": 0,
+    "openingBytes": "AI Adoption Workbench decision record\nRecord format: 1\nExported: 2026-11-07T00:00:00.000Z\n\nPlanning and self-reported decision record only. Not a vali"
+  },
+  {
+    "case": "c2-manual-complete",
+    "bytes": 4302,
+    "physicalNewlines": 133,
+    "literalBackslashN": 0,
+    "openingBytes": "AI Adoption Workbench decision record\nRecord format: 1\nExported: 2026-11-07T00:00:00.000Z\n\nPlanning and self-reported decision record only. Not a vali"
+  },
+  {
+    "case": "c3-fictional-overclaim",
+    "bytes": 5363,
+    "physicalNewlines": 133,
+    "literalBackslashN": 0,
+    "openingBytes": "AI Adoption Workbench decision record\nRecord format: 1\nExported: 2026-11-07T00:00:00.000Z\n\nPlanning and self-reported decision record only. Not a vali"
+  },
+  {
+    "case": "c4-withhold-conflict",
+    "bytes": 4398,
+    "physicalNewlines": 133,
+    "literalBackslashN": 0,
+    "openingBytes": "AI Adoption Workbench decision record\nRecord format: 1\nExported: 2026-11-07T00:00:00.000Z\n\nPlanning and self-reported decision record only. Not a vali"
+  }
+]

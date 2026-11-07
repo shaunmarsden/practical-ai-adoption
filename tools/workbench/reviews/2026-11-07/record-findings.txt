@@ -1,0 +1,53 @@
+Fresh AI review of workbench records
+Commit identified by review brief: e78ed2ff9b08a9982ca07306f4f36ef572c7cb8c
+Review source: frozen baseline/AGENTS.md and baseline/docs/workbench only.
+Reviewer did not read prior tests, prior reviews, facilitator keys, project README, git history, another reviewer's findings or the implementation conversation.
+This is a separate AI context. It is not third-party human validation, evidence of real people's understanding or workplace evidence.
+
+RESULT
+No actionable defect that makes the product confer approval was established in these four challenges. Confidence: high for the observed record content and browser-export equivalence; limited for how a real recipient might interpret it. This does not establish that nobody could mistake a record for approval.
+
+Frozen expectations and first evidence
+- record-expectations.txt was written before challenge execution.
+- record/challenges.mjs is the generator; record/inputs.json contains the exact inputs.
+- record/c1-empty.txt through record/c4-withhold-conflict.txt are unchanged first recordText outputs.
+- record/first-output-statistics.json records first output size and line structure. All four records contain 133 physical newline characters, with no literal backslash-n substitutions.
+- record/browser-export.mjs performs the supplementary browser check using C2.
+- The first browser launch failed before opening a page because macOS denied Chromium bootstrap_check_in (1100). Its exact salient error and initial failure state are preserved in record/browser-first-launch-failure.txt; the full first tool output remains in the review chat. This is not a product failure.
+- A reviewed escalation reran the local check successfully. record/browser-second-attempt.log and record/browser-first-result.json preserve this outcome. The first actual browser preview and download are preserved in record/c2-browser-first-preview.txt and record/c2-browser-first-download.txt.
+- The downloaded C2 file matches frozen recordText output byte for byte when using its actual export timestamp. The UI says a download was requested, not that review or approval was completed.
+
+C1: Empty notebook
+Reproduction: run node test-results/approval-review/record/challenges.mjs and inspect c1-empty.txt (do not rerun over first evidence when reproducing; copy the script and change output paths).
+Observed: opening caveat says 'Planning and self-reported decision record only' and 'Not a validated assessment, independent verification or approval to deploy'. Header says V2 'Not reviewed' and human decision 'No human decision recorded'. Actual permission, decision-maker authority and date all say 'Not recorded'.
+Judgement: expected safe reading supported. The word 'record' does not cause the product to fill a decision or imply review completion. No fix justified.
+
+C2: Manual complete V2 and positive continuation, no authority
+Reproduction in UI: leave all defaults, enter work 'FICTIONAL: museum catalogue descriptions', select V2 'COMPLETE RECORD - HUMAN DECISION REQUIRED', select human decision 'Continue within an existing authorised boundary', leave permission, V2 reference, decision owner and date blank, export.
+Observed: both choices appear in the top review section explicitly as self-reported. The same opening caveat remains above them. Immediately below them the record says notes are copied literally and not checked for truth, consistency or sufficient authority; it is not a V2 report. Blank authority, permission and date remain 'Not recorded'. The browser download reproduces this exactly.
+Evidence: record/c2-manual-complete.txt; record/c2-browser-first-download.txt. Frozen content.mjs lines 75 and 82-87; app.mjs export handler.
+Judgement: manual selection is possible, as the stated notebook scope allows. It is not evidence that V2 ran, and the export does not say it ran. Blocking export would interfere with retaining incomplete notes and is not justified by this test. No required fix.
+
+C3: Completed-looking fictional record, unsupported savings and unauthorised sending
+Reproduction: c3-fictional-overclaim inputs in inputs.json; every field is filled, evidence basis is Fictional exercise, actual permission limits activity to invented-ticket practice, next action requests real customer sending and claims approval follows from the record. Forecast salary savings are unsupported.
+Observed: the top review section retains 'No real observations; customer sending not permitted'. The evidence basis remains Fictional exercise. Actual permission and decision-maker authority both exclude real sending. The financial claim remains explicitly an author forecast with no observed savings. The contradictory next action is copied verbatim under the author's notes. It does not replace the permission or decision conditions.
+Evidence: record/c3-fictional-overclaim.txt; frozen content.mjs lines 45, 75 and 83-87.
+Judgement: filling every field does not trigger a product approval status, evidence verification or benefit calculation. The author claim does not become product endorsement merely by being retained in a clearly caveated notebook. A free-text consistency checker is not justified by this observation. No required fix.
+
+C4: Withholding plus optimistic continuation and expansion instruction
+Reproduction: c4-withhold-conflict in inputs.json; V2 WITHHOLD EXPANSION, issue says unresolved copyright scope and no expansion authority, human decision says continue within existing boundary, next action says expand to all branches.
+Observed: the unresolved issue and WITHHOLD EXPANSION appear before the positive human decision in REVIEW THESE FIRST. The full record also retains the permission restriction and absence of expansion authority. No computed status overrides withholding.
+Evidence: record/c4-withhold-conflict.txt; frozen content.mjs lines 83-87.
+Judgement: explicit adverse evidence survives the optimistic human note. Expected safe reading supported. No required fix.
+
+Residual hypothesis, not an actionable finding
+The top review section repeats the manually entered V2 and human decisions, but does not repeat the evidence basis, actual permission, decision-maker authority or date next to them. A recipient who skims only the first screen of a forwarded C2 record could notice the paired positive-looking choices and miss the missing authority further down. The path is realistic as a possible reading pattern, but these tests did not observe a person doing this. The prominent opening warning, repeated self-reported labels and immediate warning about insufficient authority directly counter that reading. Severity: unestablished; at most a candidate minor presentation risk on current evidence. Confidence: low that it causes actual misunderstanding.
+Smallest change if later observed: move or repeat the existing evidence basis and permission/decision authority fields into REVIEW THESE FIRST, retaining 'Not recorded' and the user's exact restrictions. Do not invent an approval gate, auto-classify safety or add a new assessment. No such change is required by the present results.
+
+Boundaries and remaining unknowns
+- No actual people, customer data, operational actions or external messages were used.
+- No production files were edited and no commit or push was made.
+- No live V2 assessment was run; this review examined manual recording and wording only.
+- Browser download equivalence was checked for C2; the other three were generated directly by the frozen callable recordText.
+- No claim is made that an export proves genuine authority. An author can enter false or contradictory notes, and the product explicitly says it does not verify them.
+- Real comprehension, skim reading, organisational forwarding practices, source-reference checking and genuine scope authority remain untested.
