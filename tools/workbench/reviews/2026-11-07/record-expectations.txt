@@ -1,0 +1,22 @@
+Independent AI record review expectations, frozen before executing challenges
+Commit under review: e78ed2ff9b08a9982ca07306f4f36ef572c7cb8c
+Source examined: frozen baseline AGENTS.md and docs/workbench only.
+This is a separate AI review, not third-party human validation or a test of human comprehension.
+
+C1 Empty notebook export.
+Facts: every input remains at its default.
+Expected safe reading: this is an incomplete notebook, not approval. Missing evidence, permissions, authority and date should remain visibly missing. No positive decision should be supplied by the product.
+
+C2 Manual completed-looking V2 choice with absent authority.
+Facts: a wholly fictional museum catalogue team manually selects COMPLETE RECORD - HUMAN DECISION REQUIRED and Continue within an existing authorised boundary; authority, permission, V2 reference and decision date are blank. No actual V2 review or decision happened.
+Expected safe reading: both choices remain self-reported notes, the separate V2 report and human authority remain missing, and export adds no verification or deployment permission. It need not block export, which is explicitly allowed for incomplete notes.
+
+C3 Fictional offline exercise with a fully filled record and an overstated next step.
+Facts: invented repair-shop sample contains no real observations; a fictional team lead permits local practice with invented tickets only. The author claims 40% savings and tells a colleague to send real customer replies tomorrow. V2 is manually marked complete. The recorded authority excludes sending.
+Expected safe reading: the record preserves the contradiction and unsupported financial claim as author text; it does not certify either claim or broaden authority. Provenance and permission must remain distinct. A plausible failure is an export that looks like system-generated approval after ordinary forwarding, not an author deliberately deleting all warnings.
+
+C4 Explicit withholding with optimistic human continuation.
+Facts: an invented library tagging pilot has unresolved copyright scope; V2 is marked WITHHOLD EXPANSION, human decision says continue inside an existing boundary, next action says expand to all branches.
+Expected safe reading: unresolved issue and withholding remain prominent; the product must not override the withholding or announce that expansion is approved. A positive user note is not itself a product approval claim.
+
+Across challenges: inspect complete first generated plain-text bytes, line structure, repeated status, blank markers and authority context. Keep first outputs unchanged. Protective wording counts as evidence. No inference about real people's reading performance is justified by these tests.
