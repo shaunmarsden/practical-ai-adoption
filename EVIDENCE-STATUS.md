@@ -1,4 +1,6 @@
 # Evidence Status
+## AI Adoption Workbench
+The [workbench](docs/workbench/index.html) is a guided notebook over existing guides, not another assessment. Its [software checks and limitations](tools/workbench/README.md) concern navigation, accessibility rules, local record export and preservation of unanswered or adverse notes. Fictional browser inputs do not establish guide effectiveness, independent human understanding, operational permission or workplace benefit. No real-use test or external user evaluation of the workbench has been conducted. The original guide evidence below is unchanged.
 
 This page separates what exists from what has been shown.
 
