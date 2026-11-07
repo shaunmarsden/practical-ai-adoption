@@ -1,0 +1,102 @@
+{
+  "authored_before_first_execution": true,
+  "limits": "Assistant-authored expectations, not blinded or independent human judgement. SQ16 predicts a remaining information limit; it is not a safety success. JSON round trips must preserve every string exactly.",
+  "expected": [
+    {
+      "id": "SQ01",
+      "expected": "complete"
+    },
+    {
+      "id": "SQ02",
+      "expected": "further"
+    },
+    {
+      "id": "SQ03",
+      "expected": "hold"
+    },
+    {
+      "id": "SQ04",
+      "expected": "further"
+    },
+    {
+      "id": "SQ05",
+      "expected": "further"
+    },
+    {
+      "id": "SQ06",
+      "expected": "hold"
+    },
+    {
+      "id": "SQ07",
+      "expected": "hold"
+    },
+    {
+      "id": "SQ08",
+      "expected": "hold"
+    },
+    {
+      "id": "SQ09",
+      "expected": "complete"
+    },
+    {
+      "id": "SQ10",
+      "expected": "offline"
+    },
+    {
+      "id": "SQ11",
+      "expected": "further"
+    },
+    {
+      "id": "SQ12",
+      "expected": "further"
+    },
+    {
+      "id": "SQ13",
+      "expected": "offline"
+    },
+    {
+      "id": "SQ14",
+      "expected": "further"
+    },
+    {
+      "id": "SQ15",
+      "expected": "further"
+    },
+    {
+      "id": "SQ16",
+      "expected": "complete"
+    },
+    {
+      "id": "SQ17",
+      "expected": "invalid"
+    },
+    {
+      "id": "SQ18",
+      "expected": "invalid"
+    },
+    {
+      "id": "SQ19",
+      "expected": "complete"
+    },
+    {
+      "id": "SQ20",
+      "expected": "complete"
+    },
+    {
+      "id": "SQ21",
+      "expected": "invalid"
+    },
+    {
+      "id": "SQ22",
+      "expected": "invalid"
+    },
+    {
+      "id": "SQ23",
+      "expected": "complete"
+    },
+    {
+      "id": "SQ24",
+      "expected": "complete"
+    }
+  ]
+}
