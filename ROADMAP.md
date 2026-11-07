@@ -14,6 +14,10 @@ Before describing this as a validated readiness method:
 - Observe whether a non-technical user understands the three operational decisions, particularly that a complete record is **not approval**.
 - Only consider further criteria or automation if those reviews reveal a material weakness. Do not add a new framework or claim real-world outcome evidence.
 
+## Guided workbench
+
+The [AI Adoption Workbench](docs/workbench/index.html) provides a browser notebook through existing guidance, with a separate V2 link and local text export. It adds no readiness rules. Automated software checks do not fill the independent-review or real-use gaps below. Observe a non-technical reader using it before claiming that it makes the journey easier.
+
 ## Now
 
 The original scored-guide tests identified two evidence gaps, and the seven more recent guides have not been scored. The repository has expanded since that first roadmap was written.

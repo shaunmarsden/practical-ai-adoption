@@ -10,6 +10,8 @@ It starts with one habit: give AI a better brief, then check what comes back. Th
 
 No coding or installation needed.
 
+For a team work question, [open the AI Adoption Workbench](https://shaunmarsden.github.io/practical-ai-adoption/workbench/). It routes through existing guides, links separately to V2 and exports a caveated text record locally. Notes stay in page memory until you export; reload clears them. It is a planning aid, not a new assessment or approval. [Scope, tests and limitations](tools/workbench/README.md).
+
 ## Follow a practical adoption path
 
 If you're moving from a first experiment towards wider workplace use, follow the question that matches where you are. This is a reading route, **not** a fixed six-stage methodology or permission to deploy. Safety, data approval and human accountability apply from the beginning.

@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Work through an AI adoption question using existing guides. Keep a local, caveated record for human review.">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; connect-src 'none'; img-src 'self'; object-src 'none'; base-uri 'none'; form-action 'none'">
+  <title>AI Adoption Workbench | Practical AI Adoption</title>
+  <link rel="icon" href="../pilot-readiness/icon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="style.css">
+  <script type="module" src="app.mjs"></script>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to workbench</a>
+  <header><a href="../">Practical AI Adoption</a><span>Evidence before expansion</span></header>
+  <main id="main" tabindex="-1">
+    <p class="eyebrow">A guided notebook for one work question</p>
+    <h1>AI Adoption Workbench</h1>
+    <p class="lead">Describe one job, compare ways to improve it and keep the evidence behind a human decision.</p>
+    <aside class="notice" aria-label="Scope and privacy">
+      <p><strong>Start by describing the work.</strong> This is a route through existing guidance, not a new assessment or a fixed method. Skip steps that do not apply and record why. Safety and permission apply throughout.</p>
+      <p>Use fictional or non-sensitive notes and safe evidence references. Do not enter employer, customer, personal or confidential details. Notes stay in this open page and are lost on reload or closing. Export if you need to keep them. There is no login, telemetry, backend or AI API.</p>
+      <p>Guide links open GitHub; V2 opens a separate tab. No notes are passed to either. Downloads may be retained or synced by your device. Review them before sharing.</p>
+    </aside>
+    <noscript><p>This notebook needs JavaScript for navigation and export. You can still use the <a href="https://github.com/shaunmarsden/practical-ai-adoption#follow-a-practical-adoption-path">existing guide route</a> without it.</p></noscript>
+    <div id="workbench" hidden>
+      <nav aria-label="Workbench steps"><ol id="steps"></ol></nav>
+      <form id="notes" autocomplete="off">
+        <div id="panels"></div>
+        <div class="actions"><button type="button" id="back-step">Back</button><button type="button" id="next-step">Next</button></div>
+      </form>
+      <section aria-labelledby="record-heading" class="record">
+        <h2 id="record-heading">Your decision record</h2>
+        <p id="caveat"></p>
+        <p>No fields are required for export. Blank notes say "Not recorded". Exporting does not complete a review.</p>
+        <div class="actions"><button type="button" id="review">Review all notes</button><button type="button" id="export">Export text record</button><button type="button" id="reset">Clear notes</button></div>
+        <p id="status" role="status"></p>
+        <pre id="summary" tabindex="0" aria-label="Decision record preview" hidden></pre>
+      </section>
+    </div>
+    <footer><a href="https://github.com/shaunmarsden/practical-ai-adoption/blob/main/EVIDENCE-STATUS.md">Evidence status and limits</a><p>Software tests and fictional exercises do not establish workplace value. Independent user understanding and real-use evidence remain unestablished for this workbench.</p></footer>
+  </main>
+</body>
+</html>
