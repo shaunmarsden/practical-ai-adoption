@@ -1,0 +1,3 @@
+
+# Preserve intentional trailing spaces in the original fictional export evidence.
+tools/workbench/drafts/review-2026-11-07/privacy/p1-record.txt -whitespace

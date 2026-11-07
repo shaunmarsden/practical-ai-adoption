@@ -1,0 +1,16 @@
+Preservation reviewer report, 7 November 2026
+Implementation checkpoint supplied: 2a6350dfe7d7fda4a2d8d91f091e806d02828d7f.
+Frozen SHA256SUMS integrity: every frozen file still matches.
+
+Result: 41 checks passed: 17 parser/serialiser checks and 24 browser checks.
+No product defect found in these challenges.
+
+The browser saved all 28 exact imported note strings across save, reload, reopen and save. CRLF and bare CR survived, including after an unrelated owner edit. Empty permission/date/decision owner remained empty. The 12000 UTF-16 code unit boundary and 4000000-byte boundary passed; oversized notes/files failed atomically. Dates 0001-01-01 and 2400-02-29 survived; invalid leap date and zero year were rejected. Duplicate escaped keys, missing keys, booleans, unsupported metadata and malformed JSON were rejected without changing notes, active step or existing preview. Cancelled replacement, no-file selection, rejected read and download failure preserved state. A newer edit during delayed reading was preserved. Repeated selections and BOM import worked.
+
+First execution: all 17 module checks passed; browser launch could not start because the default bundled browser was missing. first-results.json retains this harness error.
+Second execution: the same module checks passed; installed Google Chrome aborted under the sandbox. browser-retry-results.json retains that harness error.
+Third execution: installed Google Chrome was run with reviewed escalation and all 41 checks passed. browser-unsandboxed-results.json is the first completed browser execution and retains every case outcome.
+
+Adapters: native file choosing uses Playwright setInputFiles. Cancel/no-selection uses an empty file list and does not test the native OS file-dialog cancel button. Read delay/rejection and download failure replace only browser API methods in the test page. No fixture keys or expected observations were passed to application logic. The app received ordinary input files and user-like form actions. No frozen facts or expected outcomes changed. runner.mjs, browser-retry-runner.mjs and browser-unsandboxed-runner.mjs preserve the harness route changes.
+
+Limits: headless local Chrome only. This is an independently prepared fictional AI review context in the same environment, not external or human validation. The runner verifies note strings and selected state invariants, not whether a person understands the messages or whether the notes are true. No workplace value is established. V2 execution/authority absence was supported by source inspection and caveated success wording, not a separate V2 integration instrument.

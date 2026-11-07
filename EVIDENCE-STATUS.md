@@ -12,6 +12,8 @@ On 7 November 2026, [two fresh AI reviewer contexts examined the approval bounda
 
 This is **separate-context AI review in the same development environment**, not independent external human validation, observed user understanding, real-use evidence or proof that nobody could mistake a record for approval. The [original findings, expectations, first outputs and environment failures](tools/workbench/reviews/2026-11-07/README.md#retained-evidence) are retained. No rate of task completion or misunderstanding was measured, and no general safety claim follows. These limits remain evidence gaps, not a requirement to recruit testers before further development.
 
+The [local Save draft and Reopen draft implementation](tools/workbench/drafts/README.md) has [separately prepared AI challenges frozen before implementation](tools/workbench/drafts/review-2026-11-07/README.md). The preservation reviewer passed 17 module and 24 browser checks; the privacy reviewer passed five scenarios with 39 assertions. Exact strings and blanks survived; rejected inputs, cancelled replacement and delayed-read edits preserved current notes. Imported decisions remained unverified self-reports. Initial browser-launch failures and first completed outputs are retained. These are bounded software observations in separate AI contexts, not external human validation, observed understanding or operational approval. Passing a draft PR's checks does not establish deployment.
+
 ## How to Read the Matrix
 
 - The scenario column links the worked example. It's a before-and-after on made-up information: an ordinary first attempt, and one written using the guide. Every company and person in them is invented.

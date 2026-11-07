@@ -1,0 +1,20 @@
+Pre-implementation feature contract, 7 November 2026
+Baseline: 8a2709598985bbd87b4c5a00d95bc2a8cb2d2e2f
+No implementation code has been written at the time this contract is issued.
+
+Manual local Save draft (JSON) and Reopen draft. Existing text export remains.
+No automatic saving, persistent browser storage, backend, telemetry, paid API or external actions.
+All 28 existing notes and exact unedited strings survive save -> reload -> reopen -> save; blank decision/date/permission stays blank. Imported values remain unverified self-reports. Neither opening nor completing a draft runs V2 or grants authority.
+
+Version 1 JSON envelope (exact top-level keys):
+format: "practical-ai-adoption-workbench-draft"
+schema_version: 1
+saved_at: a canonical UTC ISO timestamp YYYY-MM-DDTHH:mm:ss.sssZ
+notice: "User-entered notes only. Saving or reopening this draft does not verify evidence, run V2 or grant approval."
+notes: an object with exactly all current field IDs from content.mjs, each a string.
+Select values must be one of the existing select choices. Date is blank or a real YYYY-MM-DD calendar date, year 0001-9999. Text notes permit up to 12,000 UTF-16 code units, without trimming or newline normalisation. Whole UTF-8 file limit is 4,000,000 bytes. Unknown/missing fields, wrong format/version, non-string notes, duplicate keys and malformed/oversized files must be rejected, not silently repaired. UTF-8 BOM may be accepted without changing notes.
+
+All app-generated valid drafts must be reopenable. The notice is a fixed format-version literal; wording changes require explicit format consideration. The importer never renders imported metadata as instructions or verified claims.
+Validation is atomic. Bad files, read failure, cancelled file choice and cancelled replacement leave the current notes, active step and existing preview unchanged. A valid draft requires confirmation before replacing any non-default current notes. Loading must not silently overwrite notes edited while a file read is pending. Saving/reopening uses only explicit local file actions. Save/reopen success/error messages must not imply approval or verified truth.
+
+Reviewer protocol: independently freeze fictional challenge facts and expected observations before implementation begins. Do not read implementation changes or old review/test keys. Write the challenge bundle and its SHA-256 manifest in your assigned ignored folder; send only frozen filenames and hashes, not case content, until the coordinating agent freezes an implementation checkpoint. Keep first execution results and any failures. Wire-format adapters may be added later without changing original facts or expectations, with disclosed mappings. These are separate AI contexts, not human validation.

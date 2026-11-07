@@ -1,0 +1,4 @@
+Initial browser launch before any feature execution failed under the default filesystem sandbox.
+Chromium error: bootstrap_check_in org.chromium.Chromium.MachPortRendezvousServer.65699: Permission denied (1100).
+No case ran in that failed launch. The unchanged runner subsequently ran using reviewed require_escalated local browser execution.
+Original detailed tool output remains in the chat transcript.
