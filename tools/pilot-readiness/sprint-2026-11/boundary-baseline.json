@@ -1,0 +1,7 @@
+{
+  "expected": "A valid record exported by the app can be imported again.",
+  "compactBytes": 999900,
+  "exportedBytes": 1000884,
+  "importMessage": "Import failed; current answers were kept. Choose a JSON record of at most 1 MB.",
+  "confirmationShown": false
+}

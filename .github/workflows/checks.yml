@@ -54,11 +54,14 @@ jobs:
           done
           npm run test:browser
           npm run test:workbench
+          npm run test:sprint
+          npm run test:sprint:browser
 
       - name: Inspect V2 report text and bounds
         run: |
           python3 -m pip install pdfplumber==0.11.9
           npm run test:pdf
+          python3 tools/pilot-readiness/v2/tests/check_pdfs.py test-results/sprint-2026-11
 
       - name: Check V2 scenario comparison
         run: npm run test:compare
