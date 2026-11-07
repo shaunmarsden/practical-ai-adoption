@@ -1,7 +1,10 @@
 import { steps, emptyRecord, recordText, caveat } from './content.mjs';
+import { draftText, parseDraft, MAX_DRAFT_BYTES } from './draft.mjs';
 const byId = id => document.getElementById(id);
 let active = 0;
 const controls = new Map();
+let notes = emptyRecord(), editRevision = 0;
+const displayed = new Map();
 function element(tag, text, parent) {
   const el = document.createElement(tag);
   if (text) el.textContent = text;
@@ -51,10 +54,32 @@ steps.forEach((step, index) => {
     else if (kind === 'date') input.type = 'date';
     else { input.rows = 4; input.maxLength = 12000; }
     controls.set(id, input);
+    displayed.set(id, input.value);
   }
   panels.push(panel);
 });
-function values() { return Object.fromEntries([...controls].map(([id, input]) => [id, input.value])); }
+// Native textareas normalise CRLF/CR. Retain imported strings until their
+// visible control changes, so unrelated edits and resaving cannot lose data.
+function values() {
+  for (const [id, input] of controls) {
+    if (input.value !== displayed.get(id)) {
+      notes[id] = input.value;
+      displayed.set(id, input.value);
+      editRevision++;
+    }
+  }
+  return { ...notes };
+}
+function populate(data) {
+  notes = { ...data };
+  for (const [id, input] of controls) {
+    input.value = notes[id];
+    displayed.set(id, input.value);
+    const selected = byId(`${id}-selection`);
+    if (selected) selected.textContent = `Current selection: ${input.value}`;
+  }
+  editRevision++;
+}
 function show(index, focus = true) {
   active = index;
   panels.forEach((panel, i) => { panel.hidden = i !== active; });
@@ -70,6 +95,7 @@ function refreshSummary() { byId('summary').textContent = recordText(values()); 
 byId('caveat').textContent = caveat;
 byId('notes').addEventListener('submit', event => event.preventDefault());
 byId('notes').addEventListener('input', () => {
+  values();
   byId('status').textContent = '';
   if (!byId('summary').hidden) refreshSummary();
 });
@@ -80,31 +106,71 @@ byId('review').addEventListener('click', () => {
   byId('summary').hidden = false;
   byId('summary').focus();
 });
-byId('export').addEventListener('click', () => {
-  let url;
+function download(text, type, filename) {
+  const url = URL.createObjectURL(new Blob([text], { type }));
   try {
-    url = URL.createObjectURL(new Blob([recordText(values())], { type: 'text/plain;charset=utf-8' }));
     const a = element('a', '', document.body);
     a.href = url;
-    a.download = 'ai-adoption-decision-record.txt';
-    a.click();
-    a.remove();
+    a.download = filename;
+    try { a.click(); } finally { a.remove(); }
+  } finally { setTimeout(() => URL.revokeObjectURL(url), 1000); }
+}
+byId('export').addEventListener('click', () => {
+  try {
+    download(recordText(values()), 'text/plain;charset=utf-8', 'ai-adoption-decision-record.txt');
     byId('status').textContent = 'Text record download requested. Check your downloads before closing this page.';
   } catch {
     refreshSummary();
     byId('summary').hidden = false;
     byId('status').textContent = 'Download could not start. Copy the record preview below to keep your notes.';
-  } finally {
-    if (url) setTimeout(() => URL.revokeObjectURL(url), 1000);
   }
+});
+byId('save-draft').addEventListener('click', () => {
+  try {
+    download(draftText(values()), 'application/json;charset=utf-8', 'ai-adoption-workbench-draft.json');
+    byId('draft-status').textContent = 'Draft download requested. Check your downloads before closing. Saving is not approval.';
+  } catch {
+    byId('draft-status').textContent = 'Draft download could not start. Your notes remain here. Try again or use the text export.';
+  }
+});
+byId('reopen-draft').addEventListener('change', async event => {
+  const picker = event.target;
+  const file = picker.files?.[0];
+  picker.value = '';
+  if (!file) return;
+  values();
+  const revision = editRevision;
+  picker.disabled = true;
+  byId('draft-status').textContent = 'Reading local draft...';
+  try {
+    if (file.size > MAX_DRAFT_BYTES) throw new Error('Choose a file no larger than 4 MB (4,000,000 bytes).');
+    const buffer = await file.arrayBuffer();
+    // Decode strictly: File.text() silently replaces invalid UTF-8 bytes.
+    let text;
+    try { text = new TextDecoder('utf-8', { fatal: true, ignoreBOM: true }).decode(buffer); }
+    catch { throw new Error('The file must contain valid UTF-8 text.'); }
+    const imported = parseDraft(text);
+    values();
+    if (editRevision !== revision) throw new Error('Notes changed while the file was loading. Choose the file again when you are ready.');
+    const current = values(), defaults = emptyRecord();
+    if (Object.keys(defaults).some(id => current[id] !== defaults[id]) &&
+        !window.confirm('Replace all current notes with this local draft? Save your current draft first if you need to keep it. Reopening does not verify evidence or grant approval.')) {
+      byId('draft-status').textContent = 'Reopening cancelled. Your current notes are unchanged.';
+      return;
+    }
+    populate(imported);
+    byId('status').textContent = '';
+    if (!byId('summary').hidden) refreshSummary();
+    byId('draft-status').textContent = 'Draft reopened locally. Notes have not been verified. This does not run V2 or grant approval.';
+    show(0);
+  } catch (error) {
+    byId('draft-status').textContent = `Could not reopen draft. ${error.message} Your current notes are unchanged.`;
+  } finally { picker.disabled = false; }
 });
 byId('reset').addEventListener('click', () => {
   if (!window.confirm('Clear all workbench notes? Export first if you need to keep them. Existing downloads will remain.')) return;
-  for (const [id, value] of Object.entries(emptyRecord())) {
-    controls.get(id).value = value;
-    const selected = byId(`${id}-selection`);
-    if (selected) selected.textContent = `Current selection: ${value}`;
-  }
+  populate(emptyRecord());
+  byId('draft-status').textContent = '';
   byId('summary').textContent = '';
   byId('summary').hidden = true;
   byId('status').textContent = 'Workbench notes cleared. Existing downloads are unchanged.';
