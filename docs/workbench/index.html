@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self'; connect-src 'self'; object-src 'none'; base-uri 'none'; form-action 'none'">
+<title>AI Adoption Workbench | Practical AI Adoption</title>
+<link rel="icon" href="../pilot-readiness/icon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="style.css">
+<script type="module" src="app.mjs"></script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to workbench</a>
+<header><a href="../">Practical AI Adoption</a><span>AI Adoption Workbench / Experimental prototype</span></header>
+<main id="main">
+<section class="intro">
+<p class="eyebrow">A decision record, not an AI recommendation engine</p>
+<h1>Understand the work before choosing AI.</h1>
+<p>Describe the task, consider simpler options, plan a safe trial and record what the evidence supports. This is a structured worksheet, not a validated method or approval process.</p>
+<p class="warning"><strong>Privacy:</strong> Do not enter personal, confidential or employer-restricted information. Answers stay in this page's memory, are not sent to a server and are lost on refresh. Downloads remain on your device.</p>
+</section>
+<nav id="steps" aria-label="Workbench stages"></nav>
+<div class="layout">
+<section class="card" aria-labelledby="stage-title">
+<p id="count" class="eyebrow"></p>
+<h2 id="stage-title" tabindex="-1"></h2>
+<p id="stage-help"></p>
+<form id="stage-form" autocomplete="off"></form>
+<div class="buttons">
+<button id="previous" type="button">Previous</button>
+<button id="next" type="button" class="primary">Next stage</button>
+</div>
+</section>
+<aside class="card">
+<h2>Current record</h2>
+<p id="status" role="status" aria-live="polite"></p>
+<p>No scores are assigned. Blank answers remain visible as gaps.</p>
+<h3>Useful guides</h3>
+<div id="resources"></div>
+</aside>
+</div>
+<section class="card output" aria-labelledby="export-title">
+<h2 id="export-title">Review or export the record</h2>
+<p>This records what you entered, not what anyone has verified. Any proposed next step must be approved by the relevant people.</p>
+<div class="buttons"><button id="review" type="button">View record</button><button id="download" type="button">Download JSON</button><button id="print" type="button">Print / save PDF</button><button id="clear" type="button">Clear all answers</button></div>
+<pre id="record" tabindex="0" hidden></pre>
+<p class="warning">The separate <a href="../pilot-readiness/">Pilot Readiness Assessment V2</a> checks self-reported readiness conditions. It is not automatically completed or approved by this workbench. You must enter and review its evidence separately.</p>
+</section>
+</main>
+<footer>Independent decision aid / experimental / no deployment approval</footer>
+</body>
+</html>
