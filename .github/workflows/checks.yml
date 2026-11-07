@@ -55,6 +55,7 @@ jobs:
           npm run test:browser
           npm run test:sprint
           npm run test:sprint:browser
+          npm run test:workbench
 
       - name: Inspect V2 report text and bounds
         run: |
