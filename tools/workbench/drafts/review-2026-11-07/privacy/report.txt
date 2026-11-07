@@ -1,0 +1,16 @@
+Independent privacy reviewer report
+Implementation checkpoint: 2a6350dfe7d7fda4a2d8d91f091e806d02828d7f
+Frozen fictional cases P1-P5: PASS, 39 assertions passed on first feature execution.
+No feature failure or production repair identified in these bounded checks.
+
+P1: Malicious-looking markup and instruction text remained literal across local save/reload/reopen/save/text export. All 28 notes and blank authority fields survived. No canary request, executed marker or imported DOM elements.
+P2: Malformed JSON, altered approval notice and duplicate work key were rejected atomically. Empty file selection and replacement refusal preserved notes, active step and the exact visible preview.
+P3: Accepted replacement updated all notes, selected-value helper wording and visible preview. Stop or contain and WITHHOLD EXPANSION remained self-reported; exports retained unresolved issues. No horizontal page overflow at 360 px width.
+P4: Injected read failure left state unchanged. A deliberate edit during delayed read caused rejection and retained the edit, active step and preview.
+P5: No automatic downloads; one explicit JSON and one explicit text download. No observed persistence API writes, cookies, external requests or note-bearing requests. Reload restored defaults. Privacy copy describes retention/sync and no automatic saving.
+
+Messages observed include explicit non-approval and non-verification qualifications; replacement confirmation is about notes.
+
+Scope and limits: This is AI/browser evidence, not external human validation, user comprehension evidence or workplace value. Chromium with a 360x780 viewport is not a real mobile handset. Native OS file chooser cancellation was simulated by empty file selection. Read failure and pending-read race were injected by wrapping File.prototype.arrayBuffer. Network observation covers page requests during these actions, not operating-system download sync. Persistent browser APIs were instrumented for Storage.setItem, indexedDB.open, cookie setters and serviceWorker.register; source inspection of the authorised workbench files found no persistence route. Full-page screenshots were retained; the very tall rendered preview prevents useful detail inspection in the scaled image viewer. Device download handling and screen-reader understanding were not tested.
+
+Frozen facts and expectations are unchanged. First execution results, downloads, screenshots and the runner remain separate from the frozen bundle. The initial sandbox launch error is retained separately in launch-failure.txt; it occurred before any case execution.

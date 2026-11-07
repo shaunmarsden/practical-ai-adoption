@@ -10,7 +10,7 @@ It starts with one habit: give AI a better brief, then check what comes back. Th
 
 No coding or installation needed.
 
-For a team work question, [open the AI Adoption Workbench](https://shaunmarsden.github.io/practical-ai-adoption/workbench/). It routes through existing guides, links separately to V2 and exports a caveated text record locally. Notes stay in page memory until you export; reload clears them. It is a planning aid, not a new assessment or approval. [Scope, tests and limitations](tools/workbench/README.md).
+For a team work question, [open the AI Adoption Workbench](https://shaunmarsden.github.io/practical-ai-adoption/workbench/). It routes through existing guides, links separately to V2, saves and reopens local JSON drafts, and exports a caveated text record. There is no autosave; reload clears the page until you manually reopen a saved draft. It is a planning aid, not a new assessment or approval. [Scope, tests and limitations](tools/workbench/README.md).
 
 ## Follow a practical adoption path
 

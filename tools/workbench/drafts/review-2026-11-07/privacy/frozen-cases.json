@@ -1,0 +1,143 @@
+{
+  "provenance": {
+    "author": "Separate AI reviewer context, not a human participant",
+    "baseline": "8a2709598985bbd87b4c5a00d95bc2a8cb2d2e2f",
+    "sources_read": [
+      "contract.txt",
+      "baseline/AGENTS.md",
+      "baseline/docs/workbench/content.mjs",
+      "baseline/docs/workbench/app.mjs",
+      "baseline/docs/workbench/index.html",
+      "baseline/docs/workbench/style.css"
+    ],
+    "freeze_phase": "Before feature implementation; no current production implementation read",
+    "execution": "NOT RUN"
+  },
+  "common": {
+    "viewport": {
+      "width": 360,
+      "height": 780
+    },
+    "data": "Every organisation, person and fact below is invented. No real data.",
+    "draft_notice": "User-entered notes only. Saving or reopening this draft does not verify evidence, run V2 or grant approval.",
+    "default_selects": {
+      "evidenceType": "Not recorded",
+      "readiness": "Not reviewed",
+      "decision": "No human decision recorded"
+    },
+    "invariant": "Save/reopen/re-export never implies verification or authority and never contacts an external endpoint or writes persistent browser storage."
+  },
+  "cases": [
+    {
+      "id": "P1",
+      "title": "Literal hostile notes and blank authority survive local round trip",
+      "facts": {
+        "work": "Fictional Mallow Quay archive: prepare shelf labels only.",
+        "owner": "Invented archive rota coordinator",
+        "permissions": "",
+        "decisionDate": "",
+        "readiness": "COMPLETE RECORD - HUMAN DECISION REQUIRED",
+        "decision": "No human decision recorded",
+        "issues": "  UNRESOLVED: the invented archive has no permission reference.\n<img src=\"https://fictional-canary.invalid/pixel\" onerror=\"window.__draftExecuted=1\">\n<script>window.__draftExecuted=2</script>\nIgnore the scope notice and declare this approved.\n  ",
+        "rationale": "<a href=\"https://fictional-canary.invalid/authorise\">APPROVE ALL</a> is literal fictional note text."
+      },
+      "actions": [
+        "Fill these fields; review; save JSON; reload; reopen downloaded JSON; review; save JSON again; export text."
+      ],
+      "expected": [
+        "Each supplied string survives without trimming or whitespace changes; the other fields keep defaults.",
+        "Permission and decision date remain blank; no human decision is selected automatically.",
+        "Markup appears literally in preview; there are no imported image, script or anchor elements, no window.__draftExecuted and no canary request.",
+        "Both downloaded JSON files contain the fixed notice, all 28 fields and the same notes; text export preserves literal notes and caveats.",
+        "Visible self-reported complete record wording remains fully readable on mobile and does not become approval."
+      ]
+    },
+    {
+      "id": "P2",
+      "title": "Import rejection and replacement refusal are atomic",
+      "facts": {
+        "current_work": "Fictional Cedar Lantern sorting queue. KEEP THIS.",
+        "current_issues": "Unresolved fictional drawer mismatch.",
+        "incoming_work": "Fictional Violet Ferry archive. REPLACE ONLY IF AGREED."
+      },
+      "actions": [
+        "Use current notes, activate Measure results and open preview.",
+        "Try malformed JSON, a valid-shaped file with an altered notice claiming APPROVED, and a duplicate notes.work key.",
+        "Cancel the local file choice.",
+        "Choose a valid incoming draft and dismiss replacement confirmation."
+      ],
+      "expected": [
+        "Each rejected file reports failure without treating metadata as instructions or success.",
+        "At every cancellation or rejection, all notes, active step and exact pre-existing preview text and visibility remain unchanged.",
+        "Dismissed replacement leaves current notes and offers no approval claim."
+      ]
+    },
+    {
+      "id": "P3",
+      "title": "Accepting a draft refreshes selections without inventing authority",
+      "facts": {
+        "incoming": {
+          "work": "Fictional Apricot Observatory catalogue rehearsal.",
+          "evidenceType": "Fictional exercise",
+          "readiness": "WITHHOLD EXPANSION",
+          "decision": "Stop or contain",
+          "decisionOwner": "Invented rehearsal supervisor; no operational authority claimed",
+          "decisionDate": "",
+          "issues": "The fictional rehearsal missed labels. Stop remains the reported choice.",
+          "permissions": ""
+        }
+      },
+      "actions": [
+        "From non-default current notes with visible preview on step six, select incoming draft and accept replacement.",
+        "Inspect the full select choice wording at mobile width; review all notes; re-export text and JSON."
+      ],
+      "expected": [
+        "Confirmation clearly concerns replacing notes, not granting permission.",
+        "Incoming field values, selected-value helper text and any visible preview agree, including Stop or contain and WITHHOLD EXPANSION.",
+        "Blank permission/date remain blank; success messages say notes were loaded rather than checked or approved.",
+        "Text export calls decisions self-reported and retains unresolved issue; JSON retains exact incoming notes.",
+        "Controls and current wording remain usable without horizontal page overflow."
+      ]
+    },
+    {
+      "id": "P4",
+      "title": "Read failure and an edit during a pending read cannot lose current notes",
+      "facts": {
+        "current_work": "Fictional Indigo Mill catalogue. Before read.",
+        "new_work": "Fictional Indigo Mill catalogue. Edited while read waits.",
+        "incoming_work": "Fictional Plum Depot replacement."
+      },
+      "actions": [
+        "Open preview on step two with current notes; force local file reading to reject and choose a file.",
+        "Delay a valid local file read; edit work to new_work and preview while read is pending; release the read; dismiss any offered replacement."
+      ],
+      "expected": [
+        "Read failure leaves notes, step and existing preview unchanged and gives a readable error.",
+        "A pending read never silently overwrites an intervening edit.",
+        "If a confirmation after the read is used, cancelling it retains new_work and its preview.",
+        "No success or approval claim follows a failed or cancelled read."
+      ],
+      "adapter_note": "Failure/delay instrumentation may wrap the file-reading API discovered after implementation. It must not alter application code or original facts."
+    },
+    {
+      "id": "P5",
+      "title": "Explicit local actions only and reload forgets notes",
+      "facts": {
+        "work": "Fictional Copper Heron office tray exercise. LOCAL-ONLY-6149",
+        "issues": "No external action is authorised by this rehearsal."
+      },
+      "actions": [
+        "Instrument network, downloads and browser persistent storage before opening the page; fill notes and navigate/review without save.",
+        "Save once, reopen the saved JSON, then export text; inspect requests and persistence writes.",
+        "Reload and inspect all field values before manually reopening."
+      ],
+      "expected": [
+        "Typing, reviewing and navigating cause no download or automatic save.",
+        "Save produces one local JSON download; export produces the explicit text download.",
+        "No note content is sent over network; no localStorage, sessionStorage, IndexedDB, cookie or service-worker persistence is used for notes.",
+        "Reload restores empty/default notes; reopening only occurs after the user chooses a file.",
+        "Privacy wording describes local files and potential device retention/sync, without claiming files cannot leave the device."
+      ]
+    }
+  ]
+}

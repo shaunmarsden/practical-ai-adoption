@@ -17,7 +17,7 @@ No blocking defect was found in the baseline checks. Open PRs #73 and #74 concer
 ## Behaviour and boundaries
 
 - Six freely navigable steps link to established guides. They are a reading route, not mandatory sequential gates or a validated methodology.
-- Notes stay in page memory. There is no autosave, import, database or submission. Reload/closing loses notes; export first. Text areas allow up to 12,000 characters each. Use fictional or non-sensitive summaries and safe references.
+- Notes stay in page memory. Save draft explicitly downloads local JSON; Reopen draft reads a supported file after checking its structure and confirming replacement of existing notes. There is no autosave, database or submission. Reload/closing clears the page, so save first and reopen manually. Text areas allow up to 12,000 UTF-16 code units each. Use fictional or non-sensitive summaries and safe references. [Format, failure handling and draft tests](drafts/README.md).
 - The text download includes every note, unanswered items, reading links, export timestamp, caveats and a prominent copy of known problems, self-reported V2 position and reported human decision. It is a plain text record, not an executable document or a V2 report.
 - Partial exports are allowed. No completion score, recommended decision, permission check or semantic validation is calculated. Conflicting or false notes remain possible and need human inspection. A recorded positive decision cannot make an unresolved issue acceptable.
 - V2 opens separately with no answer transfer. Its outcome is manually recorded, explicitly self-reported and unverified. Keep its own report alongside this notebook. A complete V2 record is never approval.
@@ -46,6 +46,7 @@ For browser checks, install Chromium with `npx playwright install chromium`, ser
 
 ```sh
 npm run test:workbench
+npm run test:workbench:drafts
 npm run test:browser
 npm run test:pdf
 ```
@@ -95,4 +96,4 @@ The [7 November approval-boundary review](reviews/2026-11-07/README.md) preserve
 
 The original software checks used invented inputs within the implementation process. They are not a blinded evaluation of advice, a real pilot or evidence of better adoption decisions. The later fresh-context AI review has the separate provenance and limits described above. No real employer/customer data was used.
 
-Automated accessibility scans and visual inspection do not establish screen-reader usability, user comprehension, cross-browser support or complete WCAG conformance. Safari, Firefox, physical phones and assistive technologies were not tested. Export is UTF-8 text only, with no re-import or automatic V2 integration. Users must review the evidence and obtain actual authority separately. Independent user understanding, real-work utility and realised benefits remain unestablished.
+Automated accessibility scans and visual inspection do not establish screen-reader usability, user comprehension, cross-browser support or complete WCAG conformance. Safari, Firefox, physical phones and assistive technologies were not tested. The readable UTF-8 text export cannot be reopened. Versioned JSON drafts support manual reopening with no automatic V2 integration. Users must review the evidence and obtain actual authority separately. Independent user understanding, real-work utility and realised benefits remain unestablished.
