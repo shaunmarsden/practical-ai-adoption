@@ -1,0 +1,378 @@
+{
+  "local": [],
+  "external": [
+    {
+      "url": "https://github.com/shaunmarsden/practical-ai-adoption/issues/4",
+      "status": 200,
+      "final": "https://github.com/shaunmarsden/practical-ai-adoption/issues/4",
+      "sources": [
+        "EVIDENCE-STATUS.md"
+      ]
+    },
+    {
+      "url": "https://github.com/shaunmarsden/practical-ai-adoption/discussions",
+      "status": 200,
+      "final": "https://github.com/shaunmarsden/practical-ai-adoption/discussions",
+      "sources": [
+        "EVIDENCE-STATUS.md"
+      ]
+    },
+    {
+      "url": "https://shaunmarsden.github.io/practical-ai-adoption/pilot-readiness/",
+      "status": 200,
+      "final": "https://shaunmarsden.github.io/practical-ai-adoption/pilot-readiness/",
+      "sources": [
+        "README.md",
+        "ROADMAP.md",
+        "case-studies/ai-pilot-readiness-assessment.md",
+        "evaluations/pilot-readiness-independent-review/README.md",
+        "guides/compare-ai-with-other-ways-to-improve-work.md",
+        "guides/run-a-controlled-team-ai-pilot.md",
+        "research/ai-adoption-pathway-audit.md",
+        "research/andrew-ng-ai-adoption-resources.md",
+        "research/measuring-ai-adoption-business-model-references.md",
+        "tools/pilot-readiness/README.md",
+        "tools/pilot-readiness/adversarial/review.md"
+      ]
+    },
+    {
+      "url": "https://shaunmarsden.github.io/practical-ai-adoption/",
+      "status": 200,
+      "final": "https://shaunmarsden.github.io/practical-ai-adoption/",
+      "sources": [
+        "README.md",
+        "evaluations/netherford-internal-update-review.md"
+      ]
+    },
+    {
+      "url": "https://github.com/microsoft/generative-ai-for-beginners",
+      "status": 200,
+      "final": "https://github.com/microsoft/generative-ai-for-beginners",
+      "sources": [
+        "README.md"
+      ]
+    },
+    {
+      "url": "https://github.com/dair-ai/Prompt-Engineering-Guide",
+      "status": 200,
+      "final": "https://github.com/dair-ai/Prompt-Engineering-Guide",
+      "sources": [
+        "README.md"
+      ]
+    },
+    {
+      "url": "https://github.com/github/ai-adoption-playbook",
+      "status": 200,
+      "final": "https://github.com/github/ai-adoption-playbook",
+      "sources": [
+        "README.md"
+      ]
+    },
+    {
+      "url": "https://github.com/Habitat-Thinking/ai-literacy-superpowers",
+      "status": 200,
+      "final": "https://github.com/Habitat-Thinking/ai-literacy-superpowers",
+      "sources": [
+        "README.md"
+      ]
+    },
+    {
+      "url": "https://github.com/shaunmarsden/practical-ai-sales-workflows/blob/main/COMPARISON.md",
+      "status": 200,
+      "final": "https://github.com/shaunmarsden/practical-ai-sales-workflows/blob/main/COMPARISON.md",
+      "sources": [
+        "README.md"
+      ]
+    },
+    {
+      "url": "https://github.com/shaunmarsden/practical-ai-sales-workflows",
+      "status": 200,
+      "final": "https://github.com/shaunmarsden/practical-ai-sales-workflows",
+      "sources": [
+        "README.md"
+      ]
+    },
+    {
+      "url": "https://github.com/parallax/jsPDF/tree/v4.2.1",
+      "status": 200,
+      "final": "https://github.com/parallax/jsPDF/tree/v4.2.1",
+      "sources": [
+        "docs/pilot-readiness/vendor/README.md"
+      ]
+    },
+    {
+      "url": "https://github.com/notofonts/noto-fonts/blob/ffebf8c1ee449e544955a7e813c54f9b73848eac/hinted/ttf/NotoSans/NotoSans-Regular.ttf",
+      "status": 200,
+      "final": "https://github.com/notofonts/noto-fonts/blob/ffebf8c1ee449e544955a7e813c54f9b73848eac/hinted/ttf/NotoSans/NotoSans-Regular.ttf",
+      "sources": [
+        "docs/pilot-readiness/vendor/README.md"
+      ]
+    },
+    {
+      "url": "https://github.com/shaunmarsden/practical-ai-sales-workflows/blob/main/guides/which-ai-mistakes-get-through.md",
+      "status": 200,
+      "final": "https://github.com/shaunmarsden/practical-ai-sales-workflows/blob/main/guides/which-ai-mistakes-get-through.md",
+      "sources": [
+        "evaluations/ambleforth-action-list-review.md",
+        "evidence/real-use-ai-assisted-fact-check-failure.md",
+        "examples/netherford-internal-update-example.md"
+      ]
+    },
+    {
+      "url": "https://www.gov.uk/government/publications/ai-adoption-research/ai-adoption-research",
+      "status": 200,
+      "final": "https://www.gov.uk/government/publications/ai-adoption-research/ai-adoption-research",
+      "sources": [
+        "guides/finding-a-good-first-ai-use-case.md"
+      ]
+    },
+    {
+      "url": "https://www.ons.gov.uk/economy/economicoutputandproductivity/productivitymeasures/articles/managementpracticesandtheadoptionoftechnologyandartificialintelligenceinukfirms2023/2025-03-24",
+      "status": 200,
+      "final": "https://www.ons.gov.uk/economy/economicoutputandproductivity/productivitymeasures/articles/managementpracticesandtheadoptionoftechnologyandartificialintelligenceinukfirms2023/2025-03-24",
+      "sources": [
+        "guides/finding-a-good-first-ai-use-case.md"
+      ]
+    },
+    {
+      "url": "https://www.businessmodels.ai/",
+      "status": 200,
+      "final": "https://www.businessmodels.ai/",
+      "sources": [
+        "guides/how-to-tell-whether-ai-actually-helped.md",
+        "research/measuring-ai-adoption-business-model-references.md"
+      ]
+    },
+    {
+      "url": "https://www.businessmodels.ai/ai-add-on/",
+      "status": 200,
+      "final": "https://www.businessmodels.ai/ai-add-on/",
+      "sources": [
+        "guides/how-to-tell-whether-ai-actually-helped.md",
+        "research/measuring-ai-adoption-business-model-references.md"
+      ]
+    },
+    {
+      "url": "https://www.businessmodels.ai/ai-outcome-pricing/",
+      "status": 200,
+      "final": "https://www.businessmodels.ai/ai-outcome-pricing/",
+      "sources": [
+        "guides/how-to-tell-whether-ai-actually-helped.md",
+        "research/measuring-ai-adoption-business-model-references.md"
+      ]
+    },
+    {
+      "url": "https://www.businessmodels.ai/ai-native-services/",
+      "status": 200,
+      "final": "https://www.businessmodels.ai/ai-native-services/",
+      "sources": [
+        "guides/how-to-tell-whether-ai-actually-helped.md",
+        "research/measuring-ai-adoption-business-model-references.md"
+      ]
+    },
+    {
+      "url": "https://www.nber.org/papers/w33795",
+      "status": 200,
+      "final": "https://www.nber.org/papers/w33795",
+      "sources": [
+        "guides/measure-ai-capacity-and-realised-value.md"
+      ]
+    },
+    {
+      "url": "https://www.nber.org/papers/w33777",
+      "status": 200,
+      "final": "https://www.nber.org/papers/w33777",
+      "sources": [
+        "guides/measure-ai-capacity-and-realised-value.md"
+      ]
+    },
+    {
+      "url": "https://www.nber.org/papers/w31161",
+      "status": 200,
+      "final": "https://www.nber.org/papers/w31161",
+      "sources": [
+        "guides/measure-ai-capacity-and-realised-value.md"
+      ]
+    },
+    {
+      "url": "https://www.gov.uk/government/publications/the-magenta-book/guidance-on-the-impact-evaluation-of-ai-interventions-html",
+      "status": 200,
+      "final": "https://www.gov.uk/government/publications/the-magenta-book/guidance-on-the-impact-evaluation-of-ai-interventions-html",
+      "sources": [
+        "guides/measure-ai-capacity-and-realised-value.md"
+      ]
+    },
+    {
+      "url": "https://academy.openai.com/public/courses/ai-foundations-juzjs?autoEnroll=true",
+      "status": 200,
+      "final": "https://academy.openai.com/public/courses/ai-foundations-juzjs?autoEnroll=true",
+      "sources": [
+        "guides/prompting-fundamentals.md"
+      ]
+    },
+    {
+      "url": "https://www.deeplearning.ai/courses/ai-for-everyone",
+      "status": 200,
+      "final": "https://www.deeplearning.ai/courses/ai-for-everyone",
+      "sources": [
+        "research/andrew-ng-ai-adoption-resources.md"
+      ]
+    },
+    {
+      "url": "https://landing.ai/wp-content/uploads/2018/12/AI-Transformation-Playbook-v8.pdf",
+      "status": 200,
+      "final": "https://landing.ai/",
+      "sources": [
+        "research/andrew-ng-ai-adoption-resources.md"
+      ]
+    },
+    {
+      "url": "https://medium.com/@andrewng/introducing-the-ai-transformation-playbook-58ccad4393e9",
+      "status": 403,
+      "final": "https://medium.com/@andrewng/introducing-the-ai-transformation-playbook-58ccad4393e9",
+      "sources": [
+        "research/andrew-ng-ai-adoption-resources.md"
+      ]
+    },
+    {
+      "url": "https://www.deeplearning.ai/courses/ai-for-everyone/",
+      "status": 308,
+      "final": "https://www.deeplearning.ai/courses/ai-for-everyone/",
+      "sources": [
+        "research/andrew-ng-ai-adoption-resources.md"
+      ]
+    },
+    {
+      "url": "https://cdn.openai.com/business-guides-and-resources/ai-in-the-enterprise.pdf",
+      "status": 200,
+      "final": "https://cdn.openai.com/business-guides-and-resources/ai-in-the-enterprise.pdf",
+      "sources": [
+        "research/official-ai-adoption-resources.md",
+        "tools/pilot-readiness/adversarial/review.md"
+      ]
+    },
+    {
+      "url": "https://openai.com/business/guides-and-resources/identifying-and-scaling-ai-use-cases/",
+      "status": 403,
+      "final": "https://openai.com/business/guides-and-resources/identifying-and-scaling-ai-use-cases/",
+      "sources": [
+        "research/official-ai-adoption-resources.md"
+      ]
+    },
+    {
+      "url": "https://academy.openai.com/public/clubs/champions-ecqup/resources/90-day-ai-transformation-starter-kit-2026-07-29",
+      "status": 200,
+      "final": "https://academy.openai.com/public/clubs/champions-ecqup/resources/90-day-ai-transformation-starter-kit-2026-07-29",
+      "sources": [
+        "research/official-ai-adoption-resources.md"
+      ]
+    },
+    {
+      "url": "https://assets.anthropic.com/m/66daaa23018ab0fd/original/Anthropic-enterprise-ebook-digital.pdf",
+      "status": 200,
+      "final": "https://www-cdn.anthropic.com/e5c9de22bc8884089970bd262ca0c8b952cb9136.pdf",
+      "sources": [
+        "research/official-ai-adoption-resources.md",
+        "tools/pilot-readiness/adversarial/review.md"
+      ]
+    },
+    {
+      "url": "https://cloud.google.com/resources/cloud-ai-adoption-framework-whitepaper",
+      "status": 200,
+      "final": "https://cloud.google.com/resources/cloud-ai-adoption-framework-whitepaper",
+      "sources": [
+        "research/official-ai-adoption-resources.md",
+        "tools/pilot-readiness/adversarial/review.md"
+      ]
+    },
+    {
+      "url": "https://www.nber.org/papers/w34836",
+      "status": 200,
+      "final": "https://www.nber.org/papers/w34836",
+      "sources": [
+        "research/organisational-ai-decision-evidence.md"
+      ]
+    },
+    {
+      "url": "https://www.eib.org/en/publications/20250383-economics-working-paper-2026-02",
+      "status": 200,
+      "final": "https://www.eib.org/en/publications/20250383-economics-working-paper-2026-02",
+      "sources": [
+        "research/organisational-ai-decision-evidence.md"
+      ]
+    },
+    {
+      "url": "https://www.ecb.europa.eu/press/economic-bulletin/focus/2026/html/ecb.ebbox202602_06~c9f485c478.et.html",
+      "status": 200,
+      "final": "https://www.ecb.europa.eu/press/economic-bulletin/focus/2026/html/ecb.ebbox202602_06~c9f485c478.et.html",
+      "sources": [
+        "research/organisational-ai-decision-evidence.md"
+      ]
+    },
+    {
+      "url": "https://link.springer.com/article/10.1007/s10664-026-10889-1",
+      "status": 200,
+      "final": "https://link.springer.com/article/10.1007/s10664-026-10889-1?error=cookies_not_supported&code=a5b68c28-d396-4de8-be10-53358a99af2d",
+      "sources": [
+        "research/organisational-ai-decision-evidence.md"
+      ]
+    },
+    {
+      "url": "https://doi.org/10.4230/LIPIcs.ESEM.2026.67",
+      "status": 200,
+      "final": "https://drops.dagstuhl.de/entities/document/10.4230/LIPIcs.ESEM.2026.67",
+      "sources": [
+        "research/organisational-ai-decision-evidence.md"
+      ]
+    },
+    {
+      "url": "https://arxiv.org/abs/2605.06464",
+      "status": 200,
+      "final": "https://arxiv.org/abs/2605.06464",
+      "sources": [
+        "research/organisational-ai-decision-evidence.md"
+      ]
+    },
+    {
+      "url": "https://arxiv.org/abs/2608.06640",
+      "status": 200,
+      "final": "https://arxiv.org/abs/2608.06640",
+      "sources": [
+        "research/organisational-ai-decision-evidence.md"
+      ]
+    },
+    {
+      "url": "https://arxiv.org/abs/2603.28592",
+      "status": 200,
+      "final": "https://arxiv.org/abs/2603.28592",
+      "sources": [
+        "research/organisational-ai-decision-evidence.md"
+      ]
+    },
+    {
+      "url": "https://github.com/shaunmarsden/practical-ai-adoption/actions/runs/41661630973",
+      "status": 200,
+      "final": "https://github.com/shaunmarsden/practical-ai-adoption/actions/runs/41661630973",
+      "sources": [
+        "research/repository-consistency-audit-2026-11-03.md"
+      ]
+    },
+    {
+      "url": "https://github.com/shaunmarsden/practical-ai-adoption/pull/73",
+      "status": 200,
+      "final": "https://github.com/shaunmarsden/practical-ai-adoption/pull/73",
+      "sources": [
+        "tools/pilot-readiness/adversarial/README.md",
+        "tools/pilot-readiness/adversarial/review.md"
+      ]
+    },
+    {
+      "url": "https://docs.cloud.google.com/vertex-ai/generative-ai/docs/learn/responsible-ai",
+      "status": 200,
+      "final": "https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/responsible-ai",
+      "sources": [
+        "tools/pilot-readiness/adversarial/review.md"
+      ]
+    }
+  ]
+}

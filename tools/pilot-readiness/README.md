@@ -1,6 +1,6 @@
 # AI Pilot Readiness Assessment V2
 
-**[Open the browser assessment](https://shaunmarsden.github.io/practical-ai-adoption/pilot-readiness/).** No installation, account, paid product or AI API is needed. Until the V2 pull request is approved, merged and its deployment checked, that public link still serves V1. This branch's V2 has been tested locally; publication is not inferred from tests.
+**[Open the browser assessment](https://shaunmarsden.github.io/practical-ai-adoption/pilot-readiness/).** No installation, account, paid product or AI API is needed. V2 was merged in [PR #75](https://github.com/shaunmarsden/practical-ai-adoption/pull/75). A subsequent production smoke test reported successful live browser and PDF checks on 26 October 2026; the [development case study](../../case-studies/ai-pilot-readiness-assessment.md) records that history. This is evidence of software behaviour, not independent validation of the method.
 
 V2 asks whether conditions are **currently acceptable for the actual workflow and proposed scale**, rather than whether a review, document or named role exists. It records material issues explicitly. A complete quality review that rejects wider use is not a Yes to acceptable quality.
 
@@ -51,7 +51,7 @@ The original meeting-notes homepage is preserved. Pages settings remain `main:/d
 
 ## Tests and actual evidence
 
-Read the [V2 validation record](v2/VALIDATION.md), [all thirty comparisons](v2/comparison.md) and [remaining limitations](v2/METHODOLOGY.md#limits).
+Read the [V2 validation record](v2/VALIDATION.md), [all thirty comparisons](v2/comparison.md) and [remaining limitations](v2/METHODOLOGY.md#limits). The validation record is the dated local-development checkpoint from before publication. Its original results and release recommendation are retained; it does not describe the current deployment status.
 
 With faithfully reassessed V2 structured facts, the 23 observable adverse cases from PR #74 withhold expansion. This is **not detection of the meaning of old notes**. The fabricated-evidence case AD-19 remains unresolved. A new negative control N16 also demonstrates that false structured Yes/no-issue claims can reach the complete-record category despite adverse prose. There is no keyword filter or hidden AI verifier.
 

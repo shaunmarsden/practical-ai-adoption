@@ -119,6 +119,8 @@ I haven't built a comparison table for this repository, as I did for [Practical 
 
 The [Roadmap](ROADMAP.md) records the outstanding external-review and real-use evidence. The [Evidence Status](EVIDENCE-STATUS.md) distinguishes the original scored tests from seven newer guides without scored evaluations. Before adding more, see the [repository consistency audit](research/repository-consistency-audit-2026-11-03.md).
 
+The [6 November quality sprint](research/quality-sprint-2026-11-06.md) records the automated baseline, fresh fictional failures, reader journeys and the case for improving existing links before adding another application.
+
 ## Existing real use evidence
 
 There are two records, and neither tests the current guides as they stand.
