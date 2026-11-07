@@ -1,4 +1,6 @@
 # Roadmap
+## Guided workbench
+The [AI Adoption Workbench](docs/workbench/index.html) provides a browser notebook through existing guidance, with a separate V2 link and local text export. It adds no readiness rules. Automated software checks do not fill the independent-review or real-use gaps below. Observe a non-technical reader using it before claiming that it makes the journey easier.
 
 This is where I'm heading. It isn't a promise to publish everything listed.
 
