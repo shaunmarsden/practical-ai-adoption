@@ -1,0 +1,133 @@
+AI Adoption Workbench decision record
+Record format: 1
+Exported: 2026-11-07T11:11:59.223Z
+
+Planning and self-reported decision record only. Not a validated assessment, independent verification or approval to deploy. Unanswered items remain unanswered. A V2 complete record requires a separate human decision. Fictional exercises, real observations and independent review are different kinds of evidence. No workplace benefit is established by using this workbench.
+
+REVIEW THESE FIRST
+Known problems: Not recorded
+V2 position (self-reported): Not reviewed
+Human decision (self-reported): No human decision recorded
+
+Notes are copied literally, not checked for truth, consistency or sufficient authority. This is not a V2 assessment report. Keep any separate V2 report alongside this record.
+
+DESCRIBE THE WORK
+
+Work and outcome sought:
+Not recorded
+
+Accountable workflow owner:
+Not recorded
+
+Current process and main problem:
+Not recorded
+
+Current evidence and baseline:
+Not recorded
+
+People, errors and consequences:
+Not recorded
+
+Related reading:
+Map the work before choosing AI: https://github.com/shaunmarsden/practical-ai-adoption/blob/main/guides/map-a-workflow-before-choosing-ai.md
+Find a first use case: https://github.com/shaunmarsden/practical-ai-adoption/blob/main/guides/finding-a-good-first-ai-use-case.md
+
+COMPARE OPTIONS
+
+Non-AI option:
+Not recorded
+
+Possible AI contribution:
+Not recorded
+
+Evidence and trade-offs for each option:
+Not recorded
+
+Preferred route and strongest alternative:
+Not recorded
+
+Related reading:
+Compare AI with other ways to improve work: https://github.com/shaunmarsden/practical-ai-adoption/blob/main/guides/compare-ai-with-other-ways-to-improve-work.md
+When not to use AI: https://github.com/shaunmarsden/practical-ai-adoption/blob/main/guides/when-not-to-use-ai.md
+
+PLAN A BOUNDED PILOT
+
+Pilot boundary, or reason not to trial:
+Not recorded
+
+Actual permission status:
+Not recorded
+
+Trial runner, reviewer and continuity cover:
+Not recorded
+
+Comparison and sample plan:
+Not recorded
+
+Success conditions and unacceptable errors:
+Not recorded
+
+Stop, contain and recover:
+Not recorded
+
+Related reading:
+Run a controlled team pilot: https://github.com/shaunmarsden/practical-ai-adoption/blob/main/guides/run-a-controlled-team-ai-pilot.md
+Check data permissions: https://github.com/shaunmarsden/practical-ai-adoption/blob/main/guides/before-you-put-work-data-into-ai.md
+Map tool actions and permissions: https://github.com/shaunmarsden/practical-ai-adoption/blob/main/guides/map-ai-tool-actions-and-permissions.md
+
+MEASURE RESULTS
+
+Evidence basis:
+Not recorded
+
+Comparison results and source references:
+Not recorded
+
+Review, rework, costs and actual benefit:
+Not recorded
+
+Missing cases, changes and limitations:
+Not recorded
+
+Known problems and unresolved material issues:
+Not recorded
+
+Related reading:
+Measure the whole task: https://github.com/shaunmarsden/practical-ai-adoption/blob/main/guides/how-to-tell-whether-ai-actually-helped.md
+Separate time, capacity and realised value: https://github.com/shaunmarsden/practical-ai-adoption/blob/main/guides/measure-ai-capacity-and-realised-value.md
+
+REVIEW READINESS SEPARATELY
+
+V2 review position (self-reported):
+Not reviewed
+
+Review reference, date, scope and limits:
+Not recorded
+
+Unresolved questions and required review:
+Not recorded
+
+Related reading:
+Open Pilot Readiness Assessment V2: https://shaunmarsden.github.io/practical-ai-adoption/pilot-readiness/
+Review the pilot boundary: https://github.com/shaunmarsden/practical-ai-adoption/blob/main/guides/run-a-controlled-team-ai-pilot.md
+
+RECORD A HUMAN DECISION
+
+Human decision as reported:
+No human decision recorded
+
+Decision-maker role and authority reference:
+Not recorded
+
+Decision date:
+Not recorded
+
+Reasons, evidence and conditions:
+Not recorded
+
+Next action, responsible role and review date/triggers:
+Not recorded
+
+Related reading:
+Revisit the options decision: https://github.com/shaunmarsden/practical-ai-adoption/blob/main/guides/compare-ai-with-other-ways-to-improve-work.md
+Recheck action authority: https://github.com/shaunmarsden/practical-ai-adoption/blob/main/guides/map-ai-tool-actions-and-permissions.md

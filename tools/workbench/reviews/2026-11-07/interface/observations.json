@@ -1,0 +1,68 @@
+{
+  "url": "http://127.0.0.1:8768/workbench/",
+  "initialDefaults": [
+    {
+      "id": "evidenceType",
+      "value": "Not recorded"
+    },
+    {
+      "id": "readiness",
+      "value": "Not reviewed"
+    },
+    {
+      "id": "decision",
+      "value": "No human decision recorded"
+    }
+  ],
+  "blankFinal": {
+    "nextDisabled": true,
+    "heading": "6. Record a human decision",
+    "text": "6. Record a human decision\n\nRecord an actual human judgement only when it has happened. Choosing an option here does not grant authority, resolve issues or authorise an action. A decision to stop, gather evidence or use a non-AI route is valid.\n\nRelated reading: Revisit the options decision (new tab) / Recheck action authority (new tab)\n\nHuman decision as reported\n\nNothing is selected on your behalf.\n\nNo human decision recorded\nStop or contain\nGather evidence, repeat or narrow\nUse a non-AI route\nContinue within an existing authorised boundary\nRefer for a separate expansion decision\nOther human decision (explain below)\n\nCurrent selection: No human decision recorded\n\nDecision-maker role and authority reference\n\nWho made the decision, and what authority do they hold for this exact scope?\n\nDecision date\n\nLeave blank until a decision has happened.\n\nReasons, evidence and conditions\n\nInclude disagreements and unresolved problems. A positive decision cannot make these disappear.\n\nNext action, responsible role and review date/triggers\n\nRecord scope, conditions, continuity cover and what would require a fresh decision."
+  },
+  "v2": {
+    "text": "5. Review readiness separately\n\nFor an established AI pilot being considered for wider use, open V2 separately. This workbench does not run its rules, transfer answers or validate the recorded result. Check actual records, scope and unresolved issues with the relevant people.\n\nRelated reading: Open Pilot Readiness Assessment V2 (new tab) / Review the pilot boundary (new tab)\n\nV2 review position (self-reported)\n\nLeave not reviewed if you have not used V2. A complete record is never approval.\n\nNot reviewed\nNot applicable (explain below)\nWITHHOLD EXPANSION\nFURTHER ASSESSMENT REQUIRED\nCOMPLETE RECORD - HUMAN DECISION REQUIRED\nOFFLINE EXPERIMENT - NO ROLLOUT DECISION\n\nCurrent selection: COMPLETE RECORD - HUMAN DECISION REQUIRED\n\nReview reference, date, scope and limits\n\nRecord the separate V2 report reference or why it is not applicable. Do not paste protected evidence.\n\nUnresolved questions and required review\n\nWho will inspect the evidence, handle issues or seek specialist advice? Record actions and review triggers.",
+    "link": {
+      "href": "../pilot-readiness/",
+      "target": "_blank",
+      "rel": "noopener noreferrer"
+    }
+  },
+  "contradictory": {
+    "authority": "",
+    "date": "",
+    "status": "Text record download requested. Check your downloads before closing this page.",
+    "summary": "AI Adoption Workbench decision record\nRecord format: 1\nExported: 2026-11-07T11:11:59.455Z\n\nPlanning and self-reported decision record only. Not a validated assessment, independent verification or approval to deploy. Unanswered items remain unanswered. A V2 complete record requires a separate human decision. Fictional exercises, real observations and independent review are different kinds of evidence. No workplace benefit is established by using this workbench.\n\nREVIEW THESE FIRST\nKnown problems: Fictional case: two outputs invented dates. No operational permission is established. No actual V2 review or human decision has happened.\nV2 position (self-reported): COMPLETE RECORD - HUMAN DECISION REQUIRED\nHuman decision (self-reported): Continue within an existing authorised boundary\n\nNotes are copied literally, not checked for truth, consistency or sufficient authority. This is not a V2 assessment report. Keep any separate V2 report alongside this record.\n\nDESCRIBE THE WORK\n\nWork and outcome sought:\nNot recorded\n\nAccountable workflow owner:\nNot recorded\n\nCurrent process and main problem:\nNot recorded\n\nCurrent evidence and baseline:\nNot recorded\n\nPeople, errors and consequences:\nNot recorded\n\nRelated reading:\nMap the work before choosing AI: https://github.com/shaunmarsden/practical-ai-adoption/blob/main/guides/map-a-workflow-before-choosing-ai.md\nFind a first use case: https://github.com/shaunmarsden/practical-ai-adoption/blob/main/guides/finding-a-good-first-ai-use-case.md\n\nCOMPARE OPTIONS\n\nNon-AI option:\nNot recorded\n\nPossible AI contribution:\nNot recorded\n\nEvidence and trade-offs for each option:\nNot recorded\n\nPreferred route and strongest alternative:\nNot recorded\n\nRelated reading:\nCompare AI with other ways to improve work: https://github.com/shaunmarsden/practical-ai-adoption/blob/main/guides/compare-ai-with-other-ways-to-improve-work.md\nWhen not to use AI: https://github.com/shaunmarsden/practical-ai-adoption/blob/main/guides/when-not-to-use-ai.md\n\nPLAN A BOUNDED PILOT\n\nPilot boundary, or reason not to trial:\nNot recorded\n\nActual permission status:\nFictional exercise only. Permission for operational use is unknown.\n\nTrial runner, reviewer and continuity cover:\nNot recorded\n\nComparison and sample plan:\nNot recorded\n\nSuccess conditions and unacceptable errors:\nNot recorded\n\nStop, contain and recover:\nNot recorded\n\nRelated reading:\nRun a controlled team pilot: https://github.com/shaunmarsden/practical-ai-adoption/blob/main/guides/run-a-controlled-team-ai-pilot.md\nCheck data permissions: https://github.com/shaunmarsden/practical-ai-adoption/blob/main/guides/before-you-put-work-data-into-ai.md\nMap tool actions and permissions: https://github.com/shaunmarsden/practical-ai-adoption/blob/main/guides/map-ai-tool-actions-and-permissions.md\n\nMEASURE RESULTS\n\nEvidence basis:\nFictional exercise\n\nComparison results and source references:\nNot recorded\n\nReview, rework, costs and actual benefit:\nNot recorded\n\nMissing cases, changes and limitations:\nNot recorded\n\nKnown problems and unresolved material issues:\nFictional case: two outputs invented dates. No operational permission is established. No actual V2 review or human decision has happened.\n\nRelated reading:\nMeasure the whole task: https://github.com/shaunmarsden/practical-ai-adoption/blob/main/guides/how-to-tell-whether-ai-actually-helped.md\nSeparate time, capacity and realised value: https://github.com/shaunmarsden/practical-ai-adoption/blob/main/guides/measure-ai-capacity-and-realised-value.md\n\nREVIEW READINESS SEPARATELY\n\nV2 review position (self-reported):\nCOMPLETE RECORD - HUMAN DECISION REQUIRED\n\nReview reference, date, scope and limits:\nNot recorded\n\nUnresolved questions and required review:\nNot recorded\n\nRelated reading:\nOpen Pilot Readiness Assessment V2: https://shaunmarsden.github.io/practical-ai-adoption/pilot-readiness/\nReview the pilot boundary: https://github.com/shaunmarsden/practical-ai-adoption/blob/main/guides/run-a-controlled-team-ai-pilot.md\n\nRECORD A HUMAN DECISION\n\nHuman decision as reported:\nContinue within an existing authorised boundary\n\nDecision-maker role and authority reference:\nNot recorded\n\nDecision date:\nNot recorded\n\nReasons, evidence and conditions:\nNot recorded\n\nNext action, responsible role and review date/triggers:\nNot recorded\n\nRelated reading:\nRevisit the options decision: https://github.com/shaunmarsden/practical-ai-adoption/blob/main/guides/compare-ai-with-other-ways-to-improve-work.md\nRecheck action authority: https://github.com/shaunmarsden/practical-ai-adoption/blob/main/guides/map-ai-tool-actions-and-permissions.md\n"
+  },
+  "mobileV2": {
+    "text": "Current selection: COMPLETE RECORD - HUMAN DECISION REQUIRED",
+    "rect": {
+      "x": 36.1875,
+      "y": 396.3125,
+      "width": 247.625,
+      "height": 76.78125,
+      "top": 396.3125,
+      "right": 283.8125,
+      "bottom": 473.09375,
+      "left": 36.1875
+    },
+    "viewport": 320,
+    "scrollWidth": 320,
+    "clientWidth": 320
+  },
+  "mobileDecision": {
+    "text": "Current selection: Continue within an existing authorised boundary",
+    "rect": {
+      "x": 36.1875,
+      "y": 396.125,
+      "width": 247.625,
+      "height": 51.1875,
+      "top": 396.125,
+      "right": 283.8125,
+      "bottom": 447.3125,
+      "left": 36.1875
+    },
+    "viewport": 320,
+    "scrollWidth": 320
+  },
+  "errors": []
+}

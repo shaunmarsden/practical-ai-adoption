@@ -6,6 +6,8 @@ A browser notebook for one work question: describe the work, compare AI and non-
 
 No installation, account, backend, telemetry or paid API is needed. The existing homepage and repository README link to it. For a local preview, serve `docs/` and open `/workbench/`; no build or runtime dependency is required.
 
+The later review below identifies its exact frozen source version; review findings are not operational approval.
+
 ## Why add it
 
 The initial audit on 6 November 2026 inspected README, AGENTS, roadmap, evidence status, workflow discovery, options comparison, controlled pilot, measurement, value and action-permission guides, and V2's method and application. The guides already cover these questions. The justified addition is a place to keep notes while following that route, rather than another assessment or more guidance.
@@ -85,8 +87,12 @@ Ten unique guide/V2 destinations were checked. One direct availability probe to 
 
 These live checks do not repeat the earlier axe scans or establish complete accessibility. Mobile testing used Chromium emulation, not physical devices. Safari, Firefox and assistive technologies were not tested. Ordinary GitHub Pages access logs still receive static requests; deliberately following guides opens GitHub. Browser extensions, device retention/sync and session-recovery differences are outside this smoke test. Exported text persists on the device and is not a resumable backup: there is no import or autosave.
 
+## Fresh-context AI review
+
+The [7 November approval-boundary review](reviews/2026-11-07/README.md) preserves two fresh AI contexts' original findings, fictional expectations, first outputs, screenshots and environment failures. Neither established an actionable approval defect in its examined cases, so no application fix followed. The reviewers' contexts were separate from the implementation conversation and earlier answer keys; this is not independent external human validation or evidence of actual user comprehension. The optional summary-layout suggestion remains unproven. [Evidence Status](../../EVIDENCE-STATUS.md) records these distinctions.
+
 ## Evidence limits
 
-These are software checks using invented inputs within the implementation process. They are not a blinded evaluation of advice, a real pilot, independent testing or evidence of better adoption decisions. No real employer/customer data was used.
+The original software checks used invented inputs within the implementation process. They are not a blinded evaluation of advice, a real pilot or evidence of better adoption decisions. The later fresh-context AI review has the separate provenance and limits described above. No real employer/customer data was used.
 
 Automated accessibility scans and visual inspection do not establish screen-reader usability, user comprehension, cross-browser support or complete WCAG conformance. Safari, Firefox, physical phones and assistive technologies were not tested. Export is UTF-8 text only, with no re-import or automatic V2 integration. Users must review the evidence and obtain actual authority separately. Independent user understanding, real-work utility and realised benefits remain unestablished.

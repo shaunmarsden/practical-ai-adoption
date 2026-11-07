@@ -1,0 +1,7 @@
+First browser attempt failed before browser/page creation at browser-export.mjs:6:30.
+Command: PLAYWRIGHT_BROWSERS_PATH=/private/tmp/adoption-workbench-browsers node test-results/approval-review/record/browser-export.mjs
+Exit code: 1
+Exact error excerpts from initial tool output (full tool output retained in review chat):
+browserType.launch: Target page, context or browser has been closed
+[pid=61165][err] [1107/111158.692765:FATAL:base/apple/mach_port_rendezvous_mac.cc:159] Check failed: kr == KERN_SUCCESS. bootstrap_check_in org.chromium.Chromium.MachPortRendezvousServer.61165: Permission denied (1100)
+No page load, preview or browser download occurred on this attempt. This is an environment failure, not evidence of a product failure.

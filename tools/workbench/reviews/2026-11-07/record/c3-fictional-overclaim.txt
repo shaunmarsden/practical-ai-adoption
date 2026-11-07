@@ -1,0 +1,133 @@
+AI Adoption Workbench decision record
+Record format: 1
+Exported: 2026-11-07T00:00:00.000Z
+
+Planning and self-reported decision record only. Not a validated assessment, independent verification or approval to deploy. Unanswered items remain unanswered. A V2 complete record requires a separate human decision. Fictional exercises, real observations and independent review are different kinds of evidence. No workplace benefit is established by using this workbench.
+
+REVIEW THESE FIRST
+Known problems: No real observations; customer sending not permitted.
+V2 position (self-reported): COMPLETE RECORD - HUMAN DECISION REQUIRED
+Human decision (self-reported): Continue within an existing authorised boundary
+
+Notes are copied literally, not checked for truth, consistency or sufficient authority. This is not a V2 assessment report. Keep any separate V2 report alongside this record.
+
+DESCRIBE THE WORK
+
+Work and outcome sought:
+FICTIONAL: repair-shop draft ticket replies
+
+Accountable workflow owner:
+Fictional practice lead
+
+Current process and main problem:
+Fictional exercise only; no real observation.
+
+Current evidence and baseline:
+Fictional exercise only; no real observation.
+
+People, errors and consequences:
+Fictional exercise only; no real observation.
+
+Related reading:
+Map the work before choosing AI: https://github.com/shaunmarsden/practical-ai-adoption/blob/main/guides/map-a-workflow-before-choosing-ai.md
+Find a first use case: https://github.com/shaunmarsden/practical-ai-adoption/blob/main/guides/finding-a-good-first-ai-use-case.md
+
+COMPARE OPTIONS
+
+Non-AI option:
+Fictional exercise only; no real observation.
+
+Possible AI contribution:
+Fictional exercise only; no real observation.
+
+Evidence and trade-offs for each option:
+Fictional exercise only; no real observation.
+
+Preferred route and strongest alternative:
+Fictional exercise only; no real observation.
+
+Related reading:
+Compare AI with other ways to improve work: https://github.com/shaunmarsden/practical-ai-adoption/blob/main/guides/compare-ai-with-other-ways-to-improve-work.md
+When not to use AI: https://github.com/shaunmarsden/practical-ai-adoption/blob/main/guides/when-not-to-use-ai.md
+
+PLAN A BOUNDED PILOT
+
+Pilot boundary, or reason not to trial:
+Six invented tickets, local practice only, 7 November 2026. Sending excluded.
+
+Actual permission status:
+Fictional practice lead permits local invented-ticket practice only. No real customer messages, external sending or production access.
+
+Trial runner, reviewer and continuity cover:
+Fictional exercise only; no real observation.
+
+Comparison and sample plan:
+Fictional exercise only; no real observation.
+
+Success conditions and unacceptable errors:
+Fictional exercise only; no real observation.
+
+Stop, contain and recover:
+Fictional exercise only; no real observation.
+
+Related reading:
+Run a controlled team pilot: https://github.com/shaunmarsden/practical-ai-adoption/blob/main/guides/run-a-controlled-team-ai-pilot.md
+Check data permissions: https://github.com/shaunmarsden/practical-ai-adoption/blob/main/guides/before-you-put-work-data-into-ai.md
+Map tool actions and permissions: https://github.com/shaunmarsden/practical-ai-adoption/blob/main/guides/map-ai-tool-actions-and-permissions.md
+
+MEASURE RESULTS
+
+Evidence basis:
+Fictional exercise
+
+Comparison results and source references:
+Six invented tickets drafted. No measured operational comparison.
+
+Review, rework, costs and actual benefit:
+Author forecast: 40% salary savings. No evidence or observed savings.
+
+Missing cases, changes and limitations:
+Fictional exercise only; no real observation.
+
+Known problems and unresolved material issues:
+No real observations; customer sending not permitted.
+
+Related reading:
+Measure the whole task: https://github.com/shaunmarsden/practical-ai-adoption/blob/main/guides/how-to-tell-whether-ai-actually-helped.md
+Separate time, capacity and realised value: https://github.com/shaunmarsden/practical-ai-adoption/blob/main/guides/measure-ai-capacity-and-realised-value.md
+
+REVIEW READINESS SEPARATELY
+
+V2 review position (self-reported):
+COMPLETE RECORD - HUMAN DECISION REQUIRED
+
+Review reference, date, scope and limits:
+No separate V2 review has occurred. Manual selection for this fictional challenge.
+
+Unresolved questions and required review:
+Fictional exercise only; no real observation.
+
+Related reading:
+Open Pilot Readiness Assessment V2: https://shaunmarsden.github.io/practical-ai-adoption/pilot-readiness/
+Review the pilot boundary: https://github.com/shaunmarsden/practical-ai-adoption/blob/main/guides/run-a-controlled-team-ai-pilot.md
+
+RECORD A HUMAN DECISION
+
+Human decision as reported:
+Continue within an existing authorised boundary
+
+Decision-maker role and authority reference:
+Fictional practice lead: authority for invented-ticket practice only.
+
+Decision date:
+2026-11-07
+
+Reasons, evidence and conditions:
+Continue invented-ticket practice only.
+
+Next action, responsible role and review date/triggers:
+Send real customer replies tomorrow; author claims approval follows from the complete record.
+
+Related reading:
+Revisit the options decision: https://github.com/shaunmarsden/practical-ai-adoption/blob/main/guides/compare-ai-with-other-ways-to-improve-work.md
+Recheck action authority: https://github.com/shaunmarsden/practical-ai-adoption/blob/main/guides/map-ai-tool-actions-and-permissions.md
