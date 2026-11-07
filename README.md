@@ -10,6 +10,10 @@ It starts with one habit: give AI a better brief, then check what comes back. Th
 
 No coding or installation needed.
 
+## Experimental AI Adoption Workbench
+
+[Try the six-stage AI Adoption Workbench](https://shaunmarsden.github.io/practical-ai-adoption/workbench/) (prototype). Record a workflow, compare AI with simpler options, plan a bounded trial, describe evidence and prepare a human decision record. It stores answers only in page memory and can export JSON. It has not been tested with real users, and it cannot approve deployment. The existing Pilot Readiness Assessment V2 remains separate.
+
 ## Follow a practical adoption path
 
 If you're moving from a first experiment towards wider workplace use, follow the question that matches where you are. This is a reading route, **not** a fixed six-stage methodology or permission to deploy. Safety, data approval and human accountability apply from the beginning.
