@@ -1,6 +1,8 @@
 # Independent reader review: AI Adoption Workbench
 
-Status: **Prepared, not conducted.** The materials here are proposed for an independent reader who has not helped design or test the workbench. There are no participants, observations, scores or findings yet.
+Status: **Optional materials, not conducted.** The materials here are proposed for an independent reader who has not helped design or test the workbench. There are no participants, observations, scores or findings yet.
+
+Participation is entirely voluntary. **The owner is not recruiting or organising sessions.** These materials are available if someone independently offers to review the tool; no session is required to continue software testing or development. The main invitation is [public visitor feedback](https://github.com/shaunmarsden/practical-ai-adoption/discussions/new). Do not treat unsolicited comments as a controlled comprehension study.
 
 ## Purpose
 
