@@ -2,7 +2,11 @@
 
 A browser notebook for one work question: describe the work, compare AI and non-AI options, plan a bounded pilot if justified, measure what happened, review readiness separately and record a human decision.
 
-Open `docs/workbench/` through the site's static server. No build, runtime dependency, account, backend, telemetry or paid API is needed. The existing homepage and repository README link to it. This branch is proposed work; a draft PR does not establish deployment.
+**[Open the live AI Adoption Workbench](https://shaunmarsden.github.io/practical-ai-adoption/workbench/).** [PR #86](https://github.com/shaunmarsden/practical-ai-adoption/pull/86) was merged on 7 November 2026 as `e78ed2ff9b08a9982ca07306f4f36ef572c7cb8c`. Its [Pages build and deployment](https://github.com/shaunmarsden/practical-ai-adoption/actions/runs/42365996296) succeeded, and a subsequent live smoke test confirmed the deployed files and behaviour described below.
+
+No installation, account, backend, telemetry or paid API is needed. The existing homepage and repository README link to it. For a local preview, serve `docs/` and open `/workbench/`; no build or runtime dependency is required.
+
+The later review below identifies its exact frozen source version; review findings are not operational approval.
 
 ## Why add it
 
@@ -13,7 +17,7 @@ No blocking defect was found in the baseline checks. Open PRs #73 and #74 concer
 ## Behaviour and boundaries
 
 - Six freely navigable steps link to established guides. They are a reading route, not mandatory sequential gates or a validated methodology.
-- Notes stay in page memory. There is no autosave, import, database or submission. Reload/closing loses notes; export first. Text areas allow up to 12,000 characters each. Use fictional or non-sensitive summaries and safe references.
+- Notes stay in page memory. Save draft explicitly downloads local JSON; Reopen draft reads a supported file after checking its structure and confirming replacement of existing notes. There is no autosave, database or submission. Reload/closing clears the page, so save first and reopen manually. Text areas allow up to 12,000 UTF-16 code units each. Use fictional or non-sensitive summaries and safe references. [Format, failure handling and draft tests](drafts/README.md).
 - The text download includes every note, unanswered items, reading links, export timestamp, caveats and a prominent copy of known problems, self-reported V2 position and reported human decision. It is a plain text record, not an executable document or a V2 report.
 - Partial exports are allowed. No completion score, recommended decision, permission check or semantic validation is calculated. Conflicting or false notes remain possible and need human inspection. A recorded positive decision cannot make an unresolved issue acceptable.
 - V2 opens separately with no answer transfer. Its outcome is manually recorded, explicitly self-reported and unverified. Keep its own report alongside this notebook. A complete V2 record is never approval.
@@ -42,6 +46,7 @@ For browser checks, install Chromium with `npx playwright install chromium`, ser
 
 ```sh
 npm run test:workbench
+npm run test:workbench:drafts
 npm run test:browser
 npm run test:pdf
 ```
@@ -66,8 +71,29 @@ Workbench checks:
 
 Development findings are retained here: the first workbench browser run failed because the Next button and next-action note shared an ID. Renaming navigation IDs fixed the failure; the suite now checks all DOM IDs for uniqueness. The first Python baseline invocation used the wrong directory and failed to import the existing checker; its documented invocation passed. Narrow-screen visual review also showed that native selects can crop long outcome labels; the full current selection is now repeated below each select and checked in the journeys. The host's Python 3.9 could not install the pinned PDF dependency, so the PDF checks used a temporary Python 3.12 environment matching CI.
 
+## Live production smoke test on 7 November 2026
+
+This was a read-only check of the actual GitHub Pages site using fictional notes, not a local preview. No repository files, app code, Pages settings or deployment configuration were changed by the smoke test. These are dated observations, not continuous monitoring or independent validation.
+
+| Check | Result and observed scope |
+| --- | --- |
+| Deployment | PASS. Six served files matched the merge commit byte for byte: all four Workbench files, the shared icon and homepage. Pages reported a successful build for `e78ed2f`. |
+| Navigation | PASS. All six steps, keyboard Next, Back and direct jumps worked without losing notes. Homepage entry and header return worked. Guide links opened separately. V2 opened with a blank pilot and no notebook-note transfer. The no-JavaScript guide-route fallback remained visible. |
+| Exports and preview | PASS. Nine actual UTF-8 text downloads covered blank, partial and filled records at three viewport sizes. Filled exports retained all 28 fields, Unicode, literal markup, newlines, tabs, an 11,936-character note, reading links, timestamp, unanswered items and caveats. Known problems stayed prominent alongside positive, unverified V2 and human-decision claims. Preview updated after edits; markup stayed literal rather than executing. |
+| Mobile layout | PASS. Chromium at 1440 x 1000, with touch-enabled mobile emulation at 390 x 844 and 320 x 740. All six panels and the long preview had no horizontal page overflow. Representative screenshots were inspected. Long choices could crop inside native dropdowns, but their full current wording remained readable below. |
+| Clearing and reload | PASS. Cancelling Clear retained notes; confirming cleared all 28 fields and the preview. Reload cleared notes. Existing downloaded files remained unchanged. |
+| Privacy | PASS within the tested sessions. Note entry, preview and export generated only allowed same-site static GET requests, with no bodies or note-bearing URLs. localStorage, sessionStorage, cookies, IndexedDB, Cache Storage and service-worker registrations were empty. The page policy included `connect-src 'none'`. No console/runtime errors, failed requests or HTTP errors occurred in the Workbench journeys. |
+
+Ten unique guide/V2 destinations were checked. One direct availability probe to the data-permission guide received GitHub HTTP 429. Following the actual Workbench link in a fresh browser then returned HTTP 200 and displayed the expected heading. The other nine destinations returned HTTP 200. The initial rate-limit response was retained as an observation, not silently counted as a first-attempt success or treated as a broken link.
+
+These live checks do not repeat the earlier axe scans or establish complete accessibility. Mobile testing used Chromium emulation, not physical devices. Safari, Firefox and assistive technologies were not tested. Ordinary GitHub Pages access logs still receive static requests; deliberately following guides opens GitHub. Browser extensions, device retention/sync and session-recovery differences are outside this smoke test. Exported text persists on the device and is not a resumable backup: there is no import or autosave.
+
+## Fresh-context AI review
+
+The [7 November approval-boundary review](reviews/2026-11-07/README.md) preserves two fresh AI contexts' original findings, fictional expectations, first outputs, screenshots and environment failures. Neither established an actionable approval defect in its examined cases, so no application fix followed. The reviewers' contexts were separate from the implementation conversation and earlier answer keys; this is not independent external human validation or evidence of actual user comprehension. The optional summary-layout suggestion remains unproven. [Evidence Status](../../EVIDENCE-STATUS.md) records these distinctions.
+
 ## Evidence limits
 
-These are software checks using invented inputs within the implementation process. They are not a blinded evaluation of advice, a real pilot, independent testing or evidence of better adoption decisions. No real employer/customer data was used.
+The original software checks used invented inputs within the implementation process. They are not a blinded evaluation of advice, a real pilot or evidence of better adoption decisions. The later fresh-context AI review has the separate provenance and limits described above. No real employer/customer data was used.
 
-Automated accessibility scans and visual inspection do not establish screen-reader usability, user comprehension, cross-browser support or complete WCAG conformance. Safari, Firefox, physical phones and assistive technologies were not tested. Export is UTF-8 text only, with no re-import or automatic V2 integration. Users must review the evidence and obtain actual authority separately. Independent user understanding, real-work utility and realised benefits remain unestablished.
+Automated accessibility scans and visual inspection do not establish screen-reader usability, user comprehension, cross-browser support or complete WCAG conformance. Safari, Firefox, physical phones and assistive technologies were not tested. The readable UTF-8 text export cannot be reopened. Versioned JSON drafts support manual reopening with no automatic V2 integration. Users must review the evidence and obtain actual authority separately. Independent user understanding, real-work utility and realised benefits remain unestablished.

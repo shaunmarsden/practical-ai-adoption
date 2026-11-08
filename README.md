@@ -10,7 +10,7 @@ It starts with one habit: give AI a better brief, then check what comes back. Th
 
 No coding or installation needed.
 
-For a team work question, [open the AI Adoption Workbench](https://shaunmarsden.github.io/practical-ai-adoption/workbench/). It routes through existing guides, links separately to V2 and exports a caveated text record locally. Notes stay in page memory until you export; reload clears them. It is a planning aid, not a new assessment or approval. [Scope, tests and limitations](tools/workbench/README.md).
+For a team work question, [open the AI Adoption Workbench](https://shaunmarsden.github.io/practical-ai-adoption/workbench/). It routes through existing guides, links separately to V2, saves and reopens local JSON drafts, and exports a caveated text record. There is no autosave; reload clears the page until you manually reopen a saved draft. It is a planning aid, not a new assessment or approval. [Scope, tests and limitations](tools/workbench/README.md).
 
 ## Follow a practical adoption path
 
@@ -135,7 +135,7 @@ There are two records, and neither tests the current guides as they stand.
 
 Tried the [AI Adoption Workbench](https://shaunmarsden.github.io/practical-ai-adoption/workbench/)? [Tell me what was confusing in a public GitHub discussion](https://github.com/shaunmarsden/practical-ai-adoption/discussions/new). One sentence is useful. What did you try, where did you get stuck, and what would you change? You do not need to volunteer for a formal study.
 
-Do not share exported records or private workplace information. The public [feedback log](evaluations/workbench-visitor-feedback-log.md) distinguishes actual visitor comments from changes and untested ideas. A separate private feedback form has not been set up for this repository; the form in Practical AI Sales Workflows belongs to that different project.
+Do not share exported records or private workplace information. The public [feedback log](feedback/workbench-visitor-feedback-log.md) distinguishes actual visitor comments from changes and untested ideas. A separate private feedback form has not been set up for this repository; the form in Practical AI Sales Workflows belongs to that different project.
 
 ## Related project
 

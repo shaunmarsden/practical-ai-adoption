@@ -1,0 +1,120 @@
+{
+  "protocol": "Frozen before feature implementation. Fictional cases invented in this reviewer context. AI context separation is not human or external validation.",
+  "sentinel": {
+    "notes": {
+      "work": "Original fictional kelp-lantern stock check.  KEEP  ",
+      "owner": "Night storekeeper",
+      "issues": "Two labels unresolved.",
+      "permissions": "Unknown; no action authorised."
+    },
+    "active_step": 3,
+    "preview": "Use Review all notes to make a visible preview, then capture its exact text and visibility immediately before each attempt."
+  },
+  "race_edit": "Newer fictional edit typed during the delayed read: KEEP THIS.",
+  "atomic_invariant": "Compare all current notes, active-step aria-current, preview textContent and hidden property before/after failure or cancellation. Status may change on genuine failure. Do not supply expected strings or fixture keys to application code.",
+  "cases": [
+    {
+      "id": "P01",
+      "files": [
+        "literal-notes.json"
+      ],
+      "action": "Open on a fresh page; inspect all controls, save, reload, reopen the saved file, save again. Compare each saved notes string with the frozen fixture using UTF-16 values.",
+      "expected": "All 28 strings match exactly, including blank permission/date/decision owner, whitespace, CR, LF, combining accent, emoji and script-looking text. No script executes. Fixed metadata is valid; saved_at may change. Reopening neither runs V2 nor grants authority."
+    },
+    {
+      "id": "P02",
+      "files": [
+        "limit-12000.json",
+        "over-12000.json"
+      ],
+      "action": "Open each file separately against the sentinel state. Accept replacement for the valid file only.",
+      "expected": "Exactly 12000 UTF-16 code units is accepted and survives saving. 12001 is rejected atomically."
+    },
+    {
+      "id": "P03",
+      "files": [
+        "exact-4000000.json",
+        "over-4000000.json"
+      ],
+      "action": "Open each file separately against the sentinel state.",
+      "expected": "Exactly 4000000 UTF-8 bytes is accepted; 4000001 rejected atomically even though extra bytes are only legal JSON whitespace."
+    },
+    {
+      "id": "P04",
+      "files": [
+        "date-first-year.json",
+        "date-leap.json",
+        "date-nonleap.json",
+        "date-zero-year.json"
+      ],
+      "action": "Open each separately and save accepted dates.",
+      "expected": "0001-01-01 and 2400-02-29 accepted and saved unchanged; 2100-02-29 and 0000-01-01 rejected atomically."
+    },
+    {
+      "id": "P05",
+      "files": [
+        "duplicate-top.json",
+        "duplicate-note-escaped.json",
+        "missing-next.json",
+        "boolean-note.json",
+        "unknown-metadata.json",
+        "changed-notice.json",
+        "malformed.json"
+      ],
+      "action": "Open each separately against sentinel state.",
+      "expected": "Every file rejected atomically. Equivalent escaped duplicate key is a duplicate. No coercion, merge, metadata instruction execution or repair."
+    },
+    {
+      "id": "P06",
+      "files": [
+        "literal-notes.json"
+      ],
+      "action": "Open against sentinel state; cancel replacement confirmation.",
+      "expected": "A replacement confirmation appears before state mutation. Cancel preserves every note, active step, exact existing preview text and preview visibility."
+    },
+    {
+      "id": "P07",
+      "files": [],
+      "action": "Open file chooser against sentinel state and cancel without selecting a file.",
+      "expected": "No mutation of notes, active step or preview text/visibility. No successful reopen message."
+    },
+    {
+      "id": "P08",
+      "files": [
+        "literal-notes.json"
+      ],
+      "action": "Delay the selected file read. While pending, change work to the exact race-edit string and navigate to another step. Release the read; decline replacement if prompted.",
+      "expected": "The newer edit survives. No silent overwrite; any confirmation must account for the newer current state. Active step and preview remain consistent with the edit/navigation."
+    },
+    {
+      "id": "P09",
+      "files": [
+        "literal-notes.json"
+      ],
+      "action": "Force the file read to fail after selection against sentinel state.",
+      "expected": "Failure is reported without claiming reopen success. Every note, active step, exact preview text and visibility stay unchanged."
+    },
+    {
+      "id": "P10",
+      "files": [
+        "literal-notes.json"
+      ],
+      "action": "Successfully open with confirmation against sentinel state, then reopen a second valid draft on the same input element.",
+      "expected": "A valid replacement works and a second explicit selection is processed. Imported metadata is never treated as trusted instructions or verified facts."
+    },
+    {
+      "id": "P11",
+      "files": [],
+      "action": "Enter sentinel notes, show preview, attempt Save draft with URL.createObjectURL forced to throw.",
+      "expected": "No success claim. Notes, active step and preview text/visibility remain unchanged; an error is visible."
+    },
+    {
+      "id": "P12",
+      "files": [
+        "bom.json"
+      ],
+      "action": "Open BOM-prefixed file; if accepted, save it.",
+      "expected": "Either reject atomically or accept with all notes identical to literal-notes.json. BOM removal must not alter note strings."
+    }
+  ]
+}

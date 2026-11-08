@@ -83,7 +83,7 @@ try {
     assert.equal(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth), true);
     // No answer-bearing requests, storage or cookies, even after export and preview.
     assert.ok(requests.every(r => r.method === 'GET' && r.body === null &&
-      ['/', '/workbench/', '/workbench/index.html', '/workbench/style.css', '/workbench/app.mjs', '/workbench/content.mjs', '/pilot-readiness/icon.svg'].includes(new URL(r.url).pathname)));
+      ['/', '/workbench/', '/workbench/index.html', '/workbench/style.css', '/workbench/app.mjs', '/workbench/content.mjs', '/workbench/draft.mjs', '/pilot-readiness/icon.svg'].includes(new URL(r.url).pathname)));
     assert.deepEqual(await page.evaluate(() => [localStorage.length, sessionStorage.length, document.cookie]), [0, 0, '']);
     assert.deepEqual(await context.cookies(), []);
     assert.deepEqual(errors, []);

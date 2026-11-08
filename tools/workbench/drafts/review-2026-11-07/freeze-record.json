@@ -1,0 +1,7 @@
+{
+  "baseline": "8a2709598985bbd87b4c5a00d95bc2a8cb2d2e2f",
+  "implementation_started_after_both_bundles_frozen": true,
+  "case_contents_withheld_until_implementation_checkpoint": true,
+  "preservation_manifest_sha256": "d31cbf2f5b667a9f006fa6fc7765b78ac63e623048f4f906baa92af7047ff38f",
+  "privacy_manifest_sha256": "f463827da313b0ea400cd4e9a711a16cd535ece48e9c35f656c1377268c6cf67"
+}
