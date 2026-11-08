@@ -80,7 +80,8 @@ export function emptyRecord() {
 export function recordText(values, exportedAt = new Date().toISOString()) {
   const data = { ...emptyRecord(), ...values };
   const lines = ['AI Adoption Workbench decision record', 'Record format: 1', `Exported: ${exportedAt}`, '', caveat,
-    '', 'REVIEW THESE FIRST', `Known problems: ${data.issues || 'Not recorded'}`, `V2 position (self-reported): ${data.readiness}`, `Human decision (self-reported): ${data.decision}`,
+    '', 'REVIEW THESE FIRST', `Known problems: ${data.issues || 'Not recorded'}`, `Evidence basis (self-reported): ${data.evidenceType || 'Not recorded'}`, `V2 position (self-reported): ${data.readiness}`, `Human decision (self-reported): ${data.decision}`,
+    '', 'Next action, responsible role and review date/triggers (self-reported):', data.next || 'Not recorded',
     '', 'Notes are copied literally, not checked for truth, consistency or sufficient authority. This is not a V2 assessment report. Keep any separate V2 report alongside this record.'];
   for (const step of steps) {
     lines.push('', step.title.toUpperCase());

@@ -112,6 +112,12 @@ The original software checks used invented inputs within the implementation proc
 
 Automated accessibility scans and visual inspection do not establish screen-reader usability, user comprehension, cross-browser support or complete WCAG conformance. The original checks were Chromium-only; the later bounded Firefox/WebKit checks above do not establish full browser support. Physical phones, Safari browser UI and assistive technologies remain untested. The readable UTF-8 text export cannot be reopened. Versioned JSON drafts support manual reopening with no automatic V2 integration. Users must review the evidence and obtain actual authority separately. Independent user understanding, real-work utility and realised benefits remain unestablished.
 
+## Proposed handoff summary
+
+An AI-run fictional manager journey on 8 November found that the text record placed the selected evidence basis at line 81 and the next action at line 128 of a 133-line export. The proposed summary repeats both existing fields under "Review these first", labelled self-reported. Known problems remain first, and the full notes and caveat remain intact. No readiness rules or approval conditions change.
+
+Local checks passed: 52 Node tests, the three Chromium viewport journeys with 18 axe scans, and a repeat of the same fictional checklist-first case at 1440 and 320 pixels with actual text downloads. Both repeated exports retained the detailed record byte for byte after the opening summary. The added summary assertions first failed against the earlier output and passed after the change. This is development evidence for a draft change, not a live deployment claim, human usability test or proof of improved decisions. The separate suggestion to explain unused pilot fields is outside this change.
+
 ## Maintenance and deployed-release verification
 
 The [8 November maintenance record](reviews/2026-11-08/README.md) documents two reproduced text-enlargement fixes, broader browser checks and the reusable deployed-site verifier. It preserves the initial failed release result and distinguishes independent AI/software observations from human or real-use evidence. Maintainers can run `npm run test:workbench:live` with explicit `BASE_URL` and `EXPECTED_COMMIT`; see the record for commands and limitations.

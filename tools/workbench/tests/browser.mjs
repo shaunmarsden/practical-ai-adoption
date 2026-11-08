@@ -73,6 +73,11 @@ try {
     assert.ok(preview.indexOf(expected.issues) < preview.indexOf('DESCRIBE THE WORK'));
     assert.equal(await page.locator('#summary svg').count(), 0, 'notes remain literal text');
     const exported = await downloadText();
+    for (const text of [preview, exported]) {
+      const opening = text.split('DESCRIBE THE WORK')[0];
+      for (const value of [expected.issues, expected.evidenceType, expected.decision, expected.next, caveat]) assert.ok(opening.includes(value), `opening handoff retains ${value}`);
+      assert.ok(opening.includes('Evidence basis (self-reported): Fictional exercise'));
+    }
     for (const [id, label] of fields) assert.ok(exported.includes(`${label}:\n${expected[id]}`), `export preserves ${id}`);
     // Navigate backwards and through step controls without losing notes.
     await page.getByRole('button', { name: 'Back', exact: true }).click();
