@@ -88,6 +88,18 @@ try {
     assert.deepEqual(await context.cookies(), []);
     assert.deepEqual(errors, []);
     assert.deepEqual(failures, []);
+    // Feedback must not navigate away from unsaved notes or pass their contents.
+    // A local response isolates this behaviour without posting to Discussions.
+    const feedbackUrl = 'https://github.com/shaunmarsden/practical-ai-adoption/discussions/new';
+    await context.route(feedbackUrl, route => route.fulfill({ contentType: 'text/html', body: '<h1>Fictional feedback destination</h1>' }));
+    const feedbackPopup = page.waitForEvent('popup');
+    await page.getByRole('link', { name: 'Share public feedback on GitHub', exact: true }).click();
+    const feedback = await feedbackPopup;
+    await feedback.waitForLoadState();
+    assert.equal(feedback.url(), feedbackUrl);
+    assert.equal(await feedback.evaluate(() => window.opener), null);
+    assert.equal(await page.locator('#work').inputValue(), 'Changed after preview');
+    await feedback.close();
     // Links resolve to repository files (checked in unit tests) or the existing local V2.
     await page.getByRole('button', { name: '5. Review readiness separately', exact: true }).click();
     const popupPromise = page.waitForEvent('popup');
