@@ -1,0 +1,22 @@
+node:internal/modules/run_main:107
+    triggerUncaughtException(
+    ^
+
+AssertionError [ERR_ASSERTION]: The input did not match the regular expression /ERR_ABORTED|interrupted|net::/. Input:
+
+'page.reload: Timeout 10000ms exceeded.\n' +
+  'Call log:\n' +
+  '\x1B[2m  - waiting for navigation until "load"\x1B[22m\n'
+
+    at file:///Users/shaun/Documents/ChatGPT/External/practical-ai-adoption/test-results/unsaved-review/state/final-blur-preview.mjs:4:179 {
+  generatedMessage: true,
+  code: 'ERR_ASSERTION',
+  actual: 'page.reload: Timeout 10000ms exceeded.\n' +
+    'Call log:\n' +
+    '\x1B[2m  - waiting for navigation until "load"\x1B[22m\n',
+  expected: /ERR_ABORTED|interrupted|net::/,
+  operator: 'match',
+  diff: 'simple'
+}
+
+Node.js v24.19.0

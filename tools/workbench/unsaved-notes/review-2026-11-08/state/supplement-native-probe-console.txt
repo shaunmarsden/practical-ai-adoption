@@ -1,0 +1,6 @@
+{"key":"ArrowUp","value":"","bad":true,"changed":"true","events":[{"type":"keyup","value":"","bad":true}]}
+{"key":"ArrowRight","value":"","bad":true,"changed":"true","events":[{"type":"keyup","value":"","bad":true}]}
+{"key":"ArrowUp","value":"","bad":true,"changed":"true","events":[{"type":"keyup","value":"","bad":true}]}
+{"key":"ArrowRight","value":"","bad":true,"changed":"true","events":[{"type":"keyup","value":"","bad":true}]}
+{"key":"ArrowUp","value":"2026-01-01","bad":false,"changed":"true","events":[{"type":"input","value":"2026-01-01","bad":false},{"type":"change","value":"2026-01-01","bad":false},{"type":"keyup","value":"2026-01-01","bad":false}]}
+{"key":"Backspace","value":"","bad":true,"changed":"true","events":[{"type":"input","value":"","bad":true},{"type":"change","value":"","bad":true},{"type":"keyup","value":"","bad":true}]}

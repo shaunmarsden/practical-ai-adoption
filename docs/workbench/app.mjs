@@ -4,7 +4,7 @@ import { createChangeTracker } from './changes.mjs';
 const byId = id => document.getElementById(id);
 let active = 0;
 const controls = new Map();
-let notes = emptyRecord(), editRevision = 0;
+let notes = emptyRecord(), editRevision = 0, observedBadDate = false;
 const displayed = new Map();
 const checkpointDisplayed = new Map();
 const changeTracker = createChangeTracker(notes);
@@ -64,13 +64,18 @@ steps.forEach((step, index) => {
 });
 // Native textareas normalise CRLF/CR. Retain imported strings until their
 // visible control changes, so unrelated edits and resaving cannot lose data.
+function incompleteDate() { return controls.get('decisionDate').validity.badInput; }
 function values() {
+  const badDate = incompleteDate();
+  if (badDate !== observedBadDate) { observedBadDate = badDate; editRevision++; }
   for (const [id, input] of controls) {
     if (input.value !== displayed.get(id)) {
       // Returning to the checkpoint's displayed text restores its exact
       // original string too (including imported CRLF rather than native LF).
       notes[id] = input.value === checkpointDisplayed.get(id) ? changeTracker.checkpointValue(id) : input.value;
       displayed.set(id, input.value);
+      const selected = byId(`${id}-selection`);
+      if (selected) selected.textContent = `Current selection: ${input.value}`;
       editRevision++;
     }
   }
@@ -103,12 +108,12 @@ function refreshSummary() { byId('summary').textContent = recordText(values()); 
 byId('caveat').textContent = caveat;
 byId('notes').addEventListener('submit', event => event.preventDefault());
 function warnBeforeLeaving(event) {
-  if (!changeTracker.hasChanges(values())) return;
+  if (!changeTracker.hasChanges(values()) && !incompleteDate()) return;
   event.preventDefault();
   event.returnValue = true; // Legacy implementations; browsers choose the text.
 }
 function updateChanges() {
-  const changed = changeTracker.hasChanges(values());
+  const changed = changeTracker.hasChanges(values()) || incompleteDate();
   if (changed) window.addEventListener('beforeunload', warnBeforeLeaving);
   else window.removeEventListener('beforeunload', warnBeforeLeaving);
   const cleanMessages = {
@@ -117,7 +122,9 @@ function updateChanges() {
     download: 'Draft download requested. No newer edits. Check your downloads; this page cannot confirm the file was kept.',
     clear: 'Notes cleared. Nothing is saved automatically.'
   };
-  const message = changed
+  const message = incompleteDate()
+    ? 'The decision date is incomplete. Complete or clear it before saving a draft.'
+    : changed
     ? 'Newer edits are only in this page. Save draft to request a copy you can reopen.'
     : cleanMessages[changeTracker.checkpointKind()];
   const status = byId('changes-status');
@@ -142,8 +149,24 @@ function onNotesEdited() {
 }
 byId('notes').addEventListener('input', onNotesEdited);
 byId('notes').addEventListener('change', onNotesEdited);
+// Some engines emit no input/change event for an incomplete native date.
+function reconcileDateEdit(event) {
+  const input = controls.get('decisionDate');
+  // A native date segment can change while both value='' and badInput=true
+  // stay constant. Count editing keys so a pending import cannot replace it.
+  const partialKeyEdit = event.type === 'keyup' && incompleteDate() &&
+    (event.key.length === 1 || ['ArrowUp', 'ArrowDown', 'Backspace', 'Delete'].includes(event.key));
+  if (partialKeyEdit) editRevision++;
+  if (partialKeyEdit || input.value !== displayed.get('decisionDate') || incompleteDate() !== observedBadDate) onNotesEdited();
+}
+controls.get('decisionDate').addEventListener('keyup', reconcileDateEdit);
+controls.get('decisionDate').addEventListener('blur', reconcileDateEdit);
 // Browsers may restore controls from history without a fresh input event.
-window.addEventListener('pageshow', updateChanges);
+window.addEventListener('pageshow', () => {
+  values();
+  if (!byId('summary').hidden) refreshSummary();
+  updateChanges();
+});
 byId('back-step').addEventListener('click', () => show(Math.max(0, active - 1)));
 byId('next-step').addEventListener('click', () => show(Math.min(steps.length - 1, active + 1)));
 byId('review').addEventListener('click', () => {
@@ -172,6 +195,11 @@ byId('export').addEventListener('click', () => {
   }
 });
 byId('save-draft').addEventListener('click', () => {
+  if (incompleteDate()) {
+    byId('draft-status').textContent = 'Complete or clear the decision date before saving a draft. Your notes remain here.';
+    updateChanges();
+    return;
+  }
   try {
     const captured = values();
     download(draftText(captured), 'application/json;charset=utf-8', 'ai-adoption-workbench-draft.json');
@@ -202,7 +230,7 @@ byId('reopen-draft').addEventListener('change', async event => {
     values();
     if (editRevision !== revision) throw new Error('Notes changed while the file was loading. Choose the file again when you are ready.');
     const current = values(), defaults = emptyRecord();
-    if (Object.keys(defaults).some(id => current[id] !== defaults[id]) &&
+    if ((incompleteDate() || Object.keys(defaults).some(id => current[id] !== defaults[id])) &&
         !window.confirm('Replace all current notes with this local draft? Save your current draft first if you need to keep it. Reopening does not verify evidence or grant approval.')) {
       byId('draft-status').textContent = 'Reopening cancelled. Your current notes are unchanged.';
       return;

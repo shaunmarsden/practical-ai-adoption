@@ -1,0 +1,60 @@
+{
+  "protocol": "Independent fictional browser challenges frozen before implementation. No feature runner written until checkpoint.",
+  "fixture": {
+    "work": "Larch Lantern Library: draft shelf-label descriptions for an invented lending room.",
+    "owner": "Fictional catalogue steward",
+    "evidenceType": "Fictional exercise",
+    "decision": "Gather evidence, repeat or narrow",
+    "decisionDate": "2026-11-07",
+    "results": "alpha\r\nbeta\rgamma\nNo observations from real people."
+  },
+  "cases": [
+    {
+      "id": "native-reload",
+      "actions": "Fresh context; use real click and typing for sticky activation; enter work and select/date choices; preview; browser reload; dismiss native beforeunload; assert full values, active panel and preview unchanged. Repeat reload accept; defaults may replace edits.",
+      "expectation": "One native beforeunload on dirty reload; dismiss retains; accept leaves/reloads. No custom confirm substituted."
+    },
+    {
+      "id": "native-link",
+      "actions": "Dirty page with real activation; click existing same-tab header link; dismiss; verify retention; repeat accept; reach parent page.",
+      "expectation": "Dirty same-tab link protected by native beforeunload."
+    },
+    {
+      "id": "native-back",
+      "actions": "Navigate from parent to workbench through actual link or same-tab navigation; dirty via real interaction; browser history Back dismiss, then accept. Revisit forward and document bfcache/restored-control behaviour.",
+      "expectation": "Back warning while dirty when engine supports it; retention on dismiss; restored values reconcile on pageshow. Natural bfcache retention is valid."
+    },
+    {
+      "id": "clean-transitions",
+      "actions": "Fresh defaults reload/link/Back; dirty then restore exact default using textarea, select, date; Save JSON then reload; successful reopen then reload; confirmed clear then reload.",
+      "expectation": "No beforeunload while clean, including listener removal after checkpoints or reversion."
+    },
+    {
+      "id": "within-new-tabs",
+      "actions": "Dirty notes, navigate Next/Back/step buttons, preview, guide new tab, V2 new tab, feedback new tab; block outbound requests and record destinations.",
+      "expectation": "No leave warning or note loss; no notes in destination URLs or requests; no external writes."
+    },
+    {
+      "id": "download-semantics",
+      "actions": "Dirty notes; request text export and assert still dirty; request JSON and inspect exact emitted payload; cancel device retention via Playwright download cancellation where supported; edit again. Separately inject synchronous object-URL creation failure and anchor-click failure; then attempt reload dismiss.",
+      "expectation": "Text export does not clean; synchronous JSON failure stays dirty; normal request establishes captured checkpoint despite unobservable OS retention; wording says requested and never guarantees retained/safe/approved."
+    },
+    {
+      "id": "state-status",
+      "actions": "Observe changes-status role=status text and mutation count; type several characters while dirty; return to checkpoint; select/date changes using change event; successful reopen; cancelled replacement; invalid import; cancelled clear.",
+      "expectation": "Status reflects checkpoint-relative changes, no repeated announcements per dirty keystroke; cancelling/invalid imports preserve tracking. No green safe/approval claim."
+    },
+    {
+      "id": "privacy",
+      "actions": "Record network requests and storage APIs after load; exercise notes, preview, JSON/text requests, failed download, transitions and imports. Inspect local/session storage, cookies, IndexedDB databases and service-worker registrations where APIs exist.",
+      "expectation": "No persistence, remote writes, telemetry or automatic downloads. Browser engine state/bfcache is not persistence added by app."
+    }
+  ],
+  "browser_matrix": [
+    "installed Google Chrome if available, else Chromium with explicit label",
+    "Firefox",
+    "WebKit"
+  ],
+  "limits": "Real native browser dialogs must be observed from Playwright dialog events after genuine click/key activation. If engine/harness lacks beforeunload support, document unsupported capability separately; do not infer product defect. File chooser tests via setInputFiles do not establish native OS picker cancel. Browser/process crash, OS tab-close, mobile kill and actual retained-file confirmation remain unverified. No human validation claimed.",
+  "first_result_policy": "Append first per-case result/failure before any adapter or rerun; preserve first files; reruns separate. Harness adapters may probe controls or intercept local browser APIs for failure injection; never feed expectations/case IDs into app logic."
+}

@@ -1,0 +1,9 @@
+{
+  "result": "PASS",
+  "unchangedBlurPreview": true,
+  "cancelledClearPreview": true,
+  "cancelledNativeReloadPreview": true,
+  "date": "2026-11-07",
+  "nativeDialogs": 1,
+  "limit": "Automated headless Chromium desktop only."
+}

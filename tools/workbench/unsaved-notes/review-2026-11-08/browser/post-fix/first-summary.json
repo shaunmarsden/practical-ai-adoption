@@ -1,0 +1,604 @@
+[
+  {
+    "browser": "chrome",
+    "case": "launch",
+    "outcome": "pass",
+    "version": "157.0.8103.38"
+  },
+  {
+    "browser": "chrome",
+    "case": "native-reload",
+    "outcome": "pass",
+    "detail": {
+      "cancel": {
+        "dialogs": [
+          {
+            "type": "beforeunload",
+            "message": ""
+          }
+        ],
+        "error": "page.reload: Timeout 3000ms exceeded.\nCall log:\n\u001b[2m  - waiting for navigation until \"load\"\u001b[22m\n",
+        "url": "http://127.0.0.1:8771/workbench/"
+      },
+      "accept": {
+        "dialogs": [
+          {
+            "type": "beforeunload",
+            "message": ""
+          }
+        ],
+        "url": "http://127.0.0.1:8771/workbench/"
+      }
+    }
+  },
+  {
+    "browser": "chrome",
+    "case": "native-link",
+    "outcome": "pass",
+    "detail": {
+      "cancel": {
+        "dialogs": [
+          {
+            "type": "beforeunload",
+            "message": ""
+          }
+        ],
+        "url": "http://127.0.0.1:8771/workbench/"
+      },
+      "accept": {
+        "dialogs": [
+          {
+            "type": "beforeunload",
+            "message": ""
+          }
+        ],
+        "url": "http://127.0.0.1:8771/"
+      }
+    }
+  },
+  {
+    "browser": "chrome",
+    "case": "native-back",
+    "outcome": "pass",
+    "detail": {
+      "cancel": {
+        "dialogs": [
+          {
+            "type": "beforeunload",
+            "message": ""
+          }
+        ],
+        "error": "page.goBack: Timeout 3000ms exceeded.\nCall log:\n\u001b[2m  - waiting for navigation until \"load\"\u001b[22m\n",
+        "url": "http://127.0.0.1:8771/workbench/"
+      },
+      "accept": {
+        "dialogs": [
+          {
+            "type": "beforeunload",
+            "message": ""
+          }
+        ],
+        "url": "http://127.0.0.1:8771/"
+      },
+      "forward": {
+        "value": "",
+        "changed": "false"
+      }
+    }
+  },
+  {
+    "browser": "chrome",
+    "case": "clean-transitions",
+    "outcome": "pass",
+    "detail": {
+      "initial": {
+        "dialogs": [],
+        "url": "http://127.0.0.1:8771/workbench/"
+      },
+      "reverted": {
+        "dialogs": [],
+        "url": "http://127.0.0.1:8771/workbench/"
+      },
+      "saved": {
+        "dialogs": [],
+        "url": "http://127.0.0.1:8771/workbench/"
+      },
+      "reopened": {
+        "dialogs": [],
+        "url": "http://127.0.0.1:8771/workbench/"
+      },
+      "cleared": {
+        "dialogs": [],
+        "url": "http://127.0.0.1:8771/workbench/"
+      }
+    }
+  },
+  {
+    "browser": "chrome",
+    "case": "within-new-tabs",
+    "outcome": "pass",
+    "detail": {
+      "destinations": [
+        "https://github.com/shaunmarsden/practical-ai-adoption/blob/main/guides/map-a-workflow-before-choosing-ai.md",
+        "../pilot-readiness/",
+        "https://github.com/shaunmarsden/practical-ai-adoption/discussions/new"
+      ],
+      "dialogs": []
+    }
+  },
+  {
+    "browser": "chrome",
+    "case": "download-semantics",
+    "outcome": "pass",
+    "detail": {
+      "status": "Draft download requested. No newer edits. Check your downloads; this page cannot confirm the file was kept.",
+      "failures": [
+        "Draft download could not start. Your notes remain here. Try again or use the text export.",
+        "Draft download could not start. Your notes remain here. Try again or use the text export."
+      ],
+      "leave": {
+        "dialogs": [
+          {
+            "type": "beforeunload",
+            "message": ""
+          }
+        ],
+        "error": "page.reload: Timeout 3000ms exceeded.\nCall log:\n\u001b[2m  - waiting for navigation until \"load\"\u001b[22m\n",
+        "url": "http://127.0.0.1:8771/workbench/"
+      }
+    }
+  },
+  {
+    "browser": "chrome",
+    "case": "state-status",
+    "outcome": "pass",
+    "detail": {
+      "mutationsWhileRepeatedTyping": 1,
+      "status": "Newer edits are only in this page. Save draft to request a copy you can reopen."
+    }
+  },
+  {
+    "browser": "chrome",
+    "case": "privacy",
+    "outcome": "pass",
+    "detail": {
+      "storage": {
+        "local": 0,
+        "session": 0,
+        "databases": [],
+        "workers": 0,
+        "cookie": ""
+      },
+      "requests": [
+        {
+          "url": "http://127.0.0.1:8771/workbench/",
+          "method": "GET"
+        },
+        {
+          "url": "http://127.0.0.1:8771/workbench/style.css",
+          "method": "GET"
+        },
+        {
+          "url": "http://127.0.0.1:8771/workbench/app.mjs",
+          "method": "GET"
+        },
+        {
+          "url": "http://127.0.0.1:8771/workbench/content.mjs",
+          "method": "GET"
+        },
+        {
+          "url": "http://127.0.0.1:8771/workbench/draft.mjs",
+          "method": "GET"
+        },
+        {
+          "url": "http://127.0.0.1:8771/workbench/changes.mjs",
+          "method": "GET"
+        },
+        {
+          "url": "http://127.0.0.1:8771/pilot-readiness/icon.svg",
+          "method": "GET"
+        }
+      ]
+    }
+  },
+  {
+    "browser": "firefox",
+    "case": "launch",
+    "outcome": "pass",
+    "version": "153.0"
+  },
+  {
+    "browser": "firefox",
+    "case": "native-reload",
+    "outcome": "pass",
+    "detail": {
+      "cancel": {
+        "dialogs": [
+          {
+            "type": "beforeunload",
+            "message": "This page is asking you to confirm that you want to leave — information you’ve entered may not be saved."
+          }
+        ],
+        "error": "page.reload: Timeout 3000ms exceeded.\nCall log:\n\u001b[2m  - waiting for navigation until \"load\"\u001b[22m\n",
+        "url": "http://127.0.0.1:8771/workbench/"
+      },
+      "accept": {
+        "dialogs": [
+          {
+            "type": "beforeunload",
+            "message": "This page is asking you to confirm that you want to leave — information you’ve entered may not be saved."
+          }
+        ],
+        "url": "http://127.0.0.1:8771/workbench/"
+      }
+    }
+  },
+  {
+    "browser": "firefox",
+    "case": "native-link",
+    "outcome": "pass",
+    "detail": {
+      "cancel": {
+        "dialogs": [
+          {
+            "type": "beforeunload",
+            "message": "This page is asking you to confirm that you want to leave — information you’ve entered may not be saved."
+          }
+        ],
+        "url": "http://127.0.0.1:8771/workbench/"
+      },
+      "accept": {
+        "dialogs": [
+          {
+            "type": "beforeunload",
+            "message": "This page is asking you to confirm that you want to leave — information you’ve entered may not be saved."
+          }
+        ],
+        "url": "http://127.0.0.1:8771/"
+      }
+    }
+  },
+  {
+    "browser": "firefox",
+    "case": "native-back",
+    "outcome": "pass",
+    "detail": {
+      "cancel": {
+        "dialogs": [
+          {
+            "type": "beforeunload",
+            "message": "This page is asking you to confirm that you want to leave — information you’ve entered may not be saved."
+          }
+        ],
+        "error": "page.goBack: Timeout 3000ms exceeded.\nCall log:\n\u001b[2m  - waiting for navigation until \"load\"\u001b[22m\n",
+        "url": "http://127.0.0.1:8771/workbench/"
+      },
+      "accept": {
+        "dialogs": [
+          {
+            "type": "beforeunload",
+            "message": "This page is asking you to confirm that you want to leave — information you’ve entered may not be saved."
+          }
+        ],
+        "url": "http://127.0.0.1:8771/"
+      },
+      "forward": {
+        "value": "",
+        "changed": "false"
+      }
+    }
+  },
+  {
+    "browser": "firefox",
+    "case": "clean-transitions",
+    "outcome": "pass",
+    "detail": {
+      "initial": {
+        "dialogs": [],
+        "url": "http://127.0.0.1:8771/workbench/"
+      },
+      "reverted": {
+        "dialogs": [],
+        "url": "http://127.0.0.1:8771/workbench/"
+      },
+      "saved": {
+        "dialogs": [],
+        "url": "http://127.0.0.1:8771/workbench/"
+      },
+      "reopened": {
+        "dialogs": [],
+        "url": "http://127.0.0.1:8771/workbench/"
+      },
+      "cleared": {
+        "dialogs": [],
+        "url": "http://127.0.0.1:8771/workbench/"
+      }
+    }
+  },
+  {
+    "browser": "firefox",
+    "case": "within-new-tabs",
+    "outcome": "pass",
+    "detail": {
+      "destinations": [
+        "https://github.com/shaunmarsden/practical-ai-adoption/blob/main/guides/map-a-workflow-before-choosing-ai.md",
+        "../pilot-readiness/",
+        "https://github.com/shaunmarsden/practical-ai-adoption/discussions/new"
+      ],
+      "dialogs": []
+    }
+  },
+  {
+    "browser": "firefox",
+    "case": "download-semantics",
+    "outcome": "pass",
+    "detail": {
+      "status": "Draft download requested. No newer edits. Check your downloads; this page cannot confirm the file was kept.",
+      "failures": [
+        "Draft download could not start. Your notes remain here. Try again or use the text export.",
+        "Draft download could not start. Your notes remain here. Try again or use the text export."
+      ],
+      "leave": {
+        "dialogs": [
+          {
+            "type": "beforeunload",
+            "message": "This page is asking you to confirm that you want to leave — information you’ve entered may not be saved."
+          }
+        ],
+        "error": "page.reload: Timeout 3000ms exceeded.\nCall log:\n\u001b[2m  - waiting for navigation until \"load\"\u001b[22m\n",
+        "url": "http://127.0.0.1:8771/workbench/"
+      }
+    }
+  },
+  {
+    "browser": "firefox",
+    "case": "state-status",
+    "outcome": "pass",
+    "detail": {
+      "mutationsWhileRepeatedTyping": 1,
+      "status": "Newer edits are only in this page. Save draft to request a copy you can reopen."
+    }
+  },
+  {
+    "browser": "firefox",
+    "case": "privacy",
+    "outcome": "pass",
+    "detail": {
+      "storage": {
+        "local": 0,
+        "session": 0,
+        "databases": [],
+        "workers": 0,
+        "cookie": ""
+      },
+      "requests": [
+        {
+          "url": "http://127.0.0.1:8771/workbench/",
+          "method": "GET"
+        },
+        {
+          "url": "http://127.0.0.1:8771/workbench/style.css",
+          "method": "GET"
+        },
+        {
+          "url": "http://127.0.0.1:8771/workbench/app.mjs",
+          "method": "GET"
+        },
+        {
+          "url": "http://127.0.0.1:8771/workbench/content.mjs",
+          "method": "GET"
+        },
+        {
+          "url": "http://127.0.0.1:8771/workbench/draft.mjs",
+          "method": "GET"
+        },
+        {
+          "url": "http://127.0.0.1:8771/workbench/changes.mjs",
+          "method": "GET"
+        },
+        {
+          "url": "http://127.0.0.1:8771/pilot-readiness/icon.svg",
+          "method": "GET"
+        }
+      ]
+    }
+  },
+  {
+    "browser": "webkit",
+    "case": "launch",
+    "outcome": "pass",
+    "version": "26.5"
+  },
+  {
+    "browser": "webkit",
+    "case": "native-reload",
+    "outcome": "pass",
+    "detail": {
+      "cancel": {
+        "dialogs": [
+          {
+            "type": "beforeunload",
+            "message": "true"
+          }
+        ],
+        "error": "page.reload: navigation cancelled by beforeunload dialog\nCall log:\n\u001b[2m  - waiting for navigation until \"load\"\u001b[22m\n",
+        "url": "http://127.0.0.1:8771/workbench/"
+      },
+      "accept": {
+        "dialogs": [
+          {
+            "type": "beforeunload",
+            "message": "true"
+          }
+        ],
+        "url": "http://127.0.0.1:8771/workbench/"
+      }
+    }
+  },
+  {
+    "browser": "webkit",
+    "case": "native-link",
+    "outcome": "pass",
+    "detail": {
+      "cancel": {
+        "dialogs": [
+          {
+            "type": "beforeunload",
+            "message": "true"
+          }
+        ],
+        "url": "http://127.0.0.1:8771/workbench/"
+      },
+      "accept": {
+        "dialogs": [
+          {
+            "type": "beforeunload",
+            "message": "true"
+          }
+        ],
+        "url": "http://127.0.0.1:8771/"
+      }
+    }
+  },
+  {
+    "browser": "webkit",
+    "case": "native-back",
+    "outcome": "pass",
+    "detail": {
+      "cancel": {
+        "dialogs": [
+          {
+            "type": "beforeunload",
+            "message": "true"
+          }
+        ],
+        "error": "page.goBack: navigation cancelled by beforeunload dialog\nCall log:\n\u001b[2m  - waiting for navigation until \"load\"\u001b[22m\n",
+        "url": "http://127.0.0.1:8771/workbench/"
+      },
+      "accept": {
+        "dialogs": [
+          {
+            "type": "beforeunload",
+            "message": "true"
+          }
+        ],
+        "url": "http://127.0.0.1:8771/"
+      },
+      "forward": {
+        "value": "",
+        "changed": "false"
+      }
+    }
+  },
+  {
+    "browser": "webkit",
+    "case": "clean-transitions",
+    "outcome": "pass",
+    "detail": {
+      "initial": {
+        "dialogs": [],
+        "url": "http://127.0.0.1:8771/workbench/"
+      },
+      "reverted": {
+        "dialogs": [],
+        "url": "http://127.0.0.1:8771/workbench/"
+      },
+      "saved": {
+        "dialogs": [],
+        "url": "http://127.0.0.1:8771/workbench/"
+      },
+      "reopened": {
+        "dialogs": [],
+        "url": "http://127.0.0.1:8771/workbench/"
+      },
+      "cleared": {
+        "dialogs": [],
+        "url": "http://127.0.0.1:8771/workbench/"
+      }
+    }
+  },
+  {
+    "browser": "webkit",
+    "case": "within-new-tabs",
+    "outcome": "pass",
+    "detail": {
+      "destinations": [
+        "https://github.com/shaunmarsden/practical-ai-adoption/blob/main/guides/map-a-workflow-before-choosing-ai.md",
+        "../pilot-readiness/",
+        "https://github.com/shaunmarsden/practical-ai-adoption/discussions/new"
+      ],
+      "dialogs": []
+    }
+  },
+  {
+    "browser": "webkit",
+    "case": "download-semantics",
+    "outcome": "pass",
+    "detail": {
+      "status": "Draft download requested. No newer edits. Check your downloads; this page cannot confirm the file was kept.",
+      "failures": [
+        "Draft download could not start. Your notes remain here. Try again or use the text export.",
+        "Draft download could not start. Your notes remain here. Try again or use the text export."
+      ],
+      "leave": {
+        "dialogs": [
+          {
+            "type": "beforeunload",
+            "message": "true"
+          }
+        ],
+        "error": "page.reload: navigation cancelled by beforeunload dialog\nCall log:\n\u001b[2m  - waiting for navigation until \"load\"\u001b[22m\n",
+        "url": "http://127.0.0.1:8771/workbench/"
+      }
+    }
+  },
+  {
+    "browser": "webkit",
+    "case": "state-status",
+    "outcome": "pass",
+    "detail": {
+      "mutationsWhileRepeatedTyping": 1,
+      "status": "Newer edits are only in this page. Save draft to request a copy you can reopen."
+    }
+  },
+  {
+    "browser": "webkit",
+    "case": "privacy",
+    "outcome": "pass",
+    "detail": {
+      "storage": {
+        "local": 0,
+        "session": 0,
+        "databases": [],
+        "workers": 0,
+        "cookie": ""
+      },
+      "requests": [
+        {
+          "url": "http://127.0.0.1:8771/workbench/",
+          "method": "GET"
+        },
+        {
+          "url": "http://127.0.0.1:8771/workbench/style.css",
+          "method": "GET"
+        },
+        {
+          "url": "http://127.0.0.1:8771/workbench/app.mjs",
+          "method": "GET"
+        },
+        {
+          "url": "http://127.0.0.1:8771/workbench/content.mjs",
+          "method": "GET"
+        },
+        {
+          "url": "http://127.0.0.1:8771/workbench/draft.mjs",
+          "method": "GET"
+        },
+        {
+          "url": "http://127.0.0.1:8771/workbench/changes.mjs",
+          "method": "GET"
+        }
+      ]
+    }
+  }
+]

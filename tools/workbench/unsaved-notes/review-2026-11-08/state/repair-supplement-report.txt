@@ -1,0 +1,13 @@
+Repair and supplemental review, 8 November 2026
+
+Original frozen pageshow-restoration case was run unchanged against the repaired working app and passed. Original pre-implementation challenges, first results, first failures and original ARTIFACT-SHA256SUMS remain unchanged.
+
+Supplemental date challenges were frozen after implementation was described, before reading/checking new date paths. They are not pre-implementation holdouts. Supplemental frozen-note SHA-256: 7e873eb5475d09ada34ce506e80315723bf94172a7a478cef9c0dba2d86c21e9.
+
+All five supplemental challenges pass after one separately retained S4 harness correction. Native Chromium ArrowUp on an empty date produced partial visible 01/mm/yyyy, value empty and badInput true, with keyup but no input/change events. Dirty status and native beforeunload cancellation activated. JSON Save created no Blob, preserved partial controls, left changed=true and explained completion/clear. Blank saved checkpoint clears correctly after clearing native segments. Full saved date -> partial -> Save remains changed and blocked. Starting partial entry while import was pending rejected that read; partial-only notes required replacement confirmation. Unchanged date blur/keyup caused no false race. Restored note/select/date controls updated both preview and helper, and full revert cleared status and refreshed preview.
+
+Discovered supplemental race extension remains: enter partial date, start delayed import, change native segment from 01/mm/yyyy to 02/mm/yyyy while pending, then resolve. Both value and badInput remain unchanged so no revision is recorded. App asks replacement confirmation, then acceptance applies imported notes and clears partial date rather than rejecting stale import. Native screenshots partial-before-pending.png / partial-after-edit.png verify the actual segment changed. existing-partial-race-observation.json retains events, one confirmation, successful reopen status, and resulting changed=false. This is not silent replacement because confirmation occurred, but is inconsistent with the stated revision protection for edits during reads.
+
+S4 first assertion was too broad: it matched the existing unchanged caveat phrase Fictional exercises. Retained first failure, corrected only assertion scope in a separate runner and passed. No stale preview remained.
+
+Limits: automated headless Chromium and synthetic pageshow only; no physical-device, human usability or real bfcache evidence. Blob/anchor intercepts capture requested file bytes without asserting retention. No production edits were made.

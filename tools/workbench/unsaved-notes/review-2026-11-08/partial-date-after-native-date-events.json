@@ -1,0 +1,23 @@
+[
+  {
+    "name": "chromium",
+    "value": "",
+    "badInput": true,
+    "valid": false,
+    "changed": "true"
+  },
+  {
+    "name": "firefox",
+    "value": "",
+    "badInput": false,
+    "valid": true,
+    "changed": "false"
+  },
+  {
+    "name": "webkit",
+    "value": "",
+    "badInput": true,
+    "valid": false,
+    "changed": "true"
+  }
+]

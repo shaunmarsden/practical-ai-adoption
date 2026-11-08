@@ -16,6 +16,8 @@ The [local Save draft and Reopen draft implementation](tools/workbench/drafts/RE
 
 The [8 November maintenance review](tools/workbench/reviews/2026-11-08/README.md) extended software checks to Firefox and Playwright WebKit, reproduced two low-severity 320-pixel/200%-text layout issues, and rechecked the minimal CSS fix independently. It also adds a maintained deployed-asset and browser-journey verifier. The first production run confirmed draft saving/reopening but correctly failed overall on the known reflow issue. These are bounded software observations, not actual Safari/physical-device assurance, screen-reader testing, human comprehension or workplace evidence. Native filename-area clipping remains disclosed.
 
+The proposed [unsaved-notes protection](tools/workbench/unsaved-notes/README.md) has challenges frozen in two fresh AI contexts before the initial implementation. The [review record](tools/workbench/unsaved-notes/review-2026-11-08/README.md) retains the first restored-control failure and later partial-date findings, repairs and browser checks. These are bounded software observations using fictional notes, not proof of file retention, reliable warnings on every device, human understanding or approval. The change remains a draft branch; this entry does not claim deployment.
+
 ## How to Read the Matrix
 
 - The scenario column links the worked example. It's a before-and-after on made-up information: an ordinary first attempt, and one written using the guide. Every company and person in them is invented.
