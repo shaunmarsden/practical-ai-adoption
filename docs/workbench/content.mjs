@@ -26,7 +26,7 @@ export const steps = [
   },
   {
     title: 'Plan a bounded pilot',
-    intro: 'Only plan a trial if it is useful and permitted. Keep the current process available. Invented/public offline learning must have no real-person, operational or external effects and still needs applicable permission.',
+    intro: 'Only plan a trial if it is useful and permitted. Keep the current process available. Invented/public offline learning must have no real-person, operational or external effects and still needs applicable permission. No AI trial proposed? Record why in "Pilot boundary, or reason not to trial". Trial roles, sample, success conditions and stop/recovery fields can be skipped where they do not apply. For export, write "Not applicable - no AI trial proposed" in unused fields. Keep unresolved permissions and any baseline measurement plan.',
     links: [guide('run-a-controlled-team-ai-pilot', 'Run a controlled team pilot'), guide('before-you-put-work-data-into-ai', 'Check data permissions'), guide('map-ai-tool-actions-and-permissions', 'Map tool actions and permissions')],
     fields: [
       ['boundary', 'Pilot boundary, or reason not to trial', 'Define activity, scale, dates, users, tool/model/prompt version, exclusions and prohibited actions.'],
