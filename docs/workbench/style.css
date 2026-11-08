@@ -22,7 +22,7 @@ button:hover { box-shadow: inset 0 0 0 1px currentColor; }
 button:disabled { color: #58636b; border-color: #adb7bd; cursor: default; box-shadow: none; }
 :focus-visible { outline: 3px solid #a84400; outline-offset: 4px; }
 h2:focus, main:focus { outline: 3px solid #a84400; outline-offset: 5px; }
-form, .record { background: var(--paper); border: 1px solid var(--line); border-radius: .5rem; padding: clamp(1rem, 3vw, 2rem); margin: 1.4rem 0; }
+form, .record, .draft-tools { background: var(--paper); border: 1px solid var(--line); border-radius: .5rem; padding: clamp(1rem, 3vw, 2rem); margin: 1.4rem 0; }
 .field { margin: 1.8rem 0; }
 label { font-weight: 650; display: block; }
 .field p { color: var(--muted); margin: .3rem 0 .6rem; }
@@ -36,3 +36,4 @@ footer { border-top: 1px solid var(--line); margin-top: 2rem; padding-top: 1.4re
 .skip { position: absolute; left: 1rem; top: -6rem; background: white; padding: .8rem; z-index: 1; }
 .skip:focus { top: .6rem; }
 @media (max-width: 600px) { header { flex-direction: column; } nav ol { grid-template-columns: 1fr; } main { padding-top: 1rem; } }
+.draft-tools label { margin-top: 1rem; }

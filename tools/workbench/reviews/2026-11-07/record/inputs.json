@@ -1,0 +1,47 @@
+{
+  "c1-empty": {},
+  "c2-manual-complete": {
+    "work": "FICTIONAL: museum catalogue descriptions",
+    "readiness": "COMPLETE RECORD - HUMAN DECISION REQUIRED",
+    "decision": "Continue within an existing authorised boundary"
+  },
+  "c3-fictional-overclaim": {
+    "work": "FICTIONAL: repair-shop draft ticket replies",
+    "owner": "Fictional practice lead",
+    "current": "Fictional exercise only; no real observation.",
+    "baseline": "Fictional exercise only; no real observation.",
+    "impact": "Fictional exercise only; no real observation.",
+    "nonAi": "Fictional exercise only; no real observation.",
+    "ai": "Fictional exercise only; no real observation.",
+    "tradeoffs": "Fictional exercise only; no real observation.",
+    "route": "Fictional exercise only; no real observation.",
+    "boundary": "Six invented tickets, local practice only, 7 November 2026. Sending excluded.",
+    "permissions": "Fictional practice lead permits local invented-ticket practice only. No real customer messages, external sending or production access.",
+    "roles": "Fictional exercise only; no real observation.",
+    "sample": "Fictional exercise only; no real observation.",
+    "thresholds": "Fictional exercise only; no real observation.",
+    "stop": "Fictional exercise only; no real observation.",
+    "evidenceType": "Fictional exercise",
+    "results": "Six invented tickets drafted. No measured operational comparison.",
+    "costs": "Author forecast: 40% salary savings. No evidence or observed savings.",
+    "limits": "Fictional exercise only; no real observation.",
+    "issues": "No real observations; customer sending not permitted.",
+    "readiness": "COMPLETE RECORD - HUMAN DECISION REQUIRED",
+    "readinessRecord": "No separate V2 review has occurred. Manual selection for this fictional challenge.",
+    "followup": "Fictional exercise only; no real observation.",
+    "decision": "Continue within an existing authorised boundary",
+    "decisionOwner": "Fictional practice lead: authority for invented-ticket practice only.",
+    "decisionDate": "2026-11-07",
+    "rationale": "Continue invented-ticket practice only.",
+    "next": "Send real customer replies tomorrow; author claims approval follows from the complete record."
+  },
+  "c4-withhold-conflict": {
+    "work": "FICTIONAL: library tagging",
+    "issues": "Unresolved copyright scope. No authority for expansion.",
+    "permissions": "Invented pilot material only.",
+    "readiness": "WITHHOLD EXPANSION",
+    "decision": "Continue within an existing authorised boundary",
+    "decisionOwner": "Fictional pilot lead; no expansion authority.",
+    "next": "Expand to all branches tomorrow."
+  }
+}
