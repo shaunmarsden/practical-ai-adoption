@@ -131,6 +131,12 @@ There are two records, and neither tests the current guides as they stand.
 
 [Reusable AI Handover Workflow](evidence/real-use-reusable-handover-workflow.md) records repeated real use of a structured, AI-assisted way of writing handovers. It supports the ideas behind these guides.
 
+## Give feedback on the Workbench
+
+Tried the [AI Adoption Workbench](https://shaunmarsden.github.io/practical-ai-adoption/workbench/)? [Tell me what was confusing in a public GitHub discussion](https://github.com/shaunmarsden/practical-ai-adoption/discussions/new). One sentence is useful. What did you try, where did you get stuck, and what would you change? You do not need to volunteer for a formal study.
+
+Do not share exported records or private workplace information. The public [feedback log](feedback/workbench-visitor-feedback-log.md) distinguishes actual visitor comments from changes and untested ideas. A separate private feedback form has not been set up for this repository; the form in Practical AI Sales Workflows belongs to that different project.
+
 ## Related project
 
 Looking for B2B sales workflows? [Practical AI Sales Workflows](https://github.com/shaunmarsden/practical-ai-sales-workflows) takes the same evidence-first approach to common sales jobs.
