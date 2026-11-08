@@ -1,0 +1,581 @@
+{
+  "scope": "Local review follow-up on PR #96 after reconciliation with main 0ff54ba4f291fc1036443cffceedda6bf927e4f5. Fictional inputs only; not a fresh live-site check or human validation.",
+  "nodeTests": {
+    "passed": 46,
+    "failed": 0
+  },
+  "journeys": [
+    {
+      "engine": "chromium",
+      "width": 1440,
+      "checks": {
+        "exactDraftRoundTrip": true,
+        "unrelatedEditPreservesAllOtherStrings": true,
+        "adverseFindingAndLiteralMarkup": true,
+        "rejectedFilesPreserveState": true,
+        "noHorizontalOverflow": true,
+        "onlyStaticGets": true,
+        "feedbackPreservesNotebook": true,
+        "reloadHasNoAutosave": true
+      },
+      "errors": [],
+      "requests": [
+        {
+          "url": "http://127.0.0.1:8767/workbench/",
+          "method": "GET",
+          "body": null
+        },
+        {
+          "url": "http://127.0.0.1:8767/workbench/style.css",
+          "method": "GET",
+          "body": null
+        },
+        {
+          "url": "http://127.0.0.1:8767/workbench/app.mjs",
+          "method": "GET",
+          "body": null
+        },
+        {
+          "url": "http://127.0.0.1:8767/workbench/content.mjs",
+          "method": "GET",
+          "body": null
+        },
+        {
+          "url": "http://127.0.0.1:8767/workbench/draft.mjs",
+          "method": "GET",
+          "body": null
+        },
+        {
+          "url": "http://127.0.0.1:8767/pilot-readiness/icon.svg",
+          "method": "GET",
+          "body": null
+        },
+        {
+          "url": "http://127.0.0.1:8767/workbench/",
+          "method": "GET",
+          "body": null
+        },
+        {
+          "url": "http://127.0.0.1:8767/workbench/style.css",
+          "method": "GET",
+          "body": null
+        },
+        {
+          "url": "http://127.0.0.1:8767/workbench/app.mjs",
+          "method": "GET",
+          "body": null
+        },
+        {
+          "url": "http://127.0.0.1:8767/workbench/content.mjs",
+          "method": "GET",
+          "body": null
+        },
+        {
+          "url": "http://127.0.0.1:8767/workbench/draft.mjs",
+          "method": "GET",
+          "body": null
+        },
+        {
+          "url": "http://127.0.0.1:8767/pilot-readiness/icon.svg",
+          "method": "GET",
+          "body": null
+        }
+      ],
+      "keyboard": {
+        "tabReachesSkip": true,
+        "initialFocus": {
+          "id": "",
+          "tag": "A"
+        }
+      },
+      "storage": {
+        "local": 0,
+        "session": 0,
+        "cookie": ""
+      },
+      "status": "PASS"
+    },
+    {
+      "engine": "chromium",
+      "width": 320,
+      "checks": {
+        "exactDraftRoundTrip": true,
+        "unrelatedEditPreservesAllOtherStrings": true,
+        "adverseFindingAndLiteralMarkup": true,
+        "rejectedFilesPreserveState": true,
+        "noHorizontalOverflow": true,
+        "onlyStaticGets": true,
+        "feedbackPreservesNotebook": true,
+        "reloadHasNoAutosave": true
+      },
+      "errors": [],
+      "requests": [
+        {
+          "url": "http://127.0.0.1:8767/workbench/",
+          "method": "GET",
+          "body": null
+        },
+        {
+          "url": "http://127.0.0.1:8767/workbench/style.css",
+          "method": "GET",
+          "body": null
+        },
+        {
+          "url": "http://127.0.0.1:8767/workbench/app.mjs",
+          "method": "GET",
+          "body": null
+        },
+        {
+          "url": "http://127.0.0.1:8767/workbench/content.mjs",
+          "method": "GET",
+          "body": null
+        },
+        {
+          "url": "http://127.0.0.1:8767/workbench/draft.mjs",
+          "method": "GET",
+          "body": null
+        },
+        {
+          "url": "http://127.0.0.1:8767/pilot-readiness/icon.svg",
+          "method": "GET",
+          "body": null
+        },
+        {
+          "url": "http://127.0.0.1:8767/workbench/",
+          "method": "GET",
+          "body": null
+        },
+        {
+          "url": "http://127.0.0.1:8767/workbench/style.css",
+          "method": "GET",
+          "body": null
+        },
+        {
+          "url": "http://127.0.0.1:8767/workbench/app.mjs",
+          "method": "GET",
+          "body": null
+        },
+        {
+          "url": "http://127.0.0.1:8767/workbench/content.mjs",
+          "method": "GET",
+          "body": null
+        },
+        {
+          "url": "http://127.0.0.1:8767/workbench/draft.mjs",
+          "method": "GET",
+          "body": null
+        },
+        {
+          "url": "http://127.0.0.1:8767/pilot-readiness/icon.svg",
+          "method": "GET",
+          "body": null
+        }
+      ],
+      "keyboard": {
+        "tabReachesSkip": true,
+        "initialFocus": {
+          "id": "",
+          "tag": "A"
+        }
+      },
+      "storage": {
+        "local": 0,
+        "session": 0,
+        "cookie": ""
+      },
+      "status": "PASS"
+    },
+    {
+      "engine": "firefox",
+      "width": 1440,
+      "checks": {
+        "exactDraftRoundTrip": true,
+        "unrelatedEditPreservesAllOtherStrings": true,
+        "adverseFindingAndLiteralMarkup": true,
+        "rejectedFilesPreserveState": true,
+        "noHorizontalOverflow": true,
+        "onlyStaticGets": true,
+        "feedbackPreservesNotebook": true,
+        "reloadHasNoAutosave": true
+      },
+      "errors": [],
+      "requests": [
+        {
+          "url": "http://127.0.0.1:8767/workbench/",
+          "method": "GET",
+          "body": null
+        },
+        {
+          "url": "http://127.0.0.1:8767/workbench/style.css",
+          "method": "GET",
+          "body": null
+        },
+        {
+          "url": "http://127.0.0.1:8767/workbench/app.mjs",
+          "method": "GET",
+          "body": null
+        },
+        {
+          "url": "http://127.0.0.1:8767/workbench/content.mjs",
+          "method": "GET",
+          "body": null
+        },
+        {
+          "url": "http://127.0.0.1:8767/workbench/draft.mjs",
+          "method": "GET",
+          "body": null
+        },
+        {
+          "url": "http://127.0.0.1:8767/pilot-readiness/icon.svg",
+          "method": "GET",
+          "body": null
+        },
+        {
+          "url": "http://127.0.0.1:8767/workbench/",
+          "method": "GET",
+          "body": null
+        },
+        {
+          "url": "http://127.0.0.1:8767/workbench/style.css",
+          "method": "GET",
+          "body": null
+        },
+        {
+          "url": "http://127.0.0.1:8767/workbench/app.mjs",
+          "method": "GET",
+          "body": null
+        },
+        {
+          "url": "http://127.0.0.1:8767/workbench/content.mjs",
+          "method": "GET",
+          "body": null
+        },
+        {
+          "url": "http://127.0.0.1:8767/workbench/draft.mjs",
+          "method": "GET",
+          "body": null
+        },
+        {
+          "url": "http://127.0.0.1:8767/pilot-readiness/icon.svg",
+          "method": "GET",
+          "body": null
+        }
+      ],
+      "keyboard": {
+        "tabReachesSkip": true,
+        "initialFocus": {
+          "id": "",
+          "tag": "A"
+        }
+      },
+      "storage": {
+        "local": 0,
+        "session": 0,
+        "cookie": ""
+      },
+      "status": "PASS"
+    },
+    {
+      "engine": "firefox",
+      "width": 320,
+      "checks": {
+        "exactDraftRoundTrip": true,
+        "unrelatedEditPreservesAllOtherStrings": true,
+        "adverseFindingAndLiteralMarkup": true,
+        "rejectedFilesPreserveState": true,
+        "noHorizontalOverflow": true,
+        "onlyStaticGets": true,
+        "feedbackPreservesNotebook": true,
+        "reloadHasNoAutosave": true
+      },
+      "errors": [],
+      "requests": [
+        {
+          "url": "http://127.0.0.1:8767/workbench/",
+          "method": "GET",
+          "body": null
+        },
+        {
+          "url": "http://127.0.0.1:8767/workbench/style.css",
+          "method": "GET",
+          "body": null
+        },
+        {
+          "url": "http://127.0.0.1:8767/workbench/app.mjs",
+          "method": "GET",
+          "body": null
+        },
+        {
+          "url": "http://127.0.0.1:8767/workbench/content.mjs",
+          "method": "GET",
+          "body": null
+        },
+        {
+          "url": "http://127.0.0.1:8767/workbench/draft.mjs",
+          "method": "GET",
+          "body": null
+        },
+        {
+          "url": "http://127.0.0.1:8767/pilot-readiness/icon.svg",
+          "method": "GET",
+          "body": null
+        },
+        {
+          "url": "http://127.0.0.1:8767/workbench/",
+          "method": "GET",
+          "body": null
+        },
+        {
+          "url": "http://127.0.0.1:8767/workbench/style.css",
+          "method": "GET",
+          "body": null
+        },
+        {
+          "url": "http://127.0.0.1:8767/workbench/app.mjs",
+          "method": "GET",
+          "body": null
+        },
+        {
+          "url": "http://127.0.0.1:8767/workbench/content.mjs",
+          "method": "GET",
+          "body": null
+        },
+        {
+          "url": "http://127.0.0.1:8767/workbench/draft.mjs",
+          "method": "GET",
+          "body": null
+        },
+        {
+          "url": "http://127.0.0.1:8767/pilot-readiness/icon.svg",
+          "method": "GET",
+          "body": null
+        }
+      ],
+      "keyboard": {
+        "tabReachesSkip": true,
+        "initialFocus": {
+          "id": "",
+          "tag": "A"
+        }
+      },
+      "storage": {
+        "local": 0,
+        "session": 0,
+        "cookie": ""
+      },
+      "status": "PASS"
+    },
+    {
+      "engine": "webkit",
+      "width": 1440,
+      "checks": {
+        "exactDraftRoundTrip": true,
+        "unrelatedEditPreservesAllOtherStrings": true,
+        "adverseFindingAndLiteralMarkup": true,
+        "rejectedFilesPreserveState": true,
+        "noHorizontalOverflow": true,
+        "onlyStaticGets": true,
+        "feedbackPreservesNotebook": true,
+        "reloadHasNoAutosave": true
+      },
+      "errors": [],
+      "requests": [
+        {
+          "url": "http://127.0.0.1:8767/workbench/",
+          "method": "GET",
+          "body": null
+        },
+        {
+          "url": "http://127.0.0.1:8767/workbench/style.css",
+          "method": "GET",
+          "body": null
+        },
+        {
+          "url": "http://127.0.0.1:8767/workbench/app.mjs",
+          "method": "GET",
+          "body": null
+        },
+        {
+          "url": "http://127.0.0.1:8767/workbench/content.mjs",
+          "method": "GET",
+          "body": null
+        },
+        {
+          "url": "http://127.0.0.1:8767/workbench/draft.mjs",
+          "method": "GET",
+          "body": null
+        },
+        {
+          "url": "http://127.0.0.1:8767/workbench/",
+          "method": "GET",
+          "body": null
+        },
+        {
+          "url": "http://127.0.0.1:8767/workbench/style.css",
+          "method": "GET",
+          "body": null
+        },
+        {
+          "url": "http://127.0.0.1:8767/workbench/app.mjs",
+          "method": "GET",
+          "body": null
+        },
+        {
+          "url": "http://127.0.0.1:8767/workbench/content.mjs",
+          "method": "GET",
+          "body": null
+        },
+        {
+          "url": "http://127.0.0.1:8767/workbench/draft.mjs",
+          "method": "GET",
+          "body": null
+        },
+        {
+          "url": "http://127.0.0.1:8767/workbench/",
+          "method": "GET",
+          "body": null
+        },
+        {
+          "url": "http://127.0.0.1:8767/workbench/style.css",
+          "method": "GET",
+          "body": null
+        },
+        {
+          "url": "http://127.0.0.1:8767/workbench/app.mjs",
+          "method": "GET",
+          "body": null
+        },
+        {
+          "url": "http://127.0.0.1:8767/workbench/content.mjs",
+          "method": "GET",
+          "body": null
+        },
+        {
+          "url": "http://127.0.0.1:8767/workbench/draft.mjs",
+          "method": "GET",
+          "body": null
+        }
+      ],
+      "keyboard": {
+        "tabReachesSkip": false,
+        "initialFocus": {
+          "id": "work",
+          "tag": "TEXTAREA"
+        },
+        "altTabReachesSkip": true
+      },
+      "storage": {
+        "local": 0,
+        "session": 0,
+        "cookie": ""
+      },
+      "status": "PASS WITH KEYBOARD LIMITATION"
+    },
+    {
+      "engine": "webkit",
+      "width": 320,
+      "checks": {
+        "exactDraftRoundTrip": true,
+        "unrelatedEditPreservesAllOtherStrings": true,
+        "adverseFindingAndLiteralMarkup": true,
+        "rejectedFilesPreserveState": true,
+        "noHorizontalOverflow": true,
+        "onlyStaticGets": true,
+        "feedbackPreservesNotebook": true,
+        "reloadHasNoAutosave": true
+      },
+      "errors": [],
+      "requests": [
+        {
+          "url": "http://127.0.0.1:8767/workbench/",
+          "method": "GET",
+          "body": null
+        },
+        {
+          "url": "http://127.0.0.1:8767/workbench/style.css",
+          "method": "GET",
+          "body": null
+        },
+        {
+          "url": "http://127.0.0.1:8767/workbench/app.mjs",
+          "method": "GET",
+          "body": null
+        },
+        {
+          "url": "http://127.0.0.1:8767/workbench/content.mjs",
+          "method": "GET",
+          "body": null
+        },
+        {
+          "url": "http://127.0.0.1:8767/workbench/draft.mjs",
+          "method": "GET",
+          "body": null
+        },
+        {
+          "url": "http://127.0.0.1:8767/workbench/",
+          "method": "GET",
+          "body": null
+        },
+        {
+          "url": "http://127.0.0.1:8767/workbench/style.css",
+          "method": "GET",
+          "body": null
+        },
+        {
+          "url": "http://127.0.0.1:8767/workbench/app.mjs",
+          "method": "GET",
+          "body": null
+        },
+        {
+          "url": "http://127.0.0.1:8767/workbench/content.mjs",
+          "method": "GET",
+          "body": null
+        },
+        {
+          "url": "http://127.0.0.1:8767/workbench/draft.mjs",
+          "method": "GET",
+          "body": null
+        },
+        {
+          "url": "http://127.0.0.1:8767/workbench/",
+          "method": "GET",
+          "body": null
+        },
+        {
+          "url": "http://127.0.0.1:8767/workbench/style.css",
+          "method": "GET",
+          "body": null
+        },
+        {
+          "url": "http://127.0.0.1:8767/workbench/app.mjs",
+          "method": "GET",
+          "body": null
+        },
+        {
+          "url": "http://127.0.0.1:8767/workbench/content.mjs",
+          "method": "GET",
+          "body": null
+        },
+        {
+          "url": "http://127.0.0.1:8767/workbench/draft.mjs",
+          "method": "GET",
+          "body": null
+        }
+      ],
+      "keyboard": {
+        "tabReachesSkip": false,
+        "initialFocus": {
+          "id": "work",
+          "tag": "TEXTAREA"
+        },
+        "altTabReachesSkip": true
+      },
+      "storage": {
+        "local": 0,
+        "session": 0,
+        "cookie": ""
+      },
+      "status": "PASS WITH KEYBOARD LIMITATION"
+    }
+  ]
+}

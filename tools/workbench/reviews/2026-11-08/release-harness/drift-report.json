@@ -1,0 +1,266 @@
+{
+  "base": "http://127.0.0.1:56028",
+  "expectedCommit": "c0d46dd4c75c74242d3341e61aa262319818abbe",
+  "startedAt": "2026-11-08T07:41:20.673Z",
+  "status": "failed",
+  "assets": [
+    {
+      "file": "index.html",
+      "url": "http://127.0.0.1:56028/index.html",
+      "status": 200,
+      "expectedSha256": "1b41a0f1d4ee69494ea680f7c2eb8c92b2633f6dd8ef51e24e720c3584d203a9",
+      "actualSha256": "1b41a0f1d4ee69494ea680f7c2eb8c92b2633f6dd8ef51e24e720c3584d203a9",
+      "matches": true
+    },
+    {
+      "file": "workbench/index.html",
+      "url": "http://127.0.0.1:56028/workbench/index.html",
+      "status": 200,
+      "expectedSha256": "35d787d99a4bf1620b6ab02570eec70d3302893bbd7c344deef86ec4122b9f88",
+      "actualSha256": "35d787d99a4bf1620b6ab02570eec70d3302893bbd7c344deef86ec4122b9f88",
+      "matches": true
+    },
+    {
+      "file": "workbench/app.mjs",
+      "url": "http://127.0.0.1:56028/workbench/app.mjs",
+      "status": 200,
+      "expectedSha256": "e30836713d6ca377bd3ea0a4a149f5b0e52199bc103ec5f9966e17b34180bb6d",
+      "actualSha256": "e30836713d6ca377bd3ea0a4a149f5b0e52199bc103ec5f9966e17b34180bb6d",
+      "matches": true
+    },
+    {
+      "file": "workbench/content.mjs",
+      "url": "http://127.0.0.1:56028/workbench/content.mjs",
+      "status": 200,
+      "expectedSha256": "2ddf9d6d08949770da28d82ad3b335efd3417a82c62c32a234a96e899fe4d365",
+      "actualSha256": "2ddf9d6d08949770da28d82ad3b335efd3417a82c62c32a234a96e899fe4d365",
+      "matches": true
+    },
+    {
+      "file": "workbench/draft.mjs",
+      "url": "http://127.0.0.1:56028/workbench/draft.mjs",
+      "status": 200,
+      "expectedSha256": "e72e421210b05576b111c8ab15080a3c3bc240cf6c723f1f8caee40e72253e9e",
+      "actualSha256": "e72e421210b05576b111c8ab15080a3c3bc240cf6c723f1f8caee40e72253e9e",
+      "matches": true
+    },
+    {
+      "file": "workbench/style.css",
+      "url": "http://127.0.0.1:56028/workbench/style.css",
+      "status": 200,
+      "expectedSha256": "ff3eef3bc7fd305fecd74a58e697919f10b45d82a5eb609ad2f7eb3fab87b001",
+      "actualSha256": "ff3eef3bc7fd305fecd74a58e697919f10b45d82a5eb609ad2f7eb3fab87b001",
+      "matches": true
+    },
+    {
+      "file": "pilot-readiness/index.html",
+      "url": "http://127.0.0.1:56028/pilot-readiness/index.html",
+      "status": 200,
+      "expectedSha256": "2813df5a5d04641c66f1bf756b43998e551c66dd6cf3bedb79954a5abea39916",
+      "actualSha256": "2813df5a5d04641c66f1bf756b43998e551c66dd6cf3bedb79954a5abea39916",
+      "matches": true
+    },
+    {
+      "file": "pilot-readiness/icon.svg",
+      "url": "http://127.0.0.1:56028/pilot-readiness/icon.svg",
+      "status": 200,
+      "expectedSha256": "aea50878737db3f9849de53bb864ed0da675a8bc9f382f18062a70e6c2adbf88",
+      "actualSha256": "aea50878737db3f9849de53bb864ed0da675a8bc9f382f18062a70e6c2adbf88",
+      "matches": true
+    },
+    {
+      "file": "pilot-readiness/style.css",
+      "url": "http://127.0.0.1:56028/pilot-readiness/style.css",
+      "status": 200,
+      "expectedSha256": "aa0b00068d00c49dfc8b8b26b2b3e5ba75bee8c58c208395418f42e049047fd9",
+      "actualSha256": "aa0b00068d00c49dfc8b8b26b2b3e5ba75bee8c58c208395418f42e049047fd9",
+      "matches": true
+    },
+    {
+      "file": "pilot-readiness/app.mjs",
+      "url": "http://127.0.0.1:56028/pilot-readiness/app.mjs",
+      "status": 200,
+      "expectedSha256": "297aaec8a25efbb2c81b5ada03fdfb2b9da38624a86f520f3b5902268e39fe90",
+      "actualSha256": "297aaec8a25efbb2c81b5ada03fdfb2b9da38624a86f520f3b5902268e39fe90",
+      "matches": true
+    },
+    {
+      "file": "pilot-readiness/model-v2.mjs",
+      "url": "http://127.0.0.1:56028/pilot-readiness/model-v2.mjs",
+      "status": 200,
+      "expectedSha256": "f202860309636b466b51a97c709f68393c9990948d75ec7f178b63b405e2d40d",
+      "actualSha256": "f202860309636b466b51a97c709f68393c9990948d75ec7f178b63b405e2d40d",
+      "matches": true
+    },
+    {
+      "file": "pilot-readiness/examples-v2.mjs",
+      "url": "http://127.0.0.1:56028/pilot-readiness/examples-v2.mjs",
+      "status": 200,
+      "expectedSha256": "5ab63485018d6866baa37764f97d2c6a4a0e08a51605c63be2fedec7d30f995a",
+      "actualSha256": "5ab63485018d6866baa37764f97d2c6a4a0e08a51605c63be2fedec7d30f995a",
+      "matches": true
+    },
+    {
+      "file": "pilot-readiness/report.mjs",
+      "url": "http://127.0.0.1:56028/pilot-readiness/report.mjs",
+      "status": 200,
+      "expectedSha256": "69f2ce57acb7a99187308decffb6bcdffb0e5a2a96933d5fbaf0b2f27d8205d6",
+      "actualSha256": "69f2ce57acb7a99187308decffb6bcdffb0e5a2a96933d5fbaf0b2f27d8205d6",
+      "matches": true
+    },
+    {
+      "file": "pilot-readiness/vendor/jspdf.umd.min.js",
+      "url": "http://127.0.0.1:56028/pilot-readiness/vendor/jspdf.umd.min.js",
+      "status": 200,
+      "expectedSha256": "e6551fcdc32f09d6853b2c5126d18d01d9447e0da618a41a11ebeee0f6c20d54",
+      "actualSha256": "e6551fcdc32f09d6853b2c5126d18d01d9447e0da618a41a11ebeee0f6c20d54",
+      "matches": true
+    },
+    {
+      "file": "pilot-readiness/vendor/NotoSans-Regular.ttf",
+      "url": "http://127.0.0.1:56028/pilot-readiness/vendor/NotoSans-Regular.ttf",
+      "status": 200,
+      "expectedSha256": "b85c38ecea8a7cfb39c24e395a4007474fa5a4fc864f6ee33309eb4948d232d5",
+      "actualSha256": "b85c38ecea8a7cfb39c24e395a4007474fa5a4fc864f6ee33309eb4948d232d5",
+      "matches": true
+    }
+  ],
+  "journeys": [
+    {
+      "name": "journey",
+      "exitCode": 0
+    },
+    {
+      "name": "drafts",
+      "exitCode": 0
+    },
+    {
+      "name": "reflow",
+      "exitCode": 0
+    }
+  ],
+  "assetsAfter": [
+    {
+      "file": "index.html",
+      "url": "http://127.0.0.1:56028/index.html",
+      "status": 200,
+      "expectedSha256": "1b41a0f1d4ee69494ea680f7c2eb8c92b2633f6dd8ef51e24e720c3584d203a9",
+      "actualSha256": "1b41a0f1d4ee69494ea680f7c2eb8c92b2633f6dd8ef51e24e720c3584d203a9",
+      "matches": true
+    },
+    {
+      "file": "workbench/index.html",
+      "url": "http://127.0.0.1:56028/workbench/index.html",
+      "status": 200,
+      "expectedSha256": "35d787d99a4bf1620b6ab02570eec70d3302893bbd7c344deef86ec4122b9f88",
+      "actualSha256": "35d787d99a4bf1620b6ab02570eec70d3302893bbd7c344deef86ec4122b9f88",
+      "matches": true
+    },
+    {
+      "file": "workbench/app.mjs",
+      "url": "http://127.0.0.1:56028/workbench/app.mjs",
+      "status": 200,
+      "expectedSha256": "e30836713d6ca377bd3ea0a4a149f5b0e52199bc103ec5f9966e17b34180bb6d",
+      "actualSha256": "e30836713d6ca377bd3ea0a4a149f5b0e52199bc103ec5f9966e17b34180bb6d",
+      "matches": true
+    },
+    {
+      "file": "workbench/content.mjs",
+      "url": "http://127.0.0.1:56028/workbench/content.mjs",
+      "status": 200,
+      "expectedSha256": "2ddf9d6d08949770da28d82ad3b335efd3417a82c62c32a234a96e899fe4d365",
+      "actualSha256": "2ddf9d6d08949770da28d82ad3b335efd3417a82c62c32a234a96e899fe4d365",
+      "matches": true
+    },
+    {
+      "file": "workbench/draft.mjs",
+      "url": "http://127.0.0.1:56028/workbench/draft.mjs",
+      "status": 200,
+      "expectedSha256": "e72e421210b05576b111c8ab15080a3c3bc240cf6c723f1f8caee40e72253e9e",
+      "actualSha256": "e72e421210b05576b111c8ab15080a3c3bc240cf6c723f1f8caee40e72253e9e",
+      "matches": true
+    },
+    {
+      "file": "workbench/style.css",
+      "url": "http://127.0.0.1:56028/workbench/style.css",
+      "status": 200,
+      "expectedSha256": "ff3eef3bc7fd305fecd74a58e697919f10b45d82a5eb609ad2f7eb3fab87b001",
+      "actualSha256": "8d725c6554a76fbf9815964035b62c150f812c0c8656efad2af78c9c3986ccbf",
+      "matches": false
+    },
+    {
+      "file": "pilot-readiness/index.html",
+      "url": "http://127.0.0.1:56028/pilot-readiness/index.html",
+      "status": 200,
+      "expectedSha256": "2813df5a5d04641c66f1bf756b43998e551c66dd6cf3bedb79954a5abea39916",
+      "actualSha256": "2813df5a5d04641c66f1bf756b43998e551c66dd6cf3bedb79954a5abea39916",
+      "matches": true
+    },
+    {
+      "file": "pilot-readiness/icon.svg",
+      "url": "http://127.0.0.1:56028/pilot-readiness/icon.svg",
+      "status": 200,
+      "expectedSha256": "aea50878737db3f9849de53bb864ed0da675a8bc9f382f18062a70e6c2adbf88",
+      "actualSha256": "aea50878737db3f9849de53bb864ed0da675a8bc9f382f18062a70e6c2adbf88",
+      "matches": true
+    },
+    {
+      "file": "pilot-readiness/style.css",
+      "url": "http://127.0.0.1:56028/pilot-readiness/style.css",
+      "status": 200,
+      "expectedSha256": "aa0b00068d00c49dfc8b8b26b2b3e5ba75bee8c58c208395418f42e049047fd9",
+      "actualSha256": "aa0b00068d00c49dfc8b8b26b2b3e5ba75bee8c58c208395418f42e049047fd9",
+      "matches": true
+    },
+    {
+      "file": "pilot-readiness/app.mjs",
+      "url": "http://127.0.0.1:56028/pilot-readiness/app.mjs",
+      "status": 200,
+      "expectedSha256": "297aaec8a25efbb2c81b5ada03fdfb2b9da38624a86f520f3b5902268e39fe90",
+      "actualSha256": "297aaec8a25efbb2c81b5ada03fdfb2b9da38624a86f520f3b5902268e39fe90",
+      "matches": true
+    },
+    {
+      "file": "pilot-readiness/model-v2.mjs",
+      "url": "http://127.0.0.1:56028/pilot-readiness/model-v2.mjs",
+      "status": 200,
+      "expectedSha256": "f202860309636b466b51a97c709f68393c9990948d75ec7f178b63b405e2d40d",
+      "actualSha256": "f202860309636b466b51a97c709f68393c9990948d75ec7f178b63b405e2d40d",
+      "matches": true
+    },
+    {
+      "file": "pilot-readiness/examples-v2.mjs",
+      "url": "http://127.0.0.1:56028/pilot-readiness/examples-v2.mjs",
+      "status": 200,
+      "expectedSha256": "5ab63485018d6866baa37764f97d2c6a4a0e08a51605c63be2fedec7d30f995a",
+      "actualSha256": "5ab63485018d6866baa37764f97d2c6a4a0e08a51605c63be2fedec7d30f995a",
+      "matches": true
+    },
+    {
+      "file": "pilot-readiness/report.mjs",
+      "url": "http://127.0.0.1:56028/pilot-readiness/report.mjs",
+      "status": 200,
+      "expectedSha256": "69f2ce57acb7a99187308decffb6bcdffb0e5a2a96933d5fbaf0b2f27d8205d6",
+      "actualSha256": "69f2ce57acb7a99187308decffb6bcdffb0e5a2a96933d5fbaf0b2f27d8205d6",
+      "matches": true
+    },
+    {
+      "file": "pilot-readiness/vendor/jspdf.umd.min.js",
+      "url": "http://127.0.0.1:56028/pilot-readiness/vendor/jspdf.umd.min.js",
+      "status": 200,
+      "expectedSha256": "e6551fcdc32f09d6853b2c5126d18d01d9447e0da618a41a11ebeee0f6c20d54",
+      "actualSha256": "e6551fcdc32f09d6853b2c5126d18d01d9447e0da618a41a11ebeee0f6c20d54",
+      "matches": true
+    },
+    {
+      "file": "pilot-readiness/vendor/NotoSans-Regular.ttf",
+      "url": "http://127.0.0.1:56028/pilot-readiness/vendor/NotoSans-Regular.ttf",
+      "status": 200,
+      "expectedSha256": "b85c38ecea8a7cfb39c24e395a4007474fa5a4fc864f6ee33309eb4948d232d5",
+      "actualSha256": "b85c38ecea8a7cfb39c24e395a4007474fa5a4fc864f6ee33309eb4948d232d5",
+      "matches": true
+    }
+  ],
+  "error": "Deployed assets changed during the journeys or no longer match the requested commit.",
+  "finishedAt": "2026-11-08T07:41:45.618Z"
+}

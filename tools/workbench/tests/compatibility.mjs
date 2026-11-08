@@ -3,7 +3,7 @@ import { readFile, writeFile, mkdir } from "node:fs/promises";
 import assert from "node:assert/strict";
 import { emptyRecord, fields } from "../../../docs/workbench/content.mjs";
 import { draftText } from "../../../docs/workbench/draft.mjs";
-const base = process.env.BASE_URL || "http://127.0.0.1:8765";
+import { appURL, assertStaticRequests } from "./browser-support.mjs";
 const output =
   (process.env.TEST_OUTPUT || "test-results/workbench-compatibility") + "/";
 await mkdir(output, { recursive: true });
@@ -32,6 +32,16 @@ for (const [name, engine, options] of engines) {
       const r = { engine: name, width, checks: {}, errors: [], requests: [] };
       records.push(r);
       page.on("pageerror", (e) => r.errors.push(e.message));
+      page.on("console", (message) => {
+        if (message.type() === "error") r.errors.push(message.text());
+      });
+      page.on("requestfailed", (request) =>
+        r.errors.push(`Request failed: ${request.url()}`),
+      );
+      page.on("response", (response) => {
+        if (response.status() >= 400)
+          r.errors.push(`HTTP ${response.status()}: ${response.url()}`);
+      });
       page.on("request", (q) =>
         r.requests.push({
           url: q.url(),
@@ -49,13 +59,11 @@ for (const [name, engine, options] of engines) {
         return JSON.parse(text);
       }
       async function load(text) {
-        await page
-          .locator("#reopen-draft")
-          .setInputFiles({
-            name: "fictional-bay-ledger.json",
-            mimeType: "application/json",
-            buffer: Buffer.from(text),
-          });
+        await page.locator("#reopen-draft").setInputFiles({
+          name: "fictional-bay-ledger.json",
+          mimeType: "application/json",
+          buffer: Buffer.from(text),
+        });
         await page.waitForFunction(() =>
           /Draft reopened locally|Could not reopen draft/.test(
             document.querySelector("#draft-status").textContent,
@@ -63,7 +71,7 @@ for (const [name, engine, options] of engines) {
         );
       }
       try {
-        await page.goto(base + "/workbench/", { waitUntil: "networkidle" });
+        await page.goto(appURL("workbench/"), { waitUntil: "networkidle" });
         await page.locator("#workbench").waitFor({ state: "visible" });
         await page.keyboard.press("Tab");
         r.keyboard = {
@@ -92,6 +100,12 @@ for (const [name, engine, options] of engines) {
           if (!kind)
             notes[id] =
               `Fictional Bay Ledger ${id}.\r\nSecond finding\rThird finding\twith tab. Café Ελληνικά Кириллица. <script>inert()</script>`;
+        assert.ok(
+          notes.work.includes("\r\n") &&
+            notes.work.includes("\r") &&
+            notes.work.includes("\t"),
+          "Fixture must contain actual CRLF/CR and tab characters",
+        );
         notes.permissions = "Unknown. No permission for real operational use.";
         notes.issues =
           "Fictional unresolved critical omission. Review lead must contain and investigate.";
@@ -113,8 +127,15 @@ for (const [name, engine, options] of engines) {
         await page.locator("#steps button").last().click();
         await page.locator("#review").click();
         const before = await page.locator("#summary").textContent();
+        const issuePosition = before.indexOf(notes.issues);
+        const detailsPosition = before.indexOf("DESCRIBE THE WORK");
         assert.ok(
-          before.indexOf(notes.issues) < before.indexOf("DESCRIBE THE WORK"),
+          issuePosition >= 0 && detailsPosition > issuePosition,
+          "The unresolved issue must be present before the detailed notes",
+        );
+        assert.ok(
+          before.includes(notes.work),
+          "The literal imported note must remain in the preview",
         );
         assert.equal(await page.locator("#summary script").count(), 0);
         r.checks.adverseFindingAndLiteralMarkup = true;
@@ -150,13 +171,16 @@ for (const [name, engine, options] of engines) {
           cookie: document.cookie,
         }));
         assert.deepEqual(r.storage, { local: 0, session: 0, cookie: "" });
-        r.checks.onlyStaticGets = r.requests.every(
-          (q) =>
-            q.method === "GET" &&
-            q.body === null &&
-            q.url.startsWith(base + "/"),
-        );
-        assert.ok(r.checks.onlyStaticGets);
+        assertStaticRequests(r.requests, [
+          "workbench/",
+          "workbench/index.html",
+          "workbench/app.mjs",
+          "workbench/content.mjs",
+          "workbench/draft.mjs",
+          "workbench/style.css",
+          "pilot-readiness/icon.svg",
+        ]);
+        r.checks.onlyStaticGets = true;
         const feedback = page.getByRole("link", {
           name: "Share public feedback on GitHub",
           exact: true,
@@ -168,6 +192,11 @@ for (const [name, engine, options] of engines) {
         );
         {
           const target = await feedback.getAttribute("href");
+          assert.equal(
+            target,
+            "https://github.com/shaunmarsden/practical-ai-adoption/discussions/new",
+            "Feedback navigation must not carry notes or query parameters",
+          );
           await context.route(target, (route) =>
             route.fulfill({
               contentType: "text/html",

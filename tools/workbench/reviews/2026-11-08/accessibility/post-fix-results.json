@@ -1,0 +1,91 @@
+[
+  {
+    "browser": "chromium",
+    "reflow": {
+      "width": 320,
+      "scroll": 320,
+      "scale": 4
+    },
+    "file": {
+      "client": 175,
+      "scroll": 350,
+      "height": 125,
+      "scrollHeight": 125
+    },
+    "overflow": [
+      {
+        "tag": "INPUT",
+        "id": "reopen-draft",
+        "client": 175,
+        "scroll": 350,
+        "overflow": "clip"
+      }
+    ]
+  },
+  {
+    "browser": "firefox",
+    "reflow": {
+      "width": 320,
+      "scroll": 320,
+      "scale": 1
+    },
+    "file": {
+      "client": 175,
+      "scroll": 559,
+      "height": 127,
+      "scrollHeight": 127
+    },
+    "overflow": [
+      {
+        "tag": "STRONG",
+        "id": "",
+        "client": 0,
+        "scroll": 117,
+        "overflow": "visible"
+      },
+      {
+        "tag": "INPUT",
+        "id": "reopen-draft",
+        "client": 175,
+        "scroll": 559,
+        "overflow": "clip"
+      },
+      {
+        "tag": "A",
+        "id": "",
+        "client": 0,
+        "scroll": 143,
+        "overflow": "visible"
+      },
+      {
+        "tag": "A",
+        "id": "",
+        "client": 0,
+        "scroll": 150,
+        "overflow": "visible"
+      },
+      {
+        "tag": "A",
+        "id": "",
+        "client": 0,
+        "scroll": 217,
+        "overflow": "visible"
+      }
+    ]
+  },
+  {
+    "browser": "webkit",
+    "reflow": {
+      "width": 320,
+      "scroll": 320,
+      "scale": 1
+    },
+    "file": {
+      "client": 175,
+      "scroll": 175,
+      "height": 126,
+      "scrollHeight": 126
+    },
+    "overflow": []
+  }
+]

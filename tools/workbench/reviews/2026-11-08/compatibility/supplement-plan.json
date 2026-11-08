@@ -1,0 +1,12 @@
+{
+  "source": "e5ea82a44a5625e044b1f067d22345d90b44a911",
+  "frozen_before_execution": true,
+  "cases": [
+    ["edit-during-read", "Delay File.arrayBuffer in test instrumentation, edit visible work field, then release read. Import must reject and preserve edited current notes."],
+    ["clear-during-read", "Delay file read, clear existing notes and accept clear confirmation, release read. Import must reject and defaults remain."],
+    ["keyboard-save", "Focus native Save draft button and press Enter. A valid JSON download must be produced."],
+    ["save-failure", "Force URL.createObjectURL to throw. Save must show failure status and preserve notes."],
+    ["link-privacy", "All related reading links have clean fixed URLs without query/fragment payloads and noopener noreferrer; V2 link points only to separate assessment route."]
+  ],
+  "limits": "File-reading instrumentation exercises timing and error paths, not OS device integration. Native OS file chooser cancellation and native mobile date/select popup appearance remain untested."
+}

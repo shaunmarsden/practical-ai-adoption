@@ -1,0 +1,22 @@
+[
+  {
+    "name": "3000 deterministic generated parser specimens",
+    "result": "PASS",
+    "ms": 237.969625
+  },
+  {
+    "name": "browser all text fields maximum controls survive and stay responsive",
+    "result": "PASS",
+    "ms": 497.185792
+  },
+  {
+    "name": "browser exactly 4MB accepted then oversize rejected without replacing",
+    "result": "PASS",
+    "ms": 732.2851250000001
+  },
+  {
+    "name": "no uncaught browser errors in extended runs",
+    "result": "PASS",
+    "ms": 0.13741700000014134
+  }
+]

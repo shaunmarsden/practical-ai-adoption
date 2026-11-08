@@ -2,7 +2,7 @@
   "name": "practical-ai-adoption-checks",
   "private": true,
   "scripts": {
-    "test": "node --test tools/pilot-readiness/tests/browser/model.test.mjs tools/pilot-readiness/v2/tests/model.test.mjs tools/workbench/tests/record.test.mjs tools/workbench/tests/draft.test.mjs tools/workbench/tests/adversarial.test.mjs",
+    "test": "node --test tools/pilot-readiness/tests/browser/model.test.mjs tools/pilot-readiness/v2/tests/model.test.mjs tools/workbench/tests/record.test.mjs tools/workbench/tests/draft.test.mjs tools/workbench/tests/adversarial.test.mjs tools/workbench/tests/browser-support.test.mjs",
     "test:browser": "node tools/pilot-readiness/v2/tests/browser.mjs",
     "test:v1:browser": "node tools/pilot-readiness/tests/browser/ui.mjs",
     "test:compare": "node tools/pilot-readiness/v2/compare.mjs",
@@ -11,6 +11,8 @@
     "test:sprint": "node tools/pilot-readiness/sprint-2026-11/run.mjs",
     "test:sprint:browser": "node tools/pilot-readiness/sprint-2026-11/browser.mjs",
     "test:workbench:drafts": "node tools/workbench/tests/draft-browser.mjs",
+    "test:workbench:reflow": "node tools/workbench/tests/reflow.mjs",
+    "test:workbench:live": "node tools/workbench/tests/live.mjs",
     "test:workbench:compatibility": "node tools/workbench/tests/compatibility.mjs"
   },
   "devDependencies": {

@@ -1,0 +1,50 @@
+# Independent AI resilience review: frozen workbench baseline
+
+Completed on 8 November 2026. No actionable software defect was found in this bounded review. No production edits, fixes, commits, merges, deployments or external messages were made by this reviewer. No justified application improvement is proposed from these passing cases.
+
+## Provenance
+
+A fresh AI reviewer read AGENTS.md, current workbench documentation and source only before inventing the first challenges. No historical review case files, keys or runners were consulted. The checkout had already moved to 9249c2e during preparation, so source was extracted directly from assigned baseline commit e5ea82a44a5625e044b1f067d22345d90b44a911 with git show. The immutable audit copy and file hashes are in snapshot/ and snapshot-manifest.json. Subsequent parent edits did not change this baseline.
+
+The first expectations were saved in cases.md and hashed before execution. Separately frozen extra-cases.md preceded the bounded additions. Scripts and first outputs are retained separately; no failing app case was overwritten or rerun into a passing first result. No execution/environment failure occurred in these runs. The extended browser runner labels its mixed-control note case "maximum" but its generated strings are 10,500 UTF-16 units, below the 12,000-unit maximum; this report uses the actual bound. The separate parser cases did test exactly 12,000-unit notes.
+
+## Observations
+
+| Group | Result | Observed scope |
+| --- | --- | --- |
+| Original parser cases | 96 PASS, 0 FAIL | Every envelope and note duplicate key with both literal and escaped-equivalent spellings; literal JSON-looking values and punctuation; NUL/control characters, lone surrogates, astral UTF-16 limits, date boundaries, unknown prototype-like keys, BOM, numeric schema notation, exact 4MB limit, and all maximum escaped-control notes. |
+| Original Chromium journeys | 18 PASS, 0 FAIL | Delayed local reads with edit, edit-and-revert, clear, cancelled clear, navigation, preview, saving and text export; invalid UTF-8/read rejection; injected Blob/object-URL/anchor-click failure; literal HTML and forged approval text; early/late native dates; original CRLF/CR preservation; reload/new-context storage and history observation. |
+| Additional WebKit journeys | 18 PASS, 0 FAIL | The same frozen browser runner under the installed Playwright WebKit engine. This does not establish physical Safari/iPhone support. |
+| Deterministic parser generation | 3,000 specimens PASS | Seed 0x5a87c9f1. Each specimen round-tripped generated literal text and rejected an inserted escaped-equivalent duplicate note key. |
+| Additional maximum-size browser checks | 2 PASS, 0 FAIL | Large 10,500-UTF-16-unit text strings with controls/astral characters survived import/save; exactly 4,000,000 bytes imported; 4,000,001-byte rejection preserved newer notes. Separate no-uncaught-errors assertion passed. |
+
+Both 18-journey browser runs recorded zero uncaught page errors and 116 requests each. Request logs contain only local static GETs with no body, and imported attack text generated no requests or executable elements. Test inputs were invented and fictional.
+
+Delayed reads did not overwrite later edits or clear actions. Cancelled clear and navigation alone did not block a valid import. Save/export during a pending read captured the current notes, before imported notes arrived. Rejections preserved active step and visible preview. Injected download exceptions preserved notes and exposed the text-preview copy recovery. Download messages reported only a request, never a confirmed save or approval.
+
+Fake approval instructions and positive claimed readiness/decision values remained literal imported notes. Fixed caveats and unresolved issue text remained present in app preview/export. No semantic rejection was expected or claimed. The structure checker correctly did not assess truth or authority.
+
+Reload and a separate browser context did not restore notes, and the inspected local/session storage, cookies, IndexedDB, Cache Storage and service-worker registrations remained empty. History return was observed without assuming erasure; the exact returned work value is in each browser output. Absence of autosave and loss on reload are documented intended behaviour, not defects.
+
+## Reproduction
+
+From repository root, retain the frozen snapshot and installed Node/Playwright dependencies. Serve snapshot/docs on local port 8879:
+
+```sh
+python3 -m http.server 8879 --directory test-results/sprint-2026-11-08/resilience/snapshot/docs
+```
+
+In a second terminal, runners use PLAYWRIGHT_BROWSERS_PATH=/private/tmp/adoption-workbench-browsers. The exact archived commands were:
+
+```sh
+node test-results/sprint-2026-11-08/resilience/parser.mjs
+PLAYWRIGHT_BROWSERS_PATH=/private/tmp/adoption-workbench-browsers node test-results/sprint-2026-11-08/resilience/browser.mjs
+PLAYWRIGHT_BROWSERS_PATH=/private/tmp/adoption-workbench-browsers node test-results/sprint-2026-11-08/resilience/webkit.mjs
+PLAYWRIGHT_BROWSERS_PATH=/private/tmp/adoption-workbench-browsers node test-results/sprint-2026-11-08/resilience/extended.mjs
+```
+
+The archived runners write first-result filenames: copy the entire audit directory before reproducing so the retained first outputs remain intact. Screenshots are supporting artifacts, not claimed visual accessibility reviews. artifacts-sha256.json hashes all retained source, scripts, expectations and first outputs.
+
+## Limits
+
+This is independent AI/software evidence from fictional inputs, not external human validation, a real workplace trial, evidence of user comprehension or authority, or a complete security audit. File/DOM failure injection establishes error-path handling, not its frequency in ordinary browser use. Chromium and Playwright WebKit were tested locally; Firefox, assistive technologies, physical devices, host logs, extensions, device sync/retention, production deployment and recovery across every browser lifecycle were NOT RUN. No backend, AI service, semantic checker, new assessment or approval system was expected. A passing bounded review cannot establish that all data-loss/security paths are absent.

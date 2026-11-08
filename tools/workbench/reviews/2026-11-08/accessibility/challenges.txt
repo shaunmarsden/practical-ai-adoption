@@ -1,0 +1,12 @@
+# Frozen accessibility challenge plan
+
+Source: git archive e5ea82a44a5625e044b1f067d22345d90b44a911, created before browser testing. No prior test keys or review findings read. Fictional notes only.
+
+1. Keyboard path: first Tab exposes skip link; Enter focuses main; navigation buttons focus the newly visible heading; Next/Back and final disabled states; preview focus; no hidden-panel controls in tab sequence.
+2. Inspectable semantics: all rendered form controls have accessible labels/descriptions; current step exposed; native file input and live status regions retained. Axe checks first and last panels, mobile and preview. This does not test screen readers.
+3. Reflow: 320 CSS-pixel viewport, 390 mobile viewport, and 1280 viewport with 400% browser scale equivalent (320 CSS pixel viewport plus scale factor); no document/control overflow or hidden actions. Capture draft tools and last-panel long selected wording.
+4. Long content: fill 12,000-character unbroken text and repeated multiline content; review preview must wrap without document overflow. Test 200% text enlargement as an extra stress case.
+5. Draft file actions: invalid file error stays visible in role=status; valid import focuses first heading; keyboard cancellation of replacement keeps notes and a visible status. Check native input disabled/re-enabled and file-control layout with a long filename.
+6. No JavaScript: clear route to guide visible, no dead interactive workbench shown.
+
+Evidence: preserve first run JSON, screenshots and runner. Report automation limits separately; no human comprehension or screen-reader claims.
