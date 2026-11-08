@@ -1,0 +1,27 @@
+{
+  "exitCode": 0,
+  "seconds": 78.028824291,
+  "status": "passed",
+  "error": null,
+  "assetsBefore": 15,
+  "beforeMismatches": [],
+  "journeys": [
+    {
+      "name": "journey",
+      "exitCode": 0
+    },
+    {
+      "name": "drafts",
+      "exitCode": 0
+    },
+    {
+      "name": "reflow",
+      "exitCode": 0
+    }
+  ],
+  "assetsAfter": 15,
+  "afterMismatches": [],
+  "cssProbes": 0,
+  "changedResponses": [],
+  "printedSuccess": true
+}

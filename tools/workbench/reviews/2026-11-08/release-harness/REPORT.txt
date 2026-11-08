@@ -1,0 +1,37 @@
+# Independent release-harness review
+
+9 negative cases passed: every tested invalid invocation exited 1 and none printed release verification passed. No false-success or deployed-file mutation defect was found. The expected CSS mismatch was detected before any browser journeys. This is a test-infrastructure review, not application or human validation.
+
+## Frozen scope
+
+Reviewed only live.mjs, browser-support.mjs, browser.mjs, draft-browser.mjs and reflow.mjs. cases.md was written and hashed before execution. source/ and source-manifest.json retain the exact reviewed driver bytes. No prior harness output was consulted. Each first invocation's command, explicit environment, exit status, stdout, stderr and available report are retained here. No production/test edits, merges, deployments or external messages were made by this reviewer.
+
+## First outcomes
+
+| Case | Exit | Runner evidence | Result |
+| --- | --- | --- | --- |
+| Missing EXPECTED_COMMIT | 1 | stderr; no new directory/report | Explicit argument error; no success. |
+| Nonexistent 40-character SHA | 1 | failed report, empty assets and journeys | git show failed before browser/network execution. |
+| e5ea82a versus candidate at http://127.0.0.1:8770 | 1 | failed report, all 15 asset observations | Only workbench/style.css mismatched. journeys stayed empty. Expected/actual SHA-256 retained. |
+| Malformed URL | 1 | stderr; no new directory/report | ERR_INVALID_URL before network/journeys. |
+| file: URL | 1 | stderr; no new directory/report | Rejected HTTP(S) precondition. |
+| Credential-bearing URL | 1 | stderr; no new directory/report | Rejected credentials before network/journeys. |
+| Query-bearing URL | 1 | stderr; no new directory/report | Rejected query before network/journeys. |
+| Fragment-bearing URL | 1 | stderr; no new directory/report | Rejected fragment before network/journeys. |
+| Reused evidence directory | 1 | stderr and untouched pre-existing report/marker | EEXIST refusal. Both original SHA-256 hashes remained unchanged. The report in that directory is explicitly the old sentinel, not a report from this invocation. |
+
+first-results.json and individual *.stdout / *.stderr files retain exact distinctions. run.py reproduces the commands, but creates unique first-result paths: copy the audit directory or choose a fresh directory before rerunning to avoid replacing audit output.
+
+## Structural observations
+
+The asset comparator resolves expected bytes through git show, reads deployed assets with GET only, requires HTTP 200, requires the final URL to equal the requested URL, and compares exact bytes. It saves mismatches and stops before spawning journeys. Child journey exit codes must be exactly 0 to advance; a signal/null exit is also failure. Overall passed status is assigned only after all three child processes complete with exit 0. Output directory creation is exclusive, so the live wrapper protects evidence from reuse.
+
+The browser helper rejects credentials/query/fragment and non-HTTP(S) bases and resolves allowed static requests relative to the provided site path. Maintained workbench drivers use fictional notes and assert that captured note-entry requests are allowed static GETs with no body; no send, deploy or target-write operation was found. The only executed browser action in this negative review was the wrapper's asset GET sequence; journey note-entry scripts did not run. This establishes fail-closed handling of the changed local candidate, not a completed release verification.
+
+No structural route to successful status on the tested failures was found. The standalone browser/draft/reflow drivers still use recursive output-directory creation and can overwrite their own standalone artifacts if reused directly; the new live wrapper prevents reuse of its parent evidence directory and supplies unique child directories, so this does not undermine the reviewed live command.
+
+One small evidence limitation remains: missing/invalid preflight inputs throw before report setup, outside the wrapper's try/catch. Therefore those invocations do not preserve runner-owned JSON evidence; their error remains only on stderr unless the caller captures it. This is not a false-pass or data-mutation issue. If a JSON report for every invalid invocation is a requirement, validate the URL/commit inside the evidence-aware error path, after reserving a fresh output directory, while retaining refusal to overwrite an existing directory. The present audit explicitly captured these errors.
+
+## Limits
+
+This bounded review does not run a successful release verification, change assets, assert deployment completion or establish full journey correctness. Production network failures, redirected/CDN deployment behaviours, killed-process recovery and all filesystem failure modes were NOT RUN. Prior application resilience outcomes remain separate. All evidence is independent AI/software review, not external human validation.

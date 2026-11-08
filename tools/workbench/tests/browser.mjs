@@ -3,8 +3,8 @@ import AxeBuilder from '@axe-core/playwright';
 import assert from 'node:assert/strict';
 import { mkdir, readFile } from 'node:fs/promises';
 import { steps, fields, emptyRecord, caveat } from '../../../docs/workbench/content.mjs';
-const base = process.env.BASE_URL || 'http://localhost:8765';
-const output = 'test-results/workbench';
+import { base, appURL, assertStaticRequests } from './browser-support.mjs';
+const output = process.env.WORKBENCH_OUTPUT || 'test-results/workbench';
 await mkdir(output, { recursive: true });
 const browser = await chromium.launch({ headless: true, channel: 'chromium' });
 let scans = 0;
@@ -82,8 +82,8 @@ try {
     assert.ok((await page.locator('#summary').innerText()).includes('Changed after preview'));
     assert.equal(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth), true);
     // No answer-bearing requests, storage or cookies, even after export and preview.
-    assert.ok(requests.every(r => r.method === 'GET' && r.body === null &&
-      ['/', '/workbench/', '/workbench/index.html', '/workbench/style.css', '/workbench/app.mjs', '/workbench/content.mjs', '/workbench/draft.mjs', '/pilot-readiness/icon.svg'].includes(new URL(r.url).pathname)));
+    assertStaticRequests(requests,
+      ['/', '/workbench/', '/workbench/index.html', '/workbench/style.css', '/workbench/app.mjs', '/workbench/content.mjs', '/workbench/draft.mjs', '/pilot-readiness/icon.svg']);
     assert.deepEqual(await page.evaluate(() => [localStorage.length, sessionStorage.length, document.cookie]), [0, 0, '']);
     assert.deepEqual(await context.cookies(), []);
     assert.deepEqual(errors, []);
@@ -122,7 +122,7 @@ try {
     assert.equal(await page.locator('#work').inputValue(), '', 'reload retains no notes');
     await page.goto(base);
     await page.getByRole('link', { name: 'Open the AI Adoption Workbench' }).click();
-    assert.equal(new URL(page.url()).pathname, '/workbench/');
+    assert.equal(page.url(), appURL('workbench/'));
     await context.close();
   }
   const context = await browser.newContext({ javaScriptEnabled: false });

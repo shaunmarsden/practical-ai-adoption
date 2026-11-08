@@ -1,0 +1,5 @@
+# Corrected frozen scan classifier
+
+The first attempt injected no drift because this BrowserContext API sends a Chromium User-Agent, not a Playwright-prefixed one. Its successful release report is valid for unchanged responses, not evidence about drift detection. Preserve first results.
+
+For this fresh run, identify an explicit scan by GET /index.html with Cache-Control: no-cache, then require its next 14 requests to follow the exact frozen 15-asset order with the same header. Ordinary journeys visit / and /workbench/, so do not start this scan. Change only the workbench/style.css body in scan 2. All other expectations remain unchanged.

@@ -37,3 +37,6 @@ footer { border-top: 1px solid var(--line); margin-top: 2rem; padding-top: 1.4re
 .skip:focus { top: .6rem; }
 @media (max-width: 600px) { header { flex-direction: column; } nav ol { grid-template-columns: 1fr; } main { padding-top: 1rem; } }
 .draft-tools label { margin-top: 1rem; }
+/* Long labels and native chooser text still need room when text is enlarged. */
+main { overflow-wrap: anywhere; }
+input[type="file"]::file-selector-button { max-width: 100%; white-space: normal; overflow-wrap: anywhere; }

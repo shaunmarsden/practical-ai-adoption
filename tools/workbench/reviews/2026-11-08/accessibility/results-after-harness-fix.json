@@ -1,0 +1,355 @@
+{
+  "source": "e5ea82a44a5625e044b1f067d22345d90b44a911",
+  "testedAt": "2026-11-08T07:25:47.451Z",
+  "results": [
+    {
+      "id": "first-tab",
+      "pass": true,
+      "actual": {
+        "text": "Skip to workbench",
+        "top": 9.59375
+      }
+    },
+    {
+      "id": "skip-focus",
+      "pass": true,
+      "actual": "main"
+    },
+    {
+      "id": "steps-keyboard",
+      "pass": true,
+      "actual": [
+        {
+          "focus": "step-0",
+          "visible": 1,
+          "current": "1. Describe the work",
+          "back": true,
+          "next": false
+        },
+        {
+          "focus": "step-1",
+          "visible": 1,
+          "current": "2. Compare options",
+          "back": false,
+          "next": false
+        },
+        {
+          "focus": "step-2",
+          "visible": 1,
+          "current": "3. Plan a bounded pilot",
+          "back": false,
+          "next": false
+        },
+        {
+          "focus": "step-3",
+          "visible": 1,
+          "current": "4. Measure results",
+          "back": false,
+          "next": false
+        },
+        {
+          "focus": "step-4",
+          "visible": 1,
+          "current": "5. Review readiness separately",
+          "back": false,
+          "next": false
+        },
+        {
+          "focus": "step-5",
+          "visible": 1,
+          "current": "6. Record a human decision",
+          "back": false,
+          "next": true
+        }
+      ]
+    },
+    {
+      "id": "back-focus",
+      "pass": true,
+      "actual": "step-4"
+    },
+    {
+      "id": "semantics",
+      "pass": true,
+      "actual": {
+        "controls": [
+          {
+            "id": "reopen-draft",
+            "label": "Reopen draft",
+            "description": "Choose a workbench JSON draft up to 4 MB (4,000,000 bytes). Text exports and V2 reports cannot be reopened here. You will be asked before replacing existing notes."
+          },
+          {
+            "id": "work",
+            "label": "Work and outcome sought",
+            "description": "What starts the work, what counts as finished, and who benefits?"
+          },
+          {
+            "id": "owner",
+            "label": "Accountable workflow owner",
+            "description": "Use a role or safe reference. Who can authorise a change?"
+          },
+          {
+            "id": "current",
+            "label": "Current process and main problem",
+            "description": "Include handoffs, waiting, review, rework and what already works."
+          },
+          {
+            "id": "baseline",
+            "label": "Current evidence and baseline",
+            "description": "Record source references, dates, sample and full-process quality/time. Separate observed, reported, forecast and unknown."
+          },
+          {
+            "id": "impact",
+            "label": "People, errors and consequences",
+            "description": "Who could be affected? What happens if the result is wrong?"
+          },
+          {
+            "id": "nonAi",
+            "label": "Non-AI option",
+            "description": "Consider removing a step, clarifying ownership, an existing tool, training or ordinary automation."
+          },
+          {
+            "id": "ai",
+            "label": "Possible AI contribution",
+            "description": "What could AI prepare for review, and what must it never do? Write not applicable if appropriate."
+          },
+          {
+            "id": "tradeoffs",
+            "label": "Evidence and trade-offs for each option",
+            "description": "Compare likely outcome, setup, review, support, costs and failure consequences. Label assumptions."
+          },
+          {
+            "id": "route",
+            "label": "Preferred route and strongest alternative",
+            "description": "Why this route? What evidence would change your mind? No trial is required."
+          },
+          {
+            "id": "boundary",
+            "label": "Pilot boundary, or reason not to trial",
+            "description": "Define activity, scale, dates, users, tool/model/prompt version, exclusions and prohibited actions."
+          },
+          {
+            "id": "permissions",
+            "label": "Actual permission status",
+            "description": "Record who permits the tool, data, purpose and each action, with references and restrictions. Unknown is not permission."
+          },
+          {
+            "id": "roles",
+            "label": "Trial runner, reviewer and continuity cover",
+            "description": "Who checks source evidence, can reject outputs and has time, authority and cover?"
+          },
+          {
+            "id": "sample",
+            "label": "Comparison and sample plan",
+            "description": "Which ordinary and awkward cases, selection rules and period? Log every attempt, including failures."
+          },
+          {
+            "id": "thresholds",
+            "label": "Success conditions and unacceptable errors",
+            "description": "Agree these before testing. Include full-process outcome, quality and review effort."
+          },
+          {
+            "id": "stop",
+            "label": "Stop, contain and recover",
+            "description": "Who may stop the trial? What triggers this? How are incidents contained and the ordinary workflow restored?"
+          },
+          {
+            "id": "evidenceType",
+            "label": "Evidence basis",
+            "description": "Choose what these notes describe. This is a user-entered label, not verification."
+          },
+          {
+            "id": "results",
+            "label": "Comparison results and source references",
+            "description": "Record cases attempted, accepted, corrected and rejected; comparable baseline and trial periods; quality and full-process time."
+          },
+          {
+            "id": "costs",
+            "label": "Review, rework, costs and actual benefit",
+            "description": "Include setup, support, failures and recovery. Count costs once. Separate observed benefit from forecasts and financial claims."
+          },
+          {
+            "id": "limits",
+            "label": "Missing cases, changes and limitations",
+            "description": "What else could explain the result? Note tool/version changes and whether anyone independent checked the evidence."
+          },
+          {
+            "id": "issues",
+            "label": "Known problems and unresolved material issues",
+            "description": "Keep adverse findings visible, even if other results are encouraging. If unknown, say so. Name a role, action and next step."
+          },
+          {
+            "id": "readiness",
+            "label": "V2 review position (self-reported)",
+            "description": "Leave not reviewed if you have not used V2. A complete record is never approval."
+          },
+          {
+            "id": "readinessRecord",
+            "label": "Review reference, date, scope and limits",
+            "description": "Record the separate V2 report reference or why it is not applicable. Do not paste protected evidence."
+          },
+          {
+            "id": "followup",
+            "label": "Unresolved questions and required review",
+            "description": "Who will inspect the evidence, handle issues or seek specialist advice? Record actions and review triggers."
+          },
+          {
+            "id": "decision",
+            "label": "Human decision as reported",
+            "description": "Nothing is selected on your behalf."
+          },
+          {
+            "id": "decisionOwner",
+            "label": "Decision-maker role and authority reference",
+            "description": "Who made the decision, and what authority do they hold for this exact scope?"
+          },
+          {
+            "id": "decisionDate",
+            "label": "Decision date",
+            "description": "Leave blank until a decision has happened."
+          },
+          {
+            "id": "rationale",
+            "label": "Reasons, evidence and conditions",
+            "description": "Include disagreements and unresolved problems. A positive decision cannot make these disappear."
+          },
+          {
+            "id": "next",
+            "label": "Next action, responsible role and review date/triggers",
+            "description": "Record scope, conditions, continuity cover and what would require a fresh decision."
+          }
+        ],
+        "statuses": [
+          "draft-status",
+          "status"
+        ],
+        "nativeFile": "file"
+      }
+    },
+    {
+      "id": "axe-panel-0",
+      "pass": true,
+      "actual": []
+    },
+    {
+      "id": "axe-panel-5",
+      "pass": true,
+      "actual": []
+    },
+    {
+      "id": "reflow-320-0",
+      "pass": true,
+      "actual": {
+        "width": 320,
+        "scroll": 320,
+        "overflows": []
+      }
+    },
+    {
+      "id": "reflow-320-4",
+      "pass": true,
+      "actual": {
+        "width": 320,
+        "scroll": 320,
+        "overflows": []
+      }
+    },
+    {
+      "id": "reflow-320-5",
+      "pass": true,
+      "actual": {
+        "width": 320,
+        "scroll": 320,
+        "overflows": []
+      }
+    },
+    {
+      "id": "reflow-390-0",
+      "pass": true,
+      "actual": {
+        "width": 390,
+        "scroll": 390,
+        "overflows": []
+      }
+    },
+    {
+      "id": "reflow-390-4",
+      "pass": true,
+      "actual": {
+        "width": 390,
+        "scroll": 390,
+        "overflows": []
+      }
+    },
+    {
+      "id": "reflow-390-5",
+      "pass": true,
+      "actual": {
+        "width": 390,
+        "scroll": 390,
+        "overflows": []
+      }
+    },
+    {
+      "id": "preview-focus",
+      "pass": true,
+      "actual": "summary"
+    },
+    {
+      "id": "long-preview",
+      "pass": true,
+      "actual": {
+        "width": 390,
+        "scroll": 390,
+        "overflows": []
+      }
+    },
+    {
+      "id": "text-200-percent-at-390",
+      "pass": true,
+      "actual": {
+        "width": 390,
+        "scroll": 390,
+        "overflows": []
+      }
+    },
+    {
+      "id": "invalid-file-status",
+      "pass": true,
+      "actual": "Could not reopen draft. This file is not valid JSON. Choose a draft saved by this workbench. Your current notes are unchanged."
+    },
+    {
+      "id": "valid-file-focus",
+      "pass": true,
+      "actual": {
+        "focus": "step-0",
+        "status": "Draft reopened locally. Notes have not been verified. This does not run V2 or grant approval.",
+        "enabled": true
+      }
+    },
+    {
+      "id": "cancel-import",
+      "pass": true,
+      "actual": "Reopening cancelled. Your current notes are unchanged."
+    },
+    {
+      "id": "axe-mobile-draft",
+      "pass": true,
+      "actual": []
+    },
+    {
+      "id": "no-js",
+      "pass": true,
+      "actual": {
+        "notice": "This notebook needs JavaScript for navigation and export. You can still use the existing guide route without it.",
+        "route": "https://github.com/shaunmarsden/practical-ai-adoption#follow-a-practical-adoption-path",
+        "hidden": true,
+        "overflow": {
+          "width": 320,
+          "scroll": 320,
+          "overflows": []
+        }
+      }
+    }
+  ]
+}

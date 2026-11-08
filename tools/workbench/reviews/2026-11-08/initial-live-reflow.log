@@ -1,0 +1,18 @@
+node:internal/modules/run_main:107
+    triggerUncaughtException(
+    ^
+
+AssertionError [ERR_ASSERTION]: chromium: 320px at 200% text must not make the page overflow
+
+376 !== 320
+
+    at file:///Users/shaun/Documents/ChatGPT/External/practical-ai-adoption/tools/workbench/tests/reflow.mjs:27:12 {
+  generatedMessage: false,
+  code: 'ERR_ASSERTION',
+  actual: 376,
+  expected: 320,
+  operator: 'strictEqual',
+  diff: 'simple'
+}
+
+Node.js v24.19.0

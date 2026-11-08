@@ -1,0 +1,202 @@
+[
+  {
+    "name": "missing-commit",
+    "command": [
+      "node",
+      "tools/workbench/tests/live.mjs"
+    ],
+    "explicitEnvironment": {
+      "BASE_URL": "http://127.0.0.1:8770",
+      "EXPECTED_COMMIT": null,
+      "RELEASE_OUTPUT": "/Users/shaun/Documents/ChatGPT/External/practical-ai-adoption/test-results/sprint-2026-11-08/resilience/harness/runs/missing-commit",
+      "PLAYWRIGHT_BROWSERS_PATH": "/private/tmp/adoption-workbench-browsers"
+    },
+    "exitCode": 1,
+    "seconds": 0.710265834,
+    "reportPresent": false,
+    "reportStatus": null,
+    "assetCount": null,
+    "mismatchedAssets": null,
+    "journeys": null,
+    "printedSuccess": false,
+    "stderrExcerpt": "file:///Users/shaun/Documents/ChatGPT/External/practical-ai-adoption/tools/workbench/tests/live.mjs:8\nif (!process.env.BASE_URL || !/^[a-f0-9]{40}$/.test(process.env.EXPECTED_COMMIT || '')) throw new Error('Set BASE_URL explicitly and EXPECTED_COMMIT to a full lowercase Git commit SHA.');\n                                                                                              ^\n\nError: Set BASE_URL explicitly and EXPECTED_COMMIT to a full lowercase Git commit SHA.\n    at file:///Users/shaun/Documents/ChatGPT/External/practical-ai-adoption/tools/workbench/tests/live.mjs:8:95\n    at ModuleJob.run (node:internal/modules/esm/module_job:439:25)\n    at async node:internal/modules/esm/loader:643:26\n    at async asyncRunEntryPointWithESMLoader (node:internal/modules/run_main:101:5)\n\nNode.js v24.19.0\n"
+  },
+  {
+    "name": "unknown-commit",
+    "command": [
+      "node",
+      "tools/workbench/tests/live.mjs"
+    ],
+    "explicitEnvironment": {
+      "BASE_URL": "http://127.0.0.1:8770",
+      "EXPECTED_COMMIT": "0000000000000000000000000000000000000000",
+      "RELEASE_OUTPUT": "/Users/shaun/Documents/ChatGPT/External/practical-ai-adoption/test-results/sprint-2026-11-08/resilience/harness/runs/unknown-commit",
+      "PLAYWRIGHT_BROWSERS_PATH": "/private/tmp/adoption-workbench-browsers"
+    },
+    "exitCode": 1,
+    "seconds": 0.2847885,
+    "reportPresent": true,
+    "reportStatus": "failed",
+    "assetCount": 0,
+    "mismatchedAssets": [],
+    "journeys": [],
+    "printedSuccess": false,
+    "stderrExcerpt": "fatal: path 'docs/index.html' exists on disk, but not in '0000000000000000000000000000000000000000'\nRelease verification failed: Command failed: git show 0000000000000000000000000000000000000000:docs/index.html\nfatal: path 'docs/index.html' exists on disk, but not in '0000000000000000000000000000000000000000'\n Evidence: /Users/shaun/Documents/ChatGPT/External/practical-ai-adoption/test-results/sprint-2026-11-08/resilience/harness/runs/unknown-commit\n"
+  },
+  {
+    "name": "asset-mismatch",
+    "command": [
+      "node",
+      "tools/workbench/tests/live.mjs"
+    ],
+    "explicitEnvironment": {
+      "BASE_URL": "http://127.0.0.1:8770",
+      "EXPECTED_COMMIT": "e5ea82a44a5625e044b1f067d22345d90b44a911",
+      "RELEASE_OUTPUT": "/Users/shaun/Documents/ChatGPT/External/practical-ai-adoption/test-results/sprint-2026-11-08/resilience/harness/runs/asset-mismatch",
+      "PLAYWRIGHT_BROWSERS_PATH": "/private/tmp/adoption-workbench-browsers"
+    },
+    "exitCode": 1,
+    "seconds": 2.2459472910000002,
+    "reportPresent": true,
+    "reportStatus": "failed",
+    "assetCount": 15,
+    "mismatchedAssets": [
+      "workbench/style.css"
+    ],
+    "journeys": [],
+    "printedSuccess": false,
+    "stderrExcerpt": "Release verification failed: Deployed assets do not match the requested commit. Journeys were not run. Evidence: /Users/shaun/Documents/ChatGPT/External/practical-ai-adoption/test-results/sprint-2026-11-08/resilience/harness/runs/asset-mismatch\n"
+  },
+  {
+    "name": "invalid-url",
+    "command": [
+      "node",
+      "tools/workbench/tests/live.mjs"
+    ],
+    "explicitEnvironment": {
+      "BASE_URL": "not a URL",
+      "EXPECTED_COMMIT": "e5ea82a44a5625e044b1f067d22345d90b44a911",
+      "RELEASE_OUTPUT": "/Users/shaun/Documents/ChatGPT/External/practical-ai-adoption/test-results/sprint-2026-11-08/resilience/harness/runs/invalid-url",
+      "PLAYWRIGHT_BROWSERS_PATH": "/private/tmp/adoption-workbench-browsers"
+    },
+    "exitCode": 1,
+    "seconds": 0.21614250000000013,
+    "reportPresent": false,
+    "reportStatus": null,
+    "assetCount": null,
+    "mismatchedAssets": null,
+    "journeys": null,
+    "printedSuccess": false,
+    "stderrExcerpt": "node:internal/url:840\n      href = bindingUrl.parse(input, base, true);\n                        ^\n\nTypeError: Invalid URL\n    at new URL (node:internal/url:840:25)\n    at resolveBase (file:///Users/shaun/Documents/ChatGPT/External/practical-ai-adoption/tools/workbench/tests/browser-support.mjs:3:15)\n    at file:///Users/shaun/Documents/ChatGPT/External/practical-ai-adoption/tools/workbench/tests/browser-support.mjs:8:16\n    at ModuleJob.run (node:internal/modules/esm/module_job:439:25)\n    at async node:internal/modules/esm/loader:643:26\n    at async asyncRunEntryPointWithESMLoader (node:internal/modules/run_main:101:5) {\n  code: 'ERR_INVALID_URL',\n  input: 'not a URL'\n}\n\nNode.js v24.19.0\n"
+  },
+  {
+    "name": "disallowed-scheme",
+    "command": [
+      "node",
+      "tools/workbench/tests/live.mjs"
+    ],
+    "explicitEnvironment": {
+      "BASE_URL": "file:///private/tmp/",
+      "EXPECTED_COMMIT": "e5ea82a44a5625e044b1f067d22345d90b44a911",
+      "RELEASE_OUTPUT": "/Users/shaun/Documents/ChatGPT/External/practical-ai-adoption/test-results/sprint-2026-11-08/resilience/harness/runs/disallowed-scheme",
+      "PLAYWRIGHT_BROWSERS_PATH": "/private/tmp/adoption-workbench-browsers"
+    },
+    "exitCode": 1,
+    "seconds": 0.17965287499999993,
+    "reportPresent": false,
+    "reportStatus": null,
+    "assetCount": null,
+    "mismatchedAssets": null,
+    "journeys": null,
+    "printedSuccess": false,
+    "stderrExcerpt": "file:///Users/shaun/Documents/ChatGPT/External/practical-ai-adoption/tools/workbench/tests/browser-support.mjs:4\n  if (!['http:', 'https:'].includes(url.protocol) || url.username || url.password || url.search || url.hash) throw new Error('BASE_URL must be an HTTP(S) site path without credentials, query or fragment.');\n                                                                                                                   ^\n\nError: BASE_URL must be an HTTP(S) site path without credentials, query or fragment.\n    at resolveBase (file:///Users/shaun/Documents/ChatGPT/External/practical-ai-adoption/tools/workbench/tests/browser-support.mjs:4:116)\n    at file:///Users/shaun/Documents/ChatGPT/External/practical-ai-adoption/tools/workbench/tests/browser-support.mjs:8:16\n    at ModuleJob.run (node:internal/modules/esm/module_job:439:25)\n    at async node:internal/modules/esm/loader:643:26\n    at async asyncRunEntryPointWithESMLoader (node:internal/modules/run_main:101:5)\n\nNode.js v24.19.0\n"
+  },
+  {
+    "name": "url-credentials",
+    "command": [
+      "node",
+      "tools/workbench/tests/live.mjs"
+    ],
+    "explicitEnvironment": {
+      "BASE_URL": "http://user:pass@127.0.0.1:8770",
+      "EXPECTED_COMMIT": "e5ea82a44a5625e044b1f067d22345d90b44a911",
+      "RELEASE_OUTPUT": "/Users/shaun/Documents/ChatGPT/External/practical-ai-adoption/test-results/sprint-2026-11-08/resilience/harness/runs/url-credentials",
+      "PLAYWRIGHT_BROWSERS_PATH": "/private/tmp/adoption-workbench-browsers"
+    },
+    "exitCode": 1,
+    "seconds": 0.18869716699999994,
+    "reportPresent": false,
+    "reportStatus": null,
+    "assetCount": null,
+    "mismatchedAssets": null,
+    "journeys": null,
+    "printedSuccess": false,
+    "stderrExcerpt": "file:///Users/shaun/Documents/ChatGPT/External/practical-ai-adoption/tools/workbench/tests/browser-support.mjs:4\n  if (!['http:', 'https:'].includes(url.protocol) || url.username || url.password || url.search || url.hash) throw new Error('BASE_URL must be an HTTP(S) site path without credentials, query or fragment.');\n                                                                                                                   ^\n\nError: BASE_URL must be an HTTP(S) site path without credentials, query or fragment.\n    at resolveBase (file:///Users/shaun/Documents/ChatGPT/External/practical-ai-adoption/tools/workbench/tests/browser-support.mjs:4:116)\n    at file:///Users/shaun/Documents/ChatGPT/External/practical-ai-adoption/tools/workbench/tests/browser-support.mjs:8:16\n    at ModuleJob.run (node:internal/modules/esm/module_job:439:25)\n    at async node:internal/modules/esm/loader:643:26\n    at async asyncRunEntryPointWithESMLoader (node:internal/modules/run_main:101:5)\n\nNode.js v24.19.0\n"
+  },
+  {
+    "name": "url-query",
+    "command": [
+      "node",
+      "tools/workbench/tests/live.mjs"
+    ],
+    "explicitEnvironment": {
+      "BASE_URL": "http://127.0.0.1:8770/?notes=fictional",
+      "EXPECTED_COMMIT": "e5ea82a44a5625e044b1f067d22345d90b44a911",
+      "RELEASE_OUTPUT": "/Users/shaun/Documents/ChatGPT/External/practical-ai-adoption/test-results/sprint-2026-11-08/resilience/harness/runs/url-query",
+      "PLAYWRIGHT_BROWSERS_PATH": "/private/tmp/adoption-workbench-browsers"
+    },
+    "exitCode": 1,
+    "seconds": 0.2219263749999998,
+    "reportPresent": false,
+    "reportStatus": null,
+    "assetCount": null,
+    "mismatchedAssets": null,
+    "journeys": null,
+    "printedSuccess": false,
+    "stderrExcerpt": "file:///Users/shaun/Documents/ChatGPT/External/practical-ai-adoption/tools/workbench/tests/browser-support.mjs:4\n  if (!['http:', 'https:'].includes(url.protocol) || url.username || url.password || url.search || url.hash) throw new Error('BASE_URL must be an HTTP(S) site path without credentials, query or fragment.');\n                                                                                                                   ^\n\nError: BASE_URL must be an HTTP(S) site path without credentials, query or fragment.\n    at resolveBase (file:///Users/shaun/Documents/ChatGPT/External/practical-ai-adoption/tools/workbench/tests/browser-support.mjs:4:116)\n    at file:///Users/shaun/Documents/ChatGPT/External/practical-ai-adoption/tools/workbench/tests/browser-support.mjs:8:16\n    at ModuleJob.run (node:internal/modules/esm/module_job:439:25)\n    at async node:internal/modules/esm/loader:643:26\n    at async asyncRunEntryPointWithESMLoader (node:internal/modules/run_main:101:5)\n\nNode.js v24.19.0\n"
+  },
+  {
+    "name": "url-fragment",
+    "command": [
+      "node",
+      "tools/workbench/tests/live.mjs"
+    ],
+    "explicitEnvironment": {
+      "BASE_URL": "http://127.0.0.1:8770/#fictional",
+      "EXPECTED_COMMIT": "e5ea82a44a5625e044b1f067d22345d90b44a911",
+      "RELEASE_OUTPUT": "/Users/shaun/Documents/ChatGPT/External/practical-ai-adoption/test-results/sprint-2026-11-08/resilience/harness/runs/url-fragment",
+      "PLAYWRIGHT_BROWSERS_PATH": "/private/tmp/adoption-workbench-browsers"
+    },
+    "exitCode": 1,
+    "seconds": 0.17134704199999984,
+    "reportPresent": false,
+    "reportStatus": null,
+    "assetCount": null,
+    "mismatchedAssets": null,
+    "journeys": null,
+    "printedSuccess": false,
+    "stderrExcerpt": "file:///Users/shaun/Documents/ChatGPT/External/practical-ai-adoption/tools/workbench/tests/browser-support.mjs:4\n  if (!['http:', 'https:'].includes(url.protocol) || url.username || url.password || url.search || url.hash) throw new Error('BASE_URL must be an HTTP(S) site path without credentials, query or fragment.');\n                                                                                                                   ^\n\nError: BASE_URL must be an HTTP(S) site path without credentials, query or fragment.\n    at resolveBase (file:///Users/shaun/Documents/ChatGPT/External/practical-ai-adoption/tools/workbench/tests/browser-support.mjs:4:116)\n    at file:///Users/shaun/Documents/ChatGPT/External/practical-ai-adoption/tools/workbench/tests/browser-support.mjs:8:16\n    at ModuleJob.run (node:internal/modules/esm/module_job:439:25)\n    at async node:internal/modules/esm/loader:643:26\n    at async asyncRunEntryPointWithESMLoader (node:internal/modules/run_main:101:5)\n\nNode.js v24.19.0\n"
+  },
+  {
+    "name": "reused-output",
+    "command": [
+      "node",
+      "tools/workbench/tests/live.mjs"
+    ],
+    "explicitEnvironment": {
+      "BASE_URL": "http://127.0.0.1:8770",
+      "EXPECTED_COMMIT": "e5ea82a44a5625e044b1f067d22345d90b44a911",
+      "RELEASE_OUTPUT": "/Users/shaun/Documents/ChatGPT/External/practical-ai-adoption/test-results/sprint-2026-11-08/resilience/harness/runs/reused-output",
+      "PLAYWRIGHT_BROWSERS_PATH": "/private/tmp/adoption-workbench-browsers"
+    },
+    "exitCode": 1,
+    "seconds": 0.17421941699999977,
+    "reportPresent": true,
+    "reportStatus": "failed",
+    "assetCount": 0,
+    "mismatchedAssets": [],
+    "journeys": null,
+    "printedSuccess": false,
+    "stderrExcerpt": "node:internal/fs/promises:916\n  return await PromisePrototypeThen(\n         ^\n\nError: EEXIST: file already exists, mkdir '/Users/shaun/Documents/ChatGPT/External/practical-ai-adoption/test-results/sprint-2026-11-08/resilience/harness/runs/reused-output'\n    at async mkdir (node:internal/fs/promises:916:10)\n    at async file:///Users/shaun/Documents/ChatGPT/External/practical-ai-adoption/tools/workbench/tests/live.mjs:13:1 {\n  errno: -17,\n  code: 'EEXIST',\n  syscall: 'mkdir',\n  path: '/Users/shaun/Documents/ChatGPT/External/practical-ai-adoption/test-results/sprint-2026-11-08/resilience/harness/runs/reused-output'\n}\n\nNode.js v24.19.0\n"
+  }
+]

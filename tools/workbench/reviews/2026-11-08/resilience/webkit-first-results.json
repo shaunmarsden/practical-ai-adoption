@@ -1,0 +1,663 @@
+{
+  "results": [
+    {
+      "name": "pending import / edit",
+      "result": "PASS"
+    },
+    {
+      "name": "pending import / edit-revert",
+      "result": "PASS"
+    },
+    {
+      "name": "pending import / clear",
+      "result": "PASS"
+    },
+    {
+      "name": "pending import / cancel-clear",
+      "result": "PASS"
+    },
+    {
+      "name": "pending import / navigate",
+      "result": "PASS"
+    },
+    {
+      "name": "pending import / preview",
+      "result": "PASS"
+    },
+    {
+      "name": "pending import / save",
+      "result": "PASS"
+    },
+    {
+      "name": "pending import / export",
+      "result": "PASS"
+    },
+    {
+      "name": "invalid UTF-8 preserves notes active step preview",
+      "result": "PASS"
+    },
+    {
+      "name": "read rejection preserves all current state",
+      "result": "PASS"
+    },
+    {
+      "name": "download exception blob retains recovery",
+      "result": "PASS"
+    },
+    {
+      "name": "download exception object-url retains recovery",
+      "result": "PASS"
+    },
+    {
+      "name": "download exception anchor-click retains recovery",
+      "result": "PASS"
+    },
+    {
+      "name": "import literal approval spoof and HTML stays unverified",
+      "result": "PASS"
+    },
+    {
+      "name": "all valid date extremes display and save intact",
+      "result": "PASS"
+    },
+    {
+      "name": "CRLF and CR remain until edited textarea",
+      "result": "PASS"
+    },
+    {
+      "name": "reload and new context do not restore notes or store them",
+      "result": "PASS"
+    },
+    {
+      "name": "back-forward observation",
+      "observedWork": ""
+    },
+    {
+      "name": "Back and Forward observed without claiming erasure",
+      "result": "PASS"
+    }
+  ],
+  "errors": [],
+  "requests": [
+    {
+      "url": "http://127.0.0.1:8879/workbench/",
+      "method": "GET",
+      "body": null
+    },
+    {
+      "url": "http://127.0.0.1:8879/workbench/style.css",
+      "method": "GET",
+      "body": null
+    },
+    {
+      "url": "http://127.0.0.1:8879/workbench/app.mjs",
+      "method": "GET",
+      "body": null
+    },
+    {
+      "url": "http://127.0.0.1:8879/workbench/content.mjs",
+      "method": "GET",
+      "body": null
+    },
+    {
+      "url": "http://127.0.0.1:8879/workbench/draft.mjs",
+      "method": "GET",
+      "body": null
+    },
+    {
+      "url": "http://127.0.0.1:8879/workbench/",
+      "method": "GET",
+      "body": null
+    },
+    {
+      "url": "http://127.0.0.1:8879/workbench/style.css",
+      "method": "GET",
+      "body": null
+    },
+    {
+      "url": "http://127.0.0.1:8879/workbench/app.mjs",
+      "method": "GET",
+      "body": null
+    },
+    {
+      "url": "http://127.0.0.1:8879/workbench/content.mjs",
+      "method": "GET",
+      "body": null
+    },
+    {
+      "url": "http://127.0.0.1:8879/workbench/draft.mjs",
+      "method": "GET",
+      "body": null
+    },
+    {
+      "url": "http://127.0.0.1:8879/workbench/",
+      "method": "GET",
+      "body": null
+    },
+    {
+      "url": "http://127.0.0.1:8879/workbench/style.css",
+      "method": "GET",
+      "body": null
+    },
+    {
+      "url": "http://127.0.0.1:8879/workbench/app.mjs",
+      "method": "GET",
+      "body": null
+    },
+    {
+      "url": "http://127.0.0.1:8879/workbench/content.mjs",
+      "method": "GET",
+      "body": null
+    },
+    {
+      "url": "http://127.0.0.1:8879/workbench/draft.mjs",
+      "method": "GET",
+      "body": null
+    },
+    {
+      "url": "http://127.0.0.1:8879/workbench/",
+      "method": "GET",
+      "body": null
+    },
+    {
+      "url": "http://127.0.0.1:8879/workbench/style.css",
+      "method": "GET",
+      "body": null
+    },
+    {
+      "url": "http://127.0.0.1:8879/workbench/app.mjs",
+      "method": "GET",
+      "body": null
+    },
+    {
+      "url": "http://127.0.0.1:8879/workbench/content.mjs",
+      "method": "GET",
+      "body": null
+    },
+    {
+      "url": "http://127.0.0.1:8879/workbench/draft.mjs",
+      "method": "GET",
+      "body": null
+    },
+    {
+      "url": "http://127.0.0.1:8879/workbench/",
+      "method": "GET",
+      "body": null
+    },
+    {
+      "url": "http://127.0.0.1:8879/workbench/style.css",
+      "method": "GET",
+      "body": null
+    },
+    {
+      "url": "http://127.0.0.1:8879/workbench/app.mjs",
+      "method": "GET",
+      "body": null
+    },
+    {
+      "url": "http://127.0.0.1:8879/workbench/content.mjs",
+      "method": "GET",
+      "body": null
+    },
+    {
+      "url": "http://127.0.0.1:8879/workbench/draft.mjs",
+      "method": "GET",
+      "body": null
+    },
+    {
+      "url": "http://127.0.0.1:8879/workbench/",
+      "method": "GET",
+      "body": null
+    },
+    {
+      "url": "http://127.0.0.1:8879/workbench/style.css",
+      "method": "GET",
+      "body": null
+    },
+    {
+      "url": "http://127.0.0.1:8879/workbench/app.mjs",
+      "method": "GET",
+      "body": null
+    },
+    {
+      "url": "http://127.0.0.1:8879/workbench/content.mjs",
+      "method": "GET",
+      "body": null
+    },
+    {
+      "url": "http://127.0.0.1:8879/workbench/draft.mjs",
+      "method": "GET",
+      "body": null
+    },
+    {
+      "url": "http://127.0.0.1:8879/workbench/",
+      "method": "GET",
+      "body": null
+    },
+    {
+      "url": "http://127.0.0.1:8879/workbench/style.css",
+      "method": "GET",
+      "body": null
+    },
+    {
+      "url": "http://127.0.0.1:8879/workbench/app.mjs",
+      "method": "GET",
+      "body": null
+    },
+    {
+      "url": "http://127.0.0.1:8879/workbench/content.mjs",
+      "method": "GET",
+      "body": null
+    },
+    {
+      "url": "http://127.0.0.1:8879/workbench/draft.mjs",
+      "method": "GET",
+      "body": null
+    },
+    {
+      "url": "http://127.0.0.1:8879/workbench/",
+      "method": "GET",
+      "body": null
+    },
+    {
+      "url": "http://127.0.0.1:8879/workbench/style.css",
+      "method": "GET",
+      "body": null
+    },
+    {
+      "url": "http://127.0.0.1:8879/workbench/app.mjs",
+      "method": "GET",
+      "body": null
+    },
+    {
+      "url": "http://127.0.0.1:8879/workbench/content.mjs",
+      "method": "GET",
+      "body": null
+    },
+    {
+      "url": "http://127.0.0.1:8879/workbench/draft.mjs",
+      "method": "GET",
+      "body": null
+    },
+    {
+      "url": "http://127.0.0.1:8879/workbench/",
+      "method": "GET",
+      "body": null
+    },
+    {
+      "url": "http://127.0.0.1:8879/workbench/style.css",
+      "method": "GET",
+      "body": null
+    },
+    {
+      "url": "http://127.0.0.1:8879/workbench/app.mjs",
+      "method": "GET",
+      "body": null
+    },
+    {
+      "url": "http://127.0.0.1:8879/workbench/content.mjs",
+      "method": "GET",
+      "body": null
+    },
+    {
+      "url": "http://127.0.0.1:8879/workbench/draft.mjs",
+      "method": "GET",
+      "body": null
+    },
+    {
+      "url": "http://127.0.0.1:8879/workbench/",
+      "method": "GET",
+      "body": null
+    },
+    {
+      "url": "http://127.0.0.1:8879/workbench/style.css",
+      "method": "GET",
+      "body": null
+    },
+    {
+      "url": "http://127.0.0.1:8879/workbench/app.mjs",
+      "method": "GET",
+      "body": null
+    },
+    {
+      "url": "http://127.0.0.1:8879/workbench/content.mjs",
+      "method": "GET",
+      "body": null
+    },
+    {
+      "url": "http://127.0.0.1:8879/workbench/draft.mjs",
+      "method": "GET",
+      "body": null
+    },
+    {
+      "url": "http://127.0.0.1:8879/workbench/",
+      "method": "GET",
+      "body": null
+    },
+    {
+      "url": "http://127.0.0.1:8879/workbench/style.css",
+      "method": "GET",
+      "body": null
+    },
+    {
+      "url": "http://127.0.0.1:8879/workbench/app.mjs",
+      "method": "GET",
+      "body": null
+    },
+    {
+      "url": "http://127.0.0.1:8879/workbench/content.mjs",
+      "method": "GET",
+      "body": null
+    },
+    {
+      "url": "http://127.0.0.1:8879/workbench/draft.mjs",
+      "method": "GET",
+      "body": null
+    },
+    {
+      "url": "http://127.0.0.1:8879/workbench/",
+      "method": "GET",
+      "body": null
+    },
+    {
+      "url": "http://127.0.0.1:8879/workbench/style.css",
+      "method": "GET",
+      "body": null
+    },
+    {
+      "url": "http://127.0.0.1:8879/workbench/app.mjs",
+      "method": "GET",
+      "body": null
+    },
+    {
+      "url": "http://127.0.0.1:8879/workbench/content.mjs",
+      "method": "GET",
+      "body": null
+    },
+    {
+      "url": "http://127.0.0.1:8879/workbench/draft.mjs",
+      "method": "GET",
+      "body": null
+    },
+    {
+      "url": "http://127.0.0.1:8879/workbench/",
+      "method": "GET",
+      "body": null
+    },
+    {
+      "url": "http://127.0.0.1:8879/workbench/style.css",
+      "method": "GET",
+      "body": null
+    },
+    {
+      "url": "http://127.0.0.1:8879/workbench/app.mjs",
+      "method": "GET",
+      "body": null
+    },
+    {
+      "url": "http://127.0.0.1:8879/workbench/content.mjs",
+      "method": "GET",
+      "body": null
+    },
+    {
+      "url": "http://127.0.0.1:8879/workbench/draft.mjs",
+      "method": "GET",
+      "body": null
+    },
+    {
+      "url": "http://127.0.0.1:8879/workbench/",
+      "method": "GET",
+      "body": null
+    },
+    {
+      "url": "http://127.0.0.1:8879/workbench/style.css",
+      "method": "GET",
+      "body": null
+    },
+    {
+      "url": "http://127.0.0.1:8879/workbench/app.mjs",
+      "method": "GET",
+      "body": null
+    },
+    {
+      "url": "http://127.0.0.1:8879/workbench/content.mjs",
+      "method": "GET",
+      "body": null
+    },
+    {
+      "url": "http://127.0.0.1:8879/workbench/draft.mjs",
+      "method": "GET",
+      "body": null
+    },
+    {
+      "url": "http://127.0.0.1:8879/workbench/",
+      "method": "GET",
+      "body": null
+    },
+    {
+      "url": "http://127.0.0.1:8879/workbench/style.css",
+      "method": "GET",
+      "body": null
+    },
+    {
+      "url": "http://127.0.0.1:8879/workbench/app.mjs",
+      "method": "GET",
+      "body": null
+    },
+    {
+      "url": "http://127.0.0.1:8879/workbench/content.mjs",
+      "method": "GET",
+      "body": null
+    },
+    {
+      "url": "http://127.0.0.1:8879/workbench/draft.mjs",
+      "method": "GET",
+      "body": null
+    },
+    {
+      "url": "http://127.0.0.1:8879/workbench/",
+      "method": "GET",
+      "body": null
+    },
+    {
+      "url": "http://127.0.0.1:8879/workbench/style.css",
+      "method": "GET",
+      "body": null
+    },
+    {
+      "url": "http://127.0.0.1:8879/workbench/app.mjs",
+      "method": "GET",
+      "body": null
+    },
+    {
+      "url": "http://127.0.0.1:8879/workbench/content.mjs",
+      "method": "GET",
+      "body": null
+    },
+    {
+      "url": "http://127.0.0.1:8879/workbench/draft.mjs",
+      "method": "GET",
+      "body": null
+    },
+    {
+      "url": "http://127.0.0.1:8879/workbench/",
+      "method": "GET",
+      "body": null
+    },
+    {
+      "url": "http://127.0.0.1:8879/workbench/style.css",
+      "method": "GET",
+      "body": null
+    },
+    {
+      "url": "http://127.0.0.1:8879/workbench/app.mjs",
+      "method": "GET",
+      "body": null
+    },
+    {
+      "url": "http://127.0.0.1:8879/workbench/content.mjs",
+      "method": "GET",
+      "body": null
+    },
+    {
+      "url": "http://127.0.0.1:8879/workbench/draft.mjs",
+      "method": "GET",
+      "body": null
+    },
+    {
+      "url": "http://127.0.0.1:8879/workbench/",
+      "method": "GET",
+      "body": null
+    },
+    {
+      "url": "http://127.0.0.1:8879/workbench/style.css",
+      "method": "GET",
+      "body": null
+    },
+    {
+      "url": "http://127.0.0.1:8879/workbench/app.mjs",
+      "method": "GET",
+      "body": null
+    },
+    {
+      "url": "http://127.0.0.1:8879/workbench/content.mjs",
+      "method": "GET",
+      "body": null
+    },
+    {
+      "url": "http://127.0.0.1:8879/workbench/draft.mjs",
+      "method": "GET",
+      "body": null
+    },
+    {
+      "url": "http://127.0.0.1:8879/workbench/",
+      "method": "GET",
+      "body": null
+    },
+    {
+      "url": "http://127.0.0.1:8879/workbench/style.css",
+      "method": "GET",
+      "body": null
+    },
+    {
+      "url": "http://127.0.0.1:8879/workbench/app.mjs",
+      "method": "GET",
+      "body": null
+    },
+    {
+      "url": "http://127.0.0.1:8879/workbench/content.mjs",
+      "method": "GET",
+      "body": null
+    },
+    {
+      "url": "http://127.0.0.1:8879/workbench/draft.mjs",
+      "method": "GET",
+      "body": null
+    },
+    {
+      "url": "http://127.0.0.1:8879/workbench/",
+      "method": "GET",
+      "body": null
+    },
+    {
+      "url": "http://127.0.0.1:8879/workbench/style.css",
+      "method": "GET",
+      "body": null
+    },
+    {
+      "url": "http://127.0.0.1:8879/workbench/app.mjs",
+      "method": "GET",
+      "body": null
+    },
+    {
+      "url": "http://127.0.0.1:8879/workbench/content.mjs",
+      "method": "GET",
+      "body": null
+    },
+    {
+      "url": "http://127.0.0.1:8879/workbench/draft.mjs",
+      "method": "GET",
+      "body": null
+    },
+    {
+      "url": "http://127.0.0.1:8879/workbench/",
+      "method": "GET",
+      "body": null
+    },
+    {
+      "url": "http://127.0.0.1:8879/workbench/style.css",
+      "method": "GET",
+      "body": null
+    },
+    {
+      "url": "http://127.0.0.1:8879/workbench/app.mjs",
+      "method": "GET",
+      "body": null
+    },
+    {
+      "url": "http://127.0.0.1:8879/workbench/content.mjs",
+      "method": "GET",
+      "body": null
+    },
+    {
+      "url": "http://127.0.0.1:8879/workbench/draft.mjs",
+      "method": "GET",
+      "body": null
+    },
+    {
+      "url": "http://127.0.0.1:8879/workbench/",
+      "method": "GET",
+      "body": null
+    },
+    {
+      "url": "http://127.0.0.1:8879/workbench/style.css",
+      "method": "GET",
+      "body": null
+    },
+    {
+      "url": "http://127.0.0.1:8879/workbench/app.mjs",
+      "method": "GET",
+      "body": null
+    },
+    {
+      "url": "http://127.0.0.1:8879/workbench/content.mjs",
+      "method": "GET",
+      "body": null
+    },
+    {
+      "url": "http://127.0.0.1:8879/workbench/draft.mjs",
+      "method": "GET",
+      "body": null
+    },
+    {
+      "url": "http://127.0.0.1:8879/",
+      "method": "GET",
+      "body": null
+    },
+    {
+      "url": "http://127.0.0.1:8879/workbench/",
+      "method": "GET",
+      "body": null
+    },
+    {
+      "url": "http://127.0.0.1:8879/workbench/style.css",
+      "method": "GET",
+      "body": null
+    },
+    {
+      "url": "http://127.0.0.1:8879/workbench/app.mjs",
+      "method": "GET",
+      "body": null
+    },
+    {
+      "url": "http://127.0.0.1:8879/workbench/content.mjs",
+      "method": "GET",
+      "body": null
+    },
+    {
+      "url": "http://127.0.0.1:8879/workbench/draft.mjs",
+      "method": "GET",
+      "body": null
+    }
+  ]
+}

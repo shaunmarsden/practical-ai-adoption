@@ -1,0 +1,16 @@
+# Frozen independent resilience challenges
+
+Frozen before executing cases. Fictional software inputs only, no human validation. Baseline is e5ea82a44a5625e044b1f067d22345d90b44a911. No historical test runner or answer key consulted.
+
+## Expectations
+- P01: Duplicate envelope and note keys rejected, including escaped equivalent key spellings. Literal JSON-looking text, escaped quotes, braces, commas, backslashes and Unicode in note values accepted losslessly.
+- P02: All format-valid text values (including escaped controls, CRLF, isolated surrogate, astral characters at UTF-16 limit) round-trip through parser and writer. Unsupported envelope shape, prototype-like unknown keys, dates, types, malformed UTF-8, BOM and maximum byte limits follow documented contract.
+- P03: Decoding adversarial but bounded flat JSON stays responsive; unusual legal whitespace/exponent syntax on the numeric schema is judged by documented version value, not typography.
+- B01: Delay File.arrayBuffer, then edit, edit-and-revert, clear, cancelled clear, navigate, preview, save, or export. Newer edits or clear prevent stale replacement; navigation alone should not block a valid import. Save/export during load capture current notes, not future import.
+- B02: Import rejection or file read exception preserves current fields, visible preview and active step. Blank or failed download requests do not falsely claim completed saving; caught failures preserve notes and offer an achievable recovery.
+- B03: Malicious text, fake approval banners, markup, control characters and positive claimed V2/decisions remain literal unverified notes, with fixed app/export caveats intact and no executable markup or outbound requests. No semantic detection expected.
+- B04: A valid draft with all permitted controls/date values and line endings survives untouched save/reopen and unrelated edits. Editing an imported textarea uses native normalised visible value as documented.
+- B05: Reload/new browser context loses in-memory notes as documented; browser Back/Forward may restore a cached page and is not assumed secure erasure. Page lifecycle does not silently autosave or emit user notes.
+
+## Assessment rule
+Only call a defect when an observed failure conflicts with the stated contract or causes an avoidable concrete failure in ordinary supported use. Instrumented error paths are software resilience evidence, not proof of ordinary browser frequency. A clear pre-existing warning about no autosave is intended behaviour. No new backend, AI service or semantic validator requested.
