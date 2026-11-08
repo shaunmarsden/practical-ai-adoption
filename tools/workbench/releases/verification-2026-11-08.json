@@ -1,0 +1,672 @@
+{
+  "recordedAt": "2026-11-08T11:37:12.352590+00:00",
+  "scope": "Maintainer software checks using fictional data. Not blinded AI review, human validation, workplace evidence or approval. App files unchanged from merged PR #98. Draft release-check changes not merged or deployed.",
+  "baseline": {
+    "commit": "b55266b736880357861c95a9abb5e006fb0be3c5",
+    "nodeTestsPassed": 51,
+    "repositoryMarkdownFilesChecked": 83
+  },
+  "expectations": "test-plan-2026-11-08.txt",
+  "firstDevelopmentDiagnosticControl": {
+    "status": "failed",
+    "attempts": [
+      {
+        "label": "guard",
+        "decision": "dismiss",
+        "startedAt": "2026-11-08T11:33:06.310Z",
+        "events": [
+          {
+            "at": "2026-11-08T11:33:06.452Z",
+            "type": "beforeunload",
+            "prevented": true,
+            "returnValue": "true",
+            "stickyActivation": true,
+            "document": 1794137586090
+          }
+        ],
+        "before": {
+          "url": "http://127.0.0.1:50146/guard",
+          "document": 1794137586090,
+          "readyState": "complete",
+          "activation": {
+            "active": true,
+            "sticky": true
+          },
+          "navigationType": "navigate",
+          "changed": null,
+          "notes": {
+            "work": "FICTIONAL: Pine Gable control"
+          },
+          "step": null,
+          "preview": null,
+          "previewHidden": null,
+          "badDate": null
+        },
+        "dialog": {
+          "type": "beforeunload",
+          "observedAt": "2026-11-08T11:33:06.473Z"
+        },
+        "action": {
+          "error": {
+            "name": "TimeoutError",
+            "message": "page.reload: Timeout 1000ms exceeded.\nCall log:\n\u001b[2m  - waiting for navigation until \"load\"\u001b[22m\n"
+          }
+        },
+        "after": {
+          "url": "http://127.0.0.1:50146/guard",
+          "document": 1794137586090,
+          "readyState": "complete",
+          "activation": {
+            "active": true,
+            "sticky": true
+          },
+          "navigationType": "navigate",
+          "changed": null,
+          "notes": {
+            "work": "FICTIONAL: Pine Gable control"
+          },
+          "step": null,
+          "preview": null,
+          "previewHidden": null,
+          "badDate": null
+        },
+        "observation": "native-dialog-observed; navigation-api-timed-out",
+        "status": "passed",
+        "finishedAt": "2026-11-08T11:33:07.339Z"
+      },
+      {
+        "label": "unguarded",
+        "decision": "dismiss",
+        "startedAt": "2026-11-08T11:33:07.604Z",
+        "events": [
+          {
+            "at": "2026-11-08T11:33:07.608Z",
+            "type": "beforeunload",
+            "prevented": false,
+            "returnValue": "",
+            "stickyActivation": true,
+            "document": 1794137587539
+          },
+          {
+            "at": "2026-11-08T11:33:07.614Z",
+            "type": "main-frame-navigation",
+            "url": "http://127.0.0.1:50146/unguarded"
+          },
+          {
+            "at": "2026-11-08T11:33:07.615Z",
+            "type": "domcontentloaded"
+          },
+          {
+            "at": "2026-11-08T11:33:07.615Z",
+            "type": "load"
+          }
+        ],
+        "before": {
+          "url": "http://127.0.0.1:50146/unguarded",
+          "document": 1794137587539,
+          "readyState": "complete",
+          "activation": {
+            "active": true,
+            "sticky": true
+          },
+          "navigationType": "navigate",
+          "changed": null,
+          "notes": {
+            "work": "FICTIONAL: Pine Gable control"
+          },
+          "step": null,
+          "preview": null,
+          "previewHidden": null,
+          "badDate": null
+        },
+        "dialog": {
+          "missing": true,
+          "error": {
+            "name": "TimeoutError",
+            "message": "page.waitForEvent: Timeout 1500ms exceeded while waiting for event \"dialog\"\n=========================== logs ===========================\nwaiting for event \"dialog\"\n============================================================"
+          }
+        },
+        "action": {
+          "completed": true
+        },
+        "after": {
+          "url": "http://127.0.0.1:50146/unguarded",
+          "document": 1794137587608,
+          "readyState": "complete",
+          "activation": {
+            "active": true,
+            "sticky": true
+          },
+          "navigationType": "reload",
+          "changed": null,
+          "notes": {
+            "work": "FICTIONAL: Pine Gable control"
+          },
+          "step": null,
+          "preview": null,
+          "previewHidden": null,
+          "badDate": null
+        },
+        "observation": "page-changed-without-observed-native-dialog",
+        "status": "failed",
+        "error": "Expected native beforeunload: page-changed-without-observed-native-dialog\n+ actual - expected\n\n+ undefined\n- 'beforeunload'\n",
+        "finishedAt": "2026-11-08T11:33:09.135Z"
+      }
+    ],
+    "version": "153.0",
+    "error": "AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:\n+ actual - expected\n\n+ 'FICTIONAL: Pine Gable control'\n- ''\n\n    at file:///Users/shaun/Documents/ChatGPT/External/practical-ai-adoption/tools/workbench/tests/leave-diagnostics-browser.mjs:37:16"
+  },
+  "firstDevelopmentFailureExplanation": "The unguarded fixture reloaded and Firefox restored its native textarea. The assertion that it must be blank was invalid. The corrected fixture navigates to a distinct destination and checks actual document/URL change. No app change. Original report retained here; original trace remains local.",
+  "correctedDiagnosticControls": {
+    "status": "passed",
+    "attempts": [
+      {
+        "label": "guard",
+        "decision": "dismiss",
+        "startedAt": "2026-11-08T11:33:41.537Z",
+        "events": [
+          {
+            "at": "2026-11-08T11:33:41.556Z",
+            "type": "beforeunload",
+            "prevented": true,
+            "returnValue": "true",
+            "stickyActivation": true,
+            "document": 1794137621221
+          }
+        ],
+        "before": {
+          "url": "http://127.0.0.1:50162/guard",
+          "document": 1794137621221,
+          "readyState": "complete",
+          "activation": {
+            "active": true,
+            "sticky": true
+          },
+          "navigationType": "navigate",
+          "changed": null,
+          "notes": {
+            "work": "FICTIONAL: Pine Gable control"
+          },
+          "step": null,
+          "preview": null,
+          "previewHidden": null,
+          "badDate": null
+        },
+        "dialog": {
+          "type": "beforeunload",
+          "observedAt": "2026-11-08T11:33:41.616Z"
+        },
+        "action": {
+          "error": {
+            "name": "TimeoutError",
+            "message": "page.reload: Timeout 1000ms exceeded.\nCall log:\n\u001b[2m  - waiting for navigation until \"load\"\u001b[22m\n"
+          }
+        },
+        "after": {
+          "url": "http://127.0.0.1:50162/guard",
+          "document": 1794137621221,
+          "readyState": "complete",
+          "activation": {
+            "active": true,
+            "sticky": true
+          },
+          "navigationType": "navigate",
+          "changed": null,
+          "notes": {
+            "work": "FICTIONAL: Pine Gable control"
+          },
+          "step": null,
+          "preview": null,
+          "previewHidden": null,
+          "badDate": null
+        },
+        "observation": "native-dialog-observed; navigation-api-timed-out",
+        "status": "passed",
+        "finishedAt": "2026-11-08T11:33:42.566Z"
+      },
+      {
+        "label": "unguarded",
+        "decision": "dismiss",
+        "startedAt": "2026-11-08T11:33:43.412Z",
+        "events": [
+          {
+            "at": "2026-11-08T11:33:43.442Z",
+            "type": "beforeunload",
+            "prevented": false,
+            "returnValue": "",
+            "stickyActivation": true,
+            "document": 1794137623241
+          },
+          {
+            "at": "2026-11-08T11:33:43.466Z",
+            "type": "main-frame-navigation",
+            "url": "http://127.0.0.1:50162/destination"
+          },
+          {
+            "at": "2026-11-08T11:33:43.469Z",
+            "type": "domcontentloaded"
+          },
+          {
+            "at": "2026-11-08T11:33:43.469Z",
+            "type": "load"
+          }
+        ],
+        "before": {
+          "url": "http://127.0.0.1:50162/unguarded",
+          "document": 1794137623241,
+          "readyState": "complete",
+          "activation": {
+            "active": true,
+            "sticky": true
+          },
+          "navigationType": "navigate",
+          "changed": null,
+          "notes": {
+            "work": "FICTIONAL: Pine Gable control"
+          },
+          "step": null,
+          "preview": null,
+          "previewHidden": null,
+          "badDate": null
+        },
+        "dialog": {
+          "missing": true,
+          "error": {
+            "name": "TimeoutError",
+            "message": "page.waitForEvent: Timeout 1500ms exceeded while waiting for event \"dialog\"\n=========================== logs ===========================\nwaiting for event \"dialog\"\n============================================================"
+          }
+        },
+        "action": {
+          "completed": true
+        },
+        "after": {
+          "url": "http://127.0.0.1:50162/destination",
+          "document": 1794137623440,
+          "readyState": "complete",
+          "activation": {
+            "active": true,
+            "sticky": true
+          },
+          "navigationType": "navigate",
+          "changed": null,
+          "notes": {},
+          "step": null,
+          "preview": null,
+          "previewHidden": null,
+          "badDate": null
+        },
+        "observation": "page-changed-without-observed-native-dialog",
+        "status": "failed",
+        "error": "Expected native beforeunload: page-changed-without-observed-native-dialog\n+ actual - expected\n\n+ undefined\n- 'beforeunload'\n",
+        "finishedAt": "2026-11-08T11:33:44.960Z"
+      },
+      {
+        "label": "action-timeout",
+        "decision": "dismiss",
+        "startedAt": "2026-11-08T11:33:46.094Z",
+        "events": [],
+        "before": {
+          "url": "http://127.0.0.1:50162/action-timeout",
+          "document": 1794137625961,
+          "readyState": "complete",
+          "activation": {
+            "active": true,
+            "sticky": true
+          },
+          "navigationType": "navigate",
+          "changed": null,
+          "notes": {
+            "work": "FICTIONAL: Pine Gable control"
+          },
+          "step": null,
+          "preview": null,
+          "previewHidden": null,
+          "badDate": null
+        },
+        "dialog": {
+          "missing": true,
+          "error": {
+            "name": "TimeoutError",
+            "message": "page.waitForEvent: Timeout 1500ms exceeded while waiting for event \"dialog\"\n=========================== logs ===========================\nwaiting for event \"dialog\"\n============================================================"
+          }
+        },
+        "action": {
+          "error": {
+            "name": "TimeoutError",
+            "message": "Controlled timeout without browser navigation"
+          }
+        },
+        "after": {
+          "url": "http://127.0.0.1:50162/action-timeout",
+          "document": 1794137625961,
+          "readyState": "complete",
+          "activation": {
+            "active": true,
+            "sticky": true
+          },
+          "navigationType": "navigate",
+          "changed": null,
+          "notes": {
+            "work": "FICTIONAL: Pine Gable control"
+          },
+          "step": null,
+          "preview": null,
+          "previewHidden": null,
+          "badDate": null
+        },
+        "observation": "navigation-api-timed-out-without-observed-native-dialog",
+        "status": "failed",
+        "error": "Expected native beforeunload: navigation-api-timed-out-without-observed-native-dialog\n+ actual - expected\n\n+ undefined\n- 'beforeunload'\n",
+        "finishedAt": "2026-11-08T11:33:47.618Z"
+      }
+    ],
+    "version": "153.0"
+  },
+  "localPreview": {
+    "status": "passed",
+    "base": "http://127.0.0.1:8771",
+    "expectedCommit": "b55266b736880357861c95a9abb5e006fb0be3c5",
+    "startedAt": "2026-11-08T11:33:37.726Z",
+    "finishedAt": "2026-11-08T11:34:25.008Z",
+    "error": null,
+    "assetsBefore": {
+      "observed": 16,
+      "matched": 16
+    },
+    "assetsAfter": {
+      "observed": 16,
+      "matched": 16
+    },
+    "jobs": [
+      {
+        "name": "journey",
+        "exitCode": 0,
+        "error": null,
+        "browser": null,
+        "version": null,
+        "nativeAttempts": 0,
+        "limitations": [],
+        "partialDateGesture": null
+      },
+      {
+        "name": "drafts",
+        "exitCode": 0,
+        "error": null,
+        "browser": null,
+        "version": null,
+        "nativeAttempts": 0,
+        "limitations": [],
+        "partialDateGesture": null
+      },
+      {
+        "name": "reflow",
+        "exitCode": 0,
+        "error": null,
+        "browser": null,
+        "version": null,
+        "nativeAttempts": 0,
+        "limitations": [],
+        "partialDateGesture": null
+      },
+      {
+        "name": "changes-chrome",
+        "exitCode": 0,
+        "error": null,
+        "browser": "chrome",
+        "version": "157.0.8103.38",
+        "nativeAttempts": 5,
+        "limitations": [],
+        "partialDateGesture": {
+          "value": "",
+          "badInput": true
+        }
+      },
+      {
+        "name": "changes-firefox",
+        "exitCode": 0,
+        "error": null,
+        "browser": "firefox",
+        "version": "153.0",
+        "nativeAttempts": 5,
+        "limitations": [],
+        "partialDateGesture": {
+          "value": "",
+          "badInput": false
+        }
+      },
+      {
+        "name": "changes-webkit",
+        "exitCode": 0,
+        "error": null,
+        "browser": "webkit",
+        "version": "26.5",
+        "nativeAttempts": 5,
+        "limitations": [
+          "WebKit cancelled Back caused one extra native warning at text export; dismissal retained notes and produced the complete download."
+        ],
+        "partialDateGesture": {
+          "value": "",
+          "badInput": true
+        }
+      }
+    ],
+    "rawReport": "test-results/release-check-development/full-local-first/report.json",
+    "rawReportSHA256": "d75d73df2d1178c0218c8c2256829a32dbb18367d9a907c5b447cb1d3a98bf99"
+  },
+  "liveSite": {
+    "status": "passed",
+    "base": "https://shaunmarsden.github.io/practical-ai-adoption",
+    "expectedCommit": "b55266b736880357861c95a9abb5e006fb0be3c5",
+    "startedAt": "2026-11-08T11:35:23.293Z",
+    "finishedAt": "2026-11-08T11:36:18.596Z",
+    "error": null,
+    "assetsBefore": {
+      "observed": 16,
+      "matched": 16
+    },
+    "assetsAfter": {
+      "observed": 16,
+      "matched": 16
+    },
+    "jobs": [
+      {
+        "name": "journey",
+        "exitCode": 0,
+        "error": null,
+        "browser": null,
+        "version": null,
+        "nativeAttempts": 0,
+        "limitations": [],
+        "partialDateGesture": null
+      },
+      {
+        "name": "drafts",
+        "exitCode": 0,
+        "error": null,
+        "browser": null,
+        "version": null,
+        "nativeAttempts": 0,
+        "limitations": [],
+        "partialDateGesture": null
+      },
+      {
+        "name": "reflow",
+        "exitCode": 0,
+        "error": null,
+        "browser": null,
+        "version": null,
+        "nativeAttempts": 0,
+        "limitations": [],
+        "partialDateGesture": null
+      },
+      {
+        "name": "changes-chrome",
+        "exitCode": 0,
+        "error": null,
+        "browser": "chrome",
+        "version": "157.0.8103.38",
+        "nativeAttempts": 5,
+        "limitations": [],
+        "partialDateGesture": {
+          "value": "",
+          "badInput": true
+        }
+      },
+      {
+        "name": "changes-firefox",
+        "exitCode": 0,
+        "error": null,
+        "browser": "firefox",
+        "version": "153.0",
+        "nativeAttempts": 5,
+        "limitations": [],
+        "partialDateGesture": {
+          "value": "",
+          "badInput": false
+        }
+      },
+      {
+        "name": "changes-webkit",
+        "exitCode": 0,
+        "error": null,
+        "browser": "webkit",
+        "version": "26.5",
+        "nativeAttempts": 5,
+        "limitations": [
+          "WebKit cancelled Back caused one extra native warning at text export; dismissal retained notes and produced the complete download."
+        ],
+        "partialDateGesture": {
+          "value": "",
+          "badInput": true
+        }
+      }
+    ],
+    "rawReport": "test-results/release-check-development/full-live-first/report.json",
+    "rawReportSHA256": "09c8130788ae3c9f6b2aba33f619f38757e521679d3f7284e0a73bbc5539c3f2"
+  },
+  "negativeControls": {
+    "wrongSource": {
+      "status": "failed",
+      "base": "http://127.0.0.1:8771",
+      "expectedCommit": "b81acdd20419bf240f31010926d5e6830d14974e",
+      "startedAt": "2026-11-08T11:34:15.795Z",
+      "finishedAt": "2026-11-08T11:34:16.170Z",
+      "error": "Deployed assets do not match the requested commit. Journeys were not run.",
+      "assetsBefore": {
+        "observed": 16,
+        "matched": 14
+      },
+      "assetsAfter": {
+        "observed": 0,
+        "matched": 0
+      },
+      "jobs": [],
+      "rawReport": "test-results/release-check-development/wrong-source/report.json",
+      "rawReportSHA256": "c4828c31585d22d24b41d2cd411ea181eb68e9c59f298005e274eb5cf662bdc2"
+    },
+    "missingBrowser": {
+      "status": "failed",
+      "base": "http://127.0.0.1:8771",
+      "expectedCommit": "b55266b736880357861c95a9abb5e006fb0be3c5",
+      "startedAt": "2026-11-08T11:34:16.506Z",
+      "finishedAt": "2026-11-08T11:34:28.232Z",
+      "error": "journey failed; inspect its log and diagnostics\n\n1 !== 0\n",
+      "assetsBefore": {
+        "observed": 16,
+        "matched": 16
+      },
+      "assetsAfter": {
+        "observed": 16,
+        "matched": 16
+      },
+      "jobs": [
+        {
+          "name": "journey",
+          "exitCode": 1,
+          "error": null,
+          "browser": null,
+          "version": null,
+          "nativeAttempts": 0,
+          "limitations": [],
+          "partialDateGesture": null
+        },
+        {
+          "name": "drafts",
+          "exitCode": 1,
+          "error": null,
+          "browser": null,
+          "version": null,
+          "nativeAttempts": 0,
+          "limitations": [],
+          "partialDateGesture": null
+        },
+        {
+          "name": "reflow",
+          "exitCode": 1,
+          "error": null,
+          "browser": null,
+          "version": null,
+          "nativeAttempts": 0,
+          "limitations": [],
+          "partialDateGesture": null
+        },
+        {
+          "name": "changes-chrome",
+          "exitCode": 0,
+          "error": null,
+          "browser": "chrome",
+          "version": "157.0.8103.38",
+          "nativeAttempts": 5,
+          "limitations": [],
+          "partialDateGesture": {
+            "value": "",
+            "badInput": true
+          }
+        },
+        {
+          "name": "changes-firefox",
+          "exitCode": 1,
+          "error": "Missing or invalid child report: ENOENT: no such file or directory, open '/Users/shaun/Documents/ChatGPT/External/practical-ai-adoption/test-results/release-check-development/missing-browser/changes-firefox/results.json'",
+          "browser": null,
+          "version": null,
+          "nativeAttempts": 0,
+          "limitations": [],
+          "partialDateGesture": null
+        },
+        {
+          "name": "changes-webkit",
+          "exitCode": 1,
+          "error": "Missing or invalid child report: ENOENT: no such file or directory, open '/Users/shaun/Documents/ChatGPT/External/practical-ai-adoption/test-results/release-check-development/missing-browser/changes-webkit/results.json'",
+          "browser": null,
+          "version": null,
+          "nativeAttempts": 0,
+          "limitations": [],
+          "partialDateGesture": null
+        }
+      ],
+      "rawReport": "test-results/release-check-development/missing-browser/report.json",
+      "rawReportSHA256": "4ff9ed3177df6528da3868689f8bc68e3e48563ac7e0284fd19660f4448ae967"
+    },
+    "existingOutput": {
+      "status": "passed",
+      "expectedNonzeroExit": 1,
+      "originalReportUnchanged": true,
+      "stderr": "node:internal/fs/promises:916\n  return await PromisePrototypeThen(\n         ^\n\nError: EEXIST: file already exists, mkdir '/Users/shaun/Documents/ChatGPT/External/practical-ai-adoption/test-results/release-check-development/full-local-first'\n    at async mkdir (node:internal/fs/promises:916:10)\n    at async file:///Users/shaun/Documents/ChatGPT/External/practical-ai-adoption/tools/workbench/tests/live.mjs:14:1 {\n  errno: -17,\n  code: 'EEXIST',\n  syscall: 'mkdir',\n  path: '/Users/shaun/Documents/ChatGPT/External/practical-ai-adoption/test-results/release-check-development/full-local-first'\n}\n\nNode.js v24.19.0\n"
+    }
+  },
+  "newNodeTestsPassed": 55,
+  "historicalFirefoxObservation": {
+    "source": "test-results/live-pr98-b55266b/firefox/results.json",
+    "status": "failed",
+    "observation": "First live PR #98 attempt timed out without an observed native beforeunload dialog. Cause remains unresolved. Two subsequent full runs and five diagnostic checks passed; this does not invalidate the first failure.",
+    "newInstrumentation": "Per-operation activation/document identity, beforeunload defaultPrevented observation, lifecycle/navigation timeline, action result, before/after snapshots and trace. No retries or application warning bypass. Instrumentation may affect timing or history caching; it does not establish the historical cause."
+  },
+  "provenance": "Curated summaries of first completed development runs. Raw reports/traces are in ignored local test-results paths; CI retains its own artefacts. These summaries do not claim that local runs are deployed changes or that later small reporting/assertion edits were included in the first-run snapshots. Final PR CI tests the submitted revision.",
+  "sourceBoundaries": [
+    "No docs/workbench application changes.",
+    "No draft schema, assessment, autosave, telemetry, deployment or approval changes.",
+    "Headless WebKit is not actual Safari or physical-device evidence.",
+    "Firefox partial native date gesture remains unexposed in the tested journey.",
+    "Known WebKit optional extra text-export warning is recorded, not suppressed."
+  ]
+}

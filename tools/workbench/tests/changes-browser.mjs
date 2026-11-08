@@ -4,16 +4,19 @@ import { mkdir, readFile, writeFile } from 'node:fs/promises';
 import { emptyRecord } from '../../../docs/workbench/content.mjs';
 import { draftText } from '../../../docs/workbench/draft.mjs';
 import { appURL, assertStaticRequests } from './browser-support.mjs';
+import { createLeaveDiagnostics, pageState } from './leave-diagnostics.mjs';
 const name = process.env.TEST_BROWSER || 'chromium';
 const type = { chromium, chrome: chromium, firefox, webkit }[name];
 if (!type) throw new Error('Choose chromium, chrome, firefox or webkit.');
 const output = process.env.WORKBENCH_OUTPUT || `test-results/workbench-changes/${name}`;
 await mkdir(output, { recursive: true });
 const browser = await type.launch({ headless: true, ...(name === 'chrome' ? { channel: 'chrome' } : {}) });
-const results = { browser: name, version: browser.version(), checks: [], dialogs: [] };
+const results = { browser: name, version: browser.version(), checks: [], dialogs: [], leaveAttempts: [] };
 const context = await browser.newContext({ viewport: { width: 390, height: 844 }, acceptDownloads: true });
+await context.tracing.start({ screenshots: true, snapshots: true, sources: true });
 const page = await context.newPage();
-let beforeAction = 'dismiss', confirmAction = 'accept', nextDialog, actionLabel = 'initial';
+const leave = createLeaveDiagnostics(page, results.leaveAttempts);
+let beforeAction = 'dismiss', confirmAction = 'accept', actionLabel = 'initial';
 const requests = [], errors = [], downloads = [];
 page.on('request', r => requests.push({ url: r.url(), method: r.method(), body: r.postData() }));
 page.on('pageerror', e => errors.push(e.message));
@@ -22,7 +25,6 @@ page.on('dialog', async dialog => {
   const item = { actionLabel, type: dialog.type(), action: dialog.type() === 'beforeunload' ? beforeAction : confirmAction };
   results.dialogs.push(item);
   await dialog[item.action]();
-  if (nextDialog) { const done = nextDialog; nextDialog = undefined; done(item); }
 });
 const changed = async value => assert.equal(await page.locator('#changes-status').getAttribute('data-changed'), String(value));
 const snapshot = () => page.evaluate(() => ({
@@ -33,17 +35,10 @@ const snapshot = () => page.evaluate(() => ({
   changed: document.querySelector('#changes-status').dataset.changed,
   badDate: document.querySelector('#decisionDate').validity.badInput
 }));
-async function native(action, decision) {
-  actionLabel = 'native navigation';
+async function native(action, decision, label) {
+  actionLabel = label;
   beforeAction = decision;
-  let timer;
-  const handled = new Promise((resolve, reject) => { nextDialog = resolve; timer = setTimeout(() => reject(new Error('Expected native beforeunload dialog was not observed.')), 10000); });
-  const navigation = action().then(() => null, error => error.message.split('\n')[0]);
-  try {
-    const dialog = await handled;
-    assert.equal(dialog.type, 'beforeunload');
-    return await navigation; // Cancelled Chromium/Firefox reload can time out.
-  } finally { clearTimeout(timer); nextDialog = undefined; }
+  await leave.run(label, action, decision);
 }
 async function save(button = 'save-draft') {
   actionLabel = button;
@@ -66,11 +61,11 @@ try {
   await page.locator('#review').click();
   await changed(true);
   const original = await snapshot();
-  await native(() => page.reload({ timeout: 2000 }), 'dismiss');
+  await native(() => page.reload({ timeout: 2000 }), 'dismiss', 'cancel reload');
   assert.deepEqual(await snapshot(), original);
-  await native(() => page.locator('header a').click({ noWaitAfter: true, timeout: 2000 }), 'dismiss');
+  await native(() => page.locator('header a').click({ noWaitAfter: true, timeout: 2000 }), 'dismiss', 'cancel same-tab link');
   assert.deepEqual(await snapshot(), original);
-  await native(() => page.goBack({ timeout: 2000 }), 'dismiss');
+  await native(() => page.goBack({ timeout: 2000 }), 'dismiss', 'cancel Back');
   assert.deepEqual(await snapshot(), original);
   results.checks.push('native cancelled reload, same-tab link and Back retain notes/step/preview');
   await page.locator('#steps button').nth(1).click();
@@ -87,18 +82,33 @@ try {
   assert.equal(await page.locator('#work').inputValue(), original.notes.work);
   await changed(true);
   const exportDialogs = results.dialogs.length - prior;
+  assert.ok(results.dialogs.slice(prior).every(item => item.type === 'beforeunload' && item.action === 'dismiss'), 'only the documented native leave warning is allowed at text export');
   if (name === 'webkit') {
-    // WebKit can retain a cancelled-Back navigation and warn again when a
-    // later Blob download starts. Do not bypass real leave protection.
-    assert.equal(exportDialogs, 1, 'known cancelled-Back WebKit follow-on warning');
-    results.limitations = ['WebKit cancelled Back caused one extra native warning at text export; dismissal retained notes and produced the complete download.'];
+    // WebKit can warn again after cancelled Back when a later Blob
+    // download starts. Do not bypass real leave protection.
+    assert.ok(exportDialogs <= 1, 'at most one known cancelled-Back WebKit follow-on warning');
+    if (exportDialogs) results.limitations = ['WebKit cancelled Back caused one extra native warning at text export; dismissal retained notes and produced the complete download.'];
   } else assert.equal(exportDialogs, 0, 'text download does not open a leave warning');
   const afterText = results.dialogs.length;
-  const requested = JSON.parse(await save());
+  const savedBytes = await save();
+  const requested = JSON.parse(savedBytes);
   await changed(false);
   assert.match(await page.locator('#changes-status').innerText(), /cannot confirm the file was kept/);
   assert.equal(results.dialogs.length, afterText, 'JSON request adds no leave warning');
   results.checks.push('failed JSON and text export keep changes; JSON request captures only its notes');
+  const cleanDialogs = results.dialogs.length;
+  await page.reload();
+  await page.locator('#workbench').waitFor({ state: 'visible' });
+  assert.equal(results.dialogs.length, cleanDialogs);
+  assert.equal(await page.locator('#work').inputValue(), '');
+  await page.locator('#reopen-draft').setInputFiles({ name: 'actual-downloaded-fictional-draft.json', mimeType: 'application/json', buffer: Buffer.from(savedBytes) });
+  await page.getByText('Draft reopened locally.', { exact: false }).waitFor();
+  await changed(false);
+  assert.deepEqual(JSON.parse(await save()).notes, requested.notes);
+  results.checks.push('actual downloaded draft bytes reopened after reload; all 28 fields match on resave');
+  // Reload closes the preview. Restore the original open-preview precondition.
+  await page.locator('#review').click();
+
   await page.locator('#work').fill('FICTIONAL: newer version'); await changed(true);
   await page.locator('#work').fill(requested.notes.work); await changed(false);
   await page.locator('#steps button').nth(3).click();
@@ -165,7 +175,7 @@ try {
   await page.locator('#decisionDate').fill('');
   await page.locator('#steps button').nth(0).click();
   await page.locator('#work').fill('FICTIONAL: discard after explicit confirmation');
-  await native(() => page.reload({ timeout: 10000 }), 'accept');
+  await native(() => page.reload({ timeout: 10000 }), 'accept', 'accept reload');
   await page.locator('#workbench').waitFor({ state: 'visible' });
   await changed(false);
   assert.equal(await page.locator('#work').inputValue(), '');
@@ -174,12 +184,30 @@ try {
   assertStaticRequests(requests, ['/', '/workbench/', '/workbench/style.css', '/workbench/app.mjs', '/workbench/content.mjs', '/workbench/draft.mjs', '/workbench/changes.mjs', '/pilot-readiness/icon.svg']);
   assert.deepEqual(errors, []);
   results.checks.push('accepted native discard reloads defaults; no note-bearing requests or storage observed');
+  await page.locator('#work').fill('FICTIONAL: leave after explicit acceptance');
+  await native(() => page.locator('header a').click({ noWaitAfter: true, timeout: 10000 }), 'accept', 'accept same-tab link');
+  await page.waitForURL(appURL(''));
+  await page.getByRole('link', { name: 'Open the AI Adoption Workbench' }).click();
+  await page.locator('#workbench').waitFor({ state: 'visible' });
+  await changed(false);
+  assert.equal(await page.locator('#work').inputValue(), '');
+  results.checks.push('accepted same-tab leave returns to homepage; reopening workbench shows defaults');
+  assertStaticRequests(requests, ['/', '/workbench/', '/workbench/style.css', '/workbench/app.mjs', '/workbench/content.mjs', '/workbench/draft.mjs', '/workbench/changes.mjs', '/pilot-readiness/icon.svg']);
+  assert.deepEqual(errors, []);
+  assert.deepEqual(await page.evaluate(() => [localStorage.length, sessionStorage.length, document.cookie]), [0, 0, '']);
+  assert.deepEqual(await context.cookies(), []);
   results.status = 'passed';
   await page.locator('.draft-tools').screenshot({ path: `${output}/status.png` });
   console.log(`${name}: unsaved-notes checks passed; native dialogs observed; partial-date gesture exposed=${partial.badInput}.`);
 } catch (error) {
-  results.status = 'failed'; results.error = error.stack; throw error;
+  results.status = 'failed'; results.error = error.stack;
+  results.failureState = await pageState(page);
+  await page.screenshot({ path: `${output}/failure.png`, timeout: 5000 }).catch(e => { results.screenshotError = e.message; });
+  throw error;
 } finally {
+  leave.dispose();
+  try { await context.tracing.stop({ path: `${output}/trace.zip` }); }
+  catch (error) { results.traceError = error.message; results.status = 'failed'; process.exitCode = 1; }
   await writeFile(`${output}/results.json`, JSON.stringify({ ...results, requests, errors }, null, 2));
   await context.close(); await browser.close();
 }

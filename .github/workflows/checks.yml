@@ -40,8 +40,10 @@ jobs:
           npm ci
           npm test
 
-      - name: Install test browser
-        run: npx playwright install --with-deps chromium
+      - name: Install test browsers
+        run: |
+          npx playwright install --with-deps chromium firefox webkit
+          npx playwright install chrome
 
       - name: Test assessment journeys and local PDF downloads
         run: |
@@ -53,10 +55,8 @@ jobs:
             sleep 1
           done
           npm run test:browser
-          npm run test:workbench
-          npm run test:workbench:drafts
-          npm run test:workbench:changes
-          npm run test:workbench:reflow
+          npm run test:workbench:diagnostics
+          BASE_URL=http://localhost:8765 EXPECTED_COMMIT="$GITHUB_SHA" RELEASE_OUTPUT=test-results/workbench-release npm run test:workbench:live
           npm run test:sprint
           npm run test:sprint:browser
 
