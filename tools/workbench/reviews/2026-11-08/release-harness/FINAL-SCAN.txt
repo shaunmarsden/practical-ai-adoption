@@ -1,0 +1,23 @@
+# Independent review of final release asset scan
+
+The updated wrapper correctly rejected controlled asset drift after all three browser journeys passed. No production or maintained test files were edited by this reviewer.
+
+## Observed result
+
+The corrected local-server challenge served frozen commit c0d46dd4c75c74242d3341e61aa262319818abbe. All 15 initial explicit no-cache probes matched. The workbench, draft and reflow children each exited 0. Ordinary browser journey requests received unchanged files. Only the CSS response in the final explicit ordered no-cache asset scan was altered, by appending an inert fictional comment.
+
+The final report retained 15 assetsAfter observations with only workbench/style.css mismatching, recorded status failed and the error "Deployed assets changed during the journeys or no longer match the requested commit." The wrapper exited 1 and printed no success claim. The local server recorded exactly two explicit CSS probes and exactly one changed response, in scan 2. The corrected server's own assertions passed.
+
+Source, frozen expectations, requests, both scans' hashes, child logs/screenshots and first outputs are retained. See corrected/first-results.json, corrected/server-requests.json and corrected/evidence/report.json. The local-only server was shut down after the command.
+
+## First scaffolding attempt, retained separately
+
+The first server incorrectly assumed BrowserContext API requests would have a Playwright-prefixed User-Agent. In this installation they carry Chromium's User-Agent. Therefore it injected zero changes. The wrapper correctly passed unchanged assets and all journeys, then the scaffolding failed its own assertion expecting a rejection. This is a reviewer-scaffolding failure, not a release-wrapper false success and not drift coverage. The original run.py, first outputs and server requests were not overwritten. A server-thread BrokenPipeError also appeared during that first browser run; its exception did not capture the request path. This observation remains separate from the corrected successful challenge.
+
+The corrected approach was frozen before execution: it identifies an explicit scan beginning with no-cache GET /index.html and requires the remaining requests to follow the exact 15-asset order, unlike ordinary journey navigation to / and /workbench/. It changes the CSS body only in scan 2. The successful drift-detection evidence is only in corrected/.
+
+## Static assessment and limits
+
+observeAssets writes final observations into report.assetsAfter. The wrapper checks every final asset before assigning passed. Network or comparison failures reach the catch/finally path, so partial final observations and failed status can be saved. Initial mismatches still stop before journeys. This update closes the demonstrated possibility that the tested deployment changes between the initial scan and completed journeys.
+
+Two matching scans cannot prove the deployment remained unchanged at every moment between them or cannot change immediately afterwards. This is bounded independent AI/software review of release-verification infrastructure, not human validation, a real workplace trial, production verification or a guarantee about future deployment state. Earlier negative-case records remain untouched.

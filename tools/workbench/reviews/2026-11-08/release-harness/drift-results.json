@@ -1,0 +1,38 @@
+{
+  "exitCode": 1,
+  "seconds": 25.778611709,
+  "status": "failed",
+  "error": "Deployed assets changed during the journeys or no longer match the requested commit.",
+  "assetsBefore": 15,
+  "beforeMismatches": [],
+  "journeys": [
+    {
+      "name": "journey",
+      "exitCode": 0
+    },
+    {
+      "name": "drafts",
+      "exitCode": 0
+    },
+    {
+      "name": "reflow",
+      "exitCode": 0
+    }
+  ],
+  "assetsAfter": 15,
+  "afterMismatches": [
+    "workbench/style.css"
+  ],
+  "cssProbes": 2,
+  "changedResponses": [
+    {
+      "path": "/workbench/style.css",
+      "method": "GET",
+      "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/151.0.0.0 Safari/537.36",
+      "cacheControl": "no-cache",
+      "apiProbe": true,
+      "changed": true
+    }
+  ],
+  "printedSuccess": false
+}
