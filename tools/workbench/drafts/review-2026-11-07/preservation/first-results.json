@@ -1,0 +1,75 @@
+[
+  {
+    "name": "module accept literal-notes",
+    "result": "PASS"
+  },
+  {
+    "name": "module accept limit-12000",
+    "result": "PASS"
+  },
+  {
+    "name": "module accept exact-4000000",
+    "result": "PASS"
+  },
+  {
+    "name": "module accept date-first-year",
+    "result": "PASS"
+  },
+  {
+    "name": "module accept date-leap",
+    "result": "PASS"
+  },
+  {
+    "name": "module accept bom",
+    "result": "PASS"
+  },
+  {
+    "name": "module reject over-12000",
+    "result": "PASS"
+  },
+  {
+    "name": "module reject over-4000000",
+    "result": "PASS"
+  },
+  {
+    "name": "module reject date-nonleap",
+    "result": "PASS"
+  },
+  {
+    "name": "module reject date-zero-year",
+    "result": "PASS"
+  },
+  {
+    "name": "module reject duplicate-top",
+    "result": "PASS"
+  },
+  {
+    "name": "module reject duplicate-note-escaped",
+    "result": "PASS"
+  },
+  {
+    "name": "module reject missing-next",
+    "result": "PASS"
+  },
+  {
+    "name": "module reject boolean-note",
+    "result": "PASS"
+  },
+  {
+    "name": "module reject unknown-metadata",
+    "result": "PASS"
+  },
+  {
+    "name": "module reject changed-notice",
+    "result": "PASS"
+  },
+  {
+    "name": "module reject malformed",
+    "result": "PASS"
+  },
+  {
+    "name": "browser harness",
+    "result": "ERROR",
+    "error": "browserType.launch: Executable doesn't exist at /Users/shaun/Library/Caches/ms-playwright/chromium_headless_shell-1234/chrome-headless-shell-mac-arm64/chrome-headless-shell\n╔════════════════════════════════════════════════════════════╗\n║ Looks like Playwright was just installed or updated.       ║\n║ Please run the following command to download new browsers: ║\n║                                                            ║\n║     npx playwright install                                 ║\n║                                                            ║\n║ <3 Playwright Team                                         ║\n╚════════════════════════════════════════════════════════════╝\n    at /Users/shaun/Documents/ChatGPT/External/practical-ai-adoption/test-results/draft-review/preservation/runner.mjs:19:24"
+  }
+]

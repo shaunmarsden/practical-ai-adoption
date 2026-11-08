@@ -1,0 +1,1 @@
+Frozen challenge facts and expected observations. Do not edit fixtures or cases after this checkpoint. Runners and result logs may be added separately. No feature implementation was read or executed.

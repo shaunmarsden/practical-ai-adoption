@@ -54,6 +54,7 @@ jobs:
           done
           npm run test:browser
           npm run test:workbench
+          npm run test:workbench:drafts
           npm run test:sprint
           npm run test:sprint:browser
 

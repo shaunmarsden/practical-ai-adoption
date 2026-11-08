@@ -1,0 +1,170 @@
+[
+  {
+    "name": "module accept literal-notes",
+    "result": "PASS"
+  },
+  {
+    "name": "module accept limit-12000",
+    "result": "PASS"
+  },
+  {
+    "name": "module accept exact-4000000",
+    "result": "PASS"
+  },
+  {
+    "name": "module accept date-first-year",
+    "result": "PASS"
+  },
+  {
+    "name": "module accept date-leap",
+    "result": "PASS"
+  },
+  {
+    "name": "module accept bom",
+    "result": "PASS"
+  },
+  {
+    "name": "module reject over-12000",
+    "result": "PASS"
+  },
+  {
+    "name": "module reject over-4000000",
+    "result": "PASS"
+  },
+  {
+    "name": "module reject date-nonleap",
+    "result": "PASS"
+  },
+  {
+    "name": "module reject date-zero-year",
+    "result": "PASS"
+  },
+  {
+    "name": "module reject duplicate-top",
+    "result": "PASS"
+  },
+  {
+    "name": "module reject duplicate-note-escaped",
+    "result": "PASS"
+  },
+  {
+    "name": "module reject missing-next",
+    "result": "PASS"
+  },
+  {
+    "name": "module reject boolean-note",
+    "result": "PASS"
+  },
+  {
+    "name": "module reject unknown-metadata",
+    "result": "PASS"
+  },
+  {
+    "name": "module reject changed-notice",
+    "result": "PASS"
+  },
+  {
+    "name": "module reject malformed",
+    "result": "PASS"
+  },
+  {
+    "name": "P01 browser literal save reload reopen save",
+    "result": "PASS",
+    "detail": {
+      "noteCount": 28
+    }
+  },
+  {
+    "name": "P01 additional unrelated edit preserves CR LF",
+    "result": "PASS"
+  },
+  {
+    "name": "P02-P05 browser atomic rejection over-12000",
+    "result": "PASS"
+  },
+  {
+    "name": "P02-P05 browser atomic rejection over-4000000",
+    "result": "PASS"
+  },
+  {
+    "name": "P02-P05 browser atomic rejection date-nonleap",
+    "result": "PASS"
+  },
+  {
+    "name": "P02-P05 browser atomic rejection date-zero-year",
+    "result": "PASS"
+  },
+  {
+    "name": "P02-P05 browser atomic rejection duplicate-top",
+    "result": "PASS"
+  },
+  {
+    "name": "P02-P05 browser atomic rejection duplicate-note-escaped",
+    "result": "PASS"
+  },
+  {
+    "name": "P02-P05 browser atomic rejection missing-next",
+    "result": "PASS"
+  },
+  {
+    "name": "P02-P05 browser atomic rejection boolean-note",
+    "result": "PASS"
+  },
+  {
+    "name": "P02-P05 browser atomic rejection unknown-metadata",
+    "result": "PASS"
+  },
+  {
+    "name": "P02-P05 browser atomic rejection changed-notice",
+    "result": "PASS"
+  },
+  {
+    "name": "P02-P05 browser atomic rejection malformed",
+    "result": "PASS"
+  },
+  {
+    "name": "P02-P04 browser valid limit-12000",
+    "result": "PASS"
+  },
+  {
+    "name": "P02-P04 browser valid exact-4000000",
+    "result": "PASS"
+  },
+  {
+    "name": "P02-P04 browser valid date-first-year",
+    "result": "PASS"
+  },
+  {
+    "name": "P02-P04 browser valid date-leap",
+    "result": "PASS"
+  },
+  {
+    "name": "P06 replacement cancel",
+    "result": "PASS"
+  },
+  {
+    "name": "P07 no-file change adapter",
+    "result": "PASS",
+    "detail": "Empty file list exercises cancelled/no-selection branch; native OS picker cancel itself not automated."
+  },
+  {
+    "name": "P08 delayed read with newer edit",
+    "result": "PASS"
+  },
+  {
+    "name": "P09 read error",
+    "result": "PASS"
+  },
+  {
+    "name": "P10 repeated same input selection",
+    "result": "PASS"
+  },
+  {
+    "name": "P11 save failure atomic",
+    "result": "PASS"
+  },
+  {
+    "name": "P12 BOM",
+    "result": "PASS"
+  }
+]

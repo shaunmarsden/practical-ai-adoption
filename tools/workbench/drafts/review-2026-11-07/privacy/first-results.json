@@ -1,0 +1,409 @@
+{
+  "checkpoint": "2a6350dfe7d7fda4a2d8d91f091e806d02828d7f",
+  "scope": "Fictional AI/browser evidence; 360x780 Chromium mobile viewport, not a human or real mobile device.",
+  "adapter": "UI selectors supplied after checkpoint. File.prototype.arrayBuffer wrapped only for forced read failure/delay. File choice cancellation simulated by empty file selection; native OS chooser cancellation is not directly controlled.",
+  "cases": [
+    {
+      "id": "P1",
+      "checks": [
+        {
+          "label": "first save all exact notes",
+          "pass": true
+        },
+        {
+          "label": "reopened resave exact notes",
+          "pass": true
+        },
+        {
+          "label": "28 notes",
+          "pass": true
+        },
+        {
+          "label": "fixed notice",
+          "pass": true
+        },
+        {
+          "label": "text literal issues",
+          "pass": true
+        },
+        {
+          "label": "text self-reported and caveated",
+          "pass": true
+        },
+        {
+          "label": "no injected DOM or script",
+          "pass": true
+        },
+        {
+          "label": "no canary requests",
+          "pass": true
+        },
+        {
+          "label": "full readiness helper",
+          "pass": true
+        }
+      ],
+      "status": "PASS",
+      "messages": "Draft download requested. Check your downloads before closing. Saving is not approval.",
+      "requests": [
+        {
+          "url": "http://127.0.0.1:8769/workbench/",
+          "method": "GET",
+          "post": null
+        },
+        {
+          "url": "http://127.0.0.1:8769/workbench/style.css",
+          "method": "GET",
+          "post": null
+        },
+        {
+          "url": "http://127.0.0.1:8769/workbench/app.mjs",
+          "method": "GET",
+          "post": null
+        },
+        {
+          "url": "http://127.0.0.1:8769/workbench/content.mjs",
+          "method": "GET",
+          "post": null
+        },
+        {
+          "url": "http://127.0.0.1:8769/workbench/draft.mjs",
+          "method": "GET",
+          "post": null
+        },
+        {
+          "url": "http://127.0.0.1:8769/workbench/",
+          "method": "GET",
+          "post": null
+        },
+        {
+          "url": "http://127.0.0.1:8769/workbench/style.css",
+          "method": "GET",
+          "post": null
+        },
+        {
+          "url": "http://127.0.0.1:8769/workbench/app.mjs",
+          "method": "GET",
+          "post": null
+        },
+        {
+          "url": "http://127.0.0.1:8769/workbench/content.mjs",
+          "method": "GET",
+          "post": null
+        },
+        {
+          "url": "http://127.0.0.1:8769/workbench/draft.mjs",
+          "method": "GET",
+          "post": null
+        }
+      ],
+      "downloads": [
+        "ai-adoption-workbench-draft.json",
+        "ai-adoption-workbench-draft.json",
+        "ai-adoption-decision-record.txt"
+      ],
+      "persistence": []
+    },
+    {
+      "id": "P2",
+      "checks": [
+        {
+          "label": "malformed state atomic",
+          "pass": true
+        },
+        {
+          "label": "malformed error",
+          "pass": true
+        },
+        {
+          "label": "altered notice state atomic",
+          "pass": true
+        },
+        {
+          "label": "altered notice error",
+          "pass": true
+        },
+        {
+          "label": "duplicate work state atomic",
+          "pass": true
+        },
+        {
+          "label": "duplicate work error",
+          "pass": true
+        },
+        {
+          "label": "empty selection state atomic",
+          "pass": true
+        },
+        {
+          "label": "replacement refusal atomic",
+          "pass": true
+        },
+        {
+          "label": "replacement prompt caveated",
+          "pass": true
+        }
+      ],
+      "status": "PASS",
+      "messages": [
+        "Could not reopen draft. This file is not valid JSON. Choose a draft saved by this workbench. Your current notes are unchanged.",
+        "Could not reopen draft. The draft has unsupported format details or an invalid save timestamp. Your current notes are unchanged.",
+        "Could not reopen draft. The draft contains duplicate JSON keys. No notes were replaced. Your current notes are unchanged.",
+        "Reopening cancelled. Your current notes are unchanged."
+      ],
+      "requests": [
+        {
+          "url": "http://127.0.0.1:8769/workbench/",
+          "method": "GET",
+          "post": null
+        },
+        {
+          "url": "http://127.0.0.1:8769/workbench/style.css",
+          "method": "GET",
+          "post": null
+        },
+        {
+          "url": "http://127.0.0.1:8769/workbench/app.mjs",
+          "method": "GET",
+          "post": null
+        },
+        {
+          "url": "http://127.0.0.1:8769/workbench/content.mjs",
+          "method": "GET",
+          "post": null
+        },
+        {
+          "url": "http://127.0.0.1:8769/workbench/draft.mjs",
+          "method": "GET",
+          "post": null
+        }
+      ],
+      "downloads": [],
+      "persistence": []
+    },
+    {
+      "id": "P3",
+      "checks": [
+        {
+          "label": "all incoming notes applied",
+          "pass": true
+        },
+        {
+          "label": "visible preview updated",
+          "pass": true
+        },
+        {
+          "label": "evidenceType full helper",
+          "pass": true
+        },
+        {
+          "label": "evidenceType no horizontal page overflow",
+          "pass": true
+        },
+        {
+          "label": "readiness full helper",
+          "pass": true
+        },
+        {
+          "label": "readiness no horizontal page overflow",
+          "pass": true
+        },
+        {
+          "label": "decision full helper",
+          "pass": true
+        },
+        {
+          "label": "decision no horizontal page overflow",
+          "pass": true
+        },
+        {
+          "label": "resave exact incoming",
+          "pass": true
+        },
+        {
+          "label": "text retains issue and caveats",
+          "pass": true
+        }
+      ],
+      "status": "PASS",
+      "messages": "Draft download requested. Check your downloads before closing. Saving is not approval.",
+      "requests": [
+        {
+          "url": "http://127.0.0.1:8769/workbench/",
+          "method": "GET",
+          "post": null
+        },
+        {
+          "url": "http://127.0.0.1:8769/workbench/style.css",
+          "method": "GET",
+          "post": null
+        },
+        {
+          "url": "http://127.0.0.1:8769/workbench/app.mjs",
+          "method": "GET",
+          "post": null
+        },
+        {
+          "url": "http://127.0.0.1:8769/workbench/content.mjs",
+          "method": "GET",
+          "post": null
+        },
+        {
+          "url": "http://127.0.0.1:8769/workbench/draft.mjs",
+          "method": "GET",
+          "post": null
+        }
+      ],
+      "downloads": [
+        "ai-adoption-workbench-draft.json",
+        "ai-adoption-decision-record.txt"
+      ],
+      "persistence": []
+    },
+    {
+      "id": "P4",
+      "checks": [
+        {
+          "label": "read failure state atomic",
+          "pass": true
+        },
+        {
+          "label": "read error readable",
+          "pass": true
+        },
+        {
+          "label": "intervening edit preserved",
+          "pass": true
+        },
+        {
+          "label": "race rejected clearly",
+          "pass": true
+        }
+      ],
+      "status": "PASS",
+      "failureMessage": "Could not reopen draft. Injected local reader failure Your current notes are unchanged.",
+      "delayMessage": "Could not reopen draft. Notes changed while the file was loading. Choose the file again when you are ready. Your current notes are unchanged.",
+      "requests": [
+        {
+          "url": "http://127.0.0.1:8769/workbench/",
+          "method": "GET",
+          "post": null
+        },
+        {
+          "url": "http://127.0.0.1:8769/workbench/style.css",
+          "method": "GET",
+          "post": null
+        },
+        {
+          "url": "http://127.0.0.1:8769/workbench/app.mjs",
+          "method": "GET",
+          "post": null
+        },
+        {
+          "url": "http://127.0.0.1:8769/workbench/content.mjs",
+          "method": "GET",
+          "post": null
+        },
+        {
+          "url": "http://127.0.0.1:8769/workbench/draft.mjs",
+          "method": "GET",
+          "post": null
+        }
+      ],
+      "downloads": [],
+      "persistence": []
+    },
+    {
+      "id": "P5",
+      "checks": [
+        {
+          "label": "no automatic download",
+          "pass": true
+        },
+        {
+          "label": "exact explicit downloads",
+          "pass": true
+        },
+        {
+          "label": "no persistence API writes",
+          "pass": true
+        },
+        {
+          "label": "no cookies",
+          "pass": true
+        },
+        {
+          "label": "requests only local static files",
+          "pass": true
+        },
+        {
+          "label": "privacy mentions sync and automatic saving",
+          "pass": true
+        },
+        {
+          "label": "reload defaults before manual reopen",
+          "pass": true
+        }
+      ],
+      "status": "PASS",
+      "privacyCopy": "Start by describing the work. This is a route through existing guidance, not a new assessment or a fixed method. Skip steps that do not apply and record why. Safety and permission apply throughout.\n\nUse fictional or non-sensitive notes and safe evidence references. Do not enter employer, customer, personal or confidential details. Notes stay in this open page and are lost on reload or closing. Save a local draft if you want to reopen them, or export a text record to read. Nothing is saved automatically. There is no login, telemetry, backend or AI API.\n\nGuide links open GitHub; V2 opens a separate tab. No notes are passed to either. Downloads may be retained or synced by your device. Review them before sharing.",
+      "requests": [
+        {
+          "url": "http://127.0.0.1:8769/workbench/",
+          "method": "GET",
+          "post": null
+        },
+        {
+          "url": "http://127.0.0.1:8769/workbench/style.css",
+          "method": "GET",
+          "post": null
+        },
+        {
+          "url": "http://127.0.0.1:8769/workbench/app.mjs",
+          "method": "GET",
+          "post": null
+        },
+        {
+          "url": "http://127.0.0.1:8769/workbench/content.mjs",
+          "method": "GET",
+          "post": null
+        },
+        {
+          "url": "http://127.0.0.1:8769/workbench/draft.mjs",
+          "method": "GET",
+          "post": null
+        },
+        {
+          "url": "http://127.0.0.1:8769/workbench/",
+          "method": "GET",
+          "post": null
+        },
+        {
+          "url": "http://127.0.0.1:8769/workbench/style.css",
+          "method": "GET",
+          "post": null
+        },
+        {
+          "url": "http://127.0.0.1:8769/workbench/app.mjs",
+          "method": "GET",
+          "post": null
+        },
+        {
+          "url": "http://127.0.0.1:8769/workbench/content.mjs",
+          "method": "GET",
+          "post": null
+        },
+        {
+          "url": "http://127.0.0.1:8769/workbench/draft.mjs",
+          "method": "GET",
+          "post": null
+        }
+      ],
+      "downloads": [
+        "ai-adoption-workbench-draft.json",
+        "ai-adoption-decision-record.txt"
+      ],
+      "persistence": []
+    }
+  ]
+}
