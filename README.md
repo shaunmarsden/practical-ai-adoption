@@ -125,11 +125,13 @@ The [6 November quality sprint](research/quality-sprint-2026-11-06.md) records t
 
 ## Existing real use evidence
 
-There are two records, and neither tests the current guides as they stand.
+The two earlier workplace-use records below do not test the current guides as they stand.
 
 [Editing an AI Draft Is Not Checking It](evidence/real-use-ai-assisted-fact-check-failure.md) is a negative finding from one real task that went outside the organisation. An AI-assisted report went out with a wrong figure in it. An ordinary editing pass didn't catch it, and a colleague spotted it afterwards. The lesson is that checking a claim against its source is a different job from improving the wording.
 
 [Reusable AI Handover Workflow](evidence/real-use-reusable-handover-workflow.md) records repeated real use of a structured, AI-assisted way of writing handovers. It supports the ideas behind these guides.
+
+A separate [workbench owner-use log](evidence/workbench-owner-use-2026-11-08.md) records an assistant-operated repository-planning session at my request. It is not observed human usability, independent validation or a measured test of guide effectiveness. The [dated live release result](tools/workbench/releases/live-2026-11-08-pr102.md) concerns automated software checks with fictional inputs.
 
 ## Give feedback on the Workbench
 

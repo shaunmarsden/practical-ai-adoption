@@ -4,6 +4,8 @@ A browser notebook for one work question: describe the work, compare AI and non-
 
 **[Open the live AI Adoption Workbench](https://shaunmarsden.github.io/practical-ai-adoption/workbench/).** [PR #86](https://github.com/shaunmarsden/practical-ai-adoption/pull/86) was merged on 7 November 2026 as `e78ed2ff9b08a9982ca07306f4f36ef572c7cb8c`. Its [Pages build and deployment](https://github.com/shaunmarsden/practical-ai-adoption/actions/runs/42365996296) succeeded, and a subsequent live smoke test confirmed the deployed files and behaviour described below.
 
+The latest dated [live release result](releases/live-2026-11-08-pr102.md) concerns PR #102 at `0780acc`, including the consolidated three-browser check. The separate [owner-use log](../../evidence/workbench-owner-use-2026-11-08.md) records assistant-operated planning, not human usability or independent validation. Earlier dated development accounts below retain their original scope.
+
 No installation, account, backend, telemetry or paid API is needed. The existing homepage and repository README link to it. For a local preview, serve `docs/` and open `/workbench/`; no build or runtime dependency is required.
 
 The later review below identifies its exact frozen source version; review findings are not operational approval.
@@ -128,4 +130,4 @@ The [unsaved-notes record](unsaved-notes/README.md) describes the changed-state 
 
 ## Consolidated three-browser release check
 
-The proposed [maintained release check](releases/README.md) extends the existing `test:workbench:live` command to installed Chrome, Firefox and Playwright WebKit, with exact downloaded-byte reopening and missed-warning diagnostics. It retains the existing Chromium navigation/accessibility, draft and reflow suites. Missing browsers or any failed child fail the whole check; there are no retries. CI uses a local preview, which does not establish deployment. See the record for first failures, negative controls and the unresolved historical Firefox observation.
+The [maintained release check](releases/README.md) extends the existing `test:workbench:live` command to installed Chrome, Firefox and Playwright WebKit, with exact downloaded-byte reopening and missed-warning diagnostics. It retains the existing Chromium navigation/accessibility, draft and reflow suites. Missing browsers or any failed child fail the whole check; there are no retries. CI uses a local preview, which does not establish deployment. See the record for first failures, negative controls and the unresolved historical Firefox observation.

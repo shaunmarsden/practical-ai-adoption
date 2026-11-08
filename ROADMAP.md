@@ -16,14 +16,14 @@ Before describing this as a validated readiness method:
 
 ## Guided workbench
 
-The [AI Adoption Workbench](docs/workbench/index.html) provides a browser notebook through existing guidance, with a separate V2 link and local text export. It adds no readiness rules. Automated software checks do not fill the independent-review or real-use gaps below. Observe a non-technical reader using it before claiming that it makes the journey easier.
+The [AI Adoption Workbench](docs/workbench/index.html) provides a browser notebook through existing guidance, with a separate V2 link and local text export. It adds no readiness rules. The [assistant-operated owner-use log](evidence/workbench-owner-use-2026-11-08.md) concerns one real repository-planning task; it does not establish human understanding or measured usefulness. Automated software checks do not fill the independent-review or guide-evaluation gaps below. Observe a non-technical reader using it before claiming that it makes the journey easier.
 
 ## Now
 
 The original scored-guide tests identified two evidence gaps, and the seven more recent guides have not been scored. The repository has expanded since that first roadmap was written.
 
 - **Nobody outside this project has scored anything here.** Two of the three starter reviews for [You Have Been Given AI at Work](guides/you-have-been-given-ai-at-work.md) end on the same next step: someone other than me scoring the same outputs against the same rubric. The third, the internal update starter, ends on a different open question: does it hold on notes with a different kind of conflict? Its own repeat run left that unsettled. The action list and agenda reviews now include three runs per prompt. Those runs show the observed score ranges on those cases; they do not rule out variation in further runs or scorer bias.
-- **No guide here has a logged real use of its own.** Both records in [evidence](evidence/) say so in their first lines: they record real use, but not of the current guides. The [fact-check failure](evidence/real-use-ai-assisted-fact-check-failure.md) is closer to what these guides are about, and it still doesn't test one.
+- **No guide here has a logged real use of its own.** The two earlier workplace-use records in [evidence](evidence/) say so in their first lines: they record real use, but not of the current guides. The [fact-check failure](evidence/real-use-ai-assisted-fact-check-failure.md) is closer to what these guides are about, and it still doesn't test one.
 
 ## Next
 
