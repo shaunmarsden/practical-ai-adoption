@@ -42,7 +42,7 @@ Original reports are copied unchanged with `.txt` extensions; paths in them refe
 
 ## Maintained production verification
 
-`npm run test:workbench:live` requires an explicit `BASE_URL` and full `EXPECTED_COMMIT`. It checks 15 deployed asset bodies against Git source, then runs the maintained workbench, draft and reflow journeys against that site path. Local root URLs and GitHub Pages project prefixes use the same drivers. Privacy assertions allow only exact static URLs: added queries, foreign origins and request bodies fail.
+`npm run test:workbench:live` requires an explicit `BASE_URL` and full `EXPECTED_COMMIT`. It checks 15 deployed asset bodies against Git source before and after the journeys, and runs the maintained workbench, draft and reflow journeys against that site path. Local root URLs and GitHub Pages project prefixes use the same drivers. Privacy assertions allow only exact static URLs: added queries, foreign origins and request bodies fail.
 
 Each invocation uses a new timestamped evidence folder under ignored `test-results/workbench-release/`, or a new explicit `RELEASE_OUTPUT`. Existing evidence directories are refused. Source mismatches and journey failures retain a failed report; a mismatch prevents note-entry journeys from running. Invalid configuration fails before report setup, so the invoking shell must retain stderr if those preflight errors matter.
 
@@ -53,12 +53,12 @@ git fetch origin main
 BASE_URL=https://shaunmarsden.github.io/practical-ai-adoption EXPECTED_COMMIT="$(git rev-parse origin/main)" npm run test:workbench:live
 ```
 
-This command makes no deployment or remote write. Its notes and downloads are fictional and browser-local. A deployment not yet updated to the requested commit must fail rather than be treated as published. The command creates local test downloads and artefacts, which may be subject to device retention or sync.
+This command makes no deployment or remote write. Its notes and downloads are fictional and browser-local. A deployment not yet updated to the requested commit, or changed during the journeys, must fail rather than be treated as a verified release. The command creates local test downloads and artefacts, which may be subject to device retention or sync.
 
 A separate [harness review](release-harness/REPORT.txt) checked nine negative invocations. Wrong/missing source, changed assets, invalid targets and reused evidence directories all exited nonzero without claiming success. The altered candidate CSS was detected before journeys. These negative checks establish failure handling, not a completed positive release run. The post-merge positive result belongs in the release PR record and its new, separate live evidence folder.
 
 ## Regression checks and limits
 
-After integrating the separately merged PRs #91 and #92, the maintained Node suite has 45 tests. Their record-retention cases and passive-feedback link were preserved; the independent baseline audits above still concern the earlier frozen source, not a new review of those PRs. Local workbench/draft journeys and the new four-combination reflow regression passed; all six steps were checked at 320/390 pixels and 100/200% root text. Reflow passed locally in Chromium, Firefox and WebKit; CI adds the Chromium regression to the existing full workflow. Two new Node tests cover URL-prefix resolution and rejection of foreign/query/body-bearing requests.
+After integrating the separately merged PRs #91 and #92, the maintained Node suite has 46 tests. Their record-retention cases and passive-feedback link were preserved; the independent baseline audits above still concern the earlier frozen source, not a new review of those PRs. Local workbench/draft journeys and the new four-combination reflow regression passed; all six steps were checked at 320/390 pixels and 100/200% root text. Reflow passed locally in Chromium, Firefox and WebKit; CI adds the Chromium regression to the existing full workflow. Two new Node tests cover URL-prefix resolution and rejection of foreign/query/body-bearing requests.
 
 The browser tests use simulated controls and local fault injection. Browser engines and touch viewports do not establish actual Safari, mobile Firefox, physical devices, OS dialogs, real download UX, assistive technology or human comprehension. No screen-reader announcements were heard or scored. No claims are made about workplace outcomes, valid authority or all possible security/data-loss paths. Draft structure checks still do not verify truth or grant approval.

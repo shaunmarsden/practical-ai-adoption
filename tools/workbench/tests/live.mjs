@@ -19,14 +19,17 @@ let browser;
 try {
   // Resolve local source first; a missing revision/file cannot become success.
   const expected = assets.map(file => ({ file, body: execFileSync('git', ['show', `${commit}:docs/${file}`], { maxBuffer: 10_000_000 }) }));
-  browser = await chromium.launch({ headless: true, channel: 'chromium' });
-  const context = await browser.newContext();
-  for (const { file, body } of expected) {
-    const response = await context.request.get(appURL(file), { headers: { 'Cache-Control': 'no-cache' } });
-    const actual = await response.body();
-    report.assets.push({ file, url: response.url(), status: response.status(), expectedSha256: hash(body), actualSha256: hash(actual), matches: response.status() === 200 && response.url() === appURL(file) && body.equals(actual) });
+  async function observeAssets(target) {
+    browser = await chromium.launch({ headless: true, channel: 'chromium' });
+    const context = await browser.newContext();
+    for (const { file, body } of expected) {
+      const response = await context.request.get(appURL(file), { headers: { 'Cache-Control': 'no-cache' } });
+      const actual = await response.body();
+      target.push({ file, url: response.url(), status: response.status(), expectedSha256: hash(body), actualSha256: hash(actual), matches: response.status() === 200 && response.url() === appURL(file) && body.equals(actual) });
+    }
+    await browser.close(); browser = undefined;
   }
-  await browser.close(); browser = undefined;
+  await observeAssets(report.assets);
   await saveReport();
   if (report.assets.some(asset => !asset.matches)) throw new Error('Deployed assets do not match the requested commit. Journeys were not run.');
   for (const [name, script] of [['journey', 'browser.mjs'], ['drafts', 'draft-browser.mjs'], ['reflow', 'reflow.mjs']]) {
@@ -43,8 +46,11 @@ try {
     await saveReport();
     if (exit !== 0) throw new Error(`${name} failed; inspect ${join(output, `${name}.log`)}.`);
   }
+  report.assetsAfter = [];
+  await observeAssets(report.assetsAfter);
+  if (report.assetsAfter.some(asset => !asset.matches)) throw new Error('Deployed assets changed during the journeys or no longer match the requested commit.');
   report.status = 'passed';
-  console.log(`Release verification passed: ${report.assets.length} deployed assets match ${commit}; browser, draft and reflow journeys passed. Evidence: ${output}`);
+  console.log(`Release verification passed: ${report.assets.length} deployed assets match ${commit} before and after the journeys; browser, draft and reflow journeys passed. Evidence: ${output}`);
 } catch (error) {
   report.status = 'failed';
   report.error = error.message;
