@@ -31,3 +31,5 @@ npm run test:workbench
 The browser commands need the existing Playwright prerequisites and a local server serving `docs` on port 8765, or `BASE_URL` for another preview. CI runs both browser commands and the retained V2/PDF/sprint checks. Test downloads, screenshots and request observations go to ignored `test-results/`. Original archived review runners are evidence; do not run them in place or overwrite their first outputs.
 
 The checks establish bounded file-preservation and failure-handling behaviour. They do not establish real user comprehension, genuine authority, financial benefit or safe operational use. No human recruitment is required to maintain or extend these software checks.
+
+The [8 November release verification](../README.md#release-verification-on-8-november-2026) records the deployed draft feature and bounded Chromium, Firefox and WebKit checks, including the observed WebKit keyboard limitation.

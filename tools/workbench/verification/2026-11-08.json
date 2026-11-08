@@ -1,0 +1,469 @@
+{
+  "date": "2026-11-08",
+  "scope": "Assistant-led fictional software verification. Not human validation, physical-device testing or a comprehensive accessibility/browser certification.",
+  "first_attempt_note": "Original first observations retained; local checkout paths are redacted. Chromium launch-path error and WebKit skip-link stopping assertions are test-environment observations, not silently counted as passes.",
+  "first_attempt": [
+    {
+      "engine": "chromium",
+      "status": "UNVERIFIED",
+      "failure": "browserType.launch: Failed to launch chromium because executable doesn't exist at <checkout>/work/browsers/chromium-1234/chrome-mac-arm64/Google%20Chrome%20for%20Testing.app/Contents/MacOS/Google%20Chrome%20for%20Testing"
+    },
+    {
+      "engine": "firefox",
+      "width": 1440,
+      "checks": {
+        "exactDraftRoundTrip": true,
+        "unrelatedEditPreservesAllOtherStrings": true,
+        "adverseFindingAndLiteralMarkup": true,
+        "rejectedFilesPreserveState": true,
+        "noHorizontalOverflow": true,
+        "onlyStaticGets": true,
+        "feedbackPreservesNotebook": true,
+        "reloadHasNoAutosave": true
+      },
+      "errors": [],
+      "storage": {
+        "local": 0,
+        "session": 0,
+        "cookie": ""
+      },
+      "status": "PASS"
+    },
+    {
+      "engine": "firefox",
+      "width": 320,
+      "checks": {
+        "exactDraftRoundTrip": true,
+        "unrelatedEditPreservesAllOtherStrings": true,
+        "adverseFindingAndLiteralMarkup": true,
+        "rejectedFilesPreserveState": true,
+        "noHorizontalOverflow": true,
+        "onlyStaticGets": true,
+        "feedbackPreservesNotebook": true,
+        "reloadHasNoAutosave": true
+      },
+      "errors": [],
+      "storage": {
+        "local": 0,
+        "session": 0,
+        "cookie": ""
+      },
+      "status": "PASS"
+    },
+    {
+      "engine": "webkit",
+      "width": 1440,
+      "checks": {},
+      "errors": [],
+      "status": "FAIL",
+      "failure": "AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:\n\nfalse !== true\n\n    at file://<checkout>/work/sprint-2026-11-08/compatibility.mjs:22:44\n    at runNextTicks (node:internal/process/task_queues:65:5)\n    at process.processImmediate (node:internal/timers:502:9)"
+    },
+    {
+      "engine": "webkit",
+      "width": 320,
+      "checks": {},
+      "errors": [],
+      "status": "FAIL",
+      "failure": "AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:\n\nfalse !== true\n\n    at file://<checkout>/work/sprint-2026-11-08/compatibility.mjs:22:44\n    at runNextTicks (node:internal/process/task_queues:65:5)\n    at process.processImmediate (node:internal/timers:502:9)"
+    }
+  ],
+  "local": {
+    "base": "http://127.0.0.1:8765",
+    "results": [
+      {
+        "engine": "chromium",
+        "width": 1440,
+        "checks": {
+          "exactDraftRoundTrip": true,
+          "unrelatedEditPreservesAllOtherStrings": true,
+          "adverseFindingAndLiteralMarkup": true,
+          "rejectedFilesPreserveState": true,
+          "noHorizontalOverflow": true,
+          "onlyStaticGets": true,
+          "feedbackPreservesNotebook": true,
+          "reloadHasNoAutosave": true
+        },
+        "errors": [],
+        "keyboard": {
+          "tabReachesSkip": true,
+          "initialFocus": {
+            "id": "",
+            "tag": "A"
+          }
+        },
+        "storage": {
+          "local": 0,
+          "session": 0,
+          "cookie": ""
+        },
+        "status": "PASS",
+        "requests": 12
+      },
+      {
+        "engine": "chromium",
+        "width": 320,
+        "checks": {
+          "exactDraftRoundTrip": true,
+          "unrelatedEditPreservesAllOtherStrings": true,
+          "adverseFindingAndLiteralMarkup": true,
+          "rejectedFilesPreserveState": true,
+          "noHorizontalOverflow": true,
+          "onlyStaticGets": true,
+          "feedbackPreservesNotebook": true,
+          "reloadHasNoAutosave": true
+        },
+        "errors": [],
+        "keyboard": {
+          "tabReachesSkip": true,
+          "initialFocus": {
+            "id": "",
+            "tag": "A"
+          }
+        },
+        "storage": {
+          "local": 0,
+          "session": 0,
+          "cookie": ""
+        },
+        "status": "PASS",
+        "requests": 12
+      },
+      {
+        "engine": "firefox",
+        "width": 1440,
+        "checks": {
+          "exactDraftRoundTrip": true,
+          "unrelatedEditPreservesAllOtherStrings": true,
+          "adverseFindingAndLiteralMarkup": true,
+          "rejectedFilesPreserveState": true,
+          "noHorizontalOverflow": true,
+          "onlyStaticGets": true,
+          "feedbackPreservesNotebook": true,
+          "reloadHasNoAutosave": true
+        },
+        "errors": [],
+        "keyboard": {
+          "tabReachesSkip": true,
+          "initialFocus": {
+            "id": "",
+            "tag": "A"
+          }
+        },
+        "storage": {
+          "local": 0,
+          "session": 0,
+          "cookie": ""
+        },
+        "status": "PASS",
+        "requests": 12
+      },
+      {
+        "engine": "firefox",
+        "width": 320,
+        "checks": {
+          "exactDraftRoundTrip": true,
+          "unrelatedEditPreservesAllOtherStrings": true,
+          "adverseFindingAndLiteralMarkup": true,
+          "rejectedFilesPreserveState": true,
+          "noHorizontalOverflow": true,
+          "onlyStaticGets": true,
+          "feedbackPreservesNotebook": true,
+          "reloadHasNoAutosave": true
+        },
+        "errors": [],
+        "keyboard": {
+          "tabReachesSkip": true,
+          "initialFocus": {
+            "id": "",
+            "tag": "A"
+          }
+        },
+        "storage": {
+          "local": 0,
+          "session": 0,
+          "cookie": ""
+        },
+        "status": "PASS",
+        "requests": 12
+      },
+      {
+        "engine": "webkit",
+        "width": 1440,
+        "checks": {
+          "exactDraftRoundTrip": true,
+          "unrelatedEditPreservesAllOtherStrings": true,
+          "adverseFindingAndLiteralMarkup": true,
+          "rejectedFilesPreserveState": true,
+          "noHorizontalOverflow": true,
+          "onlyStaticGets": true,
+          "feedbackPreservesNotebook": true,
+          "reloadHasNoAutosave": true
+        },
+        "errors": [],
+        "keyboard": {
+          "tabReachesSkip": false,
+          "initialFocus": {
+            "id": "work",
+            "tag": "TEXTAREA"
+          },
+          "altTabReachesSkip": true
+        },
+        "storage": {
+          "local": 0,
+          "session": 0,
+          "cookie": ""
+        },
+        "status": "PASS",
+        "requests": 15
+      },
+      {
+        "engine": "webkit",
+        "width": 320,
+        "checks": {
+          "exactDraftRoundTrip": true,
+          "unrelatedEditPreservesAllOtherStrings": true,
+          "adverseFindingAndLiteralMarkup": true,
+          "rejectedFilesPreserveState": true,
+          "noHorizontalOverflow": true,
+          "onlyStaticGets": true,
+          "feedbackPreservesNotebook": true,
+          "reloadHasNoAutosave": true
+        },
+        "errors": [],
+        "keyboard": {
+          "tabReachesSkip": false,
+          "initialFocus": {
+            "id": "work",
+            "tag": "TEXTAREA"
+          },
+          "altTabReachesSkip": true
+        },
+        "storage": {
+          "local": 0,
+          "session": 0,
+          "cookie": ""
+        },
+        "status": "PASS",
+        "requests": 15
+      }
+    ]
+  },
+  "live": {
+    "base": "https://shaunmarsden.github.io/practical-ai-adoption",
+    "results": [
+      {
+        "engine": "chromium",
+        "width": 1440,
+        "checks": {
+          "exactDraftRoundTrip": true,
+          "unrelatedEditPreservesAllOtherStrings": true,
+          "adverseFindingAndLiteralMarkup": true,
+          "rejectedFilesPreserveState": true,
+          "noHorizontalOverflow": true,
+          "onlyStaticGets": true,
+          "feedbackPreservesNotebook": true,
+          "reloadHasNoAutosave": true
+        },
+        "errors": [],
+        "keyboard": {
+          "tabReachesSkip": true,
+          "initialFocus": {
+            "id": "",
+            "tag": "A"
+          }
+        },
+        "storage": {
+          "local": 0,
+          "session": 0,
+          "cookie": ""
+        },
+        "status": "PASS",
+        "requests": 12
+      },
+      {
+        "engine": "chromium",
+        "width": 320,
+        "checks": {
+          "exactDraftRoundTrip": true,
+          "unrelatedEditPreservesAllOtherStrings": true,
+          "adverseFindingAndLiteralMarkup": true,
+          "rejectedFilesPreserveState": true,
+          "noHorizontalOverflow": true,
+          "onlyStaticGets": true,
+          "feedbackPreservesNotebook": true,
+          "reloadHasNoAutosave": true
+        },
+        "errors": [],
+        "keyboard": {
+          "tabReachesSkip": true,
+          "initialFocus": {
+            "id": "",
+            "tag": "A"
+          }
+        },
+        "storage": {
+          "local": 0,
+          "session": 0,
+          "cookie": ""
+        },
+        "status": "PASS",
+        "requests": 12
+      },
+      {
+        "engine": "firefox",
+        "width": 1440,
+        "checks": {
+          "exactDraftRoundTrip": true,
+          "unrelatedEditPreservesAllOtherStrings": true,
+          "adverseFindingAndLiteralMarkup": true,
+          "rejectedFilesPreserveState": true,
+          "noHorizontalOverflow": true,
+          "onlyStaticGets": true,
+          "feedbackPreservesNotebook": true,
+          "reloadHasNoAutosave": true
+        },
+        "errors": [],
+        "keyboard": {
+          "tabReachesSkip": true,
+          "initialFocus": {
+            "id": "",
+            "tag": "A"
+          }
+        },
+        "storage": {
+          "local": 0,
+          "session": 0,
+          "cookie": ""
+        },
+        "status": "PASS",
+        "requests": 12
+      },
+      {
+        "engine": "firefox",
+        "width": 320,
+        "checks": {
+          "exactDraftRoundTrip": true,
+          "unrelatedEditPreservesAllOtherStrings": true,
+          "adverseFindingAndLiteralMarkup": true,
+          "rejectedFilesPreserveState": true,
+          "noHorizontalOverflow": true,
+          "onlyStaticGets": true,
+          "feedbackPreservesNotebook": true,
+          "reloadHasNoAutosave": true
+        },
+        "errors": [],
+        "keyboard": {
+          "tabReachesSkip": true,
+          "initialFocus": {
+            "id": "",
+            "tag": "A"
+          }
+        },
+        "storage": {
+          "local": 0,
+          "session": 0,
+          "cookie": ""
+        },
+        "status": "PASS",
+        "requests": 12
+      },
+      {
+        "engine": "webkit",
+        "width": 1440,
+        "checks": {
+          "exactDraftRoundTrip": true,
+          "unrelatedEditPreservesAllOtherStrings": true,
+          "adverseFindingAndLiteralMarkup": true,
+          "rejectedFilesPreserveState": true,
+          "noHorizontalOverflow": true,
+          "onlyStaticGets": true,
+          "feedbackPreservesNotebook": true,
+          "reloadHasNoAutosave": true
+        },
+        "errors": [],
+        "keyboard": {
+          "tabReachesSkip": false,
+          "initialFocus": {
+            "id": "work",
+            "tag": "TEXTAREA"
+          },
+          "altTabReachesSkip": true
+        },
+        "storage": {
+          "local": 0,
+          "session": 0,
+          "cookie": ""
+        },
+        "status": "PASS",
+        "requests": 15
+      },
+      {
+        "engine": "webkit",
+        "width": 320,
+        "checks": {
+          "exactDraftRoundTrip": true,
+          "unrelatedEditPreservesAllOtherStrings": true,
+          "adverseFindingAndLiteralMarkup": true,
+          "rejectedFilesPreserveState": true,
+          "noHorizontalOverflow": true,
+          "onlyStaticGets": true,
+          "feedbackPreservesNotebook": true,
+          "reloadHasNoAutosave": true
+        },
+        "errors": [],
+        "keyboard": {
+          "tabReachesSkip": false,
+          "initialFocus": {
+            "id": "work",
+            "tag": "TEXTAREA"
+          },
+          "altTabReachesSkip": true
+        },
+        "storage": {
+          "local": 0,
+          "session": 0,
+          "cookie": ""
+        },
+        "status": "PASS",
+        "requests": 15
+      }
+    ]
+  },
+  "live_asset_hashes": [
+    {
+      "path": "docs/workbench/app.mjs",
+      "status": 200,
+      "expected": "e1efc131cbe28efdbc60bafddeeba30b7b4960bd",
+      "actual": "e1efc131cbe28efdbc60bafddeeba30b7b4960bd",
+      "matches": true
+    },
+    {
+      "path": "docs/workbench/content.mjs",
+      "status": 200,
+      "expected": "2773b16fbed7a4c9e77b804877dabf70d8a7236a",
+      "actual": "2773b16fbed7a4c9e77b804877dabf70d8a7236a",
+      "matches": true
+    },
+    {
+      "path": "docs/workbench/draft.mjs",
+      "status": 200,
+      "expected": "3825ab5a9d3485c275207b579d90c2ebe4c63c13",
+      "actual": "3825ab5a9d3485c275207b579d90c2ebe4c63c13",
+      "matches": true
+    },
+    {
+      "path": "docs/workbench/index.html",
+      "status": 200,
+      "expected": "fe5641b4775b5880a67c207719d1a00e66d20c0a",
+      "actual": "fe5641b4775b5880a67c207719d1a00e66d20c0a",
+      "matches": true
+    },
+    {
+      "path": "docs/workbench/style.css",
+      "status": 200,
+      "expected": "29d10e2600b17b6358c71f65de2c24870c2dbc6e",
+      "actual": "29d10e2600b17b6358c71f65de2c24870c2dbc6e",
+      "matches": true
+    }
+  ]
+}
