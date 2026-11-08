@@ -1,0 +1,6 @@
+{"browser":"chrome","case":"clean-link","outcome":"pass","dialogs":[]}
+{"browser":"chrome","case":"clean-back","outcome":"pass","dialogs":[]}
+{"browser":"firefox","case":"clean-link","outcome":"pass","dialogs":[]}
+{"browser":"firefox","case":"clean-back","outcome":"pass","dialogs":[]}
+{"browser":"webkit","case":"clean-link","outcome":"pass","dialogs":[]}
+{"browser":"webkit","case":"clean-back","outcome":"pass","dialogs":[]}

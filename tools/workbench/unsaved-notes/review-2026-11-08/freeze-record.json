@@ -1,0 +1,7 @@
+{
+  "baseline": "0ff54ba4f291fc1036443cffceedda6bf927e4f5",
+  "both_bundles_frozen_before_implementation": true,
+  "case_contents_withheld_until_implementation_checkpoint": true,
+  "state_manifest_sha256": "7c3c9dcf040001e4efe75cd882ee746030e2c92b5dc1aaf5de4b674b67cf0837",
+  "browser_manifest_sha256": "bbd3e08fdfb1b765dc97453ebe3397cb6406ff66ec3264c600ed9f48c6300fbe"
+}

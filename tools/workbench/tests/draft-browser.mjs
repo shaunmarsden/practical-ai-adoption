@@ -127,7 +127,7 @@ try {
     assert.equal(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth), true);
     assert.deepEqual(await page.evaluate(() => [localStorage.length, sessionStorage.length, document.cookie]), [0, 0, '']);
     assert.deepEqual(await context.cookies(), []);
-    const allowed = ['/workbench/', '/workbench/style.css', '/workbench/app.mjs', '/workbench/content.mjs', '/workbench/draft.mjs', '/pilot-readiness/icon.svg'];
+    const allowed = ['/workbench/', '/workbench/style.css', '/workbench/app.mjs', '/workbench/content.mjs', '/workbench/draft.mjs', '/workbench/changes.mjs', '/pilot-readiness/icon.svg'];
     assertStaticRequests(requests, allowed);
     assert.deepEqual(errors, []);
     await writeFile(`${output}/observations-${width}.json`, JSON.stringify({ width, requests, errors, axeViolations: scan.violations }, null, 2));

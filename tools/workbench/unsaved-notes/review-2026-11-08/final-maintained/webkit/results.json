@@ -1,0 +1,163 @@
+{
+  "browser": "webkit",
+  "version": "26.5",
+  "checks": [
+    "initial load and clean reload have no warning",
+    "native cancelled reload, same-tab link and Back retain notes/step/preview",
+    "failed JSON and text export keep changes; JSON request captures only its notes",
+    "text/select/date edits and reversions follow the checkpoint",
+    "unchanged dirty-state wording is not rewritten per keystroke",
+    "CRLF exact reversion and synthetic pageshow reconcile notes, helpers and preview",
+    "rejected import/cancelled clear preserve state; confirmed clear resets it",
+    "native partial date warns, blocks JSON and rejects a stale read after another partial edit",
+    "accepted native discard reloads defaults; no note-bearing requests or storage observed"
+  ],
+  "dialogs": [
+    {
+      "actionLabel": "native navigation",
+      "type": "beforeunload",
+      "action": "dismiss"
+    },
+    {
+      "actionLabel": "native navigation",
+      "type": "beforeunload",
+      "action": "dismiss"
+    },
+    {
+      "actionLabel": "native navigation",
+      "type": "beforeunload",
+      "action": "dismiss"
+    },
+    {
+      "actionLabel": "export",
+      "type": "beforeunload",
+      "action": "dismiss"
+    },
+    {
+      "actionLabel": "save-draft",
+      "type": "confirm",
+      "action": "accept"
+    },
+    {
+      "actionLabel": "save-draft",
+      "type": "confirm",
+      "action": "dismiss"
+    },
+    {
+      "actionLabel": "save-draft",
+      "type": "confirm",
+      "action": "accept"
+    },
+    {
+      "actionLabel": "native navigation",
+      "type": "beforeunload",
+      "action": "accept"
+    }
+  ],
+  "limitations": [
+    "WebKit cancelled Back caused one extra native warning at text export; dismissal retained notes and produced the complete download."
+  ],
+  "partialDateGesture": {
+    "value": "",
+    "badInput": true
+  },
+  "status": "passed",
+  "requests": [
+    {
+      "url": "http://127.0.0.1:8771/",
+      "method": "GET",
+      "body": null
+    },
+    {
+      "url": "http://127.0.0.1:8771/workbench/",
+      "method": "GET",
+      "body": null
+    },
+    {
+      "url": "http://127.0.0.1:8771/workbench/style.css",
+      "method": "GET",
+      "body": null
+    },
+    {
+      "url": "http://127.0.0.1:8771/workbench/app.mjs",
+      "method": "GET",
+      "body": null
+    },
+    {
+      "url": "http://127.0.0.1:8771/workbench/content.mjs",
+      "method": "GET",
+      "body": null
+    },
+    {
+      "url": "http://127.0.0.1:8771/workbench/draft.mjs",
+      "method": "GET",
+      "body": null
+    },
+    {
+      "url": "http://127.0.0.1:8771/workbench/changes.mjs",
+      "method": "GET",
+      "body": null
+    },
+    {
+      "url": "http://127.0.0.1:8771/workbench/",
+      "method": "GET",
+      "body": null
+    },
+    {
+      "url": "http://127.0.0.1:8771/workbench/style.css",
+      "method": "GET",
+      "body": null
+    },
+    {
+      "url": "http://127.0.0.1:8771/workbench/app.mjs",
+      "method": "GET",
+      "body": null
+    },
+    {
+      "url": "http://127.0.0.1:8771/workbench/content.mjs",
+      "method": "GET",
+      "body": null
+    },
+    {
+      "url": "http://127.0.0.1:8771/workbench/draft.mjs",
+      "method": "GET",
+      "body": null
+    },
+    {
+      "url": "http://127.0.0.1:8771/workbench/changes.mjs",
+      "method": "GET",
+      "body": null
+    },
+    {
+      "url": "http://127.0.0.1:8771/workbench/",
+      "method": "GET",
+      "body": null
+    },
+    {
+      "url": "http://127.0.0.1:8771/workbench/style.css",
+      "method": "GET",
+      "body": null
+    },
+    {
+      "url": "http://127.0.0.1:8771/workbench/app.mjs",
+      "method": "GET",
+      "body": null
+    },
+    {
+      "url": "http://127.0.0.1:8771/workbench/content.mjs",
+      "method": "GET",
+      "body": null
+    },
+    {
+      "url": "http://127.0.0.1:8771/workbench/draft.mjs",
+      "method": "GET",
+      "body": null
+    },
+    {
+      "url": "http://127.0.0.1:8771/workbench/changes.mjs",
+      "method": "GET",
+      "body": null
+    }
+  ],
+  "errors": []
+}

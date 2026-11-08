@@ -1,0 +1,47 @@
+{
+  "before": {
+    "value": "",
+    "bad": true,
+    "changed": "true",
+    "text": "The decision date is incomplete. Complete or clear it before saving a draft.",
+    "blobs": 0,
+    "events": [
+      {
+        "type": "keyup",
+        "value": "",
+        "bad": true
+      },
+      {
+        "type": "keyup",
+        "value": "",
+        "bad": true
+      }
+    ]
+  },
+  "after": {
+    "value": "",
+    "bad": false,
+    "changed": "false",
+    "text": "No changes since this draft was reopened. Its notes are still unverified.",
+    "blobs": 0,
+    "events": [
+      {
+        "type": "keyup",
+        "value": "",
+        "bad": true
+      },
+      {
+        "type": "keyup",
+        "value": "",
+        "bad": true
+      },
+      {
+        "type": "blur",
+        "value": "",
+        "bad": false
+      }
+    ]
+  },
+  "status": "Draft reopened locally. Notes have not been verified. This does not run V2 or grant approval.",
+  "confirms": 1
+}

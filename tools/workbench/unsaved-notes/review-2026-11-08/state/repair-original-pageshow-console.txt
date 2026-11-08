@@ -1,0 +1,2 @@
+{"id":"pageshow-restoration","result":"PASS","detail":"Restored controls reconciled and exact checkpoint restored."}
+{"summary":{"pass":1,"fail":0},"implementation":"b81acdd20419bf240f31010926d5e6830d14974e"}

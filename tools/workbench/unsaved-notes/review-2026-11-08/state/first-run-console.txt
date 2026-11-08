@@ -1,0 +1,21 @@
+{"id":"snapshot-isolation","result":"PASS","detail":"Caller objects did not alias either checkpoint; values are primitive strings."}
+{"id":"exact-string-distinction","result":"PASS","detail":"Exact comparisons and all capture kinds passed."}
+{"id":"ordinary-revert-all-types","result":"PASS","detail":"Both event paths tracked textarea/select/date departures and reverts."}
+{"id":"mixed-endings-roundtrip","result":"PASS","detail":{"firstWork":"Copper\r\nTin\rZinc\n","secondWork":"Copper\r\nTin\rZinc\n"}}
+{"id":"save-newer-edit","result":"PASS","detail":"Reentrant newer input remained dirty against the exact captured file."}
+{"id":"json-failure","result":"PASS","detail":"URL and click synchronous failure both preserved the initial checkpoint."}
+{"id":"text-failure","result":"PASS","detail":"Text export, preview, failure all retained checkpoint."}
+{"id":"pending-race-revert","result":"PASS","detail":"Net-reverted edit still rejected pending import via revision protection."}
+{"id":"pending-save","result":"PASS","detail":"Failed pending import did not disturb download checkpoint."}
+{"id":"import-rejects","result":"PASS","detail":"Malformed/UTF-8/oversize/read failure/empty picker/cancelled replacement preserved tracking; confirmed import reset it."}
+node:internal/process/promises:394
+    triggerUncaughtException(err, true /* fromPromise */);
+    ^
+
+dialog.dismiss: Cannot dismiss dialog which is already handled!
+    at _Page.<anonymous> (/Users/shaun/Documents/ChatGPT/External/practical-ai-adoption/test-results/unsaved-review/state/runner-first.mjs:38:344) {
+  log: [],
+  name: 'Error'
+}
+
+Node.js v24.19.0

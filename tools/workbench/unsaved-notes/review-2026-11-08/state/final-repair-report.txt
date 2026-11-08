@@ -1,0 +1,9 @@
+Final targeted repair review, 8 November 2026
+
+The exact discovered existing-partial-date ArrowUp-during-pending-read case now passes unchanged. Native segment changed from 01/mm/yyyy to 02/mm/yyyy with value empty and badInput true. Pending import now rejects with Notes changed while the file was loading; no replacement confirmation occurs, the partial date remains present, and changed remains true. Prior failure and native screenshots remain untouched. New final race observation is final-existing-partial-race-observation.json.
+
+Original pre-implementation frozen pageshow-restoration case passes unchanged again. Supplemental restored preview/helper and complete reversion pass. Unchanged native date cursor-key/blur while read is pending still permits successful reopen, with no false revision rejection.
+
+Additional final preview preservation check: valid date plus fictional note and open preview remain byte-for-byte identical after unchanged native date cursor-key/blur, cancelled clear, and cancelled real native beforeunload reload. The first reload harness expected ERR_ABORTED but Playwright timed out waiting for navigation after dismissal. First console retained; corrected harness allowed this timeout while separately requiring one native beforeunload dialog, identical date/work values, and exact preview text. All preservation assertions then passed.
+
+No residual issue observed in these targeted rechecks. Original outputs, failures, manifests and challenge facts were retained unchanged. Supplemental/discovered cases remain labelled after-implementation rather than pre-implementation holdouts. Browser evidence is automated headless Chromium desktop only; synthetic pageshow does not establish actual bfcache or physical-device behaviour. No production edits were made.

@@ -1,0 +1,77 @@
+{
+  "author": "Independent AI software reviewer state lane",
+  "scope": "Original fictional software/browser challenges only; no human or physical-device validation. No runner drafted before implementation checkpoint.",
+  "frozen_against": "0ff54ba4f291fc1036443cffceedda6bf927e4f5",
+  "cases": [
+    {
+      "id": "snapshot-isolation",
+      "setup": "Pure API: construct tracker from emptyRecord copy A. Mutate A.work after construction. Capture B with work=\"Fictional lantern inventory\", kind=\"download\"; mutate B.work afterward. Mutate a checkpointValue result if mutable.",
+      "expected": "Initial and captured checkpoints remain independent of caller mutations. Initial kind is initial. Captured kind is download. hasChanges uses exact string equality."
+    },
+    {
+      "id": "exact-string-distinction",
+      "setup": "Pure API: checkpoint work=\"Lamp A\\r\\nLamp B\\rLamp C\\n\"; compare against LF-only variant, trailing-space variant and exact original. Capture several kinds then query kind and values.",
+      "expected": "Only exact original is unchanged. Ordinary string differences remain changes. Kind and checkpointValue match latest capture."
+    },
+    {
+      "id": "ordinary-revert-all-types",
+      "setup": "Start defaults. Change work to \"Fictional archive label sorting\" and revert empty; select evidenceType=\"Fictional exercise\" then return default; set decisionDate=\"2026-11-07\" then clear. Use input-only and change-only dispatch paths separately.",
+      "expected": "Every departure marks changes and every complete revert clears changes. Only 28 note fields remain. No approval, verification or safe guarantee follows."
+    },
+    {
+      "id": "mixed-endings-roundtrip",
+      "setup": "Reopen valid draft with work=\"Copper\\r\\nTin\\rZinc\\n\", owner=\"Fictional stores role\". Change owner, save JSON and inspect bytes; then edit work to unrelated string, return to its original visible LF text and restore owner. Save again.",
+      "expected": "Untouched imported work stays exact through unrelated edits. Return to original displayed work restores exact original mixed endings. Full revert clears changed state. JSON exports preserve original exact value."
+    },
+    {
+      "id": "save-newer-edit",
+      "setup": "Dirty work=\"Fictional beacon list version A\". During synchronous anchor click for JSON download, change work to version B and dispatch input. Capture generated Blob separately.",
+      "expected": "Blob contains version A. Download checkpoint is A. Version B remains changed and warns on leave. Returning to A clears change state. Status says requested, not retained or verified."
+    },
+    {
+      "id": "json-failure",
+      "setup": "Dirty work=\"Fictional amber catalogue\". Independently inject synchronous URL.createObjectURL throw and anchor click throw. Save JSON. Then change to initial value.",
+      "expected": "Each failure retains prior checkpoint and notes; dirty stays dirty until actual revert. Failure messaging does not claim saved. No checkpoint movement merely because Blob was produced."
+    },
+    {
+      "id": "text-failure",
+      "setup": "Dirty work=\"Fictional marsh map\". Export text successfully, preview notes, then inject synchronous download error and export text again.",
+      "expected": "Neither successful text export nor preview nor failed text export changes JSON checkpoint. Failed text export exposes copyable preview and preserves notes; status remains changed."
+    },
+    {
+      "id": "pending-race-revert",
+      "setup": "Dirty work=\"Fictional quay tags\" with preview open and evidence selection set. Start delayed valid import; while pending change work to another value and return it to same visible pre-read value. Resolve import.",
+      "expected": "Existing revision race protection rejects import even when net strings return. Current notes, preview, selections and checkpoint survive. Picker re-enables. Pending read itself never clears changed state."
+    },
+    {
+      "id": "pending-save",
+      "setup": "Dirty work=\"Fictional fern register\". Start delayed valid import while retaining current controls. Save current JSON while read pending, then reject delayed read.",
+      "expected": "Successful download establishes current exact checkpoint; later failed read does not move it. File status failure cannot turn saved checkpoint dirty or replace notes. Subsequent edit becomes changed."
+    },
+    {
+      "id": "import-rejects",
+      "setup": "Dirty work=\"Fictional ridge route\". Try malformed JSON, invalid UTF-8, oversized advertised file, rejected arrayBuffer, file selection with no file, cancelled replacement of valid draft.",
+      "expected": "All preserve notes and prior checkpoint. Initial/unchanged state stays unchanged if invalid import attempted there too. Successful reopen only after confirmed replacement establishes checkpoint and clears changed state."
+    },
+    {
+      "id": "clear-cancel-and-confirm",
+      "setup": "Reopen valid draft with fiction plus self-reported choices and a date, modify work. Cancel clear, then confirm clear. Edit fresh work and return empty.",
+      "expected": "Cancel preserves everything including dirty tracking and preview. Confirm resets to 28 defaults, hides preview and sets clear checkpoint. Fresh edits and revert use defaults, never reopened draft."
+    },
+    {
+      "id": "pageshow-restoration",
+      "setup": "Reopen mixed-ending draft. Without input/change events restore work control to a different string plus evidence select and date. Dispatch pageshow. Then restore all visible controls to original displayed values and pageshow again.",
+      "expected": "Restored values reconcile into notes and tracking. Departure marks changes, complete revert clears. Unchanged mixed endings remain exact. Selection helper stays consistent with actual restored control."
+    },
+    {
+      "id": "status-and-event-lifecycle",
+      "setup": "Observe changes-status mutations. Make first dirty edit, then multiple further keystrokes while dirty, revert, change select using change event, save JSON, edit again. Monitor beforeunload registrations/removals and synthetic cancelable event behavior.",
+      "expected": "Role=status present. No status mutation on every keystroke when boolean state unchanged. Native beforeunload attached only dirty, removed clean. Standard preventDefault/returnValue behavior with no custom approval copy."
+    },
+    {
+      "id": "claims-boundary",
+      "setup": "Inspect new status/messages and privacy claims before/after reopen, save, clear; inject arbitrary self-reported positive readiness and human decision choices.",
+      "expected": "States describe changes relative to checkpoint. No guarantee of disk retention or native warning reliability, no approval/verification/V2 claim. No persistence or automatic download is added. Positive user choices cannot alter warning semantics."
+    }
+  ]
+}

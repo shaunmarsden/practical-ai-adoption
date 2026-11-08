@@ -1,0 +1,9 @@
+Supplemental challenge note, 8 November 2026
+Frozen after candidate implementation was described by maintainer; these are NOT pre-implementation holdouts.
+Original frozen cases and outputs remain unchanged.
+
+S1. Native incomplete date entry from defaults: use ordinary Chromium keyboard actions to leave a date segment incomplete, with empty value and validity.badInput=true. Change status and beforeunload must remain dirty even without fresh input/change events. JSON Save must not create a misleading clean checkpoint or silently lose partial native date text. It should preserve controls and explain completion/clear is needed.
+S2. Starting with a saved/reopened complete or blank date checkpoint, enter a partial date and attempt JSON save, then complete it or clear the native segments. Failure preserves checkpoint; completion differs when value differs; clearing to a blank checkpoint becomes clean. No claim of disk retention or approval.
+S3. Begin a delayed valid import, enter native partial date while waiting, and resolve read. Existing notes and partial date must survive rejection by revision/race protection. If replacing current partial-date-only state with no other notes, ask for replacement confirmation rather than silently discard it.
+S4. Open preview, restore note/select/date controls without input/change, dispatch pageshow. Preview and select helper must agree with restored controls, dirty state true; restoring checkpoint values clears changed state and refreshes preview. This extends original frozen pageshow case and is supplemental, not a holdout.
+S5. A pending read with no date edits should not falsely fail just because the unchanged date control receives blur/keyup. Clearing or completing partial input should reconcile the true current state. Inspect Chromium native validity and event observations, disclose browser limits. No real-device or human usability evidence is claimed.

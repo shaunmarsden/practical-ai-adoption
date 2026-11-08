@@ -14,7 +14,7 @@ await mkdir(output);
 const report = { base, expectedCommit: commit, startedAt: new Date().toISOString(), status: 'running', assets: [], journeys: [] };
 const saveReport = () => writeFile(join(output, 'report.json'), JSON.stringify(report, null, 2) + '\n');
 const hash = value => createHash('sha256').update(value).digest('hex');
-const assets = ['index.html', 'workbench/index.html', 'workbench/app.mjs', 'workbench/content.mjs', 'workbench/draft.mjs', 'workbench/style.css', 'pilot-readiness/index.html', 'pilot-readiness/icon.svg', 'pilot-readiness/style.css', 'pilot-readiness/app.mjs', 'pilot-readiness/model-v2.mjs', 'pilot-readiness/examples-v2.mjs', 'pilot-readiness/report.mjs', 'pilot-readiness/vendor/jspdf.umd.min.js', 'pilot-readiness/vendor/NotoSans-Regular.ttf'];
+const assets = ['index.html', 'workbench/index.html', 'workbench/app.mjs', 'workbench/content.mjs', 'workbench/draft.mjs', 'workbench/changes.mjs', 'workbench/style.css', 'pilot-readiness/index.html', 'pilot-readiness/icon.svg', 'pilot-readiness/style.css', 'pilot-readiness/app.mjs', 'pilot-readiness/model-v2.mjs', 'pilot-readiness/examples-v2.mjs', 'pilot-readiness/report.mjs', 'pilot-readiness/vendor/jspdf.umd.min.js', 'pilot-readiness/vendor/NotoSans-Regular.ttf'];
 let browser;
 try {
   // Resolve local source first; a missing revision/file cannot become success.

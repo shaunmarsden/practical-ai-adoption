@@ -1,0 +1,42 @@
+{
+  "before": {
+    "value": "",
+    "bad": true,
+    "changed": "true",
+    "text": "The decision date is incomplete. Complete or clear it before saving a draft.",
+    "blobs": 0,
+    "events": [
+      {
+        "type": "keyup",
+        "value": "",
+        "bad": true
+      },
+      {
+        "type": "keyup",
+        "value": "",
+        "bad": true
+      }
+    ]
+  },
+  "after": {
+    "value": "",
+    "bad": true,
+    "changed": "true",
+    "text": "The decision date is incomplete. Complete or clear it before saving a draft.",
+    "blobs": 0,
+    "events": [
+      {
+        "type": "keyup",
+        "value": "",
+        "bad": true
+      },
+      {
+        "type": "keyup",
+        "value": "",
+        "bad": true
+      }
+    ]
+  },
+  "status": "Could not reopen draft. Notes changed while the file was loading. Choose the file again when you are ready. Your current notes are unchanged.",
+  "confirms": 0
+}

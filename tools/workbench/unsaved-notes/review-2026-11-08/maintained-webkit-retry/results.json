@@ -1,0 +1,100 @@
+{
+  "browser": "webkit",
+  "version": "26.5",
+  "checks": [
+    "initial load and clean reload have no warning",
+    "native cancelled reload, same-tab link and Back retain notes/step/preview"
+  ],
+  "dialogs": [
+    {
+      "actionLabel": "native navigation",
+      "type": "beforeunload",
+      "action": "dismiss"
+    },
+    {
+      "actionLabel": "native navigation",
+      "type": "beforeunload",
+      "action": "dismiss"
+    },
+    {
+      "actionLabel": "native navigation",
+      "type": "beforeunload",
+      "action": "dismiss"
+    },
+    {
+      "actionLabel": "export",
+      "type": "beforeunload",
+      "action": "dismiss"
+    }
+  ],
+  "status": "failed",
+  "error": "AssertionError [ERR_ASSERTION]: download actions do not open leave warnings\n\n4 !== 3\n\n    at file:///Users/shaun/Documents/ChatGPT/External/practical-ai-adoption/tools/workbench/tests/changes-browser.mjs:90:10",
+  "requests": [
+    {
+      "url": "http://127.0.0.1:8771/",
+      "method": "GET",
+      "body": null
+    },
+    {
+      "url": "http://127.0.0.1:8771/workbench/",
+      "method": "GET",
+      "body": null
+    },
+    {
+      "url": "http://127.0.0.1:8771/workbench/style.css",
+      "method": "GET",
+      "body": null
+    },
+    {
+      "url": "http://127.0.0.1:8771/workbench/app.mjs",
+      "method": "GET",
+      "body": null
+    },
+    {
+      "url": "http://127.0.0.1:8771/workbench/content.mjs",
+      "method": "GET",
+      "body": null
+    },
+    {
+      "url": "http://127.0.0.1:8771/workbench/draft.mjs",
+      "method": "GET",
+      "body": null
+    },
+    {
+      "url": "http://127.0.0.1:8771/workbench/changes.mjs",
+      "method": "GET",
+      "body": null
+    },
+    {
+      "url": "http://127.0.0.1:8771/workbench/",
+      "method": "GET",
+      "body": null
+    },
+    {
+      "url": "http://127.0.0.1:8771/workbench/style.css",
+      "method": "GET",
+      "body": null
+    },
+    {
+      "url": "http://127.0.0.1:8771/workbench/app.mjs",
+      "method": "GET",
+      "body": null
+    },
+    {
+      "url": "http://127.0.0.1:8771/workbench/content.mjs",
+      "method": "GET",
+      "body": null
+    },
+    {
+      "url": "http://127.0.0.1:8771/workbench/draft.mjs",
+      "method": "GET",
+      "body": null
+    },
+    {
+      "url": "http://127.0.0.1:8771/workbench/changes.mjs",
+      "method": "GET",
+      "body": null
+    }
+  ],
+  "errors": []
+}

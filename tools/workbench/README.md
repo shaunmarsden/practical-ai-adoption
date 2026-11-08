@@ -17,7 +17,7 @@ No blocking defect was found in the baseline checks. Open PRs #73 and #74 concer
 ## Behaviour and boundaries
 
 - Six freely navigable steps link to established guides. They are a reading route, not mandatory sequential gates or a validated methodology.
-- Notes stay in page memory. Save draft explicitly downloads local JSON; Reopen draft reads a supported file after checking its structure and confirming replacement of existing notes. There is no autosave, database or submission. Reload/closing clears the page, so save first and reopen manually. Text areas allow up to 12,000 UTF-16 code units each. Use fictional or non-sensitive summaries and safe references. [Format, failure handling and draft tests](drafts/README.md).
+- Notes stay in page memory. Save draft explicitly downloads local JSON; Reopen draft reads a supported file after checking its structure and confirming replacement of existing notes. There is no autosave, database or submission. Reload/closing can lose the page notes, so save first and reopen manually. [Unsaved-notes protection](unsaved-notes/README.md) warns about newer edits where the browser allows it; it is not autosave or a guarantee. Text areas allow up to 12,000 UTF-16 code units each. Use fictional or non-sensitive summaries and safe references. [Format, failure handling and draft tests](drafts/README.md).
 - The text download includes every note, unanswered items, reading links, export timestamp, caveats and a prominent copy of known problems, self-reported V2 position and reported human decision. It is a plain text record, not an executable document or a V2 report.
 - Partial exports are allowed. No completion score, recommended decision, permission check or semantic validation is calculated. Conflicting or false notes remain possible and need human inspection. A recorded positive decision cannot make an unresolved issue acceptable.
 - V2 opens separately with no answer transfer. Its outcome is manually recorded, explicitly self-reported and unverified. Keep its own report alongside this notebook. A complete V2 record is never approval.
@@ -115,3 +115,7 @@ Automated accessibility scans and visual inspection do not establish screen-read
 ## Maintenance and deployed-release verification
 
 The [8 November maintenance record](reviews/2026-11-08/README.md) documents two reproduced text-enlargement fixes, broader browser checks and the reusable deployed-site verifier. It preserves the initial failed release result and distinguishes independent AI/software observations from human or real-use evidence. Maintainers can run `npm run test:workbench:live` with explicit `BASE_URL` and `EXPECTED_COMMIT`; see the record for commands and limitations.
+
+## Proposed unsaved-notes protection
+
+The [unsaved-notes record](unsaved-notes/README.md) describes the changed-state warning, retained first failures, fresh AI challenges and Chrome/Firefox/WebKit checks. It is draft-branch evidence, not a deployed-release claim. Earlier dated browser and live observations above retain their original scope.

@@ -1,0 +1,13 @@
+Independent AI software review of implementation b81acdd20419bf240f31010926d5e6830d14974e
+
+Frozen set: 14 original fictional challenges, SHA-256 4fb1395ed2eae8037ea75295195f3698599153d1264e17b30e96273df9f1b4e4. Read only the supplied contract, frozen baseline AGENTS/workbench files before freeze, then permitted implementation workbench files. No parent or other reviewer cases were read.
+
+Observed: 13 frozen challenges pass after one disclosed harness correction; 1 fails. Initial run completed 10 cases and then stopped on a stale unused Playwright once-dialog handler from empty-page reopen. Corrected harness retained first output unchanged and ran only four uncompleted challenges. Clear cancel/confirm, status/event lifecycle and claims checks passed.
+
+Finding: P2, pageshow-restoration. Set evidenceType control to Fictional exercise without input/change, then dispatch pageshow with persisted=true. Dirty state correctly becomes true and subsequent JSON contains the actual choice, but #evidenceType-selection still says Current selection: Not recorded. The helper exists to expose long cropped native select choices on narrow screens, so stale wording can misrepresent restored notes. pageshow currently calls updateChanges, values reconciles notes but never the selection helper. Reconcile helpers from controls on pageshow too.
+
+Follow-through confirms remaining assertions after the failure: restored text, selection and date all reach the JSON file; full visible revert clears changed state; imported mixed CRLF/CR/LF exact string is restored. Failure is the helper mismatch, not checkpoint/data loss.
+
+Harness adapters: generated Blob capture and no-op anchor click avoid real downloads except injected reentrant edits/failures. Delayed/rejected File.arrayBuffer controls races. Controls receive ordinary fictional values only; no case IDs or expected outcomes enter app logic. API checks use public createChangeTracker. Source-based no-persistence/claims inspection is limited to allowed implementation files. Download retention was not observed. Synthetic pageshow is not real bfcache or physical-device testing. No human usability or workplace benefit is established.
+
+No production edits, commits, pushes, PR actions or external messages were made.

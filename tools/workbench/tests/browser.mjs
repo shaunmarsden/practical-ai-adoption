@@ -83,7 +83,7 @@ try {
     assert.equal(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth), true);
     // No answer-bearing requests, storage or cookies, even after export and preview.
     assertStaticRequests(requests,
-      ['/', '/workbench/', '/workbench/index.html', '/workbench/style.css', '/workbench/app.mjs', '/workbench/content.mjs', '/workbench/draft.mjs', '/pilot-readiness/icon.svg']);
+      ['/', '/workbench/', '/workbench/index.html', '/workbench/style.css', '/workbench/app.mjs', '/workbench/content.mjs', '/workbench/draft.mjs', '/workbench/changes.mjs', '/pilot-readiness/icon.svg']);
     assert.deepEqual(await page.evaluate(() => [localStorage.length, sessionStorage.length, document.cookie]), [0, 0, '']);
     assert.deepEqual(await context.cookies(), []);
     assert.deepEqual(errors, []);
@@ -118,8 +118,9 @@ try {
     await page.getByRole('button', { name: 'Clear notes' }).click();
     for (const [id, value] of Object.entries(emptyRecord())) assert.equal(await page.locator(`#${id}`).inputValue(), value);
     await page.locator('#work').fill('Only in memory');
+    page.once('dialog', async dialog => { assert.equal(dialog.type(), 'beforeunload'); await dialog.accept(); });
     await page.reload();
-    assert.equal(await page.locator('#work').inputValue(), '', 'reload retains no notes');
+    assert.equal(await page.locator('#work').inputValue(), '', 'confirmed discard retains no notes');
     await page.goto(base);
     await page.getByRole('link', { name: 'Open the AI Adoption Workbench' }).click();
     assert.equal(page.url(), appURL('workbench/'));
