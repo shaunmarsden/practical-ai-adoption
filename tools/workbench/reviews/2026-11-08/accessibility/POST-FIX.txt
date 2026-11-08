@@ -1,0 +1,11 @@
+# Candidate recheck
+
+Candidate served at http://127.0.0.1:8770/workbench/; candidate CSS preserved as post-fix-candidate-style.css (SHA256 ff3eef3bc7fd305fecd74a58e697919f10b45d82a5eb609ad2f7eb3fab87b001). No production edits by reviewer.
+
+Same stress case as additional.mjs: viewport320x900 CSS pixels, root font-size200%; Chromium deviceScaleFactor4, Firefox/WebKit1; step5 selected 'OFFLINE EXPERIMENT - NO ROLLOUT DECISION'. These settings were unchanged. Actual browser zoom remains NOT RUN.
+
+All three browsers now have document scrollWidth320 at viewport320. Original376px document overflow is resolved. Screenshots of heading, selected wording, record heading and native file input were visually inspected for all three browsers. All text remains within the page; long words can break awkwardly across lines ('Adoptio'/'n', 'decisio'/'n'), but no clipping or missing word segments was observed. Full selected wording remains visible in the separate Current selection paragraph.
+
+Native file button labels now wrap visibly: Chromium/WebKit 'Choose'/'File'; Firefox 'Browse'/'...'. Button wording is no longer cut off. Residual native filename/no-file-selected text clipping remains in Chromium and Firefox: input clientWidth175 versus scrollWidth350/559. Chromium screenshot shows only initial 'N' of native no-file-selected text; Firefox shows ellipsis. WebKit input clientWidth/scrollWidth175. This residual clipping does not produce document overflow, and the external Reopen draft label/help remain visible. Do not claim complete native filename rendering has been fixed.
+
+Evidence: post-fix-results.json, post-fix.mjs and post-fix-{chromium,firefox,webkit}-{heading,file,selected,record}.png. No screen-reader announcement or human comprehension testing performed.

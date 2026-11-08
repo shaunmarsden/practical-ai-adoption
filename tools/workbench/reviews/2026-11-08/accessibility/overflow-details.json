@@ -1,0 +1,122 @@
+[
+  {
+    "tag": "MAIN",
+    "id": "main",
+    "text": "\n    A guided notebook for one work question\n    AI Adoption Workbench\n    Describe one job, compare ways to improve it ",
+    "client": 320,
+    "scroll": 376,
+    "overflow": "visible"
+  },
+  {
+    "tag": "H1",
+    "id": "",
+    "text": "AI Adoption Workbench",
+    "client": 243,
+    "scroll": 337,
+    "overflow": "visible"
+  },
+  {
+    "tag": "P",
+    "id": "",
+    "text": "Start by describing the work. This is a route through existing guidance, not a new assessment or a fixed method. Skip st",
+    "client": 162,
+    "scroll": 165,
+    "overflow": "visible"
+  },
+  {
+    "tag": "P",
+    "id": "",
+    "text": "Use fictional or non-sensitive notes and safe evidence references. Do not enter employer, customer, personal or confiden",
+    "client": 162,
+    "scroll": 186,
+    "overflow": "visible"
+  },
+  {
+    "tag": "DIV",
+    "id": "workbench",
+    "text": "\n      \n        Keep a local draft\n        Save draft downloads a JSON file you can reopen here. Files stay on your devi",
+    "client": 243,
+    "scroll": 249,
+    "overflow": "visible"
+  },
+  {
+    "tag": "INPUT",
+    "id": "reopen-draft",
+    "text": "",
+    "client": 175,
+    "scroll": 407,
+    "overflow": "clip"
+  },
+  {
+    "tag": "FORM",
+    "id": "notes",
+    "text": "\n        1. Describe the workStart with one recurring job. Follow an ordinary case and a difficult one from arrival to a",
+    "client": 241,
+    "scroll": 248,
+    "overflow": "visible"
+  },
+  {
+    "tag": "DIV",
+    "id": "panels",
+    "text": "1. Describe the workStart with one recurring job. Follow an ordinary case and a difficult one from arrival to accepted c",
+    "client": 177,
+    "scroll": 216,
+    "overflow": "visible"
+  },
+  {
+    "tag": "SECTION",
+    "id": "",
+    "text": "1. Describe the workStart with one recurring job. Follow an ordinary case and a difficult one from arrival to accepted c",
+    "client": 177,
+    "scroll": 216,
+    "overflow": "visible"
+  },
+  {
+    "tag": "H2",
+    "id": "step-0",
+    "text": "1. Describe the work",
+    "client": 177,
+    "scroll": 211,
+    "overflow": "visible"
+  },
+  {
+    "tag": "DIV",
+    "id": "",
+    "text": "Accountable workflow ownerUse a role or safe reference. Who can authorise a change?",
+    "client": 177,
+    "scroll": 187,
+    "overflow": "visible"
+  },
+  {
+    "tag": "LABEL",
+    "id": "",
+    "text": "Accountable workflow owner",
+    "client": 177,
+    "scroll": 187,
+    "overflow": "visible"
+  },
+  {
+    "tag": "DIV",
+    "id": "",
+    "text": "People, errors and consequencesWho could be affected? What happens if the result is wrong?",
+    "client": 177,
+    "scroll": 216,
+    "overflow": "visible"
+  },
+  {
+    "tag": "LABEL",
+    "id": "",
+    "text": "People, errors and consequences",
+    "client": 177,
+    "scroll": 216,
+    "overflow": "visible"
+  },
+  {
+    "tag": "H2",
+    "id": "record-heading",
+    "text": "Your decision record",
+    "client": 177,
+    "scroll": 199,
+    "overflow": "visible"
+  }
+]

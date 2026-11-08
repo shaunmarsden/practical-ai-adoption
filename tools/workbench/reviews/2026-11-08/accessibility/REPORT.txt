@@ -1,0 +1,33 @@
+# Independent accessibility audit
+
+Frozen source: e5ea82a44a5625e044b1f067d22345d90b44a911. Challenge plan written before testing. No prior test/review keys read. No production files changed. All notes fictional.
+
+## Demonstrated findings
+
+### A1 - Narrow viewport with enlarged text causes horizontal text overflow (low severity)
+
+Reproduce: open workbench at 320 CSS pixels wide; enlarge root text to 200% (runner uses document.documentElement.style.fontSize='200%'). The heading 'Workbench' exceeds its content box: H1 clientWidth243 / scrollWidth337; the document scrollWidth becomes376 at viewport320. Several labels also overflow their boxes. Screenshot: overflow-h1.png. Browser result reproduced in Chromium, Firefox and WebKit. This combines a small viewport with text enlargement; normal 320px reflow and 200% text at390px both passed. It is a demonstrated stress-case issue, not a claim of a formal WCAG failure under actual browser zoom.
+
+Smallest proposed fix: main { overflow-wrap: anywhere; }. A browser-only CSS probe reduced document scrollWidth to320 in Chromium and Firefox. No production edit made. Check resulting word breaks visually before adopting.
+
+### A2 - Native file button wording clips at 320px with enlarged text (low severity)
+
+Same setup. The native file input is175px wide internally; Chromium 'Choose File' is visibly clipped to 'Choose Fi...' and Firefox native button is also clipped. Screenshot: chromium-200-file-input.png. The external 'Reopen draft' label and full help remain present, so no complete loss of the action or accessible name is demonstrated. Native filename is reset immediately by the app; the long-filename invalid-upload challenge therefore tests status/error handling, not a persistent filename display.
+
+Smallest proposed fix: input[type=file]::file-selector-button { max-width:100%; white-space:normal; overflow-wrap:anywhere; }. Browser-only probe showed full two-line 'Choose File' in Chromium and full wrapped Firefox button wording (screenshots chromium-fix-probe.png / firefox-fix-probe.png). The native no-file-selected area still clips, so this is a partial layout improvement, not a complete custom file-control solution. Keep native input semantics and external label. No production edit made.
+
+## Passed bounded checks
+
+All20 corrected primary checks passed: skip-link visibility and focus; step navigation focus and current-step state; Back and endpoint disabled buttons; labelled/described native inputs; axe on first/last panels and mobile draft section; no document overflow at320/390px normal text; full selected wording outside native selects; 12,000-character unbroken notes and multiline preview wrapping; 200% root text at390px; preview focus; invalid/success/cancel import statuses; valid import focuses first heading; no-JavaScript route visible with inactive workbench hidden.
+
+Chromium and Firefox extra keyboard checks reached native file input after Save draft, then first step. No hidden-panel tab stops were observed. WebKit's default Tab navigation skipped buttons/file input; this is consistent with platform keyboard-navigation settings, and is not established as an application defect. It remains a manual platform check.
+
+## Evidence and harness limits
+
+- first-results.json and run-first.mjs preserve first attempt: initial keyboard checks passed, then axe stopped because the harness used browser.newPage rather than an explicit browser.newContext. Application failure is not inferred from this runner error.
+- results-after-harness-fix.json records20 passing primary checks. additional-results.json records the extra cross-browser run. Its pass flag covers keyboard/label checks only; reflow metrics are separate and reveal A1.
+- overflow-reproduction.json and overflow-details.json preserve exact metrics. fix-probe.json is a browser-only candidate CSS probe with bypassCSP enabled to inject test CSS; source and production remain untouched.
+- The 320px layout is an approximation of the CSS-pixel reflow target for400% zoom of1280px. deviceScaleFactor4 only changes rendering density. Actual browser400% zoom was NOT RUN.
+- Screen-reader speech, status announcements as heard, OS file-dialog operation, real-device touch, human comprehension and real use were NOT RUN. role=status and labels/descriptions were inspected; axe/browser automation do not establish those human outcomes.
+
+No other application defect was demonstrated in this bounded audit.

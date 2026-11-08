@@ -1,0 +1,9 @@
+# Additional frozen bounded challenges
+
+After the first 96 parser and 18 Chromium cases passed, before executing these additions:
+
+- X01: Repeat the same frozen browser journeys under the installed Playwright WebKit engine. Treat unavailable engine/host capabilities as NOT RUN and retain exact failures. This is browser engine evidence, not a physical Safari/device claim.
+- X02: Exercise browser imports near the supported byte limit and all text fields at their permitted UTF-16 length. Check exact save equality and rejection above the byte limit preserves notes.
+- X03: Deterministic generated literal values containing JSON-like punctuation and escaped key spellings should survive roundtrip, and an inserted duplicate field should be rejected for every generated specimen. Use a fixed PRNG seed and bound generated text to supported field lengths.
+
+No amendment changes the original cases or their first results.

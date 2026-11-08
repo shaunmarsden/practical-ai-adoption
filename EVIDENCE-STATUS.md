@@ -14,6 +14,8 @@ This is **separate-context AI review in the same development environment**, not 
 
 The [local Save draft and Reopen draft implementation](tools/workbench/drafts/README.md) has [separately prepared AI challenges frozen before implementation](tools/workbench/drafts/review-2026-11-07/README.md). The preservation reviewer passed 17 module and 24 browser checks; the privacy reviewer passed five scenarios with 39 assertions. Exact strings and blanks survived; rejected inputs, cancelled replacement and delayed-read edits preserved current notes. Imported decisions remained unverified self-reports. Initial browser-launch failures and first completed outputs are retained. These are bounded software observations in separate AI contexts, not external human validation, observed understanding or operational approval. Passing a draft PR's checks does not establish deployment.
 
+The [8 November maintenance review](tools/workbench/reviews/2026-11-08/README.md) extended software checks to Firefox and Playwright WebKit, reproduced two low-severity 320-pixel/200%-text layout issues, and rechecked the minimal CSS fix independently. It also adds a maintained deployed-asset and browser-journey verifier. The first production run confirmed draft saving/reopening but correctly failed overall on the known reflow issue. These are bounded software observations, not actual Safari/physical-device assurance, screen-reader testing, human comprehension or workplace evidence. Native filename-area clipping remains disclosed.
+
 ## How to Read the Matrix
 
 - The scenario column links the worked example. It's a before-and-after on made-up information: an ordinary first attempt, and one written using the guide. Every company and person in them is invented.

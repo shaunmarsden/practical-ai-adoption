@@ -1,0 +1,419 @@
+[
+  {
+    "config": {
+      "engine": "webkit",
+      "name": "webkit-desktop",
+      "width": 1440
+    },
+    "version": "26.5",
+    "checks": [
+      {
+        "name": "roundtrip",
+        "status": "PASS"
+      },
+      {
+        "name": "unrelated-edit",
+        "status": "PASS"
+      },
+      {
+        "name": "cancel-replacement",
+        "status": "PASS"
+      },
+      {
+        "name": "invalid-json",
+        "status": "PASS"
+      },
+      {
+        "name": "unknown-field",
+        "status": "PASS"
+      },
+      {
+        "name": "missing-field",
+        "status": "PASS"
+      },
+      {
+        "name": "non-string",
+        "status": "PASS"
+      },
+      {
+        "name": "duplicate-key",
+        "status": "PASS"
+      },
+      {
+        "name": "invalid-date",
+        "status": "PASS"
+      },
+      {
+        "name": "invalid-choice",
+        "status": "PASS"
+      },
+      {
+        "name": "invalid-utf8",
+        "status": "PASS"
+      },
+      {
+        "name": "over-limit",
+        "status": "PASS"
+      },
+      {
+        "name": "same-file",
+        "status": "PASS"
+      },
+      {
+        "name": "empty-draft",
+        "status": "PASS"
+      },
+      {
+        "name": "controls",
+        "status": "PASS"
+      },
+      {
+        "name": "caveats",
+        "status": "PASS"
+      },
+      {
+        "name": "cancel-picker",
+        "status": "PASS"
+      },
+      {
+        "name": "layout",
+        "status": "PASS"
+      },
+      {
+        "name": "privacy",
+        "status": "PASS"
+      },
+      {
+        "name": "reload",
+        "status": "PASS"
+      }
+    ],
+    "errors": [],
+    "requests": [
+      "http://127.0.0.1:53819/docs/workbench/index.html",
+      "http://127.0.0.1:53819/docs/workbench/style.css",
+      "http://127.0.0.1:53819/docs/workbench/app.mjs",
+      "http://127.0.0.1:53819/docs/workbench/content.mjs",
+      "http://127.0.0.1:53819/docs/workbench/draft.mjs",
+      "http://127.0.0.1:53819/docs/workbench/index.html",
+      "http://127.0.0.1:53819/docs/workbench/style.css",
+      "http://127.0.0.1:53819/docs/workbench/app.mjs",
+      "http://127.0.0.1:53819/docs/workbench/content.mjs",
+      "http://127.0.0.1:53819/docs/workbench/draft.mjs"
+    ]
+  },
+  {
+    "config": {
+      "engine": "webkit",
+      "name": "webkit-touch-390",
+      "width": 390,
+      "touch": true
+    },
+    "version": "26.5",
+    "checks": [
+      {
+        "name": "roundtrip",
+        "status": "PASS"
+      },
+      {
+        "name": "unrelated-edit",
+        "status": "PASS"
+      },
+      {
+        "name": "cancel-replacement",
+        "status": "PASS"
+      },
+      {
+        "name": "invalid-json",
+        "status": "PASS"
+      },
+      {
+        "name": "unknown-field",
+        "status": "PASS"
+      },
+      {
+        "name": "missing-field",
+        "status": "PASS"
+      },
+      {
+        "name": "non-string",
+        "status": "PASS"
+      },
+      {
+        "name": "duplicate-key",
+        "status": "PASS"
+      },
+      {
+        "name": "invalid-date",
+        "status": "PASS"
+      },
+      {
+        "name": "invalid-choice",
+        "status": "PASS"
+      },
+      {
+        "name": "invalid-utf8",
+        "status": "PASS"
+      },
+      {
+        "name": "over-limit",
+        "status": "PASS"
+      },
+      {
+        "name": "same-file",
+        "status": "PASS"
+      },
+      {
+        "name": "empty-draft",
+        "status": "PASS"
+      },
+      {
+        "name": "controls",
+        "status": "PASS"
+      },
+      {
+        "name": "caveats",
+        "status": "PASS"
+      },
+      {
+        "name": "cancel-picker",
+        "status": "PASS"
+      },
+      {
+        "name": "layout",
+        "status": "PASS"
+      },
+      {
+        "name": "privacy",
+        "status": "PASS"
+      },
+      {
+        "name": "reload",
+        "status": "PASS"
+      }
+    ],
+    "errors": [],
+    "requests": [
+      "http://127.0.0.1:53819/docs/workbench/index.html",
+      "http://127.0.0.1:53819/docs/workbench/style.css",
+      "http://127.0.0.1:53819/docs/workbench/app.mjs",
+      "http://127.0.0.1:53819/docs/workbench/content.mjs",
+      "http://127.0.0.1:53819/docs/workbench/draft.mjs",
+      "http://127.0.0.1:53819/docs/workbench/index.html",
+      "http://127.0.0.1:53819/docs/workbench/style.css",
+      "http://127.0.0.1:53819/docs/workbench/app.mjs",
+      "http://127.0.0.1:53819/docs/workbench/content.mjs",
+      "http://127.0.0.1:53819/docs/workbench/draft.mjs"
+    ]
+  },
+  {
+    "config": {
+      "engine": "firefox",
+      "name": "firefox-desktop",
+      "width": 1440
+    },
+    "version": "153.0",
+    "checks": [
+      {
+        "name": "roundtrip",
+        "status": "PASS"
+      },
+      {
+        "name": "unrelated-edit",
+        "status": "PASS"
+      },
+      {
+        "name": "cancel-replacement",
+        "status": "PASS"
+      },
+      {
+        "name": "invalid-json",
+        "status": "PASS"
+      },
+      {
+        "name": "unknown-field",
+        "status": "PASS"
+      },
+      {
+        "name": "missing-field",
+        "status": "PASS"
+      },
+      {
+        "name": "non-string",
+        "status": "PASS"
+      },
+      {
+        "name": "duplicate-key",
+        "status": "PASS"
+      },
+      {
+        "name": "invalid-date",
+        "status": "PASS"
+      },
+      {
+        "name": "invalid-choice",
+        "status": "PASS"
+      },
+      {
+        "name": "invalid-utf8",
+        "status": "PASS"
+      },
+      {
+        "name": "over-limit",
+        "status": "PASS"
+      },
+      {
+        "name": "same-file",
+        "status": "PASS"
+      },
+      {
+        "name": "empty-draft",
+        "status": "PASS"
+      },
+      {
+        "name": "controls",
+        "status": "PASS"
+      },
+      {
+        "name": "caveats",
+        "status": "PASS"
+      },
+      {
+        "name": "cancel-picker",
+        "status": "PASS"
+      },
+      {
+        "name": "layout",
+        "status": "PASS"
+      },
+      {
+        "name": "privacy",
+        "status": "PASS"
+      },
+      {
+        "name": "reload",
+        "status": "PASS"
+      }
+    ],
+    "errors": [],
+    "requests": [
+      "http://127.0.0.1:53819/docs/workbench/index.html",
+      "http://127.0.0.1:53819/docs/workbench/style.css",
+      "http://127.0.0.1:53819/docs/workbench/app.mjs",
+      "http://127.0.0.1:53819/docs/workbench/content.mjs",
+      "http://127.0.0.1:53819/docs/workbench/draft.mjs",
+      "http://127.0.0.1:53819/docs/pilot-readiness/icon.svg",
+      "http://127.0.0.1:53819/docs/workbench/index.html",
+      "http://127.0.0.1:53819/docs/workbench/style.css",
+      "http://127.0.0.1:53819/docs/workbench/app.mjs",
+      "http://127.0.0.1:53819/docs/workbench/content.mjs",
+      "http://127.0.0.1:53819/docs/workbench/draft.mjs",
+      "http://127.0.0.1:53819/docs/pilot-readiness/icon.svg"
+    ]
+  },
+  {
+    "config": {
+      "engine": "firefox",
+      "name": "firefox-narrow-390",
+      "width": 390
+    },
+    "version": "153.0",
+    "checks": [
+      {
+        "name": "roundtrip",
+        "status": "PASS"
+      },
+      {
+        "name": "unrelated-edit",
+        "status": "PASS"
+      },
+      {
+        "name": "cancel-replacement",
+        "status": "PASS"
+      },
+      {
+        "name": "invalid-json",
+        "status": "PASS"
+      },
+      {
+        "name": "unknown-field",
+        "status": "PASS"
+      },
+      {
+        "name": "missing-field",
+        "status": "PASS"
+      },
+      {
+        "name": "non-string",
+        "status": "PASS"
+      },
+      {
+        "name": "duplicate-key",
+        "status": "PASS"
+      },
+      {
+        "name": "invalid-date",
+        "status": "PASS"
+      },
+      {
+        "name": "invalid-choice",
+        "status": "PASS"
+      },
+      {
+        "name": "invalid-utf8",
+        "status": "PASS"
+      },
+      {
+        "name": "over-limit",
+        "status": "PASS"
+      },
+      {
+        "name": "same-file",
+        "status": "PASS"
+      },
+      {
+        "name": "empty-draft",
+        "status": "PASS"
+      },
+      {
+        "name": "controls",
+        "status": "PASS"
+      },
+      {
+        "name": "caveats",
+        "status": "PASS"
+      },
+      {
+        "name": "cancel-picker",
+        "status": "PASS"
+      },
+      {
+        "name": "layout",
+        "status": "PASS"
+      },
+      {
+        "name": "privacy",
+        "status": "PASS"
+      },
+      {
+        "name": "reload",
+        "status": "PASS"
+      }
+    ],
+    "errors": [],
+    "requests": [
+      "http://127.0.0.1:53819/docs/workbench/index.html",
+      "http://127.0.0.1:53819/docs/workbench/style.css",
+      "http://127.0.0.1:53819/docs/workbench/app.mjs",
+      "http://127.0.0.1:53819/docs/workbench/content.mjs",
+      "http://127.0.0.1:53819/docs/workbench/draft.mjs",
+      "http://127.0.0.1:53819/docs/pilot-readiness/icon.svg",
+      "http://127.0.0.1:53819/docs/workbench/index.html",
+      "http://127.0.0.1:53819/docs/workbench/style.css",
+      "http://127.0.0.1:53819/docs/workbench/app.mjs",
+      "http://127.0.0.1:53819/docs/workbench/content.mjs",
+      "http://127.0.0.1:53819/docs/workbench/draft.mjs",
+      "http://127.0.0.1:53819/docs/pilot-readiness/icon.svg"
+    ]
+  }
+]

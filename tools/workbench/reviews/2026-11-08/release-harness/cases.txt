@@ -1,0 +1,12 @@
+# Frozen release-harness challenges
+
+Before executing any new release-harness command, freeze these cases against the current five maintained driver files. Review is infrastructure-only; no app/user validation and no external messages.
+
+H01: Missing EXPECTED_COMMIT must exit nonzero and never print release verification passed.
+H02: A syntactically valid nonexistent full SHA must exit nonzero and retain a failed run report; no journeys.
+H03: Baseline e5ea82a versus candidate at port 8770 (two changed CSS rules) must reject asset mismatch before journeys, retaining expected/actual hashes.
+H04: Invalid BASE_URL syntax and disallowed schemes/credentials/query/fragment must exit nonzero before network/journeys. Preserve exact stderr/stdout even if preflight has no report.
+H05: Reused evidence directory containing a marker and a prior report must be refused nonzero without changing prior bytes.
+H06: Static source inspection must show no mutation requests to target; journey note entry must be fictional and request checks fail on unexpected note-bearing traffic. No unbounded external-target execution is authorised.
+
+Missing arguments/invalid URL are preflight errors, not asset or journey failures. State clearly if a preflight error produces no runner-owned report. Do not count software harness output as independent human validation. Source snapshot and hashes support exact replay.

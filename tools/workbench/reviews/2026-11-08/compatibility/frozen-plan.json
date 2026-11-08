@@ -1,0 +1,87 @@
+{
+  "source": "e5ea82a44a5625e044b1f067d22345d90b44a911",
+  "frozen_at": "2026-11-08T07:24:46.795Z",
+  "scope": "Playwright WebKit and Firefox desktop/narrow viewport. WebKit touch emulation where supported. No actual Safari, physical device or human usability assurance.",
+  "cases": [
+    [
+      "roundtrip",
+      "Import all 28 strings, save, and compare parsed notes exactly, including imported CRLF/CR/Unicode/empty/space-only values."
+    ],
+    [
+      "unrelated-edit",
+      "Edit owner, then save; preserve all other 27 source strings byte-for-byte as JS strings."
+    ],
+    [
+      "cancel-replacement",
+      "Reject native confirmation; current saved notes remain exactly unchanged."
+    ],
+    [
+      "invalid-json",
+      "Malformed JSON rejected before replacing any existing notes."
+    ],
+    [
+      "unknown-field",
+      "29th note rejected atomically."
+    ],
+    [
+      "missing-field",
+      "Missing note rejected atomically."
+    ],
+    [
+      "non-string",
+      "Non-string note rejected atomically."
+    ],
+    [
+      "duplicate-key",
+      "Duplicate escaped note key rejected atomically."
+    ],
+    [
+      "invalid-date",
+      "2025-02-29 rejected atomically."
+    ],
+    [
+      "invalid-choice",
+      "Unknown choice rejected atomically."
+    ],
+    [
+      "invalid-utf8",
+      "Invalid UTF-8 rejected atomically."
+    ],
+    [
+      "over-limit",
+      "File above 4,000,000 bytes rejected atomically."
+    ],
+    [
+      "same-file",
+      "Reopening same file twice triggers two independently handled selections."
+    ],
+    [
+      "empty-draft",
+      "All blank text/date and initial native choices remain valid and save exactly."
+    ],
+    [
+      "controls",
+      "Native select/date values persist on change; full selected wording appears separately."
+    ],
+    [
+      "caveats",
+      "Reopen status, preview and text export retain no-verification and no-approval caveats despite positive self-reported choices."
+    ],
+    [
+      "privacy",
+      "No requests beyond local static assets on entry/edit/import/export; local/session storage and IndexedDB remain empty."
+    ],
+    [
+      "layout",
+      "At desktop 1440px and narrow 390px and 320px widths, document has no horizontal overflow and controls stay within viewport."
+    ],
+    [
+      "reload",
+      "Reload loses unsaved notes and restores defaults."
+    ],
+    [
+      "cancel-picker",
+      "Dispatch empty file selection after a loaded draft; all 28 strings remain unchanged."
+    ]
+  ]
+}

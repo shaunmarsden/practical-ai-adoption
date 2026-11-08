@@ -97,3 +97,7 @@ The [7 November approval-boundary review](reviews/2026-11-07/README.md) preserve
 The original software checks used invented inputs within the implementation process. They are not a blinded evaluation of advice, a real pilot or evidence of better adoption decisions. The later fresh-context AI review has the separate provenance and limits described above. No real employer/customer data was used.
 
 Automated accessibility scans and visual inspection do not establish screen-reader usability, user comprehension, cross-browser support or complete WCAG conformance. Safari, Firefox, physical phones and assistive technologies were not tested. The readable UTF-8 text export cannot be reopened. Versioned JSON drafts support manual reopening with no automatic V2 integration. Users must review the evidence and obtain actual authority separately. Independent user understanding, real-work utility and realised benefits remain unestablished.
+
+## Maintenance and deployed-release verification
+
+The [8 November maintenance record](reviews/2026-11-08/README.md) documents two reproduced text-enlargement fixes, broader browser checks and the reusable deployed-site verifier. It preserves the initial failed release result and distinguishes independent AI/software observations from human or real-use evidence. Maintainers can run `npm run test:workbench:live` with explicit `BASE_URL` and `EXPECTED_COMMIT`; see the record for commands and limitations.

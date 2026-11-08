@@ -1,0 +1,102 @@
+[
+  {
+    "name": "webkit-desktop",
+    "checks": [
+      {
+        "name": "edit-during-read",
+        "status": "PASS"
+      },
+      {
+        "name": "clear-during-read",
+        "status": "PASS"
+      },
+      {
+        "name": "keyboard-save",
+        "status": "PASS"
+      },
+      {
+        "name": "save-failure",
+        "status": "PASS"
+      },
+      {
+        "name": "link-privacy",
+        "status": "PASS"
+      }
+    ]
+  },
+  {
+    "name": "webkit-touch",
+    "checks": [
+      {
+        "name": "edit-during-read",
+        "status": "PASS"
+      },
+      {
+        "name": "clear-during-read",
+        "status": "PASS"
+      },
+      {
+        "name": "keyboard-save",
+        "status": "PASS"
+      },
+      {
+        "name": "save-failure",
+        "status": "PASS"
+      },
+      {
+        "name": "link-privacy",
+        "status": "PASS"
+      }
+    ]
+  },
+  {
+    "name": "firefox-desktop",
+    "checks": [
+      {
+        "name": "edit-during-read",
+        "status": "PASS"
+      },
+      {
+        "name": "clear-during-read",
+        "status": "PASS"
+      },
+      {
+        "name": "keyboard-save",
+        "status": "PASS"
+      },
+      {
+        "name": "save-failure",
+        "status": "PASS"
+      },
+      {
+        "name": "link-privacy",
+        "status": "PASS"
+      }
+    ]
+  },
+  {
+    "name": "firefox-narrow",
+    "checks": [
+      {
+        "name": "edit-during-read",
+        "status": "PASS"
+      },
+      {
+        "name": "clear-during-read",
+        "status": "PASS"
+      },
+      {
+        "name": "keyboard-save",
+        "status": "PASS"
+      },
+      {
+        "name": "save-failure",
+        "status": "PASS"
+      },
+      {
+        "name": "link-privacy",
+        "status": "PASS"
+      }
+    ]
+  }
+]

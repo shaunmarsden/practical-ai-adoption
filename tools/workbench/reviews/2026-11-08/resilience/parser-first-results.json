@@ -1,0 +1,482 @@
+[
+  {
+    "name": "duplicate envelope format escaped=false",
+    "result": "PASS",
+    "ms": 2.2427909999999827
+  },
+  {
+    "name": "duplicate envelope format escaped=true",
+    "result": "PASS",
+    "ms": 1.2457080000000076
+  },
+  {
+    "name": "duplicate envelope schema_version escaped=false",
+    "result": "PASS",
+    "ms": 1.8002079999999978
+  },
+  {
+    "name": "duplicate envelope schema_version escaped=true",
+    "result": "PASS",
+    "ms": 3.850416999999993
+  },
+  {
+    "name": "duplicate envelope saved_at escaped=false",
+    "result": "PASS",
+    "ms": 0.09649999999999181
+  },
+  {
+    "name": "duplicate envelope saved_at escaped=true",
+    "result": "PASS",
+    "ms": 0.047417000000024245
+  },
+  {
+    "name": "duplicate envelope notice escaped=false",
+    "result": "PASS",
+    "ms": 0.03012499999999818
+  },
+  {
+    "name": "duplicate envelope notice escaped=true",
+    "result": "PASS",
+    "ms": 0.027542000000011058
+  },
+  {
+    "name": "duplicate envelope notes escaped=false",
+    "result": "PASS",
+    "ms": 0.07133299999998144
+  },
+  {
+    "name": "duplicate envelope notes escaped=true",
+    "result": "PASS",
+    "ms": 0.10662500000000819
+  },
+  {
+    "name": "duplicate note work escaped=false",
+    "result": "PASS",
+    "ms": 0.11720799999997666
+  },
+  {
+    "name": "duplicate note work escaped=true",
+    "result": "PASS",
+    "ms": 0.02950000000001296
+  },
+  {
+    "name": "duplicate note owner escaped=false",
+    "result": "PASS",
+    "ms": 1.5312080000000208
+  },
+  {
+    "name": "duplicate note owner escaped=true",
+    "result": "PASS",
+    "ms": 0.028292000000021744
+  },
+  {
+    "name": "duplicate note current escaped=false",
+    "result": "PASS",
+    "ms": 0.04645800000000122
+  },
+  {
+    "name": "duplicate note current escaped=true",
+    "result": "PASS",
+    "ms": 0.02708300000000463
+  },
+  {
+    "name": "duplicate note baseline escaped=false",
+    "result": "PASS",
+    "ms": 0.030332999999984622
+  },
+  {
+    "name": "duplicate note baseline escaped=true",
+    "result": "PASS",
+    "ms": 0.026834000000008018
+  },
+  {
+    "name": "duplicate note impact escaped=false",
+    "result": "PASS",
+    "ms": 0.03258300000001668
+  },
+  {
+    "name": "duplicate note impact escaped=true",
+    "result": "PASS",
+    "ms": 0.0286660000000154
+  },
+  {
+    "name": "duplicate note nonAi escaped=false",
+    "result": "PASS",
+    "ms": 0.0322089999999946
+  },
+  {
+    "name": "duplicate note nonAi escaped=true",
+    "result": "PASS",
+    "ms": 0.02791700000000219
+  },
+  {
+    "name": "duplicate note ai escaped=false",
+    "result": "PASS",
+    "ms": 0.039083000000005086
+  },
+  {
+    "name": "duplicate note ai escaped=true",
+    "result": "PASS",
+    "ms": 0.02800000000002001
+  },
+  {
+    "name": "duplicate note tradeoffs escaped=false",
+    "result": "PASS",
+    "ms": 0.04775000000000773
+  },
+  {
+    "name": "duplicate note tradeoffs escaped=true",
+    "result": "PASS",
+    "ms": 0.029208000000011225
+  },
+  {
+    "name": "duplicate note route escaped=false",
+    "result": "PASS",
+    "ms": 0.034541000000018585
+  },
+  {
+    "name": "duplicate note route escaped=true",
+    "result": "PASS",
+    "ms": 0.02862500000000523
+  },
+  {
+    "name": "duplicate note boundary escaped=false",
+    "result": "PASS",
+    "ms": 0.034416999999990594
+  },
+  {
+    "name": "duplicate note boundary escaped=true",
+    "result": "PASS",
+    "ms": 0.030916999999988093
+  },
+  {
+    "name": "duplicate note permissions escaped=false",
+    "result": "PASS",
+    "ms": 0.03720799999999258
+  },
+  {
+    "name": "duplicate note permissions escaped=true",
+    "result": "PASS",
+    "ms": 0.03012499999999818
+  },
+  {
+    "name": "duplicate note roles escaped=false",
+    "result": "PASS",
+    "ms": 0.05145899999999415
+  },
+  {
+    "name": "duplicate note roles escaped=true",
+    "result": "PASS",
+    "ms": 0.03524999999999068
+  },
+  {
+    "name": "duplicate note sample escaped=false",
+    "result": "PASS",
+    "ms": 0.04204200000000924
+  },
+  {
+    "name": "duplicate note sample escaped=true",
+    "result": "PASS",
+    "ms": 0.361582999999996
+  },
+  {
+    "name": "duplicate note thresholds escaped=false",
+    "result": "PASS",
+    "ms": 0.10795799999999645
+  },
+  {
+    "name": "duplicate note thresholds escaped=true",
+    "result": "PASS",
+    "ms": 0.11358300000000554
+  },
+  {
+    "name": "duplicate note stop escaped=false",
+    "result": "PASS",
+    "ms": 0.04158400000000029
+  },
+  {
+    "name": "duplicate note stop escaped=true",
+    "result": "PASS",
+    "ms": 0.06895800000000918
+  },
+  {
+    "name": "duplicate note evidenceType escaped=false",
+    "result": "PASS",
+    "ms": 0.03787500000001387
+  },
+  {
+    "name": "duplicate note evidenceType escaped=true",
+    "result": "PASS",
+    "ms": 0.03129100000001017
+  },
+  {
+    "name": "duplicate note results escaped=false",
+    "result": "PASS",
+    "ms": 0.03725000000000023
+  },
+  {
+    "name": "duplicate note results escaped=true",
+    "result": "PASS",
+    "ms": 0.03191699999999287
+  },
+  {
+    "name": "duplicate note costs escaped=false",
+    "result": "PASS",
+    "ms": 0.03999999999999204
+  },
+  {
+    "name": "duplicate note costs escaped=true",
+    "result": "PASS",
+    "ms": 0.03208399999999756
+  },
+  {
+    "name": "duplicate note limits escaped=false",
+    "result": "PASS",
+    "ms": 0.11308399999998642
+  },
+  {
+    "name": "duplicate note limits escaped=true",
+    "result": "PASS",
+    "ms": 0.06283300000001191
+  },
+  {
+    "name": "duplicate note issues escaped=false",
+    "result": "PASS",
+    "ms": 0.0423330000000135
+  },
+  {
+    "name": "duplicate note issues escaped=true",
+    "result": "PASS",
+    "ms": 0.0342499999999859
+  },
+  {
+    "name": "duplicate note readiness escaped=false",
+    "result": "PASS",
+    "ms": 0.1438750000000084
+  },
+  {
+    "name": "duplicate note readiness escaped=true",
+    "result": "PASS",
+    "ms": 0.6527920000000051
+  },
+  {
+    "name": "duplicate note readinessRecord escaped=false",
+    "result": "PASS",
+    "ms": 0.04220799999998803
+  },
+  {
+    "name": "duplicate note readinessRecord escaped=true",
+    "result": "PASS",
+    "ms": 0.02645799999999099
+  },
+  {
+    "name": "duplicate note followup escaped=false",
+    "result": "PASS",
+    "ms": 0.035333000000008496
+  },
+  {
+    "name": "duplicate note followup escaped=true",
+    "result": "PASS",
+    "ms": 0.026292000000012195
+  },
+  {
+    "name": "duplicate note decision escaped=false",
+    "result": "PASS",
+    "ms": 0.032083000000000084
+  },
+  {
+    "name": "duplicate note decision escaped=true",
+    "result": "PASS",
+    "ms": 0.023041000000006306
+  },
+  {
+    "name": "duplicate note decisionOwner escaped=false",
+    "result": "PASS",
+    "ms": 0.030790999999993574
+  },
+  {
+    "name": "duplicate note decisionOwner escaped=true",
+    "result": "PASS",
+    "ms": 0.10883300000000418
+  },
+  {
+    "name": "duplicate note decisionDate escaped=false",
+    "result": "PASS",
+    "ms": 0.033709000000015976
+  },
+  {
+    "name": "duplicate note decisionDate escaped=true",
+    "result": "PASS",
+    "ms": 0.026082999999999856
+  },
+  {
+    "name": "duplicate note rationale escaped=false",
+    "result": "PASS",
+    "ms": 0.0337080000000185
+  },
+  {
+    "name": "duplicate note rationale escaped=true",
+    "result": "PASS",
+    "ms": 0.025249999999999773
+  },
+  {
+    "name": "duplicate note next escaped=false",
+    "result": "PASS",
+    "ms": 0.03129100000001017
+  },
+  {
+    "name": "duplicate note next escaped=true",
+    "result": "PASS",
+    "ms": 0.02529200000000742
+  },
+  {
+    "name": "roundtrip jsonLooking",
+    "result": "PASS",
+    "ms": 1.0686249999999973
+  },
+  {
+    "name": "roundtrip controls",
+    "result": "PASS",
+    "ms": 0.3305000000000007
+  },
+  {
+    "name": "roundtrip lineEndings",
+    "result": "PASS",
+    "ms": 0.05575000000001751
+  },
+  {
+    "name": "roundtrip surrogate",
+    "result": "PASS",
+    "ms": 0.046790999999984706
+  },
+  {
+    "name": "roundtrip astralLimit",
+    "result": "PASS",
+    "ms": 0.16729200000000333
+  },
+  {
+    "name": "roundtrip escapes",
+    "result": "PASS",
+    "ms": 0.08308399999998528
+  },
+  {
+    "name": "roundtrip maxControl",
+    "result": "PASS",
+    "ms": 0.43820800000000304
+  },
+  {
+    "name": "valid date 0001-01-01",
+    "result": "PASS",
+    "ms": 0.6861669999999833
+  },
+  {
+    "name": "valid date 0099-12-31",
+    "result": "PASS",
+    "ms": 0.04312500000000341
+  },
+  {
+    "name": "valid date 1600-02-29",
+    "result": "PASS",
+    "ms": 0.0363749999999925
+  },
+  {
+    "name": "valid date 2000-02-29",
+    "result": "PASS",
+    "ms": 0.03237500000000182
+  },
+  {
+    "name": "valid date 9999-12-31",
+    "result": "PASS",
+    "ms": 0.033999999999991815
+  },
+  {
+    "name": "reject date 0000-01-01",
+    "result": "PASS",
+    "ms": 0.03633299999998485
+  },
+  {
+    "name": "reject date 1900-02-29",
+    "result": "PASS",
+    "ms": 0.015416999999985137
+  },
+  {
+    "name": "reject date 2100-02-29",
+    "result": "PASS",
+    "ms": 0.013542000000001053
+  },
+  {
+    "name": "reject date 2026-04-31",
+    "result": "PASS",
+    "ms": 0.020375000000001364
+  },
+  {
+    "name": "reject date 10000-01-01",
+    "result": "PASS",
+    "ms": 0.012208000000015318
+  },
+  {
+    "name": "reject date 2026-11-8",
+    "result": "PASS",
+    "ms": 0.012041000000010627
+  },
+  {
+    "name": "reject unknown envelope __proto__",
+    "result": "PASS",
+    "ms": 0.024082999999990307
+  },
+  {
+    "name": "reject unknown envelope constructor",
+    "result": "PASS",
+    "ms": 0.008167000000014468
+  },
+  {
+    "name": "reject unknown envelope prototype",
+    "result": "PASS",
+    "ms": 0.007374999999996135
+  },
+  {
+    "name": "reject unknown envelope unknown",
+    "result": "PASS",
+    "ms": 0.007000000000005002
+  },
+  {
+    "name": "numeric schema 1.0",
+    "result": "PASS",
+    "ms": 0.03129100000001017
+  },
+  {
+    "name": "numeric schema 1e0",
+    "result": "PASS",
+    "ms": 0.02800000000002001
+  },
+  {
+    "name": "numeric schema 1.00000000000000000",
+    "result": "PASS",
+    "ms": 0.03150000000002251
+  },
+  {
+    "name": "BOM accepted",
+    "result": "PASS",
+    "ms": 0.0348329999999919
+  },
+  {
+    "name": "exact 4MB whitespace",
+    "result": "PASS",
+    "ms": 9.20112499999999
+  },
+  {
+    "name": "4MB plus one rejected",
+    "result": "PASS",
+    "ms": 1.4925000000000068
+  },
+  {
+    "name": "all fields maximum escaped controls",
+    "result": "PASS",
+    "ms": 7.795874999999995
+  },
+  {
+    "name": "all maximum punctuation tokenisation",
+    "result": "PASS",
+    "ms": 1.6207500000000152
+  }
+]

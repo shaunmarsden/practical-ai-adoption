@@ -1,0 +1,42 @@
+# Independent compatibility review
+
+Source: frozen git archive of `e5ea82a44a5625e044b1f067d22345d90b44a911`.
+Execution date: 8 November 2026. Environment: macOS arm64, Playwright 1.62.1.
+
+Result: 100 automated checks passed. No concrete product defect found within this bounded case set. No production files were edited and no fix is proposed without a reproduced defect.
+
+The initial 20 cases and exact 28-field fixture were frozen in `frozen-plan.json`, `fixture.json`, `expected-notes.json` and `freeze-sha256.json` before browser execution. Five supplementary expectations were frozen in `supplement-plan.json` before their execution. Old review keys were not read. Tests used the archived source, not the concurrently advancing working checkout.
+
+## Browser configurations
+
+- Playwright WebKit 26.5: desktop viewport 1440 x 900.
+- Playwright WebKit 26.5: 390 x 900 viewport, mobile and touch emulation.
+- Playwright Firefox 153.0: desktop viewport 1440 x 900.
+- Playwright Firefox 153.0: narrow viewport 390 x 900, without mobile emulation.
+- Layout assertions also covered 320px width in every configuration and all six steps.
+
+Each configuration passed the same 20 primary cases and five supplementary cases. Raw case outcomes and browser versions are in `results.json` and `supplement-results.json`.
+
+## Confirmed within these tests
+
+The browser imported and saved all 28 fields exactly. The independent fixture includes empty strings, spaces, blank lines, Unicode, combining characters, CRLF, lone CR, an HTML/script-looking literal, positive self-reported readiness and decision choices, and a leap-day date. Native textareas normalised visible line endings, but saving preserved the imported strings exactly. Editing an unrelated field preserved the remaining 27 source strings.
+
+Native confirmation dismissal preserved all current notes. Malformed JSON, missing/extra fields, non-string notes, escaped duplicate keys, invalid date, unsupported choice, invalid UTF-8 and an oversized file were rejected without replacing current notes. Same-file reselection worked. Empty drafts remained valid. Empty file selections preserved the notes. Native select and date controls saved their values, and the full selected decision wording appeared outside the select.
+
+Reopening, previewing and text export retained caveats about unverified notes and human approval despite positive choices in the imported draft. The script-looking note stayed literal and did not execute. Observed requests were limited to static local assets, local/session storage stayed empty and IndexedDB had no databases. Related links used fixed URLs without note payloads and included `noopener noreferrer`. Reload restored defaults, consistent with no autosave.
+
+At 320px and the configured viewport widths, no document overflow or controls outside the viewport were detected on any step. A screenshot of the WebKit touch-emulated draft controls was visually inspected: the Save draft button, Reopen label, native file input, limits and no-approval wording were visible and readable.
+
+Supplementary timing checks delayed `File.arrayBuffer` using test instrumentation. An edit or clear during reading caused rejection of the incoming file and preserved the user's intervening action. Keyboard Enter on Save produced a JSON download. Forcing the object URL creation to fail produced a failure status while preserving all notes.
+
+## Exact limits
+
+These are automated engine and viewport checks, not independent human usability evidence or evidence of workplace benefit. Playwright WebKit is not an actual Safari run. Touch emulation does not establish physical iPhone/iPad compatibility. Firefox narrow viewport testing does not establish Firefox for Android/iOS compatibility.
+
+The tests used Playwright's download and file-input APIs. Actual native operating system file-picker cancellation, native mobile select/date popup appearance, keyboard/screen-reader usability, physical-device download destinations, device sync, iCloud and Safari's download/share UI were not tested. The empty file selection check exercises the web application's no-file path, not the OS chooser.
+
+The privacy result covers observed requests and browser storage in this local run plus fixed link construction. It does not verify every device or extension, external page behaviour, download retention or device sync.
+
+Downloaded JSON was read back from Playwright's temporary download artifact and compared field by field. This proves the browser created an exact download artifact in this environment, not that every end user's browser saved it to a chosen location.
+
+Reproduction: from the repository root, use `PLAYWRIGHT_BROWSERS_PATH=/private/tmp/adoption-workbench-browsers node test-results/sprint-2026-11-08/compatibility/run.mjs` and the corresponding `supplement.mjs`. Both scripts serve only the frozen archive from this directory.
