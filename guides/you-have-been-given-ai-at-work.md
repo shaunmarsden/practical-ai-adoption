@@ -2,6 +2,8 @@
 
 **Start here:** Pick one ordinary, low-risk internal task. Copy one of the starters below into the AI tool your organisation has approved. Only give it information that's suitable for that tool. Check the result before you use it.
 
+Jump to a starter: [Internal update](#writing-make-an-internal-update-clearer) | [Meeting agenda](#planning-turn-rough-notes-into-an-agenda) | [Action list](#summarising-make-an-action-list-from-notes).
+
 Having ChatGPT, Claude, Copilot or Gemini doesn't mean you have to become an AI expert overnight. Start small. Let it help you prepare work you already understand. Keep the judgement and the final action with you.
 
 ## Pick a safe first job
