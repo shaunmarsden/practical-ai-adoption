@@ -9,9 +9,23 @@ test('an empty export remains an unanswered, non-permissive record', () => {
   assert.match(text, /Human decision \(self-reported\): No human decision recorded/);
   assert.match(text, /V2 position \(self-reported\): Not reviewed/);
   assert.match(text, /Known problems: Not recorded/);
+  assert.match(text.split('DESCRIBE THE WORK')[0], /Evidence basis \(self-reported\): Not recorded/);
+  assert.match(text.split('DESCRIBE THE WORK')[0], /Next action, responsible role and review date\/triggers \(self-reported\):\nNot recorded/);
   assert.match(text, /Work and outcome sought:\nNot recorded/);
   assert.match(text, /This is not a V2 assessment report/);
   assert.match(text, /Exported: 2026-11-06T12:00:00.000Z/);
+});
+
+test('a fictional manager handoff keeps evidence basis and literal next actions beside the decision', () => {
+  const record = { ...emptyRecord(), work: 'Fictional Wren Quay public-notice digest.', evidenceType: 'Fictional exercise', issues: 'Tool permission and baseline unresolved.', decision: 'Use a non-AI route', next: 'Fictional coordinator: prepare checklist by 10 November.\nManager: review 3 baseline logs on 30 November. <not approval>' };
+  const before = structuredClone(record);
+  const text = recordText(record);
+  const opening = text.split('DESCRIBE THE WORK')[0];
+  for (const value of [record.issues, record.evidenceType, record.decision, record.next, caveat]) assert.ok(opening.includes(value), value);
+  assert.ok(opening.indexOf(record.issues) < opening.indexOf(record.next));
+  assert.ok(text.includes(`Evidence basis:\n${record.evidenceType}`));
+  assert.ok(text.includes(`Next action, responsible role and review date/triggers:\n${record.next}`));
+  assert.deepEqual(record, before);
 });
 
 test('a positive reported decision cannot erase adverse findings or unknown permission', () => {
