@@ -12,7 +12,8 @@
     "test:sprint:browser": "node tools/pilot-readiness/sprint-2026-11/browser.mjs",
     "test:workbench:drafts": "node tools/workbench/tests/draft-browser.mjs",
     "test:workbench:reflow": "node tools/workbench/tests/reflow.mjs",
-    "test:workbench:live": "node tools/workbench/tests/live.mjs"
+    "test:workbench:live": "node tools/workbench/tests/live.mjs",
+    "test:workbench:compatibility": "node tools/workbench/tests/compatibility.mjs"
   },
   "devDependencies": {
     "@axe-core/playwright": "4.14.0",
