@@ -11,7 +11,7 @@ EXPECTED_COMMIT=<full-40-character-commit> \
 npm run test:workbench:live
 ```
 
-Use the exact revision deployed at that URL. For a local check, serve `docs/`, set `BASE_URL=http://localhost:8765` and use the revision containing those served files. A local preview pass is not a deployment claim. The draft changes only maintainer tests and records, so current application files remain identical to merged PR #98.
+Use the exact revision deployed at that URL. For a local check, serve `docs/`, set `BASE_URL=http://localhost:8765` and use the revision containing those served files. A local preview pass is not a deployment claim. The command was merged in [PR #100](https://github.com/shaunmarsden/practical-ai-adoption/pull/100). The [8 November PR #102 release result](live-2026-11-08-pr102.md) records a later live check; it does not imply the site is continuously verified.
 
 The command requires installed **Google Chrome**, Playwright Firefox and Playwright WebKit. There is no silent Chromium substitution for Chrome and no automatic browser installation. Existing navigation/accessibility, draft and reflow suites still run in Playwright Chromium. CI installs all required engines and runs the same command against its local preview; it does not test production automatically.
 
@@ -46,4 +46,4 @@ Primary references: [Playwright dialogs](https://playwright.dev/docs/dialogs), [
 
 ## Evidence boundaries
 
-The [expectations](test-plan-2026-11-08.txt) were written before implementation by the maintainer. This is not a fresh or blinded AI review. The [verification record](verification-2026-11-08.json) distinguishes the historical PR #98 live check, first development failure, deliberately failing controls and this draft's checks. No app code, draft schema, assessment rules or approval logic changed. Fictional automated checks do not establish physical-device/Safari application behaviour, screen-reader usability, guaranteed warnings or download retention, human comprehension, workplace benefit or operational permission.
+The [expectations](test-plan-2026-11-08.txt) were written before implementation by the maintainer. This is not a fresh or blinded AI review. The [verification record](verification-2026-11-08.json) distinguishes the historical PR #98 live check, first development failure, deliberately failing controls and the then-draft checks. The separate [PR #102 live record](live-2026-11-08-pr102.md) retains later deployment and software observations. The [owner-use log](../../../evidence/workbench-owner-use-2026-11-08.md) has a different evidence type. The PR #100 implementation changed maintainer tests and records; it added no application logic, assessment rules or approval conditions. Fictional automated checks do not establish physical-device/Safari application behaviour, screen-reader usability, guaranteed warnings or download retention, human comprehension, workplace benefit or operational permission.

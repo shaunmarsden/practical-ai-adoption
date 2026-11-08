@@ -1,0 +1,362 @@
+{
+  "pullRequest": "https://github.com/shaunmarsden/practical-ai-adoption/pull/102",
+  "mergeCommit": "0780accbc4b658b788f731e15e5291e1637a0b4b",
+  "deployment": {
+    "status": "passed",
+    "url": "https://github.com/shaunmarsden/practical-ai-adoption/actions/runs/42521522632"
+  },
+  "postMergeCI": {
+    "status": "passed",
+    "url": "https://github.com/shaunmarsden/practical-ai-adoption/actions/runs/42521523549"
+  },
+  "liveReleaseCheck": {
+    "status": "passed",
+    "firstAttempt": true,
+    "base": "https://shaunmarsden.github.io/practical-ai-adoption",
+    "finishedAt": "2026-11-08T20:44:47.404Z",
+    "assetsMatchedBefore": 16,
+    "assetsMatchedAfter": 16,
+    "jobs": [
+      {
+        "name": "journey",
+        "exitCode": 0,
+        "browserVersion": null,
+        "nativeNavigationChecksPassed": 0,
+        "limitations": [],
+        "partialDateGesture": null
+      },
+      {
+        "name": "drafts",
+        "exitCode": 0,
+        "browserVersion": null,
+        "nativeNavigationChecksPassed": 0,
+        "limitations": [],
+        "partialDateGesture": null
+      },
+      {
+        "name": "reflow",
+        "exitCode": 0,
+        "browserVersion": null,
+        "nativeNavigationChecksPassed": 0,
+        "limitations": [],
+        "partialDateGesture": null
+      },
+      {
+        "name": "changes-chrome",
+        "exitCode": 0,
+        "browserVersion": "157.0.8103.38",
+        "nativeNavigationChecksPassed": 5,
+        "limitations": [],
+        "partialDateGesture": {
+          "value": "",
+          "badInput": true
+        }
+      },
+      {
+        "name": "changes-firefox",
+        "exitCode": 0,
+        "browserVersion": "153.0",
+        "nativeNavigationChecksPassed": 5,
+        "limitations": [],
+        "partialDateGesture": {
+          "value": "",
+          "badInput": false
+        }
+      },
+      {
+        "name": "changes-webkit",
+        "exitCode": 0,
+        "browserVersion": "26.5",
+        "nativeNavigationChecksPassed": 5,
+        "limitations": [
+          "WebKit cancelled Back caused one extra native warning at text export; dismissal retained notes and produced the complete download."
+        ],
+        "partialDateGesture": {
+          "value": "",
+          "badInput": true
+        }
+      }
+    ]
+  },
+  "evidenceLimits": [
+    "Automated fictional browser journeys; not physical-device, actual Safari application, human comprehension, workplace benefit or operational approval evidence.",
+    "Firefox observed all expected native warnings in this run. The historical missed-warning cause remains unresolved. Its partial-date gesture did not expose badInput and is not counted as covered.",
+    "WebKit extra text-export warning after cancelled Back was observed; dismissal preserved notes and the complete download."
+  ],
+  "publication": {
+    "recordType": "Automated software checks with fictional inputs; separate from owner use",
+    "kind": "Curated publication of the existing first run; no new live run",
+    "sourceReportSHA256": "3109c8b55598cd879291932fbc17af941e5d70ba9b35bf79ee5c9c46cfe7279e",
+    "sourceReceiptSHA256": "a949278475e0010a96db39f1037854f74228cb85047bdf9455c6af0c992d9dba",
+    "startedAt": "2026-11-08T20:43:43.728Z",
+    "assetsBefore": [
+      {
+        "file": "index.html",
+        "url": "https://shaunmarsden.github.io/practical-ai-adoption/index.html",
+        "status": 200,
+        "expectedSha256": "1b41a0f1d4ee69494ea680f7c2eb8c92b2633f6dd8ef51e24e720c3584d203a9",
+        "actualSha256": "1b41a0f1d4ee69494ea680f7c2eb8c92b2633f6dd8ef51e24e720c3584d203a9",
+        "matches": true
+      },
+      {
+        "file": "workbench/index.html",
+        "url": "https://shaunmarsden.github.io/practical-ai-adoption/workbench/index.html",
+        "status": 200,
+        "expectedSha256": "7ecf2c1f3d88cdf349a9c395e3fb18c93c4bff2d41ec2fdaab159664ffad0542",
+        "actualSha256": "7ecf2c1f3d88cdf349a9c395e3fb18c93c4bff2d41ec2fdaab159664ffad0542",
+        "matches": true
+      },
+      {
+        "file": "workbench/app.mjs",
+        "url": "https://shaunmarsden.github.io/practical-ai-adoption/workbench/app.mjs",
+        "status": 200,
+        "expectedSha256": "09fd7194c0616465d9a614422fa33d6366823473bbdabfde638a28a2764bebb8",
+        "actualSha256": "09fd7194c0616465d9a614422fa33d6366823473bbdabfde638a28a2764bebb8",
+        "matches": true
+      },
+      {
+        "file": "workbench/content.mjs",
+        "url": "https://shaunmarsden.github.io/practical-ai-adoption/workbench/content.mjs",
+        "status": 200,
+        "expectedSha256": "61cc97165a4c4c1f136a1b1aa3ce0c4b809786fa458fb08410d2013e9876f435",
+        "actualSha256": "61cc97165a4c4c1f136a1b1aa3ce0c4b809786fa458fb08410d2013e9876f435",
+        "matches": true
+      },
+      {
+        "file": "workbench/draft.mjs",
+        "url": "https://shaunmarsden.github.io/practical-ai-adoption/workbench/draft.mjs",
+        "status": 200,
+        "expectedSha256": "e72e421210b05576b111c8ab15080a3c3bc240cf6c723f1f8caee40e72253e9e",
+        "actualSha256": "e72e421210b05576b111c8ab15080a3c3bc240cf6c723f1f8caee40e72253e9e",
+        "matches": true
+      },
+      {
+        "file": "workbench/changes.mjs",
+        "url": "https://shaunmarsden.github.io/practical-ai-adoption/workbench/changes.mjs",
+        "status": 200,
+        "expectedSha256": "9b3d077ccd8b880a91474dcfa2c5e920d476a0eeba8ce07af27336cf602b4d11",
+        "actualSha256": "9b3d077ccd8b880a91474dcfa2c5e920d476a0eeba8ce07af27336cf602b4d11",
+        "matches": true
+      },
+      {
+        "file": "workbench/style.css",
+        "url": "https://shaunmarsden.github.io/practical-ai-adoption/workbench/style.css",
+        "status": 200,
+        "expectedSha256": "ff3eef3bc7fd305fecd74a58e697919f10b45d82a5eb609ad2f7eb3fab87b001",
+        "actualSha256": "ff3eef3bc7fd305fecd74a58e697919f10b45d82a5eb609ad2f7eb3fab87b001",
+        "matches": true
+      },
+      {
+        "file": "pilot-readiness/index.html",
+        "url": "https://shaunmarsden.github.io/practical-ai-adoption/pilot-readiness/index.html",
+        "status": 200,
+        "expectedSha256": "2813df5a5d04641c66f1bf756b43998e551c66dd6cf3bedb79954a5abea39916",
+        "actualSha256": "2813df5a5d04641c66f1bf756b43998e551c66dd6cf3bedb79954a5abea39916",
+        "matches": true
+      },
+      {
+        "file": "pilot-readiness/icon.svg",
+        "url": "https://shaunmarsden.github.io/practical-ai-adoption/pilot-readiness/icon.svg",
+        "status": 200,
+        "expectedSha256": "aea50878737db3f9849de53bb864ed0da675a8bc9f382f18062a70e6c2adbf88",
+        "actualSha256": "aea50878737db3f9849de53bb864ed0da675a8bc9f382f18062a70e6c2adbf88",
+        "matches": true
+      },
+      {
+        "file": "pilot-readiness/style.css",
+        "url": "https://shaunmarsden.github.io/practical-ai-adoption/pilot-readiness/style.css",
+        "status": 200,
+        "expectedSha256": "aa0b00068d00c49dfc8b8b26b2b3e5ba75bee8c58c208395418f42e049047fd9",
+        "actualSha256": "aa0b00068d00c49dfc8b8b26b2b3e5ba75bee8c58c208395418f42e049047fd9",
+        "matches": true
+      },
+      {
+        "file": "pilot-readiness/app.mjs",
+        "url": "https://shaunmarsden.github.io/practical-ai-adoption/pilot-readiness/app.mjs",
+        "status": 200,
+        "expectedSha256": "297aaec8a25efbb2c81b5ada03fdfb2b9da38624a86f520f3b5902268e39fe90",
+        "actualSha256": "297aaec8a25efbb2c81b5ada03fdfb2b9da38624a86f520f3b5902268e39fe90",
+        "matches": true
+      },
+      {
+        "file": "pilot-readiness/model-v2.mjs",
+        "url": "https://shaunmarsden.github.io/practical-ai-adoption/pilot-readiness/model-v2.mjs",
+        "status": 200,
+        "expectedSha256": "f202860309636b466b51a97c709f68393c9990948d75ec7f178b63b405e2d40d",
+        "actualSha256": "f202860309636b466b51a97c709f68393c9990948d75ec7f178b63b405e2d40d",
+        "matches": true
+      },
+      {
+        "file": "pilot-readiness/examples-v2.mjs",
+        "url": "https://shaunmarsden.github.io/practical-ai-adoption/pilot-readiness/examples-v2.mjs",
+        "status": 200,
+        "expectedSha256": "5ab63485018d6866baa37764f97d2c6a4a0e08a51605c63be2fedec7d30f995a",
+        "actualSha256": "5ab63485018d6866baa37764f97d2c6a4a0e08a51605c63be2fedec7d30f995a",
+        "matches": true
+      },
+      {
+        "file": "pilot-readiness/report.mjs",
+        "url": "https://shaunmarsden.github.io/practical-ai-adoption/pilot-readiness/report.mjs",
+        "status": 200,
+        "expectedSha256": "69f2ce57acb7a99187308decffb6bcdffb0e5a2a96933d5fbaf0b2f27d8205d6",
+        "actualSha256": "69f2ce57acb7a99187308decffb6bcdffb0e5a2a96933d5fbaf0b2f27d8205d6",
+        "matches": true
+      },
+      {
+        "file": "pilot-readiness/vendor/jspdf.umd.min.js",
+        "url": "https://shaunmarsden.github.io/practical-ai-adoption/pilot-readiness/vendor/jspdf.umd.min.js",
+        "status": 200,
+        "expectedSha256": "e6551fcdc32f09d6853b2c5126d18d01d9447e0da618a41a11ebeee0f6c20d54",
+        "actualSha256": "e6551fcdc32f09d6853b2c5126d18d01d9447e0da618a41a11ebeee0f6c20d54",
+        "matches": true
+      },
+      {
+        "file": "pilot-readiness/vendor/NotoSans-Regular.ttf",
+        "url": "https://shaunmarsden.github.io/practical-ai-adoption/pilot-readiness/vendor/NotoSans-Regular.ttf",
+        "status": 200,
+        "expectedSha256": "b85c38ecea8a7cfb39c24e395a4007474fa5a4fc864f6ee33309eb4948d232d5",
+        "actualSha256": "b85c38ecea8a7cfb39c24e395a4007474fa5a4fc864f6ee33309eb4948d232d5",
+        "matches": true
+      }
+    ],
+    "assetsAfter": [
+      {
+        "file": "index.html",
+        "url": "https://shaunmarsden.github.io/practical-ai-adoption/index.html",
+        "status": 200,
+        "expectedSha256": "1b41a0f1d4ee69494ea680f7c2eb8c92b2633f6dd8ef51e24e720c3584d203a9",
+        "actualSha256": "1b41a0f1d4ee69494ea680f7c2eb8c92b2633f6dd8ef51e24e720c3584d203a9",
+        "matches": true
+      },
+      {
+        "file": "workbench/index.html",
+        "url": "https://shaunmarsden.github.io/practical-ai-adoption/workbench/index.html",
+        "status": 200,
+        "expectedSha256": "7ecf2c1f3d88cdf349a9c395e3fb18c93c4bff2d41ec2fdaab159664ffad0542",
+        "actualSha256": "7ecf2c1f3d88cdf349a9c395e3fb18c93c4bff2d41ec2fdaab159664ffad0542",
+        "matches": true
+      },
+      {
+        "file": "workbench/app.mjs",
+        "url": "https://shaunmarsden.github.io/practical-ai-adoption/workbench/app.mjs",
+        "status": 200,
+        "expectedSha256": "09fd7194c0616465d9a614422fa33d6366823473bbdabfde638a28a2764bebb8",
+        "actualSha256": "09fd7194c0616465d9a614422fa33d6366823473bbdabfde638a28a2764bebb8",
+        "matches": true
+      },
+      {
+        "file": "workbench/content.mjs",
+        "url": "https://shaunmarsden.github.io/practical-ai-adoption/workbench/content.mjs",
+        "status": 200,
+        "expectedSha256": "61cc97165a4c4c1f136a1b1aa3ce0c4b809786fa458fb08410d2013e9876f435",
+        "actualSha256": "61cc97165a4c4c1f136a1b1aa3ce0c4b809786fa458fb08410d2013e9876f435",
+        "matches": true
+      },
+      {
+        "file": "workbench/draft.mjs",
+        "url": "https://shaunmarsden.github.io/practical-ai-adoption/workbench/draft.mjs",
+        "status": 200,
+        "expectedSha256": "e72e421210b05576b111c8ab15080a3c3bc240cf6c723f1f8caee40e72253e9e",
+        "actualSha256": "e72e421210b05576b111c8ab15080a3c3bc240cf6c723f1f8caee40e72253e9e",
+        "matches": true
+      },
+      {
+        "file": "workbench/changes.mjs",
+        "url": "https://shaunmarsden.github.io/practical-ai-adoption/workbench/changes.mjs",
+        "status": 200,
+        "expectedSha256": "9b3d077ccd8b880a91474dcfa2c5e920d476a0eeba8ce07af27336cf602b4d11",
+        "actualSha256": "9b3d077ccd8b880a91474dcfa2c5e920d476a0eeba8ce07af27336cf602b4d11",
+        "matches": true
+      },
+      {
+        "file": "workbench/style.css",
+        "url": "https://shaunmarsden.github.io/practical-ai-adoption/workbench/style.css",
+        "status": 200,
+        "expectedSha256": "ff3eef3bc7fd305fecd74a58e697919f10b45d82a5eb609ad2f7eb3fab87b001",
+        "actualSha256": "ff3eef3bc7fd305fecd74a58e697919f10b45d82a5eb609ad2f7eb3fab87b001",
+        "matches": true
+      },
+      {
+        "file": "pilot-readiness/index.html",
+        "url": "https://shaunmarsden.github.io/practical-ai-adoption/pilot-readiness/index.html",
+        "status": 200,
+        "expectedSha256": "2813df5a5d04641c66f1bf756b43998e551c66dd6cf3bedb79954a5abea39916",
+        "actualSha256": "2813df5a5d04641c66f1bf756b43998e551c66dd6cf3bedb79954a5abea39916",
+        "matches": true
+      },
+      {
+        "file": "pilot-readiness/icon.svg",
+        "url": "https://shaunmarsden.github.io/practical-ai-adoption/pilot-readiness/icon.svg",
+        "status": 200,
+        "expectedSha256": "aea50878737db3f9849de53bb864ed0da675a8bc9f382f18062a70e6c2adbf88",
+        "actualSha256": "aea50878737db3f9849de53bb864ed0da675a8bc9f382f18062a70e6c2adbf88",
+        "matches": true
+      },
+      {
+        "file": "pilot-readiness/style.css",
+        "url": "https://shaunmarsden.github.io/practical-ai-adoption/pilot-readiness/style.css",
+        "status": 200,
+        "expectedSha256": "aa0b00068d00c49dfc8b8b26b2b3e5ba75bee8c58c208395418f42e049047fd9",
+        "actualSha256": "aa0b00068d00c49dfc8b8b26b2b3e5ba75bee8c58c208395418f42e049047fd9",
+        "matches": true
+      },
+      {
+        "file": "pilot-readiness/app.mjs",
+        "url": "https://shaunmarsden.github.io/practical-ai-adoption/pilot-readiness/app.mjs",
+        "status": 200,
+        "expectedSha256": "297aaec8a25efbb2c81b5ada03fdfb2b9da38624a86f520f3b5902268e39fe90",
+        "actualSha256": "297aaec8a25efbb2c81b5ada03fdfb2b9da38624a86f520f3b5902268e39fe90",
+        "matches": true
+      },
+      {
+        "file": "pilot-readiness/model-v2.mjs",
+        "url": "https://shaunmarsden.github.io/practical-ai-adoption/pilot-readiness/model-v2.mjs",
+        "status": 200,
+        "expectedSha256": "f202860309636b466b51a97c709f68393c9990948d75ec7f178b63b405e2d40d",
+        "actualSha256": "f202860309636b466b51a97c709f68393c9990948d75ec7f178b63b405e2d40d",
+        "matches": true
+      },
+      {
+        "file": "pilot-readiness/examples-v2.mjs",
+        "url": "https://shaunmarsden.github.io/practical-ai-adoption/pilot-readiness/examples-v2.mjs",
+        "status": 200,
+        "expectedSha256": "5ab63485018d6866baa37764f97d2c6a4a0e08a51605c63be2fedec7d30f995a",
+        "actualSha256": "5ab63485018d6866baa37764f97d2c6a4a0e08a51605c63be2fedec7d30f995a",
+        "matches": true
+      },
+      {
+        "file": "pilot-readiness/report.mjs",
+        "url": "https://shaunmarsden.github.io/practical-ai-adoption/pilot-readiness/report.mjs",
+        "status": 200,
+        "expectedSha256": "69f2ce57acb7a99187308decffb6bcdffb0e5a2a96933d5fbaf0b2f27d8205d6",
+        "actualSha256": "69f2ce57acb7a99187308decffb6bcdffb0e5a2a96933d5fbaf0b2f27d8205d6",
+        "matches": true
+      },
+      {
+        "file": "pilot-readiness/vendor/jspdf.umd.min.js",
+        "url": "https://shaunmarsden.github.io/practical-ai-adoption/pilot-readiness/vendor/jspdf.umd.min.js",
+        "status": 200,
+        "expectedSha256": "e6551fcdc32f09d6853b2c5126d18d01d9447e0da618a41a11ebeee0f6c20d54",
+        "actualSha256": "e6551fcdc32f09d6853b2c5126d18d01d9447e0da618a41a11ebeee0f6c20d54",
+        "matches": true
+      },
+      {
+        "file": "pilot-readiness/vendor/NotoSans-Regular.ttf",
+        "url": "https://shaunmarsden.github.io/practical-ai-adoption/pilot-readiness/vendor/NotoSans-Regular.ttf",
+        "status": 200,
+        "expectedSha256": "b85c38ecea8a7cfb39c24e395a4007474fa5a4fc864f6ee33309eb4948d232d5",
+        "actualSha256": "b85c38ecea8a7cfb39c24e395a4007474fa5a4fc864f6ee33309eb4948d232d5",
+        "matches": true
+      }
+    ],
+    "childStdout": {
+      "changes-chrome.log": "chrome: unsaved-notes checks passed; native dialogs observed; partial-date gesture exposed=true.\n",
+      "changes-firefox.log": "firefox: unsaved-notes checks passed; native dialogs observed; partial-date gesture exposed=false.\n",
+      "changes-webkit.log": "webkit: unsaved-notes checks passed; native dialogs observed; partial-date gesture exposed=true.\n",
+      "drafts.log": "Draft browser checks passed: exact save/reload/reopen/edit/save at 1440 and 320 pixels; atomic bad/read/replace/race/download paths; literal markup; privacy and axe checks.\n",
+      "journey.log": "Workbench browser checks passed: 3 viewport journeys, 18 axe scans, literal text exports, navigation, reset, privacy, V2 link and no-JavaScript route.\n",
+      "reflow.log": "chromium: narrow-layout/text-enlargement regression passed (4 combinations, all six steps).\n"
+    },
+    "omittedLocalEvidence": "Full note snapshots, screenshots and Playwright traces remain local. Source hashes are not independent attestation or proof of timing."
+  }
+}
