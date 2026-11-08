@@ -125,3 +125,7 @@ The [8 November maintenance record](reviews/2026-11-08/README.md) documents two 
 ## Proposed unsaved-notes protection
 
 The [unsaved-notes record](unsaved-notes/README.md) describes the changed-state warning, retained first failures, fresh AI challenges and Chrome/Firefox/WebKit checks. It is draft-branch evidence, not a deployed-release claim. Earlier dated browser and live observations above retain their original scope.
+
+## Consolidated three-browser release check
+
+The proposed [maintained release check](releases/README.md) extends the existing `test:workbench:live` command to installed Chrome, Firefox and Playwright WebKit, with exact downloaded-byte reopening and missed-warning diagnostics. It retains the existing Chromium navigation/accessibility, draft and reflow suites. Missing browsers or any failed child fail the whole check; there are no retries. CI uses a local preview, which does not establish deployment. See the record for first failures, negative controls and the unresolved historical Firefox observation.
