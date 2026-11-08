@@ -13,7 +13,8 @@
     "test:workbench:drafts": "node tools/workbench/tests/draft-browser.mjs",
     "test:workbench:reflow": "node tools/workbench/tests/reflow.mjs",
     "test:workbench:live": "node tools/workbench/tests/live.mjs",
-    "test:workbench:changes": "node tools/workbench/tests/changes-browser.mjs"
+    "test:workbench:changes": "node tools/workbench/tests/changes-browser.mjs",
+    "test:workbench:compatibility": "node tools/workbench/tests/compatibility.mjs"
   },
   "devDependencies": {
     "@axe-core/playwright": "4.14.0",
