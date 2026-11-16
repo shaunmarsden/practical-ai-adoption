@@ -177,6 +177,7 @@ for (const [name, engine, options] of engines) {
           "workbench/app.mjs",
           "workbench/content.mjs",
           "workbench/example.mjs",
+          "workbench/test-sheet.mjs",
           "workbench/draft.mjs",
           "workbench/changes.mjs",
           "workbench/style.css",
