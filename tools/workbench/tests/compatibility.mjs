@@ -180,6 +180,7 @@ for (const [name, engine, options] of engines) {
           "workbench/test-sheet.mjs",
           "workbench/test-results.mjs",
           "workbench/test-results-ui.mjs",
+          "workbench/comparison.mjs",
           "workbench/draft.mjs",
           "workbench/changes.mjs",
           "workbench/style.css",
