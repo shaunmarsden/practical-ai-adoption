@@ -1,6 +1,7 @@
 import { steps, emptyRecord, recordText, caveat } from './content.mjs';
 import { draftText, parseDraft, MAX_DRAFT_BYTES } from './draft.mjs';
 import { createChangeTracker } from './changes.mjs';
+import { fictionalExample } from './example.mjs';
 const byId = id => document.getElementById(id);
 let active = 0;
 const controls = new Map();
@@ -243,6 +244,22 @@ byId('reopen-draft').addEventListener('change', async event => {
   } catch (error) {
     byId('draft-status').textContent = `Could not reopen draft. ${error.message} Your current notes are unchanged.`;
   } finally { picker.disabled = false; }
+});
+byId('load-example').addEventListener('click', () => {
+  const current = values(), defaults = emptyRecord();
+  if ((incompleteDate() || Object.keys(defaults).some(id => current[id] !== defaults[id])) &&
+      !window.confirm('Replace current notes with a completely invented learning example? Save your current draft first if needed. The example does not verify evidence or grant approval.')) {
+    byId('example-status').textContent = 'Example not loaded. Your notes are unchanged.';
+    return;
+  }
+  const example = fictionalExample();
+  // Treat the example like unsaved edits, never a saved checkpoint. This keeps
+  // beforeunload warnings and the existing Save draft flow truthful.
+  for (const [id, input] of controls) input.value = example[id];
+  onNotesEdited();
+  byId('example-status').textContent = 'Invented example loaded. No AI pilot or human decision has happened. Save a draft to keep your edits.';
+  byId('draft-status').textContent = '';
+  show(0);
 });
 byId('reset').addEventListener('click', () => {
   if (!window.confirm('Clear all workbench notes? Export first if you need to keep them. Existing downloads will remain.')) return;

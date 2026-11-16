@@ -88,7 +88,7 @@ try {
     assert.equal(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth), true);
     // No answer-bearing requests, storage or cookies, even after export and preview.
     assertStaticRequests(requests,
-      ['/', '/workbench/', '/workbench/index.html', '/workbench/style.css', '/workbench/app.mjs', '/workbench/content.mjs', '/workbench/draft.mjs', '/workbench/changes.mjs', '/pilot-readiness/icon.svg']);
+      ['/', '/workbench/', '/workbench/index.html', '/workbench/style.css', '/workbench/app.mjs', '/workbench/content.mjs', '/workbench/example.mjs', '/workbench/draft.mjs', '/workbench/changes.mjs', '/pilot-readiness/icon.svg']);
     assert.deepEqual(await page.evaluate(() => [localStorage.length, sessionStorage.length, document.cookie]), [0, 0, '']);
     assert.deepEqual(await context.cookies(), []);
     assert.deepEqual(errors, []);
@@ -122,6 +122,24 @@ try {
     page.once('dialog', dialog => dialog.accept());
     await page.getByRole('button', { name: 'Clear notes' }).click();
     for (const [id, value] of Object.entries(emptyRecord())) assert.equal(await page.locator(`#${id}`).inputValue(), value);
+    // First-run example is invented, editable and counted as unsaved.
+    await page.locator('#work').fill('Existing note to preserve');
+    page.once('dialog', dialog => dialog.dismiss());
+    await page.getByRole('button', { name: 'Load fictional example' }).click();
+    assert.equal(await page.locator('#work').inputValue(), 'Existing note to preserve', 'cancel preserves notes');
+    page.once('dialog', dialog => dialog.accept());
+    await page.getByRole('button', { name: 'Load fictional example' }).click();
+    assert.match(await page.locator('#work').inputValue(), /Fictional community club/);
+    assert.equal(await page.locator('#evidenceType').inputValue(), 'Fictional exercise');
+    assert.equal(await page.locator('#decision').inputValue(), 'No human decision recorded');
+    assert.equal(await page.locator('#readiness').inputValue(), 'Not applicable (explain below)');
+    assert.match(await page.locator('#changes-status').innerText(), /Newer edits are only in this page/);
+    const sampleExport = await downloadText();
+    assert.match(sampleExport, /No pilot has happened/);
+    assert.match(sampleExport, /No human decision recorded/);
+    page.once('dialog', dialog => dialog.accept());
+    await page.getByRole('button', { name: 'Clear notes' }).click();
+    assert.equal(await page.locator('#work').inputValue(), '');
     await page.locator('#work').fill('Only in memory');
     page.once('dialog', async dialog => { assert.equal(dialog.type(), 'beforeunload'); await dialog.accept(); });
     await page.reload();
