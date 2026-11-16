@@ -55,6 +55,8 @@
         <div class="actions">
           <button type="button" id="preview-test-results">Preview observations</button>
           <button type="button" id="export-test-results">Export observations text</button>
+          <button type="button" id="compare-test-results">Compare expected and observed</button>
+          <button type="button" id="export-test-comparison">Export comparison text</button>
           <button type="button" id="save-test-results">Save results JSON</button>
           <button type="button" id="clear-test-results">Clear test observations</button>
         </div>
@@ -63,6 +65,7 @@
         <input type="file" id="reopen-test-results" accept=".json,application/json" aria-describedby="reopen-test-help">
         <p id="test-results-status" role="status"></p>
         <pre id="test-results-preview" tabindex="0" aria-label="Reported test observations preview" hidden></pre>
+        <pre id="test-comparison-preview" tabindex="0" aria-label="Expected and observed comparison preview" hidden></pre>
       </section>
       <section aria-labelledby="record-heading" class="record">
         <h2 id="record-heading">Your decision record</h2>
