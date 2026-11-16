@@ -8,15 +8,13 @@ The [V2 tool](https://shaunmarsden.github.io/practical-ai-adoption/pilot-readine
 
 The remaining gap is **independent judgement and real-user understanding**. The adversarial cases and software checks were carried out within the same AI-assisted development process. They do not show that an outside reviewer agrees with the methodology or that a manager understands what the result permits.
 
-Before describing this as a validated readiness method:
+Before describing this as a validated readiness method, genuine independent review and observed human comprehension would still be necessary. Neither has happened. They are evidence limits, **not a demand to recruit reviewers or a reason to stop useful development**.
 
-- Ask someone independent of the implementation to judge a small, varied fictional case set before seeing the tool's output. Keep disagreements.
-- Observe whether a non-technical user understands the three operational decisions, particularly that a complete record is **not approval**.
-- Only consider further criteria or automation if those reviews reveal a material weakness. Do not add a new framework or claim real-world outcome evidence.
+The practical testing route is to keep adversarial fictional cases, repeatable cross-browser checks and the original failures, and invite optional visitor feedback through GitHub Discussions. Do not call automated or AI-assisted tests independent human validation. If unsolicited visitors comment, distinguish their reports from reproduced defects. Only consider new criteria after a documented problem supports them.
 
 ## Guided workbench
 
-The [AI Adoption Workbench](docs/workbench/index.html) provides a browser notebook through existing guidance, with a separate V2 link and local text export. It adds no readiness rules. The [assistant-operated owner-use log](evidence/workbench-owner-use-2026-11-08.md) concerns one real repository-planning task; it does not establish human understanding or measured usefulness. Automated software checks do not fill the independent-review or guide-evaluation gaps below. Observe a non-technical reader using it before claiming that it makes the journey easier.
+The [AI Adoption Workbench](docs/workbench/index.html) provides a browser notebook through existing guidance, with a separate V2 link and local text export. It adds no readiness rules. The [assistant-operated owner-use log](evidence/workbench-owner-use-2026-11-08.md) concerns one real repository-planning task; it does not establish human understanding or measured usefulness. Automated software checks do not fill the independent-review or guide-evaluation gaps below. Do not claim it is easier for non-technical readers without observing that; voluntary feedback is invited, and software development can proceed without organised reader sessions.
 
 ## Now
 
@@ -35,4 +33,4 @@ The original scored-guide tests identified two evidence gaps, and the seven more
 
 The research and private-knowledge-base transfer added seven practical team and organisational guides. They are listed separately in [Evidence Status](EVIDENCE-STATUS.md) because their fictional illustrations were not run or scored.
 
-Do not assume that more guidance is evidence of adoption. Before adding another topic, check the [six-stage coverage audit](research/ai-adoption-pathway-audit.md), existing guides and an actual reader need. Prioritise a clear route through the material, external review of the Pilot Readiness Assessment and one appropriately authorised low-risk use of an existing guide. Don't invent an exercise merely to fill an empty evidence column.
+Do not assume that more guidance is evidence of adoption. Before adding another topic, check the [six-stage coverage audit](research/ai-adoption-pathway-audit.md), existing guides and an actual reader need. Prioritise a clear route through the material, repeatable checks, voluntary feedback and one appropriately authorised low-risk use of an existing guide when it naturally arises. Do not turn independent review into an obligatory recruitment task. Don't invent an exercise merely to fill an empty evidence column.
