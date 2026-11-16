@@ -73,6 +73,21 @@ try {
     assert.ok(preview.indexOf(expected.issues) < preview.indexOf('DESCRIBE THE WORK'));
     assert.equal(await page.locator('#summary svg').count(), 0, 'notes remain literal text');
     const exported = await downloadText();
+    await page.getByRole('button', { name: 'Preview test sheet' }).click();
+    const sheetPreview = await page.locator('#test-sheet-preview').innerText();
+    const sheetDownloadPromise = page.waitForEvent('download');
+    await page.getByRole('button', { name: 'Export test sheet' }).click();
+    const sheetDownload = await sheetDownloadPromise;
+    assert.equal(sheetDownload.suggestedFilename(), 'ai-adoption-proposed-test-sheet.txt');
+    const sheetExport = await readFile(await sheetDownload.path(), 'utf8');
+    for (const sheet of [sheetPreview, sheetExport]) {
+      for (const value of [expected.issues, expected.permissions, expected.evidenceType, expected.decision, expected.next, caveat])
+        assert.ok(sheet.includes(value), 'test sheet retains risk and decision information');
+      assert.match(sheet, /DRAFT ONLY/);
+      assert.match(sheet, /Actual outcome: Not run/);
+      assert.match(sheet, /C5 - No permission or out-of-scope action/);
+    }
+    assert.equal(await page.locator('#test-sheet-preview svg').count(), 0, 'sheet renders literal markup');
     await page.getByRole('button', { name: 'Preview review brief' }).click();
     const briefPreview = await page.locator('#brief-preview').innerText();
     const briefDownloadPromise = page.waitForEvent('download');
@@ -100,10 +115,11 @@ try {
     await page.locator('#work').fill('Changed after preview');
     assert.ok((await page.locator('#summary').innerText()).includes('Changed after preview'));
     assert.ok((await page.locator('#brief-preview').innerText()).includes('Changed after preview'));
+    assert.ok((await page.locator('#test-sheet-preview').innerText()).includes('Changed after preview'));
     assert.equal(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth), true);
     // No answer-bearing requests, storage or cookies, even after export and preview.
     assertStaticRequests(requests,
-      ['/', '/workbench/', '/workbench/index.html', '/workbench/style.css', '/workbench/app.mjs', '/workbench/content.mjs', '/workbench/example.mjs', '/workbench/draft.mjs', '/workbench/changes.mjs', '/pilot-readiness/icon.svg']);
+      ['/', '/workbench/', '/workbench/index.html', '/workbench/style.css', '/workbench/app.mjs', '/workbench/content.mjs', '/workbench/example.mjs', '/workbench/test-sheet.mjs', '/workbench/draft.mjs', '/workbench/changes.mjs', '/pilot-readiness/icon.svg']);
     assert.deepEqual(await page.evaluate(() => [localStorage.length, sessionStorage.length, document.cookie]), [0, 0, '']);
     assert.deepEqual(await context.cookies(), []);
     assert.deepEqual(errors, []);
@@ -138,6 +154,7 @@ try {
     await page.getByRole('button', { name: 'Clear notes' }).click();
     for (const [id, value] of Object.entries(emptyRecord())) assert.equal(await page.locator(`#${id}`).inputValue(), value);
     assert.equal(await page.locator('#brief-preview').isVisible(), false, 'clear hides outdated brief');
+    assert.equal(await page.locator('#test-sheet-preview').isVisible(), false, 'clear hides outdated test sheet');
     // First-run example is invented, editable and counted as unsaved.
     await page.locator('#work').fill('Existing note to preserve');
     page.once('dialog', dialog => dialog.dismiss());
