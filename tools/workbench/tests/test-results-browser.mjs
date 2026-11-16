@@ -93,7 +93,7 @@ try {
     assert.equal(await page.locator('#result-C4-status').inputValue(), 'Not run');
     assert.equal(await page.locator('#test-results-preview').isVisible(), false);
     assert.equal(await page.locator('#test-comparison-preview').isVisible(), false);
-    const allowed = ['/', '/workbench/', '/workbench/style.css', '/workbench/app.mjs', '/workbench/content.mjs', '/workbench/example.mjs', '/workbench/test-sheet.mjs', '/workbench/test-results.mjs', '/workbench/test-results-ui.mjs', '/workbench/draft.mjs', '/workbench/changes.mjs', '/pilot-readiness/icon.svg'];
+    const allowed = ['/', '/workbench/', '/workbench/style.css', '/workbench/app.mjs', '/workbench/content.mjs', '/workbench/example.mjs', '/workbench/test-sheet.mjs', '/workbench/test-results.mjs', '/workbench/test-results-ui.mjs', '/workbench/comparison.mjs', '/workbench/draft.mjs', '/workbench/changes.mjs', '/pilot-readiness/icon.svg'];
     assertStaticRequests(requests, allowed);
     assert.deepEqual(errors, []);
     assert.deepEqual(await page.evaluate(() => [localStorage.length, sessionStorage.length, document.cookie]), [0, 0, '']);
