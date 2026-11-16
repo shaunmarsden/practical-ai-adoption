@@ -3,6 +3,7 @@ import { draftText, parseDraft, MAX_DRAFT_BYTES } from './draft.mjs';
 import { createChangeTracker } from './changes.mjs';
 import { fictionalExample } from './example.mjs';
 import { safeTestSheetText } from './test-sheet.mjs';
+import { initialiseTestResults } from './test-results-ui.mjs';
 const byId = id => document.getElementById(id);
 let active = 0;
 const controls = new Map();
@@ -315,5 +316,6 @@ byId('reset').addEventListener('click', () => {
   byId('status').textContent = 'Workbench notes cleared. Existing downloads are unchanged.';
   show(0);
 });
+initialiseTestResults({ download, getNotes: values });
 show(0, false);
 byId('workbench').hidden = false;
