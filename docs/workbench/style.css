@@ -40,3 +40,9 @@ footer { border-top: 1px solid var(--line); margin-top: 2rem; padding-top: 1.4re
 /* Long labels and native chooser text still need room when text is enlarged. */
 main { overflow-wrap: anywhere; }
 input[type="file"]::file-selector-button { max-width: 100%; white-space: normal; overflow-wrap: anywhere; }
+
+/* Keep individual test observations readable on narrow screens. */
+#test-results-cases fieldset { border: 1px solid var(--line); border-radius: .4rem; padding: 1rem; margin: 1.2rem 0; min-width: 0; }
+#test-results-cases legend { font-weight: 700; padding: 0 .35rem; }
+#test-results-cases label { margin-top: .8rem; }
+#reopen-test-results { margin-top: .4rem; }

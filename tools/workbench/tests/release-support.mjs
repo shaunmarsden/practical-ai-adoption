@@ -1,8 +1,9 @@
 import assert from 'node:assert/strict';
-export const releaseAssets = ['index.html', 'workbench/index.html', 'workbench/app.mjs', 'workbench/content.mjs', 'workbench/example.mjs', 'workbench/test-sheet.mjs', 'workbench/draft.mjs', 'workbench/changes.mjs', 'workbench/style.css', 'pilot-readiness/index.html', 'pilot-readiness/icon.svg', 'pilot-readiness/style.css', 'pilot-readiness/app.mjs', 'pilot-readiness/model-v2.mjs', 'pilot-readiness/examples-v2.mjs', 'pilot-readiness/report.mjs', 'pilot-readiness/vendor/jspdf.umd.min.js', 'pilot-readiness/vendor/NotoSans-Regular.ttf'];
+export const releaseAssets = ['index.html', 'workbench/index.html', 'workbench/app.mjs', 'workbench/content.mjs', 'workbench/example.mjs', 'workbench/test-sheet.mjs', 'workbench/test-results.mjs', 'workbench/test-results-ui.mjs', 'workbench/draft.mjs', 'workbench/changes.mjs', 'workbench/style.css', 'pilot-readiness/index.html', 'pilot-readiness/icon.svg', 'pilot-readiness/style.css', 'pilot-readiness/app.mjs', 'pilot-readiness/model-v2.mjs', 'pilot-readiness/examples-v2.mjs', 'pilot-readiness/report.mjs', 'pilot-readiness/vendor/jspdf.umd.min.js', 'pilot-readiness/vendor/NotoSans-Regular.ttf'];
 export const releaseJobs = [
   { name: 'journey', script: 'browser.mjs', browser: 'chromium' },
   { name: 'drafts', script: 'draft-browser.mjs', browser: 'chromium' },
+  { name: 'test-outcomes', script: 'test-results-browser.mjs', browser: 'chromium' },
   { name: 'reflow', script: 'reflow.mjs', browser: 'chromium' },
   ...['chrome', 'firefox', 'webkit'].map(browser => ({ name: `changes-${browser}`, script: 'changes-browser.mjs', browser }))
 ];

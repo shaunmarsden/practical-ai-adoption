@@ -12,7 +12,7 @@ function complete() {
     } } : {})
   })) };
 }
-test('release needs all six jobs and exact source observations on both sides', () => {
+test('release needs every configured job and exact source observations on both sides', () => {
   assert.doesNotThrow(() => assertReleaseComplete(complete()));
   for (const phase of ['assets', 'assetsAfter']) {
     for (const mutate of [items => items.pop(), items => { items[0].matches = false; }, items => { items[0].file = items[1].file; }]) {
@@ -23,16 +23,20 @@ test('release needs all six jobs and exact source observations on both sides', (
   const duplicate = complete(); duplicate.journeys[5] = duplicate.journeys[4]; assert.throws(() => assertReleaseComplete(duplicate));
 });
 test('child failure or missing browser cannot be washed out by later passes', () => {
+  const browserJob = releaseJobs.findIndex(job => job.name === 'changes-chrome');
+  assert.ok(browserJob >= 0);
   for (const exit of [1, null, undefined]) {
-    const report = complete(); report.journeys[3].exitCode = exit; assert.throws(() => assertReleaseComplete(report));
+    const report = complete(); report.journeys[browserJob].exitCode = exit; assert.throws(() => assertReleaseComplete(report));
   }
   for (const replacement of [undefined, {}, { browser: 'chromium', version: '1', status: 'passed' }]) {
-    const report = complete(); report.journeys[3].result = replacement; assert.throws(() => assertReleaseComplete(report));
+    const report = complete(); report.journeys[browserJob].result = replacement; assert.throws(() => assertReleaseComplete(report));
   }
 });
 test('exit zero is insufficient without exact round trip and all observed warnings', () => {
+  const browserJob = releaseJobs.findIndex(job => job.name === 'changes-firefox');
+  assert.ok(browserJob >= 0);
   for (const mutate of [result => { result.status = 'failed'; }, result => { result.checks = []; }, result => result.leaveAttempts.pop(), result => { result.leaveAttempts[0].dialog = {}; }]) {
-    const report = complete(); mutate(report.journeys[4].result); assert.throws(() => assertReleaseComplete(report));
+    const report = complete(); mutate(report.journeys[browserJob].result); assert.throws(() => assertReleaseComplete(report));
   }
 });
 test('leave labels separate observed dialog with timeout from missing-dialog observations', () => {
