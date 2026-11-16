@@ -181,7 +181,7 @@ try {
   assert.equal(await page.locator('#work').inputValue(), '');
   assert.deepEqual(await page.evaluate(() => [localStorage.length, sessionStorage.length, document.cookie]), [0, 0, '']);
   assert.deepEqual(await context.cookies(), []);
-  assertStaticRequests(requests, ['/', '/workbench/', '/workbench/style.css', '/workbench/app.mjs', '/workbench/content.mjs', '/workbench/draft.mjs', '/workbench/changes.mjs', '/pilot-readiness/icon.svg']);
+  assertStaticRequests(requests, ['/', '/workbench/', '/workbench/style.css', '/workbench/app.mjs', '/workbench/content.mjs', '/workbench/example.mjs', '/workbench/draft.mjs', '/workbench/changes.mjs', '/pilot-readiness/icon.svg']);
   assert.deepEqual(errors, []);
   results.checks.push('accepted native discard reloads defaults; no note-bearing requests or storage observed');
   await page.locator('#work').fill('FICTIONAL: leave after explicit acceptance');
@@ -192,7 +192,7 @@ try {
   await changed(false);
   assert.equal(await page.locator('#work').inputValue(), '');
   results.checks.push('accepted same-tab leave returns to homepage; reopening workbench shows defaults');
-  assertStaticRequests(requests, ['/', '/workbench/', '/workbench/style.css', '/workbench/app.mjs', '/workbench/content.mjs', '/workbench/draft.mjs', '/workbench/changes.mjs', '/pilot-readiness/icon.svg']);
+  assertStaticRequests(requests, ['/', '/workbench/', '/workbench/style.css', '/workbench/app.mjs', '/workbench/content.mjs', '/workbench/example.mjs', '/workbench/draft.mjs', '/workbench/changes.mjs', '/pilot-readiness/icon.svg']);
   assert.deepEqual(errors, []);
   assert.deepEqual(await page.evaluate(() => [localStorage.length, sessionStorage.length, document.cookie]), [0, 0, '']);
   assert.deepEqual(await context.cookies(), []);
