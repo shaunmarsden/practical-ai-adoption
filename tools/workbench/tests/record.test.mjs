@@ -1,7 +1,7 @@
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
 import { readFile, access } from 'node:fs/promises';
-import { steps, fields, emptyRecord, recordText, caveat } from '../../../docs/workbench/content.mjs';
+import { steps, fields, emptyRecord, recordText, reviewBriefText, caveat } from '../../../docs/workbench/content.mjs';
 
 test('an empty export remains an unanswered, non-permissive record', () => {
   const text = recordText(emptyRecord(), '2026-11-06T12:00:00.000Z');
@@ -76,4 +76,51 @@ test('workbench shell resources and navigation targets exist', async () => {
       await access(target.endsWith('/') ? new URL('index.html', url) : url);
     }
   }
+});
+
+
+test('review brief preserves negative findings, permission unknown and missing human authority', () => {
+  const record = {
+    ...emptyRecord(),
+    work: 'Fictional harbour notice update',
+    evidenceType: 'Fictional exercise',
+    route: 'Try a shared notice register before any AI trial.',
+    issues: 'Wrong date published in fictional test. Not resolved.',
+    permissions: 'Unknown: no permission to change live notices.',
+    results: 'No measured results or verified benefit.',
+    readiness: 'COMPLETE RECORD - HUMAN DECISION REQUIRED',
+    decision: 'Continue within an existing authorised boundary',
+    decisionOwner: '',
+    next: 'Stop; ask an authorised role to review the error.'
+  };
+  const original = structuredClone(record);
+  const text = reviewBriefText(record, '2026-11-16T12:00:00.000Z');
+  const front = text.split('WORK AND OPTIONS')[0];
+  for (const value of [record.issues, record.permissions, record.evidenceType, record.readiness, record.decision, record.next, caveat]) {
+    assert.ok(front.includes(value), 'opening retains adverse status or evidence');
+  }
+  assert.match(text, /Decision-maker role and authority reference:\nNot recorded/);
+  assert.match(text, /No measured results or verified benefit/);
+  assert.match(text, /not checked for truth, consistency, permission or authority/);
+  assert.match(text, /not the complete decision record/);
+  assert.ok(text.indexOf(record.issues) < text.indexOf(record.decision));
+  assert.deepEqual(record, original);
+});
+
+test('review brief retains literal multiline and markup without inventing decisions', () => {
+  const record = {
+    ...emptyRecord(),
+    issues: 'Fictional issue\n<script>alert(1)</script>\n' + 'z'.repeat(2300),
+    next: 'Do not proceed until reviewed\nOwner: unknown',
+    work: 'Fictional office task'
+  };
+  const text = reviewBriefText(record, '2026-11-16T12:00:00.000Z');
+  assert.ok(text.includes(record.issues));
+  assert.ok(text.includes(record.next));
+  assert.match(text, /Human decision \(self-reported\): No human decision recorded/);
+  assert.match(text, /V2 position \(self-reported\): Not reviewed/);
+  const blank = reviewBriefText(emptyRecord(), '2026-11-16T12:00:00.000Z');
+  assert.match(blank, /Known problems and unresolved material issues:\nNot recorded/);
+  assert.match(blank, /Actual permission status:\nNot recorded/);
+  assert.match(blank, /No human decision recorded/);
 });
