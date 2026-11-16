@@ -73,6 +73,20 @@ try {
     assert.ok(preview.indexOf(expected.issues) < preview.indexOf('DESCRIBE THE WORK'));
     assert.equal(await page.locator('#summary svg').count(), 0, 'notes remain literal text');
     const exported = await downloadText();
+    await page.getByRole('button', { name: 'Preview review brief' }).click();
+    const briefPreview = await page.locator('#brief-preview').innerText();
+    const briefDownloadPromise = page.waitForEvent('download');
+    await page.getByRole('button', { name: 'Export review brief' }).click();
+    const briefDownload = await briefDownloadPromise;
+    assert.equal(briefDownload.suggestedFilename(), 'ai-adoption-review-brief.txt');
+    const briefExport = await readFile(await briefDownload.path(), 'utf8');
+    for (const text of [briefPreview, briefExport]) {
+      for (const value of [expected.issues, expected.permissions, expected.evidenceType, expected.readiness, expected.decision, expected.next, caveat])
+        assert.ok(text.includes(value), 'brief retains material adverse and decision notes');
+      assert.ok(text.includes('not the complete decision record'));
+      assert.ok(text.includes('not checked for truth, consistency, permission or authority'));
+    }
+    assert.equal(await page.locator('#brief-preview svg').count(), 0, 'brief renders literal markup');
     for (const text of [preview, exported]) {
       const opening = text.split('DESCRIBE THE WORK')[0];
       for (const value of [expected.issues, expected.evidenceType, expected.decision, expected.next, caveat]) assert.ok(opening.includes(value), `opening handoff retains ${value}`);
@@ -85,6 +99,7 @@ try {
     assert.equal(await page.locator('#work').inputValue(), expected.work);
     await page.locator('#work').fill('Changed after preview');
     assert.ok((await page.locator('#summary').innerText()).includes('Changed after preview'));
+    assert.ok((await page.locator('#brief-preview').innerText()).includes('Changed after preview'));
     assert.equal(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth), true);
     // No answer-bearing requests, storage or cookies, even after export and preview.
     assertStaticRequests(requests,
@@ -122,6 +137,7 @@ try {
     page.once('dialog', dialog => dialog.accept());
     await page.getByRole('button', { name: 'Clear notes' }).click();
     for (const [id, value] of Object.entries(emptyRecord())) assert.equal(await page.locator(`#${id}`).inputValue(), value);
+    assert.equal(await page.locator('#brief-preview').isVisible(), false, 'clear hides outdated brief');
     // First-run example is invented, editable and counted as unsaved.
     await page.locator('#work').fill('Existing note to preserve');
     page.once('dialog', dialog => dialog.dismiss());
