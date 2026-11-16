@@ -1,3 +1,4 @@
+import { comparisonText } from './comparison.mjs';
 import { TEST_CASES, RESULT_STATUSES, emptyTestResults, checkedTestResults, testResultsJSON, parseTestResults, testResultsText, MAX_RESULTS_BYTES } from './test-results.mjs';
 
 export function initialiseTestResults({ download, getNotes }) {
@@ -76,6 +77,10 @@ export function initialiseTestResults({ download, getNotes }) {
   function changed() {
     revision++;
     updateState();
+    if (!byId('test-comparison-preview').hidden) {
+      try { byId('test-comparison-preview').textContent = comparisonText(readEntries(), getNotes()); }
+      catch { byId('test-comparison-preview').textContent = 'Record what happened in each observed case before comparing it.'; }
+    }
     if (!byId('test-results-preview').hidden) {
       try { byId('test-results-preview').textContent = testResultsText(readEntries(), getNotes()); }
       catch { byId('test-results-preview').textContent = 'An observed case needs a description of what happened before it can be exported.'; }
@@ -98,6 +103,20 @@ export function initialiseTestResults({ download, getNotes }) {
       download(testResultsText(capture(), getNotes()), 'text/plain;charset=utf-8', 'ai-adoption-test-observations.txt');
       report('Text report download requested. This is not a verified trial result or approval.');
     } catch (error) { report('Could not export report. ' + error.message); }
+  });
+  byId('compare-test-results').addEventListener('click', () => {
+    try {
+      byId('test-comparison-preview').textContent = comparisonText(capture(), getNotes());
+      byId('test-comparison-preview').hidden = false;
+      byId('test-comparison-preview').focus();
+      report('Comparison shows missing record fields and original statements. It does not decide whether tests passed.');
+    } catch (error) { report(error.message); }
+  });
+  byId('export-test-comparison').addEventListener('click', () => {
+    try {
+      download(comparisonText(capture(), getNotes()), 'text/plain;charset=utf-8', 'ai-adoption-expected-observed-comparison.txt');
+      report('Comparison download requested. Check the file and original evidence before judging the outcome.');
+    } catch (error) { report('Could not export comparison. ' + error.message); }
   });
   byId('save-test-results').addEventListener('click', () => {
     try {
@@ -137,6 +156,8 @@ export function initialiseTestResults({ download, getNotes }) {
     checkpoint = JSON.stringify(readEntries());
     byId('test-results-preview').hidden = true;
     byId('test-results-preview').textContent = '';
+    byId('test-comparison-preview').hidden = true;
+    byId('test-comparison-preview').textContent = '';
     updateState(); report('Test observations cleared. Workbench notes and saved files were not changed.');
   });
   window.addEventListener('pageshow', updateState);
