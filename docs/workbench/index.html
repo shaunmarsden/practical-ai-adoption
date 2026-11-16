@@ -49,10 +49,11 @@
       <section aria-labelledby="record-heading" class="record">
         <h2 id="record-heading">Your decision record</h2>
         <p id="caveat"></p>
-        <p>No fields are required for export. Blank notes say "Not recorded". Exporting does not complete a review.</p>
-        <div class="actions"><button type="button" id="review">Review all notes</button><button type="button" id="export">Export text record</button><button type="button" id="reset">Clear notes</button></div>
+        <p>No fields are required for export. Blank notes say "Not recorded". Exporting does not complete a review. The shorter review brief selects original notes for a reader; keep the full text record for context.</p>
+        <div class="actions"><button type="button" id="review">Review all notes</button><button type="button" id="export">Export text record</button><button type="button" id="preview-brief">Preview review brief</button><button type="button" id="export-brief">Export review brief</button><button type="button" id="reset">Clear notes</button></div>
         <p id="status" role="status"></p>
         <pre id="summary" tabindex="0" aria-label="Decision record preview" hidden></pre>
+        <pre id="brief-preview" tabindex="0" aria-label="Review brief preview" hidden></pre>
       </section>
     </div>
     <section class="record" aria-labelledby="feedback-heading">

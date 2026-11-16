@@ -90,3 +90,73 @@ export function recordText(values, exportedAt = new Date().toISOString()) {
   }
   return lines.join('\n') + '\n';
 }
+
+/**
+ * A selection of original notes for a person who needs to decide what to
+ * check next. Never infer status, shorten user text or approve anything.
+ * The complete 28-field record remains the source for full inspection.
+ */
+export function reviewBriefText(values, exportedAt = new Date().toISOString()) {
+  const data = { ...emptyRecord(), ...values };
+  const shown = id => data[id] || 'Not recorded';
+  const groups = [
+    ['WORK AND OPTIONS', [
+      ['work', 'Work and outcome sought'],
+      ['current', 'Current process and main problem'],
+      ['route', 'Preferred route and strongest alternative'],
+      ['nonAi', 'Non-AI option'],
+      ['ai', 'Possible AI contribution']
+    ]],
+    ['EVIDENCE AND LIMITS', [
+      ['evidenceType', 'Evidence basis (self-reported)'],
+      ['baseline', 'Current evidence and baseline'],
+      ['results', 'Comparison results and source references'],
+      ['costs', 'Review, rework, costs and actual benefit'],
+      ['limits', 'Missing cases, changes and limitations']
+    ]],
+    ['RISKS, AUTHORITY AND FOLLOW-UP', [
+      ['issues', 'Known problems and unresolved material issues'],
+      ['permissions', 'Actual permission status'],
+      ['boundary', 'Pilot boundary, or reason not to trial'],
+      ['followup', 'Unresolved questions and required review']
+    ]],
+    ['SEPARATE READINESS AND HUMAN DECISION', [
+      ['readiness', 'V2 review position (self-reported, not checked)'],
+      ['readinessRecord', 'V2 reference, scope and limits'],
+      ['decision', 'Human decision (self-reported, not checked)'],
+      ['decisionOwner', 'Decision-maker role and authority reference'],
+      ['decisionDate', 'Decision date'],
+      ['rationale', 'Reasons, evidence and conditions'],
+      ['next', 'Next action, responsible role and review date/triggers']
+    ]]
+  ];
+  const lines = [
+    'AI Adoption Workbench - review brief',
+    'Brief format: 1',
+    'Exported: ' + exportedAt,
+    '',
+    caveat,
+    'This is a selected view of user-entered notes, not the complete decision record.',
+    'Notes are reproduced literally, not checked for truth, consistency, permission or authority.',
+    'Before acting, inspect the full Workbench record and any separate V2 report.',
+    '',
+    'CHECK BEFORE ANY ACTION',
+    'Known problems and unresolved material issues:',
+    shown('issues'),
+    '',
+    'Actual permission status:',
+    shown('permissions'),
+    '',
+    'Evidence basis (self-reported): ' + shown('evidenceType'),
+    'V2 position (self-reported): ' + shown('readiness'),
+    'Human decision (self-reported): ' + shown('decision'),
+    '',
+    'Next action, responsible role and review date/triggers:',
+    shown('next')
+  ];
+  for (const [heading, entries] of groups) {
+    lines.push('', heading);
+    for (const [id, label] of entries) lines.push('', label + ':', shown(id));
+  }
+  return lines.join('\n') + '\n';
+}
