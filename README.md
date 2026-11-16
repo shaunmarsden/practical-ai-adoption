@@ -117,6 +117,10 @@ I haven't built a comparison table for this repository, as I did for [Practical 
 
 </details>
 
+## Continue this project from a fresh account
+
+[Project continuity and handover](PROJECT-CONTINUITY.md) summarises the current tools, development setup, evidence limits and a restart prompt for a new coding assistant. It contains no account credentials or private context.
+
 ## What I plan to do next
 
 The [Roadmap](ROADMAP.md) records the outstanding external-review and real-use evidence. The [Evidence Status](EVIDENCE-STATUS.md) distinguishes the original scored tests from seven newer guides without scored evaluations. Before adding more, see the [repository consistency audit](research/repository-consistency-audit-2026-11-03.md).
