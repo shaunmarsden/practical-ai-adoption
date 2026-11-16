@@ -2,6 +2,7 @@ import { steps, emptyRecord, recordText, reviewBriefText, caveat } from './conte
 import { draftText, parseDraft, MAX_DRAFT_BYTES } from './draft.mjs';
 import { createChangeTracker } from './changes.mjs';
 import { fictionalExample } from './example.mjs';
+import { safeTestSheetText } from './test-sheet.mjs';
 const byId = id => document.getElementById(id);
 let active = 0;
 const controls = new Map();
@@ -107,6 +108,7 @@ function show(index, focus = true) {
 }
 function refreshSummary() { byId('summary').textContent = recordText(values()); }
 function refreshBrief() { byId('brief-preview').textContent = reviewBriefText(values()); }
+function refreshTestSheet() { byId('test-sheet-preview').textContent = safeTestSheetText(values()); }
 byId('caveat').textContent = caveat;
 byId('notes').addEventListener('submit', event => event.preventDefault());
 function warnBeforeLeaving(event) {
@@ -148,6 +150,7 @@ function onNotesEdited() {
   byId('status').textContent = '';
   if (!byId('summary').hidden) refreshSummary();
   if (!byId('brief-preview').hidden) refreshBrief();
+  if (!byId('test-sheet-preview').hidden) refreshTestSheet();
   updateChanges();
 }
 byId('notes').addEventListener('input', onNotesEdited);
@@ -169,6 +172,7 @@ window.addEventListener('pageshow', () => {
   values();
   if (!byId('summary').hidden) refreshSummary();
   if (!byId('brief-preview').hidden) refreshBrief();
+  if (!byId('test-sheet-preview').hidden) refreshTestSheet();
   updateChanges();
 });
 byId('back-step').addEventListener('click', () => show(Math.max(0, active - 1)));
@@ -183,6 +187,12 @@ byId('preview-brief').addEventListener('click', () => {
   refreshBrief();
   byId('brief-preview').hidden = false;
   byId('brief-preview').focus();
+  updateChanges();
+});
+byId('preview-test-sheet').addEventListener('click', () => {
+  refreshTestSheet();
+  byId('test-sheet-preview').hidden = false;
+  byId('test-sheet-preview').focus();
   updateChanges();
 });
 function download(text, type, filename) {
@@ -212,6 +222,16 @@ byId('export-brief').addEventListener('click', () => {
     refreshBrief();
     byId('brief-preview').hidden = false;
     byId('status').textContent = 'Review brief download could not start. Copy the preview below instead.';
+  }
+});
+byId('export-test-sheet').addEventListener('click', () => {
+  try {
+    download(safeTestSheetText(values()), 'text/plain;charset=utf-8', 'ai-adoption-proposed-test-sheet.txt');
+    byId('status').textContent = 'Proposed test sheet download requested. No tests have been run or authorised.';
+  } catch {
+    refreshTestSheet();
+    byId('test-sheet-preview').hidden = false;
+    byId('status').textContent = 'Test sheet download could not start. Copy the proposed worksheet preview instead.';
   }
 });
 byId('save-draft').addEventListener('click', () => {
@@ -259,6 +279,7 @@ byId('reopen-draft').addEventListener('change', async event => {
     byId('status').textContent = '';
     if (!byId('summary').hidden) refreshSummary();
     if (!byId('brief-preview').hidden) refreshBrief();
+  if (!byId('test-sheet-preview').hidden) refreshTestSheet();
     byId('draft-status').textContent = 'Draft reopened locally. Notes have not been verified. This does not run V2 or grant approval.';
     show(0);
   } catch (error) {
@@ -289,6 +310,8 @@ byId('reset').addEventListener('click', () => {
   byId('summary').hidden = true;
   byId('brief-preview').textContent = '';
   byId('brief-preview').hidden = true;
+  byId('test-sheet-preview').textContent = '';
+  byId('test-sheet-preview').hidden = true;
   byId('status').textContent = 'Workbench notes cleared. Existing downloads are unchanged.';
   show(0);
 });
