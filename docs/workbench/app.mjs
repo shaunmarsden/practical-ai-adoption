@@ -1,4 +1,4 @@
-import { steps, emptyRecord, recordText, caveat } from './content.mjs';
+import { steps, emptyRecord, recordText, reviewBriefText, caveat } from './content.mjs';
 import { draftText, parseDraft, MAX_DRAFT_BYTES } from './draft.mjs';
 import { createChangeTracker } from './changes.mjs';
 import { fictionalExample } from './example.mjs';
@@ -106,6 +106,7 @@ function show(index, focus = true) {
   updateChanges();
 }
 function refreshSummary() { byId('summary').textContent = recordText(values()); }
+function refreshBrief() { byId('brief-preview').textContent = reviewBriefText(values()); }
 byId('caveat').textContent = caveat;
 byId('notes').addEventListener('submit', event => event.preventDefault());
 function warnBeforeLeaving(event) {
@@ -146,6 +147,7 @@ function onNotesEdited() {
   values();
   byId('status').textContent = '';
   if (!byId('summary').hidden) refreshSummary();
+  if (!byId('brief-preview').hidden) refreshBrief();
   updateChanges();
 }
 byId('notes').addEventListener('input', onNotesEdited);
@@ -166,6 +168,7 @@ controls.get('decisionDate').addEventListener('blur', reconcileDateEdit);
 window.addEventListener('pageshow', () => {
   values();
   if (!byId('summary').hidden) refreshSummary();
+  if (!byId('brief-preview').hidden) refreshBrief();
   updateChanges();
 });
 byId('back-step').addEventListener('click', () => show(Math.max(0, active - 1)));
@@ -174,6 +177,12 @@ byId('review').addEventListener('click', () => {
   refreshSummary();
   byId('summary').hidden = false;
   byId('summary').focus();
+  updateChanges();
+});
+byId('preview-brief').addEventListener('click', () => {
+  refreshBrief();
+  byId('brief-preview').hidden = false;
+  byId('brief-preview').focus();
   updateChanges();
 });
 function download(text, type, filename) {
@@ -193,6 +202,16 @@ byId('export').addEventListener('click', () => {
     refreshSummary();
     byId('summary').hidden = false;
     byId('status').textContent = 'Download could not start. Copy the record preview below to keep your notes.';
+  }
+});
+byId('export-brief').addEventListener('click', () => {
+  try {
+    download(reviewBriefText(values()), 'text/plain;charset=utf-8', 'ai-adoption-review-brief.txt');
+    byId('status').textContent = 'Review brief download requested. Check your downloads, and inspect the full record before anyone acts.';
+  } catch {
+    refreshBrief();
+    byId('brief-preview').hidden = false;
+    byId('status').textContent = 'Review brief download could not start. Copy the preview below instead.';
   }
 });
 byId('save-draft').addEventListener('click', () => {
@@ -239,6 +258,7 @@ byId('reopen-draft').addEventListener('change', async event => {
     populate(imported, 'reopen');
     byId('status').textContent = '';
     if (!byId('summary').hidden) refreshSummary();
+    if (!byId('brief-preview').hidden) refreshBrief();
     byId('draft-status').textContent = 'Draft reopened locally. Notes have not been verified. This does not run V2 or grant approval.';
     show(0);
   } catch (error) {
@@ -267,6 +287,8 @@ byId('reset').addEventListener('click', () => {
   byId('draft-status').textContent = '';
   byId('summary').textContent = '';
   byId('summary').hidden = true;
+  byId('brief-preview').textContent = '';
+  byId('brief-preview').hidden = true;
   byId('status').textContent = 'Workbench notes cleared. Existing downloads are unchanged.';
   show(0);
 });
