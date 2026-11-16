@@ -119,7 +119,7 @@ try {
     assert.equal(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth), true);
     // No answer-bearing requests, storage or cookies, even after export and preview.
     assertStaticRequests(requests,
-      ['/', '/workbench/', '/workbench/index.html', '/workbench/style.css', '/workbench/app.mjs', '/workbench/content.mjs', '/workbench/example.mjs', '/workbench/test-sheet.mjs', '/workbench/test-results.mjs', '/workbench/test-results-ui.mjs', '/workbench/draft.mjs', '/workbench/changes.mjs', '/pilot-readiness/icon.svg']);
+      ['/', '/workbench/', '/workbench/index.html', '/workbench/style.css', '/workbench/app.mjs', '/workbench/content.mjs', '/workbench/example.mjs', '/workbench/test-sheet.mjs', '/workbench/test-results.mjs', '/workbench/test-results-ui.mjs', '/workbench/comparison.mjs', '/workbench/draft.mjs', '/workbench/changes.mjs', '/pilot-readiness/icon.svg']);
     assert.deepEqual(await page.evaluate(() => [localStorage.length, sessionStorage.length, document.cookie]), [0, 0, '']);
     assert.deepEqual(await context.cookies(), []);
     assert.deepEqual(errors, []);
