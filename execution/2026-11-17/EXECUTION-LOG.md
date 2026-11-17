@@ -16,7 +16,7 @@
 
 ## Research review
 
-Read live `AGENTS.md`, `ROADMAP.md`, `PROJECT-CONTINUITY.md`, `README.md`, `EVIDENCE-STATUS.md`, `tools/workbench/README.md`, `checks.yml`, the pathway coverage audit and current PR/issue metadata. Consulted public GOV.UK Design System, W3C WCAG 2.2, Playwright and OWASP guidance. See the [full roadmap](../EXECUTION-ROADMAP-2026-11-17.md) for links and their limits.
+Read live `AGENTS.md`, `ROADMAP.md`, `PROJECT-CONTINUITY.md`, `README.md`, `EVIDENCE-STATUS.md`, `tools/workbench/README.md`, `checks.yml`, the pathway coverage audit and current PR/issue metadata. Consulted public GOV.UK Design System, W3C WCAG 2.2, Playwright and OWASP guidance. See the [full roadmap](../../EXECUTION-ROADMAP-2026-11-17.md) for links and their limits.
 
 ## Work status at this checkpoint
 
