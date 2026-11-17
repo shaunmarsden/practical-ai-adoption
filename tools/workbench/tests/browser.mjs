@@ -80,6 +80,8 @@ try {
     assert.ok(preview.indexOf(expected.issues) < preview.indexOf('DESCRIBE THE WORK'));
     assert.equal(await page.locator('#summary svg').count(), 0, 'notes remain literal text');
     const exported = await downloadText();
+    assert.equal(await page.locator('#record-options').evaluate(el => el.open), false, 'specialist outputs start collapsed');
+    await page.locator('#record-options summary').click();
     await page.getByRole('button', { name: 'Preview test sheet' }).click();
     const sheetPreview = await page.locator('#test-sheet-preview').innerText();
     const sheetDownloadPromise = page.waitForEvent('download');
