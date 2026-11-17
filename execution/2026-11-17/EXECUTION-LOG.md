@@ -68,3 +68,13 @@ Append dated observations. Never replace the first failure with a later pass. Fo
 **Correction and rerun:** Replace the line-sensitive assertion with whitespace-tolerant status matching. [Repository checks #207](https://github.com/shaunmarsden/practical-ai-adoption/actions/runs/44131946972), test head `b893c982046007d0490560cbcd3c965e31f2862e`, **success**. This is automated source and browser validation of a fictional task, not a real pilot, independent validation, observed user comprehension or production deployment.
 
 **Next:** Retain PR #119 for review; obtain explicit merge approval. On any authorised merge, verify post-merge checks, Pages and exact live asset commit separately. Then proceed to J03 incomplete/abandoned save-reopen behaviour and any reproduced defects.
+
+## J03 interrupted fictional work and recovery (17th November 2026)
+
+**PR:** [#120](https://github.com/shaunmarsden/practical-ai-adoption/pull/120), draft and not merged. Base main commit `2977b8adf3c7ddc1db46a8e15c37d67749da3f02` merged J02 via PR #119. The GitHub connector confirms this merge, but its commit-run lookup does not expose post-merge main Actions or Pages deployment events.
+
+**Problem and acceptance:** The existing draft and test-result suites separately exercised save/reopen. This J03 test checks their recovery together after a fictional interrupted session. At 1440, 390 and 320 CSS pixels it records an incomplete fictional volunteer rota task, leaves permission unknown and no human decision, downloads both distinct JSON source files, adds newer unsaved changes, accepts a native beforeunload warning on reload, confirms neither unsaved revision is restored, reopens the actual downloaded bytes and continues. It then verifies the complete review pack retains the permission gap, unrun evidence challenge and resumed partial work but not the discarded edits. No application code, format, autosave, cloud storage, telemetry, client data or real operational action was added.
+
+**Evidence:** [Repository checks #210](https://github.com/shaunmarsden/practical-ai-adoption/actions/runs/44134627067) completed **success** for PR head `4fa8872635e58ddaa3267859a6a15c7e8869a1af`. Its CI release script runs the J03 browser journey against the temporary local preview alongside existing checks. These checks are software-operated fictional exercises, not independent human usability, physical-device testing, production deployment or observed workplace benefits.
+
+**Remaining:** PR #120 awaits explicit merge approval. Post-merge checks, Pages and exact public deployed-commit verification are separate from passing PR CI. J04 and later journeys have not been run under this batch.
