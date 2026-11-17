@@ -56,8 +56,11 @@ try {
     assert.ok(comparisonDownload.includes('unsafe date was accepted'));
     assert.ok(comparisonDownload.includes('Fictional bad dates must be blocked'));
     await page.locator('#work').fill('Fictional review-pack workflow');
+    await page.getByRole('button', { name: '3. Plan a bounded pilot' }).click();
     await page.locator('#permissions').fill('Unknown: no live authorisation');
+    await page.getByRole('button', { name: '4. Measure results' }).click();
     await page.locator('#issues').fill('Wrong date unresolved');
+    await page.getByRole('button', { name: '1. Describe the work' }).click();
     await page.getByRole('button', { name: 'Preview complete review pack' }).click();
     let handover = await page.locator('#review-pack-preview').innerText();
     for (const phrase of ['Fictional review-pack workflow', 'Unknown: no live authorisation', 'Wrong date unresolved', 'unsafe date was accepted', 'Stop and review the issue'])
