@@ -114,6 +114,10 @@ function refreshBrief() { byId('brief-preview').textContent = reviewBriefText(va
 function refreshTestSheet() { byId('test-sheet-preview').textContent = safeTestSheetText(values()); }
 byId('caveat').textContent = caveat;
 byId('notes').addEventListener('submit', event => event.preventDefault());
+byId('start-workflow').addEventListener('click', () => {
+  show(0, false);
+  controls.get('work').focus();
+});
 function warnBeforeLeaving(event) {
   if (!changeTracker.hasChanges(values()) && !incompleteDate()) return;
   event.preventDefault();

@@ -24,6 +24,15 @@
     </aside>
     <noscript><p>This notebook needs JavaScript for navigation and export. You can still use the <a href="https://github.com/shaunmarsden/practical-ai-adoption#follow-a-practical-adoption-path">existing guide route</a> without it.</p></noscript>
     <div id="workbench" hidden>
+      <section class="start-guide" aria-labelledby="start-guide-heading">
+        <h2 id="start-guide-heading">Start with one task</h2>
+        <p>Describe a repetitive piece of work you want to improve. You can record a non-AI solution, leave questions unanswered and stop at any point. No trial or AI tool is required.</p>
+        <div class="actions">
+          <button type="button" id="start-workflow">Describe my task</button>
+          <a class="start-example-link" href="#example-heading">Or try the fictional example</a>
+        </div>
+        <p class="start-path">When you have an approach: <a href="#test-results-heading">record test observations</a> if a test actually happened, or <a href="#record-heading">export your notes</a> for someone to review.</p>
+      </section>
       <section class="record" aria-labelledby="example-heading">
         <h2 id="example-heading">Try a fictional example</h2>
         <p>New to the Workbench? Load an invented case about inconsistent meeting dates. It illustrates a simpler, non-AI option, unknown permissions and a decision that has not been made. You can edit every field. No real evidence or approval is implied.</p>
@@ -41,7 +50,7 @@
         <input type="file" id="reopen-draft" accept=".json,application/json" aria-describedby="draft-help">
         <p id="draft-status" role="status"></p>
       </section>
-      <nav aria-label="Workbench steps"><ol id="steps"></ol></nav>
+      <nav id="workflow-steps" aria-label="Workbench steps"><ol id="steps"></ol></nav>
       <form id="notes" autocomplete="off">
         <div id="panels"></div>
         <div class="actions"><button type="button" id="back-step">Back</button><button type="button" id="next-step">Next</button></div>

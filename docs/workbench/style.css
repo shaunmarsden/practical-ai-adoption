@@ -46,3 +46,11 @@ input[type="file"]::file-selector-button { max-width: 100%; white-space: normal;
 #test-results-cases legend { font-weight: 700; padding: 0 .35rem; }
 #test-results-cases label { margin-top: .8rem; }
 #reopen-test-results { margin-top: .4rem; }
+
+/* A single obvious starting action; all original notes and review tools remain available. */
+.start-guide { background: var(--paper); border: 2px solid var(--blue); border-radius: .5rem; padding: clamp(1rem, 3vw, 2rem); margin: 1.4rem 0; }
+.start-guide h2 { margin-top: 0; }
+#start-workflow { background: var(--blue); color: white; font-weight: 650; }
+.start-example-link { align-self: center; padding: .6rem 0; }
+.start-path { color: var(--muted); margin-bottom: 0; }
+@media (max-width: 600px) { .start-guide .actions { flex-direction: column; align-items: stretch; } .start-example-link { align-self: flex-start; } }

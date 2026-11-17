@@ -137,3 +137,5 @@ The [unsaved-notes record](unsaved-notes/README.md) describes the changed-state 
 ## Consolidated three-browser release check
 
 The [maintained release check](releases/README.md) extends the existing `test:workbench:live` command to installed Chrome, Firefox and Playwright WebKit, with exact downloaded-byte reopening and missed-warning diagnostics. It retains the existing Chromium navigation/accessibility, draft and reflow suites. Missing browsers or any failed child fail the whole check; there are no retries. CI uses a local preview, which does not establish deployment. See the record for first failures, negative controls and the unresolved historical Firefox observation.
+
+- The entry panel now gives a single direct action, **Describe my task**, which focuses the first Workbench field. It also links to the entirely fictional example and existing test/review sections; it does not change the six-step content, exports or permission checks.
