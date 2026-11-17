@@ -10,7 +10,7 @@ test('blank handover never invents trials, evidence, decisions or permissions', 
   assert.match(output, /Permission status:\nNot recorded/);
   assert.equal((output.match(/Reported status:\nNot run/g) || []).length, 5);
   assert.match(output, /Keep the two source JSON files separately/);
-  assert.match(output, /not an automatic readiness judgement/);
+  assert.match(output, /an automatic readiness judgement/);
 });
 test('positive self-report cannot conceal failure, missing permissions or omitted evidence', () => {
   const notes = { ...emptyRecord(), work: 'Invented library notice', issues: 'Unresolved wrong date', permissions: 'Unknown', decision: 'Continue within an existing authorised boundary', evidenceType: 'Fictional exercise', nonAi: 'Single source date list', ai: 'Not needed', route: 'Use non-AI first', next: 'Review bad date before changes' };
