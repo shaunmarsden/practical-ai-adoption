@@ -222,7 +222,7 @@ Work in **successive, finished batches**, not a clock-based promise. For each ba
 3. Make the smallest change that solves the issue. Keep the no-AI and incomplete-data routes valid.
 4. Run relevant tests, inspect errors and actual output, and retain failed evidence.
 5. Open or update one PR. Merge only within the user's authorised release process and after CI passes.
-6. Check GitHub Pages and post-merge exact-commit release status; do not say “live” prematurely.
+6. Check GitHub Pages and post-merge exact-commit release status; do not say "live" prematurely.
 7. Update the execution log with *done / blocked / not started*, exact links and evidence. Select the next item by risk, not by excitement.
 
 **Pause for reassessment, not more feature work,** after two consecutive failed builds without a clear cause, a privacy or approval-boundary failure, unexpected schema migration, or external work requiring user consent.
