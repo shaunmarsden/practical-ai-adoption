@@ -95,6 +95,7 @@ function populate(data, kind) {
   }
   editRevision++;
   rememberCheckpoint(data, kind);
+  refreshCombinedReviewPack();
 }
 function show(index, focus = true) {
   active = index;
