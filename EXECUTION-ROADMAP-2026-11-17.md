@@ -233,7 +233,7 @@ Statuses below are *planning statuses*, not claims of tests already run:
 
 | Work package | Status on drafting this plan | Evidence required to close |
 | --- | --- | --- |
-| Baseline and historical issue audit (R01-R04) | Not started under this roadmap | New dated evidence log and direct run/PR links |
+| Baseline and historical issue audit (R01-R04) | R01 source inventory completed in dated execution log; R02-R04 pending | New dated evidence log and direct run/PR links |
 | Three first-use scenarios (J01-J05) | Not started | Frozen fixtures, browser outputs, first failures |
 | Most important friction fix (J06-J10) | Not started | Reproduced issue, passing regression, merged SHA |
 | JSON integrity and privacy review (D01-D11) | Not started | Actual round-trips and negative tests |
@@ -241,15 +241,15 @@ Statuses below are *planning statuses*, not claims of tests already run:
 | Accessibility and emulation review (A01-A06) | Not started | Test matrix and manual limits |
 | Release and docs refresh (R05-R08, E01, P03) | Not started | Verified main/deploy Actions and updated links |
 
-**Next executable item: R01**, then R02 only if the current run reveals a failure. Do not jump to a cosmetic improvement until the baseline and first-use cases have been checked.
+**Next executable item: J01**, after confirming R01 baseline in the dated execution log. Return to R02 if a current run reveals a failure. Do not jump to a cosmetic improvement until the first-use cases have been checked.
 
 ## Primary source files
 
 - [Live repository](https://github.com/shaunmarsden/practical-ai-adoption), [Actions](https://github.com/shaunmarsden/practical-ai-adoption/actions), [open issues](https://github.com/shaunmarsden/practical-ai-adoption/issues), [pull requests](https://github.com/shaunmarsden/practical-ai-adoption/pulls)
-- [AGENTS.md](../AGENTS.md) for contribution and IP boundaries
-- [PROJECT-CONTINUITY.md](../PROJECT-CONTINUITY.md) for cross-account handover
-- [ROADMAP.md](../ROADMAP.md) for the historical evidence-led strategy
-- [EVIDENCE-STATUS.md](../EVIDENCE-STATUS.md) for actual testing claims
-- [Workbench technical record](../tools/workbench/README.md), [checks.yml](../.github/workflows/checks.yml)
+- [AGENTS.md](AGENTS.md) for contribution and IP boundaries
+- [PROJECT-CONTINUITY.md](PROJECT-CONTINUITY.md) for cross-account handover
+- [ROADMAP.md](ROADMAP.md) for the historical evidence-led strategy
+- [EVIDENCE-STATUS.md](EVIDENCE-STATUS.md) for actual testing claims
+- [Workbench technical record](tools/workbench/README.md), [checks.yml](.github/workflows/checks.yml)
 - [Historical critical draft PR #74](https://github.com/shaunmarsden/practical-ai-adoption/pull/74), [historical critique PR #73](https://github.com/shaunmarsden/practical-ai-adoption/pull/73)
 - [Public evidence issue #4](https://github.com/shaunmarsden/practical-ai-adoption/issues/4)
