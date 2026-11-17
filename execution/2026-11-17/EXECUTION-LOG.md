@@ -40,3 +40,17 @@ A separate user study, a production trial and a commercial deployment are **not*
 ## Editing this log
 
 Append dated observations. Never replace the first failure with a later pass. For each subsequent batch add: task ID, expected behaviour, frozen fictional input reference, exact repo commit, actual command/CI run, observed output, severity, PR, decision, deployment, remaining risk.
+
+## J01 browser validation and R02 follow-up (17th November 2026)
+
+**PR:** [#118](https://github.com/shaunmarsden/practical-ai-adoption/pull/118), draft, unmerged. The original fictional community-club example remains the frozen J01 input; it is not evidence of actual club use or observed human comprehension.
+
+**What the J01 browser test checks:** at 1440, 390 and 320 CSS pixels, load the fictional example, save and inspect actual draft JSON bytes, inspect the downloaded text decision record, visit the human decision section, and preview and download the complete review pack. Assertions retain the no-AI/no-trial route, unknown change authority, absence of measured benefits, blank decision-maker/date, no human decision, and five unrun challenge observations. This adds test coverage; it changes no application code or user data formats.
+
+**First run:** [Repository checks #201](https://github.com/shaunmarsden/practical-ai-adoption/actions/runs/44120567323), commit `d44b980d0ffec51c1f5f8d5aa1522addc978ab75`, **failed**. The newly added J01 test had an incorrectly escaped newline in its own assertion; source output retained the expected unknown-authority wording. Separately, `test-results-browser.mjs` checked an asynchronous invalid-file status too early and observed `Reading local test results...` rather than the eventual error state. These are first observed browser-test failures, not verified application faults. CI retained the failed logs and artefacts.
+
+**Repair:** Changed the J01 assertions to check the intended contents and wait for the asynchronous results-import status before asserting. No application source changed. Latest test commit `b1e474c7e183ca46f16379271be4c26acc4873b6`.
+
+**Rerun:** [Repository checks #202](https://github.com/shaunmarsden/practical-ai-adoption/actions/runs/44121315059), **success**. The test-checkout release verifier reported 22 served assets matched its test merge commit `d295500b24fd4a1859a154f1dc26873c2cd09862` before and after its browser journeys; its navigation, download, cross-browser and local PDF checks passed. This is PR CI and local preview evidence, not exact deployed GitHub Pages verification, production operation, independent user observation or a fresh physical-phone test.
+
+**Remaining:** Keep PR #118 for review and separate merge authorisation. The post-merge `main` Actions, Pages and exact public deployed-asset status for earlier merge `e3208088996d430f5ff059154c5e7404400a6c2e` have not been independently verified through the available connected GitHub run lookup, which filters for PR-triggered runs. R03 remains outstanding. J02 and J03 have not been executed under this roadmap.
