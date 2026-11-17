@@ -4,6 +4,7 @@ export const releaseJobs = [
   { name: 'journey', script: 'browser.mjs', browser: 'chromium' },
   { name: 'drafts', script: 'draft-browser.mjs', browser: 'chromium' },
   { name: 'test-outcomes', script: 'test-results-browser.mjs', browser: 'chromium' },
+  { name: 'interrupted', script: 'interrupted-browser.mjs', browser: 'chromium' },
   { name: 'reflow', script: 'reflow.mjs', browser: 'chromium' },
   ...['chrome', 'firefox', 'webkit'].map(browser => ({ name: `changes-${browser}`, script: 'changes-browser.mjs', browser }))
 ];
