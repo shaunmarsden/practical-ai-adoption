@@ -12,6 +12,8 @@ No coding or installation needed.
 
 For a team work question, [open the AI Adoption Workbench](https://shaunmarsden.github.io/practical-ai-adoption/workbench/). It routes through existing guides, links separately to V2, saves and reopens local JSON drafts, and exports a caveated text record. There is no autosave; reload clears the page until you manually reopen a saved draft. It is a planning aid, not a new assessment or approval. [Scope, tests and limitations](tools/workbench/README.md).
 
+[See the current build roadmap](EXECUTION-ROADMAP-2026-11-17.md) for prioritised work, evidence limits and release gates. This is a development plan, not a validated product claim.
+
 ## Follow a practical adoption path
 
 If you're moving from a first experiment towards wider workplace use, follow the question that matches where you are. This is a reading route, **not** a fixed six-stage methodology or permission to deploy. Safety, data approval and human accountability apply from the beginning.
