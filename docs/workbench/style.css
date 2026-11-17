@@ -54,3 +54,11 @@ input[type="file"]::file-selector-button { max-width: 100%; white-space: normal;
 .start-example-link { align-self: center; padding: .6rem 0; }
 .start-path { color: var(--muted); margin-bottom: 0; }
 @media (max-width: 600px) { .start-guide .actions { flex-direction: column; align-items: stretch; } .start-example-link { align-self: flex-start; } }
+
+/* Optional specialist exports stay available without competing with the main review path. */
+.extra-exports { margin: 1rem 0; border: 1px solid var(--line); border-radius: .4rem; padding: .7rem 1rem; }
+.extra-exports summary { cursor: pointer; font-weight: 650; color: var(--blue); padding: .3rem 0; }
+.extra-exports[open] summary { margin-bottom: .5rem; }
+.extra-exports p { margin: .5rem 0 1rem; color: var(--muted); }
+.extra-exports .actions { margin-bottom: .3rem; }
+.export-guidance { color: var(--muted); }
