@@ -5,6 +5,7 @@ import { fictionalExample } from './example.mjs';
 import { safeTestSheetText } from './test-sheet.mjs';
 import { initialiseTestResults } from './test-results-ui.mjs';
 const byId = id => document.getElementById(id);
+let refreshCombinedReviewPack = () => {};
 let active = 0;
 const controls = new Map();
 let notes = emptyRecord(), editRevision = 0, observedBadDate = false;
@@ -94,6 +95,7 @@ function populate(data, kind) {
   }
   editRevision++;
   rememberCheckpoint(data, kind);
+  refreshCombinedReviewPack();
 }
 function show(index, focus = true) {
   active = index;
@@ -152,6 +154,7 @@ function onNotesEdited() {
   if (!byId('summary').hidden) refreshSummary();
   if (!byId('brief-preview').hidden) refreshBrief();
   if (!byId('test-sheet-preview').hidden) refreshTestSheet();
+  refreshCombinedReviewPack();
   updateChanges();
 }
 byId('notes').addEventListener('input', onNotesEdited);
@@ -316,6 +319,7 @@ byId('reset').addEventListener('click', () => {
   byId('status').textContent = 'Workbench notes cleared. Existing downloads are unchanged.';
   show(0);
 });
-initialiseTestResults({ download, getNotes: values });
+const combinedReview = initialiseTestResults({ download, getNotes: values });
+refreshCombinedReviewPack = combinedReview.refreshReviewPack;
 show(0, false);
 byId('workbench').hidden = false;

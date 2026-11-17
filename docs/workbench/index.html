@@ -49,7 +49,7 @@
       <section class="record" aria-labelledby="test-results-heading">
         <h2 id="test-results-heading">Record what happened in a test</h2>
         <p>Use these five cases after an appropriately authorised test, or practise with invented examples. Record the actual observation, including failures and unresolved problems. The reported status is your description, not an independent check or approval to operate.</p>
-        <p>The results are <strong>separate from your Workbench draft</strong>. Save their JSON file to reopen them later. Neither the Workbench draft nor the proposed test sheet stores test observations. Do not enter confidential or personal data. Nothing is automatically saved or sent.</p>
+        <p>The results are <strong>separate from your Workbench draft</strong>. Save their JSON file to reopen them later. Neither the Workbench draft nor the proposed test sheet stores test observations. A combined review pack can be previewed or exported as text, but is not an editable replacement for either JSON file. Do not enter confidential or personal data. Nothing is automatically saved or sent.</p>
         <p id="test-results-changes" role="status"></p>
         <div id="test-results-cases"></div>
         <div class="actions">
@@ -57,6 +57,8 @@
           <button type="button" id="export-test-results">Export observations text</button>
           <button type="button" id="compare-test-results">Compare expected and observed</button>
           <button type="button" id="export-test-comparison">Export comparison text</button>
+          <button type="button" id="preview-review-pack">Preview complete review pack</button>
+          <button type="button" id="export-review-pack">Export complete review pack</button>
           <button type="button" id="save-test-results">Save results JSON</button>
           <button type="button" id="clear-test-results">Clear test observations</button>
         </div>
@@ -66,6 +68,7 @@
         <p id="test-results-status" role="status"></p>
         <pre id="test-results-preview" tabindex="0" aria-label="Reported test observations preview" hidden></pre>
         <pre id="test-comparison-preview" tabindex="0" aria-label="Expected and observed comparison preview" hidden></pre>
+        <pre id="review-pack-preview" tabindex="0" aria-label="Combined workflow and test observations review pack" hidden></pre>
       </section>
       <section aria-labelledby="record-heading" class="record">
         <h2 id="record-heading">Your decision record</h2>
