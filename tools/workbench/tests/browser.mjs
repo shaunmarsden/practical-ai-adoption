@@ -25,6 +25,13 @@ try {
     await page.keyboard.press('Enter');
     assert.equal(await page.locator('#main').evaluate(el => el === document.activeElement), true);
     assert.equal(await page.getByRole('button', { name: 'Back', exact: true }).isDisabled(), true);
+    await page.getByRole('button', { name: 'Describe my task' }).click();
+    assert.equal(await page.locator('#work').evaluate(el => el === document.activeElement), true, 'first action focuses editable workflow field');
+    assert.equal(await page.getByRole('button', { name: '1. Describe the work' }).getAttribute('aria-current'), 'step');
+    assert.equal(await page.getByRole('link', { name: 'Or try the fictional example' }).getAttribute('href'), '#example-heading');
+    assert.equal(await page.getByRole('link', { name: 'record test observations' }).getAttribute('href'), '#test-results-heading');
+    assert.equal(await page.getByRole('link', { name: 'export your notes' }).getAttribute('href'), '#record-heading');
+    assert.equal(await page.locator('#work').inputValue(), '', 'opening action does not fabricate notes');
     const downloadText = async () => {
       const pending = page.waitForEvent('download');
       await page.getByRole('button', { name: 'Export text record' }).click();
