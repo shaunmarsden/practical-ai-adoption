@@ -61,16 +61,23 @@
         <p>The results are <strong>separate from your Workbench draft</strong>. Save their JSON file to reopen them later. Neither the Workbench draft nor the proposed test sheet stores test observations. A combined review pack can be previewed or exported as text, but is not an editable replacement for either JSON file. Do not enter confidential or personal data. Nothing is automatically saved or sent.</p>
         <p id="test-results-changes" role="status"></p>
         <div id="test-results-cases"></div>
+        <p class="export-guidance">For someone reviewing the whole workflow, use the complete review pack. Save results JSON separately if you need to reopen the observations and edit them later.</p>
         <div class="actions">
-          <button type="button" id="preview-test-results">Preview observations</button>
-          <button type="button" id="export-test-results">Export observations text</button>
-          <button type="button" id="compare-test-results">Compare expected and observed</button>
-          <button type="button" id="export-test-comparison">Export comparison text</button>
           <button type="button" id="preview-review-pack">Preview complete review pack</button>
           <button type="button" id="export-review-pack">Export complete review pack</button>
           <button type="button" id="save-test-results">Save results JSON</button>
-          <button type="button" id="clear-test-results">Clear test observations</button>
         </div>
+        <details class="extra-exports" id="observation-options">
+          <summary>More test and comparison options</summary>
+          <p>Use these when you need a standalone observations record or a detailed expected-versus-observed comparison.</p>
+          <div class="actions">
+            <button type="button" id="preview-test-results">Preview observations</button>
+            <button type="button" id="export-test-results">Export observations text</button>
+            <button type="button" id="compare-test-results">Compare expected and observed</button>
+            <button type="button" id="export-test-comparison">Export comparison text</button>
+          </div>
+        </details>
+        <button type="button" id="clear-test-results">Clear test observations</button>
         <label for="reopen-test-results">Reopen results JSON</label>
         <p id="reopen-test-help">Choose a results JSON file saved by this section, up to 500 KB. It cannot replace your Workbench notes. Reopening existing observations asks for confirmation.</p>
         <input type="file" id="reopen-test-results" accept=".json,application/json" aria-describedby="reopen-test-help">
@@ -83,7 +90,13 @@
         <h2 id="record-heading">Your decision record</h2>
         <p id="caveat"></p>
         <p>No fields are required for export. Blank notes say "Not recorded". Exporting does not complete a review. The shorter review brief selects original notes for a reader; keep the full text record for context. The proposed test sheet supplies blank challenge cases, not test results or permission to start a trial.</p>
-        <div class="actions"><button type="button" id="review">Review all notes</button><button type="button" id="export">Export text record</button><button type="button" id="preview-brief">Preview review brief</button><button type="button" id="export-brief">Export review brief</button><button type="button" id="preview-test-sheet">Preview test sheet</button><button type="button" id="export-test-sheet">Export test sheet</button><button type="button" id="reset">Clear notes</button></div>
+        <div class="actions"><button type="button" id="review">Review all notes</button><button type="button" id="export">Export text record</button></div>
+        <details class="extra-exports" id="record-options">
+          <summary>More record and planning options</summary>
+          <p>The review brief selects notes for a reader. The proposed test sheet contains unrun cases, not evidence of a trial.</p>
+          <div class="actions"><button type="button" id="preview-brief">Preview review brief</button><button type="button" id="export-brief">Export review brief</button><button type="button" id="preview-test-sheet">Preview test sheet</button><button type="button" id="export-test-sheet">Export test sheet</button></div>
+        </details>
+        <button type="button" id="reset">Clear notes</button>
         <p id="status" role="status"></p>
         <pre id="summary" tabindex="0" aria-label="Decision record preview" hidden></pre>
         <pre id="brief-preview" tabindex="0" aria-label="Review brief preview" hidden></pre>

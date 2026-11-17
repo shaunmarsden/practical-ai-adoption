@@ -24,6 +24,8 @@ try {
     await page.locator('#result-C1-status').selectOption('Observed - acceptable (reported)');
     await page.locator('#result-C1-actual').fill('Fictional: ordinary sample was reviewed.');
     assert.match(await page.locator('#test-results-changes').innerText(), /edits are only in this page/);
+    assert.equal(await page.locator('#observation-options').evaluate(el => el.open), false, 'specialist test exports start collapsed');
+    await page.locator('#observation-options summary').click();
     await page.getByRole('button', { name: 'Preview observations' }).click();
     const preview = await page.locator('#test-results-preview').innerText();
     assert.ok(preview.includes('unsafe date was accepted'));
