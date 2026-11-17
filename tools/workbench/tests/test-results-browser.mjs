@@ -34,6 +34,14 @@ try {
     await page.locator('#result-C4-followup').fill('Stop and review the issue. Do not continue.');
     await page.locator('#result-C1-status').selectOption('Observed - acceptable (reported)');
     await page.locator('#result-C1-actual').fill('Fictional: ordinary sample was reviewed.');
+    // J02: invented trial notes, not a real trial or validated decision.
+    await page.locator('#result-C1-evidence').fill('Fictional local sample A; no source system used.');
+    await page.locator('#result-C1-reviewer').fill('Fictional observer role');
+    await page.locator('#result-C2-status').selectOption('Observed - inconclusive (reported)');
+    await page.locator('#result-C2-actual').fill('Fictional: conflicting source dates could not be reconciled.');
+    await page.locator('#result-C2-followup').fill('Keep exception unresolved and inspect both fictional sources.');
+    await page.locator('#result-C5-expected').fill('No publication without verified permission.');
+    await page.locator('#result-C4-reviewer').fill('Fictional observer role');
     assert.match(await page.locator('#test-results-changes').innerText(), /edits are only in this page/);
     assert.equal(await page.locator('#observation-options').evaluate(el => el.open), false, 'specialist test exports start collapsed');
     await page.locator('#observation-options summary').click();
@@ -72,7 +80,13 @@ try {
     await page.getByRole('button', { name: '3. Plan a bounded pilot' }).click();
     await page.locator('#permissions').fill('Unknown: no live authorisation');
     await page.getByRole('button', { name: '4. Measure results' }).click();
-    await page.locator('#issues').fill('Wrong date unresolved');
+    await page.locator('#issues').fill('Wrong date unresolved; acceptable ordinary sample cannot cancel the serious date error.');
+    await page.locator('#evidenceType').selectOption('Fictional exercise');
+    await page.locator('#results').fill('Fictional only: ordinary case appears acceptable, but one unacceptable wrong date and one inconclusive conflicting-source case remain.');
+    await page.locator('#costs').fill('Unknown: no real setup, review, rework or productivity measurements.');
+    await page.getByRole('button', { name: '6. Record a human decision' }).click();
+    assert.equal(await page.locator('#decision').inputValue(), 'No human decision recorded');
+    assert.equal(await page.locator('#decisionDate').inputValue(), '');
     await page.getByRole('button', { name: '1. Describe the work' }).click();
     await page.getByRole('button', { name: 'Preview complete review pack' }).click();
     let handover = await page.locator('#review-pack-preview').innerText();
@@ -92,12 +106,38 @@ try {
     const packBytes = await readFile(await packFile.path(), 'utf8');
     assert.ok(packBytes.includes('Updated fictional workflow') && packBytes.includes('unsafe date was accepted'));
     assert.ok(packBytes.includes('Keep the two source JSON files separately'));
+    // J02: check both rendered and downloaded handovers preserve adverse facts.
+    for (const report of [handover, packBytes]) {
+      for (const fact of [
+        'Fictional: ordinary sample was reviewed.',
+        'Fictional: unsafe date was accepted despite an unresolved mismatch.',
+        'Fictional: conflicting source dates could not be reconciled.',
+        'Keep exception unresolved and inspect both fictional sources.',
+        'No publication without verified permission.',
+        'Unknown: no live authorisation',
+        'acceptable ordinary sample cannot cancel the serious date error',
+        'No human decision recorded',
+        'Unknown: no real setup, review, rework or productivity measurements.'
+      ]) assert.ok(report.includes(fact), `J02 review must retain: ${fact}`);
+      assert.match(report, /Reported status:\s*Observed - acceptable \(reported\)/);
+      assert.match(report, /Reported status:\s*Observed - problem \(reported\)/);
+      assert.match(report, /Reported status:\s*Observed - inconclusive \(reported\)/);
+      assert.match(report, /Reported status:\s*Not run/);
+      assert.ok(report.includes('A reported positive decision cannot resolve unknown permissions or adverse observations.'));
+    }
     const savePromise = page.waitForEvent('download');
     await page.getByRole('button', { name: 'Save results JSON' }).click();
     const jsonFile = await savePromise;
     assert.equal(jsonFile.suggestedFilename(), 'ai-adoption-test-results.json');
     const saved = await readFile(await jsonFile.path(), 'utf8');
-    assert.equal(JSON.parse(saved).cases[3].actual, 'Fictional: unsafe date was accepted despite an unresolved mismatch.');
+    const j02Saved = JSON.parse(saved);
+    assert.equal(j02Saved.cases[3].actual, 'Fictional: unsafe date was accepted despite an unresolved mismatch.');
+    assert.equal(j02Saved.cases[0].status, 'Observed - acceptable (reported)');
+    assert.equal(j02Saved.cases[1].status, 'Observed - inconclusive (reported)');
+    assert.equal(j02Saved.cases[1].actual, 'Fictional: conflicting source dates could not be reconciled.');
+    assert.equal(j02Saved.cases[3].status, 'Observed - problem (reported)');
+    assert.equal(j02Saved.cases[4].status, 'Not run');
+    assert.equal(j02Saved.cases[4].expected, 'No publication without verified permission.');
     await page.reload();
     assert.equal(await page.locator('#result-C4-status').inputValue(), 'Not run', 'no automatic retention');
     await page.locator('#result-C2-actual').fill('Do not overwrite me');
