@@ -1,5 +1,8 @@
 # Roadmap
 
+**Current implementation plan:** [17th November 2026 execution roadmap](EXECUTION-ROADMAP-2026-11-17.md), with 93 individually testable backlog items, prioritised delivery gates and a [dated execution log](execution/2026-11-17/EXECUTION-LOG.md). The sections below retain the historical evidence and strategy; do not treat them as an up-to-date task tracker.
+
+
 This is where I'm heading. It isn't a promise to publish everything listed.
 
 ## Pilot readiness assessment: next evidence, not more features
