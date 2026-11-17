@@ -179,6 +179,50 @@ try {
     const sampleExport = await downloadText();
     assert.match(sampleExport, /No pilot has happened/);
     assert.match(sampleExport, /No human decision recorded/);
+    // J01: complete the existing fictional no-AI/no-trial route and inspect
+    // actual downloads, without inventing approval, measurement or a trial.
+    const j01DraftPending = page.waitForEvent('download');
+    await page.getByRole('button', { name: 'Save draft' }).click();
+    const j01DraftFile = await j01DraftPending;
+    assert.equal(j01DraftFile.suggestedFilename(), 'ai-adoption-workbench-draft.json');
+    const j01Draft = JSON.parse(await readFile(await j01DraftFile.path(), 'utf8'));
+    assert.equal(j01Draft.notes.evidenceType, 'Fictional exercise');
+    assert.equal(j01Draft.notes.decision, 'No human decision recorded');
+    assert.equal(j01Draft.notes.decisionDate, '');
+    assert.equal(j01Draft.notes.decisionOwner, '');
+    assert.match(j01Draft.notes.permissions, /unknown/i);
+    assert.match(j01Draft.notes.boundary, /No AI trial proposed/);
+    assert.match(j01Draft.notes.results, /No pilot has happened/);
+    assert.match(j01Draft.notes.costs, /No productivity, cash or capacity benefit has been measured/);
+    assert.match(sampleExport, /Generating dates with AI does not solve/);
+    assert.match(sampleExport, /No productivity, cash or capacity benefit has been measured/);
+    assert.match(sampleExport, /Actual permission status:\\nNo AI trial proposed\\. Authority/);
+    await page.getByRole('button', { name: '6. Record a human decision', exact: true }).click();
+    assert.equal(await page.locator('#decision').inputValue(), 'No human decision recorded');
+    assert.equal(await page.locator('#decisionDate').inputValue(), '');
+    await page.getByRole('button', { name: 'Preview complete review pack' }).click();
+    const j01Preview = await page.locator('#review-pack-preview').innerText();
+    const j01PackPending = page.waitForEvent('download');
+    await page.getByRole('button', { name: 'Export complete review pack' }).click();
+    const j01PackFile = await j01PackPending;
+    assert.equal(j01PackFile.suggestedFilename(), 'ai-adoption-complete-review-pack.txt');
+    const j01Pack = await readFile(await j01PackFile.path(), 'utf8');
+    for (const result of [j01Preview, j01Pack]) {
+      for (const phrase of [
+        'Fictional community club',
+        'Fictional exercise',
+        'No human decision recorded',
+        'No AI trial proposed',
+        'No pilot has happened',
+        'No productivity, cash or capacity benefit has been measured',
+        'Authority to change the real club process is unknown',
+        'Keep the two source JSON files separately',
+        'This pack is not evidence of workplace value'
+      ]) assert.ok(result.includes(phrase), `J01 review pack retains: ${phrase}`);
+      assert.match(result, /C1 - [^\\n]+[\\s\\S]*?Reported status:\\nNot run/);
+      assert.equal((result.match(/Reported status:\\nNot run/g) || []).length, 5, 'all five challenge cases remain unrun');
+    }
+    assert.equal(await page.locator('#review-pack-preview script').count(), 0);
     page.once('dialog', dialog => dialog.accept());
     await page.getByRole('button', { name: 'Clear notes' }).click();
     assert.equal(await page.locator('#work').inputValue(), '');
