@@ -110,12 +110,14 @@ try {
     assert.equal(await page.locator('#result-C1-status').inputValue(), 'Observed - acceptable (reported)');
     assert.match(await page.locator('#test-results-changes').innerText(), /No newer test-result edits/);
     await picker.setInputFiles({ name: 'bad.json', mimeType: 'application/json', buffer: Buffer.from('{bad') });
+    await page.waitForFunction(() => document.querySelector('#test-results-status')?.textContent?.includes('Could not reopen results'));
     assert.match(await page.locator('#test-results-status').innerText(), /Could not reopen results/);
     assert.equal(await page.locator('#result-C4-status').inputValue(), 'Observed - problem (reported)', 'bad file preserves outcomes');
     const badEntries = emptyTestResults();
     badEntries[0].status = 'Observed - acceptable (reported)'; badEntries[0].actual = 'Fictional good result';
     const badFormat = testResultsJSON(badEntries).replace('"version": 1', '"version": 2');
     await picker.setInputFiles({ name: 'unsupported.json', mimeType: 'application/json', buffer: Buffer.from(badFormat) });
+    await page.waitForFunction(() => document.querySelector('#test-results-status')?.textContent?.includes('Could not reopen results'));
     assert.match(await page.locator('#test-results-status').innerText(), /Could not reopen results/);
     assert.equal(await page.locator('#result-C4-status').inputValue(), 'Observed - problem (reported)');
     await page.locator('#result-C4-followup').fill('New follow-up not saved');
