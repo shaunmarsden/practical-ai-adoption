@@ -4,6 +4,17 @@ import { readFile, mkdir } from 'node:fs/promises';
 import { base, assertStaticRequests } from './browser-support.mjs';
 import { emptyTestResults, testResultsJSON } from '../../../docs/workbench/test-results.mjs';
 
+// Pair each dialog with its own action. A stale one-time listener can otherwise
+// handle a later confirmation and leave a second listener accepting it twice.
+async function actWithDialog(page, action, decision) {
+  const expectedDialog = page.waitForEvent('dialog', { timeout: 5000 });
+  const pendingAction = action();
+  const dialog = await expectedDialog;
+  if (decision === 'accept') await dialog.accept();
+  else await dialog.dismiss();
+  await pendingAction;
+}
+
 const folder = process.env.WORKBENCH_OUTPUT || 'test-results/workbench-observations';
 await mkdir(folder, { recursive: true });
 const browser = await chromium.launch({ headless: true, channel: 'chromium' });
@@ -91,11 +102,9 @@ try {
     assert.equal(await page.locator('#result-C4-status').inputValue(), 'Not run', 'no automatic retention');
     await page.locator('#result-C2-actual').fill('Do not overwrite me');
     const picker = page.locator('#reopen-test-results');
-    page.once('dialog', d => d.dismiss());
-    await picker.setInputFiles({ name: 'results.json', mimeType: 'application/json', buffer: Buffer.from(saved) });
+    await actWithDialog(page, () => picker.setInputFiles({ name: 'results.json', mimeType: 'application/json', buffer: Buffer.from(saved) }), 'dismiss');
     assert.equal(await page.locator('#result-C2-actual').inputValue(), 'Do not overwrite me', 'cancel replacement');
-    page.once('dialog', d => d.accept());
-    await picker.setInputFiles({ name: 'results.json', mimeType: 'application/json', buffer: Buffer.from(saved) });
+    await actWithDialog(page, () => picker.setInputFiles({ name: 'results.json', mimeType: 'application/json', buffer: Buffer.from(saved) }), 'accept');
     assert.equal(await page.locator('#result-C4-actual').inputValue(), 'Fictional: unsafe date was accepted despite an unresolved mismatch.');
     assert.equal(await page.locator('#result-C4-status').inputValue(), 'Observed - problem (reported)');
     assert.equal(await page.locator('#result-C1-status').inputValue(), 'Observed - acceptable (reported)');
@@ -111,11 +120,9 @@ try {
     assert.equal(await page.locator('#result-C4-status').inputValue(), 'Observed - problem (reported)');
     await page.locator('#result-C4-followup').fill('New follow-up not saved');
     assert.match(await page.locator('#test-results-changes').innerText(), /edits are only in this page/);
-    page.once('dialog', d => d.dismiss());
-    await page.getByRole('button', { name: 'Clear test observations' }).click();
+    await actWithDialog(page, () => page.getByRole('button', { name: 'Clear test observations' }).click(), 'dismiss');
     assert.equal(await page.locator('#result-C4-status').inputValue(), 'Observed - problem (reported)', 'clear cancelled');
-    page.once('dialog', d => d.accept());
-    await page.getByRole('button', { name: 'Clear test observations' }).click();
+    await actWithDialog(page, () => page.getByRole('button', { name: 'Clear test observations' }).click(), 'accept');
     assert.equal(await page.locator('#result-C4-status').inputValue(), 'Not run');
     assert.equal(await page.locator('#test-results-preview').isVisible(), false);
     assert.equal(await page.locator('#test-comparison-preview').isVisible(), false);
