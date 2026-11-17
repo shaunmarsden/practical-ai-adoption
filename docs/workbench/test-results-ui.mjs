@@ -1,4 +1,5 @@
 import { comparisonText } from './comparison.mjs';
+import { completeReviewPackText } from './review-pack.mjs';
 import { TEST_CASES, RESULT_STATUSES, emptyTestResults, checkedTestResults, testResultsJSON, parseTestResults, testResultsText, MAX_RESULTS_BYTES } from './test-results.mjs';
 
 export function initialiseTestResults({ download, getNotes }) {
@@ -77,6 +78,10 @@ export function initialiseTestResults({ download, getNotes }) {
   function changed() {
     revision++;
     updateState();
+    if (!byId('review-pack-preview').hidden) {
+      try { byId('review-pack-preview').textContent = completeReviewPackText(getNotes(), readEntries()); }
+      catch { byId('review-pack-preview').textContent = 'Describe actual observations for every case marked as observed before exporting a review pack.'; }
+    }
     if (!byId('test-comparison-preview').hidden) {
       try { byId('test-comparison-preview').textContent = comparisonText(readEntries(), getNotes()); }
       catch { byId('test-comparison-preview').textContent = 'Record what happened in each observed case before comparing it.'; }
@@ -118,6 +123,20 @@ export function initialiseTestResults({ download, getNotes }) {
       report('Comparison download requested. Check the file and original evidence before judging the outcome.');
     } catch (error) { report('Could not export comparison. ' + error.message); }
   });
+  byId('preview-review-pack').addEventListener('click', () => {
+    try {
+      byId('review-pack-preview').textContent = completeReviewPackText(getNotes(), capture());
+      byId('review-pack-preview').hidden = false;
+      byId('review-pack-preview').focus();
+      report('Review pack preview combines both current records. Keep each editable JSON file separately.');
+    } catch (error) { report(error.message); }
+  });
+  byId('export-review-pack').addEventListener('click', () => {
+    try {
+      download(completeReviewPackText(getNotes(), capture()), 'text/plain;charset=utf-8', 'ai-adoption-complete-review-pack.txt');
+      report('Combined review pack download requested. Keep both original JSON files and inspect source evidence before acting.');
+    } catch (error) { report('Could not export review pack. ' + error.message); }
+  });
   byId('save-test-results').addEventListener('click', () => {
     try {
       download(testResultsJSON(capture()), 'application/json;charset=utf-8', 'ai-adoption-test-results.json');
@@ -158,8 +177,16 @@ export function initialiseTestResults({ download, getNotes }) {
     byId('test-results-preview').textContent = '';
     byId('test-comparison-preview').hidden = true;
     byId('test-comparison-preview').textContent = '';
+    byId('review-pack-preview').hidden = true;
+    byId('review-pack-preview').textContent = '';
     updateState(); report('Test observations cleared. Workbench notes and saved files were not changed.');
   });
-  window.addEventListener('pageshow', updateState);
+  function refreshReviewPack() {
+    if (byId('review-pack-preview').hidden) return;
+    try { byId('review-pack-preview').textContent = completeReviewPackText(getNotes(), readEntries()); }
+    catch { byId('review-pack-preview').textContent = 'An observed case needs an actual description before exporting.'; }
+  }
+  window.addEventListener('pageshow', () => { updateState(); refreshReviewPack(); });
   updateState();
+  return { refreshReviewPack };
 }
