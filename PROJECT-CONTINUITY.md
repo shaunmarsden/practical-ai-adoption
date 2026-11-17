@@ -8,6 +8,7 @@ This document lets a new maintainer, coding assistant or future ChatGPT conversa
 - Public website: https://shaunmarsden.github.io/practical-ai-adoption/
 - AI Adoption Workbench: https://shaunmarsden.github.io/practical-ai-adoption/workbench/
 - Pilot Readiness Assessment V2: https://shaunmarsden.github.io/practical-ai-adoption/pilot-readiness/
+- Current implementation queue: [17th November 2026 execution roadmap](EXECUTION-ROADMAP-2026-11-17.md) and [dated execution log](execution/2026-11-17/EXECUTION-LOG.md)
 - Contribution and IP boundaries: [AGENTS.md](AGENTS.md)
 - Product and technical limits: [tools/workbench/README.md](tools/workbench/README.md), [EVIDENCE-STATUS.md](EVIDENCE-STATUS.md)
 - Current feature work and tests: [GitHub pull requests](https://github.com/shaunmarsden/practical-ai-adoption/pulls), [GitHub Actions](https://github.com/shaunmarsden/practical-ai-adoption/actions)
