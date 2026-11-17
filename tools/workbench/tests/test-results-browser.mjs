@@ -119,10 +119,10 @@ try {
         'No human decision recorded',
         'Unknown: no real setup, review, rework or productivity measurements.'
       ]) assert.ok(report.includes(fact), `J02 review must retain: ${fact}`);
-      assert.ok(report.includes('Reported status: Observed - acceptable (reported)'));
-      assert.ok(report.includes('Reported status: Observed - problem (reported)'));
-      assert.ok(report.includes('Reported status: Observed - inconclusive (reported)'));
-      assert.ok(report.includes('Reported status: Not run'));
+      assert.match(report, /Reported status:\\s*Observed - acceptable \(reported\)/);
+      assert.match(report, /Reported status:\\s*Observed - problem \(reported\)/);
+      assert.match(report, /Reported status:\\s*Observed - inconclusive \(reported\)/);
+      assert.match(report, /Reported status:\\s*Not run/);
       assert.ok(report.includes('A reported positive decision cannot resolve unknown permissions or adverse observations.'));
     }
     const savePromise = page.waitForEvent('download');
