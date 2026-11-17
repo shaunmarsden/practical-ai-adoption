@@ -41,7 +41,14 @@ try {
       child.on('error', error => { logs.push(Buffer.from(error.stack)); });
       child.on('close', code => resolveExit(code));
     });
-    await writeFile(join(output, `${name}.log`), Buffer.concat(logs));
+    const logBytes = Buffer.concat(logs);
+    await writeFile(join(output, `${name}.log`), logBytes);
+    if (exit !== 0) {
+      // Preserve full evidence in the artefact and show a bounded diagnostic
+      // extract in Actions logs so failed post-merge checks can be repaired.
+      const tail = logBytes.toString('utf8').split('\n').slice(-65).join('\n');
+      console.error(`Release journey ${name} exited ${exit}. Last 65 log lines:\n${tail}`);
+    }
     const journey = { name, browser, exitCode: exit };
     if (script === 'changes-browser.mjs') {
       try { journey.result = JSON.parse(await readFile(join(output, name, 'results.json'), 'utf8')); }
